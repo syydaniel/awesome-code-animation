@@ -1,0 +1,17 @@
+name: 检查生成文件
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: README 和网页版是否已重新生成
+        run: python scripts/build.py --check

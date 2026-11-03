@@ -1,0 +1,20 @@
+[
+  {"key": "math", "name": "数学讲解风", "en": "Math Explainer", "color": "#3B9BC4", "look": "公式、坐标系、几何变换，3B1B 式的蓝黑画面"},
+  {"key": "mg", "name": "扁平 MG 动效", "en": "Motion Graphics", "color": "#E07A3F", "look": "扁平图形、弹性缓动、形状变换"},
+  {"key": "code", "name": "代码演示风", "en": "Code & Terminal Demo", "color": "#8A6BD6", "look": "代码高亮、逐行出现、终端录屏、算法动画"},
+  {"key": "type", "name": "动态文字 · 歌词", "en": "Kinetic Type & Lyrics", "color": "#D9466F", "look": "字形变形、逐字出场、跟着歌词卡点"},
+  {"key": "short", "name": "短视频 · 字幕 · 快剪", "en": "Shorts, Captions & Editing", "color": "#C9A227", "look": "自动字幕、转场、用代码批量剪辑出片"},
+  {"key": "agent", "name": "AI 写代码出片", "en": "Agent-Coded Video", "color": "#9265D9", "look": "AI 编程助手写代码，画面仍由代码渲染，不用生成模型"},
+  {"key": "hand", "name": "手绘 · 白板 · 水彩", "en": "Hand-drawn & Whiteboard", "color": "#7A8F55", "look": "草图线条、逐笔绘制、水彩笔触"},
+  {"key": "gen", "name": "生成艺术 · 几何", "en": "Generative Art", "color": "#2F9E8F", "look": "算法图案、流场、无缝循环"},
+  {"key": "shader", "name": "着色器 · 迷幻光影", "en": "Shaders & Psychedelic", "color": "#B24FC4", "look": "程序化光影、噪声、流体渐变、抽象造型"},
+  {"key": "live", "name": "Live Coding · VJ", "en": "Live Coding & VJ", "color": "#E0569B", "look": "现场写代码出画面，视频合成器质感"},
+  {"key": "audio", "name": "音乐可视化", "en": "Music Visualization", "color": "#4F7BE0", "look": "频谱、波形、MilkDrop 式随音乐律动"},
+  {"key": "3d", "name": "3D 渲染", "en": "3D", "color": "#6B7FA8", "look": "三维场景、镜头运动、材质灯光"},
+  {"key": "anime", "name": "二次元 · MMD · VRM", "en": "Anime, MMD & VRM", "color": "#F07AAE", "look": "动漫角色、虚拟形象、舞蹈 MV"},
+  {"key": "particle", "name": "粒子 · 流体 · 物理", "en": "Particles & Physics", "color": "#E58E2A", "look": "烟雾、流体、烟花、碰撞模拟"},
+  {"key": "glitch", "name": "故障 · 后期特效", "en": "Glitch & Post FX", "color": "#D04545", "look": "RGB 偏移、扭曲、辉光、像素排序、合成"},
+  {"key": "pixel", "name": "像素 · 复古", "en": "Pixel & Retro", "color": "#3C9A4F", "look": "低分辨率、有限色板、CRT 扫描线"},
+  {"key": "ascii", "name": "ASCII · 终端", "en": "ASCII & Terminal", "color": "#4BA36B", "look": "字符画、代码雨、终端里的文字特效"},
+  {"key": "data", "name": "数据可视化动画", "en": "Data Animation", "color": "#3E7FB0", "look": "图表生长、条形图竞赛、Git 历史动画"}
+]

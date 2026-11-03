@@ -1,0 +1,515 @@
+<title>代码画风图鉴</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="按画风索引的代码动画、代码做 MV 开源项目合集。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@700;900&display=swap">
+<style>
+/* Layout: a contact sheet of style thumbnails on top, a sortable ledger of projects below. */
+:root {
+  --bg: #F2F3F6;
+  --surface: #FFFFFF;
+  --ink: #141820;
+  --muted: #5B6273;
+  --line: #DADDE5;
+  --chip: #E8EBF2;
+  --accent: #2E49D4;
+  --accent-ink: #FFFFFF;
+  --ok: #1E8A4B;
+  --warn: #A86A10;
+  --warn-bg: #FBF1DF;
+  --off: #8A909D;
+  --font-display: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --font-body: system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F1116; --surface: #171A21; --ink: #E6E8ED; --muted: #9AA1B0; --line: #2A2F3A; --chip: #222631;
+    --accent: #93A5FF; --accent-ink: #0F1116; --ok: #4CC27E; --warn: #E3AE55; --warn-bg: #2B2416; --off: #6B7280;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F1116; --surface: #171A21; --ink: #E6E8ED; --muted: #9AA1B0; --line: #2A2F3A; --chip: #222631;
+  --accent: #93A5FF; --accent-ink: #0F1116; --ok: #4CC27E; --warn: #E3AE55; --warn-bg: #2B2416; --off: #6B7280;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  margin: 0;
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 15px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px 48px;
+}
+.wrap { max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+header { display: flex; flex-direction: column; gap: 14px; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
+h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(34px, 6vw, 56px); line-height: 1.1; margin: 0; text-wrap: balance; letter-spacing: .02em; }
+.lede { margin: 0; max-width: 64ch; color: var(--muted); }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 24px; font-family: var(--font-mono); font-size: 13px; align-items: baseline; }
+.stats b { font-weight: 500; font-size: 20px; color: var(--ink); font-variant-numeric: tabular-nums; margin-right: 6px; }
+.stats span { color: var(--muted); }
+.repo-link { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 8px; padding: 7px 14px; font-weight: 600; font-size: 14px; }
+.repo-link:hover { text-decoration: none; border-color: var(--muted); }
+.repo-link svg { width: 16px; height: 16px; fill: currentColor; }
+
+.picks { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.pick { background: var(--surface); padding: 12px 16px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.pick .k { font-size: 13px; color: var(--muted); }
+.pick .v { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.linkbtn { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font-weight: 600; }
+.linkbtn:hover { text-decoration: underline; }
+
+h2 { font-family: var(--font-display); font-weight: 700; font-size: 24px; margin: 0; }
+.sec-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; margin-bottom: 16px; }
+.hint { color: var(--muted); font-size: 13px; }
+
+.styles { display: grid; grid-template-columns: repeat(auto-fill, minmax(196px, 1fr)); gap: 12px; }
+.style {
+  text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  padding: 0; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; min-width: 0;
+  transition: border-color .15s;
+}
+.style:hover { border-color: var(--muted); }
+.style[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+.style canvas { display: block; width: 100%; height: auto; aspect-ratio: 5 / 2; max-width: 100%; background: #111; }
+.style .body { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 4px; }
+.style .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.style .nm { font-weight: 700; font-size: 15px; }
+.style .ct { font-family: var(--font-mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.style .look { font-size: 12.5px; color: var(--muted); line-height: 1.45; }
+.style .who { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink); opacity: .78; line-height: 1.5; }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin-bottom: 14px; }
+.search { flex: 1 1 260px; min-width: 0; display: flex; }
+.search input { width: 100%; padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.toolbar select { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.toolbar label.chk { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--muted); cursor: pointer; }
+.count { font-family: var(--font-mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.active-filter { display: inline-flex; align-items: center; gap: 6px; background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 999px; padding: 4px 12px; font-size: 13px; cursor: pointer; }
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { width: 100%; border-collapse: collapse; min-width: 1000px; }
+th, td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+tbody tr:last-child td { border-bottom: 0; }
+th { font-size: 12px; font-weight: 600; letter-spacing: .06em; color: var(--muted); background: var(--surface); white-space: nowrap; }
+th.num, td.c-stars { text-align: right; }
+tbody tr:hover td { background: color-mix(in srgb, var(--chip) 45%, transparent); }
+.c-name { width: 200px; }
+.c-name a { font-weight: 700; font-size: 15px; }
+.repo { display: block; font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); word-break: break-all; margin-top: 2px; }
+.c-tags { width: 176px; }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.tag { display: inline-flex; align-items: center; gap: 5px; background: var(--chip); border: 0; border-radius: 6px; padding: 2px 8px; font-size: 12px; cursor: pointer; white-space: nowrap; }
+.tag:hover { box-shadow: inset 0 0 0 1px var(--muted); }
+.tag.on { background: var(--accent); color: var(--accent-ink); }
+.dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.c-desc { min-width: 300px; }
+.desc { margin: 0; }
+.use { margin: 4px 0 0; font-size: 12.5px; color: var(--muted); }
+.note { margin: 6px 0 0; font-size: 12.5px; color: var(--warn); background: var(--warn-bg); border-radius: 6px; padding: 3px 8px; display: inline-block; }
+.c-lang { width: 120px; font-size: 13px; }
+.c-stars { width: 80px; font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-weight: 500; white-space: nowrap; }
+.c-date { width: 124px; font-family: var(--font-mono); font-size: 12.5px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.st { display: flex; align-items: center; gap: 6px; font-family: var(--font-body); font-size: 12px; color: var(--muted); margin-top: 2px; }
+.st i { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+.st.ok i { background: var(--ok); } .st.slow i { background: var(--warn); } .st.off i { background: var(--off); }
+.c-lic { width: 130px; font-size: 12.5px; }
+.c-meta { display: none; }
+.empty { padding: 28px; text-align: center; color: var(--muted); }
+
+footer { font-size: 13px; color: var(--muted); display: flex; flex-direction: column; gap: 6px; max-width: 80ch; }
+footer p { margin: 0; }
+
+@media (max-width: 760px) {
+  body { padding-block: 22px 36px; }
+  .table-wrap { border: 0; background: none; overflow: visible; }
+  table { min-width: 0; }
+  thead { display: none; }
+  table, tbody, tr, td { display: block; }
+  tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name stars" "tags tags" "desc desc" "meta meta"; gap: 8px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-bottom: 10px; }
+  .table-wrap td { padding: 0; border: 0; width: auto; min-width: 0; }
+  tbody tr:hover td { background: none; }
+  .c-name { grid-area: name; } .c-stars { grid-area: stars; } .c-tags { grid-area: tags; } .c-desc { grid-area: desc; }
+  .c-lang, .c-date, .c-lic { display: none; }
+  .c-meta { display: block; grid-area: meta; font-size: 12px; color: var(--muted); }
+}
+@media (max-width: 520px) {
+  .styles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .style .look { display: none; }
+  .style .body { padding: 8px 10px 10px; }
+  .style .nm { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .style { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Awesome Code Animation · 用代码做动画和 MV</div>
+    <h1>代码画风图鉴</h1>
+    <p class="lede">按画风整理的代码动画、代码做 MV 的开源项目。画面都由代码绘制或渲染，不收用视频、图像生成模型出画面的项目。一个项目常能做几种画风，所以会同时出现在几个画风里；点画风卡片就能筛出对应项目。</p>
+    <div class="stats" id="stats"></div>
+    <a class="repo-link" href="__REPO_URL__" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>在 GitHub 上查看和推荐项目</a>
+  </header>
+
+  <section aria-labelledby="picks-h">
+    <div class="sec-head"><h2 id="picks-h">按目的先挑</h2><span class="hint">点名字直接在表里定位</span></div>
+    <div class="picks" id="picks"></div>
+  </section>
+
+  <section aria-labelledby="styles-h">
+    <div class="sec-head"><h2 id="styles-h">画风索引</h2><span class="hint">点一个画风筛选下表，再点一次取消</span></div>
+    <div class="styles" id="styles"></div>
+  </section>
+
+  <section aria-labelledby="table-h" id="table-sec">
+    <div class="sec-head"><h2 id="table-h">项目总表</h2></div>
+    <div class="toolbar">
+      <div class="search"><input id="q" type="search" placeholder="搜项目名、语言、用途，例如 Python、MV、字幕" aria-label="搜索项目"></div>
+      <select id="sort" aria-label="排序">
+        <option value="stars">按星数</option>
+        <option value="pushed">按最近提交</option>
+        <option value="name">按名称</option>
+      </select>
+      <label class="chk"><input id="hide" type="checkbox"> 只看活跃项目</label>
+      <button class="active-filter" id="clear" hidden></button>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>项目</th><th>画风</th><th>说明</th><th>写法</th><th class="num">星数</th><th>最近提交</th><th>许可证</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <div class="empty" id="empty" hidden>没有符合条件的项目，换个关键词或取消画风筛选试试。</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>收录标准：画面由代码绘制或渲染；GitHub 星数 1000 以上，或近一年仍在更新且星数 200 以上；已归档的仓库不收。</p>
+    <p>星数、最近提交时间和许可证来自 GitHub，更新于 __DATE__。状态按最近一次推送计算：半年内为「活跃」，两年内为「放缓」，超过两年为「停更」。</p>
+    <p>许可证写「见仓库」的，是 GitHub 没能自动识别的情况。打算商用前，请到仓库里核对许可证原文。</p>
+  </footer>
+</div>
+
+<script>
+const DATA = __PROJECTS__;
+const STYLES = __STYLES__;
+const PICKS = __PICKS__;
+const SNAPSHOT = Date.parse('__DATE__');
+const SMAP = Object.fromEntries(STYLES.map(s => [s.key, s]));
+const BYREPO = Object.fromEntries(DATA.map(p => [p.repo, p]));
+
+const state = { style: null, q: '', sort: 'stars', active: false };
+
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmtStars = n => n >= 1000 ? (n/1000).toFixed(n >= 100000 ? 0 : 1).replace(/\.0$/, '') + 'k' : String(n);
+const lic = p => p.license_display || (p.license && p.license !== 'NOASSERTION' ? p.license : '见仓库');
+function status(p) {
+  if (p.archived) return ['off','已归档'];
+  const d = (SNAPSHOT - Date.parse(p.pushed_at)) / 864e5;
+  if (d <= 183) return ['ok','活跃'];
+  if (d <= 730) return ['slow','放缓'];
+  return ['off','停更'];
+}
+
+document.getElementById('stats').innerHTML =
+  `<div><b>${DATA.length}</b><span>个项目</span></div>` +
+  `<div><b>${STYLES.length}</b><span>种画风</span></div>` +
+  `<div><b>${DATA.filter(p => status(p)[0] === 'ok').length}</b><span>个半年内仍在更新</span></div>`;
+
+document.getElementById('picks').innerHTML = PICKS.map(pk =>
+  `<div class="pick"><span class="k">${esc(pk.goal)}</span><span class="v">${pk.projects.filter(r => BYREPO[r]).map(r => `<button class="linkbtn" data-find="${esc(r)}">${esc(BYREPO[r].name)}</button>`).join('')}</span></div>`
+).join('');
+
+const stylesEl = document.getElementById('styles');
+stylesEl.innerHTML = STYLES.map(s => {
+  const ps = DATA.filter(p => p.tags.includes(s.key)).sort((a,b) => b.stars - a.stars);
+  const top = ps.slice(0, 8).map(p => esc(p.name)).join(' · ') + (ps.length > 8 ? ` 等 ${ps.length} 个` : '');
+  return `<button class="style" data-style="${s.key}" aria-pressed="false">
+    <canvas width="480" height="192" data-swatch="${s.key}" aria-hidden="true"></canvas>
+    <span class="body">
+      <span class="top"><span class="nm">${esc(s.name)}</span><span class="ct">${ps.length} 个</span></span>
+      <span class="look">${esc(s.look)}</span>
+      <span class="who">${top}</span>
+    </span>
+  </button>`;
+}).join('');
+
+const rowsEl = document.getElementById('rows');
+function render() {
+  const q = state.q.trim().toLowerCase();
+  let list = DATA.filter(p => {
+    if (state.style && !p.tags.includes(state.style)) return false;
+    if (state.active && status(p)[0] !== 'ok') return false;
+    if (!q) return true;
+    const hay = [p.name, p.repo, p.lang, p.use, p.desc, p.note || '', lic(p), ...p.tags.map(t => SMAP[t].name + ' ' + SMAP[t].en)].join(' ').toLowerCase();
+    return hay.includes(q);
+  });
+  if (state.sort === 'stars') list.sort((a,b) => b.stars - a.stars);
+  else if (state.sort === 'pushed') list.sort((a,b) => b.pushed_at.localeCompare(a.pushed_at));
+  else list.sort((a,b) => a.name.localeCompare(b.name, 'zh'));
+
+  rowsEl.innerHTML = list.map(p => {
+    const [cls, label] = status(p);
+    const url = 'https://github.com/' + p.repo;
+    const tags = p.tags.map(t => `<button class="tag${state.style === t ? ' on' : ''}" data-style="${t}"><span class="dot" style="background:${SMAP[t].color}"></span>${esc(SMAP[t].name)}</button>`).join('');
+    return `<tr>
+      <td class="c-name"><a href="${url}" target="_blank" rel="noopener">${esc(p.name)}</a><span class="repo">${esc(p.repo)}</span></td>
+      <td class="c-tags"><div class="tags">${tags}</div></td>
+      <td class="c-desc"><p class="desc">${esc(p.desc)}</p><p class="use">适合：${esc(p.use)}</p>${p.note ? `<p class="note">注意：${esc(p.note)}</p>` : ''}</td>
+      <td class="c-lang">${esc(p.lang)}</td>
+      <td class="c-stars">★ ${fmtStars(p.stars)}</td>
+      <td class="c-date">${p.pushed_at}<span class="st ${cls}"><i></i>${label}</span></td>
+      <td class="c-lic">${esc(lic(p))}</td>
+      <td class="c-meta">${esc(p.lang)} · <span class="st ${cls}" style="display:inline-flex"><i></i>${label}</span> ${p.pushed_at} · ${esc(lic(p))}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('empty').hidden = list.length > 0;
+  document.getElementById('count').textContent = `显示 ${list.length} / ${DATA.length}`;
+  const clear = document.getElementById('clear');
+  clear.hidden = !state.style;
+  if (state.style) clear.textContent = `画风：${SMAP[state.style].name}  ✕`;
+  stylesEl.querySelectorAll('.style').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.style === state.style)));
+}
+const smooth = () => matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+function setStyle(key, scroll) {
+  state.style = state.style === key ? null : key;
+  render();
+  if (scroll && state.style) document.getElementById('table-sec').scrollIntoView({behavior: smooth(), block: 'start'});
+}
+stylesEl.addEventListener('click', e => { const b = e.target.closest('.style'); if (b) setStyle(b.dataset.style, true); });
+rowsEl.addEventListener('click', e => { const b = e.target.closest('.tag'); if (b) setStyle(b.dataset.style, false); });
+document.getElementById('clear').addEventListener('click', () => { state.style = null; render(); });
+document.getElementById('q').addEventListener('input', e => { state.q = e.target.value; render(); });
+document.getElementById('sort').addEventListener('change', e => { state.sort = e.target.value; render(); });
+document.getElementById('hide').addEventListener('change', e => { state.active = e.target.checked; render(); });
+document.getElementById('picks').addEventListener('click', e => {
+  const b = e.target.closest('[data-find]'); if (!b) return;
+  state.style = null; state.q = b.dataset.find; document.getElementById('q').value = state.q; render();
+  document.getElementById('table-sec').scrollIntoView({behavior: smooth(), block: 'start'});
+});
+render();
+
+/* ---------- style swatches: each one a tiny procedural sample of the look ---------- */
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const W = 240, H = 96;
+function fill(c, col) { c.fillStyle = col; c.fillRect(0, 0, W, H); }
+function pixels(c, fn) {
+  const cv = c.canvas, img = c.createImageData(cv.width, cv.height), d = img.data, sx = W / cv.width;
+  for (let y = 0; y < cv.height; y++) for (let x = 0; x < cv.width; x++) {
+    const [r, g, b] = fn(x * sx, y * sx), i = (y * cv.width + x) * 4;
+    d[i] = r * 255; d[i+1] = g * 255; d[i+2] = b * 255; d[i+3] = 255;
+  }
+  c.putImageData(img, 0, 0);
+}
+function wobble(c, pts, r, amp) {
+  for (let pass = 0; pass < 2; pass++) {
+    c.beginPath();
+    pts.forEach(([x, y], i) => { const jx = x + (r() - .5) * amp, jy = y + (r() - .5) * amp; i ? c.lineTo(jx, jy) : c.moveTo(jx, jy); });
+    c.stroke();
+  }
+}
+const SW = {
+  math(c) {
+    fill(c, '#1C1E24');
+    c.strokeStyle = '#2A2E37'; c.lineWidth = 1;
+    for (let x = 0; x <= W; x += 20) { c.beginPath(); c.moveTo(x, 0); c.lineTo(x, H); c.stroke(); }
+    for (let y = 8; y <= H; y += 20) { c.beginPath(); c.moveTo(0, y); c.lineTo(W, y); c.stroke(); }
+    c.strokeStyle = '#8A909C'; c.lineWidth = 1.5;
+    c.beginPath(); c.moveTo(0, 48); c.lineTo(W, 48); c.moveTo(40, 0); c.lineTo(40, H); c.stroke();
+    c.strokeStyle = '#58C4DD'; c.lineWidth = 3; c.beginPath();
+    for (let x = 0; x <= W; x += 2) { const y = 48 - 28 * Math.sin((x - 40) / 22); x ? c.lineTo(x, y) : c.moveTo(x, y); } c.stroke();
+    const px = 150, py = 48 - 28 * Math.sin((px - 40) / 22), sl = -28 / 22 * Math.cos((px - 40) / 22);
+    c.strokeStyle = '#FFE36E'; c.lineWidth = 2; c.setLineDash([5, 4]);
+    c.beginPath(); c.moveTo(px - 40, py - sl * 40); c.lineTo(px + 40, py + sl * 40); c.stroke(); c.setLineDash([]);
+    c.fillStyle = '#FFE36E'; c.beginPath(); c.arc(px, py, 4.5, 0, 7); c.fill();
+  },
+  mg(c) {
+    fill(c, '#21404D');
+    c.fillStyle = '#E9C46A'; c.beginPath(); c.arc(64, 50, 30, 0, 7); c.fill();
+    c.save(); c.translate(140, 50); c.rotate(.5); c.fillStyle = '#F08A4B'; c.fillRect(-22, -22, 44, 44); c.restore();
+    c.strokeStyle = '#2A9D8F'; c.lineWidth = 7; c.beginPath(); c.arc(200, 48, 22, -1.2, 3.6); c.stroke();
+    c.fillStyle = '#F4F1EE'; for (let i = 0; i < 5; i++) { c.beginPath(); c.arc(30 + i * 14, 86, 3, 0, 7); c.fill(); }
+    c.strokeStyle = '#F4F1EE'; c.lineWidth = 2; c.beginPath(); c.moveTo(100, 14); c.lineTo(120, 14); c.moveTo(110, 4); c.lineTo(110, 24); c.stroke();
+  },
+  code(c) {
+    fill(c, '#16181D');
+    const r = rng(7), cols = ['#C792EA', '#82AAFF', '#C3E88D', '#F78C6C', '#89DDFF', '#697098'];
+    c.fillStyle = '#20232B'; c.fillRect(0, 0, 22, H);
+    for (let i = 0; i < 7; i++) {
+      const y = 9 + i * 12; c.fillStyle = '#3A3F4B'; c.fillRect(8, y, 7, 4);
+      let x = 32 + (i % 3 === 1 ? 14 : i % 3 === 2 ? 28 : 0);
+      const n = 2 + Math.floor(r() * 4);
+      for (let k = 0; k < n && x < W - 10; k++) { const w = 10 + r() * 34; c.fillStyle = cols[Math.floor(r() * cols.length)]; c.fillRect(x, y, w, 5); x += w + 6; }
+    }
+    c.fillStyle = 'rgba(130,170,255,.14)'; c.fillRect(22, 41, W, 13);
+  },
+  type(c) {
+    fill(c, '#0D0C10');
+    c.font = '900 60px "Noto Serif SC", "Songti SC", serif'; c.textBaseline = 'middle';
+    c.fillStyle = '#FF3D7F'; c.fillText('歌词', 34, 51);
+    c.fillStyle = '#FFFFFF'; c.fillText('歌词', 30, 47);
+    c.fillStyle = '#FFE14D'; c.fillRect(160, 56, 66, 15);
+    c.font = '500 11px "IBM Plex Mono", monospace'; c.fillStyle = '#0D0C10'; c.fillText('00:01:24', 166, 64);
+  },
+  short(c) {
+    fill(c, '#121212');
+    c.fillStyle = '#2C2C2C';
+    for (let x = 6; x < W; x += 16) { c.fillRect(x, 4, 8, 6); c.fillRect(x, H - 10, 8, 6); }
+    const fr = [['#3D5A80', '#98C1D9'], ['#7B2D26', '#F4A259'], ['#2D6A4F', '#B7E4C7']];
+    fr.forEach(([a, b], i) => { const g = c.createLinearGradient(0, 16, 0, 80); g.addColorStop(0, b); g.addColorStop(1, a); c.fillStyle = g; c.fillRect(8 + i * 78, 16, 70, 64); });
+    c.fillStyle = 'rgba(0,0,0,.6)'; c.fillRect(92, 62, 62, 13);
+    c.fillStyle = '#FFFFFF'; c.fillRect(96, 66, 18, 5); c.fillStyle = '#FFE14D'; c.fillRect(118, 65, 16, 7); c.fillStyle = '#FFFFFF'; c.fillRect(138, 66, 12, 5);
+  },
+  agent(c) {
+    fill(c, '#111318');
+    c.fillStyle = '#1A1D24'; c.fillRect(0, 0, 108, H);
+    c.font = '500 11px "IBM Plex Mono", monospace'; c.textBaseline = 'top';
+    c.fillStyle = '#7EE787'; c.fillText('>', 8, 9);
+    const r = rng(13), cols = ['#8B949E', '#D2A8FF', '#79C0FF', '#FFA657'];
+    for (let i = 0; i < 6; i++) {
+      let x = i ? 14 : 20; const y = 12 + i * 12;
+      for (let k = 0; k < 3 && x < 100; k++) { const w = 8 + r() * 22; c.fillStyle = cols[(i + k) % cols.length]; c.fillRect(x, y, Math.min(w, 100 - x), 4); x += w + 5; }
+    }
+    c.fillStyle = '#7EE787'; c.fillRect(8, 84, 6, 9);
+    c.strokeStyle = '#30363D'; c.lineWidth = 1; c.strokeRect(118.5, 10.5, 112, 63);
+    const g = c.createLinearGradient(119, 11, 230, 73); g.addColorStop(0, '#2B1F4A'); g.addColorStop(1, '#14243D'); c.fillStyle = g; c.fillRect(119, 11, 111, 62);
+    c.fillStyle = 'rgba(146,101,217,.35)'; for (let i = 0; i < 4; i++) { c.beginPath(); c.arc(140 + i * 14, 50 - i * 6, 9, 0, 7); c.fill(); }
+    c.fillStyle = '#C9A7FF'; c.beginPath(); c.arc(198, 30, 11, 0, 7); c.fill();
+    c.fillStyle = '#30363D'; c.fillRect(118, 82, 112, 4); c.fillStyle = '#9265D9'; c.fillRect(118, 82, 70, 4);
+    c.fillStyle = '#FFFFFF'; c.fillRect(187, 79, 2, 10);
+  },
+  hand(c) {
+    fill(c, '#F6F2E7');
+    const r = rng(3);
+    [['rgba(84,140,200,.20)', 70, 50, 34], ['rgba(230,120,90,.20)', 170, 44, 28], ['rgba(120,170,90,.18)', 128, 70, 24]].forEach(([col, x, y, rad]) => {
+      c.fillStyle = col; for (let k = 0; k < 4; k++) { c.beginPath(); c.arc(x + (r() - .5) * 10, y + (r() - .5) * 8, rad * (0.7 + r() * .4), 0, 7); c.fill(); }
+    });
+    c.strokeStyle = '#34322E'; c.lineWidth = 1.4; c.lineCap = 'round';
+    wobble(c, [[40, 28], [100, 26], [102, 72], [38, 74], [40, 28]], r, 3);
+    const circ = []; for (let a = 0; a <= 6.4; a += .4) circ.push([170 + 26 * Math.cos(a), 46 + 24 * Math.sin(a)]); wobble(c, circ, r, 3);
+    wobble(c, [[108, 50], [138, 48]], r, 2); wobble(c, [[130, 42], [140, 48], [130, 55]], r, 2);
+  },
+  gen(c) {
+    fill(c, '#0D1014');
+    const r = rng(11); c.lineWidth = 1; c.globalAlpha = .6;
+    for (let i = 0; i < 150; i++) {
+      let x = r() * W, y = r() * H; c.strokeStyle = `hsl(${170 + (x / W) * 110}, 70%, 62%)`; c.beginPath(); c.moveTo(x, y);
+      for (let s = 0; s < 26; s++) { const a = Math.sin(x * .028) * 1.6 + Math.cos(y * .045) * 1.6; x += Math.cos(a) * 3; y += Math.sin(a) * 3; c.lineTo(x, y); }
+      c.stroke();
+    }
+    c.globalAlpha = 1;
+  },
+  shader(c) {
+    pixels(c, (x, y) => {
+      const v = Math.sin(x * .05) + Math.sin(y * .09 + x * .02) + Math.sin(Math.hypot(x - 150, y - 40) * .09) + Math.sin((x + y) * .03);
+      const t = v * .18;
+      return [.5 + .5 * Math.cos(6.283 * (t + .0)), .5 + .5 * Math.cos(6.283 * (t + .33)), .5 + .5 * Math.cos(6.283 * (t + .67))];
+    });
+  },
+  live(c) {
+    pixels(c, (x, y) => {
+      const v = Math.sin(x * .11 + Math.sin(y * .06) * 3.2) * Math.cos(y * .05 - x * .01);
+      const q = Math.floor(v * 4) / 4;
+      return [.5 + .5 * Math.sin(q * 3 + 0.5), .3 + .3 * Math.sin(q * 3 + 2 + y * .03), .55 + .45 * Math.sin(q * 3 + 4)];
+    });
+  },
+  audio(c) {
+    fill(c, '#0B0D12');
+    const r = rng(5), n = 40, bw = W / n, g = c.createLinearGradient(0, 10, 0, 60);
+    g.addColorStop(0, '#A78BFA'); g.addColorStop(1, '#5EEAD4');
+    for (let i = 0; i < n; i++) {
+      const f = i / n, h = (Math.exp(-f * 2.2) * .8 + .2) * (0.35 + r() * .65) * 46;
+      c.fillStyle = g; c.fillRect(i * bw + 1, 60 - h, bw - 2, h);
+      c.globalAlpha = .22; c.fillRect(i * bw + 1, 62, bw - 2, h * .5); c.globalAlpha = 1;
+    }
+  },
+  '3d'(c) {
+    const g = c.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#1C2029'); g.addColorStop(1, '#0C0E12'); c.fillStyle = g; c.fillRect(0, 0, W, H);
+    c.strokeStyle = '#2C3442'; c.lineWidth = 1;
+    for (let i = -10; i <= 10; i++) { c.beginPath(); c.moveTo(120 + i * 6, 58); c.lineTo(120 + i * 40, H); c.stroke(); }
+    for (let k = 0; k < 5; k++) { const y = 58 + Math.pow(k / 4, 1.8) * 38; c.beginPath(); c.moveTo(0, y); c.lineTo(W, y); c.stroke(); }
+    c.fillStyle = 'rgba(0,0,0,.5)'; c.beginPath(); c.ellipse(124, 78, 30, 6, 0, 0, 7); c.fill();
+    const s = c.createRadialGradient(110, 32, 3, 120, 46, 32); s.addColorStop(0, '#FFFFFF'); s.addColorStop(.25, '#9DB8FF'); s.addColorStop(1, '#1D2A52');
+    c.fillStyle = s; c.beginPath(); c.arc(120, 46, 28, 0, 7); c.fill();
+  },
+  anime(c) {
+    const g = c.createLinearGradient(0, 0, W, H); g.addColorStop(0, '#FFD3E7'); g.addColorStop(1, '#C8D6FF'); c.fillStyle = g; c.fillRect(0, 0, W, H);
+    c.fillStyle = '#FF8FB8'; c.beginPath(); c.arc(120, 50, 30, 0, 7); c.fill();
+    c.save(); c.beginPath(); c.arc(120, 50, 30, 0, 7); c.clip(); c.fillStyle = '#E2669A'; c.beginPath(); c.arc(136, 62, 30, 0, 7); c.fill(); c.restore();
+    c.fillStyle = '#FFFFFF'; c.beginPath(); c.ellipse(108, 38, 8, 5, -.6, 0, 7); c.fill();
+    const star = (x, y, s) => { c.beginPath(); c.moveTo(x, y - s); c.quadraticCurveTo(x, y, x + s, y); c.quadraticCurveTo(x, y, x, y + s); c.quadraticCurveTo(x, y, x - s, y); c.quadraticCurveTo(x, y, x, y - s); c.fill(); };
+    star(48, 30, 10); star(196, 24, 7); star(184, 70, 11); star(66, 72, 6);
+  },
+  particle(c) {
+    fill(c, '#07080C');
+    const r = rng(9); c.globalCompositeOperation = 'lighter';
+    for (let i = 0; i < 300; i++) {
+      const a = r() * 6.283, d = Math.pow(r(), .6) * 46, sw = a + d * .06;
+      const x = 120 + Math.cos(sw) * d * 2.2, y = 48 + Math.sin(sw) * d * .9;
+      c.fillStyle = `hsla(${d < 18 ? 38 : 200 + r() * 40}, 90%, ${55 + r() * 25}%, ${.35 + r() * .5})`;
+      c.beginPath(); c.arc(x, y, .6 + r() * 1.6, 0, 7); c.fill();
+    }
+    const glow = c.createRadialGradient(120, 48, 0, 120, 48, 30); glow.addColorStop(0, 'rgba(255,190,110,.55)'); glow.addColorStop(1, 'rgba(255,190,110,0)');
+    c.fillStyle = glow; c.fillRect(0, 0, W, H); c.globalCompositeOperation = 'source-over';
+  },
+  glitch(c) {
+    fill(c, '#0E0E12');
+    c.font = '900 46px "IBM Plex Mono", monospace'; c.textBaseline = 'middle'; c.textAlign = 'center';
+    c.globalCompositeOperation = 'lighter';
+    c.fillStyle = '#FF2A55'; c.fillText('GLITCH', 116, 49);
+    c.fillStyle = '#00E5FF'; c.fillText('GLITCH', 124, 47);
+    c.globalCompositeOperation = 'source-over'; c.textAlign = 'start';
+    const cv = c.canvas, k = cv.width / W, r = rng(4);
+    for (let i = 0; i < 7; i++) {
+      const y = Math.floor(r() * cv.height), h = Math.floor(4 + r() * 16 * k), dx = Math.floor((r() - .5) * 30 * k);
+      const strip = c.getImageData(0, y, cv.width, h); c.putImageData(strip, dx, y);
+    }
+    c.fillStyle = 'rgba(255,255,255,.08)'; for (let y = 0; y < H; y += 3) c.fillRect(0, y, W, 1);
+  },
+  pixel(c) {
+    const p = 8; fill(c, '#1D2B53');
+    const px = (x, y, col) => { c.fillStyle = col; c.fillRect(x * p, y * p, p, p); };
+    [[3, 1], [9, 2], [14, 1], [24, 2], [28, 1], [19, 3]].forEach(([x, y]) => px(x, y, '#FFF1E8'));
+    for (let x = 23; x < 27; x++) for (let y = 3; y < 7; y++) if (!((x === 23 || x === 26) && (y === 3 || y === 6))) px(x, y, '#FFA300');
+    const m = [7, 6, 5, 4, 5, 6, 5, 4, 3, 4, 5, 6, 7, 6, 5, 6, 7, 8, 7, 6, 5, 6, 7, 8, 7, 6, 7, 8, 8, 8];
+    m.forEach((top, x) => { for (let y = top; y < 10; y++) px(x, y, '#5F574F'); });
+    for (let x = 0; x < 30; x++) { px(x, 10, '#008751'); px(x, 11, '#00512F'); }
+    [[10, 8, '#FF004D'], [11, 8, '#FF004D'], [10, 9, '#FFCCAA'], [11, 9, '#FFCCAA'], [10, 7, '#FF004D']].forEach(([x, y, col]) => px(x, y, col));
+  },
+  ascii(c) {
+    fill(c, '#0A0F0B');
+    const ramp = ' .:-=+*#%@'; c.font = '500 9px "IBM Plex Mono", monospace'; c.textBaseline = 'top';
+    for (let y = 0; y < H; y += 9) for (let x = 0; x < W; x += 6) {
+      const v = (Math.sin(Math.hypot(x - 120, (y - 48) * 2) * .08) + 1) / 2 * (1 - Math.hypot(x - 120, (y - 48) * 2) / 160);
+      const ch = ramp[Math.max(0, Math.min(9, Math.floor(v * 10)))];
+      c.fillStyle = `rgba(124,252,154,${.35 + v * .65})`; c.fillText(ch, x, y);
+    }
+  },
+  data(c) {
+    fill(c, '#13161C');
+    const vals = [.92, .78, .66, .55, .41, .30], cols = ['#4F7BE0', '#E07A3F', '#2F9E8F', '#D9466F', '#C9A227', '#8A6BD6'];
+    vals.forEach((v, i) => { c.fillStyle = '#2A2F3A'; c.fillRect(10, 10 + i * 13, 22, 8); c.fillStyle = cols[i]; c.fillRect(38, 9 + i * 13, v * 190, 10); });
+    c.strokeStyle = '#3A4050'; c.lineWidth = 1; c.beginPath(); c.moveTo(37, 4); c.lineTo(37, 90); c.stroke();
+    c.font = '500 10px "IBM Plex Mono", monospace'; c.fillStyle = '#9AA1B0'; c.textBaseline = 'top'; c.fillText('2026', 200, 82);
+  }
+};
+function drawSwatches() {
+  document.querySelectorAll('canvas[data-swatch]').forEach(cv => {
+    const c = cv.getContext('2d'); if (!c) return;
+    c.setTransform(cv.width / W, 0, 0, cv.height / H, 0, 0);
+    try { SW[cv.dataset.swatch](c); } catch (e) { /* a swatch failing must not break the page */ }
+  });
+}
+drawSwatches();
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawSwatches).catch(() => {});
+</script>
