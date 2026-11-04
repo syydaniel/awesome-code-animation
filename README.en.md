@@ -12,6 +12,60 @@
 
 </div>
 
+<a name="showcase"></a>
+
+## 🎬 Showcase
+
+[![画风不合 (Clashing Styles)](docs/showcase/huafeng-buhe-cover.jpg)](https://syydaniel.github.io/awesome-code-animation/#showcase)
+
+**画风不合 (Clashing Styles)** · by [syydaniel](https://github.com/syydaniel)
+
+[▶ Watch the full film, with sound](https://syydaniel.github.io/awesome-code-animation/#showcase) · [Watch on Bilibili](https://www.bilibili.com/video/BV1DNxU6WEqv/)
+
+The promo film for this list. He lives in a line of code, she sits on a sheet of watercolor paper, and they keep switching styles to reach each other, always one frame apart. The film moves through 18 styles and 28 looks. All of it is rendered by code, with no AI-generated video, and each shot names its tools in the corner.
+
+The song's lyrics, music and vocals are AI-made: Claude Code wrote the lyrics, and ACE-Step 1.5 composed and sang. Claude Code also wrote the code. Edited in DaVinci Resolve.
+
+The 159 and 18 at the end were the numbers when the film was made. The list has grown since, and the 18th style, AI-written code, no longer has its own category. Shiki and Claude Code are not in this list. Every other tool is.
+
+Built with: [Manim 社区版](https://github.com/ManimCommunity/manim) · [MathBox](https://github.com/unconed/mathbox) · [GSAP](https://github.com/greensock/GSAP) · [anime.js](https://github.com/juliangarnier/anime) · [mo.js](https://github.com/mojs/mojs) · [Zdog](https://github.com/metafizzy/zdog) · [PixiJS](https://github.com/pixijs/pixijs) · [Shiki](https://github.com/shikijs/shiki) · [Splitting](https://github.com/shshaw/Splitting) · [Claude Code](https://github.com/anthropics/claude-code) · [p5.brush](https://github.com/acamposuribe/p5.brush) · [Rough.js](https://github.com/rough-stuff/rough) · [p5.js](https://github.com/processing/p5.js) · [Paper.js](https://github.com/paperjs/paper.js) · [LYGIA](https://github.com/patriciogonzalezvivo/lygia) · [Paper Shaders](https://github.com/paper-design/shaders) · [Hydra](https://github.com/hydra-synth/hydra) · [Butterchurn](https://github.com/jberg/butterchurn) · [three.js](https://github.com/mrdoob/three.js) · [postprocessing](https://github.com/pmndrs/postprocessing) · [Vanta.js](https://github.com/tengbao/vanta) · [three-vrm](https://github.com/pixiv/three-vrm) · [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) · [Matter.js](https://github.com/liabru/matter-js) · [Taichi](https://github.com/taichi-dev/taichi) · [pixelsort](https://github.com/satyarth/pixelsort) · [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) · [TerminalTextEffects](https://github.com/ChrisBuilds/terminaltexteffects) · [D3](https://github.com/d3/d3) · [Apache ECharts](https://github.com/apache/echarts) · [Gource](https://github.com/acaudwell/Gource) · [deck.gl](https://github.com/visgl/deck.gl) · [GL Transitions](https://github.com/gl-transitions/gl-transitions)
+
+<details><summary>Which tools made each of the 18 styles and 28 looks</summary>
+
+| Style | Tools | At | How it's used |
+| --- | --- | --- | --- |
+| [Math Explainer](#math) | [Manim 社区版](https://github.com/ManimCommunity/manim) | [00:10](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=10) | Every frame is rendered by Manim Community, then played back on the beat |
+|  | [MathBox](https://github.com/unconed/mathbox) | [01:13](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=73) | A 3D surface that folds into a heart-shaped level set on the beat, with the equation beside it |
+| [Motion Graphics](#mg) | [GSAP](https://github.com/greensock/GSAP) · [anime.js](https://github.com/juliangarnier/anime) · [mo.js](https://github.com/mojs/mojs) | [00:52](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=52) | GSAP and anime.js timelines, with bursts and streaks from mo.js |
+|  | [Zdog](https://github.com/metafizzy/zdog) | [02:40](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=160) | A toy box where the characters and every prop are Zdog shapes |
+|  | [PixiJS](https://github.com/pixijs/pixijs) | [02:41](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=161) | A neon night street, with wet reflections, glow and shockwaves from pixi-filters |
+| [Code & Terminal Demo](#code) | [Shiki](https://github.com/shikijs/shiki) | [00:11](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=11) | The editor shows this film's own script, highlighted by Shiki |
+| [Kinetic Type & Lyrics](#type) | [Splitting](https://github.com/shshaw/Splitting) · [GSAP](https://github.com/greensock/GSAP) | [00:49](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=49) | Splitting breaks up the glyphs and GSAP drives each one |
+| [Shorts, Captions & Editing](#short) | [GSAP](https://github.com/greensock/GSAP) | [01:37](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=97) | Phones slide past while captions bounce in one word at a time |
+| AI-written code | [Claude Code](https://github.com/anthropics/claude-code) | [00:08](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=8) | A terminal prints this film's file names, commands and source next to a preview window |
+| [Hand-drawn & Whiteboard](#hand) | [p5.brush](https://github.com/acamposuribe/p5.brush) · [Rough.js](https://github.com/rough-stuff/rough) | [00:23](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=23) | p5.brush paints the watercolor and Rough.js draws the pencil lines |
+| [Generative Art](#gen) | [p5.js](https://github.com/processing/p5.js) | [01:11](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=71) | A flow-field print whose lines bend around the character, leaving it as negative space |
+|  | [Paper.js](https://github.com/paperjs/paper.js) | [00:34](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=34) | A liquid Bauhaus poster of vector paths that morph on the beat |
+| [Shaders & Psychedelic](#shader) | [LYGIA](https://github.com/patriciogonzalezvivo/lygia) · [Paper Shaders](https://github.com/paper-design/shaders) | [01:18](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=78) | Color fields from LYGIA's GLSL functions, with a vein layer from Paper Shaders' neuro-noise |
+| [Live Coding & VJ](#live) | [Hydra](https://github.com/hydra-synth/hydra) | [01:22](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=82) | The code on screen is the code running: each finished line changes the picture |
+| [Music Visualization](#audio) | [Butterchurn](https://github.com/jberg/butterchurn) | [01:23](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=83) | Butterchurn is fed the song's own audio, over a real spectrum on the ground line |
+| [3D](#3d) | [three.js](https://github.com/mrdoob/three.js) · [postprocessing](https://github.com/pmndrs/postprocessing) | [00:54](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=54) | A PBR character, mirror floor and glowing grid, with bloom and depth of field |
+|  | [Vanta.js](https://github.com/tengbao/vanta) | [00:50](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=50) | Vanta.js birds flock around the character and sometimes form a heart |
+| [Anime, MMD & VRM](#anime) | [three-vrm](https://github.com/pixiv/three-vrm) | [02:32](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=152) | The same model as the 3D world, restyled with MToon toon shading |
+| [Particles & Physics](#particle) | [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) | [01:24](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=84) | A GPU fluid solver, with the scarf pouring ink into the flow |
+|  | [Matter.js](https://github.com/liabru/matter-js) | [00:46](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=46) | The title's glyphs and black blocks rain down and land on the beat |
+|  | [Taichi](https://github.com/taichi-dev/taichi) | [01:45](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=105) | 104,000 MLS-MPM particles, baked ahead of time to an image sequence |
+| [Glitch & Post FX](#glitch) | [postprocessing](https://github.com/pmndrs/postprocessing) · [pixelsort](https://github.com/satyarth/pixelsort) | [01:26](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=86) | Plates sorted by pixelsort, with glitch and chromatic aberration from postprocessing |
+| [Pixel & Retro](#pixel) | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | [00:56](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=56) | A 320×180 8-bit platformer, through the crt-lottes CRT shader |
+| [ASCII & Terminal](#ascii) | [TerminalTextEffects](https://github.com/ChrisBuilds/terminaltexteffects) | [00:15](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=15) | Boot text from TerminalTextEffects, with the scene turned into characters by brightness |
+| [Data Animation](#data) | [D3](https://github.com/d3/d3) | [00:37](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=37) | A dark dashboard charting the GitHub stars of projects in this list |
+|  | [Apache ECharts](https://github.com/apache/echarts) | [02:43](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=163) | A constellation of all 159 projects the list had at the time |
+|  | [Gource](https://github.com/acaudwell/Gource) | [01:44](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=104) | The real commit history of three.js growing into a tree of light |
+|  | [deck.gl](https://github.com/visgl/deck.gl) | [01:45](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=105) | 160,000 points aggregated into an isometric data city |
+| Transitions | [GL Transitions](https://github.com/gl-transitions/gl-transitions) | Throughout | 42 kinds of transition across 108 shots |
+
+</details>
+
 ## What this is
 
 Pick a look first, then a tool. Every project here draws or renders its frames in code: Manim-style math explainers, flat motion graphics, shaders, pixel art, ASCII, music visualizers, MMD dance videos, ink-wash landscapes, oscilloscope art, plotter drawings and more. A project that can do several looks appears under each of them.
@@ -1468,4 +1522,4 @@ Suggest a project through [an issue](https://github.com/syydaniel/awesome-code-a
 
 ## License
 
-The curation is released under [CC0 1.0](LICENSE). Each project keeps its own license.
+The curation is released under [CC0 1.0](LICENSE). Works in `docs/showcase/` (videos and posters) stay with their authors and are not covered by CC0. Each project keeps its own license.

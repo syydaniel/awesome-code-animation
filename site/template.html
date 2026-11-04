@@ -256,6 +256,30 @@ tbody tr:hover td { background: color-mix(in srgb, var(--chip) 45%, transparent)
 .sc-links { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 14px; margin-top: auto; }
 @media (max-width: 760px) { .sc-card { grid-template-columns: minmax(0, 1fr); } }
 
+.sc-media { align-self: start; }
+.sc-media [hidden] { display: none; }
+.sc-media iframe { width: 100%; height: 100%; display: block; border: 0; background: #000; }
+.sc-note { margin: 0; font-size: 13px; color: var(--muted); }
+.sc-src { display: flex; flex-wrap: wrap; gap: 6px; }
+.sc-src button { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 3px 11px; font-size: 13px; cursor: pointer; }
+.sc-src button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.sc-break { grid-column: 1 / -1; border-top: 1px solid var(--line); min-width: 0; }
+.sc-break summary { padding: 12px 20px; cursor: pointer; font-weight: 700; }
+.sc-break summary .hint { margin-left: 10px; font-weight: 400; font-size: 12px; color: var(--muted); }
+.sc-table { min-width: 0; font-size: 14px; }
+.sc-table td { padding: 8px 14px; }
+.sc-table th:first-child, .sc-table .sc-s { padding-left: 20px; }
+.sc-table .sc-s { width: 190px; }
+.sc-table .sc-s button { background: none; border: 0; padding: 0; color: inherit; font-weight: 600; cursor: pointer; text-align: left; }
+.sc-table .sc-s .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+.sc-table .sc-s button:hover, .sc-table .sc-n button:hover, .sc-table .sc-t button:hover { text-decoration: underline; }
+.sc-table .sc-n { width: 260px; }
+.sc-table .sc-n button { background: none; border: 0; padding: 0; color: var(--accent); font-weight: 600; cursor: pointer; text-align: left; }
+.sc-table .sc-n a { font-weight: 600; }
+.sc-table .sc-t { width: 84px; font-family: var(--font-mono); font-size: 13px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sc-table .sc-t button { background: none; border: 0; padding: 0; color: var(--accent); font: inherit; cursor: pointer; }
+.sc-table .sc-w { color: var(--muted); }
+
 footer { font-size: 13px; color: var(--muted); display: flex; flex-direction: column; gap: 6px; max-width: 80ch; }
 footer p { margin: 0; }
 
@@ -267,6 +291,11 @@ footer p { margin: 0; }
   table, tbody, tr, td { display: block; }
   tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name stars" "tags tags" "desc desc" "meta meta"; gap: 8px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-bottom: 10px; }
   .table-wrap td { padding: 0; border: 0; width: auto; min-width: 0; }
+  .sc-table tr { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "style style" "time tools" "what what"; gap: 4px 10px; background: none; border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 10px 16px; margin: 0; }
+  .sc-table td, .sc-table .sc-s { padding: 0; border: 0; width: auto; min-width: 0; }
+  .sc-table .sc-s { grid-area: style; } .sc-table .sc-t { grid-area: time; } .sc-table .sc-n { grid-area: tools; } .sc-table .sc-w { grid-area: what; font-size: 13px; }
+  .sc-break summary { padding: 12px 16px; }
+  .sc-break summary .hint { display: block; margin: 4px 0 0; }
   tbody tr:hover td { background: none; }
   .c-name { grid-area: name; } .c-stars { grid-area: stars; } .c-tags { grid-area: tags; } .c-desc { grid-area: desc; }
   .c-lang, .c-date, .c-lic { display: none; }
@@ -448,19 +477,92 @@ if (SHOWCASE.length) {
     const media = it.video
       ? `<video controls playsinline preload="metadata" ${it.poster ? `poster="${esc(it.poster)}"` : ''} src="${esc(it.video)}"></video>`
       : (it.poster ? `<img src="${esc(it.poster)}" alt="${esc(it.title)}"><a class="sc-play" href="${esc(it.watch)}" target="_blank" rel="noopener">▶ 在网页版观看</a>` : '');
-    const tools = (it.tools || []).map(r => BYREPO[r] ? `<button type="button" data-find="${esc(r)}">${esc(BYREPO[r].name)}</button>` : `<button type="button" onclick="window.open('https://github.com/${esc(r)}','_blank')">${esc(r)}</button>`).join('');
-    const styles = (it.styles || []).filter(s => SMAP[s]).map(s => `<button type="button" data-sc-style="${s}"><span class="dot" style="background:${SMAP[s].color};display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px"></span>${esc(SMAP[s].name)}</button>`).join('');
+    // 写了 breakdown 的作品，工具和画风都在说明表里，不再重复放标签
+    const tools = it.breakdown ? '' : (it.tools || []).map(r => BYREPO[r] ? `<button type="button" data-find="${esc(r)}">${esc(BYREPO[r].name)}</button>` : `<button type="button" onclick="window.open('https://github.com/${esc(r)}','_blank')">${esc(r)}</button>`).join('');
+    const styles = it.breakdown ? '' : (it.styles || []).filter(s => SMAP[s]).map(s => `<button type="button" data-sc-style="${s}"><span class="dot" style="background:${SMAP[s].color};display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px"></span>${esc(SMAP[s].name)}</button>`).join('');
     const links = (it.links || []).map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join('');
-    return `<article class="sc-card"><div class="sc-media">${media}</div><div class="sc-info">
+    const sources = it.video && it.bilibili ? `<div class="sc-src" role="group" aria-label="播放源"><button type="button" data-sc-src="self" aria-pressed="true">${esc(it.video_label || '本站')}</button><button type="button" data-sc-src="bili" aria-pressed="false">B 站播放器</button></div>` : '';
+    return `<article class="sc-card"${it.bilibili ? ` data-bvid="${esc(it.bilibili)}"` : ''}><div class="sc-media">${media}</div><div class="sc-info">
       <h3>${esc(it.title)}</h3>
       ${it.author ? `<span class="sc-by">作者 ${it.author_url ? `<a href="${esc(it.author_url)}" target="_blank" rel="noopener">${esc(it.author)}</a>` : esc(it.author)}</span>` : ''}
       ${it.desc ? `<p class="sc-desc">${esc(it.desc)}</p>` : ''}
+      ${it.credits ? `<p class="sc-desc">${esc(it.credits)}</p>` : ''}
+      ${it.note ? `<p class="sc-note">${esc(it.note)}</p>` : ''}
       ${tools ? `<span class="sc-k">用到的工具</span><div class="sc-tools">${tools}</div>` : ''}
       ${styles ? `<span class="sc-k">画风</span><div class="sc-tools">${styles}</div>` : ''}
+      ${sources}
+      ${sources && it.player_note ? `<p class="sc-note">${esc(it.player_note)}</p>` : ''}
       ${links ? `<div class="sc-links">${links}</div>` : ''}
-    </div></article>`;
+    </div>${scBreakdown(it)}</article>`;
   }).join('');
-  document.getElementById('sc-list').addEventListener('click', e => { const b = e.target.closest('[data-sc-style]'); if (b) setStyle(b.dataset.scStyle, true); });
+  document.getElementById('sc-list').addEventListener('click', e => {
+    const b = e.target.closest('[data-sc-style]'); if (b) { setStyle(b.dataset.scStyle, true); return; }
+    const src = e.target.closest('[data-sc-src]');
+    if (src) {
+      const card = src.closest('.sc-card'), video = card.querySelector('video');
+      scPlayer(card, src.dataset.scSrc, src.dataset.scSrc === 'bili' ? video.currentTime : null, false);
+      return;
+    }
+    const seek = e.target.closest('[data-seek]');
+    if (seek) {
+      const card = seek.closest('.sc-card');
+      scPlayer(card, card.dataset.src || 'self', +seek.dataset.seek, true);
+      card.querySelector('.sc-media').scrollIntoView({ block: 'nearest' });
+    }
+  });
+}
+
+function scTool(r, it) {
+  return BYREPO[r]
+    ? `<button type="button" data-find="${esc(r)}">${esc(BYREPO[r].name)}</button>`
+    : `<a href="https://github.com/${esc(r)}" target="_blank" rel="noopener">${esc((it.names || {})[r] || r)} ↗</a>`;
+}
+
+// 工具说明表：同一种画风的行合并，点时间跳到片中位置
+function scBreakdown(it) {
+  const rows = it.breakdown || [];
+  if (!rows.length) return '';
+  const key = b => b.style || b.style_name;
+  const mmss = t => `${String(Math.floor(t / 60)).padStart(2, '0')}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
+  const body = rows.map((b, i) => {
+    const first = !i || key(rows[i - 1]) !== key(b);
+    let span = 1;
+    while (first && rows[i + span] && key(rows[i + span]) === key(b)) span++;
+    const name = SMAP[b.style]
+      ? `<button type="button" data-sc-style="${esc(b.style)}"><span class="dot" style="background:${SMAP[b.style].color}"></span>${esc(SMAP[b.style].name)}</button>`
+      : esc(b.style_name || '');
+    const time = b.t == null ? '全片' : (it.video ? `<button type="button" data-seek="${b.t}" aria-label="跳到 ${mmss(b.t)}">${mmss(b.t)}</button>` : mmss(b.t));
+    return `<tr>${first ? `<td class="sc-s" rowspan="${span}">${name}</td>` : ''}<td class="sc-n">${b.tools.map(r => scTool(r, it)).join(' · ')}</td><td class="sc-t">${time}</td><td class="sc-w">${esc(b.what)}</td></tr>`;
+  }).join('');
+  const open = matchMedia('(max-width: 760px)').matches ? '' : ' open';
+  return `<details class="sc-break"${open}><summary>${esc(it.breakdown_title || '用到的工具')}${it.video ? '<span class="hint">点时间跳到片中位置</span>' : ''}</summary>
+    <table class="sc-table"><thead><tr><th>画风</th><th>工具</th><th>片中位置</th><th>这段怎么做的</th></tr></thead><tbody>${body}</tbody></table></details>`;
+}
+
+// 在本站视频和 B 站外链播放器之间切换。B 站播放器只有切换时才加载，跳转靠重设地址的 t 参数。
+function scPlayer(card, src, t, play) {
+  const media = card.querySelector('.sc-media'), video = media.querySelector('video');
+  let frame = media.querySelector('iframe');
+  if (src === 'bili') {
+    video.pause();
+    video.hidden = true;
+    if (!frame) {
+      frame = document.createElement('iframe');
+      frame.title = 'B 站播放器';
+      frame.allow = 'autoplay; fullscreen';
+      frame.allowFullscreen = true;
+      frame.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation');
+      media.append(frame);
+    }
+    frame.src = `https://player.bilibili.com/player.html?isOutside=true&bvid=${encodeURIComponent(card.dataset.bvid)}&p=1&high_quality=1&danmaku=0&autoplay=${play ? 1 : 0}&t=${Math.floor(t || 0)}`;
+  } else {
+    if (frame) frame.remove();
+    video.hidden = false;
+    if (t != null) video.currentTime = t;
+    if (play) video.play().catch(() => {});
+  }
+  card.dataset.src = src;
+  card.querySelectorAll('[data-sc-src]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.scSrc === src)));
 }
 
 document.getElementById('picks').innerHTML = PICKS.map(pk =>

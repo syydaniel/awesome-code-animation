@@ -16,6 +16,60 @@ A curated list of open-source tools for making animations and music videos **wit
 
 </div>
 
+<a name="showcase"></a>
+
+## 🎬 作品展示
+
+[![画风不合](docs/showcase/huafeng-buhe-cover.jpg)](https://syydaniel.github.io/awesome-code-animation/#showcase)
+
+**画风不合** · 作者：[syydaniel](https://github.com/syydaniel)
+
+[▶ 在网页版看完整 MV（有声音）](https://syydaniel.github.io/awesome-code-animation/#showcase) · [去 B 站看高清](https://www.bilibili.com/video/BV1DNxU6WEqv/)
+
+这支 MV 是给这个图鉴拍的宣传片。他住在一行代码里，她坐在一张水彩纸上，两个人不停换画风去找对方，每次都差一帧。片子走过 18 种画风、28 种画面，全部由代码渲染，没有用 AI 生成视频，每段用的工具都写在画面角上。
+
+歌的词、曲、演唱都由 AI 完成：Claude Code 写词，ACE-Step 1.5 作曲演唱。代码也是 Claude Code 写的，用 DaVinci Resolve 剪辑。
+
+片尾的 159 和 18 是开拍时的数字，图鉴现在收得更多了。当时的第 18 种画风「AI 写代码出片」后来不再单独成类。Shiki 和 Claude Code 不在图鉴里，其余工具都能在图鉴里找到。
+
+用到的工具：[Manim 社区版](https://github.com/ManimCommunity/manim) · [MathBox](https://github.com/unconed/mathbox) · [GSAP](https://github.com/greensock/GSAP) · [anime.js](https://github.com/juliangarnier/anime) · [mo.js](https://github.com/mojs/mojs) · [Zdog](https://github.com/metafizzy/zdog) · [PixiJS](https://github.com/pixijs/pixijs) · [Shiki](https://github.com/shikijs/shiki) · [Splitting](https://github.com/shshaw/Splitting) · [Claude Code](https://github.com/anthropics/claude-code) · [p5.brush](https://github.com/acamposuribe/p5.brush) · [Rough.js](https://github.com/rough-stuff/rough) · [p5.js](https://github.com/processing/p5.js) · [Paper.js](https://github.com/paperjs/paper.js) · [LYGIA](https://github.com/patriciogonzalezvivo/lygia) · [Paper Shaders](https://github.com/paper-design/shaders) · [Hydra](https://github.com/hydra-synth/hydra) · [Butterchurn](https://github.com/jberg/butterchurn) · [three.js](https://github.com/mrdoob/three.js) · [postprocessing](https://github.com/pmndrs/postprocessing) · [Vanta.js](https://github.com/tengbao/vanta) · [three-vrm](https://github.com/pixiv/three-vrm) · [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) · [Matter.js](https://github.com/liabru/matter-js) · [Taichi](https://github.com/taichi-dev/taichi) · [pixelsort](https://github.com/satyarth/pixelsort) · [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) · [TerminalTextEffects](https://github.com/ChrisBuilds/terminaltexteffects) · [D3](https://github.com/d3/d3) · [Apache ECharts](https://github.com/apache/echarts) · [Gource](https://github.com/acaudwell/Gource) · [deck.gl](https://github.com/visgl/deck.gl) · [GL Transitions](https://github.com/gl-transitions/gl-transitions)
+
+<details><summary>18 种画风、28 种画面分别用了什么工具</summary>
+
+| 画风 | 工具 | 片中位置 | 这段怎么做的 |
+| --- | --- | --- | --- |
+| [数学讲解风](#math) | [Manim 社区版](https://github.com/ManimCommunity/manim) | [00:10](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=10) | 每一帧都由 Manim 社区版渲染，再按节拍播放 |
+|  | [MathBox](https://github.com/unconed/mathbox) | [01:13](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=73) | 三维曲面在节拍上折成一颗心的等值面，方程写在旁边 |
+| [扁平 MG 动效](#mg) | [GSAP](https://github.com/greensock/GSAP) · [anime.js](https://github.com/juliangarnier/anime) · [mo.js](https://github.com/mojs/mojs) | [00:52](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=52) | GSAP 和 anime.js 排时间线，mo.js 做爆点和线条 |
+|  | [Zdog](https://github.com/metafizzy/zdog) | [02:40](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=160) | 玩具盒世界，人物和道具全是 Zdog 形状 |
+|  | [PixiJS](https://github.com/pixijs/pixijs) | [02:41](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=161) | 霓虹夜街，pixi-filters 做湿地倒影、辉光和冲击波 |
+| [代码演示风](#code) | [Shiki](https://github.com/shikijs/shiki) | [00:11](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=11) | 编辑器里是这支片子自己的脚本，用 Shiki 高亮 |
+| [动态文字 · 歌词](#type) | [Splitting](https://github.com/shshaw/Splitting) · [GSAP](https://github.com/greensock/GSAP) | [00:49](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=49) | Splitting 把字拆开，GSAP 逐字驱动 |
+| [短视频 · 字幕 · 快剪](#short) | [GSAP](https://github.com/greensock/GSAP) | [01:37](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=97) | 竖屏手机划过，字幕一个词一个词弹出来 |
+| AI 写代码出片 | [Claude Code](https://github.com/anthropics/claude-code) | [00:08](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=8) | 终端里打印这支片子的文件名、命令和源码，旁边是预览窗 |
+| [手绘 · 白板 · 水彩](#hand) | [p5.brush](https://github.com/acamposuribe/p5.brush) · [Rough.js](https://github.com/rough-stuff/rough) | [00:23](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=23) | p5.brush 画水彩，Rough.js 画铅笔线 |
+| [生成艺术 · 几何](#gen) | [p5.js](https://github.com/processing/p5.js) | [01:11](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=71) | 流场版画，线条绕开人物，人物成了留白 |
+|  | [Paper.js](https://github.com/paperjs/paper.js) | [00:34](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=34) | 液态包豪斯海报，全是矢量路径，图形在节拍上变形 |
+| [着色器 · 迷幻光影](#shader) | [LYGIA](https://github.com/patriciogonzalezvivo/lygia) · [Paper Shaders](https://github.com/paper-design/shaders) | [01:18](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=78) | LYGIA 的 GLSL 函数做色场，Paper Shaders 的 neuro-noise 叠一层脉络 |
+| [Live Coding · VJ](#live) | [Hydra](https://github.com/hydra-synth/hydra) | [01:22](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=82) | 屏幕上的代码就是正在跑的代码，每写完一行画面就变 |
+| [音乐可视化](#audio) | [Butterchurn](https://github.com/jberg/butterchurn) | [01:23](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=83) | Butterchurn 吃这首歌自己的音频，地面是真实频谱 |
+| [3D 渲染](#3d) | [three.js](https://github.com/mrdoob/three.js) · [postprocessing](https://github.com/pmndrs/postprocessing) | [00:54](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=54) | PBR 人物、镜面地板和发光网格，加辉光和景深 |
+|  | [Vanta.js](https://github.com/tengbao/vanta) | [00:50](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=50) | Vanta.js 的鸟群绕开人物飞，偶尔聚成一颗心 |
+| [二次元 · MMD · VRM](#anime) | [three-vrm](https://github.com/pixiv/three-vrm) | [02:32](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=152) | 和 3D 世界同一个模型，换成 MToon 卡通着色 |
+| [粒子 · 流体 · 物理](#particle) | [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) | [01:24](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=84) | GPU 流体求解，围巾往流场里倒墨水 |
+|  | [Matter.js](https://github.com/liabru/matter-js) | [00:46](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=46) | 「画风不合」四个字和方块砸下来，落点卡在节拍上 |
+|  | [Taichi](https://github.com/taichi-dev/taichi) | [01:45](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=105) | 10.4 万粒子的 MLS-MPM 模拟，预先烘焙成序列帧 |
+| [故障 · 后期特效](#glitch) | [postprocessing](https://github.com/pmndrs/postprocessing) · [pixelsort](https://github.com/satyarth/pixelsort) | [01:26](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=86) | pixelsort 处理过的贴图，加 postprocessing 的故障和色差 |
+| [像素 · 复古](#pixel) | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | [00:56](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=56) | 320×180 的 8-bit 平台游戏，再过一层 crt-lottes 显像管着色器 |
+| [ASCII · 终端](#ascii) | [TerminalTextEffects](https://github.com/ChrisBuilds/terminaltexteffects) | [00:15](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=15) | 开机文字由 TerminalTextEffects 跑出来，画面按亮度换成字符 |
+| [数据可视化动画](#data) | [D3](https://github.com/d3/d3) | [00:37](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=37) | 深色仪表盘，数字是图鉴里项目的 GitHub 星数 |
+|  | [Apache ECharts](https://github.com/apache/echarts) | [02:43](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=163) | 当时图鉴里全部 159 个项目连成的星图 |
+|  | [Gource](https://github.com/acaudwell/Gource) | [01:44](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=104) | three.js 的真实提交历史长成一棵光树 |
+|  | [deck.gl](https://github.com/visgl/deck.gl) | [01:45](https://www.bilibili.com/video/BV1DNxU6WEqv/?t=105) | 16 万个点聚合成等距的数据城市 |
+| 全片转场 | [GL Transitions](https://github.com/gl-transitions/gl-transitions) | 全片 | 108 个镜头之间用了 42 种转场 |
+
+</details>
+
 ## 这是什么
 
 想用代码做一支 MV、一段讲解动画、一个片头，第一个问题往往是「我想要的那种画风，该用什么工具做」。这里把 GitHub 上用代码做动画、做视频的开源项目按**画风**归类：3B1B 式数学讲解、扁平 MG、着色器迷幻光影、像素复古、ASCII 终端、音乐可视化、二次元 MMD……先挑画风，再挑工具。一个项目常能做好几种画风，所以会同时出现在几个画风里。
@@ -2281,4 +2335,4 @@ README 和网页版都由 `python scripts/build.py` 从数据文件自动生成�
 
 ## 许可
 
-本仓库的整理内容以 [CC0 1.0](LICENSE) 发布，可以自由使用。各项目的许可证以其仓库为准，商用前请自行核对。
+本仓库的整理内容以 [CC0 1.0](LICENSE) 发布，可以自由使用。`docs/showcase/` 里的作品（视频、封面）版权归各自作者，不在 CC0 范围内。各项目的许可证以其仓库为准，商用前请自行核对。
