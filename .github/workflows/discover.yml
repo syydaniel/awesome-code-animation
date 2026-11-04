@@ -1,0 +1,23 @@
+name: 每周找候选项目
+
+on:
+  schedule:
+    - cron: "41 4 * * 1"   # 每周一 04:41 UTC，在刷新数据之后
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 搜索候选并更新 Issue
+        run: python scripts/discover.py --issue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

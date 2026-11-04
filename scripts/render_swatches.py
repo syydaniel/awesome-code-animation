@@ -18,7 +18,9 @@ OUT = ROOT / "assets"
 
 BANNER_JS = r"""
 () => {
-  const S = 2, W = 1280, H = 476;
+  const S = 2, W = 1280, cols = 8, gap = 8, x0 = 56, y0 = 208;
+  const cw = (W - 2 * x0 - gap * (cols - 1)) / cols, ch = cw * 0.4;
+  const rows = Math.ceil(STYLES.length / cols), H = y0 + rows * (ch + gap) + 40;
   const cv = document.createElement('canvas'); cv.width = W * S; cv.height = H * S;
   const c = cv.getContext('2d'); c.scale(S, S);
   c.fillStyle = '#0F1116'; c.fillRect(0, 0, W, H);
@@ -26,17 +28,18 @@ BANNER_JS = r"""
   c.fillStyle = '#F2F3F6'; c.font = '900 68px "Noto Serif SC", "Songti SC", serif'; c.fillText('代码画风图鉴', 56, 100);
   c.fillStyle = '#93A5FF'; c.font = '500 22px "IBM Plex Mono", monospace'; c.fillText('Awesome Code Animation', 56, 142);
   c.fillStyle = '#9AA1B0'; c.font = '400 18px "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif';
-  c.fillText(`用代码做动画和 MV 的 ${DATA.length} 个开源项目 · 按 ${STYLES.length} 种画风索引`, 56, 176);
-  const x0 = 56, y0 = 208, gap = 10, cols = 6, cw = (W - 2 * x0 - gap * (cols - 1)) / cols, ch = cw * 0.4;
+  const nNiche = STYLES.filter(s => s.zone === 'niche').length;
+  c.fillText(`用代码做动画和 MV 的 ${DATA.length} 个开源项目 · ${STYLES.length - nNiche} 种主流画风 + ${nNiche} 种小众画风 · ${RELS.length} 条项目关系`, 56, 176);
   STYLES.forEach((s, i) => {
     const src = document.querySelector(`canvas[data-swatch="${s.key}"]`);
     const x = x0 + (i % cols) * (cw + gap), y = y0 + Math.floor(i / cols) * (ch + gap);
-    c.save(); c.beginPath(); c.roundRect(x, y, cw, ch, 8); c.clip();
+    c.save(); c.beginPath(); c.roundRect(x, y, cw, ch, 7); c.clip();
     c.drawImage(src, x, y, cw, ch);
-    c.font = '600 13px "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif';
+    let fs = 11.5;
+    do { c.font = `600 ${fs}px "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif`; fs -= .5; } while (c.measureText(s.name).width > cw - 16 && fs > 8);
     const tw = c.measureText(s.name).width;
-    c.fillStyle = 'rgba(10,12,16,.72)'; c.fillRect(x, y + ch - 24, tw + 16, 24);
-    c.fillStyle = '#F2F3F6'; c.fillText(s.name, x + 8, y + ch - 7.5);
+    c.fillStyle = 'rgba(10,12,16,.74)'; c.fillRect(x, y + ch - 21, tw + 14, 21);
+    c.fillStyle = '#F2F3F6'; c.fillText(s.name, x + 7, y + ch - 6.5);
     c.restore();
   });
   return cv.toDataURL('image/png');

@@ -127,6 +127,27 @@ tbody tr:hover td { background: color-mix(in srgb, var(--chip) 45%, transparent)
 .c-meta { display: none; }
 .empty { padding: 28px; text-align: center; color: var(--muted); }
 
+.nav { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
+.zone-note { margin: -6px 0 16px; color: var(--muted); font-size: 13.5px; max-width: 72ch; }
+.rels { margin: 6px 0 0; font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 10px; }
+.rels .lbl { color: var(--muted); }
+.rels button { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font-size: 12.5px; }
+.rels button:hover { text-decoration: underline; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.chip { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 4px 12px; font-size: 13px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.chip .n { font-family: var(--font-mono); font-size: 11.5px; opacity: .75; margin-left: 4px; }
+.rel-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.rel-table { min-width: 720px; }
+.rel-table td { padding: 10px 14px; }
+.rel-table .r-type { white-space: nowrap; }
+.rel-pill { display: inline-block; background: var(--chip); border-radius: 6px; padding: 2px 8px; font-size: 12px; white-space: nowrap; }
+.rel-table .r-proj button { background: none; border: 0; padding: 0; color: var(--accent); font-weight: 600; cursor: pointer; text-align: left; }
+.rel-table .r-proj button:hover { text-decoration: underline; }
+.rel-table .r-note { color: var(--muted); font-size: 13px; }
+.rel-more { margin-top: 10px; }
+.rel-more button { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 6px 14px; cursor: pointer; }
+
 footer { font-size: 13px; color: var(--muted); display: flex; flex-direction: column; gap: 6px; max-width: 80ch; }
 footer p { margin: 0; }
 
@@ -142,6 +163,11 @@ footer p { margin: 0; }
   .c-name { grid-area: name; } .c-stars { grid-area: stars; } .c-tags { grid-area: tags; } .c-desc { grid-area: desc; }
   .c-lang, .c-date, .c-lic { display: none; }
   .c-meta { display: block; grid-area: meta; font-size: 12px; color: var(--muted); }
+  .rel-wrap { border: 0; background: none; overflow: visible; }
+  .rel-table { min-width: 0; }
+  .rel-table tr { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; padding: 10px 12px; margin-bottom: 6px; }
+  .rel-wrap td { padding: 0; border: 0; min-width: 0; }
+  .rel-table .r-note { flex-basis: 100%; }
 }
 @media (max-width: 520px) {
   .styles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
@@ -158,6 +184,7 @@ footer p { margin: 0; }
     <h1>代码画风图鉴</h1>
     <p class="lede">按画风整理的代码动画、代码做 MV 的开源项目。画面都由代码绘制或渲染，不收用视频、图像生成模型出画面的项目。一个项目常能做几种画风，所以会同时出现在几个画风里；点画风卡片就能筛出对应项目。</p>
     <div class="stats" id="stats"></div>
+    <nav class="nav" aria-label="页面目录"><a href="#styles-sec">画风索引</a><a href="#niche-sec">小众画风区</a><a href="#table-sec" data-zone-link="agent">Claude / Opus 写代码出片</a><a href="#rel-sec">项目关系表</a><a href="#table-sec">项目总表</a></nav>
     <a class="repo-link" href="__REPO_URL__" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>在 GitHub 上查看和推荐项目</a>
   </header>
 
@@ -166,15 +193,27 @@ footer p { margin: 0; }
     <div class="picks" id="picks"></div>
   </section>
 
-  <section aria-labelledby="styles-h">
+  <section aria-labelledby="styles-h" id="styles-sec">
     <div class="sec-head"><h2 id="styles-h">画风索引</h2><span class="hint">点一个画风筛选下表，再点一次取消</span></div>
     <div class="styles" id="styles"></div>
+  </section>
+
+  <section aria-labelledby="niche-h" id="niche-sec">
+    <div class="sec-head"><h2 id="niche-h">小众画风区</h2><span class="hint" id="niche-count"></span></div>
+    <p class="zone-note">用的人不多、但辨识度很高的画风。门槛放宽到近一年内有更新、星数 50 以上，有潜力的新项目也能早点被看到。</p>
+    <div class="styles" id="niche"></div>
   </section>
 
   <section aria-labelledby="table-h" id="table-sec">
     <div class="sec-head"><h2 id="table-h">项目总表</h2></div>
     <div class="toolbar">
       <div class="search"><input id="q" type="search" placeholder="搜项目名、语言、用途，例如 Python、MV、字幕" aria-label="搜索项目"></div>
+      <select id="zone" aria-label="分区">
+        <option value="all">全部分区</option>
+        <option value="main">主流画风</option>
+        <option value="niche">小众画风区</option>
+        <option value="agent">Claude / Opus 写代码出片</option>
+      </select>
       <select id="sort" aria-label="排序">
         <option value="stars">按星数</option>
         <option value="pushed">按最近提交</option>
@@ -193,8 +232,22 @@ footer p { margin: 0; }
     </div>
   </section>
 
+  <section aria-labelledby="rel-h" id="rel-sec">
+    <div class="sec-head"><h2 id="rel-h">项目关系表</h2><span class="hint">点项目名会在总表里定位它</span></div>
+    <p class="zone-note">想换工具时看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。上面的搜索框会同时筛选这张表。</p>
+    <div class="chips" id="rel-types"></div>
+    <div class="rel-wrap">
+      <table class="rel-table">
+        <thead><tr><th>项目</th><th>关系</th><th>项目</th><th>说明</th></tr></thead>
+        <tbody id="rel-rows"></tbody>
+      </table>
+      <div class="empty" id="rel-empty" hidden>没有符合条件的关系。</div>
+    </div>
+    <div class="rel-more" id="rel-more" hidden><button type="button" id="rel-more-btn"></button></div>
+  </section>
+
   <footer>
-    <p>收录标准：画面由代码绘制或渲染；GitHub 星数 1000 以上，或近一年仍在更新且星数 200 以上；已归档的仓库不收。</p>
+    <p>收录标准：画面由代码绘制或渲染，不用视频或图像生成模型，Claude / Opus 区不收调用 Blender 出画面的项目。主流画风要求星数 1000 以上，或近一年仍在更新且星数 200 以上；小众画风区和 Claude / Opus 区放宽到近一年内有更新、星数 50 以上。已归档的仓库不收。</p>
     <p>星数、最近提交时间和许可证来自 GitHub，更新于 __DATE__。状态按最近一次推送计算：半年内为「活跃」，两年内为「放缓」，超过两年为「停更」。</p>
     <p>许可证写「见仓库」的，是 GitHub 没能自动识别的情况。打算商用前，请到仓库里核对许可证原文。</p>
   </footer>
@@ -204,15 +257,28 @@ footer p { margin: 0; }
 const DATA = __PROJECTS__;
 const STYLES = __STYLES__;
 const PICKS = __PICKS__;
+const RELS = __RELATIONS__;
+const RELTYPES = __RELTYPES__;
 const SNAPSHOT = Date.parse('__DATE__');
 const SMAP = Object.fromEntries(STYLES.map(s => [s.key, s]));
+const MAIN = STYLES.filter(s => s.zone !== 'niche');
+const NICHE = STYLES.filter(s => s.zone === 'niche');
+const NICHE_KEYS = new Set(NICHE.map(s => s.key));
 const BYREPO = Object.fromEntries(DATA.map(p => [p.repo, p]));
+const RTMAP = Object.fromEntries(RELTYPES.map(t => [t.key, t]));
+const RELS_OF = {};
+RELS.forEach(r => {
+  (RELS_OF[r.from] = RELS_OF[r.from] || []).push({ other: r.to, type: r.type });
+  (RELS_OF[r.to] = RELS_OF[r.to] || []).push({ other: r.from, type: r.type, reverse: true });
+});
 
-const state = { style: null, q: '', sort: 'stars', active: false };
+const state = { style: null, q: '', sort: 'stars', active: false, zone: 'all', relType: null, relAll: false };
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmtStars = n => n >= 1000 ? (n/1000).toFixed(n >= 100000 ? 0 : 1).replace(/\.0$/, '') + 'k' : String(n);
 const lic = p => p.license_display || (p.license && p.license !== 'NOASSERTION' ? p.license : '见仓库');
+const inNiche = p => p.tags.some(t => NICHE_KEYS.has(t));
+const inMain = p => p.tags.some(t => !NICHE_KEYS.has(t));
 function status(p) {
   if (p.archived) return ['off','已归档'];
   const d = (SNAPSHOT - Date.parse(p.pushed_at)) / 864e5;
@@ -220,39 +286,60 @@ function status(p) {
   if (d <= 730) return ['slow','放缓'];
   return ['off','停更'];
 }
+const REL_FWD = { fork: '分叉自', built_on: '基于', plugin: '扩展了', official: '官方配套', uses: '渲染用', data: '数据来自', alt: '同类', pair: '常搭配', author: '同作者' };
+const REL_REV = { fork: '从它分叉', built_on: '基于它', plugin: '是它的扩展', official: '是它的官方配套', uses: '用它渲染', data: '用它的数据', alt: '同类', pair: '常搭配', author: '同作者' };
+function relHtml(r) {
+  const btn = `<button data-find="${esc(r.other)}">${esc(BYREPO[r.other].name)}</button>`;
+  return r.reverse && !['alt', 'pair', 'author'].includes(r.type)
+    ? `<span>${btn} <span class="lbl">${REL_REV[r.type]}</span></span>`
+    : `<span><span class="lbl">${REL_FWD[r.type]}</span> ${btn}</span>`;
+}
 
 document.getElementById('stats').innerHTML =
   `<div><b>${DATA.length}</b><span>个项目</span></div>` +
-  `<div><b>${STYLES.length}</b><span>种画风</span></div>` +
-  `<div><b>${DATA.filter(p => status(p)[0] === 'ok').length}</b><span>个半年内仍在更新</span></div>`;
+  `<div><b>${MAIN.length}+${NICHE.length}</b><span>种画风（主流 + 小众）</span></div>` +
+  `<div><b>${DATA.filter(p => p.tags.includes('agent')).length}</b><span>个 Claude / Opus 写代码出片</span></div>` +
+  `<div><b>${RELS.length}</b><span>条项目关系</span></div>`;
 
 document.getElementById('picks').innerHTML = PICKS.map(pk =>
   `<div class="pick"><span class="k">${esc(pk.goal)}</span><span class="v">${pk.projects.filter(r => BYREPO[r]).map(r => `<button class="linkbtn" data-find="${esc(r)}">${esc(BYREPO[r].name)}</button>`).join('')}</span></div>`
 ).join('');
 
+function styleCards(group) {
+  return group.map(s => {
+    const ps = DATA.filter(p => p.tags.includes(s.key)).sort((a,b) => b.stars - a.stars);
+    const top = ps.slice(0, 8).map(p => esc(p.name)).join(' · ') + (ps.length > 8 ? ` 等 ${ps.length} 个` : '');
+    return `<button class="style" data-style="${s.key}" aria-pressed="false">
+      <canvas width="480" height="192" data-swatch="${s.key}" aria-hidden="true"></canvas>
+      <span class="body">
+        <span class="top"><span class="nm">${esc(s.name)}</span><span class="ct">${ps.length} 个</span></span>
+        <span class="look">${esc(s.look)}</span>
+        <span class="who">${top}</span>
+      </span>
+    </button>`;
+  }).join('');
+}
 const stylesEl = document.getElementById('styles');
-stylesEl.innerHTML = STYLES.map(s => {
-  const ps = DATA.filter(p => p.tags.includes(s.key)).sort((a,b) => b.stars - a.stars);
-  const top = ps.slice(0, 8).map(p => esc(p.name)).join(' · ') + (ps.length > 8 ? ` 等 ${ps.length} 个` : '');
-  return `<button class="style" data-style="${s.key}" aria-pressed="false">
-    <canvas width="480" height="192" data-swatch="${s.key}" aria-hidden="true"></canvas>
-    <span class="body">
-      <span class="top"><span class="nm">${esc(s.name)}</span><span class="ct">${ps.length} 个</span></span>
-      <span class="look">${esc(s.look)}</span>
-      <span class="who">${top}</span>
-    </span>
-  </button>`;
-}).join('');
+const nicheEl = document.getElementById('niche');
+stylesEl.innerHTML = styleCards(MAIN);
+nicheEl.innerHTML = styleCards(NICHE);
+document.getElementById('niche-count').textContent = `${NICHE.length} 种画风 · ${DATA.filter(inNiche).length} 个项目`;
 
 const rowsEl = document.getElementById('rows');
+function matches(p, q) {
+  if (!q) return true;
+  const hay = [p.name, p.repo, p.lang, p.use, p.desc, p.note || '', lic(p), ...p.tags.map(t => SMAP[t].name + ' ' + SMAP[t].en)].join(' ').toLowerCase();
+  return hay.includes(q);
+}
 function render() {
   const q = state.q.trim().toLowerCase();
   let list = DATA.filter(p => {
     if (state.style && !p.tags.includes(state.style)) return false;
+    if (state.zone === 'main' && !inMain(p)) return false;
+    if (state.zone === 'niche' && !inNiche(p)) return false;
+    if (state.zone === 'agent' && !p.tags.includes('agent')) return false;
     if (state.active && status(p)[0] !== 'ok') return false;
-    if (!q) return true;
-    const hay = [p.name, p.repo, p.lang, p.use, p.desc, p.note || '', lic(p), ...p.tags.map(t => SMAP[t].name + ' ' + SMAP[t].en)].join(' ').toLowerCase();
-    return hay.includes(q);
+    return matches(p, q);
   });
   if (state.sort === 'stars') list.sort((a,b) => b.stars - a.stars);
   else if (state.sort === 'pushed') list.sort((a,b) => b.pushed_at.localeCompare(a.pushed_at));
@@ -262,10 +349,12 @@ function render() {
     const [cls, label] = status(p);
     const url = 'https://github.com/' + p.repo;
     const tags = p.tags.map(t => `<button class="tag${state.style === t ? ' on' : ''}" data-style="${t}"><span class="dot" style="background:${SMAP[t].color}"></span>${esc(SMAP[t].name)}</button>`).join('');
-    return `<tr>
+    const all = RELS_OF[p.repo] || [];
+    const rs = all.slice(0, 5).map(relHtml).join('') + (all.length > 5 ? `<span class="lbl">等 ${all.length} 条关系</span>` : '');
+    return `<tr id="p-${esc(p.repo.replace('/', '__'))}">
       <td class="c-name"><a href="${url}" target="_blank" rel="noopener">${esc(p.name)}</a><span class="repo">${esc(p.repo)}</span></td>
       <td class="c-tags"><div class="tags">${tags}</div></td>
-      <td class="c-desc"><p class="desc">${esc(p.desc)}</p><p class="use">适合：${esc(p.use)}</p>${p.note ? `<p class="note">注意：${esc(p.note)}</p>` : ''}</td>
+      <td class="c-desc"><p class="desc">${esc(p.desc)}</p><p class="use">适合：${esc(p.use)}</p>${p.note ? `<p class="note">注意：${esc(p.note)}</p>` : ''}${rs ? `<p class="rels">${rs}</p>` : ''}</td>
       <td class="c-lang">${esc(p.lang)}</td>
       <td class="c-stars">★ ${fmtStars(p.stars)}</td>
       <td class="c-date">${p.pushed_at}<span class="st ${cls}"><i></i>${label}</span></td>
@@ -278,25 +367,59 @@ function render() {
   const clear = document.getElementById('clear');
   clear.hidden = !state.style;
   if (state.style) clear.textContent = `画风：${SMAP[state.style].name}  ✕`;
-  stylesEl.querySelectorAll('.style').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.style === state.style)));
+  document.querySelectorAll('.style').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.style === state.style)));
+  renderRels();
 }
+
+const relTypesEl = document.getElementById('rel-types');
+const relRowsEl = document.getElementById('rel-rows');
+const REL_PAGE = 40;
+function renderRels() {
+  const q = state.q.trim().toLowerCase();
+  const base = RELS.filter(r => !q || matches(BYREPO[r.from], q) || matches(BYREPO[r.to], q) || (r.note || '').toLowerCase().includes(q));
+  relTypesEl.innerHTML = [`<button class="chip" data-rtype="" aria-pressed="${!state.relType}">全部<span class="n">${base.length}</span></button>`]
+    .concat(RELTYPES.map(t => {
+      const n = base.filter(r => r.type === t.key).length;
+      return n ? `<button class="chip" data-rtype="${t.key}" aria-pressed="${state.relType === t.key}" title="${esc(t.desc)}">${esc(t.name)}<span class="n">${n}</span></button>` : '';
+    })).join('');
+  const list = base.filter(r => !state.relType || r.type === state.relType);
+  const shown = state.relAll ? list : list.slice(0, REL_PAGE);
+  relRowsEl.innerHTML = shown.map(r => `<tr>
+    <td class="r-proj r-from"><button data-find="${esc(r.from)}">${esc(BYREPO[r.from].name)}</button></td>
+    <td class="r-type"><span class="rel-pill">${esc(RTMAP[r.type].name)}</span></td>
+    <td class="r-proj r-to"><button data-find="${esc(r.to)}">${esc(BYREPO[r.to].name)}</button></td>
+    <td class="r-note">${esc(r.note || '')}</td></tr>`).join('');
+  document.getElementById('rel-empty').hidden = list.length > 0;
+  const more = document.getElementById('rel-more');
+  more.hidden = list.length <= REL_PAGE;
+  document.getElementById('rel-more-btn').textContent = state.relAll ? '收起' : `显示全部 ${list.length} 条`;
+}
+relTypesEl.addEventListener('click', e => { const b = e.target.closest('[data-rtype]'); if (!b) return; state.relType = b.dataset.rtype || null; renderRels(); });
+document.getElementById('rel-more-btn').addEventListener('click', () => { state.relAll = !state.relAll; renderRels(); });
+
 const smooth = () => matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+const toTable = () => document.getElementById('table-sec').scrollIntoView({behavior: smooth(), block: 'start'});
 function setStyle(key, scroll) {
   state.style = state.style === key ? null : key;
   render();
-  if (scroll && state.style) document.getElementById('table-sec').scrollIntoView({behavior: smooth(), block: 'start'});
+  if (scroll && state.style) toTable();
 }
-stylesEl.addEventListener('click', e => { const b = e.target.closest('.style'); if (b) setStyle(b.dataset.style, true); });
-rowsEl.addEventListener('click', e => { const b = e.target.closest('.tag'); if (b) setStyle(b.dataset.style, false); });
-document.getElementById('clear').addEventListener('click', () => { state.style = null; render(); });
-document.getElementById('q').addEventListener('input', e => { state.q = e.target.value; render(); });
-document.getElementById('sort').addEventListener('change', e => { state.sort = e.target.value; render(); });
-document.getElementById('hide').addEventListener('change', e => { state.active = e.target.checked; render(); });
-document.getElementById('picks').addEventListener('click', e => {
-  const b = e.target.closest('[data-find]'); if (!b) return;
-  state.style = null; state.q = b.dataset.find; document.getElementById('q').value = state.q; render();
-  document.getElementById('table-sec').scrollIntoView({behavior: smooth(), block: 'start'});
+function findRepo(repo) {
+  state.style = null; state.zone = 'all'; document.getElementById('zone').value = 'all';
+  state.q = repo; document.getElementById('q').value = repo; render(); toTable();
+}
+document.addEventListener('click', e => {
+  const s = e.target.closest('.style'); if (s) { setStyle(s.dataset.style, true); return; }
+  const t = e.target.closest('.tag'); if (t) { setStyle(t.dataset.style, false); return; }
+  const f = e.target.closest('[data-find]'); if (f) { findRepo(f.dataset.find); return; }
+  const z = e.target.closest('[data-zone-link]');
+  if (z) { e.preventDefault(); state.style = null; state.zone = z.dataset.zoneLink; document.getElementById('zone').value = state.zone; render(); toTable(); }
 });
+document.getElementById('clear').addEventListener('click', () => { state.style = null; render(); });
+document.getElementById('q').addEventListener('input', e => { state.q = e.target.value; state.relAll = false; render(); });
+document.getElementById('sort').addEventListener('change', e => { state.sort = e.target.value; render(); });
+document.getElementById('zone').addEventListener('change', e => { state.zone = e.target.value; render(); });
+document.getElementById('hide').addEventListener('change', e => { state.active = e.target.checked; render(); });
 render();
 
 /* ---------- style swatches: each one a tiny procedural sample of the look ---------- */
@@ -501,6 +624,193 @@ const SW = {
     vals.forEach((v, i) => { c.fillStyle = '#2A2F3A'; c.fillRect(10, 10 + i * 13, 22, 8); c.fillStyle = cols[i]; c.fillRect(38, 9 + i * 13, v * 190, 10); });
     c.strokeStyle = '#3A4050'; c.lineWidth = 1; c.beginPath(); c.moveTo(37, 4); c.lineTo(37, 90); c.stroke();
     c.font = '500 10px "IBM Plex Mono", monospace'; c.fillStyle = '#9AA1B0'; c.textBaseline = 'top'; c.fillText('2026', 200, 82);
+  },
+  ink(c) {
+    fill(c, '#EFE9DC');
+    const r = rng(31);
+    const ridge = (base, amp, freq, seed, col, blur) => {
+      const rr = rng(seed); const ph = rr() * 10;
+      c.fillStyle = col; c.beginPath(); c.moveTo(0, H);
+      for (let x = 0; x <= W; x += 2) {
+        const y = base - amp * (0.55 * Math.sin(x * freq + ph) + 0.3 * Math.sin(x * freq * 2.3 + ph * 2) + 0.15 * Math.sin(x * freq * 5.1)) - rr() * blur;
+        c.lineTo(x, y);
+      }
+      c.lineTo(W, H); c.closePath(); c.fill();
+    };
+    ridge(52, 26, 0.035, 2, 'rgba(60,66,74,.18)', 1.5);
+    ridge(66, 22, 0.05, 5, 'rgba(48,52,58,.32)', 2);
+    ridge(84, 18, 0.07, 9, 'rgba(28,30,34,.62)', 2.5);
+    c.strokeStyle = 'rgba(28,30,34,.75)'; c.lineWidth = 1;
+    for (let i = 0; i < 9; i++) { const x = 30 + i * 22 + r() * 8, y = 74 + r() * 8; c.beginPath(); c.moveTo(x, y); c.lineTo(x, y - 8 - r() * 6); c.stroke(); c.beginPath(); c.arc(x, y - 12, 3 + r() * 2, 0, 7); c.fillStyle = 'rgba(28,30,34,.55)'; c.fill(); }
+    c.fillStyle = '#B8322A'; c.fillRect(212, 10, 16, 16);
+    c.fillStyle = '#EFE9DC'; c.fillRect(215, 13, 4, 10); c.fillRect(221, 13, 4, 4); c.fillRect(221, 19, 4, 4);
+  },
+  hanzi(c) {
+    fill(c, '#FBF6EE');
+    const x0 = 72, y0 = 6, s = 84;
+    c.strokeStyle = '#E2B8B2'; c.lineWidth = 1; c.setLineDash([3, 3]);
+    c.beginPath(); c.moveTo(x0, y0 + s / 2); c.lineTo(x0 + s, y0 + s / 2); c.moveTo(x0 + s / 2, y0); c.lineTo(x0 + s / 2, y0 + s);
+    c.moveTo(x0, y0); c.lineTo(x0 + s, y0 + s); c.moveTo(x0 + s, y0); c.lineTo(x0, y0 + s); c.stroke(); c.setLineDash([]);
+    c.strokeStyle = '#C2413A'; c.lineWidth = 1.5; c.strokeRect(x0 + .5, y0 + .5, s - 1, s - 1);
+    c.lineCap = 'round'; c.lineJoin = 'round';
+    const stroke = (pts, col, w) => { c.strokeStyle = col; c.lineWidth = w; c.beginPath(); pts.forEach(([x, y], i) => i ? c.lineTo(x0 + x * s, y0 + y * s) : c.moveTo(x0 + x * s, y0 + y * s)); c.stroke(); };
+    stroke([[.42, .12], [.5, .2]], '#1F1C1A', 7);
+    stroke([[.22, .32], [.78, .32]], '#1F1C1A', 7);
+    stroke([[.5, .32], [.5, .86], [.42, .8]], '#1F1C1A', 7);
+    stroke([[.24, .5], [.42, .5], [.18, .74]], '#C2413A', 7);
+    c.strokeStyle = 'rgba(31,28,26,.18)'; c.lineWidth = 7;
+    c.beginPath(); c.moveTo(x0 + .56 * s, y0 + .52 * s); c.lineTo(x0 + .78 * s, y0 + .44 * s); c.moveTo(x0 + .58 * s, y0 + .56 * s); c.lineTo(x0 + .84 * s, y0 + .84 * s); c.stroke();
+    c.fillStyle = '#C2413A'; c.beginPath(); c.arc(x0 + .18 * s, y0 + .74 * s, 3.5, 0, 7); c.fill();
+  },
+  scope(c) {
+    fill(c, '#050A06');
+    c.strokeStyle = 'rgba(63,191,106,.16)'; c.lineWidth = 1;
+    for (let x = 20; x < W; x += 20) { c.beginPath(); c.moveTo(x, 0); c.lineTo(x, H); c.stroke(); }
+    for (let y = 8; y < H; y += 20) { c.beginPath(); c.moveTo(0, y); c.lineTo(W, y); c.stroke(); }
+    const path = () => { c.beginPath(); for (let i = 0; i <= 720; i++) { const t = i / 720 * Math.PI * 2; const x = 120 + 88 * Math.sin(3 * t + .5), y = 48 + 38 * Math.sin(2 * t); i ? c.lineTo(x, y) : c.moveTo(x, y); } c.stroke(); };
+    c.strokeStyle = 'rgba(80,255,140,.18)'; c.lineWidth = 6; path();
+    c.strokeStyle = 'rgba(120,255,170,.45)'; c.lineWidth = 2.5; path();
+    c.strokeStyle = '#D6FFE4'; c.lineWidth = 1; path();
+  },
+  plotter(c) {
+    fill(c, '#F7F6F2');
+    c.strokeStyle = '#2A3140'; c.lineWidth = .8;
+    const cx = 120, cy = 48, R = 40;
+    for (let y = -R; y <= R; y += 3) {
+      const half = Math.sqrt(Math.max(0, R * R - y * y));
+      const shade = (y + R) / (2 * R);
+      c.beginPath();
+      for (let x = -half; x <= half; x += 2) { const dy = Math.sin((x + y) * .25) * 0.6 * shade; x === -half ? c.moveTo(cx + x, cy + y + dy) : c.lineTo(cx + x, cy + y + dy); }
+      c.stroke();
+    }
+    c.strokeStyle = '#2A3140'; c.lineWidth = 1;
+    c.beginPath(); for (let a = 0; a < 6.3; a += .05) { const rr = R + 6 + 3 * Math.sin(a * 9); a ? c.lineTo(cx + rr * Math.cos(a), cy + rr * Math.sin(a)) : c.moveTo(cx + rr, cy); } c.closePath(); c.stroke();
+    c.strokeStyle = 'rgba(42,49,64,.5)'; for (let i = 0; i < 6; i++) { c.beginPath(); c.moveTo(14 + i * 6, 88); c.lineTo(34 + i * 6, 62); c.stroke(); c.beginPath(); c.moveTo(196 + i * 6, 34); c.lineTo(216 + i * 6, 8); c.stroke(); }
+  },
+  dither(c) {
+    const bayer = [[0, 8, 2, 10], [12, 4, 14, 6], [3, 11, 1, 9], [15, 7, 13, 5]];
+    pixels(c, (x, y) => {
+      const dx = x - 110, dy = y - 46, d = Math.hypot(dx, dy);
+      let v;
+      if (d < 36) { const nz = Math.sqrt(Math.max(0, 1 - (d / 36) ** 2)); v = Math.max(0, (-dx * .5 - dy * .7 + nz * 36 * .6) / 36) * .9 + .05; }
+      else v = 0.12 + (y / H) * 0.18 + (x / W) * 0.1;
+      const t = (bayer[Math.floor(y / 2) % 4][Math.floor(x / 2) % 4] + .5) / 16;
+      const on = v > t ? 1 : 0;
+      return on ? [0.93, 0.92, 0.88] : [0.08, 0.08, 0.09];
+    });
+  },
+  riso(c) {
+    fill(c, '#F3EDE1');
+    c.globalCompositeOperation = 'multiply';
+    const dots = (cx, cy, rad, col, off, ang) => {
+      c.fillStyle = col;
+      for (let y = -rad; y <= rad; y += 4) for (let x = -rad; x <= rad; x += 4) {
+        const rx = x * Math.cos(ang) - y * Math.sin(ang), ry = x * Math.sin(ang) + y * Math.cos(ang);
+        const d = Math.hypot(rx, ry) / rad; if (d > 1) continue;
+        const r = 1.9 * (1 - d * .55);
+        c.beginPath(); c.arc(cx + rx + off, cy + ry, r, 0, 7); c.fill();
+      }
+    };
+    c.fillStyle = 'rgba(255,72,140,.85)'; c.beginPath(); c.arc(92, 48, 32, 0, 7); c.fill();
+    dots(150, 50, 34, 'rgba(0,120,191,.9)', 0, .3);
+    c.fillStyle = 'rgba(255,232,0,.75)'; c.fillRect(170, 14, 46, 30);
+    c.fillStyle = 'rgba(0,120,191,.9)'; c.fillRect(30, 70, 70, 10);
+    c.fillStyle = 'rgba(255,72,140,.85)'; c.fillRect(33, 72, 70, 10);
+    c.globalCompositeOperation = 'source-over';
+  },
+  alife(c) {
+    fill(c, '#06090C');
+    const r = rng(17); c.globalCompositeOperation = 'lighter';
+    const blobs = [[62, 44, '#2BD4C8', 22], [150, 36, '#F2C14E', 18], [196, 66, '#E35D9A', 14], [110, 70, '#7BD96B', 12]];
+    blobs.forEach(([bx, by, col, rad]) => {
+      for (let i = 0; i < 90; i++) {
+        const a = r() * 6.283, d = rad * Math.sqrt(r());
+        const x = bx + Math.cos(a) * d, y = by + Math.sin(a) * d * .8;
+        c.fillStyle = col; c.globalAlpha = .55; c.beginPath(); c.arc(x, y, 1.2, 0, 7); c.fill();
+      }
+      c.globalAlpha = .25; c.strokeStyle = col; c.lineWidth = 1.5; c.beginPath(); c.ellipse(bx, by, rad + 4, (rad + 4) * .8, 0, 0, 7); c.stroke();
+    });
+    c.globalAlpha = 1; c.globalCompositeOperation = 'source-over';
+  },
+  procgen(c) {
+    fill(c, '#2B2418');
+    const s = 12, r = rng(23), cols = Math.ceil(W / s), rows = Math.ceil(H / s);
+    for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) {
+      const x = i * s, y = j * s, v = Math.sin(i * .5) + Math.cos(j * .7) + r() * .8;
+      c.fillStyle = v > 1.2 ? '#4E8A3E' : v > .2 ? '#7AA35A' : v > -.6 ? '#D9C27A' : '#3D6E9A';
+      c.fillRect(x, y, s, s);
+    }
+    c.strokeStyle = '#2B2418'; c.lineWidth = 4; c.lineCap = 'square';
+    c.beginPath(); c.moveTo(0, 54); c.lineTo(66, 54); c.lineTo(66, 18); c.lineTo(150, 18); c.lineTo(150, 78); c.lineTo(W, 78); c.stroke();
+    c.strokeStyle = '#E8D9B0'; c.lineWidth = 2; c.stroke();
+    c.fillStyle = 'rgba(43,36,24,.55)'; for (let i = 0; i < cols; i++) for (let j = 0; j < rows; j++) if (i > 15 && j < 3) c.fillRect(i * s, j * s, s, s);
+  },
+  fractal(c) {
+    pixels(c, (x, y) => {
+      const cr = -2.15 + x / W * 3.0, ci = -0.62 + y / H * 1.24;
+      let zr = 0, zi = 0, n = 0;
+      for (; n < 60 && zr * zr + zi * zi < 4; n++) { const t = zr * zr - zi * zi + cr; zi = 2 * zr * zi + ci; zr = t; }
+      if (n === 60) return [0.04, 0.02, 0.08];
+      const t = n / 60;
+      return [0.5 + 0.5 * Math.cos(6.283 * (t * 1.4 + 0.65)), 0.5 + 0.5 * Math.cos(6.283 * (t * 1.4 + 0.85)), 0.5 + 0.5 * Math.cos(6.283 * (t * 1.4 + 0.05))];
+    });
+  },
+  iso(c) {
+    fill(c, '#F3E6D2');
+    const s = 14;
+    const cube = (gx, gy, gz, top, left, right) => {
+      const x = 120 + (gx - gy) * s, y = 58 + (gx + gy) * s / 2 - gz * s;
+      c.fillStyle = top; c.beginPath(); c.moveTo(x, y - s / 2); c.lineTo(x + s, y); c.lineTo(x, y + s / 2); c.lineTo(x - s, y); c.closePath(); c.fill();
+      c.fillStyle = left; c.beginPath(); c.moveTo(x - s, y); c.lineTo(x, y + s / 2); c.lineTo(x, y + s * 1.5); c.lineTo(x - s, y + s); c.closePath(); c.fill();
+      c.fillStyle = right; c.beginPath(); c.moveTo(x + s, y); c.lineTo(x, y + s / 2); c.lineTo(x, y + s * 1.5); c.lineTo(x + s, y + s); c.closePath(); c.fill();
+    };
+    const blocks = [[-2,-1,0],[-1,-1,0],[0,-1,0],[1,-1,0],[-2,0,0],[-1,0,0],[0,0,0],[1,0,0],[-2,1,0],[-1,1,0],[0,1,0],[1,1,0],[-1,-1,1],[0,-1,1],[-1,0,1],[-1,-1,2],[1,1,1]];
+    blocks.sort((a, b) => (a[0] + a[1] + a[2] * .01) - (b[0] + b[1] + b[2] * .01));
+    blocks.forEach(([gx, gy, gz]) => gz ? cube(gx, gy, gz, '#F2A65A', '#C77D2E', '#9E5F1E') : cube(gx, gy, gz, '#8FC0A9', '#5E9278', '#46705B'));
+  },
+  scifi(c) {
+    fill(c, '#04121A');
+    const col = '#1FB5D1';
+    c.strokeStyle = col; c.lineWidth = 1.2;
+    c.beginPath(); c.moveTo(14, 10); c.lineTo(96, 10); c.lineTo(104, 18); c.lineTo(104, 86); c.lineTo(22, 86); c.lineTo(14, 78); c.closePath(); c.stroke();
+    c.fillStyle = 'rgba(31,181,209,.12)'; c.fill();
+    c.fillStyle = col; c.font = '500 9px "IBM Plex Mono", monospace'; c.textBaseline = 'top';
+    ['SYS ONLINE', 'CORE  98.4%', 'NAV   LOCK', 'SIG ▮▮▮▮▯'].forEach((t, i) => c.fillText(t, 24, 20 + i * 15));
+    c.strokeStyle = 'rgba(31,181,209,.3)'; c.lineWidth = 6; c.beginPath(); c.arc(168, 48, 30, 0, 7); c.stroke();
+    c.strokeStyle = col; c.lineWidth = 6; c.beginPath(); c.arc(168, 48, 30, -1.57, 2.9); c.stroke();
+    c.lineWidth = 1; c.beginPath(); c.arc(168, 48, 40, 0, 7); c.stroke();
+    for (let a = 0; a < 6.28; a += .26) { c.beginPath(); c.moveTo(168 + Math.cos(a) * 40, 48 + Math.sin(a) * 40); c.lineTo(168 + Math.cos(a) * 44, 48 + Math.sin(a) * 44); c.stroke(); }
+    c.font = '500 13px "IBM Plex Mono", monospace'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('72', 168, 48); c.textAlign = 'start';
+    c.fillStyle = 'rgba(31,181,209,.06)'; for (let y = 0; y < H; y += 3) c.fillRect(0, y, W, 1);
+  },
+  map(c) {
+    fill(c, '#E6EDE3');
+    c.fillStyle = '#B9D4E8'; c.beginPath(); c.moveTo(0, 70); c.bezierCurveTo(50, 60, 80, 96, 140, 90); c.lineTo(140, H); c.lineTo(0, H); c.fill();
+    c.fillStyle = '#CFE3C4'; c.fillRect(150, 8, 70, 34);
+    c.strokeStyle = '#FFFFFF'; c.lineWidth = 3;
+    [[0, 30, W, 22], [40, 0, 60, H], [120, 0, 108, H], [0, 58, W, 64], [180, 0, 200, H]].forEach(([a, b, cc, d]) => { c.beginPath(); c.moveTo(a, b); c.lineTo(cc, d); c.stroke(); });
+    c.strokeStyle = '#3B8F5A'; c.lineWidth = 3.5; c.lineCap = 'round'; c.lineJoin = 'round';
+    c.beginPath(); c.moveTo(28, 80); c.lineTo(52, 60); c.lineTo(112, 60); c.lineTo(116, 28); c.lineTo(178, 24); c.stroke();
+    c.setLineDash([2, 6]); c.beginPath(); c.moveTo(178, 24); c.lineTo(196, 48); c.lineTo(218, 52); c.stroke(); c.setLineDash([]);
+    c.fillStyle = '#E04F3C'; c.beginPath(); c.arc(178, 18, 7, Math.PI, 0); c.lineTo(178, 30); c.closePath(); c.fill();
+    c.fillStyle = '#FFFFFF'; c.beginPath(); c.arc(178, 18, 2.6, 0, 7); c.fill();
+    c.fillStyle = '#3B8F5A'; c.beginPath(); c.arc(28, 80, 4, 0, 7); c.fill();
+  },
+  demoscene(c) {
+    fill(c, '#000000');
+    const bars = [['#FF2D55', 12], ['#FFB000', 68], ['#2DE2E6', 84]];
+    bars.forEach(([col, y]) => {
+      const g = c.createLinearGradient(0, y - 6, 0, y + 6);
+      g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(.5, col); g.addColorStop(1, 'rgba(0,0,0,0)');
+      c.fillStyle = g; c.fillRect(0, y - 6, W, 12);
+    });
+    c.font = '900 16px "IBM Plex Mono", monospace'; c.textBaseline = 'middle';
+    const txt = 'GREETINGS TO ALL';
+    for (let i = 0; i < txt.length; i++) {
+      const x = 12 + i * 14, y = 40 + Math.sin(i * .7) * 9;
+      c.fillStyle = `hsl(${i * 22}, 90%, 65%)`; c.fillText(txt[i], x, y);
+    }
+    c.fillStyle = '#FFFFFF'; const r = rng(41); for (let i = 0; i < 30; i++) c.fillRect(r() * W, 20 + r() * 40, 1, 1);
   }
 };
 function drawSwatches() {

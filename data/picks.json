@@ -1,8 +1,10 @@
 [
   {"goal": "做知识讲解视频", "projects": ["ManimCommunity/manim", "motion-canvas/motion-canvas", "cth9191/animate"]},
   {"goal": "做 MV、批量出短视频", "projects": ["remotion-dev/remotion", "heygen-com/hyperframes", "mrdoob/three.js"]},
-  {"goal": "让 AI 帮你写代码出片", "projects": ["lemomo-ai/lemo-opuscar", "remotion-dev/skills", "nexu-io/html-video"]},
+  {"goal": "让 Claude / Opus 写代码出片", "projects": ["lemomo-ai/lemo-opuscar", "remotion-dev/skills", "XiaoyeCodes/code-animation-prompts"]},
+  {"goal": "中国风：水墨、汉字、诗词", "projects": ["LingDong-/shan-shui-inf", "chanind/hanzi-writer", "bangbuilds/code-poem-film"]},
   {"goal": "现场 VJ、迷幻画面", "projects": ["hydra-synth/hydra", "tixl3d/tixl", "cables-gl/cables"]},
   {"goal": "音乐可视化", "projects": ["jberg/butterchurn", "projectM-visualizer/projectm", "astrofox-io/astrofox"]},
-  {"goal": "程序员科普视频", "projects": ["slidevjs/slidev", "charmbracelet/vhs", "acaudwell/Gource"]}
+  {"goal": "程序员科普视频", "projects": ["slidevjs/slidev", "charmbracelet/vhs", "acaudwell/Gource"]},
+  {"goal": "看看小众画风", "projects": ["jameshball/osci-render", "Chakazul/Lenia", "mxgmn/WaveFunctionCollapse"]}
 ]

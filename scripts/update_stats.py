@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""从 GitHub 刷新每个项目的星数、最近推送时间、是否归档和许可证。
+"""从 GitHub 刷新每个项目的星数、最近推送时间、是否归档、许可证和英文简介。
 
 在 GitHub Actions 里会自动带上 GITHUB_TOKEN；本地运行可以先 export GITHUB_TOKEN=...
 （不设也能跑，只是匿名请求每小时只有 60 次额度）。
@@ -12,6 +12,9 @@ import time
 import urllib.error
 import urllib.request
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from rules import qualifies  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 PROJECTS = ROOT / "data" / "projects.json"
@@ -46,11 +49,10 @@ def main():
         p["pushed_at"] = info["pushed_at"][:10]
         p["archived"] = info["archived"]
         p["license"] = (info.get("license") or {}).get("spdx_id")
-        days = (today - datetime.date.fromisoformat(p["pushed_at"])).days
-        if p["archived"]:
-            problems.append(f"{p['repo']} 已归档，按收录标准应移除")
-        elif not (p["stars"] >= 1000 or (days <= 365 and p["stars"] >= 200)):
-            problems.append(f"{p['repo']} 不再满足收录标准（{p['stars']} 星，{days} 天未更新）")
+        p["gh_desc"] = (info.get("description") or "").strip()
+        ok, why = qualifies(p["stars"], p["pushed_at"], p["archived"], p["tags"], today)
+        if not ok:
+            problems.append(f"{p['repo']} 不再满足收录标准（{why}）")
         time.sleep(0.1 if TOKEN else 1.0)
 
     projects.sort(key=lambda p: -p["stars"])
