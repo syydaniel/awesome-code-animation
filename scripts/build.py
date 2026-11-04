@@ -28,6 +28,7 @@ styles = load("styles.json")
 picks = load("picks.json")
 meta = load("meta.json")
 rel_data = load("relations.json")
+showcase = load("showcase.json")["items"] if (DATA / "showcase.json").exists() else []
 UPDATED = meta["updated"]
 SNAP = datetime.date.fromisoformat(UPDATED)
 SMAP = {s["key"]: s for s in styles}
@@ -193,6 +194,33 @@ def counts():
     return active, agent, niche
 
 
+def showcase_md(en=False):
+    if not showcase:
+        return []
+    out = ['<a name="showcase"></a>', "", "## 🎬 Showcase" if en else "## 🎬 作品展示", ""]
+    for it in showcase:
+        poster = it.get("poster")
+        watch = f"{PAGES_URL}#showcase"
+        if poster:
+            out += [f'[![{it["title"]}]({poster})]({watch})', ""]
+        head = f"**{it['title']}**"
+        if it.get("author"):
+            head += f" · {('by ' if en else '作者：')}" + (f"[{it['author']}]({it['author_url']})" if it.get("author_url") else it["author"])
+        out += [head, ""]
+        if it.get("desc_en" if en else "desc"):
+            out += [it.get("desc_en" if en else "desc"), ""]
+        tools = []
+        for r in it.get("tools", []):
+            tools.append(link(BYREPO[r]) if r in BYREPO else f"[{r}](https://github.com/{r})")
+        if tools:
+            out += [("Built with: " if en else "用到的工具：") + " · ".join(tools), ""]
+        if it.get("styles"):
+            out += [("Styles: " if en else "画风：") + "、".join(f"[{SMAP[s]['en' if en else 'name']}](#{s})" for s in it["styles"] if s in SMAP), ""]
+        links = [f"[▶ {'Watch' if en else '在网页版观看'}]({watch})"] + [f"[{l['label']}]({l['url']})" for l in it.get("links", [])]
+        out += [" · ".join(links), ""]
+    return out
+
+
 def readme():
     active, agent, niche = counts()
     parts = [
@@ -215,6 +243,7 @@ def readme():
             f"[推荐项目]({REPO_URL}/issues/new/choose)",
         ]), "",
         "</div>", "",
+        *showcase_md(),
         "## 这是什么", "",
         "想用代码做一支 MV、一段讲解动画、一个片头，第一个问题往往是「我想要的那种画风，该用什么工具做」。"
         "这里把 GitHub 上用代码做动画、做视频的开源项目按**画风**归类：3B1B 式数学讲解、扁平 MG、着色器迷幻光影、像素复古、ASCII 终端、音乐可视化、二次元 MMD……"
@@ -263,7 +292,9 @@ def readme():
         "- [awesome-creative-coding](https://github.com/terkelg/awesome-creative-coding)：创意编程资源大全，覆盖教程、书籍和工具（英文）。",
         "- [awesome-plotters](https://github.com/beardicus/awesome-plotters)：绘图仪相关的代码和资源。",
         "- [morphogenesis-resources](https://github.com/jasonwebb/morphogenesis-resources)：用代码「长出」形态的资料大全：反应扩散、差异生长、黏菌、L 系统。",
-        "- [awesome-demoscene](https://github.com/psykon/awesome-demoscene)：Demoscene 的工具、代码和资料。", "",
+        "- [awesome-demoscene](https://github.com/psykon/awesome-demoscene)：Demoscene 的工具、代码和资料。",
+        "- [awesome-glsl](https://github.com/vanrez-nez/awesome-glsl)：学习 GLSL 着色器的资源合集。",
+        "- [Awesome-Unity-Shader](https://github.com/QianMo/Awesome-Unity-Shader)：浅墨整理的炫酷 Unity 着色器合集（中文）。", "",
         "**Claude / Opus 作品合集**：这些合集收的是网友用 Claude 做出的视频和提示词，可以当灵感来源。其中少数作品调用了 Blender 或视频生成模型，合集里通常有标注，请自行甄别。", "",
         "- [awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos)：用 Claude Opus 5.5 做出的视频和背后的提示词。",
         "- [opus-video-prompts](https://github.com/joeseesun/opus-video-prompts)：中文整理的 Opus 5.5 代码视频案例和可复制的提示词。",
@@ -318,6 +349,7 @@ def readme_en():
         ]), "",
         f"**[🌐 Interactive page]({PAGES_URL})** · **[🕸️ Relationship graph]({PAGES_URL}#graph-sec)** · **[Style index](#index)**<sub> (web page is in Chinese)</sub>", "",
         "</div>", "",
+        *showcase_md(en=True),
         "## What this is", "",
         "Pick a look first, then a tool. Every project here draws or renders its frames in code: Manim-style math explainers, flat motion graphics, "
         "shaders, pixel art, ASCII, music visualizers, MMD dance videos, ink-wash landscapes, oscilloscope art, plotter drawings and more. "
@@ -356,6 +388,28 @@ def readme_en():
 
 # ---------------------------------------------------------------- web page
 
+def page_showcase(standalone):
+    """网页版用的作品数据：docs/ 下的文件改成相对网页的路径；在 artifact 里改用线上地址。"""
+    items = []
+    for it in showcase:
+        x = dict(it)
+        for k in ("video", "poster"):
+            if x.get(k):
+                rel = x[k][5:] if x[k].startswith("docs/") else x[k]
+                x[k] = rel
+        if not standalone:
+            # artifact 页面不能加载外站的图片和视频：封面内嵌成 data URI，视频改成去网页版观看
+            x.pop("video", None)
+            src = ROOT / it.get("poster", "")
+            if it.get("poster") and src.is_file():
+                import base64, mimetypes
+                mime = mimetypes.guess_type(src.name)[0] or "image/jpeg"
+                x["poster"] = f"data:{mime};base64," + base64.b64encode(src.read_bytes()).decode()
+        x["watch"] = PAGES_URL + "#showcase"
+        items.append(x)
+    return items
+
+
 def page(standalone=True):
     tpl = (ROOT / "site" / "template.html").read_text(encoding="utf-8")
     dump = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":"))
@@ -365,6 +419,7 @@ def page(standalone=True):
                .replace("__PICKS__", dump(picks))
                .replace("__RELATIONS__", dump(relations))
                .replace("__RELTYPES__", dump(rel_data["types"]))
+               .replace("__SHOWCASE__", dump(page_showcase(standalone)))
                .replace("__DATE__", UPDATED)
                .replace("__REPO_URL__", REPO_URL))
     if not standalone:

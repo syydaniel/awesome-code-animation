@@ -8,7 +8,7 @@
 
 A curated list of open-source tools for making animations and music videos **with code**, indexed by visual style. [English](README.en.md)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![项目](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE-380-2E49D4) ![画风](https://img.shields.io/badge/%E7%94%BB%E9%A3%8E-17%2B20-9265D9) ![活跃项目](https://img.shields.io/badge/%E6%B4%BB%E8%B7%83%E9%A1%B9%E7%9B%AE-286-1E8A4B) ![数据更新](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--11--03-5B6273)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![项目](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE-443-2E49D4) ![画风](https://img.shields.io/badge/%E7%94%BB%E9%A3%8E-17%2B21-9265D9) ![活跃项目](https://img.shields.io/badge/%E6%B4%BB%E8%B7%83%E9%A1%B9%E7%9B%AE-324-1E8A4B) ![数据更新](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--11--03-5B6273)
 
 **[🌐 网页版](https://syydaniel.github.io/awesome-code-animation/)**<sub>（按画风筛选、搜索、排序）</sub> · **[🕸️ 关系图谱](https://syydaniel.github.io/awesome-code-animation/#graph-sec)**<sub>（可拖动缩放、看演化树）</sub> · **[🎨 画风索引](#index)**
 
@@ -56,11 +56,11 @@ A curated list of open-source tools for making animations and music videos **wit
 点图片跳到对应画风的项目表。每张小样图都是用代码画出来的，代码在 [`site/template.html`](site/template.html) 里。
 
 <table>
-<tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="数学讲解风" width="260"></a><br><b><a href="#math">数学讲解风</a></b><br><sub>Math Explainer · 21 个项目</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="扁平 MG 动效" width="260"></a><br><b><a href="#mg">扁平 MG 动效</a></b><br><sub>Motion Graphics · 84 个项目</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="代码演示风" width="260"></a><br><b><a href="#code">代码演示风</a></b><br><sub>Code & Terminal Demo · 16 个项目</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.png" alt="动态文字 · 歌词" width="260"></a><br><b><a href="#type">动态文字 · 歌词</a></b><br><sub>Kinetic Type & Lyrics · 29 个项目</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="短视频 · 字幕 · 快剪" width="260"></a><br><b><a href="#short">短视频 · 字幕 · 快剪</a></b><br><sub>Shorts, Captions & Editing · 28 个项目</sub></td><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="手绘 · 白板 · 水彩" width="260"></a><br><b><a href="#hand">手绘 · 白板 · 水彩</a></b><br><sub>Hand-drawn & Whiteboard · 23 个项目</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="生成艺术 · 几何" width="260"></a><br><b><a href="#gen">生成艺术 · 几何</a></b><br><sub>Generative Art · 37 个项目</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="着色器 · 迷幻光影" width="260"></a><br><b><a href="#shader">着色器 · 迷幻光影</a></b><br><sub>Shaders & Psychedelic · 40 个项目</sub></td><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding · VJ" width="260"></a><br><b><a href="#live">Live Coding · VJ</a></b><br><sub>Live Coding & VJ · 9 个项目</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="音乐可视化" width="260"></a><br><b><a href="#audio">音乐可视化</a></b><br><sub>Music Visualization · 25 个项目</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D 渲染" width="260"></a><br><b><a href="#3d">3D 渲染</a></b><br><sub>3D · 58 个项目</sub></td><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="二次元 · MMD · VRM" width="260"></a><br><b><a href="#anime">二次元 · MMD · VRM</a></b><br><sub>Anime, MMD & VRM · 8 个项目</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="粒子 · 流体 · 物理" width="260"></a><br><b><a href="#particle">粒子 · 流体 · 物理</a></b><br><sub>Particles & Physics · 23 个项目</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="故障 · 后期特效" width="260"></a><br><b><a href="#glitch">故障 · 后期特效</a></b><br><sub>Glitch & Post FX · 16 个项目</sub></td><td align="center" width="33%"><a href="#pixel"><img src="assets/styles/pixel.png" alt="像素 · 复古" width="260"></a><br><b><a href="#pixel">像素 · 复古</a></b><br><sub>Pixel & Retro · 26 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="数学讲解风" width="260"></a><br><b><a href="#math">数学讲解风</a></b><br><sub>Math Explainer · 21 个项目</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="扁平 MG 动效" width="260"></a><br><b><a href="#mg">扁平 MG 动效</a></b><br><sub>Motion Graphics · 87 个项目</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="代码演示风" width="260"></a><br><b><a href="#code">代码演示风</a></b><br><sub>Code & Terminal Demo · 16 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.png" alt="动态文字 · 歌词" width="260"></a><br><b><a href="#type">动态文字 · 歌词</a></b><br><sub>Kinetic Type & Lyrics · 29 个项目</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="短视频 · 字幕 · 快剪" width="260"></a><br><b><a href="#short">短视频 · 字幕 · 快剪</a></b><br><sub>Shorts, Captions & Editing · 29 个项目</sub></td><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="手绘 · 白板 · 水彩" width="260"></a><br><b><a href="#hand">手绘 · 白板 · 水彩</a></b><br><sub>Hand-drawn & Whiteboard · 23 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="生成艺术 · 几何" width="260"></a><br><b><a href="#gen">生成艺术 · 几何</a></b><br><sub>Generative Art · 40 个项目</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="着色器 · 迷幻光影" width="260"></a><br><b><a href="#shader">着色器 · 迷幻光影</a></b><br><sub>Shaders & Psychedelic · 96 个项目</sub></td><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding · VJ" width="260"></a><br><b><a href="#live">Live Coding · VJ</a></b><br><sub>Live Coding & VJ · 13 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="音乐可视化" width="260"></a><br><b><a href="#audio">音乐可视化</a></b><br><sub>Music Visualization · 26 个项目</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D 渲染" width="260"></a><br><b><a href="#3d">3D 渲染</a></b><br><sub>3D · 74 个项目</sub></td><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="二次元 · MMD · VRM" width="260"></a><br><b><a href="#anime">二次元 · MMD · VRM</a></b><br><sub>Anime, MMD & VRM · 15 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="粒子 · 流体 · 物理" width="260"></a><br><b><a href="#particle">粒子 · 流体 · 物理</a></b><br><sub>Particles & Physics · 26 个项目</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="故障 · 后期特效" width="260"></a><br><b><a href="#glitch">故障 · 后期特效</a></b><br><sub>Glitch & Post FX · 17 个项目</sub></td><td align="center" width="33%"><a href="#pixel"><img src="assets/styles/pixel.png" alt="像素 · 复古" width="260"></a><br><b><a href="#pixel">像素 · 复古</a></b><br><sub>Pixel & Retro · 28 个项目</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#ascii"><img src="assets/styles/ascii.png" alt="ASCII · 终端" width="260"></a><br><b><a href="#ascii">ASCII · 终端</a></b><br><sub>ASCII & Terminal · 25 个项目</sub></td><td align="center" width="33%"><a href="#data"><img src="assets/styles/data.png" alt="数据可视化动画" width="260"></a><br><b><a href="#data">数据可视化动画</a></b><br><sub>Data Animation · 27 个项目</sub></td></tr>
 </table>
 
@@ -69,11 +69,11 @@ A curated list of open-source tools for making animations and music videos **wit
 <table>
 <tr><td align="center" width="33%"><a href="#ink"><img src="assets/styles/ink.png" alt="水墨 · 水彩" width="260"></a><br><b><a href="#ink">水墨 · 水彩</a></b><br><sub>Ink & Watercolor · 8 个项目</sub></td><td align="center" width="33%"><a href="#hanzi"><img src="assets/styles/hanzi.png" alt="汉字 · 手写笔画" width="260"></a><br><b><a href="#hanzi">汉字 · 手写笔画</a></b><br><sub>Handwriting & Strokes · 4 个项目</sub></td><td align="center" width="33%"><a href="#scope"><img src="assets/styles/scope.png" alt="示波器 · 矢量光线" width="260"></a><br><b><a href="#scope">示波器 · 矢量光线</a></b><br><sub>Oscilloscope & Vector · 2 个项目</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#plotter"><img src="assets/styles/plotter.png" alt="绘图仪 · 单线画" width="260"></a><br><b><a href="#plotter">绘图仪 · 单线画</a></b><br><sub>Plotter & Line Art · 7 个项目</sub></td><td align="center" width="33%"><a href="#dither"><img src="assets/styles/dither.png" alt="抖动 · 1-bit" width="260"></a><br><b><a href="#dither">抖动 · 1-bit</a></b><br><sub>Dither & 1-bit · 5 个项目</sub></td><td align="center" width="33%"><a href="#riso"><img src="assets/styles/riso.png" alt="Riso · 剪纸拼贴" width="260"></a><br><b><a href="#riso">Riso · 剪纸拼贴</a></b><br><sub>Riso & Paper Collage · 6 个项目</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#alife"><img src="assets/styles/alife.png" alt="人工生命 · 生长形态" width="260"></a><br><b><a href="#alife">人工生命 · 生长形态</a></b><br><sub>Artificial Life & Growth · 8 个项目</sub></td><td align="center" width="33%"><a href="#procgen"><img src="assets/styles/procgen.png" alt="程序化生成 · 波函数坍缩" width="260"></a><br><b><a href="#procgen">程序化生成 · 波函数坍缩</a></b><br><sub>Procedural Generation · 9 个项目</sub></td><td align="center" width="33%"><a href="#fractal"><img src="assets/styles/fractal.png" alt="分形 · 混沌 · 数学艺术" width="260"></a><br><b><a href="#fractal">分形 · 混沌 · 数学艺术</a></b><br><sub>Fractals & Chaos · 8 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#alife"><img src="assets/styles/alife.png" alt="人工生命 · 生长形态" width="260"></a><br><b><a href="#alife">人工生命 · 生长形态</a></b><br><sub>Artificial Life & Growth · 8 个项目</sub></td><td align="center" width="33%"><a href="#procgen"><img src="assets/styles/procgen.png" alt="程序化生成 · 波函数坍缩" width="260"></a><br><b><a href="#procgen">程序化生成 · 波函数坍缩</a></b><br><sub>Procedural Generation · 12 个项目</sub></td><td align="center" width="33%"><a href="#fractal"><img src="assets/styles/fractal.png" alt="分形 · 混沌 · 数学艺术" width="260"></a><br><b><a href="#fractal">分形 · 混沌 · 数学艺术</a></b><br><sub>Fractals & Chaos · 8 个项目</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#iso"><img src="assets/styles/iso.png" alt="等距 · 体素" width="260"></a><br><b><a href="#iso">等距 · 体素</a></b><br><sub>Isometric & Voxel · 9 个项目</sub></td><td align="center" width="33%"><a href="#scifi"><img src="assets/styles/scifi.png" alt="科幻 HUD · 赛博界面" width="260"></a><br><b><a href="#scifi">科幻 HUD · 赛博界面</a></b><br><sub>Sci-fi HUD · 4 个项目</sub></td><td align="center" width="33%"><a href="#map"><img src="assets/styles/map.png" alt="地图 · 路线动画" width="260"></a><br><b><a href="#map">地图 · 路线动画</a></b><br><sub>Map & Route · 10 个项目</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#demoscene"><img src="assets/styles/demoscene.png" alt="Demoscene 演示场景" width="260"></a><br><b><a href="#demoscene">Demoscene 演示场景</a></b><br><sub>Demoscene · 7 个项目</sub></td><td align="center" width="33%"><a href="#sand"><img src="assets/styles/sand.png" alt="落沙 · 像素物理" width="260"></a><br><b><a href="#sand">落沙 · 像素物理</a></b><br><sub>Falling Sand · 8 个项目</sub></td><td align="center" width="33%"><a href="#flow"><img src="assets/styles/flow.png" alt="流场 · 风场" width="260"></a><br><b><a href="#flow">流场 · 风场</a></b><br><sub>Flow & Wind Fields · 7 个项目</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#vhs"><img src="assets/styles/vhs.png" alt="VHS · 模拟信号" width="260"></a><br><b><a href="#vhs">VHS · 模拟信号</a></b><br><sub>VHS & Analog · 11 个项目</sub></td><td align="center" width="33%"><a href="#origami"><img src="assets/styles/origami.png" alt="折纸 · 纸艺" width="260"></a><br><b><a href="#origami">折纸 · 纸艺</a></b><br><sub>Origami & Papercraft · 8 个项目</sub></td><td align="center" width="33%"><a href="#geo"><img src="assets/styles/geo.png" alt="几何重构 · 低多边形" width="260"></a><br><b><a href="#geo">几何重构 · 低多边形</a></b><br><sub>Geometric & Low-poly · 7 个项目</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#raytrace"><img src="assets/styles/raytrace.png" alt="写实光追" width="260"></a><br><b><a href="#raytrace">写实光追</a></b><br><sub>Path Tracing · 6 个项目</sub></td><td align="center" width="33%"><a href="#space"><img src="assets/styles/space.png" alt="星空 · 宇宙" width="260"></a><br><b><a href="#space">星空 · 宇宙</a></b><br><sub>Space & Stars · 7 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#vhs"><img src="assets/styles/vhs.png" alt="VHS · 模拟信号" width="260"></a><br><b><a href="#vhs">VHS · 模拟信号</a></b><br><sub>VHS & Analog · 13 个项目</sub></td><td align="center" width="33%"><a href="#origami"><img src="assets/styles/origami.png" alt="折纸 · 纸艺" width="260"></a><br><b><a href="#origami">折纸 · 纸艺</a></b><br><sub>Origami & Papercraft · 8 个项目</sub></td><td align="center" width="33%"><a href="#geo"><img src="assets/styles/geo.png" alt="几何重构 · 低多边形" width="260"></a><br><b><a href="#geo">几何重构 · 低多边形</a></b><br><sub>Geometric & Low-poly · 7 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#raytrace"><img src="assets/styles/raytrace.png" alt="写实光追" width="260"></a><br><b><a href="#raytrace">写实光追</a></b><br><sub>Path Tracing · 7 个项目</sub></td><td align="center" width="33%"><a href="#space"><img src="assets/styles/space.png" alt="星空 · 宇宙" width="260"></a><br><b><a href="#space">星空 · 宇宙</a></b><br><sub>Space & Stars · 8 个项目</sub></td><td align="center" width="33%"><a href="#liquid"><img src="assets/styles/liquid.png" alt="液态玻璃 · 玻璃拟态" width="260"></a><br><b><a href="#liquid">液态玻璃 · 玻璃拟态</a></b><br><sub>Liquid Glass · 12 个项目</sub></td></tr>
 </table>
 
 ## 主流画风
@@ -124,7 +124,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 扁平图形、弹性缓动、形状变换
 
-共 84 个项目，按星数排序。
+共 87 个项目，按星数排序。
 
 <br clear="right">
 
@@ -152,6 +152,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 12.2k | 🟢 活跃 | JavaScript | 代码实现的影片画风工具箱：66 种现成画风（孟菲斯、地铁线路图、黑板等），让 AI 编程助手按画风出片，全部用代码绘制。<br><sub>适合：MV · 短片 · 也在：手绘 · 白板 · 水彩、像素 · 复古</sub><br><sub>⚠️ 画风针对 Claude 调校，用其他模型效果可能不同。</sub> |
 | [SVG.js](https://github.com/svgdotjs/svg.js) | 11.9k | 🟢 活跃 | JavaScript | 轻量的 SVG 操作和动画库。<br><sub>适合：网页动画</sub> |
 | [Zdog](https://github.com/metafizzy/zdog) | 10.7k | ⚪ 停更 | JavaScript | 伪 3D 扁平引擎，画出圆润可爱的扁平立体图形。<br><sub>适合：网页动画 · 也在：3D 渲染、等距 · 体素</sub><br><sub>⚠️ 多年未更新，功能简单稳定。</sub> |
+| [React Native Skia](https://github.com/wcandillon/react-native-skia) | 8.8k | 🟢 活跃 | React Native | 在 React Native 里用 Skia 画高性能 2D 图形和动画，支持运行时着色器。<br><sub>适合：手机动效 · 也在：着色器 · 迷幻光影</sub> |
 | [Two.js](https://github.com/jonobr1/two.js) | 8.7k | 🟢 活跃 | JavaScript | 2D 矢量绘图 API，同一套代码可输出 SVG、Canvas 或 WebGL，适合几何扁平动画。<br><sub>适合：网页动画 · 也在：生成艺术 · 几何</sub> |
 | [EffectCraft](https://github.com/storytold/effectcraft) | 8.4k | 🟢 活跃 | Rust（图形界面） | 从零写的开源合成软件，思路类似 After Effects：图层、关键帧、表达式、三百多种特效。<br><sub>适合：MG · 后期合成 · 也在：故障 · 后期特效</sub><br><sub>⚠️ 以图形界面为主，表达式部分可以写代码。</sub> |
 | [Arwes](https://github.com/arwes/arwes) | 7.6k | 🟢 活跃 | TypeScript | 科幻风网页界面框架：发光边框、线条展开、文字解码等未来感动效。<br><sub>适合：科幻界面 · 也在：科幻 HUD · 赛博界面</sub> |
@@ -174,6 +175,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Astrofox](https://github.com/astrofox-io/astrofox) | 2k | 🟢 活跃 | TypeScript（图形界面） | 把音频做成可视化视频的动效软件：频谱、波形、文字、3D 图层可组合导出。<br><sub>适合：音乐可视化 · MV · 也在：音乐可视化</sub><br><sub>⚠️ 以图形界面为主。</sub> |
 | [Animotion](https://github.com/animotionjs/animotion) | 1.8k | 🟢 活跃 | Svelte | 用 Svelte 写带动画的演示，代码高亮过渡、元素补间都很顺。<br><sub>适合：讲解视频 · 演讲 · 也在：代码演示风</sub> |
 | [remocn](https://github.com/Remocn/remocn) | 1.7k | 🟢 活跃 | React / TS | 给 Remotion 用的现成动画、转场、背景和场景组件。<br><sub>适合：MV · 短视频 · 也在：短视频 · 字幕 · 快剪</sub><br><sub>⚠️ 需配合 Remotion 使用，Remotion 自身的授权条款仍然适用。</sub> |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.4k | 🟡 放缓 | TypeScript | Paper 团队的小工具：把 Logo 变成流动的液态金属动画。<br><sub>适合：Logo 动效 · 也在：液态玻璃 · 玻璃拟态、着色器 · 迷幻光影</sub> |
 | [Reanimate](https://github.com/reanimate/reanimate) | 1.2k | 🟡 放缓 | Haskell | Haskell 写的 SVG 动画库，支持 LaTeX 公式，画面风格接近 3B1B。<br><sub>适合：讲解视频 · 也在：数学讲解风</sub><br><sub>⚠️ 语言小众，社区较小。</sub> |
 | [motion-skills](https://github.com/iart-ai/motion-skills) | 1.2k | 🟢 活跃 | Markdown 技能 | 50 个 AI 编程助手技能：动态文字、数据可视化、讲解视频、竖屏短视频、WebGL、Manim。<br><sub>适合：各类视频</sub> |
 | [frame.js](https://github.com/mrdoob/frame.js) | 1.2k | 🟡 放缓 | JavaScript | three.js 作者写的 JavaScript 时间轴编辑器，用来编排网页 demo 的镜头和特效。<br><sub>适合：网页 demo 编排 · 也在：Demoscene 演示场景</sub> |
@@ -189,6 +191,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Claude Remotion Skill](https://github.com/haidrrrry/claude-remotion-skill) | 828 | 🟢 活跃 | TypeScript | 教 Claude Code、Claude Desktop 写 Remotion 视频的开源技能。<br><sub>适合：短视频</sub> |
 | [Claude Motion Design](https://github.com/howseen-ai/claude-motion-design) | 766 | 🟢 活跃 | Python | 纯代码动效视频技能：HTML + Playwright + ffmpeg，全程不用 AI 生成画面。<br><sub>适合：MG 视频</sub> |
 | [genjutsu](https://github.com/AThevon/genjutsu) | 745 | 🟢 活跃 | Python / 技能 | 给 Claude Code、claude.ai 用的创意编程技能：动效、微交互和设计感。<br><sub>适合：创意编程 · 也在：生成艺术 · 几何</sub> |
+| [Shader Lab](https://github.com/basementstudio/shader-lab) | 717 | 🟢 活跃 | TypeScript | 创建、叠加、做动画的着色器工具包，可以把多个效果像图层一样组合。<br><sub>适合：着色器动效 · 也在：着色器 · 迷幻光影</sub> |
 | [Rossark Motion](https://github.com/rossark0/rossark-motion-skill) | 698 | 🟢 活跃 | Swift / SVG | Claude Code 技能：把任意 SVG 做成 60 帧的专业动画。<br><sub>适合：SVG 动画</sub> |
 | [drawsvg](https://github.com/cduck/drawsvg) | 696 | 🟢 活跃 | Python | 用 Python 生成 SVG 图形和动画，可以在 Jupyter 里交互预览。<br><sub>适合：SVG 动画 · 也在：数据可视化动画</sub> |
 | [Aora Bot](https://github.com/sam70361/aora-bot) | 619 | 🟢 活跃 | TypeScript | 国人作品：代码绘制的网页角色引擎，46 个原创角色、44 种动画状态。<br><sub>适合：角色动画 · 也在：二次元 · MMD · VRM</sub> |
@@ -304,7 +307,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 自动字幕、转场、用代码批量剪辑出片
 
-共 28 个项目，按星数排序。
+共 29 个项目，按星数排序。
 
 <br clear="right">
 
@@ -330,6 +333,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [video-spec-builder](https://github.com/feicaiclub/video-spec-builder) | 1.1k | 🟢 活跃 | JavaScript | 国人作品：把「我想做个视频」逼成精确到秒的分镜脚本，再交给 HyperFrames 渲染。<br><sub>适合：分镜脚本</sub> |
 | [adu-motion-video](https://github.com/adunext/adu-motion-video) | 722 | 🟢 活跃 | JavaScript | 国人作品：AI 剪辑技能，模板采用 MotionGit .motion 开放格式。<br><sub>适合：剪辑 · 短视频</sub> |
 | [LiveCanvas 实况画布](https://github.com/pengchujin/livecanvas) | 544 | 🟢 活跃 | Python | 国人作品：一句话做成带封面和动画的苹果 Live 图，分镜、Remotion 动画、导出一条龙。<br><sub>适合：Live 图</sub> |
+| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | 524 | 🟡 放缓 | Godot Shader | 把常见转场效果做进一个 Godot 着色器里。<br><sub>适合：转场 · 也在：着色器 · 迷幻光影</sub> |
 | [Agentic Product Demo](https://github.com/Alexwtlf/agentic-product-demo) | 482 | 🟢 活跃 | TypeScript | 让 AI 编程助手用 Remotion 做产品演示视频，界面是用代码重建的，不是录屏。<br><sub>适合：产品演示视频</sub> |
 | [HyperFrames Motion Director](https://github.com/geekjourneyx/hyperframes-motion-director) | 477 | 🟢 活跃 | 技能 | 国人作品：把文章、产品、网站或 README 做成中文优先的竖屏 HyperFrames 动效视频，交付前带检查。<br><sub>适合：竖屏宣传片 · 也在：动态文字 · 歌词</sub> |
 | [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 460 | 🟢 活跃 | TypeScript | 给 AI 编程助手用的高速代码视频引擎。<br><sub>适合：批量出片 · 也在：扁平 MG 动效</sub><br><sub>⚠️ PolyForm Small Business 许可：个人和小公司免费，较大公司需要商业授权。</sub> |
@@ -389,7 +393,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 算法图案、流场、无缝循环
 
-共 37 个项目，按星数排序。
+共 40 个项目，按星数排序。
 
 <br clear="right">
 
@@ -416,17 +420,20 @@ A curated list of open-source tools for making animations and music videos **wit
 | [The Nature of Code](https://github.com/nature-of-code/noc-book-2) | 2k | 🟢 活跃 | p5.js | 《代码本色》2024 新版：用 p5.js 模拟力、粒子、群集、元胞自动机，生成艺术入门必读。<br><sub>适合：教程 · 也在：粒子 · 流体 · 物理、人工生命 · 生长形态</sub> |
 | [anidoodle](https://github.com/alexgreensh/anidoodle) | 1.3k | 🟢 活跃 | TypeScript | AI 编程助手技能：用代码画插画、循环动画和带配乐的短片，几十种画风，每次渲染结果一致。<br><sub>适合：插画 · 循环动画 · 短片 · 也在：手绘 · 白板 · 水彩</sub> |
 | [p5.brush](https://github.com/acamposuribe/p5.brush) | 1.3k | 🟢 活跃 | JavaScript | 给 p5.js 加自然笔刷、水彩填充和排线，做出手绘、水彩质感的画面。<br><sub>适合：生成艺术 · MV · 也在：手绘 · 白板 · 水彩</sub> |
+| [Radiant](https://github.com/pbakaus/radiant) | 1k | 🟢 活跃 | GLSL / WebGL | 精选的生成式着色器艺术合集，每件作品都能直接在网页里跑。<br><sub>适合：着色器艺术 · 也在：着色器 · 迷幻光影</sub> |
 | [Generative Design 代码包](https://github.com/generative-design/Code-Package-p5.js) | 1k | 🟢 活跃 | JavaScript | 《Generative Design》一书的 p5.js 全部示例代码，生成设计的经典教材。<br><sub>适合：教程 · 生成艺术</sub> |
 | [OPENRNDR](https://github.com/openrndr/openrndr) | 985 | 🟢 活跃 | Kotlin | Kotlin 创意编程框架，适合做生成图形和实时视觉。<br><sub>适合：生成艺术 · 演出</sub> |
 | [DOjS](https://github.com/SuperIlu/DOjS) | 963 | 🟡 放缓 | JavaScript（DOS） | 跑在 MS-DOS 上的 JavaScript 创意编程环境，API 类似 p5.js，复古味十足。<br><sub>适合：复古创意编程 · 也在：像素 · 复古</sub> |
 | [Fragment](https://github.com/raphaelameaume/fragment) | 949 | 🟢 活跃 | JavaScript | 新一代创意编程工具包，热更新、参数面板、导出帧序列都内置好了。<br><sub>适合：生成艺术 · 也在：着色器 · 迷幻光影</sub><br><sub>⚠️ 仍在 alpha 阶段。</sub> |
 | [genjutsu](https://github.com/AThevon/genjutsu) | 745 | 🟢 活跃 | Python / 技能 | 给 Claude Code、claude.ai 用的创意编程技能：动效、微交互和设计感。<br><sub>适合：创意编程 · 也在：扁平 MG 动效</sub> |
 | [vsketch](https://github.com/abey79/vsketch) | 610 | 🟢 活跃 | Python | 为绘图仪设计的 Python 生成艺术环境，改参数实时预览，导出单线 SVG。<br><sub>适合：生成艺术 · 绘图仪 · 也在：绘图仪 · 单线画</sub> |
+| [Bauble](https://github.com/ianthehenry/bauble) | 597 | 🟢 活跃 | Janet（Lisp） | 用 Lisp 和数学做 3D 艺术的游乐场，背后是有向距离场光线步进。<br><sub>适合：3D 数学艺术 · 也在：着色器 · 迷幻光影、3D 渲染</sub> |
 | [play.core](https://github.com/ertdfgcvb/play.core) | 544 | 🟡 放缓 | JavaScript | 用 JS 写 ASCII 字符动画的实验平台，每个字符就是一个“像素”。<br><sub>适合：生成艺术 · 也在：ASCII · 终端</sub> |
 | [Processing](https://github.com/processing/processing4) | 535 | 🟢 活跃 | Java | 创意编程的老牌工具，可以逐帧保存图片再合成视频。<br><sub>适合：生成艺术</sub> |
 | [Mosaic](https://github.com/d3cod3/Mosaic) | 518 | 🟢 活跃 | C++ | 基于 openFrameworks 的可视化连线创意编程平台，节点、代码、音频都能接。<br><sub>适合：节点式创意编程 · 也在：Live Coding · VJ</sub> |
 | [DrawBot](https://github.com/typemytype/drawbot) | 455 | 🟢 活跃 | Python | 用 Python 画 2D 图形并导出 GIF/MP4，字体设计圈常用来做文字动画。<br><sub>适合：动态字体 · GIF · 也在：动态文字 · 歌词</sub><br><sub>⚠️ 只支持 macOS。</sub> |
 | [p5.riso](https://github.com/antiboredom/p5.riso) | 373 | 🟢 活跃 | JavaScript | p5.js 的 Riso 印刷库：按油墨分色、套色错位、半调网点，做出孔版印刷的质感。<br><sub>适合：Riso 印刷风 · 也在：Riso · 剪纸拼贴</sub> |
+| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | 366 | 🟢 活跃 | WebGL2 | 生成式着色器工作室：9 种 WebGL2 艺术模式，可以混合风格、导出无缝循环。<br><sub>适合：着色器艺术 · 也在：着色器 · 迷幻光影</sub> |
 | [Coldtype](https://github.com/coldtype/coldtype) | 341 | 🟢 活跃 | Python | Python 写的展示型排版与动画工具，可以跟着音频节奏做字形变化，适合歌词 MV 和动态字体。<br><sub>适合：歌词 MV · 动态字体 · 也在：动态文字 · 歌词</sub> |
 | [flow-fields](https://github.com/romellogoodman/flow-fields) | 311 | 🟢 活跃 | JavaScript | 创建流场的 JavaScript 库，画出顺着噪声流动的线条。<br><sub>适合：流场生成艺术 · 也在：流场 · 风场</sub> |
 | [空间殖民实验](https://github.com/jasonwebb/2d-space-colonization-experiments) | 227 | 🟡 放缓 | JavaScript | 用空间殖民算法长出树枝、叶脉、珊瑚的生长动画实验。<br><sub>适合：生长动画 · 也在：人工生命 · 生长形态</sub> |
@@ -443,7 +450,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 程序化光影、噪声、流体渐变、抽象造型
 
-共 40 个项目，按星数排序。
+共 96 个项目，按星数排序。
 
 <br clear="right">
 
@@ -451,41 +458,97 @@ A curated list of open-source tools for making animations and music videos **wit
 | --- | ---: | :---: | --- | --- |
 | [three.js](https://github.com/mrdoob/three.js) | 118k | 🟢 活跃 | JavaScript | 网页 3D 的事实标准：场景、材质、粒子、后期处理都有，案例极多。<br><sub>适合：MV · 网页 3D · 也在：3D 渲染、粒子 · 流体 · 物理</sub> |
 | [React Bits](https://github.com/DavidHDev/react-bits) | 51.2k | 🟢 活跃 | React | 大量带动画的 React 组件：文字特效、动态背景、交互动效，复制即用。<br><sub>适合：网页动效 · 素材 · 也在：扁平 MG 动效、动态文字 · 歌词</sub> |
+| [3D 游戏着色器入门](https://github.com/lettier/3d-game-shaders-for-beginners) | 20k | ⚪ 停更 | GLSL / C++ | 一步步实现 SSAO、景深、辉光、卡通描边、像素化等几十种 3D 着色器效果的图文教程。<br><sub>适合：教程 · 也在：3D 渲染</sub><br><sub>⚠️ 2023 年后未更新，教程内容完整。</sub> |
 | [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) | 16.8k | 🟡 放缓 | JavaScript | 浏览器里的实时流体模拟，彩色烟雾效果很出片。<br><sub>适合：特效素材 · 也在：粒子 · 流体 · 物理</sub> |
+| [React Native Skia](https://github.com/wcandillon/react-native-skia) | 8.8k | 🟢 活跃 | React Native | 在 React Native 里用 Skia 画高性能 2D 图形和动画，支持运行时着色器。<br><sub>适合：手机动效 · 也在：扁平 MG 动效</sub> |
+| [URP 卡通着色器示例](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample) | 7.8k | 🟢 活跃 | Unity HLSL | Unity URP 的卡通光照着色器示例，二次元角色描边、色阶阴影的入门范本。<br><sub>适合：二次元渲染 · 也在：二次元 · MMD · VRM</sub> |
 | [The Book of Shaders](https://github.com/patriciogonzalezvivo/thebookofshaders) | 7.1k | 🟡 放缓 | GLSL | 着色器入门书（有中文版），一步步学写片元着色器。<br><sub>适合：教程</sub> |
+| [《Unity Shader 入门精要》源码](https://github.com/candycat1992/Unity_Shaders_Book) | 6.1k | ⚪ 停更 | Unity ShaderLab | 国内经典教材《Unity Shader 入门精要》的全部源代码。<br><sub>适合：中文教程 · 也在：3D 渲染</sub><br><sub>⚠️ 2023 年后未更新，教材内容完整。</sub> |
 | [Shaders](https://github.com/shader-effects-inc/shaders) | 5.8k | 🟢 活跃 | TypeScript | WebGPU 特效组件，支持 React、Vue、Svelte、Solid 等框架。<br><sub>适合：网页特效</sub> |
 | [glslViewer](https://github.com/patriciogonzalezvivo/glslViewer) | 5.4k | 🟢 活跃 | GLSL / C++ | 命令行着色器查看器，可以把 shader 作品录成帧序列，适合把 Shadertoy 式画面做成视频。<br><sub>适合：MV · 特效素材</sub> |
 | [Canvas UI](https://github.com/DavidHDev/canvas-ui) | 5.3k | 🟢 活跃 | TypeScript | 在真实网页界面上叠加 WebGL 流体、着色器和 3D 特效的组件库。<br><sub>适合：网页特效 · 也在：粒子 · 流体 · 物理</sub> |
+| [Orillusion](https://github.com/Orillusion/orillusion) | 5.2k | 🟢 活跃 | TypeScript / WebGPU | 国人团队开发的纯 WebGPU 网页 3D 引擎。<br><sub>适合：网页 3D · 也在：3D 渲染</sub> |
 | [TiXL](https://github.com/tixl3d/tixl) | 5.2k | 🟢 活跃 | 节点连线 / C# | 原 Tooll3，开源实时动态图形软件，节点加时间轴，常用于音乐视频和现场演出。<br><sub>适合：MV · 现场演出 · 也在：Live Coding · VJ、3D 渲染</sub> |
 | [SHADERed](https://github.com/dfranx/SHADERed) | 4.8k | ⚪ 停更 | GLSL / C++ | 跨平台着色器 IDE，可以单步调试 shader、搭多 pass 特效。<br><sub>适合：特效素材</sub><br><sub>⚠️ 2023 年后未更新。</sub> |
 | [projectM](https://github.com/projectM-visualizer/projectm) | 4.6k | 🟢 活跃 | C++ | 开源的 MilkDrop 兼容可视化引擎，可嵌入播放器或做 MV 背景。<br><sub>适合：音乐可视化 · MV · 也在：音乐可视化</sub> |
+| [Shader School](https://github.com/stackgl/shader-school) | 4.4k | ⚪ 停更 | GLSL | 闯关式的 GLSL 着色器练习课，在浏览器里一关关写着色器。<br><sub>适合：教程</sub><br><sub>⚠️ 2021 年后未更新。</sub> |
+| [Godot Shaders](https://github.com/gdquest-demos/godot-shaders) | 4.2k | 🟢 活跃 | Godot Shader | GDQuest 整理的 Godot 2D / 3D 着色器大合集，溶解、描边、水面、像素化都有。<br><sub>适合：着色器合集 · 也在：3D 渲染、像素 · 复古</sub> |
+| [UnityChan 卡通着色器](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) | 4.1k | ⚪ 停更 | Unity | Unity 官方日本团队的卡通着色器，做出赛璐璐动画质感的角色和场景。<br><sub>适合：二次元渲染 · 也在：二次元 · MMD · VRM</sub><br><sub>⚠️ 2024 年后未更新，新项目可以用 Unity Toon Shader。</sub> |
 | [Paper Shaders](https://github.com/paper-design/shaders) | 3.9k | 🟢 活跃 | TypeScript | Paper 团队的着色器组件：网格渐变、颗粒、金属光泽等，零依赖。<br><sub>适合：背景素材 · 网页</sub> |
 | [LYGIA](https://github.com/patriciogonzalezvivo/lygia) | 3.5k | 🟢 活跃 | GLSL / HLSL / WGSL | 大型着色器函数库：噪声、光照、颜色、滤镜，搭迷幻画面的积木。<br><sub>适合：特效素材</sub><br><sub>⚠️ 非商用免费；商用需要另外获得授权。</sub> |
+| [TypeGPU](https://github.com/software-mansion/TypeGPU) | 3.3k | 🟢 活跃 | TypeScript / WebGPU | 用 TypeScript 写 WebGPU 着色器的工具包，类型安全，网页和 React Native 都能用。<br><sub>适合：WebGPU 着色器</sub> |
 | [ShaderGradient](https://github.com/ruucm/shadergradient) | 3.1k | 🟢 活跃 | TypeScript | 可调参数的动态 3D 渐变，近年很流行的流体渐变画风。<br><sub>适合：背景素材</sub> |
 | [gl-react](https://github.com/gre/gl-react) | 3k | 🟢 活跃 | TypeScript | 用 React 组件的方式编写、组合 WebGL 着色器，React Native 也能用。<br><sub>适合：React 着色器</sub> |
+| [webgl-noise](https://github.com/ashima/webgl-noise) | 3k | 🟡 放缓 | GLSL | 经典的 GLSL 程序化噪声函数库，无数着色器作品里的噪声都出自这里。<br><sub>适合：噪声函数 · 也在：程序化生成 · 波函数坍缩</sub> |
+| [Inferno](https://github.com/twostraws/Inferno) | 2.9k | 🟢 活跃 | Swift / Metal（iOS） | 给 SwiftUI 用的 Metal 着色器合集：火焰、水波、像素化、光泽扫过等，手机 App 直接可用。<br><sub>适合：App 动效 · 也在：故障 · 后期特效</sub> |
 | [Hydra](https://github.com/hydra-synth/hydra) | 2.7k | 🟡 放缓 | JavaScript | 浏览器里的实时视频合成器，模仿模拟信号合成器，几行代码就能出反馈、扭曲、色彩迷幻的画面。<br><sub>适合：现场 VJ · MV · 也在：Live Coding · VJ、故障 · 后期特效</sub><br><sub>⚠️ AGPL-3.0：用在对外提供的网络服务里时，需要公开修改后的源码。</sub> |
+| [glslEditor](https://github.com/patriciogonzalezvivo/glslEditor) | 2.6k | ⚪ 停更 | JavaScript | 网页里的 GLSL 片元着色器编辑器，带颜色、数值的可视化调节控件。<br><sub>适合：着色器编辑器</sub><br><sub>⚠️ 2023 年后未更新。</sub> |
+| [glslify](https://github.com/glslify/glslify) | 2.3k | ⚪ 停更 | JavaScript | 像 npm 一样给 GLSL 着色器引入模块，噪声、混合模式等函数可以直接复用。<br><sub>适合：着色器模块</sub><br><sub>⚠️ 2022 年后未更新。</sub> |
 | [glslCanvas](https://github.com/patriciogonzalezvivo/glslCanvas) | 2.3k | ⚪ 停更 | JavaScript | 把 GLSL 着色器放到网页 canvas 上运行的小工具，《The Book of Shaders》就用它。<br><sub>适合：网页着色器</sub><br><sub>⚠️ 2023 年后未更新。</sub> |
 | [GLSL-PathTracer](https://github.com/knightcrawler25/GLSL-PathTracer) | 2.1k | ⚪ 停更 | C++ / GLSL | 小巧的 GPU 物理路径追踪器，适合学习和渲染材质展示。<br><sub>适合：写实渲染 · 也在：写实光追</sub><br><sub>⚠️ 2024 年后未更新。</sub> |
 | [Butterchurn](https://github.com/jberg/butterchurn) | 2k | 🟡 放缓 | JavaScript | WebGL 版 MilkDrop 音乐可视化，自带大量经典迷幻预设。<br><sub>适合：音乐可视化 · MV · 也在：音乐可视化</sub> |
+| [GLSL Sandbox](https://github.com/mrdoob/glsl-sandbox) | 1.7k | 🟢 活跃 | JavaScript | three.js 作者做的着色器编辑器和作品画廊，打开就能改代码看效果。<br><sub>适合：着色器画廊 · 也在：Live Coding · VJ</sub> |
+| [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) | 1.7k | 🟢 活跃 | Unity | 功能很全的 Unity 卡通着色器，VRChat 角色常用。<br><sub>适合：二次元渲染 · 也在：二次元 · MMD · VRM</sub> |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | 🟡 放缓 | Unity Shader | 贴在物体表面、镜头移动也不闪烁的分形抖动着色器，做 1-bit 风格的 3D 画面。<br><sub>适合：1-bit 3D · 也在：抖动 · 1-bit、3D 渲染</sub><br><sub>⚠️ Unity 着色器；2025 年初后未更新。</sub> |
+| [Unity Toon Shader](https://github.com/Unity-Technologies/com.unity.toonshader) | 1.6k | 🟢 活跃 | Unity | Unity 官方的卡通着色器，做日式动画风格的角色和场景。<br><sub>适合：二次元渲染 · 也在：二次元 · MMD · VRM</sub> |
 | [MilkDrop 3](https://github.com/milkdrop2077/MilkDrop3) | 1.5k | 🟢 活跃 | C++（Windows） | MilkDrop 的延续版本，支持任意音源、双预设混合等新功能。<br><sub>适合：音乐可视化 · 也在：音乐可视化</sub> |
 | [Bonzomatic](https://github.com/Gargaj/Bonzomatic) | 1.5k | 🟡 放缓 | GLSL | Demoscene「Shader Showdown」比赛用的实时着色器写码工具，现场写代码现场出画面。<br><sub>适合：现场演出 · 也在：Live Coding · VJ、Demoscene 演示场景</sub> |
+| [ShaderMan](https://github.com/smkplus/ShaderMan) | 1.5k | ⚪ 停更 | C#（Unity） | 把 Shadertoy 上的着色器转换成 Unity 能用的 HLSL / CG。<br><sub>适合：着色器移植</sub><br><sub>⚠️ 2021 年后未更新。</sub> |
+| [GLSL 入门大全](https://github.com/wshxbqq/GLSL-Card) | 1.5k | ⚪ 停更 | GLSL | 国人整理的 GLSL 着色器语言入门大全，函数和用法按卡片列出来。<br><sub>适合：中文教程</sub><br><sub>⚠️ 2019 年后未更新。</sub> |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.4k | 🟡 放缓 | TypeScript | Paper 团队的小工具：把 Logo 变成流动的液态金属动画。<br><sub>适合：Logo 动效 · 也在：液态玻璃 · 玻璃拟态、扁平 MG 动效</sub> |
+| [NoiseShader](https://github.com/keijiro/NoiseShader) | 1.4k | 🟡 放缓 | Unity HLSL | keijiro 的 Unity 噪声着色器库，单纯形噪声、柏林噪声一应俱全。<br><sub>适合：噪声函数 · 也在：程序化生成 · 波函数坍缩</sub> |
+| [CustomShaderMaterial](https://github.com/FarazzShaikh/THREE-CustomShaderMaterial) | 1.4k | 🟡 放缓 | TypeScript | 在 three.js 标准材质上叠加自己的着色器，保留光照和阴影。<br><sub>适合：three.js 着色器 · 也在：3D 渲染</sub> |
+| [URP_Toon](https://github.com/ChiliMilk/URP_Toon) | 1.4k | ⚪ 停更 | Unity | Unity URP 的卡通着色器，支持描边、色阶阴影、边缘光。<br><sub>适合：二次元渲染 · 也在：二次元 · MMD · VRM</sub><br><sub>⚠️ 2024 年后未更新。</sub> |
 | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | 🟢 活跃 | GLSL | RetroArch 的着色器合集：CRT 扫描线、像素放大等复古显示效果。<br><sub>适合：复古后期 · 也在：像素 · 复古、VHS · 模拟信号</sub> |
+| [shuding/liquid-glass](https://github.com/shuding/liquid-glass) | 1.2k | 🟡 放缓 | SVG / JS | 复制粘贴就能用的液态玻璃着色器，用 SVG 滤镜实现。<br><sub>适合：液态玻璃 · 也在：液态玻璃 · 玻璃拟态</sub> |
 | [PixiJS Filters](https://github.com/pixijs/filters) | 1.1k | 🟡 放缓 | TypeScript | PixiJS 社区滤镜合集：故障、辉光、像素化、CRT 等几十种效果。<br><sub>适合：2D 特效 · 也在：故障 · 后期特效</sub> |
+| [glsl-blend](https://github.com/jamieowen/glsl-blend) | 1.1k | ⚪ 停更 | GLSL | Photoshop 全套图层混合模式的 GLSL 实现。<br><sub>适合：混合模式</sub><br><sub>⚠️ 2022 年后未更新。</sub> |
 | [Shader Editor](https://github.com/markusfisch/ShaderEditor) | 1.1k | 🟢 活跃 | Java（安卓） | 在安卓手机上写 GLSL 着色器，可以直接设成动态壁纸。<br><sub>适合：手机写着色器</sub> |
 | [twigl](https://github.com/doxas/twigl) | 1.1k | 🟡 放缓 | GLSL | 极简 GLSL 在线编辑器，日本「推特 GLSL」圈常用，可以导出 GIF 和视频。<br><sub>适合：短片 · GIF · 也在：Live Coding · VJ</sub> |
+| [liquidGL](https://github.com/naughtyduk/liquidGL) | 1k | 🟢 活跃 | WebGL / WebGPU | 网页液态玻璃效果，WebGL 和 WebGPU 实现。<br><sub>适合：液态玻璃 · 也在：液态玻璃 · 玻璃拟态</sub> |
 | [motion-anything](https://github.com/nexu-io/motion-anything) | 1k | 🟢 活跃 | JavaScript | 用一句话描述感觉，AI 生成动效页面和发布视频；自带可直接复用的着色器、Canvas 和动态文字配方。<br><sub>适合：动效页面 · 发布片 · 也在：扁平 MG 动效</sub> |
+| [Radiant](https://github.com/pbakaus/radiant) | 1k | 🟢 活跃 | GLSL / WebGL | 精选的生成式着色器艺术合集，每件作品都能直接在网页里跑。<br><sub>适合：着色器艺术 · 也在：生成艺术 · 几何</sub> |
+| [Raymarching Workshop](https://github.com/electricsquare/raymarching-workshop) | 1k | ⚪ 停更 | GLSL | 光线步进入门工作坊：用有向距离场一步步画出 3D 形体。<br><sub>适合：教程 · 也在：3D 渲染</sub><br><sub>⚠️ 2021 年后未更新。</sub> |
+| [Godot Realistic Water](https://github.com/godot-extended-libraries/godot-realistic-water) | 978 | 🟡 放缓 | Godot Shader | Godot 的写实水面着色器。<br><sub>适合：水面 · 也在：3D 渲染</sub> |
 | [Fragment](https://github.com/raphaelameaume/fragment) | 949 | 🟢 活跃 | JavaScript | 新一代创意编程工具包，热更新、参数面板、导出帧序列都内置好了。<br><sub>适合：生成艺术 · 也在：生成艺术 · 几何</sub><br><sub>⚠️ 仍在 alpha 阶段。</sub> |
 | [Shader Park](https://github.com/shader-park/shader-park-core) | 831 | 🟢 活跃 | JavaScript | 用类 JS 语法写 SDF 着色器，做出雕塑感的 3D 抽象造型。<br><sub>适合：MV · 生成艺术 · 也在：3D 渲染</sub> |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | 806 | 🟢 活跃 | Godot Shader | Godot 的复古后期效果包：CRT、VHS、抖动、像素化。<br><sub>适合：复古后期 · 也在：像素 · 复古、VHS · 模拟信号</sub> |
+| [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) | 802 | 🟢 活跃 | WebGL2 / WebGPU | 国人作品：在网页里复刻苹果液态玻璃界面，可以实时调折射、色散、高光。<br><sub>适合：液态玻璃 · 也在：液态玻璃 · 玻璃拟态</sub> |
+| [orb](https://github.com/LerSent001/orb) | 746 | 🟢 活跃 | WebGPU | 国人作品：实时 WebGPU 液态玻璃球编辑器，可导出到网页或 SwiftUI / Metal。<br><sub>适合：液态玻璃球 · 也在：液态玻璃 · 玻璃拟态</sub> |
+| [shadplay](https://github.com/alphastrata/shadplay) | 727 | 🟢 活跃 | Rust / WGSL | 实时 WGSL 着色器可视化工具，边写边看，学着色器很方便。<br><sub>适合：着色器练习 · 也在：Live Coding · VJ</sub> |
 | [Shader Toy for VS Code](https://github.com/stevensona/shader-toy) | 721 | 🟢 活跃 | TypeScript | 在 VS Code 里实时预览 Shadertoy 风格的 GLSL 着色器。<br><sub>适合：着色器开发</sub> |
+| [Shader Lab](https://github.com/basementstudio/shader-lab) | 717 | 🟢 活跃 | TypeScript | 创建、叠加、做动画的着色器工具包，可以把多个效果像图层一样组合。<br><sub>适合：着色器动效 · 也在：扁平 MG 动效</sub> |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 614 | 🟡 放缓 | Godot | 基于 Tessendorf FFT 的海浪和浮力，用计算着色器在 Godot 4 里实现。<br><sub>适合：海洋 · 也在：3D 渲染、粒子 · 流体 · 物理</sub> |
+| [LiliumToonGraph](https://github.com/you-ri/LiliumToonGraph) | 609 | 🟢 活跃 | Unity Shader Graph | 用 Shader Graph 做的 Unity URP 卡通着色器。<br><sub>适合：二次元渲染 · 也在：二次元 · MMD · VRM</sub> |
+| [Bauble](https://github.com/ianthehenry/bauble) | 597 | 🟢 活跃 | Janet（Lisp） | 用 Lisp 和数学做 3D 艺术的游乐场，背后是有向距离场光线步进。<br><sub>适合：3D 数学艺术 · 也在：3D 渲染、生成艺术 · 几何</sub> |
+| [shader-doodle](https://github.com/mmmerl/shader-doodle) | 589 | 🟢 活跃 | Web Component | 写着色器、显示着色器的网页组件，一个标签就能把 Shadertoy 风格代码放进网页。<br><sub>适合：网页着色器</sub> |
 | [Shader Minifier](https://github.com/laurentlb/shader-minifier) | 583 | 🟢 活跃 | F# | 把 GLSL / HLSL 代码压缩到最小，4KB、64KB 小体积 demo 的必备工具。<br><sub>适合：Demoscene · 也在：Demoscene 演示场景</sub> |
 | [cables](https://github.com/cables-gl/cables) | 572 | 🟢 活跃 | 节点连线 / JS | 节点式可视化编程平台，在浏览器里连线做实时 WebGL 画面，常用于 MV 和演出视觉。<br><sub>适合：MV · 现场演出 · 也在：Live Coding · VJ、3D 渲染</sub> |
+| [Beam](https://github.com/doodlewind/beam) | 528 | 🟢 活跃 | JavaScript / WebGPU | 国人作者的轻量 WebGPU 库，用很少的代码搭着色器渲染流程。<br><sub>适合：着色器渲染</sub> |
+| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | 524 | 🟡 放缓 | Godot Shader | 把常见转场效果做进一个 Godot 着色器里。<br><sub>适合：转场 · 也在：短视频 · 字幕 · 快剪</sub> |
+| [Learn wgpu 中文版](https://github.com/jinleili/learn-wgpu-zh) | 512 | 🟢 活跃 | Rust / WGSL | wgpu 图形编程教程的中文版，从三角形一路讲到着色器和计算管线。<br><sub>适合：中文教程 · 也在：3D 渲染</sub> |
+| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | 489 | 🟢 活跃 | Swift / Metal（iOS） | 可组合的 Metal 着色器和 SwiftUI 全息界面效果。<br><sub>适合：App 动效 · 也在：液态玻璃 · 玻璃拟态</sub> |
 | [Retro Crisis 着色器](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 480 | 🟢 活跃 | Slang Shader | RetroArch 的 CRT 着色器预设合集，基于 Guest Advanced NTSC，复刻各种老电视的画面。<br><sub>适合：CRT 后期 · 也在：VHS · 模拟信号、像素 · 复古</sub> |
+| [Svader](https://github.com/sockmaster27/svader) | 464 | 🟢 活跃 | Svelte | 用 GPU 着色器渲染的 Svelte 组件。<br><sub>适合：网页着色器</sub> |
 | [Shader Skills](https://github.com/gokayfem/shader-skills) | 418 | 🟢 活跃 | GLSL | 给 AI 编程助手的 GLSL / Shadertoy 技能，附 186 个着色器函数。<br><sub>适合：着色器</sub> |
 | [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | 383 | 🟡 放缓 | WebGL | 国人作品：WebGL 实现的水墨画背景特效，墨色在宣纸上晕开流动。<br><sub>适合：水墨背景 · 也在：水墨 · 水彩</sub> |
+| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | 366 | 🟢 活跃 | WebGL2 | 生成式着色器工作室：9 种 WebGL2 艺术模式，可以混合风格、导出无缝循环。<br><sub>适合：着色器艺术 · 也在：生成艺术 · 几何</sub> |
+| [RayTK](https://github.com/t3kt/raytk) | 358 | 🟡 放缓 | TouchDesigner | TouchDesigner 的光线步进着色器工具包，用节点搭 SDF 场景。<br><sub>适合：光线步进 · 也在：Live Coding · VJ、3D 渲染</sub><br><sub>⚠️ 需要 TouchDesigner（商业软件，有免费版）。</sub> |
+| [Godot VFX Library](https://github.com/haowg/GODOT-VFX-LIBRARY) | 354 | 🟡 放缓 | Godot | Godot 4 的粒子特效和着色器合集。<br><sub>适合：特效素材 · 也在：粒子 · 流体 · 物理</sub> |
 | [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) | 347 | 🟢 活跃 | Swift（iOS） | 41 个可直接用在 SwiftUI 里的 Metal 着色器：全息箔、万花筒、磁力扭曲等，适合手机 App 动效。<br><sub>适合：App 动效 · 也在：故障 · 后期特效</sub> |
+| [ShaderMania](https://github.com/markusmoenig/ShaderMania) | 347 | 🟢 活跃 | Swift（macOS / iPad） | macOS 和 iPadOS 上的 Metal 片元着色器编辑器。<br><sub>适合：着色器编辑器</sub> |
 | [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 343 | 🟢 活跃 | Godot Shader | Godot 4 的复古着色器合集，做出 PS1、N64 时代的抖动、低多边形、贴图摇晃质感。<br><sub>适合：PS1 复古 3D · 也在：像素 · 复古、3D 渲染</sub> |
+| [Singularity](https://github.com/MisterPrada/singularity) | 317 | 🟡 放缓 | three.js / TSL | 用 three.js 着色语言 TSL 写的黑洞，WebGPU / WebGL 都能跑。<br><sub>适合：宇宙特效 · 也在：星空 · 宇宙</sub> |
+| [Poseidon](https://github.com/owenyuwono/poseidon) | 317 | 🟢 活跃 | three.js / TSL | GPU 驱动的实时 FFT 海洋，three.js + WebGPU。<br><sub>适合：海洋 · 也在：3D 渲染</sub> |
+| [ShaderToy 浏览器插件](https://github.com/patuwwy/ShaderToy-Chrome-Plugin) | 313 | 🟢 活跃 | JavaScript | 给 shadertoy.com 加功能的浏览器插件：调分辨率、录制、慢放等。<br><sub>适合：Shadertoy 增强</sub> |
+| [AGSL Shader Playground](https://github.com/mejdi14/Android-AGSL-Shader-Playground) | 308 | 🟢 活跃 | Kotlin（安卓） | 安卓 AGSL 着色器效果库，给 App 加流光、波纹、渐变等动效。<br><sub>适合：App 动效</sub> |
+| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 300 | 🟢 活跃 | WebGPU | 浏览器里全程序化的电影感海洋和极端天气模拟：风暴、海浪、龙卷风。<br><sub>适合：天气特效 · 也在：粒子 · 流体 · 物理、3D 渲染</sub> |
 | [Dithering Shader](https://github.com/niccolofanton/dithering-shader) | 294 | 🟢 活跃 | React / TS | React Three Fiber 的实时 Bayer 抖动后期效果，把 3D 场景变成复古抖动画面。<br><sub>适合：3D 后期 · 也在：抖动 · 1-bit、3D 渲染</sub> |
+| [TSL Textures](https://github.com/boytchev/tsl-textures) | 271 | 🟢 活跃 | three.js / TSL | three.js 着色语言 TSL 的程序化纹理合集：大理石、木纹、云、星空。<br><sub>适合：程序化纹理 · 也在：程序化生成 · 波函数坍缩</sub> |
+| [Radiance](https://github.com/zbanks/radiance) | 249 | 🟡 放缓 | C++ | 给 VJ 用的视频艺术软件：节拍检测、着色器效果链、GIF 和视频素材混合。<br><sub>适合：VJ · 也在：Live Coding · VJ、音乐可视化</sub> |
+| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | 236 | 🟢 活跃 | TypeScript | three.js 的屏幕空间光线步进体积光（丁达尔光）。<br><sub>适合：3D 后期 · 也在：3D 渲染</sub> |
+| [retrace.gl](https://github.com/stasilo/retrace.gl) | 196 | 🟢 活跃 | JavaScript | 用代码定义有向距离场 CSG 形体，光线追踪渲染后可以导出。<br><sub>适合：光追 3D · 也在：写实光追、3D 渲染</sub> |
+| [WebGL CRT Shader](https://github.com/gingerbeardman/webgl-crt-shader) | 188 | 🟡 放缓 | WebGL | 可调参数的网页 CRT 着色器：扫描线、屏幕弯曲、荧光残影。<br><sub>适合：CRT 后期 · 也在：VHS · 模拟信号</sub> |
 | [Black Hole](https://github.com/ibra-kdbra/black-hole) | 112 | 🟢 活跃 | three.js / GLSL | three.js 和 GLSL 着色器做的黑洞和吸积盘。<br><sub>适合：宇宙特效 · 也在：星空 · 宇宙</sub> |
 | [ditherwave](https://github.com/sahilsaini5/ditherwave) | 88 | 🟡 放缓 | React / WebGL2 | 不到 8KB 的 WebGL2 抖动组件：Bayer、半调、ASCII、误差扩散。<br><sub>适合：网页特效 · 也在：抖动 · 1-bit</sub> |
 | [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | 🟡 放缓 | three.js | 高性能的 three.js 星系着色器，可调颜色、旋臂和黑洞效果。<br><sub>适合：星系特效 · 也在：星空 · 宇宙、粒子 · 流体 · 物理</sub> |
@@ -500,7 +563,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 现场写代码出画面，视频合成器质感
 
-共 9 个项目，按星数排序。
+共 13 个项目，按星数排序。
 
 <br clear="right">
 
@@ -510,11 +573,15 @@ A curated list of open-source tools for making animations and music videos **wit
 | [TiXL](https://github.com/tixl3d/tixl) | 5.2k | 🟢 活跃 | 节点连线 / C# | 原 Tooll3，开源实时动态图形软件，节点加时间轴，常用于音乐视频和现场演出。<br><sub>适合：MV · 现场演出 · 也在：着色器 · 迷幻光影、3D 渲染</sub> |
 | [Hydra](https://github.com/hydra-synth/hydra) | 2.7k | 🟡 放缓 | JavaScript | 浏览器里的实时视频合成器，模仿模拟信号合成器，几行代码就能出反馈、扭曲、色彩迷幻的画面。<br><sub>适合：现场 VJ · MV · 也在：故障 · 后期特效、着色器 · 迷幻光影</sub><br><sub>⚠️ AGPL-3.0：用在对外提供的网络服务里时，需要公开修改后的源码。</sub> |
 | [ossia score](https://github.com/ossia/score) | 2.1k | 🟢 活跃 | C++（图形界面） | 多媒体时间线编排工具，可同步音频、视频、灯光和着色器。<br><sub>适合：演出 · 装置</sub> |
+| [GLSL Sandbox](https://github.com/mrdoob/glsl-sandbox) | 1.7k | 🟢 活跃 | JavaScript | three.js 作者做的着色器编辑器和作品画廊，打开就能改代码看效果。<br><sub>适合：着色器画廊 · 也在：着色器 · 迷幻光影</sub> |
 | [Bonzomatic](https://github.com/Gargaj/Bonzomatic) | 1.5k | 🟡 放缓 | GLSL | Demoscene「Shader Showdown」比赛用的实时着色器写码工具，现场写代码现场出画面。<br><sub>适合：现场演出 · 也在：着色器 · 迷幻光影、Demoscene 演示场景</sub> |
 | [twigl](https://github.com/doxas/twigl) | 1.1k | 🟡 放缓 | GLSL | 极简 GLSL 在线编辑器，日本「推特 GLSL」圈常用，可以导出 GIF 和视频。<br><sub>适合：短片 · GIF · 也在：着色器 · 迷幻光影</sub> |
+| [shadplay](https://github.com/alphastrata/shadplay) | 727 | 🟢 活跃 | Rust / WGSL | 实时 WGSL 着色器可视化工具，边写边看，学着色器很方便。<br><sub>适合：着色器练习 · 也在：着色器 · 迷幻光影</sub> |
 | [cables](https://github.com/cables-gl/cables) | 572 | 🟢 活跃 | 节点连线 / JS | 节点式可视化编程平台，在浏览器里连线做实时 WebGL 画面，常用于 MV 和演出视觉。<br><sub>适合：MV · 现场演出 · 也在：着色器 · 迷幻光影、3D 渲染</sub> |
 | [Mosaic](https://github.com/d3cod3/Mosaic) | 518 | 🟢 活跃 | C++ | 基于 openFrameworks 的可视化连线创意编程平台，节点、代码、音频都能接。<br><sub>适合：节点式创意编程 · 也在：生成艺术 · 几何</sub> |
 | [modV](https://github.com/vcync/modV) | 497 | 🟡 放缓 | JavaScript | 模块化的音乐可视化和 VJ 工具，用 JavaScript 和着色器写模块。<br><sub>适合：VJ · 音乐可视化 · 也在：音乐可视化</sub> |
+| [RayTK](https://github.com/t3kt/raytk) | 358 | 🟡 放缓 | TouchDesigner | TouchDesigner 的光线步进着色器工具包，用节点搭 SDF 场景。<br><sub>适合：光线步进 · 也在：着色器 · 迷幻光影、3D 渲染</sub><br><sub>⚠️ 需要 TouchDesigner（商业软件，有免费版）。</sub> |
+| [Radiance](https://github.com/zbanks/radiance) | 249 | 🟡 放缓 | C++ | 给 VJ 用的视频艺术软件：节拍检测、着色器效果链、GIF 和视频素材混合。<br><sub>适合：VJ · 也在：着色器 · 迷幻光影、音乐可视化</sub> |
 
 <sub>[↑ 回到画风索引](#index)</sub>
 
@@ -526,7 +593,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 频谱、波形、MilkDrop 式随音乐律动
 
-共 25 个项目，按星数排序。
+共 26 个项目，按星数排序。
 
 <br clear="right">
 
@@ -557,6 +624,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Opus Video Skills](https://github.com/tuzhechen2005/opus-video-skills) | 438 | 🟢 活跃 | JavaScript | 给 Claude Opus 用的做视频技能，每一帧画面和每一个音符都用代码生成。<br><sub>适合：短片 · MV · 也在：扁平 MG 动效</sub> |
 | [HaloFlux](https://github.com/Ryder191/haloflux) | 423 | 🟢 活跃 | Canvas | 随节拍律动的科幻光环可视化，纯 Canvas 单个 HTML 文件，没有依赖。<br><sub>适合：音乐可视化 · 也在：科幻 HUD · 赛博界面</sub><br><sub>⚠️ 仅限非商业使用。</sub> |
 | [Remotion 音频图模板](https://github.com/remotion-dev/template-audiogram) | 275 | 🟢 活跃 | React / TS | Remotion 官方模板：把播客音频做成带波形和字幕的短视频。<br><sub>适合：短视频 · 播客 · 也在：短视频 · 字幕 · 快剪</sub><br><sub>⚠️ 授权条款同 Remotion。</sub> |
+| [Radiance](https://github.com/zbanks/radiance) | 249 | 🟡 放缓 | C++ | 给 VJ 用的视频艺术软件：节拍检测、着色器效果链、GIF 和视频素材混合。<br><sub>适合：VJ · 也在：Live Coding · VJ、着色器 · 迷幻光影</sub> |
 
 <sub>[↑ 回到画风索引](#index)</sub>
 
@@ -568,7 +636,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 三维场景、镜头运动、材质灯光
 
-共 58 个项目，按星数排序。
+共 74 个项目，按星数排序。
 
 <br clear="right">
 
@@ -581,6 +649,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Taichi](https://github.com/taichi-dev/taichi) | 28.5k | 🟢 活跃 | Python | Python 高性能并行计算，常用来写流体、弹性体、粒子等物理模拟。<br><sub>适合：物理模拟 · 也在：粒子 · 流体 · 物理</sub> |
 | [Babylon.js](https://github.com/BabylonJS/Babylon.js) | 26.3k | 🟢 活跃 | TypeScript | 微软团队维护的网页 3D 引擎，功能全，自带在线编辑工具。<br><sub>适合：网页 3D · MV</sub> |
 | [img2threejs](https://github.com/img2threejs/img2threejs) | 20.3k | 🟢 活跃 | Python / three.js | AI 编程助手技能：照着参考图，用纯代码重建程序化的 three.js 3D 模型，可直接做动画。<br><sub>适合：3D 素材</sub><br><sub>⚠️ 附带可选的 Blender 导出桥，核心是纯代码 three.js 模型。</sub> |
+| [3D 游戏着色器入门](https://github.com/lettier/3d-game-shaders-for-beginners) | 20k | ⚪ 停更 | GLSL / C++ | 一步步实现 SSAO、景深、辉光、卡通描边、像素化等几十种 3D 着色器效果的图文教程。<br><sub>适合：教程 · 也在：着色器 · 迷幻光影</sub><br><sub>⚠️ 2023 年后未更新，教程内容完整。</sub> |
 | [PlayCanvas](https://github.com/playcanvas/engine) | 17.2k | 🟢 活跃 | JavaScript | 网页 3D 引擎，支持 WebGL / WebGPU 和高斯泼溅。<br><sub>适合：网页 3D</sub> |
 | [deck.gl](https://github.com/visgl/deck.gl) | 14.7k | 🟢 活跃 | TypeScript | 大规模地理数据可视化：轨迹动画、3D 柱状地图等。<br><sub>适合：地图动画 · 也在：数据可视化动画、地图 · 路线动画</sub> |
 | [Theatre.js](https://github.com/theatre-js/theatre) | 12.9k | ⚪ 停更 | TypeScript | 网页动画的可视化时间轴：代码里定义属性，界面里拖关键帧，常配 three.js 做 3D 镜头动画。<br><sub>适合：MV · 网页动画 · 也在：扁平 MG 动效</sub> |
@@ -589,10 +658,13 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Vanta.js](https://github.com/tengbao/vanta) | 7.3k | ⚪ 停更 | JavaScript | 几行代码生成动态 3D 背景：波浪、飞鸟、雾气、网格等。<br><sub>适合：背景素材 · 也在：生成艺术 · 几何</sub> |
 | [ThreeUI](https://github.com/MengTo/threeui) | 7.1k | 🟢 活跃 | three.js | three.js 交互组件目录，每个组件都带可调参数和源码。<br><sub>适合：网页 3D · 素材</sub> |
 | [VoxelSpace](https://github.com/s-macke/VoxelSpace) | 6.8k | ⚪ 停更 | C / JS | 不到 20 行代码复刻 90 年代《科曼奇》的体素地形飞行画面，附原理讲解。<br><sub>适合：复古体素地形 · 也在：等距 · 体素、像素 · 复古</sub> |
+| [《Unity Shader 入门精要》源码](https://github.com/candycat1992/Unity_Shaders_Book) | 6.1k | ⚪ 停更 | Unity ShaderLab | 国内经典教材《Unity Shader 入门精要》的全部源代码。<br><sub>适合：中文教程 · 也在：着色器 · 迷幻光影</sub><br><sub>⚠️ 2023 年后未更新，教材内容完整。</sub> |
 | [Galacean Engine](https://github.com/galacean/engine) | 5.9k | 🟢 活跃 | TypeScript | 蚂蚁集团开源的 Web 图形引擎，2D、3D、粒子、Lottie 都能用。<br><sub>适合：网页 3D · 互动 · 也在：粒子 · 流体 · 物理</sub> |
 | [Cinder](https://github.com/cinder/Cinder) | 5.5k | 🟡 放缓 | C++ | C++ 创意编程框架，偏专业的实时图形与装置作品。<br><sub>适合：演出 · 装置 · 也在：生成艺术 · 几何</sub> |
+| [Orillusion](https://github.com/Orillusion/orillusion) | 5.2k | 🟢 活跃 | TypeScript / WebGPU | 国人团队开发的纯 WebGPU 网页 3D 引擎。<br><sub>适合：网页 3D · 也在：着色器 · 迷幻光影</sub> |
 | [TiXL](https://github.com/tixl3d/tixl) | 5.2k | 🟢 活跃 | 节点连线 / C# | 原 Tooll3，开源实时动态图形软件，节点加时间轴，常用于音乐视频和现场演出。<br><sub>适合：MV · 现场演出 · 也在：Live Coding · VJ、着色器 · 迷幻光影</sub> |
 | [WFC 无限城市](https://github.com/marian42/wavefunctioncollapse) | 4.9k | ⚪ 停更 | C#（Unity） | 用波函数坍缩实时生成可以无限走下去的 3D 城市。<br><sub>适合：程序化生成 · 也在：程序化生成 · 波函数坍缩</sub><br><sub>⚠️ 2021 年后未更新。</sub> |
+| [Godot Shaders](https://github.com/gdquest-demos/godot-shaders) | 4.2k | 🟢 活跃 | Godot Shader | GDQuest 整理的 Godot 2D / 3D 着色器大合集，溶解、描边、水面、像素化都有。<br><sub>适合：着色器合集 · 也在：着色器 · 迷幻光影、像素 · 复古</sub> |
 | [farbrausch 工具集](https://github.com/farbrausch/fr_public) | 3.8k | ⚪ 停更 | C++ | 传奇 demo 团队 farbrausch 2001–2011 年的工具源码，包括做出 64KB 3D 短片的 .werkkzeug。<br><sub>适合：Demoscene · 也在：Demoscene 演示场景</sub><br><sub>⚠️ 历史源码存档，编译和使用门槛较高。</sub> |
 | [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.1k | 🟢 活跃 | Python / Web | 15 种动效画风样片，每支都由 Claude Opus 5.5 根据一句提示词写代码做出，附提示词和源码。<br><sub>适合：画风样片 · 也在：扁平 MG 动效、手绘 · 白板 · 水彩</sub><br><sub>⚠️ 15 支里只有 3D 那一支用到 Blender，其余都是纯代码。</sub> |
 | [Mitsuba 3](https://github.com/mitsuba-renderer/mitsuba3) | 3k | 🟢 活跃 | C++ / Python | 研究级物理渲染器，用 Python 脚本搭场景、渲染逐帧动画。<br><sub>适合：写实渲染 · 也在：写实光追</sub> |
@@ -606,28 +678,40 @@ A curated list of open-source tools for making animations and music videos **wit
 | [MathBox](https://github.com/unconed/mathbox) | 1.5k | ⚪ 停更 | JavaScript | 浏览器里的 3D 数学可视化：曲面、向量场、坐标网格，画面干净有质感。<br><sub>适合：讲解视频 · 也在：数学讲解风</sub> |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | 🟢 活跃 | C | 程序化生成的体素引擎，地形和建筑都由代码长出来。<br><sub>适合：程序化体素 · 也在：程序化生成 · 波函数坍缩、等距 · 体素</sub> |
 | [Origami Simulator](https://github.com/amandaghassaei/OrigamiSimulator) | 1.4k | 🟢 活跃 | JavaScript / WebGL | 实时 WebGL 折纸模拟：导入折痕图，看一张纸自己折成纸鹤。<br><sub>适合：折纸动画 · 也在：折纸 · 纸艺</sub> |
+| [CustomShaderMaterial](https://github.com/FarazzShaikh/THREE-CustomShaderMaterial) | 1.4k | 🟡 放缓 | TypeScript | 在 three.js 标准材质上叠加自己的着色器，保留光照和阴影。<br><sub>适合：three.js 着色器 · 也在：着色器 · 迷幻光影</sub> |
 | [TerraForge3D](https://github.com/Jaysmito101/TerraForge3D) | 1.3k | 🟢 活跃 | C++ | 程序化地形生成和贴图工具，节点式编辑。<br><sub>适合：程序化地形 · 也在：程序化生成 · 波函数坍缩</sub><br><sub>⚠️ 以图形界面为主。</sub> |
 | [three-nebula](https://github.com/creativelifeform/three-nebula) | 1.2k | 🟢 活跃 | JavaScript | three.js 的 WebGL 粒子系统引擎，附可视化编辑器。<br><sub>适合：3D 粒子 · 也在：粒子 · 流体 · 物理</sub> |
 | [three.quarks](https://github.com/Alchemist0823/three.quarks) | 1.2k | 🟢 活跃 | TypeScript | three.js 的粒子特效系统：火焰、爆炸、魔法等 VFX。<br><sub>适合：3D 特效 · 也在：粒子 · 流体 · 物理</sub> |
 | [Mandelbulber](https://github.com/buddhi1980/mandelbulber2) | 1.1k | 🟢 活跃 | C++ | 3D 分形渲染器，曼德博球等分形可以设关键帧做飞行动画。<br><sub>适合：3D 分形动画 · 也在：分形 · 混沌 · 数学艺术</sub><br><sub>⚠️ 以图形界面为主，也支持命令行批量渲染。</sub> |
+| [Raymarching Workshop](https://github.com/electricsquare/raymarching-workshop) | 1k | ⚪ 停更 | GLSL | 光线步进入门工作坊：用有向距离场一步步画出 3D 形体。<br><sub>适合：教程 · 也在：着色器 · 迷幻光影</sub><br><sub>⚠️ 2021 年后未更新。</sub> |
+| [Godot Realistic Water](https://github.com/godot-extended-libraries/godot-realistic-water) | 978 | 🟡 放缓 | Godot Shader | Godot 的写实水面着色器。<br><sub>适合：水面 · 也在：着色器 · 迷幻光影</sub> |
 | [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 919 | 🟢 活跃 | JavaScript | 给 three.js 用的程序化地形生成引擎。<br><sub>适合：程序化地形 · 也在：程序化生成 · 波函数坍缩</sub> |
 | [motion-web](https://github.com/feitangyuan/motion-web) | 836 | 🟢 活跃 | HTML / JS | onetake 作者的另一套技能：用原生 three.js、Canvas、WebGL 做动效优先的创意网站。<br><sub>适合：动效网站 · 也在：扁平 MG 动效</sub> |
 | [Shader Park](https://github.com/shader-park/shader-park-core) | 831 | 🟢 活跃 | JavaScript | 用类 JS 语法写 SDF 着色器，做出雕塑感的 3D 抽象造型。<br><sub>适合：MV · 生成艺术 · 也在：着色器 · 迷幻光影</sub> |
 | [遨游太阳系](https://github.com/hyqzz/Solar-Wanderer) | 764 | 🟢 活跃 | three.js | 国人作品：浏览器里 1:1 实时的太阳系，用 NASA JPL 星历数据，可以飞到任意行星。<br><sub>适合：太阳系动画 · 也在：星空 · 宇宙</sub> |
 | [Athenaion](https://github.com/Leonxlnx/athenaion) | 680 | 🟢 活跃 | three.js | 用 three.js 纯代码搭出的古希腊城邦世界，零素材，由 Claude 制作。<br><sub>适合：3D 世界</sub> |
 | [heerich](https://github.com/meodai/heerich) | 630 | 🟢 活跃 | JavaScript | 把 3D 体素场景渲染成 SVG 的小引擎，支持布尔运算和斜轴、透视相机，不用 WebGL。<br><sub>适合：体素插画 · 也在：等距 · 体素</sub> |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 614 | 🟡 放缓 | Godot | 基于 Tessendorf FFT 的海浪和浮力，用计算着色器在 Godot 4 里实现。<br><sub>适合：海洋 · 也在：着色器 · 迷幻光影、粒子 · 流体 · 物理</sub> |
+| [Bauble](https://github.com/ianthehenry/bauble) | 597 | 🟢 活跃 | Janet（Lisp） | 用 Lisp 和数学做 3D 艺术的游乐场，背后是有向距离场光线步进。<br><sub>适合：3D 数学艺术 · 也在：着色器 · 迷幻光影、生成艺术 · 几何</sub> |
 | [Machine Skill](https://github.com/AirsupHQ/machine-skill) | 579 | 🟢 活跃 | JavaScript | 一句话描述一台机器，Claude 用代码搭出写实、带物理的交互式 3D 模拟和拆解动画。<br><sub>适合：3D 机械动画</sub> |
 | [cables](https://github.com/cables-gl/cables) | 572 | 🟢 活跃 | 节点连线 / JS | 节点式可视化编程平台，在浏览器里连线做实时 WebGL 画面，常用于 MV 和演出视觉。<br><sub>适合：MV · 现场演出 · 也在：Live Coding · VJ、着色器 · 迷幻光影</sub> |
+| [Learn wgpu 中文版](https://github.com/jinleili/learn-wgpu-zh) | 512 | 🟢 活跃 | Rust / WGSL | wgpu 图形编程教程的中文版，从三角形一路讲到着色器和计算管线。<br><sub>适合：中文教程 · 也在：着色器 · 迷幻光影</sub> |
+| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | 480 | 🟢 活跃 | Godot | Godot 的 VRM 虚拟形象导入导出，自带 MToon 卡通着色器。<br><sub>适合：二次元 3D · 也在：二次元 · MMD · VRM</sub> |
 | [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) | 372 | 🟢 活跃 | JavaScript | 六个做短视频动画的 Claude 技能：three.js 3D 卡通讲解、火柴人、地图路线、爆炸拆解图等。<br><sub>适合：竖屏短视频 · 也在：地图 · 路线动画</sub> |
 | [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) | 369 | 🟢 活跃 | Python | 国人作品：用 Claude Opus 写代码做视频，先给三个方案和预览，确认后逐帧渲染成片。<br><sub>适合：短片 · 也在：扁平 MG 动效</sub> |
+| [RayTK](https://github.com/t3kt/raytk) | 358 | 🟡 放缓 | TouchDesigner | TouchDesigner 的光线步进着色器工具包，用节点搭 SDF 场景。<br><sub>适合：光线步进 · 也在：着色器 · 迷幻光影、Live Coding · VJ</sub><br><sub>⚠️ 需要 TouchDesigner（商业软件，有免费版）。</sub> |
 | [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 343 | 🟢 活跃 | Godot Shader | Godot 4 的复古着色器合集，做出 PS1、N64 时代的抖动、低多边形、贴图摇晃质感。<br><sub>适合：PS1 复古 3D · 也在：像素 · 复古、着色器 · 迷幻光影</sub> |
 | [Code Video Showcase](https://github.com/Moessif/code-video-showcase) | 322 | 🟢 活跃 | HTML / Canvas / three.js | 国人作品：纯代码的卡点展示视频技能，HTML / Canvas / SVG / three.js 逐帧渲染。<br><sub>适合：卡点展示片 · 也在：扁平 MG 动效</sub> |
+| [Poseidon](https://github.com/owenyuwono/poseidon) | 317 | 🟢 活跃 | three.js / TSL | GPU 驱动的实时 FFT 海洋，three.js + WebGPU。<br><sub>适合：海洋 · 也在：着色器 · 迷幻光影</sub> |
 | [OriSim3D](https://github.com/RemiKoutcherawy/OriSim3D-Android) | 304 | 🟢 活跃 | Kotlin（安卓） | 安卓上的 OpenGL 折纸折叠模拟，可以按步骤演示折法。<br><sub>适合：手机折纸动画 · 也在：折纸 · 纸艺</sub> |
+| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 300 | 🟢 活跃 | WebGPU | 浏览器里全程序化的电影感海洋和极端天气模拟：风暴、海浪、龙卷风。<br><sub>适合：天气特效 · 也在：着色器 · 迷幻光影、粒子 · 流体 · 物理</sub> |
 | [Dithering Shader](https://github.com/niccolofanton/dithering-shader) | 294 | 🟢 活跃 | React / TS | React Three Fiber 的实时 Bayer 抖动后期效果，把 3D 场景变成复古抖动画面。<br><sub>适合：3D 后期 · 也在：抖动 · 1-bit、着色器 · 迷幻光影</sub> |
 | [Papercraft](https://github.com/rodrigorc/papercraft) | 289 | 🟢 活跃 | Rust | 把 3D 模型展开成可以打印、剪下、粘起来的纸模。<br><sub>适合：纸模展开 · 也在：折纸 · 纸艺</sub> |
 | [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 261 | 🟢 活跃 | TypeScript | 在 Babylon.js 里加载并播放 MMD 模型和动作，做二次元角色舞蹈 MV。<br><sub>适合：二次元 MV · 也在：二次元 · MMD · VRM</sub> |
 | [Krbn](https://github.com/vpalos/Krbn) | 248 | 🟢 活跃 | TypeScript | 把 3D 场景渲染成铅笔线稿风格的 SVG：精确轮廓、隐藏线、排线阴影。<br><sub>适合：3D 线稿 · 也在：绘图仪 · 单线画</sub> |
+| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | 236 | 🟢 活跃 | TypeScript | three.js 的屏幕空间光线步进体积光（丁达尔光）。<br><sub>适合：3D 后期 · 也在：着色器 · 迷幻光影</sub> |
 | [Papercraft World](https://github.com/andrewwoan/aimee-xus-papercraft-world) | 197 | 🟢 活跃 | three.js | 纸艺风格的季节主题 3D 作品集网站，可以当纸艺画风的 three.js 参考。<br><sub>适合：纸艺 3D 网页 · 也在：折纸 · 纸艺</sub> |
+| [retrace.gl](https://github.com/stasilo/retrace.gl) | 196 | 🟢 活跃 | JavaScript | 用代码定义有向距离场 CSG 形体，光线追踪渲染后可以导出。<br><sub>适合：光追 3D · 也在：写实光追、着色器 · 迷幻光影</sub> |
 | [mutracer](https://github.com/pissang/mutracer) | 173 | 🟢 活跃 | TypeScript / WebGPU | ECharts 作者之一写的 WebGPU 物理渲染路径追踪器。<br><sub>适合：写实渲染 · 也在：写实光追</sub> |
 | [I, Voyager Planetarium](https://github.com/ivoyager/planetarium) | 162 | 🟢 活跃 | Godot | 基于 Godot 的开源太阳系模拟。<br><sub>适合：太阳系 · 也在：星空 · 宇宙</sub> |
 | [BB-Video](https://github.com/BubbleBrainBB/BB-Video) | 133 | 🟢 活跃 | JavaScript | 纯代码做视频的技能：带配音的讲解片和产品宣传片，32 种画风。<br><sub>适合：讲解 · 宣传片 · 也在：扁平 MG 动效</sub><br><sub>⚠️ 3D 吉祥物可选用 Blender 制作，不装 Blender 时用 three.js。</sub> |
@@ -643,18 +727,25 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 动漫角色、虚拟形象、舞蹈 MV
 
-共 8 个项目，按星数排序。
+共 15 个项目，按星数排序。
 
 <br clear="right">
 
 | 项目 | 星数 | 状态 | 写法 | 说明 |
 | --- | ---: | :---: | --- | --- |
+| [URP 卡通着色器示例](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample) | 7.8k | 🟢 活跃 | Unity HLSL | Unity URP 的卡通光照着色器示例，二次元角色描边、色阶阴影的入门范本。<br><sub>适合：二次元渲染 · 也在：着色器 · 迷幻光影</sub> |
 | [Kalidokit](https://github.com/yeemachine/kalidokit) | 5.7k | 🟡 放缓 | TypeScript | 用摄像头捕捉面部和身体动作，驱动 VRM / Live2D 角色。<br><sub>适合：虚拟形象</sub> |
+| [UnityChan 卡通着色器](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) | 4.1k | ⚪ 停更 | Unity | Unity 官方日本团队的卡通着色器，做出赛璐璐动画质感的角色和场景。<br><sub>适合：二次元渲染 · 也在：着色器 · 迷幻光影</sub><br><sub>⚠️ 2024 年后未更新，新项目可以用 Unity Toon Shader。</sub> |
 | [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 2.6k | 🟢 活跃 | p5.js | 让 Claude 画手绘卡通动画的起步模板：p5.js + p5.brush，附角色和镜头工具。<br><sub>适合：手绘卡通 · 也在：手绘 · 白板 · 水彩</sub> |
 | [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | 🟢 活跃 | TypeScript | pixiv 出品，在 three.js 里使用 VRM 二次元虚拟形象。<br><sub>适合：二次元 MV · 虚拟形象 · 也在：3D 渲染</sub> |
+| [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) | 1.7k | 🟢 活跃 | Unity | 功能很全的 Unity 卡通着色器，VRChat 角色常用。<br><sub>适合：二次元渲染 · 也在：着色器 · 迷幻光影</sub> |
+| [Unity Toon Shader](https://github.com/Unity-Technologies/com.unity.toonshader) | 1.6k | 🟢 活跃 | Unity | Unity 官方的卡通着色器，做日式动画风格的角色和场景。<br><sub>适合：二次元渲染 · 也在：着色器 · 迷幻光影</sub> |
 | [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) | 1.5k | ⚪ 停更 | TypeScript | 在 PixiJS 里显示和驱动 Live2D 模型，做 2D 二次元角色动画。<br><sub>适合：二次元动画</sub> |
+| [URP_Toon](https://github.com/ChiliMilk/URP_Toon) | 1.4k | ⚪ 停更 | Unity | Unity URP 的卡通着色器，支持描边、色阶阴影、边缘光。<br><sub>适合：二次元渲染 · 也在：着色器 · 迷幻光影</sub><br><sub>⚠️ 2024 年后未更新。</sub> |
 | [Aora Bot](https://github.com/sam70361/aora-bot) | 619 | 🟢 活跃 | TypeScript | 国人作品：代码绘制的网页角色引擎，46 个原创角色、44 种动画状态。<br><sub>适合：角色动画 · 也在：扁平 MG 动效</sub> |
+| [LiliumToonGraph](https://github.com/you-ri/LiliumToonGraph) | 609 | 🟢 活跃 | Unity Shader Graph | 用 Shader Graph 做的 Unity URP 卡通着色器。<br><sub>适合：二次元渲染 · 也在：着色器 · 迷幻光影</sub> |
 | [world.execute(me) 歌词 MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 511 | 🟢 活跃 | JavaScript | 粉丝自制的歌词 MV，把歌词演成和 Claude 的聊天，逐帧代码渲染到 4K60。<br><sub>适合：歌词 MV · 也在：动态文字 · 歌词</sub> |
+| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | 480 | 🟢 活跃 | Godot | Godot 的 VRM 虚拟形象导入导出，自带 MToon 卡通着色器。<br><sub>适合：二次元 3D · 也在：3D 渲染</sub> |
 | [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 261 | 🟢 活跃 | TypeScript | 在 Babylon.js 里加载并播放 MMD 模型和动作，做二次元角色舞蹈 MV。<br><sub>适合：二次元 MV · 也在：3D 渲染</sub> |
 | [html-anime](https://github.com/blixvip/html-anime) | 246 | 🟢 活跃 | JavaScript | 把场景描述变成分镜表，再让编程助手用 HTML 把整部片画出来，不调用视频模型。<br><sub>适合：动画短片 · 也在：扁平 MG 动效</sub> |
 
@@ -668,7 +759,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 烟雾、流体、烟花、碰撞模拟
 
-共 23 个项目，按星数排序。
+共 26 个项目，按星数排序。
 
 <br clear="right">
 
@@ -693,7 +784,10 @@ A curated list of open-source tools for making animations and music videos **wit
 | [three-nebula](https://github.com/creativelifeform/three-nebula) | 1.2k | 🟢 活跃 | JavaScript | three.js 的 WebGL 粒子系统引擎，附可视化编辑器。<br><sub>适合：3D 粒子 · 也在：3D 渲染</sub> |
 | [three.quarks](https://github.com/Alchemist0823/three.quarks) | 1.2k | 🟢 活跃 | TypeScript | three.js 的粒子特效系统：火焰、爆炸、魔法等 VFX。<br><sub>适合：3D 特效 · 也在：3D 渲染</sub> |
 | [Particle Life App](https://github.com/tom-mohr/particle-life-app) | 1k | 🟡 放缓 | Java | 带图形界面的粒子生命模拟器，可以调规则、录下涌现过程。<br><sub>适合：人工生命 · 也在：人工生命 · 生长形态</sub> |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 614 | 🟡 放缓 | Godot | 基于 Tessendorf FFT 的海浪和浮力，用计算着色器在 Godot 4 里实现。<br><sub>适合：海洋 · 也在：着色器 · 迷幻光影、3D 渲染</sub> |
 | [manim-physics](https://github.com/Matheart/manim-physics) | 412 | 🟢 活跃 | Python | Manim 的物理模拟扩展：刚体、电磁场、波动、单摆等物理动画。<br><sub>适合：讲解视频 · 也在：数学讲解风</sub> |
+| [Godot VFX Library](https://github.com/haowg/GODOT-VFX-LIBRARY) | 354 | 🟡 放缓 | Godot | Godot 4 的粒子特效和着色器合集。<br><sub>适合：特效素材 · 也在：着色器 · 迷幻光影</sub> |
+| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 300 | 🟢 活跃 | WebGPU | 浏览器里全程序化的电影感海洋和极端天气模拟：风暴、海浪、龙卷风。<br><sub>适合：天气特效 · 也在：着色器 · 迷幻光影、3D 渲染</sub> |
 | [cbirds](https://github.com/clainstone/cbirds) | 286 | 🟢 活跃 | C（命令行） | 终端里的鸟群：Boids 群集算法用盲文点阵画出来，也能导出精灵图。<br><sub>适合：终端动画 · 也在：ASCII · 终端</sub> |
 | [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 80 | 🟢 活跃 | three.js | three.js 做的 3D 流场粒子海洋，配自定义后期效果。<br><sub>适合：3D 粒子 · 也在：流场 · 风场、3D 渲染</sub> |
 | [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | 🟡 放缓 | three.js | 高性能的 three.js 星系着色器，可调颜色、旋臂和黑洞效果。<br><sub>适合：星系特效 · 也在：星空 · 宇宙、着色器 · 迷幻光影</sub> |
@@ -708,7 +802,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > RGB 偏移、扭曲、辉光、像素排序、合成
 
-共 16 个项目，按星数排序。
+共 17 个项目，按星数排序。
 
 <br clear="right">
 
@@ -719,6 +813,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Natron](https://github.com/NatronGitHub/Natron) | 5.6k | 🟢 活跃 | C++ / Python | 开源节点式合成软件，可用 Python 脚本控制，做后期合成和特效。<br><sub>适合：后期合成</sub> |
 | [ShaderGlass](https://github.com/mausimus/ShaderGlass) | 4.4k | 🟢 活跃 | C++（Windows） | 在 Windows 桌面上叠加 CRT、像素等复古着色器，录屏就能得到复古画面。<br><sub>适合：复古后期 · 也在：像素 · 复古、VHS · 模拟信号</sub> |
 | [postprocessing](https://github.com/pmndrs/postprocessing) | 3k | 🟢 活跃 | JavaScript | three.js 后期处理库：辉光、色差、故障、景深等。<br><sub>适合：3D 后期 · 也在：3D 渲染</sub> |
+| [Inferno](https://github.com/twostraws/Inferno) | 2.9k | 🟢 活跃 | Swift / Metal（iOS） | 给 SwiftUI 用的 Metal 着色器合集：火焰、水波、像素化、光泽扫过等，手机 App 直接可用。<br><sub>适合：App 动效 · 也在：着色器 · 迷幻光影</sub> |
 | [Hydra](https://github.com/hydra-synth/hydra) | 2.7k | 🟡 放缓 | JavaScript | 浏览器里的实时视频合成器，模仿模拟信号合成器，几行代码就能出反馈、扭曲、色彩迷幻的画面。<br><sub>适合：现场 VJ · MV · 也在：Live Coding · VJ、着色器 · 迷幻光影</sub><br><sub>⚠️ AGPL-3.0：用在对外提供的网络服务里时，需要公开修改后的源码。</sub> |
 | [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) | 2.7k | 🟢 活跃 | Rust | 开源 VHS 效果：模拟 NTSC 信号和录像带的色渗、抖动、雪花，可单独用，也是 AE、PR、OFX 插件。<br><sub>适合：VHS 后期 · 也在：VHS · 模拟信号</sub> |
 | [GL Transitions](https://github.com/gl-transitions/gl-transitions) | 2.2k | 🟢 活跃 | GLSL | 开源 GLSL 转场合集，可以接进 editly 等剪辑工具使用。<br><sub>适合：转场 · 也在：短视频 · 字幕 · 快剪</sub> |
@@ -741,7 +836,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 低分辨率、有限色板、CRT 扫描线、PS1 质感
 
-共 26 个项目，按星数排序。
+共 28 个项目，按星数排序。
 
 <br clear="right">
 
@@ -758,6 +853,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [TIC-80](https://github.com/nesbox/TIC-80) | 6.2k | 🟢 活跃 | Lua / JS 等 | 幻想主机（240×136 像素、16 色），demoscene 小体积作品和直播 Byte Jam 常用。<br><sub>适合：像素动画 · 现场 · 也在：Live Coding · VJ、Demoscene 演示场景</sub> |
 | [pixelfx](https://github.com/patch-gg/pixelfx) | 4.7k | 🟢 活跃 | JavaScript | 244 个用代码写的像素特效动画：火焰、爆炸、魔法、天气等，可导出精灵图；附带 AI 编程助手技能。<br><sub>适合：像素特效素材</sub> |
 | [ShaderGlass](https://github.com/mausimus/ShaderGlass) | 4.4k | 🟢 活跃 | C++（Windows） | 在 Windows 桌面上叠加 CRT、像素等复古着色器，录屏就能得到复古画面。<br><sub>适合：复古后期 · 也在：故障 · 后期特效、VHS · 模拟信号</sub> |
+| [Godot Shaders](https://github.com/gdquest-demos/godot-shaders) | 4.2k | 🟢 活跃 | Godot Shader | GDQuest 整理的 Godot 2D / 3D 着色器大合集，溶解、描边、水面、像素化都有。<br><sub>适合：着色器合集 · 也在：着色器 · 迷幻光影、3D 渲染</sub> |
 | [Sandspiel](https://github.com/MaxBittker/sandspiel) | 3.2k | 🟢 活跃 | Rust / WASM | 浏览器里的落沙沙盒：沙、水、火、植物按元胞自动机规则互相作用，画面像会流动的像素画。<br><sub>适合：落沙画面 · 也在：落沙 · 像素物理</sub> |
 | [timg](https://github.com/hzeller/timg) | 2.8k | 🟢 活跃 | C++（命令行） | 在终端里显示图片、播放视频，用字符块和终端图形协议。<br><sub>适合：终端播放 · 也在：ASCII · 终端</sub> |
 | [obelisk.js](https://github.com/nosir/obelisk.js) | 2.3k | ⚪ 停更 | JavaScript | 用 Canvas 搭像素风等距图形，像素积木一块块堆出来。<br><sub>适合：像素等距 · 也在：等距 · 体素</sub><br><sub>⚠️ 2019 年后未更新。</sub> |
@@ -765,6 +861,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Animate](https://github.com/cth9191/animate) | 1.5k | 🟢 活跃 | JavaScript / Canvas | Claude Code 技能：用单个 canvas 程序化绘制短动画，内置剪纸、排线墨水、Riso 印刷、速写本、数学、像素、等距 7 种画风。<br><sub>适合：讲解视频 · 短片 · 也在：手绘 · 白板 · 水彩、数学讲解风、Riso · 剪纸拼贴</sub> |
 | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | 🟢 活跃 | GLSL | RetroArch 的着色器合集：CRT 扫描线、像素放大等复古显示效果。<br><sub>适合：复古后期 · 也在：着色器 · 迷幻光影、VHS · 模拟信号</sub> |
 | [DOjS](https://github.com/SuperIlu/DOjS) | 963 | 🟡 放缓 | JavaScript（DOS） | 跑在 MS-DOS 上的 JavaScript 创意编程环境，API 类似 p5.js，复古味十足。<br><sub>适合：复古创意编程 · 也在：生成艺术 · 几何</sub> |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | 806 | 🟢 活跃 | Godot Shader | Godot 的复古后期效果包：CRT、VHS、抖动、像素化。<br><sub>适合：复古后期 · 也在：着色器 · 迷幻光影、VHS · 模拟信号</sub> |
 | [NTSC-CRT](https://github.com/LMP88959/NTSC-CRT) | 577 | 🟢 活跃 | C | 只用整数运算的 NTSC 编解码模拟，能还原 NES 等老主机在电视上的画面。<br><sub>适合：CRT 模拟 · 也在：VHS · 模拟信号</sub> |
 | [Retro Crisis 着色器](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 480 | 🟢 活跃 | Slang Shader | RetroArch 的 CRT 着色器预设合集，基于 Guest Advanced NTSC，复刻各种老电视的画面。<br><sub>适合：CRT 后期 · 也在：VHS · 模拟信号、着色器 · 迷幻光影</sub> |
 | [Sandboxels](https://github.com/R74nCom/sandboxels) | 477 | 🟢 活跃 | JavaScript | 网页落沙模拟，500 多种元素、上千种反应，元素可以用 mod 自己写。<br><sub>适合：落沙画面 · 也在：落沙 · 像素物理</sub> |
@@ -866,7 +963,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 ## 小众画风区
 
-这些画风用的人不多，但很有辨识度。门槛放宽到近一年内有更新、星数 50 以上；共 132 个项目。
+这些画风用的人不多，但很有辨识度。门槛放宽到近一年内有更新、星数 50 以上；共 151 个项目。
 
 <a name="ink"></a>
 
@@ -1035,7 +1132,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 从小样图长出地图、城市和迷宫，生成过程本身就是动画
 
-共 9 个项目，按星数排序。
+共 12 个项目，按星数排序。
 
 <br clear="right">
 
@@ -1046,10 +1143,13 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Fantasy Map Generator](https://github.com/Azgaar/Fantasy-Map-Generator) | 6.2k | 🟢 活跃 | JavaScript | 程序化生成可交互的奇幻世界地图：大陆、河流、国家、城镇都能调。<br><sub>适合：奇幻地图 · 也在：地图 · 路线动画</sub> |
 | [WFC 无限城市](https://github.com/marian42/wavefunctioncollapse) | 4.9k | ⚪ 停更 | C#（Unity） | 用波函数坍缩实时生成可以无限走下去的 3D 城市。<br><sub>适合：程序化生成 · 也在：3D 渲染</sub><br><sub>⚠️ 2021 年后未更新。</sub> |
 | [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) | 3.5k | 🟢 活跃 | 多语言 | 跨语言的噪声函数库（C#、C++、GLSL、JS、Rust 等），流场、地形、纹理的基础材料。<br><sub>适合：噪声函数 · 也在：生成艺术 · 几何</sub> |
+| [webgl-noise](https://github.com/ashima/webgl-noise) | 3k | 🟡 放缓 | GLSL | 经典的 GLSL 程序化噪声函数库，无数着色器作品里的噪声都出自这里。<br><sub>适合：噪声函数 · 也在：着色器 · 迷幻光影</sub> |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | 🟢 活跃 | C | 程序化生成的体素引擎，地形和建筑都由代码长出来。<br><sub>适合：程序化体素 · 也在：等距 · 体素、3D 渲染</sub> |
+| [NoiseShader](https://github.com/keijiro/NoiseShader) | 1.4k | 🟡 放缓 | Unity HLSL | keijiro 的 Unity 噪声着色器库，单纯形噪声、柏林噪声一应俱全。<br><sub>适合：噪声函数 · 也在：着色器 · 迷幻光影</sub> |
 | [TerraForge3D](https://github.com/Jaysmito101/TerraForge3D) | 1.3k | 🟢 活跃 | C++ | 程序化地形生成和贴图工具，节点式编辑。<br><sub>适合：程序化地形 · 也在：3D 渲染</sub><br><sub>⚠️ 以图形界面为主。</sub> |
 | [mapgen4](https://github.com/redblobgames/mapgen4) | 948 | 🟡 放缓 | TypeScript | Red Blob Games 的程序化荒野地图生成器，手绘风等高线和河流。<br><sub>适合：程序化地图 · 也在：地图 · 路线动画</sub> |
 | [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 919 | 🟢 活跃 | JavaScript | 给 three.js 用的程序化地形生成引擎。<br><sub>适合：程序化地形 · 也在：3D 渲染</sub> |
+| [TSL Textures](https://github.com/boytchev/tsl-textures) | 271 | 🟢 活跃 | three.js / TSL | three.js 着色语言 TSL 的程序化纹理合集：大理石、木纹、云、星空。<br><sub>适合：程序化纹理 · 也在：着色器 · 迷幻光影</sub> |
 
 <sub>[↑ 回到画风索引](#index)</sub>
 
@@ -1233,7 +1333,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 录像带色渗、信号抖动、扫描线和老电视质感
 
-共 11 个项目，按星数排序。
+共 13 个项目，按星数排序。
 
 <br clear="right">
 
@@ -1244,8 +1344,10 @@ A curated list of open-source tools for making animations and music videos **wit
 | [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) | 2.7k | 🟢 活跃 | Rust | 开源 VHS 效果：模拟 NTSC 信号和录像带的色渗、抖动、雪花，可单独用，也是 AE、PR、OFX 插件。<br><sub>适合：VHS 后期 · 也在：故障 · 后期特效</sub> |
 | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | 🟢 活跃 | GLSL | RetroArch 的着色器合集：CRT 扫描线、像素放大等复古显示效果。<br><sub>适合：复古后期 · 也在：像素 · 复古、着色器 · 迷幻光影</sub> |
 | [ntscqt](https://github.com/JargeZ/ntscqt) | 1.2k | ⚪ 停更 | Python | VHS 视频模拟器的图形界面，给视频加老录像带质感。<br><sub>适合：VHS 后期 · 也在：故障 · 后期特效</sub><br><sub>⚠️ 2024 年后未更新，新项目建议用 ntsc-rs。</sub> |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | 806 | 🟢 活跃 | Godot Shader | Godot 的复古后期效果包：CRT、VHS、抖动、像素化。<br><sub>适合：复古后期 · 也在：着色器 · 迷幻光影、像素 · 复古</sub> |
 | [NTSC-CRT](https://github.com/LMP88959/NTSC-CRT) | 577 | 🟢 活跃 | C | 只用整数运算的 NTSC 编解码模拟，能还原 NES 等老主机在电视上的画面。<br><sub>适合：CRT 模拟 · 也在：像素 · 复古</sub> |
 | [Retro Crisis 着色器](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 480 | 🟢 活跃 | Slang Shader | RetroArch 的 CRT 着色器预设合集，基于 Guest Advanced NTSC，复刻各种老电视的画面。<br><sub>适合：CRT 后期 · 也在：像素 · 复古、着色器 · 迷幻光影</sub> |
+| [WebGL CRT Shader](https://github.com/gingerbeardman/webgl-crt-shader) | 188 | 🟡 放缓 | WebGL | 可调参数的网页 CRT 着色器：扫描线、屏幕弯曲、荧光残影。<br><sub>适合：CRT 后期 · 也在：着色器 · 迷幻光影</sub> |
 | [NTSCRT](https://github.com/finnmckenty/NTSCRT) | 187 | 🟢 活跃 | Swift（macOS） | macOS 上的复古电视 / VHS 图片工具：ntsc-rs 信号模拟加 RetroArch CRT 着色器。<br><sub>适合：老电视画面</sub> |
 | [NTSCplayer](https://github.com/ferropop/NTSCplayer) | 141 | 🟢 活跃 | C++ | 播放视频时实时加上 NTSC / VHS 质感的媒体播放器。<br><sub>适合：复古播放器</sub> |
 | [VhsFx](https://github.com/NullTale/VhsFx) | 89 | 🟡 放缓 | Unity | Unity URP 的 VHS 后期效果。<br><sub>适合：VHS 后期 · 也在：故障 · 后期特效</sub> |
@@ -1310,7 +1412,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 物理正确的光线反弹，柔和阴影、焦散和景深
 
-共 6 个项目，按星数排序。
+共 7 个项目，按星数排序。
 
 <br clear="right">
 
@@ -1321,6 +1423,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [GLSL-PathTracer](https://github.com/knightcrawler25/GLSL-PathTracer) | 2.1k | ⚪ 停更 | C++ / GLSL | 小巧的 GPU 物理路径追踪器，适合学习和渲染材质展示。<br><sub>适合：写实渲染 · 也在：着色器 · 迷幻光影</sub><br><sub>⚠️ 2024 年后未更新。</sub> |
 | [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) | 2k | 🟢 活跃 | JavaScript | three.js 的 GPU 路径追踪渲染器，让网页 3D 场景有真实的光照、反射和景深。<br><sub>适合：写实渲染 · 也在：3D 渲染</sub> |
 | [ToyPathTracer](https://github.com/aras-p/ToyPathTracer) | 1.1k | 🟡 放缓 | C++ / C# | Unity 图形大牛 Aras 的玩具路径追踪器，配了一系列讲优化的博客。<br><sub>适合：教程</sub> |
+| [retrace.gl](https://github.com/stasilo/retrace.gl) | 196 | 🟢 活跃 | JavaScript | 用代码定义有向距离场 CSG 形体，光线追踪渲染后可以导出。<br><sub>适合：光追 3D · 也在：着色器 · 迷幻光影、3D 渲染</sub> |
 | [mutracer](https://github.com/pissang/mutracer) | 173 | 🟢 活跃 | TypeScript / WebGPU | ECharts 作者之一写的 WebGPU 物理渲染路径追踪器。<br><sub>适合：写实渲染 · 也在：3D 渲染</sub> |
 
 <sub>[↑ 回到画风索引](#index)</sub>
@@ -1333,7 +1436,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 太阳系、星空、星系旋臂和黑洞
 
-共 7 个项目，按星数排序。
+共 8 个项目，按星数排序。
 
 <br clear="right">
 
@@ -1343,9 +1446,39 @@ A curated list of open-source tools for making animations and music videos **wit
 | [遨游太阳系](https://github.com/hyqzz/Solar-Wanderer) | 764 | 🟢 活跃 | three.js | 国人作品：浏览器里 1:1 实时的太阳系，用 NASA JPL 星历数据，可以飞到任意行星。<br><sub>适合：太阳系动画 · 也在：3D 渲染</sub> |
 | [linecast](https://github.com/ashuttl/linecast) | 667 | 🟢 活跃 | 命令行 | 终端里的天气、潮汐、日月和星空，复古年历风格。<br><sub>适合：终端天象 · 也在：ASCII · 终端</sub> |
 | [Stellarium Web](https://github.com/Stellarium/stellarium-web-engine) | 660 | 🟢 活跃 | JavaScript / C | 著名天文软件 Stellarium 的网页引擎，实时渲染逼真的星空。<br><sub>适合：星空</sub> |
+| [Singularity](https://github.com/MisterPrada/singularity) | 317 | 🟡 放缓 | three.js / TSL | 用 three.js 着色语言 TSL 写的黑洞，WebGPU / WebGL 都能跑。<br><sub>适合：宇宙特效 · 也在：着色器 · 迷幻光影</sub> |
 | [I, Voyager Planetarium](https://github.com/ivoyager/planetarium) | 162 | 🟢 活跃 | Godot | 基于 Godot 的开源太阳系模拟。<br><sub>适合：太阳系 · 也在：3D 渲染</sub> |
 | [Black Hole](https://github.com/ibra-kdbra/black-hole) | 112 | 🟢 活跃 | three.js / GLSL | three.js 和 GLSL 着色器做的黑洞和吸积盘。<br><sub>适合：宇宙特效 · 也在：着色器 · 迷幻光影</sub> |
 | [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | 🟡 放缓 | three.js | 高性能的 three.js 星系着色器，可调颜色、旋臂和黑洞效果。<br><sub>适合：星系特效 · 也在：着色器 · 迷幻光影、粒子 · 流体 · 物理</sub> |
+
+<sub>[↑ 回到画风索引](#index)</sub>
+
+<a name="liquid"></a>
+
+### 液态玻璃 · 玻璃拟态 · Liquid Glass
+
+<img src="assets/styles/liquid.png" alt="液态玻璃 · 玻璃拟态样图" width="240" align="right">
+
+> 会折射、会色散的玻璃界面和液态金属，苹果液态玻璃风
+
+共 12 个项目，按星数排序。
+
+<br clear="right">
+
+| 项目 | 星数 | 状态 | 写法 | 说明 |
+| --- | ---: | :---: | --- | --- |
+| [AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) | 4.5k | 🟢 活跃 | Kotlin（Compose） | Compose Multiplatform 的液态玻璃效果，安卓上也能做苹果式玻璃界面。<br><sub>适合：液态玻璃</sub> |
+| [liquid-dom](https://github.com/AndrewPrifer/liquid-dom) | 2.6k | 🟢 活跃 | TypeScript | 给网页元素加上液态玻璃效果。<br><sub>适合：液态玻璃</sub> |
+| [Liquid Glass for RN](https://github.com/callstack/liquid-glass) | 1.7k | 🟢 活跃 | React Native | React Native 的液态玻璃组件。<br><sub>适合：液态玻璃</sub> |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.4k | 🟡 放缓 | TypeScript | Paper 团队的小工具：把 Logo 变成流动的液态金属动画。<br><sub>适合：Logo 动效 · 也在：着色器 · 迷幻光影、扁平 MG 动效</sub> |
+| [Cloudy](https://github.com/skydoves/Cloudy) | 1.3k | 🟢 活跃 | Kotlin（Compose） | Compose Multiplatform 的 GPU 模糊和液态玻璃效果库。<br><sub>适合：模糊 · 玻璃</sub> |
+| [shuding/liquid-glass](https://github.com/shuding/liquid-glass) | 1.2k | 🟡 放缓 | SVG / JS | 复制粘贴就能用的液态玻璃着色器，用 SVG 滤镜实现。<br><sub>适合：液态玻璃 · 也在：着色器 · 迷幻光影</sub> |
+| [liquidGL](https://github.com/naughtyduk/liquidGL) | 1k | 🟢 活跃 | WebGL / WebGPU | 网页液态玻璃效果，WebGL 和 WebGPU 实现。<br><sub>适合：液态玻璃 · 也在：着色器 · 迷幻光影</sub> |
+| [Liquid Glass Widgets](https://github.com/sdegenaar/liquid_glass_widgets) | 812 | 🟢 活跃 | Flutter | Flutter 的液态玻璃界面组件库。<br><sub>适合：液态玻璃</sub> |
+| [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) | 802 | 🟢 活跃 | WebGL2 / WebGPU | 国人作品：在网页里复刻苹果液态玻璃界面，可以实时调折射、色散、高光。<br><sub>适合：液态玻璃 · 也在：着色器 · 迷幻光影</sub> |
+| [orb](https://github.com/LerSent001/orb) | 746 | 🟢 活跃 | WebGPU | 国人作品：实时 WebGPU 液态玻璃球编辑器，可导出到网页或 SwiftUI / Metal。<br><sub>适合：液态玻璃球 · 也在：着色器 · 迷幻光影</sub> |
+| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | 489 | 🟢 活跃 | Swift / Metal（iOS） | 可组合的 Metal 着色器和 SwiftUI 全息界面效果。<br><sub>适合：App 动效 · 也在：着色器 · 迷幻光影</sub> |
+| [liquid-glass-android](https://github.com/Mortd3kay/liquid-glass-android) | 187 | 🟡 放缓 | Kotlin（Compose） | Jetpack Compose 的玻璃拟态库，用 AGSL 着色器做模糊、色散和折射。<br><sub>适合：玻璃拟态</sub> |
 
 <sub>[↑ 回到画风索引](#index)</sub>
 
@@ -1357,7 +1490,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 <sub>点图打开[可交互的关系图谱](https://syydaniel.github.io/awesome-code-animation/#graph-sec)：箭头从源头指向从它演化出来的项目，点线是同类、常搭配和同一作者；可以拖动、缩放、切换「演化树」卡片视图，点项目看完整演化链。</sub>
 
-共 200 条关系。想换工具时先看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。
+共 233 条关系。想换工具时先看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。
 
 ### 分叉自
 
@@ -1388,6 +1521,8 @@ A curated list of open-source tools for making animations and music videos **wit
 | [party-mode](https://github.com/preziotte/party-mode) | 基于 | [D3](https://github.com/d3/d3) | 用 D3 画可视化 |
 | [Mosaic](https://github.com/d3cod3/Mosaic) | 基于 | [openFrameworks](https://github.com/openframeworks/openFrameworks) | 基于 openFrameworks |
 | [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 基于 | [p5.js](https://github.com/processing/p5.js) |  |
+| [Poseidon](https://github.com/owenyuwono/poseidon) | 基于 | [three.js](https://github.com/mrdoob/three.js) |  |
+| [Singularity](https://github.com/MisterPrada/singularity) | 基于 | [three.js](https://github.com/mrdoob/three.js) |  |
 
 ### 插件 / 扩展
 
@@ -1412,6 +1547,10 @@ A curated list of open-source tools for making animations and music videos **wit
 | [remocn](https://github.com/Remocn/remocn) | 插件 / 扩展 | [Remotion](https://github.com/remotion-dev/remotion) | 社区动画和转场组件库 |
 | [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 插件 / 扩展 | [three.js](https://github.com/mrdoob/three.js) | three.js 程序化地形 |
 | [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) | 插件 / 扩展 | [three.js](https://github.com/mrdoob/three.js) | three.js 的路径追踪渲染器 |
+| [CustomShaderMaterial](https://github.com/FarazzShaikh/THREE-CustomShaderMaterial) | 插件 / 扩展 | [three.js](https://github.com/mrdoob/three.js) | 给 three.js 材质叠加自定义着色器 |
+| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | 插件 / 扩展 | [postprocessing](https://github.com/pmndrs/postprocessing) | 作为 postprocessing 的效果使用 |
+| [TSL Textures](https://github.com/boytchev/tsl-textures) | 插件 / 扩展 | [three.js](https://github.com/mrdoob/three.js) | three.js 着色语言 TSL 的纹理 |
+| [glsl-blend](https://github.com/jamieowen/glsl-blend) | 插件 / 扩展 | [glslify](https://github.com/glslify/glslify) | 按 glslify 模块格式发布 |
 
 ### 官方模板 / 技能
 
@@ -1572,6 +1711,29 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Stellarium Web](https://github.com/Stellarium/stellarium-web-engine) | 同类可替换 | [遨游太阳系](https://github.com/hyqzz/Solar-Wanderer) | 都在浏览器里渲染天体 |
 | [linecast](https://github.com/ashuttl/linecast) | 同类可替换 | [astroterm](https://github.com/da-luce/astroterm) | 都在终端里画星空 |
 | [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | 同类可替换 | [Shan-Shui-Inf 千里江山](https://github.com/LingDong-/shan-shui-inf) | 都是网页里的程序化水墨 |
+| [NoiseShader](https://github.com/keijiro/NoiseShader) | 同类可替换 | [webgl-noise](https://github.com/ashima/webgl-noise) | 都是噪声着色器函数；NoiseShader 用于 Unity |
+| [webgl-noise](https://github.com/ashima/webgl-noise) | 同类可替换 | [LYGIA](https://github.com/patriciogonzalezvivo/lygia) | 都提供着色器噪声函数；LYGIA 覆盖更广 |
+| [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) | 同类可替换 | [UnityChan 卡通着色器](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) | 都是 Unity 卡通着色器 |
+| [Unity Toon Shader](https://github.com/Unity-Technologies/com.unity.toonshader) | 同类可替换 | [UnityChan 卡通着色器](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) | 都是 Unity 的日式卡通着色器 |
+| [URP_Toon](https://github.com/ChiliMilk/URP_Toon) | 同类可替换 | [URP 卡通着色器示例](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample) | 都是 Unity URP 卡通着色器 |
+| [LiliumToonGraph](https://github.com/you-ri/LiliumToonGraph) | 同类可替换 | [URP 卡通着色器示例](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample) | 都是 Unity URP 卡通着色器 |
+| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | 同类可替换 | [three-vrm](https://github.com/pixiv/three-vrm) | 同一种 VRM 格式；一个用于 Godot，一个用于 three.js |
+| [Inferno](https://github.com/twostraws/Inferno) | 同类可替换 | [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) | 都是 SwiftUI 的 Metal 着色器合集 |
+| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | 同类可替换 | [Inferno](https://github.com/twostraws/Inferno) | 都给 SwiftUI 加 Metal 着色器效果 |
+| [AGSL Shader Playground](https://github.com/mejdi14/Android-AGSL-Shader-Playground) | 同类可替换 | [Shader Editor](https://github.com/markusfisch/ShaderEditor) | 都在安卓上跑着色器 |
+| [Shader Lab](https://github.com/basementstudio/shader-lab) | 同类可替换 | [Paper Shaders](https://github.com/paper-design/shaders) | 都是网页着色器效果工具包 |
+| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | 同类可替换 | [GL Transitions](https://github.com/gl-transitions/gl-transitions) | 都是着色器转场合集；一个用于 Godot |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | 同类可替换 | [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 都是 Godot 复古着色器 |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 同类可替换 | [Poseidon](https://github.com/owenyuwono/poseidon) | 都用 FFT 做实时海洋 |
+| [ShaderMan](https://github.com/smkplus/ShaderMan) | 同类可替换 | [Shader Toy for VS Code](https://github.com/stevensona/shader-toy) | 都围绕 Shadertoy 风格着色器 |
+| [Liquid Glass for RN](https://github.com/callstack/liquid-glass) | 同类可替换 | [liquid-dom](https://github.com/AndrewPrifer/liquid-dom) | 都是液态玻璃效果；一个用于 React Native，一个用于网页 |
+| [liquidGL](https://github.com/naughtyduk/liquidGL) | 同类可替换 | [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) | 都在网页里做液态玻璃 |
+| [shuding/liquid-glass](https://github.com/shuding/liquid-glass) | 同类可替换 | [liquid-dom](https://github.com/AndrewPrifer/liquid-dom) | 都是网页液态玻璃 |
+| [AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) | 同类可替换 | [Cloudy](https://github.com/skydoves/Cloudy) | 都是 Compose 的玻璃效果 |
+| [liquid-glass-android](https://github.com/Mortd3kay/liquid-glass-android) | 同类可替换 | [AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) | 都是安卓液态玻璃 |
+| [WebGL CRT Shader](https://github.com/gingerbeardman/webgl-crt-shader) | 同类可替换 | [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) | 都做 CRT 显示器质感 |
+| [Shader School](https://github.com/stackgl/shader-school) | 同类可替换 | [The Book of Shaders](https://github.com/patriciogonzalezvivo/thebookofshaders) | 都是着色器入门教程 |
+| [Raymarching Workshop](https://github.com/electricsquare/raymarching-workshop) | 同类可替换 | [Bauble](https://github.com/ianthehenry/bauble) | 都围绕 SDF 光线步进 |
 
 ### 常搭配
 
@@ -1621,13 +1783,17 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 同一作者 | [Papercut Explainer](https://github.com/0xS4N4TG/papercut-explainer) | 同一作者 |
 | [L-System Explorer](https://github.com/anvaka/lsystem) | 同一作者 | [FieldPlay](https://github.com/anvaka/fieldplay) | 同一作者 anvaka |
 | [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 同一作者 | [P(doom) MV](https://github.com/JohnHeibel/PDoomVideo) | 同一作者 |
+| [glslEditor](https://github.com/patriciogonzalezvivo/glslEditor) | 同一作者 | [glslViewer](https://github.com/patriciogonzalezvivo/glslViewer) | 同一作者 |
+| [GLSL Sandbox](https://github.com/mrdoob/glsl-sandbox) | 同一作者 | [three.js](https://github.com/mrdoob/three.js) | three.js 作者 mrdoob 的着色器画廊 |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 同一作者 | [Paper Shaders](https://github.com/paper-design/shaders) | Paper 团队出品 |
+| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | 同一作者 | [cinetic](https://github.com/Leonxlnx/cinetic) | 同一作者 |
 
 <a name="all"></a>
 
 ## 全部项目
 
 <details>
-<summary>展开全部 380 个项目（按星数排序）</summary>
+<summary>展开全部 443 个项目（按星数排序）</summary>
 
 | 项目 | 星数 | 画风 | 状态 |
 | --- | ---: | --- | :---: |
@@ -1663,6 +1829,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [VHS](https://github.com/charmbracelet/vhs) | 21.3k | [代码演示风](#code)、[ASCII · 终端](#ascii) | 🟢 |
 | [brag](https://github.com/latent-spaces/brag) | 20.3k | [扁平 MG 动效](#mg) | 🟢 |
 | [img2threejs](https://github.com/img2threejs/img2threejs) | 20.3k | [3D 渲染](#3d) | 🟢 |
+| [3D 游戏着色器入门](https://github.com/lettier/3d-game-shaders-for-beginners) | 20k | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | ⚪ |
 | [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | 19.7k | [扁平 MG 动效](#mg)、[代码演示风](#code)、[数学讲解风](#math) | 🟢 |
 | [mo.js](https://github.com/mojs/mojs) | 18.9k | [扁平 MG 动效](#mg) | 🟢 |
 | [Plotly](https://github.com/plotly/plotly.py) | 18.9k | [数据可视化动画](#data) | 🟢 |
@@ -1694,10 +1861,12 @@ A curated list of open-source tools for making animations and music videos **wit
 | [MapSCII](https://github.com/rastapasta/mapscii) | 9.3k | [地图 · 路线动画](#map)、[ASCII · 终端](#ascii) | 🟡 |
 | [tsParticles](https://github.com/tsparticles/tsparticles) | 9.1k | [粒子 · 流体 · 物理](#particle) | 🟢 |
 | [LÖVE](https://github.com/love2d/love) | 8.9k | [像素 · 复古](#pixel) | 🟢 |
+| [React Native Skia](https://github.com/wcandillon/react-native-skia) | 8.8k | [扁平 MG 动效](#mg)、[着色器 · 迷幻光影](#shader) | 🟢 |
 | [Two.js](https://github.com/jonobr1/two.js) | 8.7k | [扁平 MG 动效](#mg)、[生成艺术 · 几何](#gen) | 🟢 |
 | [MarkovJunior](https://github.com/mxgmn/MarkovJunior) | 8.5k | [程序化生成 · 波函数坍缩](#procgen)、[像素 · 复古](#pixel)、[等距 · 体素](#iso) | 🟡 |
 | [EffectCraft](https://github.com/storytold/effectcraft) | 8.4k | [扁平 MG 动效](#mg)、[故障 · 后期特效](#glitch) | 🟢 |
 | [chart.xkcd](https://github.com/timqian/chart.xkcd) | 7.9k | [手绘 · 白板 · 水彩](#hand)、[数据可视化动画](#data) | 🟢 |
+| [URP 卡通着色器示例](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample) | 7.8k | [着色器 · 迷幻光影](#shader)、[二次元 · MMD · VRM](#anime) | 🟢 |
 | [Arwes](https://github.com/arwes/arwes) | 7.6k | [科幻 HUD · 赛博界面](#scifi)、[扁平 MG 动效](#mg) | 🟢 |
 | [Vanta.js](https://github.com/tengbao/vanta) | 7.3k | [3D 渲染](#3d)、[生成艺术 · 几何](#gen) | ⚪ |
 | [roughViz](https://github.com/jwilber/roughViz) | 7.2k | [手绘 · 白板 · 水彩](#hand)、[数据可视化动画](#data) | ⚪ |
@@ -1712,6 +1881,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | 6.2k | [手绘 · 白板 · 水彩](#hand)、[水墨 · 水彩](#ink) | 🟢 |
 | [TIC-80](https://github.com/nesbox/TIC-80) | 6.2k | [像素 · 复古](#pixel)、[Live Coding · VJ](#live)、[Demoscene 演示场景](#demoscene) | 🟢 |
 | [Fantasy Map Generator](https://github.com/Azgaar/Fantasy-Map-Generator) | 6.2k | [程序化生成 · 波函数坍缩](#procgen)、[地图 · 路线动画](#map) | 🟢 |
+| [《Unity Shader 入门精要》源码](https://github.com/candycat1992/Unity_Shaders_Book) | 6.1k | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | ⚪ |
 | [css-doodle](https://github.com/css-doodle/css-doodle) | 6.1k | [生成艺术 · 几何](#gen) | 🟢 |
 | [Galacean Engine](https://github.com/galacean/engine) | 5.9k | [3D 渲染](#3d)、[粒子 · 流体 · 物理](#particle) | 🟢 |
 | [Shaders](https://github.com/shader-effects-inc/shaders) | 5.8k | [着色器 · 迷幻光影](#shader) | 🟢 |
@@ -1730,6 +1900,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Canvas UI](https://github.com/DavidHDev/canvas-ui) | 5.3k | [着色器 · 迷幻光影](#shader)、[粒子 · 流体 · 物理](#particle) | 🟢 |
 | [canvas-sketch](https://github.com/mattdesl/canvas-sketch) | 5.3k | [生成艺术 · 几何](#gen) | 🟢 |
 | [CMatrix](https://github.com/abishekvashok/cmatrix) | 5.3k | [ASCII · 终端](#ascii) | ⚪ |
+| [Orillusion](https://github.com/Orillusion/orillusion) | 5.2k | [3D 渲染](#3d)、[着色器 · 迷幻光影](#shader) | 🟢 |
 | [TiXL](https://github.com/tixl3d/tixl) | 5.2k | [Live Coding · VJ](#live)、[着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | 🟢 |
 | [Hanzi Writer](https://github.com/chanind/hanzi-writer) | 5.1k | [汉字 · 手写笔画](#hanzi)、[动态文字 · 歌词](#type) | 🟡 |
 | [WFC 无限城市](https://github.com/marian42/wavefunctioncollapse) | 4.9k | [程序化生成 · 波函数坍缩](#procgen)、[3D 渲染](#3d) | ⚪ |
@@ -1740,12 +1911,16 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Tweakpane](https://github.com/cocopon/tweakpane) | 4.6k | [生成艺术 · 几何](#gen) | 🟡 |
 | [projectM](https://github.com/projectM-visualizer/projectm) | 4.6k | [音乐可视化](#audio)、[着色器 · 迷幻光影](#shader) | 🟢 |
 | [ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | 4.5k | [短视频 · 字幕 · 快剪](#short) | 🟢 |
+| [AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) | 4.5k | [液态玻璃 · 玻璃拟态](#liquid) | 🟢 |
+| [Shader School](https://github.com/stackgl/shader-school) | 4.4k | [着色器 · 迷幻光影](#shader) | ⚪ |
 | [ShaderGlass](https://github.com/mausimus/ShaderGlass) | 4.4k | [像素 · 复古](#pixel)、[故障 · 后期特效](#glitch)、[VHS · 模拟信号](#vhs) | 🟢 |
 | [asciimatics](https://github.com/peterbrittain/asciimatics) | 4.3k | [ASCII · 终端](#ascii) | 🟢 |
 | [TerminalTextEffects](https://github.com/ChrisBuilds/terminaltexteffects) | 4.3k | [ASCII · 终端](#ascii)、[动态文字 · 歌词](#type) | 🟢 |
 | [pywonderland](https://github.com/neozhaoliang/pywonderland) | 4.2k | [分形 · 混沌 · 数学艺术](#fractal)、[数学讲解风](#math) | 🟡 |
+| [Godot Shaders](https://github.com/gdquest-demos/godot-shaders) | 4.2k | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d)、[像素 · 复古](#pixel) | 🟢 |
 | [VAP](https://github.com/Tencent/vap) | 4.2k | [扁平 MG 动效](#mg) | 🟢 |
 | [Revideo](https://github.com/midrender/revideo) | 4.2k | [扁平 MG 动效](#mg)、[短视频 · 字幕 · 快剪](#short) | 🟢 |
+| [UnityChan 卡通着色器](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) | 4.1k | [着色器 · 迷幻光影](#shader)、[二次元 · MMD · VRM](#anime) | ⚪ |
 | [AntV L7](https://github.com/antvis/L7) | 4.1k | [地图 · 路线动画](#map)、[数据可视化动画](#data) | 🟢 |
 | [Paper Shaders](https://github.com/paper-design/shaders) | 3.9k | [着色器 · 迷幻光影](#shader) | 🟢 |
 | [Lenia](https://github.com/Chakazul/Lenia) | 3.9k | [人工生命 · 生长形态](#alife)、[数学讲解风](#math) | ⚪ |
@@ -1762,6 +1937,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Mafs](https://github.com/stevenpetryk/mafs) | 3.4k | [数学讲解风](#math) | 🟢 |
 | [hairline](https://github.com/lucasmarkes/hairline) | 3.4k | [等距 · 体素](#iso)、[扁平 MG 动效](#mg) | 🟢 |
 | [Particle Life](https://github.com/hunar4321/particle-life) | 3.4k | [人工生命 · 生长形态](#alife)、[粒子 · 流体 · 物理](#particle) | ⚪ |
+| [TypeGPU](https://github.com/software-mansion/TypeGPU) | 3.3k | [着色器 · 迷幻光影](#shader) | 🟢 |
 | [Tegaki](https://github.com/gkurt/tegaki) | 3.3k | [汉字 · 手写笔画](#hanzi)、[动态文字 · 歌词](#type)、[手绘 · 白板 · 水彩](#hand) | 🟢 |
 | [Sandspiel](https://github.com/MaxBittker/sandspiel) | 3.2k | [落沙 · 像素物理](#sand)、[像素 · 复古](#pixel) | 🟢 |
 | [fframes](https://github.com/dmtrKovalenko/fframes) | 3.2k | [扁平 MG 动效](#mg)、[短视频 · 字幕 · 快剪](#short) | 🟢 |
@@ -1770,8 +1946,10 @@ A curated list of open-source tools for making animations and music videos **wit
 | [ShaderGradient](https://github.com/ruucm/shadergradient) | 3.1k | [着色器 · 迷幻光影](#shader) | 🟢 |
 | [anything2explainer](https://github.com/Vincentwei1021/anything2explainer) | 3k | [数据可视化动画](#data)、[扁平 MG 动效](#mg) | 🟢 |
 | [gl-react](https://github.com/gre/gl-react) | 3k | [着色器 · 迷幻光影](#shader) | 🟢 |
+| [webgl-noise](https://github.com/ashima/webgl-noise) | 3k | [着色器 · 迷幻光影](#shader)、[程序化生成 · 波函数坍缩](#procgen) | 🟡 |
 | [Mitsuba 3](https://github.com/mitsuba-renderer/mitsuba3) | 3k | [写实光追](#raytrace)、[3D 渲染](#3d) | 🟢 |
 | [postprocessing](https://github.com/pmndrs/postprocessing) | 3k | [故障 · 后期特效](#glitch)、[3D 渲染](#3d) | 🟢 |
+| [Inferno](https://github.com/twostraws/Inferno) | 2.9k | [着色器 · 迷幻光影](#shader)、[故障 · 后期特效](#glitch) | 🟢 |
 | [Yocto/GL](https://github.com/xelatihy/yocto-gl) | 2.9k | [写实光追](#raytrace)、[3D 渲染](#3d) | ⚪ |
 | [Isomer](https://github.com/jdan/isomer) | 2.9k | [等距 · 体素](#iso) | ⚪ |
 | [P(doom) MV](https://github.com/JohnHeibel/PDoomVideo) | 2.8k | [动态文字 · 歌词](#type)、[扁平 MG 动效](#mg) | 🟢 |
@@ -1780,7 +1958,9 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) | 2.7k | [汉字 · 手写笔画](#hanzi) | 🟡 |
 | [Hydra](https://github.com/hydra-synth/hydra) | 2.7k | [Live Coding · VJ](#live)、[故障 · 后期特效](#glitch)、[着色器 · 迷幻光影](#shader) | 🟡 |
 | [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) | 2.7k | [VHS · 模拟信号](#vhs)、[故障 · 后期特效](#glitch) | 🟢 |
+| [glslEditor](https://github.com/patriciogonzalezvivo/glslEditor) | 2.6k | [着色器 · 迷幻光影](#shader) | ⚪ |
 | [Pixel2Motion](https://github.com/nolangz/pixel2motion) | 2.6k | [扁平 MG 动效](#mg) | 🟢 |
+| [liquid-dom](https://github.com/AndrewPrifer/liquid-dom) | 2.6k | [液态玻璃 · 玻璃拟态](#liquid) | 🟢 |
 | [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 2.6k | [手绘 · 白板 · 水彩](#hand)、[二次元 · MMD · VRM](#anime) | 🟢 |
 | [Herk Edit Kit](https://github.com/nateherkai/herk-edit-kit) | 2.6k | [短视频 · 字幕 · 快剪](#short) | 🟢 |
 | [fishdraw](https://github.com/LingDong-/fishdraw) | 2.5k | [绘图仪 · 单线画](#plotter)、[生成艺术 · 几何](#gen) | ⚪ |
@@ -1790,6 +1970,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [huashu-motion](https://github.com/alchaincyf/huashu-motion) | 2.3k | [扁平 MG 动效](#mg)、[3D 渲染](#3d) | 🟢 |
 | [obelisk.js](https://github.com/nosir/obelisk.js) | 2.3k | [等距 · 体素](#iso)、[像素 · 复古](#pixel) | ⚪ |
 | [14 天入门 Demoscene](https://github.com/psenough/teach_yourself_demoscene_in_14_days) | 2.3k | [Demoscene 演示场景](#demoscene) | ⚪ |
+| [glslify](https://github.com/glslify/glslify) | 2.3k | [着色器 · 迷幻光影](#shader) | ⚪ |
 | [glslCanvas](https://github.com/patriciogonzalezvivo/glslCanvas) | 2.3k | [着色器 · 迷幻光影](#shader) | ⚪ |
 | [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | [二次元 · MMD · VRM](#anime)、[3D 渲染](#3d) | 🟢 |
 | [Code2Video](https://github.com/showlab/Code2Video) | 2.2k | [数学讲解风](#math) | 🟢 |
@@ -1813,22 +1994,33 @@ A curated list of open-source tools for making animations and music videos **wit
 | [ReelMimic](https://github.com/edenfunf/reelmimic) | 1.8k | [短视频 · 字幕 · 快剪](#short) | 🟢 |
 | [Animotion](https://github.com/animotionjs/animotion) | 1.8k | [代码演示风](#code)、[扁平 MG 动效](#mg) | 🟢 |
 | [Splitting](https://github.com/shshaw/Splitting) | 1.8k | [动态文字 · 歌词](#type) | ⚪ |
+| [Liquid Glass for RN](https://github.com/callstack/liquid-glass) | 1.7k | [液态玻璃 · 玻璃拟态](#liquid) | 🟢 |
+| [GLSL Sandbox](https://github.com/mrdoob/glsl-sandbox) | 1.7k | [着色器 · 迷幻光影](#shader)、[Live Coding · VJ](#live) | 🟢 |
+| [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) | 1.7k | [着色器 · 迷幻光影](#shader)、[二次元 · MMD · VRM](#anime) | 🟢 |
 | [Meyda](https://github.com/meyda/meyda) | 1.7k | [音乐可视化](#audio) | ⚪ |
 | [remocn](https://github.com/Remocn/remocn) | 1.7k | [扁平 MG 动效](#mg)、[短视频 · 字幕 · 快剪](#short) | 🟢 |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | [抖动 · 1-bit](#dither)、[着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | 🟡 |
+| [Unity Toon Shader](https://github.com/Unity-Technologies/com.unity.toonshader) | 1.6k | [着色器 · 迷幻光影](#shader)、[二次元 · MMD · VRM](#anime) | 🟢 |
 | [WASM-4](https://github.com/aduros/wasm4) | 1.5k | [像素 · 复古](#pixel) | 🟢 |
 | [MilkDrop 3](https://github.com/milkdrop2077/MilkDrop3) | 1.5k | [音乐可视化](#audio)、[着色器 · 迷幻光影](#shader) | 🟢 |
 | [Animate](https://github.com/cth9191/animate) | 1.5k | [手绘 · 白板 · 水彩](#hand)、[像素 · 复古](#pixel)、[数学讲解风](#math)、[Riso · 剪纸拼贴](#riso) | 🟢 |
 | [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) | 1.5k | [二次元 · MMD · VRM](#anime) | ⚪ |
 | [MathBox](https://github.com/unconed/mathbox) | 1.5k | [数学讲解风](#math)、[3D 渲染](#3d) | ⚪ |
 | [Bonzomatic](https://github.com/Gargaj/Bonzomatic) | 1.5k | [着色器 · 迷幻光影](#shader)、[Live Coding · VJ](#live)、[Demoscene 演示场景](#demoscene) | 🟡 |
+| [ShaderMan](https://github.com/smkplus/ShaderMan) | 1.5k | [着色器 · 迷幻光影](#shader) | ⚪ |
 | [Musializer](https://github.com/tsoding/musializer) | 1.5k | [音乐可视化](#audio) | 🟢 |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | [程序化生成 · 波函数坍缩](#procgen)、[等距 · 体素](#iso)、[3D 渲染](#3d) | 🟢 |
 | [bar_chart_race](https://github.com/dexplo/bar_chart_race) | 1.5k | [数据可视化动画](#data) | ⚪ |
+| [GLSL 入门大全](https://github.com/wshxbqq/GLSL-Card) | 1.5k | [着色器 · 迷幻光影](#shader) | ⚪ |
 | [augmented-ui](https://github.com/propjockey/augmented-ui) | 1.4k | [科幻 HUD · 赛博界面](#scifi) | ⚪ |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.4k | [液态玻璃 · 玻璃拟态](#liquid)、[着色器 · 迷幻光影](#shader)、[扁平 MG 动效](#mg) | 🟡 |
 | [Origami Simulator](https://github.com/amandaghassaei/OrigamiSimulator) | 1.4k | [折纸 · 纸艺](#origami)、[3D 渲染](#3d) | 🟢 |
+| [NoiseShader](https://github.com/keijiro/NoiseShader) | 1.4k | [着色器 · 迷幻光影](#shader)、[程序化生成 · 波函数坍缩](#procgen) | 🟡 |
+| [CustomShaderMaterial](https://github.com/FarazzShaikh/THREE-CustomShaderMaterial) | 1.4k | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | 🟡 |
+| [URP_Toon](https://github.com/ChiliMilk/URP_Toon) | 1.4k | [着色器 · 迷幻光影](#shader)、[二次元 · MMD · VRM](#anime) | ⚪ |
 | [FieldPlay](https://github.com/anvaka/fieldplay) | 1.3k | [流场 · 风场](#flow)、[数学讲解风](#math) | 🟢 |
 | [anidoodle](https://github.com/alexgreensh/anidoodle) | 1.3k | [手绘 · 白板 · 水彩](#hand)、[生成艺术 · 几何](#gen) | 🟢 |
+| [Cloudy](https://github.com/skydoves/Cloudy) | 1.3k | [液态玻璃 · 玻璃拟态](#liquid) | 🟢 |
 | [spectral.js](https://github.com/rvanwijnen/spectral.js) | 1.3k | [手绘 · 白板 · 水彩](#hand) | 🟡 |
 | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | [像素 · 复古](#pixel)、[着色器 · 迷幻光影](#shader)、[VHS · 模拟信号](#vhs) | 🟢 |
 | [p5.brush](https://github.com/acamposuribe/p5.brush) | 1.3k | [手绘 · 白板 · 水彩](#hand)、[生成艺术 · 几何](#gen) | 🟢 |
@@ -1838,6 +2030,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Fractal Sound Explorer](https://github.com/HackerPoet/FractalSoundExplorer) | 1.3k | [分形 · 混沌 · 数学艺术](#fractal)、[音乐可视化](#audio) | ⚪ |
 | [three-nebula](https://github.com/creativelifeform/three-nebula) | 1.2k | [粒子 · 流体 · 物理](#particle)、[3D 渲染](#3d) | 🟢 |
 | [Reanimate](https://github.com/reanimate/reanimate) | 1.2k | [数学讲解风](#math)、[扁平 MG 动效](#mg) | 🟡 |
+| [shuding/liquid-glass](https://github.com/shuding/liquid-glass) | 1.2k | [液态玻璃 · 玻璃拟态](#liquid)、[着色器 · 迷幻光影](#shader) | 🟡 |
 | [motion-skills](https://github.com/iart-ai/motion-skills) | 1.2k | [扁平 MG 动效](#mg) | 🟢 |
 | [frame.js](https://github.com/mrdoob/frame.js) | 1.2k | [Demoscene 演示场景](#demoscene)、[扁平 MG 动效](#mg) | 🟡 |
 | [three.quarks](https://github.com/Alchemist0823/three.quarks) | 1.2k | [粒子 · 流体 · 物理](#particle)、[3D 渲染](#3d) | 🟢 |
@@ -1848,6 +2041,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Etro](https://github.com/etro-js/etro) | 1.2k | [短视频 · 字幕 · 快剪](#short) | 🟢 |
 | [PixiJS Filters](https://github.com/pixijs/filters) | 1.1k | [故障 · 后期特效](#glitch)、[着色器 · 迷幻光影](#shader) | 🟡 |
 | [ToyPathTracer](https://github.com/aras-p/ToyPathTracer) | 1.1k | [写实光追](#raytrace) | 🟡 |
+| [glsl-blend](https://github.com/jamieowen/glsl-blend) | 1.1k | [着色器 · 迷幻光影](#shader) | ⚪ |
 | [webgl-wind](https://github.com/mapbox/webgl-wind) | 1.1k | [流场 · 风场](#flow)、[地图 · 路线动画](#map) | 🟢 |
 | [Shader Editor](https://github.com/markusfisch/ShaderEditor) | 1.1k | [着色器 · 迷幻光影](#shader) | 🟢 |
 | [twigl](https://github.com/doxas/twigl) | 1.1k | [着色器 · 迷幻光影](#shader)、[Live Coding · VJ](#live) | 🟡 |
@@ -1856,13 +2050,17 @@ A curated list of open-source tools for making animations and music videos **wit
 | [video-spec-builder](https://github.com/feicaiclub/video-spec-builder) | 1.1k | [短视频 · 字幕 · 快剪](#short) | 🟢 |
 | [Bang Motion](https://github.com/bangtutorial/bang-motion) | 1.1k | [扁平 MG 动效](#mg)、[动态文字 · 歌词](#type) | 🟢 |
 | [Motion Graphics Skills](https://github.com/Barty-Bart/motion-graphics) | 1.1k | [扁平 MG 动效](#mg) | 🟢 |
+| [liquidGL](https://github.com/naughtyduk/liquidGL) | 1k | [液态玻璃 · 玻璃拟态](#liquid)、[着色器 · 迷幻光影](#shader) | 🟢 |
 | [Particle Life App](https://github.com/tom-mohr/particle-life-app) | 1k | [人工生命 · 生长形态](#alife)、[粒子 · 流体 · 物理](#particle) | 🟡 |
 | [motion-anything](https://github.com/nexu-io/motion-anything) | 1k | [扁平 MG 动效](#mg)、[着色器 · 迷幻光影](#shader) | 🟢 |
+| [Radiant](https://github.com/pbakaus/radiant) | 1k | [着色器 · 迷幻光影](#shader)、[生成艺术 · 几何](#gen) | 🟢 |
 | [Generative Design 代码包](https://github.com/generative-design/Code-Package-p5.js) | 1k | [生成艺术 · 几何](#gen) | 🟢 |
 | [Rive 运行时](https://github.com/rive-app/rive-wasm) | 1k | [扁平 MG 动效](#mg) | 🟢 |
+| [Raymarching Workshop](https://github.com/electricsquare/raymarching-workshop) | 1k | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | ⚪ |
 | [cinetic](https://github.com/Leonxlnx/cinetic) | 991 | [扁平 MG 动效](#mg) | 🟢 |
 | [OPENRNDR](https://github.com/openrndr/openrndr) | 985 | [生成艺术 · 几何](#gen) | 🟢 |
 | [vpype](https://github.com/abey79/vpype) | 981 | [绘图仪 · 单线画](#plotter) | 🟢 |
+| [Godot Realistic Water](https://github.com/godot-extended-libraries/godot-realistic-water) | 978 | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | 🟡 |
 | [Manim Slides](https://github.com/jeertmans/manim-slides) | 975 | [数学讲解风](#math)、[代码演示风](#code) | 🟢 |
 | [audioMotion](https://github.com/hvianna/audioMotion-analyzer) | 969 | [音乐可视化](#audio)、[数据可视化动画](#data) | 🟢 |
 | [DOjS](https://github.com/SuperIlu/DOjS) | 963 | [像素 · 复古](#pixel)、[生成艺术 · 几何](#gen) | 🟡 |
@@ -1878,16 +2076,22 @@ A curated list of open-source tools for making animations and music videos **wit
 | [motion-web](https://github.com/feitangyuan/motion-web) | 836 | [3D 渲染](#3d)、[扁平 MG 动效](#mg) | 🟢 |
 | [Shader Park](https://github.com/shader-park/shader-park-core) | 831 | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | 🟢 |
 | [Claude Remotion Skill](https://github.com/haidrrrry/claude-remotion-skill) | 828 | [扁平 MG 动效](#mg) | 🟢 |
+| [Liquid Glass Widgets](https://github.com/sdegenaar/liquid_glass_widgets) | 812 | [液态玻璃 · 玻璃拟态](#liquid) | 🟢 |
 | [party-mode](https://github.com/preziotte/party-mode) | 807 | [音乐可视化](#audio)、[数据可视化动画](#data) | 🟢 |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | 806 | [着色器 · 迷幻光影](#shader)、[像素 · 复古](#pixel)、[VHS · 模拟信号](#vhs) | 🟢 |
+| [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) | 802 | [液态玻璃 · 玻璃拟态](#liquid)、[着色器 · 迷幻光影](#shader) | 🟢 |
 | [demoit](https://github.com/dgageot/demoit) | 780 | [代码演示风](#code) | 🟢 |
 | [Claude Motion Design](https://github.com/howseen-ai/claude-motion-design) | 766 | [扁平 MG 动效](#mg) | 🟢 |
 | [遨游太阳系](https://github.com/hyqzz/Solar-Wanderer) | 764 | [星空 · 宇宙](#space)、[3D 渲染](#3d) | 🟢 |
 | [Cosmic UI](https://github.com/rizznme/cosmic-ui) | 762 | [科幻 HUD · 赛博界面](#scifi) | 🟢 |
 | [scope-tui](https://github.com/alemidev/scope-tui) | 753 | [示波器 · 矢量光线](#scope)、[ASCII · 终端](#ascii)、[音乐可视化](#audio) | 🟢 |
+| [orb](https://github.com/LerSent001/orb) | 746 | [液态玻璃 · 玻璃拟态](#liquid)、[着色器 · 迷幻光影](#shader) | 🟢 |
 | [genjutsu](https://github.com/AThevon/genjutsu) | 745 | [生成艺术 · 几何](#gen)、[扁平 MG 动效](#mg) | 🟢 |
 | [osci-render](https://github.com/jameshball/osci-render) | 738 | [示波器 · 矢量光线](#scope)、[音乐可视化](#audio) | 🟢 |
+| [shadplay](https://github.com/alphastrata/shadplay) | 727 | [着色器 · 迷幻光影](#shader)、[Live Coding · VJ](#live) | 🟢 |
 | [adu-motion-video](https://github.com/adunext/adu-motion-video) | 722 | [短视频 · 字幕 · 快剪](#short) | 🟢 |
 | [Shader Toy for VS Code](https://github.com/stevensona/shader-toy) | 721 | [着色器 · 迷幻光影](#shader) | 🟢 |
+| [Shader Lab](https://github.com/basementstudio/shader-lab) | 717 | [着色器 · 迷幻光影](#shader)、[扁平 MG 动效](#mg) | 🟢 |
 | [Waveform for OBS](https://github.com/phandasm/waveform) | 712 | [音乐可视化](#audio) | 🟢 |
 | [Rossark Motion](https://github.com/rossark0/rossark-motion-skill) | 698 | [扁平 MG 动效](#mg) | 🟢 |
 | [drawsvg](https://github.com/cduck/drawsvg) | 696 | [扁平 MG 动效](#mg)、[数据可视化动画](#data) | 🟢 |
@@ -1900,8 +2104,12 @@ A curated list of open-source tools for making animations and music videos **wit
 | [heerich](https://github.com/meodai/heerich) | 630 | [等距 · 体素](#iso)、[3D 渲染](#3d) | 🟢 |
 | [XaoS](https://github.com/xaos-project/XaoS) | 627 | [分形 · 混沌 · 数学艺术](#fractal) | 🟢 |
 | [Aora Bot](https://github.com/sam70361/aora-bot) | 619 | [扁平 MG 动效](#mg)、[二次元 · MMD · VRM](#anime) | 🟢 |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 614 | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d)、[粒子 · 流体 · 物理](#particle) | 🟡 |
 | [vsketch](https://github.com/abey79/vsketch) | 610 | [绘图仪 · 单线画](#plotter)、[生成艺术 · 几何](#gen) | 🟢 |
+| [LiliumToonGraph](https://github.com/you-ri/LiliumToonGraph) | 609 | [着色器 · 迷幻光影](#shader)、[二次元 · MMD · VRM](#anime) | 🟢 |
+| [Bauble](https://github.com/ianthehenry/bauble) | 597 | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d)、[生成艺术 · 几何](#gen) | 🟢 |
 | [ff-tracking](https://github.com/mrsarac/ff-tracking) | 592 | [扁平 MG 动效](#mg)、[故障 · 后期特效](#glitch) | 🟢 |
+| [shader-doodle](https://github.com/mmmerl/shader-doodle) | 589 | [着色器 · 迷幻光影](#shader) | 🟢 |
 | [MotionClone](https://github.com/blixvip/MotionClone) | 588 | [扁平 MG 动效](#mg) | 🟢 |
 | [Shader Minifier](https://github.com/laurentlb/shader-minifier) | 583 | [Demoscene 演示场景](#demoscene)、[着色器 · 迷幻光影](#shader) | 🟢 |
 | [Machine Skill](https://github.com/AirsupHQ/machine-skill) | 579 | [3D 渲染](#3d) | 🟢 |
@@ -1911,18 +2119,24 @@ A curated list of open-source tools for making animations and music videos **wit
 | [play.core](https://github.com/ertdfgcvb/play.core) | 544 | [ASCII · 终端](#ascii)、[生成艺术 · 几何](#gen) | 🟡 |
 | [LiveCanvas 实况画布](https://github.com/pengchujin/livecanvas) | 544 | [短视频 · 字幕 · 快剪](#short) | 🟢 |
 | [Processing](https://github.com/processing/processing4) | 535 | [生成艺术 · 几何](#gen) | 🟢 |
+| [Beam](https://github.com/doodlewind/beam) | 528 | [着色器 · 迷幻光影](#shader) | 🟢 |
+| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | 524 | [着色器 · 迷幻光影](#shader)、[短视频 · 字幕 · 快剪](#short) | 🟡 |
 | [代码动画画风提示词](https://github.com/XiaoyeCodes/code-animation-prompts) | 522 | [扁平 MG 动效](#mg) | 🟢 |
 | [Mosaic](https://github.com/d3cod3/Mosaic) | 518 | [Live Coding · VJ](#live)、[生成艺术 · 几何](#gen) | 🟢 |
 | [Trail](https://github.com/amalChandran/trail-android) | 516 | [地图 · 路线动画](#map) | 🟢 |
+| [Learn wgpu 中文版](https://github.com/jinleili/learn-wgpu-zh) | 512 | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | 🟢 |
 | [world.execute(me) 歌词 MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 511 | [动态文字 · 歌词](#type)、[二次元 · MMD · VRM](#anime) | 🟢 |
 | [白板老师视频](https://github.com/liangdabiao/whiteboard-teacher-video) | 497 | [手绘 · 白板 · 水彩](#hand) | 🟢 |
 | [modV](https://github.com/vcync/modV) | 497 | [音乐可视化](#audio)、[Live Coding · VJ](#live) | 🟡 |
 | [ManimCat](https://github.com/Wing900/ManimCat) | 494 | [数学讲解风](#math) | 🟢 |
+| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | 489 | [着色器 · 迷幻光影](#shader)、[液态玻璃 · 玻璃拟态](#liquid) | 🟢 |
 | [Agentic Product Demo](https://github.com/Alexwtlf/agentic-product-demo) | 482 | [短视频 · 字幕 · 快剪](#short) | 🟢 |
 | [Retro Crisis 着色器](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 480 | [VHS · 模拟信号](#vhs)、[像素 · 复古](#pixel)、[着色器 · 迷幻光影](#shader) | 🟢 |
+| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | 480 | [二次元 · MMD · VRM](#anime)、[3D 渲染](#3d) | 🟢 |
 | [HyperFrames Motion Director](https://github.com/geekjourneyx/hyperframes-motion-director) | 477 | [短视频 · 字幕 · 快剪](#short)、[动态文字 · 歌词](#type) | 🟢 |
 | [Sandboxels](https://github.com/R74nCom/sandboxels) | 477 | [落沙 · 像素物理](#sand)、[像素 · 复古](#pixel) | 🟢 |
 | [animCJK](https://github.com/parsimonhi/animCJK) | 474 | [汉字 · 手写笔画](#hanzi)、[动态文字 · 歌词](#type) | 🟢 |
+| [Svader](https://github.com/sockmaster27/svader) | 464 | [着色器 · 迷幻光影](#shader) | 🟢 |
 | [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 460 | [短视频 · 字幕 · 快剪](#short)、[扁平 MG 动效](#mg) | 🟢 |
 | [DrawBot](https://github.com/typemytype/drawbot) | 455 | [动态文字 · 歌词](#type)、[生成艺术 · 几何](#gen) | 🟢 |
 | [Open Cubic Player](https://github.com/mywave82/opencubicplayer) | 451 | [音乐可视化](#audio)、[Demoscene 演示场景](#demoscene)、[ASCII · 终端](#ascii) | 🟢 |
@@ -1938,8 +2152,12 @@ A curated list of open-source tools for making animations and music videos **wit
 | [p5.riso](https://github.com/antiboredom/p5.riso) | 373 | [Riso · 剪纸拼贴](#riso)、[生成艺术 · 几何](#gen) | 🟢 |
 | [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) | 372 | [3D 渲染](#3d)、[地图 · 路线动画](#map) | 🟢 |
 | [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) | 369 | [扁平 MG 动效](#mg)、[3D 渲染](#3d) | 🟢 |
+| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | 366 | [着色器 · 迷幻光影](#shader)、[生成艺术 · 几何](#gen) | 🟢 |
+| [RayTK](https://github.com/t3kt/raytk) | 358 | [着色器 · 迷幻光影](#shader)、[Live Coding · VJ](#live)、[3D 渲染](#3d) | 🟡 |
+| [Godot VFX Library](https://github.com/haowg/GODOT-VFX-LIBRARY) | 354 | [粒子 · 流体 · 物理](#particle)、[着色器 · 迷幻光影](#shader) | 🟡 |
 | [MathLens](https://github.com/shuyicc/MathLens) | 352 | [数学讲解风](#math) | 🟡 |
 | [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) | 347 | [着色器 · 迷幻光影](#shader)、[故障 · 后期特效](#glitch) | 🟢 |
+| [ShaderMania](https://github.com/markusmoenig/ShaderMania) | 347 | [着色器 · 迷幻光影](#shader) | 🟢 |
 | [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 343 | [像素 · 复古](#pixel)、[3D 渲染](#3d)、[着色器 · 迷幻光影](#shader) | 🟢 |
 | [Coldtype](https://github.com/coldtype/coldtype) | 341 | [动态文字 · 歌词](#type)、[生成艺术 · 几何](#gen) | 🟢 |
 | [ORIPA](https://github.com/oripa/oripa) | 334 | [折纸 · 纸艺](#origami) | 🟢 |
@@ -1948,27 +2166,38 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Code Video Showcase](https://github.com/Moessif/code-video-showcase) | 322 | [扁平 MG 动效](#mg)、[3D 渲染](#3d) | 🟢 |
 | [video-director](https://github.com/win4r/video-director) | 320 | [扁平 MG 动效](#mg) | 🟢 |
 | [termsand](https://github.com/cgsdev0/termsand) | 317 | [落沙 · 像素物理](#sand)、[ASCII · 终端](#ascii) | 🟢 |
+| [Singularity](https://github.com/MisterPrada/singularity) | 317 | [星空 · 宇宙](#space)、[着色器 · 迷幻光影](#shader) | 🟡 |
+| [Poseidon](https://github.com/owenyuwono/poseidon) | 317 | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | 🟢 |
+| [ShaderToy 浏览器插件](https://github.com/patuwwy/ShaderToy-Chrome-Plugin) | 313 | [着色器 · 迷幻光影](#shader) | 🟢 |
 | [flow-fields](https://github.com/romellogoodman/flow-fields) | 311 | [流场 · 风场](#flow)、[生成艺术 · 几何](#gen) | 🟢 |
 | [Riso Window Seat](https://github.com/sevenevesai/riso-windowseat) | 308 | [Riso · 剪纸拼贴](#riso) | 🟢 |
+| [AGSL Shader Playground](https://github.com/mejdi14/Android-AGSL-Shader-Playground) | 308 | [着色器 · 迷幻光影](#shader) | 🟢 |
 | [OriSim3D](https://github.com/RemiKoutcherawy/OriSim3D-Android) | 304 | [折纸 · 纸艺](#origami)、[3D 渲染](#3d) | 🟢 |
 | [Remotion TikTok 模板](https://github.com/remotion-dev/template-tiktok) | 301 | [短视频 · 字幕 · 快剪](#short)、[动态文字 · 歌词](#type) | 🟢 |
+| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 300 | [着色器 · 迷幻光影](#shader)、[粒子 · 流体 · 物理](#particle)、[3D 渲染](#3d) | 🟢 |
 | [Dithering Shader](https://github.com/niccolofanton/dithering-shader) | 294 | [抖动 · 1-bit](#dither)、[3D 渲染](#3d)、[着色器 · 迷幻光影](#shader) | 🟢 |
 | [Papercraft](https://github.com/rodrigorc/papercraft) | 289 | [折纸 · 纸艺](#origami)、[3D 渲染](#3d) | 🟢 |
 | [cbirds](https://github.com/clainstone/cbirds) | 286 | [ASCII · 终端](#ascii)、[粒子 · 流体 · 物理](#particle) | 🟢 |
 | [Remotion 音频图模板](https://github.com/remotion-dev/template-audiogram) | 275 | [音乐可视化](#audio)、[短视频 · 字幕 · 快剪](#short) | 🟢 |
+| [TSL Textures](https://github.com/boytchev/tsl-textures) | 271 | [着色器 · 迷幻光影](#shader)、[程序化生成 · 波函数坍缩](#procgen) | 🟢 |
 | [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 261 | [二次元 · MMD · VRM](#anime)、[3D 渲染](#3d) | 🟢 |
 | [hitherdither](https://github.com/hbldh/hitherdither) | 260 | [抖动 · 1-bit](#dither)、[像素 · 复古](#pixel) | 🟢 |
 | [FredTalk](https://github.com/njrhts2kvv-star/FredTalk) | 249 | [短视频 · 字幕 · 快剪](#short)、[动态文字 · 歌词](#type) | 🟢 |
+| [Radiance](https://github.com/zbanks/radiance) | 249 | [Live Coding · VJ](#live)、[着色器 · 迷幻光影](#shader)、[音乐可视化](#audio) | 🟡 |
 | [Krbn](https://github.com/vpalos/Krbn) | 248 | [绘图仪 · 单线画](#plotter)、[3D 渲染](#3d) | 🟢 |
 | [html-anime](https://github.com/blixvip/html-anime) | 246 | [二次元 · MMD · VRM](#anime)、[扁平 MG 动效](#mg) | 🟢 |
 | [weilanx Claude Videos](https://github.com/Azure12355/weilanx-claude-videos) | 237 | [手绘 · 白板 · 水彩](#hand)、[像素 · 复古](#pixel) | 🟢 |
+| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | 236 | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | 🟢 |
 | [空间殖民实验](https://github.com/jasonwebb/2d-space-colonization-experiments) | 227 | [人工生命 · 生长形态](#alife)、[生成艺术 · 几何](#gen) | 🟡 |
 | [What If Animation](https://github.com/kelano86/what-if-animation) | 226 | [扁平 MG 动效](#mg) | 🟢 |
 | [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) | 217 | [绘图仪 · 单线画](#plotter) | 🟢 |
 | [Papercraft World](https://github.com/andrewwoan/aimee-xus-papercraft-world) | 197 | [折纸 · 纸艺](#origami)、[3D 渲染](#3d) | 🟢 |
+| [retrace.gl](https://github.com/stasilo/retrace.gl) | 196 | [写实光追](#raytrace)、[着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | 🟢 |
 | [fy-code-animation](https://github.com/Akillll-DuoHe/fy-code-animation) | 194 | [扁平 MG 动效](#mg) | 🟢 |
 | [manim-skill](https://github.com/Yusuke710/manim-skill) | 193 | [数学讲解风](#math) | 🟢 |
+| [WebGL CRT Shader](https://github.com/gingerbeardman/webgl-crt-shader) | 188 | [VHS · 模拟信号](#vhs)、[着色器 · 迷幻光影](#shader) | 🟡 |
 | [NTSCRT](https://github.com/finnmckenty/NTSCRT) | 187 | [VHS · 模拟信号](#vhs) | 🟢 |
+| [liquid-glass-android](https://github.com/Mortd3kay/liquid-glass-android) | 187 | [液态玻璃 · 玻璃拟态](#liquid) | 🟡 |
 | [RuiC Motion Reel](https://github.com/HRuiCcc/RuiC-motion-reel) | 182 | [扁平 MG 动效](#mg) | 🟢 |
 | [dashi 画风讲解](https://github.com/chuspeeism/dashi-animationstyle) | 178 | [手绘 · 白板 · 水彩](#hand) | 🟢 |
 | [Claude MV Skill](https://github.com/Joker-chichi/claude-mv-skill) | 178 | [手绘 · 白板 · 水彩](#hand)、[动态文字 · 歌词](#type) | 🟢 |
@@ -2022,6 +2251,8 @@ A curated list of open-source tools for making animations and music videos **wit
 - [awesome-plotters](https://github.com/beardicus/awesome-plotters)：绘图仪相关的代码和资源。
 - [morphogenesis-resources](https://github.com/jasonwebb/morphogenesis-resources)：用代码「长出」形态的资料大全：反应扩散、差异生长、黏菌、L 系统。
 - [awesome-demoscene](https://github.com/psykon/awesome-demoscene)：Demoscene 的工具、代码和资料。
+- [awesome-glsl](https://github.com/vanrez-nez/awesome-glsl)：学习 GLSL 着色器的资源合集。
+- [Awesome-Unity-Shader](https://github.com/QianMo/Awesome-Unity-Shader)：浅墨整理的炫酷 Unity 着色器合集（中文）。
 
 **Claude / Opus 作品合集**：这些合集收的是网友用 Claude 做出的视频和提示词，可以当灵感来源。其中少数作品调用了 Blender 或视频生成模型，合集里通常有标注，请自行甄别。
 

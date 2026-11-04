@@ -277,5 +277,13 @@
     "en": "Space & Stars",
     "color": "#4A4FA8",
     "look": "太阳系、星空、星系旋臂和黑洞"
+  },
+  {
+    "key": "liquid",
+    "zone": "niche",
+    "name": "液态玻璃 · 玻璃拟态",
+    "en": "Liquid Glass",
+    "color": "#5AA9C9",
+    "look": "会折射、会色散的玻璃界面和液态金属，苹果液态玻璃风"
   }
 ]

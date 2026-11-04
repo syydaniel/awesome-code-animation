@@ -239,6 +239,23 @@ tbody tr:hover td { background: color-mix(in srgb, var(--chip) 45%, transparent)
   .fam-cols { column-width: 220px; }
 }
 
+/* showcase */
+.sc-list { display: flex; flex-direction: column; gap: 14px; }
+.sc-card { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--surface); }
+.sc-media { background: #000; aspect-ratio: 16 / 9; max-width: 100%; position: relative; }
+.sc-media video, .sc-media img { width: 100%; height: 100%; display: block; object-fit: contain; background: #000; }
+.sc-media .sc-play { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; font-size: 15px; background: linear-gradient(transparent 55%, rgba(0,0,0,.55)); text-decoration: none; }
+.sc-info { padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.sc-info h3 { font-family: var(--font-display); font-weight: 900; font-size: 24px; margin: 0; line-height: 1.25; text-wrap: balance; }
+.sc-by { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.sc-desc { margin: 0; }
+.sc-k { font-size: 12px; color: var(--muted); letter-spacing: .06em; }
+.sc-tools { display: flex; flex-wrap: wrap; gap: 6px; }
+.sc-tools button { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 3px 11px; font-size: 13px; cursor: pointer; }
+.sc-tools button:hover { border-color: var(--accent); color: var(--accent); }
+.sc-links { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 14px; margin-top: auto; }
+@media (max-width: 760px) { .sc-card { grid-template-columns: minmax(0, 1fr); } }
+
 footer { font-size: 13px; color: var(--muted); display: flex; flex-direction: column; gap: 6px; max-width: 80ch; }
 footer p { margin: 0; }
 
@@ -275,9 +292,14 @@ footer p { margin: 0; }
     <h1>代码画风图鉴</h1>
     <p class="lede">按画风整理的代码动画、代码做 MV 的开源项目。画面都由代码绘制或渲染，不收用视频、图像生成模型出画面的项目。一个项目常能做几种画风，所以会同时出现在几个画风里；点画风卡片就能筛出对应项目。</p>
     <div class="stats" id="stats"></div>
-    <nav class="nav" aria-label="页面目录"><a href="#styles-sec">画风索引</a><a href="#niche-sec">小众画风区</a><a href="#graph-sec">关系图谱</a><a href="#rel-sec">项目关系表</a><a href="#table-sec">项目总表</a></nav>
+    <nav class="nav" aria-label="页面目录"><a href="#showcase" id="nav-showcase" hidden>作品展示</a><a href="#styles-sec">画风索引</a><a href="#niche-sec">小众画风区</a><a href="#graph-sec">关系图谱</a><a href="#rel-sec">项目关系表</a><a href="#table-sec">项目总表</a></nav>
     <a class="repo-link" href="__REPO_URL__" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>在 GitHub 上查看和推荐项目</a>
   </header>
+
+  <section aria-labelledby="sc-h" id="showcase" hidden>
+    <div class="sec-head"><h2 id="sc-h">作品展示</h2><span class="hint">用图鉴里的工具做出来的作品</span></div>
+    <div class="sc-list" id="sc-list"></div>
+  </section>
 
   <section aria-labelledby="picks-h">
     <div class="sec-head"><h2 id="picks-h">按目的先挑</h2><span class="hint">点名字直接在表里定位</span></div>
@@ -377,6 +399,7 @@ const PICKS = __PICKS__;
 const RELS = __RELATIONS__;
 const RELTYPES = __RELTYPES__;
 const SNAPSHOT = Date.parse('__DATE__');
+const SHOWCASE = __SHOWCASE__;
 const SMAP = Object.fromEntries(STYLES.map(s => [s.key, s]));
 const MAIN = STYLES.filter(s => s.zone !== 'niche');
 const NICHE = STYLES.filter(s => s.zone === 'niche');
@@ -417,6 +440,28 @@ document.getElementById('stats').innerHTML =
   `<div><b>${MAIN.length}+${NICHE.length}</b><span>种画风（主流 + 小众）</span></div>` +
   `<div><b>${DATA.filter(p => status(p)[0] === 'ok').length}</b><span>个半年内仍在更新</span></div>` +
   `<div><b>${RELS.length}</b><span>条项目关系</span></div>`;
+
+if (SHOWCASE.length) {
+  document.getElementById('showcase').hidden = false;
+  document.getElementById('nav-showcase').hidden = false;
+  document.getElementById('sc-list').innerHTML = SHOWCASE.map(it => {
+    const media = it.video
+      ? `<video controls playsinline preload="metadata" ${it.poster ? `poster="${esc(it.poster)}"` : ''} src="${esc(it.video)}"></video>`
+      : (it.poster ? `<img src="${esc(it.poster)}" alt="${esc(it.title)}"><a class="sc-play" href="${esc(it.watch)}" target="_blank" rel="noopener">▶ 在网页版观看</a>` : '');
+    const tools = (it.tools || []).map(r => BYREPO[r] ? `<button type="button" data-find="${esc(r)}">${esc(BYREPO[r].name)}</button>` : `<button type="button" onclick="window.open('https://github.com/${esc(r)}','_blank')">${esc(r)}</button>`).join('');
+    const styles = (it.styles || []).filter(s => SMAP[s]).map(s => `<button type="button" data-sc-style="${s}"><span class="dot" style="background:${SMAP[s].color};display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px"></span>${esc(SMAP[s].name)}</button>`).join('');
+    const links = (it.links || []).map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join('');
+    return `<article class="sc-card"><div class="sc-media">${media}</div><div class="sc-info">
+      <h3>${esc(it.title)}</h3>
+      ${it.author ? `<span class="sc-by">作者 ${it.author_url ? `<a href="${esc(it.author_url)}" target="_blank" rel="noopener">${esc(it.author)}</a>` : esc(it.author)}</span>` : ''}
+      ${it.desc ? `<p class="sc-desc">${esc(it.desc)}</p>` : ''}
+      ${tools ? `<span class="sc-k">用到的工具</span><div class="sc-tools">${tools}</div>` : ''}
+      ${styles ? `<span class="sc-k">画风</span><div class="sc-tools">${styles}</div>` : ''}
+      ${links ? `<div class="sc-links">${links}</div>` : ''}
+    </div></article>`;
+  }).join('');
+  document.getElementById('sc-list').addEventListener('click', e => { const b = e.target.closest('[data-sc-style]'); if (b) setStyle(b.dataset.scStyle, true); });
+}
 
 document.getElementById('picks').innerHTML = PICKS.map(pk =>
   `<div class="pick"><span class="k">${esc(pk.goal)}</span><span class="v">${pk.projects.filter(r => BYREPO[r]).map(r => `<button class="linkbtn" data-find="${esc(r)}">${esc(BYREPO[r].name)}</button>`).join('')}</span></div>`
@@ -1029,6 +1074,20 @@ const SW = {
     c.globalCompositeOperation = 'source-over';
     const pl = c.createRadialGradient(48, 56, 2, 54, 62, 24); pl.addColorStop(0, '#9FC3FF'); pl.addColorStop(1, '#1D2A6B'); c.fillStyle = pl; c.beginPath(); c.arc(54, 62, 22, 0, 7); c.fill();
     c.strokeStyle = 'rgba(200,210,255,.7)'; c.lineWidth = 1.5; c.beginPath(); c.ellipse(54, 62, 36, 7, -.25, 0, 7); c.stroke();
+  },
+  liquid(c) {
+    const g = c.createLinearGradient(0, 0, W, H); g.addColorStop(0, '#FF9A8B'); g.addColorStop(.5, '#A18CD1'); g.addColorStop(1, '#5AA9C9'); c.fillStyle = g; c.fillRect(0, 0, W, H);
+    c.fillStyle = 'rgba(255,255,255,.9)'; c.font = '700 22px "Noto Serif SC", serif'; c.textBaseline = 'middle'; c.fillText('液态玻璃 Liquid', 26, 48);
+    const glass = (x, y, w, h, r) => {
+      c.save(); c.beginPath(); c.roundRect(x, y, w, h, r); c.clip();
+      c.filter = 'blur(6px)'; c.drawImage(c.canvas, 0, 0, c.canvas.width, c.canvas.height, 0, 0, W, H); c.filter = 'none';
+      c.fillStyle = 'rgba(255,255,255,.18)'; c.fillRect(x, y, w, h);
+      const hi = c.createLinearGradient(x, y, x, y + h); hi.addColorStop(0, 'rgba(255,255,255,.55)'); hi.addColorStop(.35, 'rgba(255,255,255,0)'); hi.addColorStop(1, 'rgba(255,255,255,.15)');
+      c.fillStyle = hi; c.fillRect(x, y, w, h); c.restore();
+      c.strokeStyle = 'rgba(255,255,255,.7)'; c.lineWidth = 1.2; c.beginPath(); c.roundRect(x + .5, y + .5, w - 1, h - 1, r); c.stroke();
+    };
+    glass(110, 18, 110, 60, 30);
+    glass(36, 64, 50, 24, 12);
   }
 };
 function drawSwatches() {

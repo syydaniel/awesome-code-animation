@@ -6,7 +6,7 @@
 
 **Open-source tools for making animations and music videos with code, indexed by visual style.** [中文](README.md)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![projects](https://img.shields.io/badge/projects-380-2E49D4) ![styles](https://img.shields.io/badge/styles-17%2B20-9265D9) ![updated](https://img.shields.io/badge/updated-2026--11--03-5B6273)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![projects](https://img.shields.io/badge/projects-443-2E49D4) ![styles](https://img.shields.io/badge/styles-17%2B21-9265D9) ![updated](https://img.shields.io/badge/updated-2026--11--03-5B6273)
 
 **[🌐 Interactive page](https://syydaniel.github.io/awesome-code-animation/)** · **[🕸️ Relationship graph](https://syydaniel.github.io/awesome-code-animation/#graph-sec)** · **[Style index](#index)**<sub> (web page is in Chinese)</sub>
 
@@ -30,11 +30,11 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 ## Style index
 
 <table>
-<tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="Math Explainer" width="260"></a><br><b><a href="#math">Math Explainer</a></b><br><sub>数学讲解风 · 21 projects</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="Motion Graphics" width="260"></a><br><b><a href="#mg">Motion Graphics</a></b><br><sub>扁平 MG 动效 · 84 projects</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="Code & Terminal Demo" width="260"></a><br><b><a href="#code">Code & Terminal Demo</a></b><br><sub>代码演示风 · 16 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.png" alt="Kinetic Type & Lyrics" width="260"></a><br><b><a href="#type">Kinetic Type & Lyrics</a></b><br><sub>动态文字 · 歌词 · 29 projects</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="Shorts, Captions & Editing" width="260"></a><br><b><a href="#short">Shorts, Captions & Editing</a></b><br><sub>短视频 · 字幕 · 快剪 · 28 projects</sub></td><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="Hand-drawn & Whiteboard" width="260"></a><br><b><a href="#hand">Hand-drawn & Whiteboard</a></b><br><sub>手绘 · 白板 · 水彩 · 23 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="Generative Art" width="260"></a><br><b><a href="#gen">Generative Art</a></b><br><sub>生成艺术 · 几何 · 37 projects</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="Shaders & Psychedelic" width="260"></a><br><b><a href="#shader">Shaders & Psychedelic</a></b><br><sub>着色器 · 迷幻光影 · 40 projects</sub></td><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding & VJ" width="260"></a><br><b><a href="#live">Live Coding & VJ</a></b><br><sub>Live Coding · VJ · 9 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="Music Visualization" width="260"></a><br><b><a href="#audio">Music Visualization</a></b><br><sub>音乐可视化 · 25 projects</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D" width="260"></a><br><b><a href="#3d">3D</a></b><br><sub>3D 渲染 · 58 projects</sub></td><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="Anime, MMD & VRM" width="260"></a><br><b><a href="#anime">Anime, MMD & VRM</a></b><br><sub>二次元 · MMD · VRM · 8 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="Particles & Physics" width="260"></a><br><b><a href="#particle">Particles & Physics</a></b><br><sub>粒子 · 流体 · 物理 · 23 projects</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="Glitch & Post FX" width="260"></a><br><b><a href="#glitch">Glitch & Post FX</a></b><br><sub>故障 · 后期特效 · 16 projects</sub></td><td align="center" width="33%"><a href="#pixel"><img src="assets/styles/pixel.png" alt="Pixel & Retro" width="260"></a><br><b><a href="#pixel">Pixel & Retro</a></b><br><sub>像素 · 复古 · 26 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="Math Explainer" width="260"></a><br><b><a href="#math">Math Explainer</a></b><br><sub>数学讲解风 · 21 projects</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="Motion Graphics" width="260"></a><br><b><a href="#mg">Motion Graphics</a></b><br><sub>扁平 MG 动效 · 87 projects</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="Code & Terminal Demo" width="260"></a><br><b><a href="#code">Code & Terminal Demo</a></b><br><sub>代码演示风 · 16 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.png" alt="Kinetic Type & Lyrics" width="260"></a><br><b><a href="#type">Kinetic Type & Lyrics</a></b><br><sub>动态文字 · 歌词 · 29 projects</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="Shorts, Captions & Editing" width="260"></a><br><b><a href="#short">Shorts, Captions & Editing</a></b><br><sub>短视频 · 字幕 · 快剪 · 29 projects</sub></td><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="Hand-drawn & Whiteboard" width="260"></a><br><b><a href="#hand">Hand-drawn & Whiteboard</a></b><br><sub>手绘 · 白板 · 水彩 · 23 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="Generative Art" width="260"></a><br><b><a href="#gen">Generative Art</a></b><br><sub>生成艺术 · 几何 · 40 projects</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="Shaders & Psychedelic" width="260"></a><br><b><a href="#shader">Shaders & Psychedelic</a></b><br><sub>着色器 · 迷幻光影 · 96 projects</sub></td><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding & VJ" width="260"></a><br><b><a href="#live">Live Coding & VJ</a></b><br><sub>Live Coding · VJ · 13 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="Music Visualization" width="260"></a><br><b><a href="#audio">Music Visualization</a></b><br><sub>音乐可视化 · 26 projects</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D" width="260"></a><br><b><a href="#3d">3D</a></b><br><sub>3D 渲染 · 74 projects</sub></td><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="Anime, MMD & VRM" width="260"></a><br><b><a href="#anime">Anime, MMD & VRM</a></b><br><sub>二次元 · MMD · VRM · 15 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="Particles & Physics" width="260"></a><br><b><a href="#particle">Particles & Physics</a></b><br><sub>粒子 · 流体 · 物理 · 26 projects</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="Glitch & Post FX" width="260"></a><br><b><a href="#glitch">Glitch & Post FX</a></b><br><sub>故障 · 后期特效 · 17 projects</sub></td><td align="center" width="33%"><a href="#pixel"><img src="assets/styles/pixel.png" alt="Pixel & Retro" width="260"></a><br><b><a href="#pixel">Pixel & Retro</a></b><br><sub>像素 · 复古 · 28 projects</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#ascii"><img src="assets/styles/ascii.png" alt="ASCII & Terminal" width="260"></a><br><b><a href="#ascii">ASCII & Terminal</a></b><br><sub>ASCII · 终端 · 25 projects</sub></td><td align="center" width="33%"><a href="#data"><img src="assets/styles/data.png" alt="Data Animation" width="260"></a><br><b><a href="#data">Data Animation</a></b><br><sub>数据可视化动画 · 27 projects</sub></td></tr>
 </table>
 
@@ -43,11 +43,11 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 <table>
 <tr><td align="center" width="33%"><a href="#ink"><img src="assets/styles/ink.png" alt="Ink & Watercolor" width="260"></a><br><b><a href="#ink">Ink & Watercolor</a></b><br><sub>水墨 · 水彩 · 8 projects</sub></td><td align="center" width="33%"><a href="#hanzi"><img src="assets/styles/hanzi.png" alt="Handwriting & Strokes" width="260"></a><br><b><a href="#hanzi">Handwriting & Strokes</a></b><br><sub>汉字 · 手写笔画 · 4 projects</sub></td><td align="center" width="33%"><a href="#scope"><img src="assets/styles/scope.png" alt="Oscilloscope & Vector" width="260"></a><br><b><a href="#scope">Oscilloscope & Vector</a></b><br><sub>示波器 · 矢量光线 · 2 projects</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#plotter"><img src="assets/styles/plotter.png" alt="Plotter & Line Art" width="260"></a><br><b><a href="#plotter">Plotter & Line Art</a></b><br><sub>绘图仪 · 单线画 · 7 projects</sub></td><td align="center" width="33%"><a href="#dither"><img src="assets/styles/dither.png" alt="Dither & 1-bit" width="260"></a><br><b><a href="#dither">Dither & 1-bit</a></b><br><sub>抖动 · 1-bit · 5 projects</sub></td><td align="center" width="33%"><a href="#riso"><img src="assets/styles/riso.png" alt="Riso & Paper Collage" width="260"></a><br><b><a href="#riso">Riso & Paper Collage</a></b><br><sub>Riso · 剪纸拼贴 · 6 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#alife"><img src="assets/styles/alife.png" alt="Artificial Life & Growth" width="260"></a><br><b><a href="#alife">Artificial Life & Growth</a></b><br><sub>人工生命 · 生长形态 · 8 projects</sub></td><td align="center" width="33%"><a href="#procgen"><img src="assets/styles/procgen.png" alt="Procedural Generation" width="260"></a><br><b><a href="#procgen">Procedural Generation</a></b><br><sub>程序化生成 · 波函数坍缩 · 9 projects</sub></td><td align="center" width="33%"><a href="#fractal"><img src="assets/styles/fractal.png" alt="Fractals & Chaos" width="260"></a><br><b><a href="#fractal">Fractals & Chaos</a></b><br><sub>分形 · 混沌 · 数学艺术 · 8 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#alife"><img src="assets/styles/alife.png" alt="Artificial Life & Growth" width="260"></a><br><b><a href="#alife">Artificial Life & Growth</a></b><br><sub>人工生命 · 生长形态 · 8 projects</sub></td><td align="center" width="33%"><a href="#procgen"><img src="assets/styles/procgen.png" alt="Procedural Generation" width="260"></a><br><b><a href="#procgen">Procedural Generation</a></b><br><sub>程序化生成 · 波函数坍缩 · 12 projects</sub></td><td align="center" width="33%"><a href="#fractal"><img src="assets/styles/fractal.png" alt="Fractals & Chaos" width="260"></a><br><b><a href="#fractal">Fractals & Chaos</a></b><br><sub>分形 · 混沌 · 数学艺术 · 8 projects</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#iso"><img src="assets/styles/iso.png" alt="Isometric & Voxel" width="260"></a><br><b><a href="#iso">Isometric & Voxel</a></b><br><sub>等距 · 体素 · 9 projects</sub></td><td align="center" width="33%"><a href="#scifi"><img src="assets/styles/scifi.png" alt="Sci-fi HUD" width="260"></a><br><b><a href="#scifi">Sci-fi HUD</a></b><br><sub>科幻 HUD · 赛博界面 · 4 projects</sub></td><td align="center" width="33%"><a href="#map"><img src="assets/styles/map.png" alt="Map & Route" width="260"></a><br><b><a href="#map">Map & Route</a></b><br><sub>地图 · 路线动画 · 10 projects</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#demoscene"><img src="assets/styles/demoscene.png" alt="Demoscene" width="260"></a><br><b><a href="#demoscene">Demoscene</a></b><br><sub>Demoscene 演示场景 · 7 projects</sub></td><td align="center" width="33%"><a href="#sand"><img src="assets/styles/sand.png" alt="Falling Sand" width="260"></a><br><b><a href="#sand">Falling Sand</a></b><br><sub>落沙 · 像素物理 · 8 projects</sub></td><td align="center" width="33%"><a href="#flow"><img src="assets/styles/flow.png" alt="Flow & Wind Fields" width="260"></a><br><b><a href="#flow">Flow & Wind Fields</a></b><br><sub>流场 · 风场 · 7 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#vhs"><img src="assets/styles/vhs.png" alt="VHS & Analog" width="260"></a><br><b><a href="#vhs">VHS & Analog</a></b><br><sub>VHS · 模拟信号 · 11 projects</sub></td><td align="center" width="33%"><a href="#origami"><img src="assets/styles/origami.png" alt="Origami & Papercraft" width="260"></a><br><b><a href="#origami">Origami & Papercraft</a></b><br><sub>折纸 · 纸艺 · 8 projects</sub></td><td align="center" width="33%"><a href="#geo"><img src="assets/styles/geo.png" alt="Geometric & Low-poly" width="260"></a><br><b><a href="#geo">Geometric & Low-poly</a></b><br><sub>几何重构 · 低多边形 · 7 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#raytrace"><img src="assets/styles/raytrace.png" alt="Path Tracing" width="260"></a><br><b><a href="#raytrace">Path Tracing</a></b><br><sub>写实光追 · 6 projects</sub></td><td align="center" width="33%"><a href="#space"><img src="assets/styles/space.png" alt="Space & Stars" width="260"></a><br><b><a href="#space">Space & Stars</a></b><br><sub>星空 · 宇宙 · 7 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#vhs"><img src="assets/styles/vhs.png" alt="VHS & Analog" width="260"></a><br><b><a href="#vhs">VHS & Analog</a></b><br><sub>VHS · 模拟信号 · 13 projects</sub></td><td align="center" width="33%"><a href="#origami"><img src="assets/styles/origami.png" alt="Origami & Papercraft" width="260"></a><br><b><a href="#origami">Origami & Papercraft</a></b><br><sub>折纸 · 纸艺 · 8 projects</sub></td><td align="center" width="33%"><a href="#geo"><img src="assets/styles/geo.png" alt="Geometric & Low-poly" width="260"></a><br><b><a href="#geo">Geometric & Low-poly</a></b><br><sub>几何重构 · 低多边形 · 7 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#raytrace"><img src="assets/styles/raytrace.png" alt="Path Tracing" width="260"></a><br><b><a href="#raytrace">Path Tracing</a></b><br><sub>写实光追 · 7 projects</sub></td><td align="center" width="33%"><a href="#space"><img src="assets/styles/space.png" alt="Space & Stars" width="260"></a><br><b><a href="#space">Space & Stars</a></b><br><sub>星空 · 宇宙 · 8 projects</sub></td><td align="center" width="33%"><a href="#liquid"><img src="assets/styles/liquid.png" alt="Liquid Glass" width="260"></a><br><b><a href="#liquid">Liquid Glass</a></b><br><sub>液态玻璃 · 玻璃拟态 · 12 projects</sub></td></tr>
 </table>
 
 ## Main styles
@@ -88,7 +88,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Motion Graphics
 
-> 扁平 MG 动效 · 84 projects
+> 扁平 MG 动效 · 87 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -114,6 +114,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 12.2k | 🟢 | A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：66 种现成风格，也能做出你自己的 |
 | [SVG.js](https://github.com/svgdotjs/svg.js) | 11.9k | 🟢 | The lightweight library for manipulating and animating SVG |
 | [Zdog](https://github.com/metafizzy/zdog) | 10.7k | ⚪ | Flat, round, designer-friendly pseudo-3D engine for canvas & SVG |
+| [React Native Skia](https://github.com/wcandillon/react-native-skia) | 8.8k | 🟢 | High-performance React Native Graphics using Skia |
 | [Two.js](https://github.com/jonobr1/two.js) | 8.7k | 🟢 | A renderer agnostic two-dimensional drawing api for the web |
 | [EffectCraft](https://github.com/storytold/effectcraft) | 8.4k | 🟢 | EffectCraft: An open-source motion graphics and compositing tool written by scratch in pure Rust |
 | [Arwes](https://github.com/arwes/arwes) | 7.6k | 🟢 | Futuristic Sci-Fi UI Web Framework. |
@@ -136,6 +137,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Astrofox](https://github.com/astrofox-io/astrofox) | 2k | 🟢 | Astrofox is a motion graphics program that lets you turn audio into stunning visuals. |
 | [Animotion](https://github.com/animotionjs/animotion) | 1.8k | 🟢 | 🪄 Create beautiful presentations with Svelte |
 | [remocn](https://github.com/Remocn/remocn) | 1.7k | 🟢 | Production-ready animations, transitions, backgrounds, and scenes for Remotion |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.4k | 🟡 | Turn your logo into liquid metal with Paper Shaders |
 | [Reanimate](https://github.com/reanimate/reanimate) | 1.2k | 🟡 | Haskell library for building declarative animations based on SVG graphics |
 | [motion-skills](https://github.com/iart-ai/motion-skills) | 1.2k | 🟢 | 50 open-source skills that teach your AI coding agent to make motion graphics, animation & video — kinetic typography, data-viz, explainers, TikTok/Reels, WebGL, Manim. 14 installable packs. By iart.ai, the AI motion agent. |
 | [frame.js](https://github.com/mrdoob/frame.js) | 1.2k | 🟡 | JavaScript Sequence Editor |
@@ -151,6 +153,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Claude Remotion Skill](https://github.com/haidrrrry/claude-remotion-skill) | 828 | 🟢 | Open-source Claude agent skill that teaches Claude Code, Claude Desktop & Claude AI to create and edit professional motion graphics videos with Remotion. AI video editing, B-roll, captions, sound design — from one prompt. |
 | [Claude Motion Design](https://github.com/howseen-ai/claude-motion-design) | 766 | 🟢 | A Claude Code skill to make motion design videos in pure code: HTML + Playwright + ffmpeg. No After Effects, no Remotion license. |
 | [genjutsu](https://github.com/AThevon/genjutsu) | 745 | 🟢 | Creative coding skills for Claude Code, claude.ai and Cowork. Motion, micro-interactions and design systems across Web (GSAP, Motion, Three.js, CSS), Android (Jetpack Compose) and Apple (SwiftUI). Proposes an interaction thesis you approve before it writes any code. Anti-AI-slop. |
+| [Shader Lab](https://github.com/basementstudio/shader-lab) | 717 | 🟢 | A powerful toolkit to create, stack, and animate shaders. |
 | [Rossark Motion](https://github.com/rossark0/rossark-motion-skill) | 698 | 🟢 | Turn any SVG into a professional 60 fps animation. A Claude Code skill that brings anything drawn to life: live faces, full-body acting and whole scenes, in React Native and SwiftUI. |
 | [drawsvg](https://github.com/cduck/drawsvg) | 696 | 🟢 | Programmatically generate SVG (vector) images, animations, and interactive Jupyter widgets |
 | [Aora Bot](https://github.com/sam70361/aora-bot) | 619 | 🟢 | Aora Bot：代码绘制的网页角色引擎，46 个原创角色、44 种动画状态，支持 React、Web Component 与头像接口（原 Emotion Ball 表情馆） |
@@ -250,7 +253,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Shorts, Captions & Editing
 
-> 短视频 · 字幕 · 快剪 · 28 projects
+> 短视频 · 字幕 · 快剪 · 29 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -274,6 +277,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [video-spec-builder](https://github.com/feicaiclub/video-spec-builder) | 1.1k | 🟢 | video-spec-builder —— 把我想做个视频逼成一份精确到秒的分镜脚本 video-spec.md,交给 HyperFrames 渲染。一条命令装到 Claude Code / Cursor / Codex:npx skills add feicaiclub/video-spec-builder |
 | [adu-motion-video](https://github.com/adunext/adu-motion-video) | 722 | 🟢 | 阿杜的 AI 剪辑 Skill｜全系列模板已升级为 MotionGit .motion 开放格式，下载后直接发给助手即可创作。下载：https://motiongit.com/@adunext ｜精选阿杜与 Opus 5.5 制作的代码级动画模板，适合口播、知识讲解，支持多平台、多助手。 |
 | [LiveCanvas 实况画布](https://github.com/pengchujin/livecanvas) | 544 | 🟢 | 一句话，做成有封面、有动画的 Live 图。Turn a sentence into a Live Photo with a designed cover and animation. |
+| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | 524 | 🟡 | Most common transitions inside one Godot shader. 🎬 |
 | [Agentic Product Demo](https://github.com/Alexwtlf/agentic-product-demo) | 482 | 🟢 | Create polished product demo videos with AI coding agents and Remotion. The UI is code, not a screen recording. |
 | [HyperFrames Motion Director](https://github.com/geekjourneyx/hyperframes-motion-director) | 477 | 🟢 | Agent Skill for Chinese-first HyperFrames motion-video production from articles, products, websites, and README files. |
 | [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 460 | 🟢 | A blazingly fast programmatic video engine, made for agents. |
@@ -323,7 +327,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Generative Art
 
-> 生成艺术 · 几何 · 37 projects
+> 生成艺术 · 几何 · 40 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -348,17 +352,20 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [The Nature of Code](https://github.com/nature-of-code/noc-book-2) | 2k | 🟢 | The 2024 edition of The Nature of Code with p5.js. Includes Notion workflow and build system. |
 | [anidoodle](https://github.com/alexgreensh/anidoodle) | 1.3k | 🟢 | Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render. |
 | [p5.brush](https://github.com/acamposuribe/p5.brush) | 1.3k | 🟢 | Unlock custom brushes, natural fill effects and intuitive hatching in p5.js |
+| [Radiant](https://github.com/pbakaus/radiant) | 1k | 🟢 | A curated collection of generative shader art |
 | [Generative Design 代码包](https://github.com/generative-design/Code-Package-p5.js) | 1k | 🟢 | Code package of the book: Generative Design – Creative Coding for the Web with JavaScript in p5.js |
 | [OPENRNDR](https://github.com/openrndr/openrndr) | 985 | 🟢 | OPENRNDR. A Kotlin/JVM library for creative coding, real-time and interactive graphics |
 | [DOjS](https://github.com/SuperIlu/DOjS) | 963 | 🟡 | A MS-DOS Creative Coding IDE/platform based on JavaScript |
 | [Fragment](https://github.com/raphaelameaume/fragment) | 949 | 🟢 | [alpha] A modern toolkit for creative coding |
 | [genjutsu](https://github.com/AThevon/genjutsu) | 745 | 🟢 | Creative coding skills for Claude Code, claude.ai and Cowork. Motion, micro-interactions and design systems across Web (GSAP, Motion, Three.js, CSS), Android (Jetpack Compose) and Apple (SwiftUI). Proposes an interaction thesis you approve before it writes any code. Anti-AI-slop. |
 | [vsketch](https://github.com/abey79/vsketch) | 610 | 🟢 | Generative plotter art environment for Python |
+| [Bauble](https://github.com/ianthehenry/bauble) | 597 | 🟢 | a playground for making 3D art with lisp and math |
 | [play.core](https://github.com/ertdfgcvb/play.core) | 544 | 🟡 | ASCII Playground |
 | [Processing](https://github.com/processing/processing4) | 535 | 🟢 | Source code for Processing, the software sketchbook and Java-based programming language for students, artists, designers, educators, hobbyists, and creative coders. Includes the core library, and editor (PDE) |
 | [Mosaic](https://github.com/d3cod3/Mosaic) | 518 | 🟢 | Mosaic, an openFrameworks/ImGui based Visual Patching Creative-Coding Platform |
 | [DrawBot](https://github.com/typemytype/drawbot) | 455 | 🟢 | 用 Python 画 2D 图形并导出 GIF/MP4，字体设计圈常用来做文字动画。 |
 | [p5.riso](https://github.com/antiboredom/p5.riso) | 373 | 🟢 | A p5js library for risograph printing by Sam Lavigne and Tega Brain. |
+| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | 366 | 🟢 | LUMEN, a generative shader studio. 9 WebGL2 art modes plus synth style blending, perfect-loop animation, gradient sets, share codes and PNG/WebM/GIF export. Zero dependencies. |
 | [Coldtype](https://github.com/coldtype/coldtype) | 341 | 🟢 | cross-platform display typography in python |
 | [flow-fields](https://github.com/romellogoodman/flow-fields) | 311 | 🟢 | A javascript library for creating flow fields |
 | [空间殖民实验](https://github.com/jasonwebb/2d-space-colonization-experiments) | 227 | 🟡 | Visual experiments exploring space colonization as a 2D morphogenesis tool. |
@@ -371,47 +378,103 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Shaders & Psychedelic
 
-> 着色器 · 迷幻光影 · 40 projects
+> 着色器 · 迷幻光影 · 96 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
 | [three.js](https://github.com/mrdoob/three.js) | 118k | 🟢 | JavaScript 3D Library. |
 | [React Bits](https://github.com/DavidHDev/react-bits) | 51.2k | 🟢 | The largest open-source library of animated, interactive, and customizable React & Next.js components for building standout web products and experiences. Built for humans and AI agents. |
+| [3D 游戏着色器入门](https://github.com/lettier/3d-game-shaders-for-beginners) | 20k | ⚪ | 🎮 A step-by-step guide to implementing SSAO, depth of field, lighting, normal mapping, and more for your 3D game. |
 | [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) | 16.8k | 🟡 | Play with fluids in your browser (works even on mobile) |
+| [React Native Skia](https://github.com/wcandillon/react-native-skia) | 8.8k | 🟢 | High-performance React Native Graphics using Skia |
+| [URP 卡通着色器示例](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample) | 7.8k | 🟢 | A very simple toon lit shader example, for you to learn writing custom lit shader in Unity URP |
 | [The Book of Shaders](https://github.com/patriciogonzalezvivo/thebookofshaders) | 7.1k | 🟡 | Step-by-step guide through the abstract and complex universe of Fragment Shaders. |
+| [《Unity Shader 入门精要》源码](https://github.com/candycat1992/Unity_Shaders_Book) | 6.1k | ⚪ | :book: 书籍《Unity Shader入门精要》源代码 |
 | [Shaders](https://github.com/shader-effects-inc/shaders) | 5.8k | 🟢 | WebGPU components for React, Vue, Svelte, Solid, JS & Framer |
 | [glslViewer](https://github.com/patriciogonzalezvivo/glslViewer) | 5.4k | 🟢 | Console-based GLSL Sandbox for 2D/3D shaders |
 | [Canvas UI](https://github.com/DavidHDev/canvas-ui) | 5.3k | 🟢 | A library of creative canvas components. Real HTML with WebGL effects running over it. React, Vue, Svelte, vanilla. |
+| [Orillusion](https://github.com/Orillusion/orillusion) | 5.2k | 🟢 | Orillusion is a pure Web3D rendering engine which is fully developed based on the WebGPU standard. |
 | [TiXL](https://github.com/tixl3d/tixl) | 5.2k | 🟢 | TiXL is an open source software to create realtime motion graphics. |
 | [SHADERed](https://github.com/dfranx/SHADERed) | 4.8k | ⚪ | Lightweight, cross-platform & full-featured shader IDE |
 | [projectM](https://github.com/projectM-visualizer/projectm) | 4.6k | 🟢 | projectM - Cross-platform Music Visualization Library. Open-source and Milkdrop-compatible. |
+| [Shader School](https://github.com/stackgl/shader-school) | 4.4k | ⚪ | :mortar_board: A workshopper for GLSL shaders and graphics programming |
+| [Godot Shaders](https://github.com/gdquest-demos/godot-shaders) | 4.2k | 🟢 | A large library of free and open-source shaders for the Godot game engine. Here, you'll get 2D and 3D shaders with playable demos. |
+| [UnityChan 卡通着色器](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) | 4.1k | ⚪ | UnityChanToonShaderVer2 Project / v.2.0.9 Release |
 | [Paper Shaders](https://github.com/paper-design/shaders) | 3.9k | 🟢 | Zero-dependency canvas shaders that can be installed from npm or designed in Paper |
 | [LYGIA](https://github.com/patriciogonzalezvivo/lygia) | 3.5k | 🟢 | LYGIA, it's a granular and multi-language (GLSL, HLSL, Metal,  WGSL,  WEGL and CUDA) shader library designed for performance and flexibility |
+| [TypeGPU](https://github.com/software-mansion/TypeGPU) | 3.3k | 🟢 | A modular and open-ended toolkit for WebGPU, with advanced type inference and the ability to write shaders in TypeScript |
 | [ShaderGradient](https://github.com/ruucm/shadergradient) | 3.1k | 🟢 | Create beautiful moving gradients on Framer, Figma and React |
 | [gl-react](https://github.com/gre/gl-react) | 3k | 🟢 | gl-react – React library to write and compose WebGL shaders |
+| [webgl-noise](https://github.com/ashima/webgl-noise) | 3k | 🟡 | Procedural Noise Shader Routines compatible with WebGL |
+| [Inferno](https://github.com/twostraws/Inferno) | 2.9k | 🟢 | Metal shaders for SwiftUI. |
 | [Hydra](https://github.com/hydra-synth/hydra) | 2.7k | 🟡 | Livecoding networked visuals in the browser |
+| [glslEditor](https://github.com/patriciogonzalezvivo/glslEditor) | 2.6k | ⚪ | Simple WebGL Fragment Shader Editor |
+| [glslify](https://github.com/glslify/glslify) | 2.3k | ⚪ | A node.js-style module system for GLSL! :sparkles: |
 | [glslCanvas](https://github.com/patriciogonzalezvivo/glslCanvas) | 2.3k | ⚪ | Simple tool to load GLSL shaders on HTML Canvas using WebGL |
 | [GLSL-PathTracer](https://github.com/knightcrawler25/GLSL-PathTracer) | 2.1k | ⚪ | A toy physically based GPU path tracer (C++/OpenGL/GLSL) |
 | [Butterchurn](https://github.com/jberg/butterchurn) | 2k | 🟡 | Butterchurn is a WebGL implementation of the Milkdrop Visualizer |
+| [GLSL Sandbox](https://github.com/mrdoob/glsl-sandbox) | 1.7k | 🟢 | Shader editor and gallery. |
+| [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) | 1.7k | 🟢 | A feature rich toon shader for unity and VR Chat |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | 🟡 | Surface-Stable Fractal Dithering |
+| [Unity Toon Shader](https://github.com/Unity-Technologies/com.unity.toonshader) | 1.6k | 🟢 | Unity Toon Shader |
 | [MilkDrop 3](https://github.com/milkdrop2077/MilkDrop3) | 1.5k | 🟢 | MilkDrop 3.0, supports any audio source, double-preset (.milk2), loading presets based on beat detection and much more... |
 | [Bonzomatic](https://github.com/Gargaj/Bonzomatic) | 1.5k | 🟡 | Live shader coding tool and Shader Showdown workhorse |
+| [ShaderMan](https://github.com/smkplus/ShaderMan) | 1.5k | ⚪ | Convert ShaderToy to Unity  HLSL/CG |
+| [GLSL 入门大全](https://github.com/wshxbqq/GLSL-Card) | 1.5k | ⚪ | 着色器语言 GLSL (opengl-shader-language)入门大全 |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.4k | 🟡 | Turn your logo into liquid metal with Paper Shaders |
+| [NoiseShader](https://github.com/keijiro/NoiseShader) | 1.4k | 🟡 | Noise shader library for Unity |
+| [CustomShaderMaterial](https://github.com/FarazzShaikh/THREE-CustomShaderMaterial) | 1.4k | 🟡 | 🧩 Extend Three.js standard materials with your own shaders! |
+| [URP_Toon](https://github.com/ChiliMilk/URP_Toon) | 1.4k | ⚪ | A Toon Shader in Unity Universal Render Pipeline. |
 | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | 🟢 | This repo is for glsl shaders converted by hand from libretro's common-shaders repo, since some don't play nicely with the cg2glsl script. |
+| [shuding/liquid-glass](https://github.com/shuding/liquid-glass) | 1.2k | 🟡 | Copy-paste Liquid Glass shader with SVG |
 | [PixiJS Filters](https://github.com/pixijs/filters) | 1.1k | 🟡 | Collection of community-authored custom display filters for PixiJS |
+| [glsl-blend](https://github.com/jamieowen/glsl-blend) | 1.1k | ⚪ | glsl photoshop blending modes.  glslify formatted. |
 | [Shader Editor](https://github.com/markusfisch/ShaderEditor) | 1.1k | 🟢 | Android app to create GLSL shaders and use them as live wallpaper |
 | [twigl](https://github.com/doxas/twigl) | 1.1k | 🟡 | twigl.app is an online editor for One tweet shader, with gif generator and sound shader, and broadcast live coding. |
+| [liquidGL](https://github.com/naughtyduk/liquidGL) | 1k | 🟢 | liquidGL – Liquid Glass For The Web - WebGPU/WebGL |
 | [motion-anything](https://github.com/nexu-io/motion-anything) | 1k | 🟢 | ✨ The agentic motion layer — an open-source, chat-native motion engine. Describe the feeling; your AI ships the animation. |
+| [Radiant](https://github.com/pbakaus/radiant) | 1k | 🟢 | A curated collection of generative shader art |
+| [Raymarching Workshop](https://github.com/electricsquare/raymarching-workshop) | 1k | ⚪ | An Introduction to Raymarching |
+| [Godot Realistic Water](https://github.com/godot-extended-libraries/godot-realistic-water) | 978 | 🟡 | Godot - Realistic Water Shader |
 | [Fragment](https://github.com/raphaelameaume/fragment) | 949 | 🟢 | [alpha] A modern toolkit for creative coding |
 | [Shader Park](https://github.com/shader-park/shader-park-core) | 831 | 🟢 | A JavaScript library for creating real-time 2D and 3D shaders. JS -> Shader. https://shaderpark.com/  https://twitter.com/shaderpark |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | 806 | 🟢 | A pack of retro compositor effects and shaders for Godot. |
+| [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) | 802 | 🟢 | 🔮 The Ultimate Apple Liquid Glass UI — Recreated for the Web, powered by WebGL2 & WebGPU |
+| [orb](https://github.com/LerSent001/orb) | 746 | 🟢 | 实时 WebGPU 液态玻璃球编辑器，支持 Web 与 SwiftUI/Metal 导出，使用 OpenAI Codex 辅助开发与验证 \| Real-time WebGPU liquid-glass orb editor with Web and SwiftUI/Metal export, built and verified with OpenAI Codex. |
+| [shadplay](https://github.com/alphastrata/shadplay) | 727 | 🟢 | Real-time wgsl visualisation tooling for educating oneself in the art of shader programming |
 | [Shader Toy for VS Code](https://github.com/stevensona/shader-toy) | 721 | 🟢 | Shadertoy-like live preview for GLSL shaders in Visual Studio Code |
+| [Shader Lab](https://github.com/basementstudio/shader-lab) | 717 | 🟢 | A powerful toolkit to create, stack, and animate shaders. |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 614 | 🟡 | Tessendorf FFT based ocean waves and buoyancy in Godot 4 using compute shaders |
+| [LiliumToonGraph](https://github.com/you-ri/LiliumToonGraph) | 609 | 🟢 | UniversalRP Toon Shader with ShaderGraph |
+| [Bauble](https://github.com/ianthehenry/bauble) | 597 | 🟢 | a playground for making 3D art with lisp and math |
+| [shader-doodle](https://github.com/mmmerl/shader-doodle) | 589 | 🟢 | A friendly web-component for writing and rendering shaders. |
 | [Shader Minifier](https://github.com/laurentlb/shader-minifier) | 583 | 🟢 | Minify and obfuscate GLSL or HLSL code |
 | [cables](https://github.com/cables-gl/cables) | 572 | 🟢 | cables is a tool for creating beautiful interactive content |
+| [Beam](https://github.com/doodlewind/beam) | 528 | 🟢 | ✨ Expressive WebGPU |
+| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | 524 | 🟡 | Most common transitions inside one Godot shader. 🎬 |
+| [Learn wgpu 中文版](https://github.com/jinleili/learn-wgpu-zh) | 512 | 🟢 | Learn wgpu 中文版 |
+| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | 489 | 🟢 | A Swift package for composable Metal shaders and holographic UI effects in SwiftUI. |
 | [Retro Crisis 着色器](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 480 | 🟢 | Retro Crisis libretro CRT shader presets, based on Guest Advanced NTSC shader |
+| [Svader](https://github.com/sockmaster27/svader) | 464 | 🟢 | Create GPU-rendered Svelte components |
 | [Shader Skills](https://github.com/gokayfem/shader-skills) | 418 | 🟢 | GLSL and Shadertoy shader skills for Claude Code, Codex, Cursor, Copilot and Gemini CLI. 186 functions, SDF raymarching, procedural terrain, water, clouds and generative art, with a bundler, checker and 11 examples. |
 | [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | 383 | 🟡 | WebGL 实现的水墨画背景特效 - 个人主页 |
+| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | 366 | 🟢 | LUMEN, a generative shader studio. 9 WebGL2 art modes plus synth style blending, perfect-loop animation, gradient sets, share codes and PNG/WebM/GIF export. Zero dependencies. |
+| [RayTK](https://github.com/t3kt/raytk) | 358 | 🟡 | Raymarching shader toolkit for TouchDesigner |
+| [Godot VFX Library](https://github.com/haowg/GODOT-VFX-LIBRARY) | 354 | 🟡 | A comprehensive collection of particle effects and shaders for Godot 4, designed specifically for action games |
 | [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) | 347 | 🟢 | 41 hand-curated drop-in SwiftUI Metal shader effects — holographic foil, kaleidoscope, magnetic fields, glitch, neon edges and more. Typed View modifiers, agent-friendly docs. |
+| [ShaderMania](https://github.com/markusmoenig/ShaderMania) | 347 | 🟢 | A Metal fragment shader editor for macOS and iPadOS |
 | [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 343 | 🟢 | Shaders bringing 5th-gen console aesthetics to Godot 4. |
+| [Singularity](https://github.com/MisterPrada/singularity) | 317 | 🟡 | Black Hole -> Three.js -> TSL -> (WebGPU/WebGL) |
+| [Poseidon](https://github.com/owenyuwono/poseidon) | 317 | 🟢 | GPU-driven real-time FFT ocean (Three.js + WebGPU/TSL) |
+| [ShaderToy 浏览器插件](https://github.com/patuwwy/ShaderToy-Chrome-Plugin) | 313 | 🟢 | Web extension for shadertoy.com |
+| [AGSL Shader Playground](https://github.com/mejdi14/Android-AGSL-Shader-Playground) | 308 | 🟢 | Android AGSL Shader effect library |
+| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 300 | 🟢 | Fully procedural cinematic ocean and extreme weather simulation in the browser. Multi-cascade FFT waves, volumetric clouds, hurricanes and tsunamis - every pixel generated on the GPU at runtime, zero external assets. Three.js / WebGL2 / GLSL3. |
 | [Dithering Shader](https://github.com/niccolofanton/dithering-shader) | 294 | 🟢 | Real-time ordered (Bayer) dithering post-processing effect for 3D scenes, built with React Three Fiber and Three.js |
+| [TSL Textures](https://github.com/boytchev/tsl-textures) | 271 | 🟢 | A collection of Three.js Shading Language (TSL) textures |
+| [Radiance](https://github.com/zbanks/radiance) | 249 | 🟡 | Radiance is video art software for VJs. It supports beat detection, animated GIFs, YouTube video, OpenGL shader effects. It is designed for live performance and runs on Linux and MacOS. |
+| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | 236 | 🟢 | Screen-space raymarched godrays for three.js using the pmndrs postprocessing library |
+| [retrace.gl](https://github.com/stasilo/retrace.gl) | 196 | 🟢 | Create, ray trace & export programatically defined Signed Distance Function CSG geometries with an API suited for generative art - in your browser! 🎉 |
+| [WebGL CRT Shader](https://github.com/gingerbeardman/webgl-crt-shader) | 188 | 🟡 | Tweakable CRT shader for web canvas |
 | [Black Hole](https://github.com/ibra-kdbra/black-hole) | 112 | 🟢 | Black hole with three.js, glsl shaders |
 | [ditherwave](https://github.com/sahilsaini5/ditherwave) | 88 | 🟡 | A tiny WebGL2 dithering primitive for React. Bayer, halftone, ASCII, error-diffusion. Under 8kb gz. |
 | [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | 🟡 | A performant Three.js galaxy shader with customizable colors, spiral patterns, and black hole effects |
@@ -422,7 +485,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Live Coding & VJ
 
-> Live Coding · VJ · 9 projects
+> Live Coding · VJ · 13 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -430,11 +493,15 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [TiXL](https://github.com/tixl3d/tixl) | 5.2k | 🟢 | TiXL is an open source software to create realtime motion graphics. |
 | [Hydra](https://github.com/hydra-synth/hydra) | 2.7k | 🟡 | Livecoding networked visuals in the browser |
 | [ossia score](https://github.com/ossia/score) | 2.1k | 🟢 | ossia score, an interactive sequencer for the intermedia arts |
+| [GLSL Sandbox](https://github.com/mrdoob/glsl-sandbox) | 1.7k | 🟢 | Shader editor and gallery. |
 | [Bonzomatic](https://github.com/Gargaj/Bonzomatic) | 1.5k | 🟡 | Live shader coding tool and Shader Showdown workhorse |
 | [twigl](https://github.com/doxas/twigl) | 1.1k | 🟡 | twigl.app is an online editor for One tweet shader, with gif generator and sound shader, and broadcast live coding. |
+| [shadplay](https://github.com/alphastrata/shadplay) | 727 | 🟢 | Real-time wgsl visualisation tooling for educating oneself in the art of shader programming |
 | [cables](https://github.com/cables-gl/cables) | 572 | 🟢 | cables is a tool for creating beautiful interactive content |
 | [Mosaic](https://github.com/d3cod3/Mosaic) | 518 | 🟢 | Mosaic, an openFrameworks/ImGui based Visual Patching Creative-Coding Platform |
 | [modV](https://github.com/vcync/modV) | 497 | 🟡 | modular audio visualisation powered by JavaScript |
+| [RayTK](https://github.com/t3kt/raytk) | 358 | 🟡 | Raymarching shader toolkit for TouchDesigner |
+| [Radiance](https://github.com/zbanks/radiance) | 249 | 🟡 | Radiance is video art software for VJs. It supports beat detection, animated GIFs, YouTube video, OpenGL shader effects. It is designed for live performance and runs on Linux and MacOS. |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -442,7 +509,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Music Visualization
 
-> 音乐可视化 · 25 projects
+> 音乐可视化 · 26 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -471,6 +538,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Opus Video Skills](https://github.com/tuzhechen2005/opus-video-skills) | 438 | 🟢 | Video-making skills for Claude Opus 5.5 in Claude Code — every frame and note generated in code, one skill per style: hand-painted animation, kinetic-typography reels \| 用 Claude Opus 5.5 以代码制作视频的技能合集 |
 | [HaloFlux](https://github.com/Ryder191/haloflux) | 423 | 🟢 | Beat-driven sci-fi light-ring visualization. Pure Canvas, single HTML, zero dependencies. Noncommercial use only. RYDER CODE / Ms MAIKEBAIs CAT ｜ 节拍驱动的科幻光环数据可视化，纯原生 Canvas 单文件 HTML、零依赖，支持 Wallpaper Engine 动态壁纸。仅限非商业使用，严禁商用。 |
 | [Remotion 音频图模板](https://github.com/remotion-dev/template-audiogram) | 275 | 🟢 | A template for making podcast video clips with Remotion. |
+| [Radiance](https://github.com/zbanks/radiance) | 249 | 🟡 | Radiance is video art software for VJs. It supports beat detection, animated GIFs, YouTube video, OpenGL shader effects. It is designed for live performance and runs on Linux and MacOS. |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -478,7 +546,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### 3D
 
-> 3D 渲染 · 58 projects
+> 3D 渲染 · 74 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -489,6 +557,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Taichi](https://github.com/taichi-dev/taichi) | 28.5k | 🟢 | Productive, portable, and performant GPU programming in Python. |
 | [Babylon.js](https://github.com/BabylonJS/Babylon.js) | 26.3k | 🟢 | Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework. |
 | [img2threejs](https://github.com/img2threejs/img2threejs) | 20.3k | 🟢 | Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D. |
+| [3D 游戏着色器入门](https://github.com/lettier/3d-game-shaders-for-beginners) | 20k | ⚪ | 🎮 A step-by-step guide to implementing SSAO, depth of field, lighting, normal mapping, and more for your 3D game. |
 | [PlayCanvas](https://github.com/playcanvas/engine) | 17.2k | 🟢 | Powerful web graphics runtime built on WebGL, WebGPU, WebXR and glTF |
 | [deck.gl](https://github.com/visgl/deck.gl) | 14.7k | 🟢 | WebGL2 powered visualization framework |
 | [Theatre.js](https://github.com/theatre-js/theatre) | 12.9k | ⚪ | Motion design editor for the web |
@@ -497,10 +566,13 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Vanta.js](https://github.com/tengbao/vanta) | 7.3k | ⚪ | Animated 3D backgrounds for your website |
 | [ThreeUI](https://github.com/MengTo/threeui) | 7.1k | 🟢 | Open-source ThreeUI Community catalog with live interactive components and complete Community source. |
 | [VoxelSpace](https://github.com/s-macke/VoxelSpace) | 6.8k | ⚪ | Terrain rendering algorithm in less than 20 lines of code |
+| [《Unity Shader 入门精要》源码](https://github.com/candycat1992/Unity_Shaders_Book) | 6.1k | ⚪ | :book: 书籍《Unity Shader入门精要》源代码 |
 | [Galacean Engine](https://github.com/galacean/engine) | 5.9k | 🟢 | A typescript interactive engine, support 2D, 3D, animation, physics, built on WebGL and glTF. |
 | [Cinder](https://github.com/cinder/Cinder) | 5.5k | 🟡 | Cinder is a community-developed, free and open source library for professional-quality creative coding in C++. |
+| [Orillusion](https://github.com/Orillusion/orillusion) | 5.2k | 🟢 | Orillusion is a pure Web3D rendering engine which is fully developed based on the WebGPU standard. |
 | [TiXL](https://github.com/tixl3d/tixl) | 5.2k | 🟢 | TiXL is an open source software to create realtime motion graphics. |
 | [WFC 无限城市](https://github.com/marian42/wavefunctioncollapse) | 4.9k | ⚪ | Walk through an infinite, procedurally generated city |
+| [Godot Shaders](https://github.com/gdquest-demos/godot-shaders) | 4.2k | 🟢 | A large library of free and open-source shaders for the Godot game engine. Here, you'll get 2D and 3D shaders with playable demos. |
 | [farbrausch 工具集](https://github.com/farbrausch/fr_public) | 3.8k | ⚪ | Farbrausch demo tools 2001-2011 |
 | [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.1k | 🟢 | 15 motion design styles, each made by Claude Opus 5.5 writing code from one prompt: watch the films, copy the prompts, read the full source. |
 | [Mitsuba 3](https://github.com/mitsuba-renderer/mitsuba3) | 3k | 🟢 | Mitsuba 3: A Retargetable Forward and Inverse Renderer |
@@ -514,28 +586,40 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [MathBox](https://github.com/unconed/mathbox) | 1.5k | ⚪ | Presentation-quality WebGL math graphing |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | 🟢 | The procedural generation voxel engine |
 | [Origami Simulator](https://github.com/amandaghassaei/OrigamiSimulator) | 1.4k | 🟢 | Realtime WebGL origami simulator |
+| [CustomShaderMaterial](https://github.com/FarazzShaikh/THREE-CustomShaderMaterial) | 1.4k | 🟡 | 🧩 Extend Three.js standard materials with your own shaders! |
 | [TerraForge3D](https://github.com/Jaysmito101/TerraForge3D) | 1.3k | 🟢 | Cross Platform Professional Procedural Terrain Generation & Texturing Tool |
 | [three-nebula](https://github.com/creativelifeform/three-nebula) | 1.2k | 🟢 | WebGL based particle system engine for three.js |
 | [three.quarks](https://github.com/Alchemist0823/three.quarks) | 1.2k | 🟢 | Three.quarks is a general purpose particle system /  VFX engine for three.js |
 | [Mandelbulber](https://github.com/buddhi1980/mandelbulber2) | 1.1k | 🟢 | Official repository for Mandelbulber v2 |
+| [Raymarching Workshop](https://github.com/electricsquare/raymarching-workshop) | 1k | ⚪ | An Introduction to Raymarching |
+| [Godot Realistic Water](https://github.com/godot-extended-libraries/godot-realistic-water) | 978 | 🟡 | Godot - Realistic Water Shader |
 | [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 919 | 🟢 | A procedural terrain generation engine for use with the Three.js 3D graphics library for the web. |
 | [motion-web](https://github.com/feitangyuan/motion-web) | 836 | 🟢 | Build motion-first, high-touch creative websites on vanilla Three.js / Canvas 2D / WebGL / CSS. A Claude Agent Skill with real physics and automated verification. |
 | [Shader Park](https://github.com/shader-park/shader-park-core) | 831 | 🟢 | A JavaScript library for creating real-time 2D and 3D shaders. JS -> Shader. https://shaderpark.com/  https://twitter.com/shaderpark |
 | [遨游太阳系](https://github.com/hyqzz/Solar-Wanderer) | 764 | 🟢 | Solar Wanderer / 遨游太阳系 - 1:1 Real-Time Solar System Explorer in the Browser. NASA JPL ephemeris, WebGL2, Three.js. From solar surface to 100,000 AU Oort Cloud. |
 | [Athenaion](https://github.com/Leonxlnx/athenaion) | 680 | 🟢 | A massive ancient Greek world built entirely in code with three.js. Zero assets, made with Claude Code (Opus 5.5) |
 | [heerich](https://github.com/meodai/heerich) | 630 | 🟢 | Tiny engine for 3D voxel scenes rendered to SVG — boolean ops, oblique/perspective cameras, zero dependencies. Inspired by the geometric cardboard sculptures of Erwin Heerich. |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 614 | 🟡 | Tessendorf FFT based ocean waves and buoyancy in Godot 4 using compute shaders |
+| [Bauble](https://github.com/ianthehenry/bauble) | 597 | 🟢 | a playground for making 3D art with lisp and math |
 | [Machine Skill](https://github.com/AirsupHQ/machine-skill) | 579 | 🟢 | Describe any machine in one line. Claude builds a photoreal, physics based, interactive simulation of it in one HTML file, plus the film to post it. An open source Claude Code skill. |
 | [cables](https://github.com/cables-gl/cables) | 572 | 🟢 | cables is a tool for creating beautiful interactive content |
+| [Learn wgpu 中文版](https://github.com/jinleili/learn-wgpu-zh) | 512 | 🟢 | Learn wgpu 中文版 |
+| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | 480 | 🟢 | Importer/Exporter for VRM avatars and MToon shader. Available for Godot 4.1+ and 3.2+ in the Asset Library. |
 | [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) | 372 | 🟢 | Six Claude Code skills that make animations for reels, no footage needed: 3D cartoon explainer, stick figure, minimal line art, 3D map route, exploded view, line graph. |
 | [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) | 369 | 🟢 | 用 Claude Opus 5.5 写代码做视频：先给三个方案和预览，确认后逐帧渲染成片 \| Canvas / WebGL / Three.js / Remotion / HyperFrames \| Claude Code Skill |
+| [RayTK](https://github.com/t3kt/raytk) | 358 | 🟡 | Raymarching shader toolkit for TouchDesigner |
 | [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 343 | 🟢 | Shaders bringing 5th-gen console aesthetics to Godot 4. |
 | [Code Video Showcase](https://github.com/Moessif/code-video-showcase) | 322 | 🟢 | A pure-code beat-synced showcase-video Agent Skill: HTML/Canvas/SVG/Three.js frame-by-frame + Python numpy/scipy score + FFmpeg. No generative models. |
+| [Poseidon](https://github.com/owenyuwono/poseidon) | 317 | 🟢 | GPU-driven real-time FFT ocean (Three.js + WebGPU/TSL) |
 | [OriSim3D](https://github.com/RemiKoutcherawy/OriSim3D-Android) | 304 | 🟢 | OriSim3D origami folding simulation on Android with openGL. |
+| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 300 | 🟢 | Fully procedural cinematic ocean and extreme weather simulation in the browser. Multi-cascade FFT waves, volumetric clouds, hurricanes and tsunamis - every pixel generated on the GPU at runtime, zero external assets. Three.js / WebGL2 / GLSL3. |
 | [Dithering Shader](https://github.com/niccolofanton/dithering-shader) | 294 | 🟢 | Real-time ordered (Bayer) dithering post-processing effect for 3D scenes, built with React Three Fiber and Three.js |
 | [Papercraft](https://github.com/rodrigorc/papercraft) | 289 | 🟢 | Papercraft is a tool to unwrap 3D models. |
 | [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 261 | 🟢 | babylon.js mmd loader and runtime |
 | [Krbn](https://github.com/vpalos/Krbn) | 248 | 🟢 | A web engine for pencil-style rendering of 3D scenes to SVG — exact silhouettes, hidden-line ghosting, hatching. Great for abstract and technical scenes. |
+| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | 236 | 🟢 | Screen-space raymarched godrays for three.js using the pmndrs postprocessing library |
 | [Papercraft World](https://github.com/andrewwoan/aimee-xus-papercraft-world) | 197 | 🟢 | A Seasonal Papercraft Portfolio! |
+| [retrace.gl](https://github.com/stasilo/retrace.gl) | 196 | 🟢 | Create, ray trace & export programatically defined Signed Distance Function CSG geometries with an API suited for generative art - in your browser! 🎉 |
 | [mutracer](https://github.com/pissang/mutracer) | 173 | 🟢 | WebGPU physically based path tracer |
 | [I, Voyager Planetarium](https://github.com/ivoyager/planetarium) | 162 | 🟢 | Our Planetarium project! |
 | [BB-Video](https://github.com/BubbleBrainBB/BB-Video) | 133 | 🟢 | An agent skill that makes videos in pure code — narrated explainers and product promos in 32 visual styles (whiteboard, ink-wash, shadow puppets, pixel art, isometric worlds, movie trailers, manga, animated maps, Swiss kinetic type, blueprints, paper collage, Bayeux tapestry, stick-figure parables, pencil tests, pen-drawn worlds…), 16:9 and 9:16. |
@@ -547,16 +631,23 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Anime, MMD & VRM
 
-> 二次元 · MMD · VRM · 8 projects
+> 二次元 · MMD · VRM · 15 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
+| [URP 卡通着色器示例](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample) | 7.8k | 🟢 | A very simple toon lit shader example, for you to learn writing custom lit shader in Unity URP |
 | [Kalidokit](https://github.com/yeemachine/kalidokit) | 5.7k | 🟡 | Blendshape and kinematics calculator for Mediapipe/Tensorflow.js Face, Eyes, Pose, and Finger tracking models. |
+| [UnityChan 卡通着色器](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) | 4.1k | ⚪ | UnityChanToonShaderVer2 Project / v.2.0.9 Release |
 | [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 2.6k | 🟢 | A starter kit for animating hand-painted cartoons with Claude: p5.js + p5.brush, the Clawd character, 31 acted emotions and a guide for the model |
 | [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | 🟢 | Use VRM on Three.js |
+| [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) | 1.7k | 🟢 | A feature rich toon shader for unity and VR Chat |
+| [Unity Toon Shader](https://github.com/Unity-Technologies/com.unity.toonshader) | 1.6k | 🟢 | Unity Toon Shader |
 | [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) | 1.5k | ⚪ | A PixiJS plugin to display Live2D models of any kind. |
+| [URP_Toon](https://github.com/ChiliMilk/URP_Toon) | 1.4k | ⚪ | A Toon Shader in Unity Universal Render Pipeline. |
 | [Aora Bot](https://github.com/sam70361/aora-bot) | 619 | 🟢 | Aora Bot：代码绘制的网页角色引擎，46 个原创角色、44 种动画状态，支持 React、Web Component 与头像接口（原 Emotion Ball 表情馆） |
+| [LiliumToonGraph](https://github.com/you-ri/LiliumToonGraph) | 609 | 🟢 | UniversalRP Toon Shader with ShaderGraph |
 | [world.execute(me) 歌词 MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 511 | 🟢 | world.execute(me); — an unofficial fan-made lyric MV told as a chat with Claude, rendered frame by frame from code. Prompts included; no music or lyrics. 非官方同人歌詞 MV:以程式碼逐幀渲染,附完整提示詞,不含歌曲與歌詞。 |
+| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | 480 | 🟢 | Importer/Exporter for VRM avatars and MToon shader. Available for Godot 4.1+ and 3.2+ in the Asset Library. |
 | [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 261 | 🟢 | babylon.js mmd loader and runtime |
 | [html-anime](https://github.com/blixvip/html-anime) | 246 | 🟢 | Turn a scene prompt into a shot sheet, then have a coding agent draw the film in HTML. No video model. |
 
@@ -566,7 +657,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Particles & Physics
 
-> 粒子 · 流体 · 物理 · 23 projects
+> 粒子 · 流体 · 物理 · 26 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -589,7 +680,10 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [three-nebula](https://github.com/creativelifeform/three-nebula) | 1.2k | 🟢 | WebGL based particle system engine for three.js |
 | [three.quarks](https://github.com/Alchemist0823/three.quarks) | 1.2k | 🟢 | Three.quarks is a general purpose particle system /  VFX engine for three.js |
 | [Particle Life App](https://github.com/tom-mohr/particle-life-app) | 1k | 🟡 | 🦠 Simulator for a particle system showing life-like behaviour. |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 614 | 🟡 | Tessendorf FFT based ocean waves and buoyancy in Godot 4 using compute shaders |
 | [manim-physics](https://github.com/Matheart/manim-physics) | 412 | 🟢 | Physics simulation plugin of Manim that can generate scenes in various branches of Physics. |
+| [Godot VFX Library](https://github.com/haowg/GODOT-VFX-LIBRARY) | 354 | 🟡 | A comprehensive collection of particle effects and shaders for Godot 4, designed specifically for action games |
+| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 300 | 🟢 | Fully procedural cinematic ocean and extreme weather simulation in the browser. Multi-cascade FFT waves, volumetric clouds, hurricanes and tsunamis - every pixel generated on the GPU at runtime, zero external assets. Three.js / WebGL2 / GLSL3. |
 | [cbirds](https://github.com/clainstone/cbirds) | 286 | 🟢 | A flock of birds in your terminal: Craig Reynolds' boids, in braille in any terminal and as sprites in Kitty and Ghostty. One C99 program, no dependencies. Linux and macOS |
 | [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 80 | 🟢 | Built with Three.js: MeshSurfaceSampler • 3D flow field particles • Custom post-processing effects, including chromatic aberration, glow, and film grain. |
 | [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | 🟡 | A performant Three.js galaxy shader with customizable colors, spiral patterns, and black hole effects |
@@ -600,7 +694,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Glitch & Post FX
 
-> 故障 · 后期特效 · 16 projects
+> 故障 · 后期特效 · 17 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -609,6 +703,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Natron](https://github.com/NatronGitHub/Natron) | 5.6k | 🟢 | Open-source video compositing software. Node-graph based. Similar in functionalities to Adobe After Effects and Nuke by The Foundry. |
 | [ShaderGlass](https://github.com/mausimus/ShaderGlass) | 4.4k | 🟢 | Overlay for running GPU shaders on top of Windows desktop and Wine |
 | [postprocessing](https://github.com/pmndrs/postprocessing) | 3k | 🟢 | A post processing library for three.js. |
+| [Inferno](https://github.com/twostraws/Inferno) | 2.9k | 🟢 | Metal shaders for SwiftUI. |
 | [Hydra](https://github.com/hydra-synth/hydra) | 2.7k | 🟡 | Livecoding networked visuals in the browser |
 | [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) | 2.7k | 🟢 | Free, open-source VHS effect. Standalone application + plugin (After Effects, Premiere, and OpenFX). |
 | [GL Transitions](https://github.com/gl-transitions/gl-transitions) | 2.2k | 🟢 | The open collection of GL Transitions |
@@ -627,7 +722,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Pixel & Retro
 
-> 像素 · 复古 · 26 projects
+> 像素 · 复古 · 28 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -642,6 +737,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [TIC-80](https://github.com/nesbox/TIC-80) | 6.2k | 🟢 | TIC-80 is a fantasy computer for making, playing and sharing tiny games. |
 | [pixelfx](https://github.com/patch-gg/pixelfx) | 4.7k | 🟢 | 244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own. |
 | [ShaderGlass](https://github.com/mausimus/ShaderGlass) | 4.4k | 🟢 | Overlay for running GPU shaders on top of Windows desktop and Wine |
+| [Godot Shaders](https://github.com/gdquest-demos/godot-shaders) | 4.2k | 🟢 | A large library of free and open-source shaders for the Godot game engine. Here, you'll get 2D and 3D shaders with playable demos. |
 | [Sandspiel](https://github.com/MaxBittker/sandspiel) | 3.2k | 🟢 | Creative cellular automata browser game |
 | [timg](https://github.com/hzeller/timg) | 2.8k | 🟢 | A terminal image and video viewer. |
 | [obelisk.js](https://github.com/nosir/obelisk.js) | 2.3k | ⚪ | Build pixel isometric graphics with HTML5 canvas |
@@ -649,6 +745,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Animate](https://github.com/cth9191/animate) | 1.5k | 🟢 | Procedural animation in any style for Claude Code: short single-file canvas videos with story, look and storyboard check-ins. 7 built-in styles or one matched from your references, your own music (beat-mapped), real product screenshots, every format from one piece. |
 | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | 🟢 | This repo is for glsl shaders converted by hand from libretro's common-shaders repo, since some don't play nicely with the cg2glsl script. |
 | [DOjS](https://github.com/SuperIlu/DOjS) | 963 | 🟡 | A MS-DOS Creative Coding IDE/platform based on JavaScript |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | 806 | 🟢 | A pack of retro compositor effects and shaders for Godot. |
 | [NTSC-CRT](https://github.com/LMP88959/NTSC-CRT) | 577 | 🟢 | NTSC encoding/decoding in C89 using only integers and fixed point math. Supports NES decoding. Can be used as an image filter for games or real-time applications. |
 | [Retro Crisis 着色器](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 480 | 🟢 | Retro Crisis libretro CRT shader presets, based on Guest Advanced NTSC shader |
 | [Sandboxels](https://github.com/R74nCom/sandboxels) | 477 | 🟢 | In-browser falling-sand simulation game with over 500 elements and thousands of reactions. |
@@ -857,7 +954,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Procedural Generation
 
-> 程序化生成 · 波函数坍缩 · 9 projects
+> 程序化生成 · 波函数坍缩 · 12 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -866,10 +963,13 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Fantasy Map Generator](https://github.com/Azgaar/Fantasy-Map-Generator) | 6.2k | 🟢 | Web application generating interactive and highly customizable maps |
 | [WFC 无限城市](https://github.com/marian42/wavefunctioncollapse) | 4.9k | ⚪ | Walk through an infinite, procedurally generated city |
 | [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) | 3.5k | 🟢 | Fast Portable Noise Library - C# C++ C Java HLSL GLSL JavaScript Rust Go |
+| [webgl-noise](https://github.com/ashima/webgl-noise) | 3k | 🟡 | Procedural Noise Shader Routines compatible with WebGL |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | 🟢 | The procedural generation voxel engine |
+| [NoiseShader](https://github.com/keijiro/NoiseShader) | 1.4k | 🟡 | Noise shader library for Unity |
 | [TerraForge3D](https://github.com/Jaysmito101/TerraForge3D) | 1.3k | 🟢 | Cross Platform Professional Procedural Terrain Generation & Texturing Tool |
 | [mapgen4](https://github.com/redblobgames/mapgen4) | 948 | 🟡 | Mapgen4 procedural wilderness map generator |
 | [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 919 | 🟢 | A procedural terrain generation engine for use with the Three.js 3D graphics library for the web. |
+| [TSL Textures](https://github.com/boytchev/tsl-textures) | 271 | 🟢 | A collection of Three.js Shading Language (TSL) textures |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1007,7 +1107,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### VHS & Analog
 
-> VHS · 模拟信号 · 11 projects
+> VHS · 模拟信号 · 13 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -1016,8 +1116,10 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) | 2.7k | 🟢 | Free, open-source VHS effect. Standalone application + plugin (After Effects, Premiere, and OpenFX). |
 | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | 🟢 | This repo is for glsl shaders converted by hand from libretro's common-shaders repo, since some don't play nicely with the cg2glsl script. |
 | [ntscqt](https://github.com/JargeZ/ntscqt) | 1.2k | ⚪ | AKA Line Maker 10.0 \| GUI for VHS video simulator |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | 806 | 🟢 | A pack of retro compositor effects and shaders for Godot. |
 | [NTSC-CRT](https://github.com/LMP88959/NTSC-CRT) | 577 | 🟢 | NTSC encoding/decoding in C89 using only integers and fixed point math. Supports NES decoding. Can be used as an image filter for games or real-time applications. |
 | [Retro Crisis 着色器](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 480 | 🟢 | Retro Crisis libretro CRT shader presets, based on Guest Advanced NTSC shader |
+| [WebGL CRT Shader](https://github.com/gingerbeardman/webgl-crt-shader) | 188 | 🟡 | Tweakable CRT shader for web canvas |
 | [NTSCRT](https://github.com/finnmckenty/NTSCRT) | 187 | 🟢 | Vintage analog TV/VHS image tool for macOS: ntsc-rs signal emulation + RetroArch CRT shaders (librashader), glued together with SwiftUI/Metal |
 | [NTSCplayer](https://github.com/ferropop/NTSCplayer) | 141 | 🟢 | NTSC/VHS inspired Media Player |
 | [VhsFx](https://github.com/NullTale/VhsFx) | 89 | 🟡 | ⬜ Vhs post effect for Unity Urp |
@@ -1066,7 +1168,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Path Tracing
 
-> 写实光追 · 6 projects
+> 写实光追 · 7 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -1075,6 +1177,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [GLSL-PathTracer](https://github.com/knightcrawler25/GLSL-PathTracer) | 2.1k | ⚪ | A toy physically based GPU path tracer (C++/OpenGL/GLSL) |
 | [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) | 2k | 🟢 | Path tracing renderer and utilities for three.js built on top of three-mesh-bvh. |
 | [ToyPathTracer](https://github.com/aras-p/ToyPathTracer) | 1.1k | 🟡 | Toy path tracer for my own learning purposes (CPU/GPU, C++/C#, Win/Mac/Wasm, DX11/Metal, also Unity) |
+| [retrace.gl](https://github.com/stasilo/retrace.gl) | 196 | 🟢 | Create, ray trace & export programatically defined Signed Distance Function CSG geometries with an API suited for generative art - in your browser! 🎉 |
 | [mutracer](https://github.com/pissang/mutracer) | 173 | 🟢 | WebGPU physically based path tracer |
 
 <sub>[↑ Back to the style index](#index)</sub>
@@ -1083,7 +1186,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Space & Stars
 
-> 星空 · 宇宙 · 7 projects
+> 星空 · 宇宙 · 8 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -1091,9 +1194,33 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [遨游太阳系](https://github.com/hyqzz/Solar-Wanderer) | 764 | 🟢 | Solar Wanderer / 遨游太阳系 - 1:1 Real-Time Solar System Explorer in the Browser. NASA JPL ephemeris, WebGL2, Three.js. From solar surface to 100,000 AU Oort Cloud. |
 | [linecast](https://github.com/ashuttl/linecast) | 667 | 🟢 | Weather, tides, the sun, the moon, maps, and a planetarium, in your terminal. The Old Farmer's Almanac meets Minitel. |
 | [Stellarium Web](https://github.com/Stellarium/stellarium-web-engine) | 660 | 🟢 | JavaScript planetarium engine |
+| [Singularity](https://github.com/MisterPrada/singularity) | 317 | 🟡 | Black Hole -> Three.js -> TSL -> (WebGPU/WebGL) |
 | [I, Voyager Planetarium](https://github.com/ivoyager/planetarium) | 162 | 🟢 | Our Planetarium project! |
 | [Black Hole](https://github.com/ibra-kdbra/black-hole) | 112 | 🟢 | Black hole with three.js, glsl shaders |
 | [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | 🟡 | A performant Three.js galaxy shader with customizable colors, spiral patterns, and black hole effects |
+
+<sub>[↑ Back to the style index](#index)</sub>
+
+<a name="liquid"></a>
+
+### Liquid Glass
+
+> 液态玻璃 · 玻璃拟态 · 12 projects
+
+| Project | Stars | Status | Description |
+| --- | ---: | :---: | --- |
+| [AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) | 4.5k | 🟢 | Compose Multiplatform Liquid Glass effect |
+| [liquid-dom](https://github.com/AndrewPrifer/liquid-dom) | 2.6k | 🟢 | Liquid Glass for the Web |
+| [Liquid Glass for RN](https://github.com/callstack/liquid-glass) | 1.7k | 🟢 | Liquid Glass in React Native |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.4k | 🟡 | Turn your logo into liquid metal with Paper Shaders |
+| [Cloudy](https://github.com/skydoves/Cloudy) | 1.3k | 🟢 | ☁️ Kotlin Multiplatform blur and liquid glass effect library for Compose, with GPU-accelerated rendering and CPU fallback for older devices. |
+| [shuding/liquid-glass](https://github.com/shuding/liquid-glass) | 1.2k | 🟡 | Copy-paste Liquid Glass shader with SVG |
+| [liquidGL](https://github.com/naughtyduk/liquidGL) | 1k | 🟢 | liquidGL – Liquid Glass For The Web - WebGPU/WebGL |
+| [Liquid Glass Widgets](https://github.com/sdegenaar/liquid_glass_widgets) | 812 | 🟢 | Flutter UI kit implementing Apple's iOS 26/27 Liquid Glass design language - a comprehensive glass widget library with real shader-based blur, physics-driven jelly animations, and dynamic lighting. Works on every platform out of the box. |
+| [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) | 802 | 🟢 | 🔮 The Ultimate Apple Liquid Glass UI — Recreated for the Web, powered by WebGL2 & WebGPU |
+| [orb](https://github.com/LerSent001/orb) | 746 | 🟢 | 实时 WebGPU 液态玻璃球编辑器，支持 Web 与 SwiftUI/Metal 导出，使用 OpenAI Codex 辅助开发与验证 \| Real-time WebGPU liquid-glass orb editor with Web and SwiftUI/Metal export, built and verified with OpenAI Codex. |
+| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | 489 | 🟢 | A Swift package for composable Metal shaders and holographic UI effects in SwiftUI. |
+| [liquid-glass-android](https://github.com/Mortd3kay/liquid-glass-android) | 187 | 🟡 | ✨ Glass morphism library for Jetpack Compose with AGSL shaders (Android 13+). Supports blur, distortion, shadows, and more. |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1301,6 +1428,39 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Stellarium Web](https://github.com/Stellarium/stellarium-web-engine) | alternative to | [遨游太阳系](https://github.com/hyqzz/Solar-Wanderer) |
 | [linecast](https://github.com/ashuttl/linecast) | alternative to | [astroterm](https://github.com/da-luce/astroterm) |
 | [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | alternative to | [Shan-Shui-Inf 千里江山](https://github.com/LingDong-/shan-shui-inf) |
+| [CustomShaderMaterial](https://github.com/FarazzShaikh/THREE-CustomShaderMaterial) | plugin for | [three.js](https://github.com/mrdoob/three.js) |
+| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | plugin for | [postprocessing](https://github.com/pmndrs/postprocessing) |
+| [TSL Textures](https://github.com/boytchev/tsl-textures) | plugin for | [three.js](https://github.com/mrdoob/three.js) |
+| [Poseidon](https://github.com/owenyuwono/poseidon) | built on | [three.js](https://github.com/mrdoob/three.js) |
+| [Singularity](https://github.com/MisterPrada/singularity) | built on | [three.js](https://github.com/mrdoob/three.js) |
+| [glslEditor](https://github.com/patriciogonzalezvivo/glslEditor) | same author as | [glslViewer](https://github.com/patriciogonzalezvivo/glslViewer) |
+| [glsl-blend](https://github.com/jamieowen/glsl-blend) | plugin for | [glslify](https://github.com/glslify/glslify) |
+| [GLSL Sandbox](https://github.com/mrdoob/glsl-sandbox) | same author as | [three.js](https://github.com/mrdoob/three.js) |
+| [NoiseShader](https://github.com/keijiro/NoiseShader) | alternative to | [webgl-noise](https://github.com/ashima/webgl-noise) |
+| [webgl-noise](https://github.com/ashima/webgl-noise) | alternative to | [LYGIA](https://github.com/patriciogonzalezvivo/lygia) |
+| [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) | alternative to | [UnityChan 卡通着色器](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) |
+| [Unity Toon Shader](https://github.com/Unity-Technologies/com.unity.toonshader) | alternative to | [UnityChan 卡通着色器](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) |
+| [URP_Toon](https://github.com/ChiliMilk/URP_Toon) | alternative to | [URP 卡通着色器示例](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample) |
+| [LiliumToonGraph](https://github.com/you-ri/LiliumToonGraph) | alternative to | [URP 卡通着色器示例](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample) |
+| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | alternative to | [three-vrm](https://github.com/pixiv/three-vrm) |
+| [Inferno](https://github.com/twostraws/Inferno) | alternative to | [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) |
+| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | alternative to | [Inferno](https://github.com/twostraws/Inferno) |
+| [AGSL Shader Playground](https://github.com/mejdi14/Android-AGSL-Shader-Playground) | alternative to | [Shader Editor](https://github.com/markusfisch/ShaderEditor) |
+| [Shader Lab](https://github.com/basementstudio/shader-lab) | alternative to | [Paper Shaders](https://github.com/paper-design/shaders) |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | same author as | [Paper Shaders](https://github.com/paper-design/shaders) |
+| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | same author as | [cinetic](https://github.com/Leonxlnx/cinetic) |
+| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | alternative to | [GL Transitions](https://github.com/gl-transitions/gl-transitions) |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | alternative to | [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | alternative to | [Poseidon](https://github.com/owenyuwono/poseidon) |
+| [ShaderMan](https://github.com/smkplus/ShaderMan) | alternative to | [Shader Toy for VS Code](https://github.com/stevensona/shader-toy) |
+| [Liquid Glass for RN](https://github.com/callstack/liquid-glass) | alternative to | [liquid-dom](https://github.com/AndrewPrifer/liquid-dom) |
+| [liquidGL](https://github.com/naughtyduk/liquidGL) | alternative to | [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) |
+| [shuding/liquid-glass](https://github.com/shuding/liquid-glass) | alternative to | [liquid-dom](https://github.com/AndrewPrifer/liquid-dom) |
+| [AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) | alternative to | [Cloudy](https://github.com/skydoves/Cloudy) |
+| [liquid-glass-android](https://github.com/Mortd3kay/liquid-glass-android) | alternative to | [AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) |
+| [WebGL CRT Shader](https://github.com/gingerbeardman/webgl-crt-shader) | alternative to | [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) |
+| [Shader School](https://github.com/stackgl/shader-school) | alternative to | [The Book of Shaders](https://github.com/patriciogonzalezvivo/thebookofshaders) |
+| [Raymarching Workshop](https://github.com/electricsquare/raymarching-workshop) | alternative to | [Bauble](https://github.com/ianthehenry/bauble) |
 
 ## Contributing
 

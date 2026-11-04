@@ -524,6 +524,23 @@
     "gh_desc": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D."
   },
   {
+    "repo": "lettier/3d-game-shaders-for-beginners",
+    "name": "3D 游戏着色器入门",
+    "tags": [
+      "shader",
+      "3d"
+    ],
+    "lang": "GLSL / C++",
+    "use": "教程",
+    "desc": "一步步实现 SSAO、景深、辉光、卡通描边、像素化等几十种 3D 着色器效果的图文教程。",
+    "note": "2023 年后未更新，教程内容完整。",
+    "license": null,
+    "stars": 20019,
+    "pushed_at": "2023-06-25",
+    "archived": false,
+    "gh_desc": "🎮 A step-by-step guide to implementing SSAO, depth of field, lighting, normal mapping, and more for your 3D game."
+  },
+  {
     "repo": "motion-canvas/motion-canvas",
     "name": "Motion Canvas",
     "tags": [
@@ -1019,6 +1036,22 @@
     "gh_desc": "LÖVE is an awesome 2D game framework for Lua."
   },
   {
+    "repo": "wcandillon/react-native-skia",
+    "name": "React Native Skia",
+    "tags": [
+      "mg",
+      "shader"
+    ],
+    "lang": "React Native",
+    "use": "手机动效",
+    "desc": "在 React Native 里用 Skia 画高性能 2D 图形和动画，支持运行时着色器。",
+    "license": "MIT",
+    "stars": 8769,
+    "pushed_at": "2026-11-04",
+    "archived": false,
+    "gh_desc": "High-performance React Native Graphics using Skia"
+  },
+  {
     "repo": "jonobr1/two.js",
     "name": "Two.js",
     "tags": [
@@ -1083,6 +1116,22 @@
     "pushed_at": "2026-10-21",
     "archived": false,
     "gh_desc": "xkcd styled chart lib"
+  },
+  {
+    "repo": "ColinLeung-NiloCat/UnityURPToonLitShaderExample",
+    "name": "URP 卡通着色器示例",
+    "tags": [
+      "shader",
+      "anime"
+    ],
+    "lang": "Unity HLSL",
+    "use": "二次元渲染",
+    "desc": "Unity URP 的卡通光照着色器示例，二次元角色描边、色阶阴影的入门范本。",
+    "license": "MIT",
+    "stars": 7850,
+    "pushed_at": "2026-07-02",
+    "archived": false,
+    "gh_desc": "A very simple toon lit shader example, for you to learn writing custom lit shader in Unity URP"
   },
   {
     "repo": "arwes/arwes",
@@ -1315,6 +1364,23 @@
     "pushed_at": "2026-11-04",
     "archived": false,
     "gh_desc": "Web application generating interactive and highly customizable maps"
+  },
+  {
+    "repo": "candycat1992/Unity_Shaders_Book",
+    "name": "《Unity Shader 入门精要》源码",
+    "tags": [
+      "shader",
+      "3d"
+    ],
+    "lang": "Unity ShaderLab",
+    "use": "中文教程",
+    "desc": "国内经典教材《Unity Shader 入门精要》的全部源代码。",
+    "note": "2023 年后未更新，教材内容完整。",
+    "license": null,
+    "stars": 6125,
+    "pushed_at": "2023-02-23",
+    "archived": false,
+    "gh_desc": ":book: 书籍《Unity Shader入门精要》源代码"
   },
   {
     "repo": "css-doodle/css-doodle",
@@ -1597,6 +1663,22 @@
     "gh_desc": "Terminal based \"The Matrix\" like implementation"
   },
   {
+    "repo": "Orillusion/orillusion",
+    "name": "Orillusion",
+    "tags": [
+      "3d",
+      "shader"
+    ],
+    "lang": "TypeScript / WebGPU",
+    "use": "网页 3D",
+    "desc": "国人团队开发的纯 WebGPU 网页 3D 引擎。",
+    "license": "MIT",
+    "stars": 5228,
+    "pushed_at": "2026-11-03",
+    "archived": false,
+    "gh_desc": "Orillusion is a pure Web3D rendering engine which is fully developed based on the WebGPU standard."
+  },
+  {
     "repo": "tixl3d/tixl",
     "name": "TiXL",
     "tags": [
@@ -1759,6 +1841,37 @@
     "gh_desc": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys."
   },
   {
+    "repo": "Kyant0/AndroidLiquidGlass",
+    "name": "AndroidLiquidGlass",
+    "tags": [
+      "liquid"
+    ],
+    "lang": "Kotlin（Compose）",
+    "use": "液态玻璃",
+    "desc": "Compose Multiplatform 的液态玻璃效果，安卓上也能做苹果式玻璃界面。",
+    "license": "Apache-2.0",
+    "stars": 4498,
+    "pushed_at": "2026-08-26",
+    "archived": false,
+    "gh_desc": "Compose Multiplatform Liquid Glass effect"
+  },
+  {
+    "repo": "stackgl/shader-school",
+    "name": "Shader School",
+    "tags": [
+      "shader"
+    ],
+    "lang": "GLSL",
+    "use": "教程",
+    "desc": "闯关式的 GLSL 着色器练习课，在浏览器里一关关写着色器。",
+    "note": "2021 年后未更新。",
+    "license": "NOASSERTION",
+    "stars": 4414,
+    "pushed_at": "2021-03-20",
+    "archived": false,
+    "gh_desc": ":mortar_board: A workshopper for GLSL shaders and graphics programming"
+  },
+  {
     "repo": "mausimus/ShaderGlass",
     "name": "ShaderGlass",
     "tags": [
@@ -1823,6 +1936,23 @@
     "gh_desc": "A tour in the wonderland of math with python."
   },
   {
+    "repo": "gdquest-demos/godot-shaders",
+    "name": "Godot Shaders",
+    "tags": [
+      "shader",
+      "3d",
+      "pixel"
+    ],
+    "lang": "Godot Shader",
+    "use": "着色器合集",
+    "desc": "GDQuest 整理的 Godot 2D / 3D 着色器大合集，溶解、描边、水面、像素化都有。",
+    "license": "NOASSERTION",
+    "stars": 4197,
+    "pushed_at": "2026-05-16",
+    "archived": false,
+    "gh_desc": "A large library of free and open-source shaders for the Godot game engine. Here, you'll get 2D and 3D shaders with playable demos."
+  },
+  {
     "repo": "Tencent/vap",
     "name": "VAP",
     "tags": [
@@ -1852,6 +1982,23 @@
     "pushed_at": "2026-07-15",
     "archived": false,
     "gh_desc": "Create Videos with Code"
+  },
+  {
+    "repo": "unity3d-jp/UnityChanToonShaderVer2_Project",
+    "name": "UnityChan 卡通着色器",
+    "tags": [
+      "shader",
+      "anime"
+    ],
+    "lang": "Unity",
+    "use": "二次元渲染",
+    "desc": "Unity 官方日本团队的卡通着色器，做出赛璐璐动画质感的角色和场景。",
+    "note": "2024 年后未更新，新项目可以用 Unity Toon Shader。",
+    "license": null,
+    "stars": 4106,
+    "pushed_at": "2024-10-15",
+    "archived": false,
+    "gh_desc": "UnityChanToonShaderVer2 Project / v.2.0.9 Release"
   },
   {
     "repo": "antvis/L7",
@@ -2112,6 +2259,21 @@
     "gh_desc": "A simple program to simulate artificial life using attraction/reuplsion forces between many particles"
   },
   {
+    "repo": "software-mansion/TypeGPU",
+    "name": "TypeGPU",
+    "tags": [
+      "shader"
+    ],
+    "lang": "TypeScript / WebGPU",
+    "use": "WebGPU 着色器",
+    "desc": "用 TypeScript 写 WebGPU 着色器的工具包，类型安全，网页和 React Native 都能用。",
+    "license": "MIT",
+    "stars": 3307,
+    "pushed_at": "2026-11-04",
+    "archived": false,
+    "gh_desc": "A modular and open-ended toolkit for WebGPU, with advanced type inference and the ability to write shaders in TypeScript"
+  },
+  {
     "repo": "gkurt/tegaki",
     "name": "Tegaki",
     "tags": [
@@ -2242,6 +2404,22 @@
     "gh_desc": "gl-react – React library to write and compose WebGL shaders"
   },
   {
+    "repo": "ashima/webgl-noise",
+    "name": "webgl-noise",
+    "tags": [
+      "shader",
+      "procgen"
+    ],
+    "lang": "GLSL",
+    "use": "噪声函数",
+    "desc": "经典的 GLSL 程序化噪声函数库，无数着色器作品里的噪声都出自这里。",
+    "license": "MIT",
+    "stars": 3002,
+    "pushed_at": "2024-11-15",
+    "archived": false,
+    "gh_desc": "Procedural Noise Shader Routines compatible with WebGL"
+  },
+  {
     "repo": "mitsuba-renderer/mitsuba3",
     "name": "Mitsuba 3",
     "tags": [
@@ -2272,6 +2450,22 @@
     "pushed_at": "2026-11-01",
     "archived": false,
     "gh_desc": "A post processing library for three.js."
+  },
+  {
+    "repo": "twostraws/Inferno",
+    "name": "Inferno",
+    "tags": [
+      "shader",
+      "glitch"
+    ],
+    "lang": "Swift / Metal（iOS）",
+    "use": "App 动效",
+    "desc": "给 SwiftUI 用的 Metal 着色器合集：火焰、水波、像素化、光泽扫过等，手机 App 直接可用。",
+    "license": "NOASSERTION",
+    "stars": 2936,
+    "pushed_at": "2026-05-17",
+    "archived": false,
+    "gh_desc": "Metal shaders for SwiftUI."
   },
   {
     "repo": "xelatihy/yocto-gl",
@@ -2407,6 +2601,22 @@
     "gh_desc": "Free, open-source VHS effect. Standalone application + plugin (After Effects, Premiere, and OpenFX)."
   },
   {
+    "repo": "patriciogonzalezvivo/glslEditor",
+    "name": "glslEditor",
+    "tags": [
+      "shader"
+    ],
+    "lang": "JavaScript",
+    "use": "着色器编辑器",
+    "desc": "网页里的 GLSL 片元着色器编辑器，带颜色、数值的可视化调节控件。",
+    "note": "2023 年后未更新。",
+    "license": "MIT",
+    "stars": 2628,
+    "pushed_at": "2023-01-12",
+    "archived": false,
+    "gh_desc": "Simple WebGL Fragment Shader Editor"
+  },
+  {
     "repo": "nolangz/pixel2motion",
     "name": "Pixel2Motion",
     "tags": [
@@ -2421,6 +2631,21 @@
     "pushed_at": "2026-08-21",
     "archived": false,
     "gh_desc": "AI logo animation skill: turn raster logos into smooth SVG animation, animated HTML demos, GIF/video previews, and motion QA evidence."
+  },
+  {
+    "repo": "AndrewPrifer/liquid-dom",
+    "name": "liquid-dom",
+    "tags": [
+      "liquid"
+    ],
+    "lang": "TypeScript",
+    "use": "液态玻璃",
+    "desc": "给网页元素加上液态玻璃效果。",
+    "license": "MIT",
+    "stars": 2577,
+    "pushed_at": "2026-09-06",
+    "archived": false,
+    "gh_desc": "Liquid Glass for the Web"
   },
   {
     "repo": "JohnHeibel/ClaudeAnimationBase",
@@ -2567,6 +2792,22 @@
     "pushed_at": "2024-07-25",
     "archived": false,
     "gh_desc": "A guide to learn and become active in the demoscene within a couple of weeks"
+  },
+  {
+    "repo": "glslify/glslify",
+    "name": "glslify",
+    "tags": [
+      "shader"
+    ],
+    "lang": "JavaScript",
+    "use": "着色器模块",
+    "desc": "像 npm 一样给 GLSL 着色器引入模块，噪声、混合模式等函数可以直接复用。",
+    "note": "2022 年后未更新。",
+    "license": "NOASSERTION",
+    "stars": 2284,
+    "pushed_at": "2022-06-29",
+    "archived": false,
+    "gh_desc": "A node.js-style module system for GLSL! :sparkles:"
   },
   {
     "repo": "patriciogonzalezvivo/glslCanvas",
@@ -2936,6 +3177,53 @@
     "gh_desc": "JavaScript microlibrary to split an element by words, characters, children and more, populated with CSS variables!"
   },
   {
+    "repo": "callstack/liquid-glass",
+    "name": "Liquid Glass for RN",
+    "tags": [
+      "liquid"
+    ],
+    "lang": "React Native",
+    "use": "液态玻璃",
+    "desc": "React Native 的液态玻璃组件。",
+    "license": "MIT",
+    "stars": 1727,
+    "pushed_at": "2026-09-15",
+    "archived": false,
+    "gh_desc": "Liquid Glass in React Native"
+  },
+  {
+    "repo": "mrdoob/glsl-sandbox",
+    "name": "GLSL Sandbox",
+    "tags": [
+      "shader",
+      "live"
+    ],
+    "lang": "JavaScript",
+    "use": "着色器画廊",
+    "desc": "three.js 作者做的着色器编辑器和作品画廊，打开就能改代码看效果。",
+    "license": "MIT",
+    "stars": 1687,
+    "pushed_at": "2026-08-25",
+    "archived": false,
+    "gh_desc": "Shader editor and gallery."
+  },
+  {
+    "repo": "poiyomi/PoiyomiToonShader",
+    "name": "Poiyomi Toon Shader",
+    "tags": [
+      "shader",
+      "anime"
+    ],
+    "lang": "Unity",
+    "use": "二次元渲染",
+    "desc": "功能很全的 Unity 卡通着色器，VRChat 角色常用。",
+    "license": "MIT",
+    "stars": 1682,
+    "pushed_at": "2026-10-27",
+    "archived": false,
+    "gh_desc": "A feature rich toon shader for unity and VR Chat"
+  },
+  {
     "repo": "meyda/meyda",
     "name": "Meyda",
     "tags": [
@@ -2985,6 +3273,22 @@
     "pushed_at": "2025-02-09",
     "archived": false,
     "gh_desc": "Surface-Stable Fractal Dithering"
+  },
+  {
+    "repo": "Unity-Technologies/com.unity.toonshader",
+    "name": "Unity Toon Shader",
+    "tags": [
+      "shader",
+      "anime"
+    ],
+    "lang": "Unity",
+    "use": "二次元渲染",
+    "desc": "Unity 官方的卡通着色器，做日式动画风格的角色和场景。",
+    "license": "NOASSERTION",
+    "stars": 1615,
+    "pushed_at": "2026-11-02",
+    "archived": false,
+    "gh_desc": "Unity Toon Shader"
   },
   {
     "repo": "aduros/wasm4",
@@ -3085,6 +3389,22 @@
     "gh_desc": "Live shader coding tool and Shader Showdown workhorse"
   },
   {
+    "repo": "smkplus/ShaderMan",
+    "name": "ShaderMan",
+    "tags": [
+      "shader"
+    ],
+    "lang": "C#（Unity）",
+    "use": "着色器移植",
+    "desc": "把 Shadertoy 上的着色器转换成 Unity 能用的 HLSL / CG。",
+    "note": "2021 年后未更新。",
+    "license": "MIT",
+    "stars": 1503,
+    "pushed_at": "2021-02-07",
+    "archived": false,
+    "gh_desc": "Convert ShaderToy to Unity  HLSL/CG"
+  },
+  {
     "repo": "tsoding/musializer",
     "name": "Musializer",
     "tags": [
@@ -3132,6 +3452,22 @@
     "gh_desc": "Create animated bar chart races in Python with matplotlib"
   },
   {
+    "repo": "wshxbqq/GLSL-Card",
+    "name": "GLSL 入门大全",
+    "tags": [
+      "shader"
+    ],
+    "lang": "GLSL",
+    "use": "中文教程",
+    "desc": "国人整理的 GLSL 着色器语言入门大全，函数和用法按卡片列出来。",
+    "note": "2019 年后未更新。",
+    "license": null,
+    "stars": 1453,
+    "pushed_at": "2019-01-10",
+    "archived": false,
+    "gh_desc": "着色器语言 GLSL (opengl-shader-language)入门大全"
+  },
+  {
     "repo": "propjockey/augmented-ui",
     "name": "augmented-ui",
     "tags": [
@@ -3148,6 +3484,23 @@
     "gh_desc": "Cyberpunk-inspired web UI made easy. Get augmented."
   },
   {
+    "repo": "paper-design/liquid-logo",
+    "name": "Liquid Logo",
+    "tags": [
+      "liquid",
+      "shader",
+      "mg"
+    ],
+    "lang": "TypeScript",
+    "use": "Logo 动效",
+    "desc": "Paper 团队的小工具：把 Logo 变成流动的液态金属动画。",
+    "license": "NOASSERTION",
+    "stars": 1409,
+    "pushed_at": "2026-04-20",
+    "archived": false,
+    "gh_desc": "Turn your logo into liquid metal with Paper Shaders"
+  },
+  {
     "repo": "amandaghassaei/OrigamiSimulator",
     "name": "Origami Simulator",
     "tags": [
@@ -3162,6 +3515,55 @@
     "pushed_at": "2026-10-13",
     "archived": false,
     "gh_desc": "Realtime WebGL origami simulator"
+  },
+  {
+    "repo": "keijiro/NoiseShader",
+    "name": "NoiseShader",
+    "tags": [
+      "shader",
+      "procgen"
+    ],
+    "lang": "Unity HLSL",
+    "use": "噪声函数",
+    "desc": "keijiro 的 Unity 噪声着色器库，单纯形噪声、柏林噪声一应俱全。",
+    "license": "MIT",
+    "stars": 1384,
+    "pushed_at": "2025-12-04",
+    "archived": false,
+    "gh_desc": "Noise shader library for Unity"
+  },
+  {
+    "repo": "FarazzShaikh/THREE-CustomShaderMaterial",
+    "name": "CustomShaderMaterial",
+    "tags": [
+      "shader",
+      "3d"
+    ],
+    "lang": "TypeScript",
+    "use": "three.js 着色器",
+    "desc": "在 three.js 标准材质上叠加自己的着色器，保留光照和阴影。",
+    "license": "MIT",
+    "stars": 1363,
+    "pushed_at": "2025-10-12",
+    "archived": false,
+    "gh_desc": "🧩 Extend Three.js standard materials with your own shaders!"
+  },
+  {
+    "repo": "ChiliMilk/URP_Toon",
+    "name": "URP_Toon",
+    "tags": [
+      "shader",
+      "anime"
+    ],
+    "lang": "Unity",
+    "use": "二次元渲染",
+    "desc": "Unity URP 的卡通着色器，支持描边、色阶阴影、边缘光。",
+    "note": "2024 年后未更新。",
+    "license": "MIT",
+    "stars": 1352,
+    "pushed_at": "2024-02-16",
+    "archived": false,
+    "gh_desc": "A Toon Shader in Unity Universal Render Pipeline."
   },
   {
     "repo": "anvaka/fieldplay",
@@ -3195,6 +3597,21 @@
     "pushed_at": "2026-10-31",
     "archived": false,
     "gh_desc": "Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render."
+  },
+  {
+    "repo": "skydoves/Cloudy",
+    "name": "Cloudy",
+    "tags": [
+      "liquid"
+    ],
+    "lang": "Kotlin（Compose）",
+    "use": "模糊 · 玻璃",
+    "desc": "Compose Multiplatform 的 GPU 模糊和液态玻璃效果库。",
+    "license": "Apache-2.0",
+    "stars": 1292,
+    "pushed_at": "2026-09-13",
+    "archived": false,
+    "gh_desc": "☁️ Kotlin Multiplatform blur and liquid glass effect library for Compose, with GPU-accelerated rendering and CPU fallback for older devices."
   },
   {
     "repo": "rvanwijnen/spectral.js",
@@ -3341,6 +3758,22 @@
     "pushed_at": "2025-02-06",
     "archived": false,
     "gh_desc": "Haskell library for building declarative animations based on SVG graphics"
+  },
+  {
+    "repo": "shuding/liquid-glass",
+    "name": "shuding/liquid-glass",
+    "tags": [
+      "liquid",
+      "shader"
+    ],
+    "lang": "SVG / JS",
+    "use": "液态玻璃",
+    "desc": "复制粘贴就能用的液态玻璃着色器，用 SVG 滤镜实现。",
+    "license": "MIT",
+    "stars": 1224,
+    "pushed_at": "2026-03-26",
+    "archived": false,
+    "gh_desc": "Copy-paste Liquid Glass shader with SVG"
   },
   {
     "repo": "iart-ai/motion-skills",
@@ -3502,6 +3935,22 @@
     "gh_desc": "Toy path tracer for my own learning purposes (CPU/GPU, C++/C#, Win/Mac/Wasm, DX11/Metal, also Unity)"
   },
   {
+    "repo": "jamieowen/glsl-blend",
+    "name": "glsl-blend",
+    "tags": [
+      "shader"
+    ],
+    "lang": "GLSL",
+    "use": "混合模式",
+    "desc": "Photoshop 全套图层混合模式的 GLSL 实现。",
+    "note": "2022 年后未更新。",
+    "license": "MIT",
+    "stars": 1118,
+    "pushed_at": "2022-06-23",
+    "archived": false,
+    "gh_desc": "glsl photoshop blending modes.  glslify formatted."
+  },
+  {
     "repo": "mapbox/webgl-wind",
     "name": "webgl-wind",
     "tags": [
@@ -3631,6 +4080,22 @@
     "gh_desc": "Motion-graphics skills for Claude Code and Codex."
   },
   {
+    "repo": "naughtyduk/liquidGL",
+    "name": "liquidGL",
+    "tags": [
+      "liquid",
+      "shader"
+    ],
+    "lang": "WebGL / WebGPU",
+    "use": "液态玻璃",
+    "desc": "网页液态玻璃效果，WebGL 和 WebGPU 实现。",
+    "license": "NOASSERTION",
+    "stars": 1044,
+    "pushed_at": "2026-10-01",
+    "archived": false,
+    "gh_desc": "liquidGL – Liquid Glass For The Web - WebGPU/WebGL"
+  },
+  {
     "repo": "tom-mohr/particle-life-app",
     "name": "Particle Life App",
     "tags": [
@@ -3664,6 +4129,22 @@
     "gh_desc": "✨ The agentic motion layer — an open-source, chat-native motion engine. Describe the feeling; your AI ships the animation."
   },
   {
+    "repo": "pbakaus/radiant",
+    "name": "Radiant",
+    "tags": [
+      "shader",
+      "gen"
+    ],
+    "lang": "GLSL / WebGL",
+    "use": "着色器艺术",
+    "desc": "精选的生成式着色器艺术合集，每件作品都能直接在网页里跑。",
+    "license": "MIT",
+    "stars": 1031,
+    "pushed_at": "2026-09-10",
+    "archived": false,
+    "gh_desc": "A curated collection of generative shader art"
+  },
+  {
     "repo": "generative-design/Code-Package-p5.js",
     "name": "Generative Design 代码包",
     "tags": [
@@ -3693,6 +4174,23 @@
     "pushed_at": "2026-11-04",
     "archived": false,
     "gh_desc": "Wasm/JS runtime for Rive"
+  },
+  {
+    "repo": "electricsquare/raymarching-workshop",
+    "name": "Raymarching Workshop",
+    "tags": [
+      "shader",
+      "3d"
+    ],
+    "lang": "GLSL",
+    "use": "教程",
+    "desc": "光线步进入门工作坊：用有向距离场一步步画出 3D 形体。",
+    "note": "2021 年后未更新。",
+    "license": "MIT",
+    "stars": 1009,
+    "pushed_at": "2021-08-20",
+    "archived": false,
+    "gh_desc": "An Introduction to Raymarching"
   },
   {
     "repo": "Leonxlnx/cinetic",
@@ -3739,6 +4237,22 @@
     "pushed_at": "2026-11-01",
     "archived": false,
     "gh_desc": "The Swiss-Army-knife command-line tool for plotter vector graphics."
+  },
+  {
+    "repo": "godot-extended-libraries/godot-realistic-water",
+    "name": "Godot Realistic Water",
+    "tags": [
+      "shader",
+      "3d"
+    ],
+    "lang": "Godot Shader",
+    "use": "水面",
+    "desc": "Godot 的写实水面着色器。",
+    "license": "NOASSERTION",
+    "stars": 978,
+    "pushed_at": "2026-04-15",
+    "archived": false,
+    "gh_desc": "Godot - Realistic Water Shader"
   },
   {
     "repo": "jeertmans/manim-slides",
@@ -3983,6 +4497,21 @@
     "gh_desc": "Open-source Claude agent skill that teaches Claude Code, Claude Desktop & Claude AI to create and edit professional motion graphics videos with Remotion. AI video editing, B-roll, captions, sound design — from one prompt."
   },
   {
+    "repo": "sdegenaar/liquid_glass_widgets",
+    "name": "Liquid Glass Widgets",
+    "tags": [
+      "liquid"
+    ],
+    "lang": "Flutter",
+    "use": "液态玻璃",
+    "desc": "Flutter 的液态玻璃界面组件库。",
+    "license": "MIT",
+    "stars": 812,
+    "pushed_at": "2026-11-04",
+    "archived": false,
+    "gh_desc": "Flutter UI kit implementing Apple's iOS 26/27 Liquid Glass design language - a comprehensive glass widget library with real shader-based blur, physics-driven jelly animations, and dynamic lighting. Works on every platform out of the box."
+  },
+  {
     "repo": "preziotte/party-mode",
     "name": "party-mode",
     "tags": [
@@ -3998,6 +4527,39 @@
     "pushed_at": "2026-08-15",
     "archived": false,
     "gh_desc": "An experimental d3.js music visualizer from 2014. Continued as vizz.fm"
+  },
+  {
+    "repo": "ahopness/GodotRetro",
+    "name": "GodotRetro",
+    "tags": [
+      "shader",
+      "pixel",
+      "vhs"
+    ],
+    "lang": "Godot Shader",
+    "use": "复古后期",
+    "desc": "Godot 的复古后期效果包：CRT、VHS、抖动、像素化。",
+    "license": "NOASSERTION",
+    "stars": 806,
+    "pushed_at": "2026-07-07",
+    "archived": false,
+    "gh_desc": "A pack of retro compositor effects and shaders for Godot."
+  },
+  {
+    "repo": "iyinchao/liquid-glass-studio",
+    "name": "Liquid Glass Studio",
+    "tags": [
+      "liquid",
+      "shader"
+    ],
+    "lang": "WebGL2 / WebGPU",
+    "use": "液态玻璃",
+    "desc": "国人作品：在网页里复刻苹果液态玻璃界面，可以实时调折射、色散、高光。",
+    "license": "MIT",
+    "stars": 802,
+    "pushed_at": "2026-09-11",
+    "archived": false,
+    "gh_desc": "🔮 The Ultimate Apple Liquid Glass UI — Recreated for the Web, powered by WebGL2 & WebGPU"
   },
   {
     "repo": "dgageot/demoit",
@@ -4079,6 +4641,22 @@
     "gh_desc": "oscilloscope/vectorscope/spectroscope for your terminal"
   },
   {
+    "repo": "LerSent001/orb",
+    "name": "orb",
+    "tags": [
+      "liquid",
+      "shader"
+    ],
+    "lang": "WebGPU",
+    "use": "液态玻璃球",
+    "desc": "国人作品：实时 WebGPU 液态玻璃球编辑器，可导出到网页或 SwiftUI / Metal。",
+    "license": "MIT",
+    "stars": 746,
+    "pushed_at": "2026-10-22",
+    "archived": false,
+    "gh_desc": "实时 WebGPU 液态玻璃球编辑器，支持 Web 与 SwiftUI/Metal 导出，使用 OpenAI Codex 辅助开发与验证 | Real-time WebGPU liquid-glass orb editor with Web and SwiftUI/Metal export, built and verified with OpenAI Codex."
+  },
+  {
     "repo": "AThevon/genjutsu",
     "name": "genjutsu",
     "tags": [
@@ -4112,6 +4690,22 @@
     "gh_desc": "〰📺🔊 Synthesiser audio plugin for making music by drawing objects on an oscilloscope using audio."
   },
   {
+    "repo": "alphastrata/shadplay",
+    "name": "shadplay",
+    "tags": [
+      "shader",
+      "live"
+    ],
+    "lang": "Rust / WGSL",
+    "use": "着色器练习",
+    "desc": "实时 WGSL 着色器可视化工具，边写边看，学着色器很方便。",
+    "license": "MIT",
+    "stars": 727,
+    "pushed_at": "2026-10-10",
+    "archived": false,
+    "gh_desc": "Real-time wgsl visualisation tooling for educating oneself in the art of shader programming"
+  },
+  {
     "repo": "adunext/adu-motion-video",
     "name": "adu-motion-video",
     "tags": [
@@ -4141,6 +4735,22 @@
     "pushed_at": "2026-07-08",
     "archived": false,
     "gh_desc": "Shadertoy-like live preview for GLSL shaders in Visual Studio Code"
+  },
+  {
+    "repo": "basementstudio/shader-lab",
+    "name": "Shader Lab",
+    "tags": [
+      "shader",
+      "mg"
+    ],
+    "lang": "TypeScript",
+    "use": "着色器动效",
+    "desc": "创建、叠加、做动画的着色器工具包，可以把多个效果像图层一样组合。",
+    "license": "Apache-2.0",
+    "stars": 717,
+    "pushed_at": "2026-10-28",
+    "archived": false,
+    "gh_desc": "A powerful toolkit to create, stack, and animate shaders."
   },
   {
     "repo": "phandasm/waveform",
@@ -4330,6 +4940,23 @@
     "gh_desc": "Aora Bot：代码绘制的网页角色引擎，46 个原创角色、44 种动画状态，支持 React、Web Component 与头像接口（原 Emotion Ball 表情馆）"
   },
   {
+    "repo": "tessarakkt/godot4-oceanfft",
+    "name": "Godot Ocean FFT",
+    "tags": [
+      "shader",
+      "3d",
+      "particle"
+    ],
+    "lang": "Godot",
+    "use": "海洋",
+    "desc": "基于 Tessendorf FFT 的海浪和浮力，用计算着色器在 Godot 4 里实现。",
+    "license": "MIT",
+    "stars": 614,
+    "pushed_at": "2025-11-19",
+    "archived": false,
+    "gh_desc": "Tessendorf FFT based ocean waves and buoyancy in Godot 4 using compute shaders"
+  },
+  {
     "repo": "abey79/vsketch",
     "name": "vsketch",
     "tags": [
@@ -4344,6 +4971,39 @@
     "pushed_at": "2026-11-02",
     "archived": false,
     "gh_desc": "Generative plotter art environment for Python"
+  },
+  {
+    "repo": "you-ri/LiliumToonGraph",
+    "name": "LiliumToonGraph",
+    "tags": [
+      "shader",
+      "anime"
+    ],
+    "lang": "Unity Shader Graph",
+    "use": "二次元渲染",
+    "desc": "用 Shader Graph 做的 Unity URP 卡通着色器。",
+    "license": "MIT",
+    "stars": 609,
+    "pushed_at": "2026-11-03",
+    "archived": false,
+    "gh_desc": "UniversalRP Toon Shader with ShaderGraph"
+  },
+  {
+    "repo": "ianthehenry/bauble",
+    "name": "Bauble",
+    "tags": [
+      "shader",
+      "3d",
+      "gen"
+    ],
+    "lang": "Janet（Lisp）",
+    "use": "3D 数学艺术",
+    "desc": "用 Lisp 和数学做 3D 艺术的游乐场，背后是有向距离场光线步进。",
+    "license": "MIT",
+    "stars": 597,
+    "pushed_at": "2026-05-25",
+    "archived": false,
+    "gh_desc": "a playground for making 3D art with lisp and math"
   },
   {
     "repo": "mrsarac/ff-tracking",
@@ -4361,6 +5021,21 @@
     "pushed_at": "2026-10-22",
     "archived": false,
     "gh_desc": "A virtual camera films an AI agent's screen while a tracker locks onto every glyph. Two fframes passes, one SkSL shader, all sound synthesized."
+  },
+  {
+    "repo": "mmmerl/shader-doodle",
+    "name": "shader-doodle",
+    "tags": [
+      "shader"
+    ],
+    "lang": "Web Component",
+    "use": "网页着色器",
+    "desc": "写着色器、显示着色器的网页组件，一个标签就能把 Shadertoy 风格代码放进网页。",
+    "license": "MIT",
+    "stars": 589,
+    "pushed_at": "2026-09-15",
+    "archived": false,
+    "gh_desc": "A friendly web-component for writing and rendering shaders."
   },
   {
     "repo": "blixvip/MotionClone",
@@ -4508,6 +5183,37 @@
     "gh_desc": "Source code for Processing, the software sketchbook and Java-based programming language for students, artists, designers, educators, hobbyists, and creative coders. Includes the core library, and editor (PDE)"
   },
   {
+    "repo": "doodlewind/beam",
+    "name": "Beam",
+    "tags": [
+      "shader"
+    ],
+    "lang": "JavaScript / WebGPU",
+    "use": "着色器渲染",
+    "desc": "国人作者的轻量 WebGPU 库，用很少的代码搭着色器渲染流程。",
+    "license": null,
+    "stars": 528,
+    "pushed_at": "2026-09-09",
+    "archived": false,
+    "gh_desc": "✨ Expressive WebGPU"
+  },
+  {
+    "repo": "cashew-olddew/Universal-Transition-Shader",
+    "name": "Universal Transition Shader",
+    "tags": [
+      "shader",
+      "short"
+    ],
+    "lang": "Godot Shader",
+    "use": "转场",
+    "desc": "把常见转场效果做进一个 Godot 着色器里。",
+    "license": "CC0-1.0",
+    "stars": 524,
+    "pushed_at": "2026-03-18",
+    "archived": false,
+    "gh_desc": "Most common transitions inside one Godot shader. 🎬"
+  },
+  {
     "repo": "XiaoyeCodes/code-animation-prompts",
     "name": "代码动画画风提示词",
     "tags": [
@@ -4554,6 +5260,22 @@
     "pushed_at": "2026-10-08",
     "archived": false,
     "gh_desc": "🚕 Simple, smooth animation for route / polylines on google maps using projections."
+  },
+  {
+    "repo": "jinleili/learn-wgpu-zh",
+    "name": "Learn wgpu 中文版",
+    "tags": [
+      "shader",
+      "3d"
+    ],
+    "lang": "Rust / WGSL",
+    "use": "中文教程",
+    "desc": "wgpu 图形编程教程的中文版，从三角形一路讲到着色器和计算管线。",
+    "license": "MIT",
+    "stars": 512,
+    "pushed_at": "2026-10-31",
+    "archived": false,
+    "gh_desc": "Learn wgpu 中文版"
   },
   {
     "repo": "Nyankomintsu/world-execute-me-lyric-mv",
@@ -4622,6 +5344,22 @@
     "gh_desc": "EN: ManimCat: AI-generated math animations from natural language. High-quality Manim rendering with LaTeX support and auto-code fixing. 中: ManimCat：AI 数学动画生成器。支持描述即视频，内置 LaTeX 与代码纠错，让数学动效触手可及。"
   },
   {
+    "repo": "jamesrochabrun/ShaderKit",
+    "name": "ShaderKit",
+    "tags": [
+      "shader",
+      "liquid"
+    ],
+    "lang": "Swift / Metal（iOS）",
+    "use": "App 动效",
+    "desc": "可组合的 Metal 着色器和 SwiftUI 全息界面效果。",
+    "license": "MIT",
+    "stars": 489,
+    "pushed_at": "2026-08-19",
+    "archived": false,
+    "gh_desc": "A Swift package for composable Metal shaders and holographic UI effects in SwiftUI."
+  },
+  {
     "repo": "Alexwtlf/agentic-product-demo",
     "name": "Agentic Product Demo",
     "tags": [
@@ -4653,6 +5391,22 @@
     "pushed_at": "2026-09-27",
     "archived": false,
     "gh_desc": "Retro Crisis libretro CRT shader presets, based on Guest Advanced NTSC shader"
+  },
+  {
+    "repo": "V-Sekai/godot-vrm",
+    "name": "godot-vrm",
+    "tags": [
+      "anime",
+      "3d"
+    ],
+    "lang": "Godot",
+    "use": "二次元 3D",
+    "desc": "Godot 的 VRM 虚拟形象导入导出，自带 MToon 卡通着色器。",
+    "license": "NOASSERTION",
+    "stars": 480,
+    "pushed_at": "2026-07-08",
+    "archived": false,
+    "gh_desc": "Importer/Exporter for VRM avatars and MToon shader. Available for Godot 4.1+ and 3.2+ in the Asset Library."
   },
   {
     "repo": "geekjourneyx/hyperframes-motion-director",
@@ -4703,6 +5457,21 @@
     "pushed_at": "2026-11-02",
     "archived": false,
     "gh_desc": "Draw animated Japanese characters (Kanji and Kana), Korean characters (Hanja) and Chinese characters (Hanzi) in correct stroke order using svg, free open-source code."
+  },
+  {
+    "repo": "sockmaster27/svader",
+    "name": "Svader",
+    "tags": [
+      "shader"
+    ],
+    "lang": "Svelte",
+    "use": "网页着色器",
+    "desc": "用 GPU 着色器渲染的 Svelte 组件。",
+    "license": "MIT",
+    "stars": 464,
+    "pushed_at": "2026-11-04",
+    "archived": false,
+    "gh_desc": "Create GPU-rendered Svelte components"
   },
   {
     "repo": "0xS4N4TG/kinetograph",
@@ -4954,6 +5723,56 @@
     "gh_desc": "用 Claude Opus 5.5 写代码做视频：先给三个方案和预览，确认后逐帧渲染成片 | Canvas / WebGL / Three.js / Remotion / HyperFrames | Claude Code Skill"
   },
   {
+    "repo": "Leonxlnx/lumenshaders",
+    "name": "LUMEN",
+    "tags": [
+      "shader",
+      "gen"
+    ],
+    "lang": "WebGL2",
+    "use": "着色器艺术",
+    "desc": "生成式着色器工作室：9 种 WebGL2 艺术模式，可以混合风格、导出无缝循环。",
+    "license": "MIT",
+    "stars": 366,
+    "pushed_at": "2026-06-12",
+    "archived": false,
+    "gh_desc": "LUMEN, a generative shader studio. 9 WebGL2 art modes plus synth style blending, perfect-loop animation, gradient sets, share codes and PNG/WebM/GIF export. Zero dependencies."
+  },
+  {
+    "repo": "t3kt/raytk",
+    "name": "RayTK",
+    "tags": [
+      "shader",
+      "live",
+      "3d"
+    ],
+    "lang": "TouchDesigner",
+    "use": "光线步进",
+    "desc": "TouchDesigner 的光线步进着色器工具包，用节点搭 SDF 场景。",
+    "note": "需要 TouchDesigner（商业软件，有免费版）。",
+    "license": "NOASSERTION",
+    "stars": 358,
+    "pushed_at": "2026-02-04",
+    "archived": false,
+    "gh_desc": "Raymarching shader toolkit for TouchDesigner"
+  },
+  {
+    "repo": "haowg/GODOT-VFX-LIBRARY",
+    "name": "Godot VFX Library",
+    "tags": [
+      "particle",
+      "shader"
+    ],
+    "lang": "Godot",
+    "use": "特效素材",
+    "desc": "Godot 4 的粒子特效和着色器合集。",
+    "license": "MIT",
+    "stars": 354,
+    "pushed_at": "2026-01-25",
+    "archived": false,
+    "gh_desc": "A comprehensive collection of particle effects and shaders for Godot 4, designed specifically for action games"
+  },
+  {
     "repo": "shuyicc/MathLens",
     "name": "MathLens",
     "tags": [
@@ -4984,6 +5803,21 @@
     "pushed_at": "2026-09-30",
     "archived": false,
     "gh_desc": "41 hand-curated drop-in SwiftUI Metal shader effects — holographic foil, kaleidoscope, magnetic fields, glitch, neon edges and more. Typed View modifiers, agent-friendly docs."
+  },
+  {
+    "repo": "markusmoenig/ShaderMania",
+    "name": "ShaderMania",
+    "tags": [
+      "shader"
+    ],
+    "lang": "Swift（macOS / iPad）",
+    "use": "着色器编辑器",
+    "desc": "macOS 和 iPadOS 上的 Metal 片元着色器编辑器。",
+    "license": "MIT",
+    "stars": 347,
+    "pushed_at": "2026-05-23",
+    "archived": false,
+    "gh_desc": "A Metal fragment shader editor for macOS and iPadOS"
   },
   {
     "repo": "Zorochase/ultimate-retro-shader-collection",
@@ -5116,6 +5950,53 @@
     "gh_desc": "falling sand sim for tmux 3.4+"
   },
   {
+    "repo": "MisterPrada/singularity",
+    "name": "Singularity",
+    "tags": [
+      "space",
+      "shader"
+    ],
+    "lang": "three.js / TSL",
+    "use": "宇宙特效",
+    "desc": "用 three.js 着色语言 TSL 写的黑洞，WebGPU / WebGL 都能跑。",
+    "license": null,
+    "stars": 317,
+    "pushed_at": "2026-02-11",
+    "archived": false,
+    "gh_desc": "Black Hole -> Three.js -> TSL -> (WebGPU/WebGL)"
+  },
+  {
+    "repo": "owenyuwono/poseidon",
+    "name": "Poseidon",
+    "tags": [
+      "shader",
+      "3d"
+    ],
+    "lang": "three.js / TSL",
+    "use": "海洋",
+    "desc": "GPU 驱动的实时 FFT 海洋，three.js + WebGPU。",
+    "license": "MIT",
+    "stars": 317,
+    "pushed_at": "2026-08-20",
+    "archived": false,
+    "gh_desc": "GPU-driven real-time FFT ocean (Three.js + WebGPU/TSL)"
+  },
+  {
+    "repo": "patuwwy/ShaderToy-Chrome-Plugin",
+    "name": "ShaderToy 浏览器插件",
+    "tags": [
+      "shader"
+    ],
+    "lang": "JavaScript",
+    "use": "Shadertoy 增强",
+    "desc": "给 shadertoy.com 加功能的浏览器插件：调分辨率、录制、慢放等。",
+    "license": "NOASSERTION",
+    "stars": 313,
+    "pushed_at": "2026-10-29",
+    "archived": false,
+    "gh_desc": "Web extension for shadertoy.com"
+  },
+  {
     "repo": "romellogoodman/flow-fields",
     "name": "flow-fields",
     "tags": [
@@ -5146,6 +6027,21 @@
     "pushed_at": "2026-10-28",
     "archived": false,
     "gh_desc": "Procedural risograph films in single HTML files (Window Seat, Roost and more), with the Claude Code skills, docs and tools to make your own."
+  },
+  {
+    "repo": "mejdi14/Android-AGSL-Shader-Playground",
+    "name": "AGSL Shader Playground",
+    "tags": [
+      "shader"
+    ],
+    "lang": "Kotlin（安卓）",
+    "use": "App 动效",
+    "desc": "安卓 AGSL 着色器效果库，给 App 加流光、波纹、渐变等动效。",
+    "license": "MIT",
+    "stars": 308,
+    "pushed_at": "2026-11-03",
+    "archived": false,
+    "gh_desc": "Android AGSL Shader effect library"
   },
   {
     "repo": "RemiKoutcherawy/OriSim3D-Android",
@@ -5180,6 +6076,23 @@
     "pushed_at": "2026-11-02",
     "archived": false,
     "gh_desc": "Generate TikTok-style captions with Whisper.cpp"
+  },
+  {
+    "repo": "Token-Gremlin/natural-disasters",
+    "name": "Natural Disasters",
+    "tags": [
+      "shader",
+      "particle",
+      "3d"
+    ],
+    "lang": "WebGPU",
+    "use": "天气特效",
+    "desc": "浏览器里全程序化的电影感海洋和极端天气模拟：风暴、海浪、龙卷风。",
+    "license": "MIT",
+    "stars": 300,
+    "pushed_at": "2026-09-01",
+    "archived": false,
+    "gh_desc": "Fully procedural cinematic ocean and extreme weather simulation in the browser. Multi-cascade FFT waves, volumetric clouds, hurricanes and tsunamis - every pixel generated on the GPU at runtime, zero external assets. Three.js / WebGL2 / GLSL3."
   },
   {
     "repo": "niccolofanton/dithering-shader",
@@ -5249,6 +6162,22 @@
     "gh_desc": "A template for making podcast video clips with Remotion."
   },
   {
+    "repo": "boytchev/tsl-textures",
+    "name": "TSL Textures",
+    "tags": [
+      "shader",
+      "procgen"
+    ],
+    "lang": "three.js / TSL",
+    "use": "程序化纹理",
+    "desc": "three.js 着色语言 TSL 的程序化纹理合集：大理石、木纹、云、星空。",
+    "license": "MIT",
+    "stars": 271,
+    "pushed_at": "2026-09-09",
+    "archived": false,
+    "gh_desc": "A collection of Three.js Shading Language (TSL) textures"
+  },
+  {
     "repo": "noname0310/babylon-mmd",
     "name": "babylon-mmd",
     "tags": [
@@ -5296,6 +6225,23 @@
     "pushed_at": "2026-10-18",
     "archived": false,
     "gh_desc": "FredTalk：口播视频制作 Skill、可检索动效库与 Remotion 审看流程。在线视觉库：https://www.fred-fu.com/visual-library"
+  },
+  {
+    "repo": "zbanks/radiance",
+    "name": "Radiance",
+    "tags": [
+      "live",
+      "shader",
+      "audio"
+    ],
+    "lang": "C++",
+    "use": "VJ",
+    "desc": "给 VJ 用的视频艺术软件：节拍检测、着色器效果链、GIF 和视频素材混合。",
+    "license": "NOASSERTION",
+    "stars": 249,
+    "pushed_at": "2026-04-23",
+    "archived": false,
+    "gh_desc": "Radiance is video art software for VJs. It supports beat detection, animated GIFs, YouTube video, OpenGL shader effects. It is designed for live performance and runs on Linux and MacOS."
   },
   {
     "repo": "vpalos/Krbn",
@@ -5347,6 +6293,22 @@
     "pushed_at": "2026-10-17",
     "archived": false,
     "gh_desc": "Hand-drawn and pixel-art explainer videos written entirely in code — Remotion + React + SVG, procedural music & SFX, subtitle-driven timing"
+  },
+  {
+    "repo": "Ameobea/three-good-godrays",
+    "name": "three-good-godrays",
+    "tags": [
+      "shader",
+      "3d"
+    ],
+    "lang": "TypeScript",
+    "use": "3D 后期",
+    "desc": "three.js 的屏幕空间光线步进体积光（丁达尔光）。",
+    "license": "NOASSERTION",
+    "stars": 236,
+    "pushed_at": "2026-08-06",
+    "archived": false,
+    "gh_desc": "Screen-space raymarched godrays for three.js using the pmndrs postprocessing library"
   },
   {
     "repo": "jasonwebb/2d-space-colonization-experiments",
@@ -5412,6 +6374,23 @@
     "gh_desc": "A Seasonal Papercraft Portfolio!"
   },
   {
+    "repo": "stasilo/retrace.gl",
+    "name": "retrace.gl",
+    "tags": [
+      "raytrace",
+      "shader",
+      "3d"
+    ],
+    "lang": "JavaScript",
+    "use": "光追 3D",
+    "desc": "用代码定义有向距离场 CSG 形体，光线追踪渲染后可以导出。",
+    "license": "GPL-3.0",
+    "stars": 196,
+    "pushed_at": "2026-10-17",
+    "archived": false,
+    "gh_desc": "Create, ray trace & export programatically defined Signed Distance Function CSG geometries with an API suited for generative art - in your browser! 🎉"
+  },
+  {
     "repo": "Akillll-DuoHe/fy-code-animation",
     "name": "fy-code-animation",
     "tags": [
@@ -5444,6 +6423,22 @@
     "gh_desc": "SKILL.md for creating animations with Manim."
   },
   {
+    "repo": "gingerbeardman/webgl-crt-shader",
+    "name": "WebGL CRT Shader",
+    "tags": [
+      "vhs",
+      "shader"
+    ],
+    "lang": "WebGL",
+    "use": "CRT 后期",
+    "desc": "可调参数的网页 CRT 着色器：扫描线、屏幕弯曲、荧光残影。",
+    "license": "MIT",
+    "stars": 188,
+    "pushed_at": "2026-01-12",
+    "archived": false,
+    "gh_desc": "Tweakable CRT shader for web canvas"
+  },
+  {
     "repo": "finnmckenty/NTSCRT",
     "name": "NTSCRT",
     "tags": [
@@ -5457,6 +6452,21 @@
     "pushed_at": "2026-10-11",
     "archived": false,
     "gh_desc": "Vintage analog TV/VHS image tool for macOS: ntsc-rs signal emulation + RetroArch CRT shaders (librashader), glued together with SwiftUI/Metal"
+  },
+  {
+    "repo": "Mortd3kay/liquid-glass-android",
+    "name": "liquid-glass-android",
+    "tags": [
+      "liquid"
+    ],
+    "lang": "Kotlin（Compose）",
+    "use": "玻璃拟态",
+    "desc": "Jetpack Compose 的玻璃拟态库，用 AGSL 着色器做模糊、色散和折射。",
+    "license": "NOASSERTION",
+    "stars": 187,
+    "pushed_at": "2025-12-08",
+    "archived": false,
+    "gh_desc": "✨ Glass morphism library for Jetpack Compose with AGSL shaders (Android 13+). Supports blur, distortion, shadows, and more."
   },
   {
     "repo": "HRuiCcc/RuiC-motion-reel",

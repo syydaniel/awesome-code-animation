@@ -1,0 +1,4 @@
+{
+  "_说明": "作品展示：用图鉴里的工具做出来的作品。video / poster 放在 docs/showcase/ 下，网页版和 README 会自动显示在最前面。tools 填 projects.json 里的 repo，会链接到对应项目。",
+  "items": []
+}

@@ -1246,6 +1246,204 @@
       "type": "alt",
       "to": "LingDong-/shan-shui-inf",
       "note": "都是网页里的程序化水墨"
+    },
+    {
+      "from": "FarazzShaikh/THREE-CustomShaderMaterial",
+      "type": "plugin",
+      "to": "mrdoob/three.js",
+      "note": "给 three.js 材质叠加自定义着色器"
+    },
+    {
+      "from": "Ameobea/three-good-godrays",
+      "type": "plugin",
+      "to": "pmndrs/postprocessing",
+      "note": "作为 postprocessing 的效果使用"
+    },
+    {
+      "from": "boytchev/tsl-textures",
+      "type": "plugin",
+      "to": "mrdoob/three.js",
+      "note": "three.js 着色语言 TSL 的纹理"
+    },
+    {
+      "from": "owenyuwono/poseidon",
+      "type": "built_on",
+      "to": "mrdoob/three.js",
+      "note": ""
+    },
+    {
+      "from": "MisterPrada/singularity",
+      "type": "built_on",
+      "to": "mrdoob/three.js",
+      "note": ""
+    },
+    {
+      "from": "patriciogonzalezvivo/glslEditor",
+      "type": "author",
+      "to": "patriciogonzalezvivo/glslViewer",
+      "note": "同一作者"
+    },
+    {
+      "from": "jamieowen/glsl-blend",
+      "type": "plugin",
+      "to": "glslify/glslify",
+      "note": "按 glslify 模块格式发布"
+    },
+    {
+      "from": "mrdoob/glsl-sandbox",
+      "type": "author",
+      "to": "mrdoob/three.js",
+      "note": "three.js 作者 mrdoob 的着色器画廊"
+    },
+    {
+      "from": "keijiro/NoiseShader",
+      "type": "alt",
+      "to": "ashima/webgl-noise",
+      "note": "都是噪声着色器函数；NoiseShader 用于 Unity"
+    },
+    {
+      "from": "ashima/webgl-noise",
+      "type": "alt",
+      "to": "patriciogonzalezvivo/lygia",
+      "note": "都提供着色器噪声函数；LYGIA 覆盖更广"
+    },
+    {
+      "from": "poiyomi/PoiyomiToonShader",
+      "type": "alt",
+      "to": "unity3d-jp/UnityChanToonShaderVer2_Project",
+      "note": "都是 Unity 卡通着色器"
+    },
+    {
+      "from": "Unity-Technologies/com.unity.toonshader",
+      "type": "alt",
+      "to": "unity3d-jp/UnityChanToonShaderVer2_Project",
+      "note": "都是 Unity 的日式卡通着色器"
+    },
+    {
+      "from": "ChiliMilk/URP_Toon",
+      "type": "alt",
+      "to": "ColinLeung-NiloCat/UnityURPToonLitShaderExample",
+      "note": "都是 Unity URP 卡通着色器"
+    },
+    {
+      "from": "you-ri/LiliumToonGraph",
+      "type": "alt",
+      "to": "ColinLeung-NiloCat/UnityURPToonLitShaderExample",
+      "note": "都是 Unity URP 卡通着色器"
+    },
+    {
+      "from": "V-Sekai/godot-vrm",
+      "type": "alt",
+      "to": "pixiv/three-vrm",
+      "note": "同一种 VRM 格式；一个用于 Godot，一个用于 three.js"
+    },
+    {
+      "from": "twostraws/Inferno",
+      "type": "alt",
+      "to": "krispuckett/SwiftUIShaders",
+      "note": "都是 SwiftUI 的 Metal 着色器合集"
+    },
+    {
+      "from": "jamesrochabrun/ShaderKit",
+      "type": "alt",
+      "to": "twostraws/Inferno",
+      "note": "都给 SwiftUI 加 Metal 着色器效果"
+    },
+    {
+      "from": "mejdi14/Android-AGSL-Shader-Playground",
+      "type": "alt",
+      "to": "markusfisch/ShaderEditor",
+      "note": "都在安卓上跑着色器"
+    },
+    {
+      "from": "basementstudio/shader-lab",
+      "type": "alt",
+      "to": "paper-design/shaders",
+      "note": "都是网页着色器效果工具包"
+    },
+    {
+      "from": "paper-design/liquid-logo",
+      "type": "author",
+      "to": "paper-design/shaders",
+      "note": "Paper 团队出品"
+    },
+    {
+      "from": "Leonxlnx/lumenshaders",
+      "type": "author",
+      "to": "Leonxlnx/cinetic",
+      "note": "同一作者"
+    },
+    {
+      "from": "cashew-olddew/Universal-Transition-Shader",
+      "type": "alt",
+      "to": "gl-transitions/gl-transitions",
+      "note": "都是着色器转场合集；一个用于 Godot"
+    },
+    {
+      "from": "ahopness/GodotRetro",
+      "type": "alt",
+      "to": "Zorochase/ultimate-retro-shader-collection",
+      "note": "都是 Godot 复古着色器"
+    },
+    {
+      "from": "tessarakkt/godot4-oceanfft",
+      "type": "alt",
+      "to": "owenyuwono/poseidon",
+      "note": "都用 FFT 做实时海洋"
+    },
+    {
+      "from": "smkplus/ShaderMan",
+      "type": "alt",
+      "to": "stevensona/shader-toy",
+      "note": "都围绕 Shadertoy 风格着色器"
+    },
+    {
+      "from": "callstack/liquid-glass",
+      "type": "alt",
+      "to": "AndrewPrifer/liquid-dom",
+      "note": "都是液态玻璃效果；一个用于 React Native，一个用于网页"
+    },
+    {
+      "from": "naughtyduk/liquidGL",
+      "type": "alt",
+      "to": "iyinchao/liquid-glass-studio",
+      "note": "都在网页里做液态玻璃"
+    },
+    {
+      "from": "shuding/liquid-glass",
+      "type": "alt",
+      "to": "AndrewPrifer/liquid-dom",
+      "note": "都是网页液态玻璃"
+    },
+    {
+      "from": "Kyant0/AndroidLiquidGlass",
+      "type": "alt",
+      "to": "skydoves/Cloudy",
+      "note": "都是 Compose 的玻璃效果"
+    },
+    {
+      "from": "Mortd3kay/liquid-glass-android",
+      "type": "alt",
+      "to": "Kyant0/AndroidLiquidGlass",
+      "note": "都是安卓液态玻璃"
+    },
+    {
+      "from": "gingerbeardman/webgl-crt-shader",
+      "type": "alt",
+      "to": "Swordfish90/cool-retro-term",
+      "note": "都做 CRT 显示器质感"
+    },
+    {
+      "from": "stackgl/shader-school",
+      "type": "alt",
+      "to": "patriciogonzalezvivo/thebookofshaders",
+      "note": "都是着色器入门教程"
+    },
+    {
+      "from": "electricsquare/raymarching-workshop",
+      "type": "alt",
+      "to": "ianthehenry/bauble",
+      "note": "都围绕 SDF 光线步进"
     }
   ]
 }
