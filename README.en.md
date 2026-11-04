@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![projects](https://img.shields.io/badge/projects-380-2E49D4) ![styles](https://img.shields.io/badge/styles-17%2B20-9265D9) ![updated](https://img.shields.io/badge/updated-2026--11--03-5B6273)
 
-**[Style index](#index)** · **[How projects relate](#relations)** · **[Interactive page](docs/index.html)**<sub> (download and open in a browser; Chinese UI)</sub>
+**[🌐 Interactive page](https://syydaniel.github.io/awesome-code-animation/)** · **[🕸️ Relationship graph](https://syydaniel.github.io/awesome-code-animation/#graph-sec)** · **[Style index](#index)**<sub> (web page is in Chinese)</sub>
 
 </div>
 

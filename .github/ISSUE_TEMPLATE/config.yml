@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: 先查一下是否已收录
-    url: https://github.com/syydaniel/awesome-code-animation#all
-    about: 在 README 的「全部项目」里搜一下，看看项目是不是已经收录了。
+  - name: 先在网页版里搜一下
+    url: https://syydaniel.github.io/awesome-code-animation/
+    about: 按画风筛选、搜索，看看项目是不是已经收录了。

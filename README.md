@@ -10,7 +10,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![项目](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE-380-2E49D4) ![画风](https://img.shields.io/badge/%E7%94%BB%E9%A3%8E-17%2B20-9265D9) ![活跃项目](https://img.shields.io/badge/%E6%B4%BB%E8%B7%83%E9%A1%B9%E7%9B%AE-286-1E8A4B) ![数据更新](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--11--03-5B6273)
 
-**[🎨 画风索引](#index)** · **[🕸️ 关系图谱](#relations)** · **[🖥️ 交互版网页](docs/index.html)**<sub>（下载后用浏览器打开，可按画风筛选、搜索、看演化树）</sub>
+**[🌐 网页版](https://syydaniel.github.io/awesome-code-animation/)**<sub>（按画风筛选、搜索、排序）</sub> · **[🕸️ 关系图谱](https://syydaniel.github.io/awesome-code-animation/#graph-sec)**<sub>（可拖动缩放、看演化树）</sub> · **[🎨 画风索引](#index)**
 
 [画风索引](#index) · [小众画风区](#niche) · [关系图谱](#relations) · [收录标准](#rules) · [全部项目](#all) · [推荐项目](https://github.com/syydaniel/awesome-code-animation/issues/new/choose)
 
@@ -1353,9 +1353,9 @@ A curated list of open-source tools for making animations and music videos **wit
 
 ## 关系图谱
 
-[![关系图谱](assets/graph.png)](assets/graph.png)
+[![关系图谱](assets/graph.png)](https://syydaniel.github.io/awesome-code-animation/#graph-sec)
 
-<sub>箭头从源头指向从它演化出来的项目，点线是同类、常搭配和同一作者。想拖动、缩放、切换「演化树」卡片视图、点项目看完整演化链：下载仓库里的 [docs/index.html](docs/index.html)，用浏览器打开即可（需要联网加载图形库）。</sub>
+<sub>点图打开[可交互的关系图谱](https://syydaniel.github.io/awesome-code-animation/#graph-sec)：箭头从源头指向从它演化出来的项目，点线是同类、常搭配和同一作者；可以拖动、缩放、切换「演化树」卡片视图，点项目看完整演化链。</sub>
 
 共 200 条关系。想换工具时先看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。
 

@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 REPO = "syydaniel/awesome-code-animation"
 REPO_URL = f"https://github.com/{REPO}"
+PAGES_URL = "https://syydaniel.github.io/awesome-code-animation/"
 
 
 def load(name):
@@ -140,9 +141,9 @@ def picks_table():
 
 def relations_section():
     parts = [
-        "[![关系图谱](assets/graph.png)](assets/graph.png)",
+        f"[![关系图谱](assets/graph.png)]({PAGES_URL}#graph-sec)",
         "",
-        "<sub>箭头从源头指向从它演化出来的项目，点线是同类、常搭配和同一作者。想拖动、缩放、切换「演化树」卡片视图、点项目看完整演化链：下载仓库里的 [docs/index.html](docs/index.html)，用浏览器打开即可（需要联网加载图形库）。</sub>",
+        f"<sub>点图打开[可交互的关系图谱]({PAGES_URL}#graph-sec)：箭头从源头指向从它演化出来的项目，点线是同类、常搭配和同一作者；可以拖动、缩放、切换「演化树」卡片视图，点项目看完整演化链。</sub>",
         "",
         f"共 {len(relations)} 条关系。想换工具时先看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。",
         "",
@@ -207,7 +208,7 @@ def readme():
             badge("活跃项目", active, "1E8A4B"),
             badge("数据更新", UPDATED, "5B6273"),
         ]), "",
-        "**[🎨 画风索引](#index)** · **[🕸️ 关系图谱](#relations)** · **[🖥️ 交互版网页](docs/index.html)**<sub>（下载后用浏览器打开，可按画风筛选、搜索、看演化树）</sub>", "",
+        f"**[🌐 网页版]({PAGES_URL})**<sub>（按画风筛选、搜索、排序）</sub> · **[🕸️ 关系图谱]({PAGES_URL}#graph-sec)**<sub>（可拖动缩放、看演化树）</sub> · **[🎨 画风索引](#index)**", "",
         " · ".join([
             "[画风索引](#index)", "[小众画风区](#niche)", "[关系图谱](#relations)",
             "[收录标准](#rules)", "[全部项目](#all)",
@@ -315,7 +316,7 @@ def readme_en():
             badge("styles", f"{len(MAIN)}+{len(NICHE)}", "9265D9"),
             badge("updated", UPDATED, "5B6273"),
         ]), "",
-        "**[Style index](#index)** · **[How projects relate](#relations)** · **[Interactive page](docs/index.html)**<sub> (download and open in a browser; Chinese UI)</sub>", "",
+        f"**[🌐 Interactive page]({PAGES_URL})** · **[🕸️ Relationship graph]({PAGES_URL}#graph-sec)** · **[Style index](#index)**<sub> (web page is in Chinese)</sub>", "",
         "</div>", "",
         "## What this is", "",
         "Pick a look first, then a tool. Every project here draws or renders its frames in code: Manim-style math explainers, flat motion graphics, "
