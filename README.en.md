@@ -6,7 +6,7 @@
 
 **Open-source tools for making animations and music videos with code, indexed by visual style.** [中文](README.md)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![projects](https://img.shields.io/badge/projects-318-2E49D4) ![styles](https://img.shields.io/badge/styles-18%2B13-9265D9) ![Claude/Opus](https://img.shields.io/badge/Claude/Opus-85-7B4FD0) ![updated](https://img.shields.io/badge/updated-2026--11--03-5B6273)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![projects](https://img.shields.io/badge/projects-315-2E49D4) ![styles](https://img.shields.io/badge/styles-18%2B13-9265D9) ![Claude/Opus](https://img.shields.io/badge/Claude/Opus-85-7B4FD0) ![updated](https://img.shields.io/badge/updated-2026--11--03-5B6273)
 
 **[🔎 Interactive version: filter by style, search, sort, see how projects relate](https://syydaniel.github.io/awesome-code-animation/)** (Chinese UI)
 
@@ -18,7 +18,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ## Rules
 
-- **Frames must be drawn or rendered by code.** Projects that make their pictures with image or video generation models are left out; agent projects that render through Blender are left out too. Optional generation features are noted per project.
+- **Frames must be drawn or rendered by code.** Projects that make their pictures with image or video generation models are left out, and so are projects that render through Blender or other 3D apps. Optional features of that kind are noted per project.
 - **Main styles:** 1,000+ stars, or 200+ stars with a push in the last year.
 - **Niche styles and the Claude / Opus section:** 50+ stars with a push in the last year.
 - Archived repositories are not listed. Status: 🟢 pushed within 6 months · 🟡 within 2 years · ⚪ older.
@@ -31,9 +31,9 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 <table>
 <tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="Math Explainer" width="260"></a><br><b><a href="#math">Math Explainer</a></b><br><sub>数学讲解风 · 20 projects</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="Motion Graphics" width="260"></a><br><b><a href="#mg">Motion Graphics</a></b><br><sub>扁平 MG 动效 · 82 projects</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="Code & Terminal Demo" width="260"></a><br><b><a href="#code">Code & Terminal Demo</a></b><br><sub>代码演示风 · 16 projects</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.png" alt="Kinetic Type & Lyrics" width="260"></a><br><b><a href="#type">Kinetic Type & Lyrics</a></b><br><sub>动态文字 · 歌词 · 27 projects</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="Shorts, Captions & Editing" width="260"></a><br><b><a href="#short">Shorts, Captions & Editing</a></b><br><sub>短视频 · 字幕 · 快剪 · 28 projects</sub></td><td align="center" width="33%"><a href="#agent"><img src="assets/styles/agent.png" alt="Claude & Opus Code Animation" width="260"></a><br><b><a href="#agent">Claude & Opus Code Animation</a></b><br><sub>Claude / Opus 写代码出片 · 85 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="Hand-drawn & Whiteboard" width="260"></a><br><b><a href="#hand">Hand-drawn & Whiteboard</a></b><br><sub>手绘 · 白板 · 水彩 · 20 projects</sub></td><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="Generative Art" width="260"></a><br><b><a href="#gen">Generative Art</a></b><br><sub>生成艺术 · 几何 · 32 projects</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="Shaders & Psychedelic" width="260"></a><br><b><a href="#shader">Shaders & Psychedelic</a></b><br><sub>着色器 · 迷幻光影 · 34 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding & VJ" width="260"></a><br><b><a href="#live">Live Coding & VJ</a></b><br><sub>Live Coding · VJ · 9 projects</sub></td><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="Music Visualization" width="260"></a><br><b><a href="#audio">Music Visualization</a></b><br><sub>音乐可视化 · 25 projects</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D" width="260"></a><br><b><a href="#3d">3D</a></b><br><sub>3D 渲染 · 49 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="Anime, MMD & VRM" width="260"></a><br><b><a href="#anime">Anime, MMD & VRM</a></b><br><sub>二次元 · MMD · VRM · 9 projects</sub></td><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="Particles & Physics" width="260"></a><br><b><a href="#particle">Particles & Physics</a></b><br><sub>粒子 · 流体 · 物理 · 20 projects</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="Glitch & Post FX" width="260"></a><br><b><a href="#glitch">Glitch & Post FX</a></b><br><sub>故障 · 后期特效 · 12 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="Hand-drawn & Whiteboard" width="260"></a><br><b><a href="#hand">Hand-drawn & Whiteboard</a></b><br><sub>手绘 · 白板 · 水彩 · 19 projects</sub></td><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="Generative Art" width="260"></a><br><b><a href="#gen">Generative Art</a></b><br><sub>生成艺术 · 几何 · 32 projects</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="Shaders & Psychedelic" width="260"></a><br><b><a href="#shader">Shaders & Psychedelic</a></b><br><sub>着色器 · 迷幻光影 · 34 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding & VJ" width="260"></a><br><b><a href="#live">Live Coding & VJ</a></b><br><sub>Live Coding · VJ · 9 projects</sub></td><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="Music Visualization" width="260"></a><br><b><a href="#audio">Music Visualization</a></b><br><sub>音乐可视化 · 25 projects</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D" width="260"></a><br><b><a href="#3d">3D</a></b><br><sub>3D 渲染 · 46 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="Anime, MMD & VRM" width="260"></a><br><b><a href="#anime">Anime, MMD & VRM</a></b><br><sub>二次元 · MMD · VRM · 7 projects</sub></td><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="Particles & Physics" width="260"></a><br><b><a href="#particle">Particles & Physics</a></b><br><sub>粒子 · 流体 · 物理 · 20 projects</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="Glitch & Post FX" width="260"></a><br><b><a href="#glitch">Glitch & Post FX</a></b><br><sub>故障 · 后期特效 · 12 projects</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#pixel"><img src="assets/styles/pixel.png" alt="Pixel & Retro" width="260"></a><br><b><a href="#pixel">Pixel & Retro</a></b><br><sub>像素 · 复古 · 20 projects</sub></td><td align="center" width="33%"><a href="#ascii"><img src="assets/styles/ascii.png" alt="ASCII & Terminal" width="260"></a><br><b><a href="#ascii">ASCII & Terminal</a></b><br><sub>ASCII · 终端 · 21 projects</sub></td><td align="center" width="33%"><a href="#data"><img src="assets/styles/data.png" alt="Data Animation" width="260"></a><br><b><a href="#data">Data Animation</a></b><br><sub>数据可视化动画 · 26 projects</sub></td></tr>
 </table>
 
@@ -377,11 +377,10 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Hand-drawn & Whiteboard
 
-> 手绘 · 白板 · 水彩 · 20 projects
+> 手绘 · 白板 · 水彩 · 19 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
-| [Blender](https://github.com/blender/blender) | 21.6k | 🟢 | Official mirror of Blender |
 | [Rough.js](https://github.com/rough-stuff/rough) | 21.3k | ⚪ | Create graphics with a hand-drawn, sketchy, appearance |
 | [Vivus](https://github.com/maxwellito/vivus) | 15.5k | ⚪ | JavaScript library to make drawing animation on SVG |
 | [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 12.2k | 🟢 | A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：66 种现成风格，也能做出你自己的 |
@@ -552,7 +551,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### 3D
 
-> 3D 渲染 · 49 projects
+> 3D 渲染 · 46 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -562,7 +561,6 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [React Three Fiber](https://github.com/pmndrs/react-three-fiber) | 33.5k | 🟢 | 🇨🇭 A React renderer for Three.js |
 | [Taichi](https://github.com/taichi-dev/taichi) | 28.5k | 🟢 | Productive, portable, and performant GPU programming in Python. |
 | [Babylon.js](https://github.com/BabylonJS/Babylon.js) | 26.3k | 🟢 | Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework. |
-| [Blender](https://github.com/blender/blender) | 21.6k | 🟢 | Official mirror of Blender |
 | [img2threejs](https://github.com/img2threejs/img2threejs) | 20.3k | 🟢 | Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D. |
 | [PlayCanvas](https://github.com/playcanvas/engine) | 17.2k | 🟢 | Powerful web graphics runtime built on WebGL, WebGPU, WebXR and glTF |
 | [deck.gl](https://github.com/visgl/deck.gl) | 14.7k | 🟢 | WebGL2 powered visualization framework |
@@ -582,10 +580,8 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [zero](https://github.com/sinclairzx81/zero) | 2.5k | 🟢 | A 3D renderer written in JavaScript and rendered to the terminal. |
 | [huashu-motion](https://github.com/alchaincyf/huashu-motion) | 2.3k | 🟢 | 让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it. |
 | [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | 🟢 | Use VRM on Three.js |
-| [VRM Add-on for Blender](https://github.com/saturday06/VRM-Addon-for-Blender) | 1.7k | 🟢 | VRM Importer, Exporter and Utilities for Blender 2.93 to 5.2 |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | 🟡 | Surface-Stable Fractal Dithering |
 | [MathBox](https://github.com/unconed/mathbox) | 1.5k | ⚪ | Presentation-quality WebGL math graphing |
-| [Goo Engine](https://github.com/dillongoostudios/goo-engine) | 1.5k | 🟢 | Custom build of blender with some extra NPR features. |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | 🟢 | The procedural generation voxel engine |
 | [TerraForge3D](https://github.com/Jaysmito101/TerraForge3D) | 1.3k | 🟢 | Cross Platform Professional Procedural Terrain Generation & Texturing Tool |
 | [three-nebula](https://github.com/creativelifeform/three-nebula) | 1.2k | 🟢 | WebGL based particle system engine for three.js |
@@ -612,15 +608,13 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Anime, MMD & VRM
 
-> 二次元 · MMD · VRM · 9 projects
+> 二次元 · MMD · VRM · 7 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
 | [Kalidokit](https://github.com/yeemachine/kalidokit) | 5.7k | 🟡 | Blendshape and kinematics calculator for Mediapipe/Tensorflow.js Face, Eyes, Pose, and Finger tracking models. |
 | [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | 🟢 | Use VRM on Three.js |
-| [VRM Add-on for Blender](https://github.com/saturday06/VRM-Addon-for-Blender) | 1.7k | 🟢 | VRM Importer, Exporter and Utilities for Blender 2.93 to 5.2 |
 | [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) | 1.5k | ⚪ | A PixiJS plugin to display Live2D models of any kind. |
-| [Goo Engine](https://github.com/dillongoostudios/goo-engine) | 1.5k | 🟢 | Custom build of blender with some extra NPR features. |
 | [Aora Bot](https://github.com/sam70361/aora-bot) | 619 | 🟢 | Aora Bot：代码绘制的网页角色引擎，46 个原创角色、44 种动画状态，支持 React、Web Component 与头像接口（原 Emotion Ball 表情馆） |
 | [world.execute(me) 歌词 MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 511 | 🟢 | world.execute(me); — an unofficial fan-made lyric MV told as a chat with Claude, rendered frame by frame from code. Prompts included; no music or lyrics. 非官方同人歌詞 MV:以程式碼逐幀渲染,附完整提示詞,不含歌曲與歌詞。 |
 | [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 261 | 🟢 | babylon.js mmd loader and runtime |
@@ -1141,9 +1135,6 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Animotion](https://github.com/animotionjs/animotion) | alternative to | [Slidev](https://github.com/slidevjs/slidev) |
 | [Kalidokit](https://github.com/yeemachine/kalidokit) | pairs with | [three-vrm](https://github.com/pixiv/three-vrm) |
 | [Kalidokit](https://github.com/yeemachine/kalidokit) | pairs with | [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) |
-| [VRM Add-on for Blender](https://github.com/saturday06/VRM-Addon-for-Blender) | pairs with | [three-vrm](https://github.com/pixiv/three-vrm) |
-| [Goo Engine](https://github.com/dillongoostudios/goo-engine) | forked from | [Blender](https://github.com/blender/blender) |
-| [VRM Add-on for Blender](https://github.com/saturday06/VRM-Addon-for-Blender) | plugin for | [Blender](https://github.com/blender/blender) |
 | [EffectCraft](https://github.com/storytold/effectcraft) | alternative to | [Natron](https://github.com/NatronGitHub/Natron) |
 | [video-talkcraft](https://github.com/Vincentwei1021/video-talkcraft) | same author as | [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) |
 | [anything2explainer](https://github.com/Vincentwei1021/anything2explainer) | same author as | [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) |

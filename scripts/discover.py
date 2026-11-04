@@ -119,7 +119,7 @@ def main():
         f"自动整理于 {datetime.date.today().isoformat()}，共 {total} 个还没收录的候选"
         + (f"，这里列出最相关的 {len(cands)} 个。" if total > len(cands) else "。"),
         "",
-        "收录前请先看 README，确认画面由代码绘制或渲染，没有用视频或图像生成模型（Claude / Opus 区也不收调用 Blender 的）。"
+        "收录前请先看 README，确认画面由代码绘制或渲染，没有用视频或图像生成模型，也不靠 Blender 出画面。"
         "要收录的：按 CONTRIBUTING.md 加进 `data/projects.json`；确认不收的：写进 `data/excluded.json`，下周就不会再出现。",
         "",
         "| 收录？ | 项目 | 星数 | 最近提交 | 可能的画风 | 简介 |",

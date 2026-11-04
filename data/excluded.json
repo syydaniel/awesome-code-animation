@@ -1,46 +1,181 @@
 {
   "_说明": "看过但没有收录的项目和原因。自动发现脚本会跳过这里的仓库，不再重复推荐。",
   "excluded": [
-    {"repo": "guoyww/AnimateDiff", "reason": "画面由扩散模型生成"},
-    {"repo": "deforum/deforum-stable-diffusion", "reason": "画面由 Stable Diffusion 生成"},
-    {"repo": "deforum/sd-webui-deforum", "reason": "画面由 Stable Diffusion 生成"},
-    {"repo": "mikael-alafriz-deel/lucid-sonic-dreams", "reason": "画面由 StyleGAN 生成"},
-    {"repo": "calesthio/OpenMontage", "reason": "流程依赖图像和视频生成模型"},
-    {"repo": "ahujasid/mcp-for-blender", "reason": "通过 Blender 出画面"},
-    {"repo": "EL4CTEO/blender-skills", "reason": "通过 Blender 出画面"},
-    {"repo": "openfilm/openfilm", "reason": "可以接入视频生成服务"},
-    {"repo": "digitalsamba/claude-code-video-toolkit", "reason": "用 FLUX、LTX 等模型生成图像和视频"},
-    {"repo": "Alisa0808/vox-director", "reason": "用 Seedance、Gemini 等模型生成画面"},
-    {"repo": "Anil-matcha/vox-ai-motion-graphics-generator", "reason": "用 Veo、nano-banana、FLUX 生成画面"},
-    {"repo": "Agents365-ai/video-podcast-maker", "reason": "可调用 AI 生成配图和视频片段"},
-    {"repo": "MengTo/kage", "reason": "画面叠加了生成图像"},
-    {"repo": "Moh4696/open-3d-skills", "reason": "部分技能依赖图像和视频生成服务"},
-    {"repo": "GTKottman/mortiflix-oss", "reason": "3D 部分用 Blender"},
-    {"repo": "GenielabsOpenSource/spine-animation-ai", "reason": "依赖 Blender / Aseprite 流程"},
-    {"repo": "Jane-xiaoer/paper-collage-ad-codex", "reason": "用 Seedance、Gemini Omni 生成动画"},
-    {"repo": "pyang5166/gbro-collage-broll", "reason": "用 Gemini Omni Flash 生成动画"},
-    {"repo": "WU-HAOTIAN34/2dimg2motion", "reason": "关键帧由图像模型生成"},
-    {"repo": "aldegad/sprite-gen", "reason": "精灵图由图像模型生成"},
-    {"repo": "tachikomared/character-animation-creator-skill", "reason": "动画帧由图像模型生成"},
-    {"repo": "agiwhitelist/auteur", "reason": "使用图像生成和 Blender"},
-    {"repo": "echris6/motion-video-kit", "reason": "使用 AI 生成的素材画面"},
-    {"repo": "cth9191/motion-design", "reason": "成片用 Higgsfield 生成"},
-    {"repo": "gnipbao/story-to-handdrawn-video", "reason": "默认由生图工具绘制插画"},
-    {"repo": "makevoid/motion-graphics-music-video-skill", "reason": "用图像和视频模型生成角色画面"},
-    {"repo": "oil-oil/oil-motion", "reason": "关键帧和视频默认调用生成模型"},
-    {"repo": "DozenTwelve/Papermorph", "reason": "场景可由图像模型绘制"},
-    {"repo": "tugrawork-creator/saas-motion-kit", "reason": "人物画面由生成服务制作"},
-    {"repo": "Tejashmakwana/motionmaxxing", "reason": "部分画面调用图像生成"},
-    {"repo": "sirioberati/showhow", "reason": "接入 Seedance、Kling 等模型"},
-    {"repo": "EGSECDA/vocaloid-style-mv-pipeline", "reason": "使用图像生成和 Blender"},
-    {"repo": "kanaworksai-hue/effekseer-vfx-skill", "reason": "部分特效用视频模型生成序列帧"},
-    {"repo": "alchaincyf/huashu-design", "reason": "设计工具，素材调用图像生成"},
-    {"repo": "freshtechbro/claudedesignskills", "reason": "通用网页开发技能，含 Blender 插件"},
-    {"repo": "akseolabs-seo/cinematic-ui", "reason": "可选图像生成，且偏网站设计"},
-    {"repo": "MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files", "reason": "以网页为主，不是动画"},
-    {"repo": "jeremy-prt/bloub", "reason": "复刻他人品牌形象"},
-    {"repo": "shikijs/shiki-magic-move", "reason": "仓库已归档"},
-    {"repo": "humanbydefinition/p5.asciify", "reason": "仓库已归档"},
-    {"repo": "tidalcycles/strudel", "reason": "仓库已归档"}
+    {
+      "repo": "guoyww/AnimateDiff",
+      "reason": "画面由扩散模型生成"
+    },
+    {
+      "repo": "deforum/deforum-stable-diffusion",
+      "reason": "画面由 Stable Diffusion 生成"
+    },
+    {
+      "repo": "deforum/sd-webui-deforum",
+      "reason": "画面由 Stable Diffusion 生成"
+    },
+    {
+      "repo": "mikael-alafriz-deel/lucid-sonic-dreams",
+      "reason": "画面由 StyleGAN 生成"
+    },
+    {
+      "repo": "calesthio/OpenMontage",
+      "reason": "流程依赖图像和视频生成模型"
+    },
+    {
+      "repo": "ahujasid/mcp-for-blender",
+      "reason": "通过 Blender 出画面"
+    },
+    {
+      "repo": "EL4CTEO/blender-skills",
+      "reason": "通过 Blender 出画面"
+    },
+    {
+      "repo": "openfilm/openfilm",
+      "reason": "可以接入视频生成服务"
+    },
+    {
+      "repo": "digitalsamba/claude-code-video-toolkit",
+      "reason": "用 FLUX、LTX 等模型生成图像和视频"
+    },
+    {
+      "repo": "Alisa0808/vox-director",
+      "reason": "用 Seedance、Gemini 等模型生成画面"
+    },
+    {
+      "repo": "Anil-matcha/vox-ai-motion-graphics-generator",
+      "reason": "用 Veo、nano-banana、FLUX 生成画面"
+    },
+    {
+      "repo": "Agents365-ai/video-podcast-maker",
+      "reason": "可调用 AI 生成配图和视频片段"
+    },
+    {
+      "repo": "MengTo/kage",
+      "reason": "画面叠加了生成图像"
+    },
+    {
+      "repo": "Moh4696/open-3d-skills",
+      "reason": "部分技能依赖图像和视频生成服务"
+    },
+    {
+      "repo": "GTKottman/mortiflix-oss",
+      "reason": "3D 部分用 Blender"
+    },
+    {
+      "repo": "GenielabsOpenSource/spine-animation-ai",
+      "reason": "依赖 Blender / Aseprite 流程"
+    },
+    {
+      "repo": "Jane-xiaoer/paper-collage-ad-codex",
+      "reason": "用 Seedance、Gemini Omni 生成动画"
+    },
+    {
+      "repo": "pyang5166/gbro-collage-broll",
+      "reason": "用 Gemini Omni Flash 生成动画"
+    },
+    {
+      "repo": "WU-HAOTIAN34/2dimg2motion",
+      "reason": "关键帧由图像模型生成"
+    },
+    {
+      "repo": "aldegad/sprite-gen",
+      "reason": "精灵图由图像模型生成"
+    },
+    {
+      "repo": "tachikomared/character-animation-creator-skill",
+      "reason": "动画帧由图像模型生成"
+    },
+    {
+      "repo": "agiwhitelist/auteur",
+      "reason": "使用图像生成和 Blender"
+    },
+    {
+      "repo": "echris6/motion-video-kit",
+      "reason": "使用 AI 生成的素材画面"
+    },
+    {
+      "repo": "cth9191/motion-design",
+      "reason": "成片用 Higgsfield 生成"
+    },
+    {
+      "repo": "gnipbao/story-to-handdrawn-video",
+      "reason": "默认由生图工具绘制插画"
+    },
+    {
+      "repo": "makevoid/motion-graphics-music-video-skill",
+      "reason": "用图像和视频模型生成角色画面"
+    },
+    {
+      "repo": "oil-oil/oil-motion",
+      "reason": "关键帧和视频默认调用生成模型"
+    },
+    {
+      "repo": "DozenTwelve/Papermorph",
+      "reason": "场景可由图像模型绘制"
+    },
+    {
+      "repo": "tugrawork-creator/saas-motion-kit",
+      "reason": "人物画面由生成服务制作"
+    },
+    {
+      "repo": "Tejashmakwana/motionmaxxing",
+      "reason": "部分画面调用图像生成"
+    },
+    {
+      "repo": "sirioberati/showhow",
+      "reason": "接入 Seedance、Kling 等模型"
+    },
+    {
+      "repo": "EGSECDA/vocaloid-style-mv-pipeline",
+      "reason": "使用图像生成和 Blender"
+    },
+    {
+      "repo": "kanaworksai-hue/effekseer-vfx-skill",
+      "reason": "部分特效用视频模型生成序列帧"
+    },
+    {
+      "repo": "alchaincyf/huashu-design",
+      "reason": "设计工具，素材调用图像生成"
+    },
+    {
+      "repo": "freshtechbro/claudedesignskills",
+      "reason": "通用网页开发技能，含 Blender 插件"
+    },
+    {
+      "repo": "akseolabs-seo/cinematic-ui",
+      "reason": "可选图像生成，且偏网站设计"
+    },
+    {
+      "repo": "MiaAI-Lab/Claude-Opus-5.5-100-HTML-Files",
+      "reason": "以网页为主，不是动画"
+    },
+    {
+      "repo": "jeremy-prt/bloub",
+      "reason": "复刻他人品牌形象"
+    },
+    {
+      "repo": "shikijs/shiki-magic-move",
+      "reason": "仓库已归档"
+    },
+    {
+      "repo": "humanbydefinition/p5.asciify",
+      "reason": "仓库已归档"
+    },
+    {
+      "repo": "tidalcycles/strudel",
+      "reason": "仓库已归档"
+    },
+    {
+      "repo": "blender/blender",
+      "reason": "Blender 是 3D 软件，不是纯代码出画面"
+    },
+    {
+      "repo": "saturday06/VRM-Addon-for-Blender",
+      "reason": "Blender 插件"
+    },
+    {
+      "repo": "dillongoostudios/goo-engine",
+      "reason": "Blender 定制版"
+    }
   ]
 }

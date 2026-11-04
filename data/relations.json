@@ -870,24 +870,6 @@
       "note": "用摄像头动作驱动 Live2D 角色"
     },
     {
-      "from": "saturday06/VRM-Addon-for-Blender",
-      "type": "pair",
-      "to": "pixiv/three-vrm",
-      "note": "在 Blender 里编辑 VRM，再在 three.js 里播放"
-    },
-    {
-      "from": "dillongoostudios/goo-engine",
-      "type": "fork",
-      "to": "blender/blender",
-      "note": "Blender 的动漫画风定制版"
-    },
-    {
-      "from": "saturday06/VRM-Addon-for-Blender",
-      "type": "plugin",
-      "to": "blender/blender",
-      "note": "Blender 的 VRM 插件"
-    },
-    {
       "from": "storytold/effectcraft",
       "type": "alt",
       "to": "NatronGitHub/Natron",

@@ -8,7 +8,7 @@
 
 A curated list of open-source tools for making animations and music videos **with code**, indexed by visual style. [English](README.en.md)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![项目](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE-318-2E49D4) ![画风](https://img.shields.io/badge/%E7%94%BB%E9%A3%8E-18%2B13-9265D9) ![Claude/Opus](https://img.shields.io/badge/Claude/Opus-85-7B4FD0) ![活跃项目](https://img.shields.io/badge/%E6%B4%BB%E8%B7%83%E9%A1%B9%E7%9B%AE-244-1E8A4B) ![数据更新](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--11--03-5B6273)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![项目](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE-315-2E49D4) ![画风](https://img.shields.io/badge/%E7%94%BB%E9%A3%8E-18%2B13-9265D9) ![Claude/Opus](https://img.shields.io/badge/Claude/Opus-85-7B4FD0) ![活跃项目](https://img.shields.io/badge/%E6%B4%BB%E8%B7%83%E9%A1%B9%E7%9B%AE-241-1E8A4B) ![数据更新](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--11--03-5B6273)
 
 **[🔎 网页版：可按画风筛选、搜索、排序、看项目关系](https://syydaniel.github.io/awesome-code-animation/)**
 
@@ -26,7 +26,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 ## 收录标准
 
-- **画面必须由代码绘制或渲染。** 用视频生成、图像生成模型出画面的项目不收；Claude / Opus 写代码出片的项目，调用 Blender 出画面的也不收。个别项目带有可选的生成功能，会在说明里注明。
+- **画面必须由代码绘制或渲染。** 用视频生成、图像生成模型出画面的项目不收，用 Blender 等 3D 软件出画面的也不收。个别项目带有可选的生成功能或 Blender 选项，会在说明里注明。
 - **主流画风：** GitHub 星数 1000 以上，或近一年内有更新且星数 200 以上。
 - **小众画风区和 Claude / Opus 区：** 门槛放宽到近一年内有更新、星数 50 以上，好让有潜力的新项目早点被看到。
 - **已归档（只读）的仓库不收。** 看过但没收的项目和原因记在 [`data/excluded.json`](data/excluded.json)。
@@ -57,9 +57,9 @@ A curated list of open-source tools for making animations and music videos **wit
 <table>
 <tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="数学讲解风" width="260"></a><br><b><a href="#math">数学讲解风</a></b><br><sub>Math Explainer · 20 个项目</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="扁平 MG 动效" width="260"></a><br><b><a href="#mg">扁平 MG 动效</a></b><br><sub>Motion Graphics · 82 个项目</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="代码演示风" width="260"></a><br><b><a href="#code">代码演示风</a></b><br><sub>Code & Terminal Demo · 16 个项目</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.png" alt="动态文字 · 歌词" width="260"></a><br><b><a href="#type">动态文字 · 歌词</a></b><br><sub>Kinetic Type & Lyrics · 27 个项目</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="短视频 · 字幕 · 快剪" width="260"></a><br><b><a href="#short">短视频 · 字幕 · 快剪</a></b><br><sub>Shorts, Captions & Editing · 28 个项目</sub></td><td align="center" width="33%"><a href="#agent"><img src="assets/styles/agent.png" alt="Claude / Opus 写代码出片" width="260"></a><br><b><a href="#agent">Claude / Opus 写代码出片</a></b><br><sub>Claude & Opus Code Animation · 85 个项目</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="手绘 · 白板 · 水彩" width="260"></a><br><b><a href="#hand">手绘 · 白板 · 水彩</a></b><br><sub>Hand-drawn & Whiteboard · 20 个项目</sub></td><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="生成艺术 · 几何" width="260"></a><br><b><a href="#gen">生成艺术 · 几何</a></b><br><sub>Generative Art · 32 个项目</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="着色器 · 迷幻光影" width="260"></a><br><b><a href="#shader">着色器 · 迷幻光影</a></b><br><sub>Shaders & Psychedelic · 34 个项目</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding · VJ" width="260"></a><br><b><a href="#live">Live Coding · VJ</a></b><br><sub>Live Coding & VJ · 9 个项目</sub></td><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="音乐可视化" width="260"></a><br><b><a href="#audio">音乐可视化</a></b><br><sub>Music Visualization · 25 个项目</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D 渲染" width="260"></a><br><b><a href="#3d">3D 渲染</a></b><br><sub>3D · 49 个项目</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="二次元 · MMD · VRM" width="260"></a><br><b><a href="#anime">二次元 · MMD · VRM</a></b><br><sub>Anime, MMD & VRM · 9 个项目</sub></td><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="粒子 · 流体 · 物理" width="260"></a><br><b><a href="#particle">粒子 · 流体 · 物理</a></b><br><sub>Particles & Physics · 20 个项目</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="故障 · 后期特效" width="260"></a><br><b><a href="#glitch">故障 · 后期特效</a></b><br><sub>Glitch & Post FX · 12 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="手绘 · 白板 · 水彩" width="260"></a><br><b><a href="#hand">手绘 · 白板 · 水彩</a></b><br><sub>Hand-drawn & Whiteboard · 19 个项目</sub></td><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="生成艺术 · 几何" width="260"></a><br><b><a href="#gen">生成艺术 · 几何</a></b><br><sub>Generative Art · 32 个项目</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="着色器 · 迷幻光影" width="260"></a><br><b><a href="#shader">着色器 · 迷幻光影</a></b><br><sub>Shaders & Psychedelic · 34 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding · VJ" width="260"></a><br><b><a href="#live">Live Coding · VJ</a></b><br><sub>Live Coding & VJ · 9 个项目</sub></td><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="音乐可视化" width="260"></a><br><b><a href="#audio">音乐可视化</a></b><br><sub>Music Visualization · 25 个项目</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D 渲染" width="260"></a><br><b><a href="#3d">3D 渲染</a></b><br><sub>3D · 46 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="二次元 · MMD · VRM" width="260"></a><br><b><a href="#anime">二次元 · MMD · VRM</a></b><br><sub>Anime, MMD & VRM · 7 个项目</sub></td><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="粒子 · 流体 · 物理" width="260"></a><br><b><a href="#particle">粒子 · 流体 · 物理</a></b><br><sub>Particles & Physics · 20 个项目</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="故障 · 后期特效" width="260"></a><br><b><a href="#glitch">故障 · 后期特效</a></b><br><sub>Glitch & Post FX · 12 个项目</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#pixel"><img src="assets/styles/pixel.png" alt="像素 · 复古" width="260"></a><br><b><a href="#pixel">像素 · 复古</a></b><br><sub>Pixel & Retro · 20 个项目</sub></td><td align="center" width="33%"><a href="#ascii"><img src="assets/styles/ascii.png" alt="ASCII · 终端" width="260"></a><br><b><a href="#ascii">ASCII · 终端</a></b><br><sub>ASCII & Terminal · 21 个项目</sub></td><td align="center" width="33%"><a href="#data"><img src="assets/styles/data.png" alt="数据可视化动画" width="260"></a><br><b><a href="#data">数据可视化动画</a></b><br><sub>Data Animation · 26 个项目</sub></td></tr>
 </table>
 
@@ -443,13 +443,12 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 草图线条、逐笔绘制、水彩笔触、手绘图表
 
-共 20 个项目，按星数排序。
+共 19 个项目，按星数排序。
 
 <br clear="right">
 
 | 项目 | 星数 | 状态 | 写法 | 说明 |
 | --- | ---: | :---: | --- | --- |
-| [Blender](https://github.com/blender/blender) | 21.6k | 🟢 活跃 | Python API | 开源 3D 软件，Python API 可以程序化生成场景和动画；Grease Pencil 能做 2D 手绘动画。<br><sub>适合：MV · 3D 动画 · 也在：3D 渲染</sub><br><sub>⚠️ GitHub 上是镜像，开发主站在 projects.blender.org。</sub> |
 | [Rough.js](https://github.com/rough-stuff/rough) | 21.3k | ⚪ 停更 | JavaScript | 生成手绘草图风格的线条和图形，可以和其他动画库组合做手绘风动画。<br><sub>适合：讲解视频 · 网页动画</sub> |
 | [Vivus](https://github.com/maxwellito/vivus) | 15.5k | ⚪ 停更 | JavaScript | SVG 描线动画，让线稿一笔一笔画出来。<br><sub>适合：网页动画</sub><br><sub>⚠️ 2022 年后未更新，功能简单稳定。</sub> |
 | [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 12.2k | 🟢 活跃 | JavaScript | 代码实现的影片画风工具箱：66 种现成画风（孟菲斯、地铁线路图、黑板等），让 AI 编程助手按画风出片，全部用代码绘制。<br><sub>适合：MV · 短片 · 也在：Claude / Opus 写代码出片、扁平 MG 动效、像素 · 复古</sub><br><sub>⚠️ 画风针对 Claude 调校，用其他模型效果可能不同。</sub> |
@@ -648,7 +647,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 三维场景、镜头运动、材质灯光
 
-共 49 个项目，按星数排序。
+共 46 个项目，按星数排序。
 
 <br clear="right">
 
@@ -660,7 +659,6 @@ A curated list of open-source tools for making animations and music videos **wit
 | [React Three Fiber](https://github.com/pmndrs/react-three-fiber) | 33.5k | 🟢 活跃 | React / TS | 用 React 写 three.js 场景，可以配合 Remotion 渲染 3D 视频。<br><sub>适合：MV · 网页 3D</sub> |
 | [Taichi](https://github.com/taichi-dev/taichi) | 28.5k | 🟢 活跃 | Python | Python 高性能并行计算，常用来写流体、弹性体、粒子等物理模拟。<br><sub>适合：物理模拟 · 也在：粒子 · 流体 · 物理</sub> |
 | [Babylon.js](https://github.com/BabylonJS/Babylon.js) | 26.3k | 🟢 活跃 | TypeScript | 微软团队维护的网页 3D 引擎，功能全，自带在线编辑工具。<br><sub>适合：网页 3D · MV</sub> |
-| [Blender](https://github.com/blender/blender) | 21.6k | 🟢 活跃 | Python API | 开源 3D 软件，Python API 可以程序化生成场景和动画；Grease Pencil 能做 2D 手绘动画。<br><sub>适合：MV · 3D 动画 · 也在：手绘 · 白板 · 水彩</sub><br><sub>⚠️ GitHub 上是镜像，开发主站在 projects.blender.org。</sub> |
 | [img2threejs](https://github.com/img2threejs/img2threejs) | 20.3k | 🟢 活跃 | Python / three.js | AI 编程助手技能：照着参考图，用纯代码重建程序化的 three.js 3D 模型，可直接做动画。<br><sub>适合：3D 素材 · 也在：Claude / Opus 写代码出片</sub><br><sub>⚠️ 附带可选的 Blender 导出桥，核心是纯代码 three.js 模型。</sub> |
 | [PlayCanvas](https://github.com/playcanvas/engine) | 17.2k | 🟢 活跃 | JavaScript | 网页 3D 引擎，支持 WebGL / WebGPU 和高斯泼溅。<br><sub>适合：网页 3D</sub> |
 | [deck.gl](https://github.com/visgl/deck.gl) | 14.7k | 🟢 活跃 | TypeScript | 大规模地理数据可视化：轨迹动画、3D 柱状地图等。<br><sub>适合：地图动画 · 也在：数据可视化动画、地图 · 路线动画</sub> |
@@ -680,10 +678,8 @@ A curated list of open-source tools for making animations and music videos **wit
 | [zero](https://github.com/sinclairzx81/zero) | 2.5k | 🟢 活跃 | TypeScript | JavaScript 写的 3D 渲染器，直接把 3D 画面渲染在终端里。<br><sub>适合：终端动画 · 也在：ASCII · 终端</sub> |
 | [huashu-motion](https://github.com/alchaincyf/huashu-motion) | 2.3k | 🟢 活跃 | JavaScript | 国人作品：让 AI 编程助手做产品发布片，自己写配乐，可以指着画面改。<br><sub>适合：产品宣传片 · 也在：Claude / Opus 写代码出片、扁平 MG 动效</sub> |
 | [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | 🟢 活跃 | TypeScript | pixiv 出品，在 three.js 里使用 VRM 二次元虚拟形象。<br><sub>适合：二次元 MV · 虚拟形象 · 也在：二次元 · MMD · VRM</sub> |
-| [VRM Add-on for Blender](https://github.com/saturday06/VRM-Addon-for-Blender) | 1.7k | 🟢 活跃 | Python | 在 Blender 里导入、编辑、导出 VRM 二次元模型。<br><sub>适合：二次元 MV · 也在：二次元 · MMD · VRM</sub> |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | 🟡 放缓 | Unity Shader | 贴在物体表面、镜头移动也不闪烁的分形抖动着色器，做 1-bit 风格的 3D 画面。<br><sub>适合：1-bit 3D · 也在：抖动 · 1-bit、着色器 · 迷幻光影</sub><br><sub>⚠️ Unity 着色器；2025 年初后未更新。</sub> |
 | [MathBox](https://github.com/unconed/mathbox) | 1.5k | ⚪ 停更 | JavaScript | 浏览器里的 3D 数学可视化：曲面、向量场、坐标网格，画面干净有质感。<br><sub>适合：讲解视频 · 也在：数学讲解风</sub> |
-| [Goo Engine](https://github.com/dillongoostudios/goo-engine) | 1.5k | 🟢 活跃 | Blender 定制版 | 专做动漫画风的 Blender 定制版，卡通着色控制更细。<br><sub>适合：二次元 3D 动画 · 也在：二次元 · MMD · VRM</sub> |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | 🟢 活跃 | C | 程序化生成的体素引擎，地形和建筑都由代码长出来。<br><sub>适合：程序化体素 · 也在：程序化生成 · 波函数坍缩、等距 · 体素</sub> |
 | [TerraForge3D](https://github.com/Jaysmito101/TerraForge3D) | 1.3k | 🟢 活跃 | C++ | 程序化地形生成和贴图工具，节点式编辑。<br><sub>适合：程序化地形 · 也在：程序化生成 · 波函数坍缩</sub><br><sub>⚠️ 以图形界面为主。</sub> |
 | [three-nebula](https://github.com/creativelifeform/three-nebula) | 1.2k | 🟢 活跃 | JavaScript | three.js 的 WebGL 粒子系统引擎，附可视化编辑器。<br><sub>适合：3D 粒子 · 也在：粒子 · 流体 · 物理</sub> |
@@ -714,7 +710,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 > 动漫角色、虚拟形象、舞蹈 MV
 
-共 9 个项目，按星数排序。
+共 7 个项目，按星数排序。
 
 <br clear="right">
 
@@ -722,9 +718,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | --- | ---: | :---: | --- | --- |
 | [Kalidokit](https://github.com/yeemachine/kalidokit) | 5.7k | 🟡 放缓 | TypeScript | 用摄像头捕捉面部和身体动作，驱动 VRM / Live2D 角色。<br><sub>适合：虚拟形象</sub> |
 | [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | 🟢 活跃 | TypeScript | pixiv 出品，在 three.js 里使用 VRM 二次元虚拟形象。<br><sub>适合：二次元 MV · 虚拟形象 · 也在：3D 渲染</sub> |
-| [VRM Add-on for Blender](https://github.com/saturday06/VRM-Addon-for-Blender) | 1.7k | 🟢 活跃 | Python | 在 Blender 里导入、编辑、导出 VRM 二次元模型。<br><sub>适合：二次元 MV · 也在：3D 渲染</sub> |
 | [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) | 1.5k | ⚪ 停更 | TypeScript | 在 PixiJS 里显示和驱动 Live2D 模型，做 2D 二次元角色动画。<br><sub>适合：二次元动画</sub> |
-| [Goo Engine](https://github.com/dillongoostudios/goo-engine) | 1.5k | 🟢 活跃 | Blender 定制版 | 专做动漫画风的 Blender 定制版，卡通着色控制更细。<br><sub>适合：二次元 3D 动画 · 也在：3D 渲染</sub> |
 | [Aora Bot](https://github.com/sam70361/aora-bot) | 619 | 🟢 活跃 | TypeScript | 国人作品：代码绘制的网页角色引擎，46 个原创角色、44 种动画状态。<br><sub>适合：角色动画 · 也在：扁平 MG 动效</sub> |
 | [world.execute(me) 歌词 MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 511 | 🟢 活跃 | JavaScript | 粉丝自制的歌词 MV，把歌词演成和 Claude 的聊天，逐帧代码渲染到 4K60。<br><sub>适合：歌词 MV · 也在：Claude / Opus 写代码出片、动态文字 · 歌词</sub> |
 | [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 261 | 🟢 活跃 | TypeScript | 在 Babylon.js 里加载并播放 MMD 模型和动作，做二次元角色舞蹈 MV。<br><sub>适合：二次元 MV · 也在：3D 渲染</sub> |
@@ -1220,7 +1214,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 ## 项目关系表
 
-共 177 条关系。想换工具时先看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。
+共 174 条关系。想换工具时先看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。
 
 ### 分叉自
 
@@ -1230,7 +1224,6 @@ A curated list of open-source tools for making animations and music videos **wit
 | --- | :---: | --- | --- |
 | [Manim 社区版](https://github.com/ManimCommunity/manim) | 分叉自 | [Manim (3b1b)](https://github.com/3b1b/manim) | 社区版从 3b1b 的 ManimGL 分出，文档更全，API 有差异 |
 | [Revideo](https://github.com/midrender/revideo) | 分叉自 | [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | 去掉编辑器依赖，主打无界面批量渲染 |
-| [Goo Engine](https://github.com/dillongoostudios/goo-engine) | 分叉自 | [Blender](https://github.com/blender/blender) | Blender 的动漫画风定制版 |
 
 ### 基于
 
@@ -1273,7 +1266,6 @@ A curated list of open-source tools for making animations and music videos **wit
 | [ManimML](https://github.com/helblazer811/ManimML) | 插件 / 扩展 | [Manim 社区版](https://github.com/ManimCommunity/manim) | 机器学习概念动画组件 |
 | [manim-physics](https://github.com/Matheart/manim-physics) | 插件 / 扩展 | [Manim 社区版](https://github.com/ManimCommunity/manim) | 物理模拟扩展 |
 | [remocn](https://github.com/Remocn/remocn) | 插件 / 扩展 | [Remotion](https://github.com/remotion-dev/remotion) | 社区动画和转场组件库 |
-| [VRM Add-on for Blender](https://github.com/saturday06/VRM-Addon-for-Blender) | 插件 / 扩展 | [Blender](https://github.com/blender/blender) | Blender 的 VRM 插件 |
 | [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 插件 / 扩展 | [three.js](https://github.com/mrdoob/three.js) | three.js 程序化地形 |
 
 ### 官方模板 / 技能
@@ -1427,7 +1419,6 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Excalidraw Animate](https://github.com/dai-shi/excalidraw-animate) | 常搭配 | [Rough.js](https://github.com/rough-stuff/rough) | Excalidraw 的手绘线条由 Rough.js 绘制 |
 | [Kalidokit](https://github.com/yeemachine/kalidokit) | 常搭配 | [three-vrm](https://github.com/pixiv/three-vrm) | 用摄像头动作驱动 VRM 角色 |
 | [Kalidokit](https://github.com/yeemachine/kalidokit) | 常搭配 | [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) | 用摄像头动作驱动 Live2D 角色 |
-| [VRM Add-on for Blender](https://github.com/saturday06/VRM-Addon-for-Blender) | 常搭配 | [three-vrm](https://github.com/pixiv/three-vrm) | 在 Blender 里编辑 VRM，再在 three.js 里播放 |
 | [代码动画画风提示词](https://github.com/XiaoyeCodes/code-animation-prompts) | 常搭配 | [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 画风提示词库，可以配合画风工具箱使用 |
 | [Shader Minifier](https://github.com/laurentlb/shader-minifier) | 常搭配 | [Bonzomatic](https://github.com/Gargaj/Bonzomatic) | Demoscene 着色器常用工具 |
 | [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) | 常搭配 | [WaveFunctionCollapse](https://github.com/mxgmn/WaveFunctionCollapse) | 都是程序化生成的基础工具 |
@@ -1467,7 +1458,7 @@ A curated list of open-source tools for making animations and music videos **wit
 ## 全部项目
 
 <details>
-<summary>展开全部 318 个项目（按星数排序）</summary>
+<summary>展开全部 315 个项目（按星数排序）</summary>
 
 | 项目 | 星数 | 画风 | 状态 |
 | --- | ---: | --- | :---: |
@@ -1499,7 +1490,6 @@ A curated list of open-source tools for making animations and music videos **wit
 | [p5.js](https://github.com/processing/p5.js) | 24.3k | [生成艺术 · 几何](#gen)、[粒子 · 流体 · 物理](#particle)、[音乐可视化](#audio) | 🟢 |
 | [Matplotlib](https://github.com/matplotlib/matplotlib) | 23.4k | [数据可视化动画](#data) | 🟢 |
 | [Magic UI](https://github.com/magicuidesign/magicui) | 23.1k | [扁平 MG 动效](#mg)、[动态文字 · 歌词](#type) | 🟢 |
-| [Blender](https://github.com/blender/blender) | 21.6k | [3D 渲染](#3d)、[手绘 · 白板 · 水彩](#hand) | 🟢 |
 | [Rough.js](https://github.com/rough-stuff/rough) | 21.3k | [手绘 · 白板 · 水彩](#hand) | ⚪ |
 | [VHS](https://github.com/charmbracelet/vhs) | 21.3k | [代码演示风](#code)、[ASCII · 终端](#ascii) | 🟢 |
 | [brag](https://github.com/latent-spaces/brag) | 20.3k | [Claude / Opus 写代码出片](#agent)、[扁平 MG 动效](#mg) | 🟢 |
@@ -1641,7 +1631,6 @@ A curated list of open-source tools for making animations and music videos **wit
 | [ReelMimic](https://github.com/edenfunf/reelmimic) | 1.8k | [Claude / Opus 写代码出片](#agent)、[短视频 · 字幕 · 快剪](#short) | 🟢 |
 | [Animotion](https://github.com/animotionjs/animotion) | 1.8k | [代码演示风](#code)、[扁平 MG 动效](#mg) | 🟢 |
 | [Splitting](https://github.com/shshaw/Splitting) | 1.8k | [动态文字 · 歌词](#type) | ⚪ |
-| [VRM Add-on for Blender](https://github.com/saturday06/VRM-Addon-for-Blender) | 1.7k | [二次元 · MMD · VRM](#anime)、[3D 渲染](#3d) | 🟢 |
 | [Meyda](https://github.com/meyda/meyda) | 1.7k | [音乐可视化](#audio) | ⚪ |
 | [remocn](https://github.com/Remocn/remocn) | 1.7k | [扁平 MG 动效](#mg)、[短视频 · 字幕 · 快剪](#short) | 🟢 |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | [抖动 · 1-bit](#dither)、[着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | 🟡 |
@@ -1652,7 +1641,6 @@ A curated list of open-source tools for making animations and music videos **wit
 | [MathBox](https://github.com/unconed/mathbox) | 1.5k | [数学讲解风](#math)、[3D 渲染](#3d) | ⚪ |
 | [Bonzomatic](https://github.com/Gargaj/Bonzomatic) | 1.5k | [着色器 · 迷幻光影](#shader)、[Live Coding · VJ](#live)、[Demoscene 演示场景](#demoscene) | 🟡 |
 | [Musializer](https://github.com/tsoding/musializer) | 1.5k | [音乐可视化](#audio) | 🟢 |
-| [Goo Engine](https://github.com/dillongoostudios/goo-engine) | 1.5k | [二次元 · MMD · VRM](#anime)、[3D 渲染](#3d) | 🟢 |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | [程序化生成 · 波函数坍缩](#procgen)、[等距 · 体素](#iso)、[3D 渲染](#3d) | 🟢 |
 | [bar_chart_race](https://github.com/dexplo/bar_chart_race) | 1.5k | [数据可视化动画](#data) | ⚪ |
 | [augmented-ui](https://github.com/propjockey/augmented-ui) | 1.4k | [科幻 HUD · 赛博界面](#scifi) | ⚪ |

@@ -220,7 +220,7 @@ def readme():
         f"以及 {agent} 个让 Claude、Opus 等 AI 编程助手[用纯代码出片](#agent)的项目。[项目关系表](#relations)说明了谁基于谁、谁能替换谁。", "",
         '<a name="rules"></a>', "",
         "## 收录标准", "",
-        "- **画面必须由代码绘制或渲染。** 用视频生成、图像生成模型出画面的项目不收；Claude / Opus 写代码出片的项目，调用 Blender 出画面的也不收。个别项目带有可选的生成功能，会在说明里注明。",
+        "- **画面必须由代码绘制或渲染。** 用视频生成、图像生成模型出画面的项目不收，用 Blender 等 3D 软件出画面的也不收。个别项目带有可选的生成功能或 Blender 选项，会在说明里注明。",
         "- **主流画风：** GitHub 星数 1000 以上，或近一年内有更新且星数 200 以上。",
         "- **小众画风区和 Claude / Opus 区：** 门槛放宽到近一年内有更新、星数 50 以上，好让有潜力的新项目早点被看到。",
         "- **已归档（只读）的仓库不收。** 看过但没收的项目和原因记在 [`data/excluded.json`](data/excluded.json)。",
@@ -320,8 +320,8 @@ def readme_en():
         "shaders, pixel art, ASCII, music visualizers, MMD dance videos, ink-wash landscapes, oscilloscope art, plotter drawings and more. "
         "A project that can do several looks appears under each of them.", "",
         "## Rules", "",
-        "- **Frames must be drawn or rendered by code.** Projects that make their pictures with image or video generation models are left out; "
-        "agent projects that render through Blender are left out too. Optional generation features are noted per project.",
+        "- **Frames must be drawn or rendered by code.** Projects that make their pictures with image or video generation models are left out, "
+        "and so are projects that render through Blender or other 3D apps. Optional features of that kind are noted per project.",
         "- **Main styles:** 1,000+ stars, or 200+ stars with a push in the last year.",
         "- **Niche styles and the Claude / Opus section:** 50+ stars with a push in the last year.",
         "- Archived repositories are not listed. Status: 🟢 pushed within 6 months · 🟡 within 2 years · ⚪ older.",

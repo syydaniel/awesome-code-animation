@@ -459,24 +459,6 @@
     "gh_desc": "UI Library for Design Engineers. Animated components and effects you can copy and paste into your apps. Free. Open Source."
   },
   {
-    "repo": "blender/blender",
-    "name": "Blender",
-    "tags": [
-      "3d",
-      "hand"
-    ],
-    "lang": "Python API",
-    "use": "MV · 3D 动画",
-    "desc": "开源 3D 软件，Python API 可以程序化生成场景和动画；Grease Pencil 能做 2D 手绘动画。",
-    "note": "GitHub 上是镜像，开发主站在 projects.blender.org。",
-    "license": "NOASSERTION",
-    "license_display": "GPL",
-    "stars": 21631,
-    "pushed_at": "2026-11-04",
-    "archived": false,
-    "gh_desc": "Official mirror of Blender"
-  },
-  {
     "repo": "rough-stuff/rough",
     "name": "Rough.js",
     "tags": [
@@ -2736,22 +2718,6 @@
     "gh_desc": "JavaScript microlibrary to split an element by words, characters, children and more, populated with CSS variables!"
   },
   {
-    "repo": "saturday06/VRM-Addon-for-Blender",
-    "name": "VRM Add-on for Blender",
-    "tags": [
-      "anime",
-      "3d"
-    ],
-    "lang": "Python",
-    "use": "二次元 MV",
-    "desc": "在 Blender 里导入、编辑、导出 VRM 二次元模型。",
-    "license": "MIT",
-    "stars": 1736,
-    "pushed_at": "2026-11-04",
-    "archived": false,
-    "gh_desc": "VRM Importer, Exporter and Utilities for Blender 2.93 to 5.2"
-  },
-  {
     "repo": "meyda/meyda",
     "name": "Meyda",
     "tags": [
@@ -2914,22 +2880,6 @@
     "pushed_at": "2026-06-27",
     "archived": false,
     "gh_desc": "Music Visualizer"
-  },
-  {
-    "repo": "dillongoostudios/goo-engine",
-    "name": "Goo Engine",
-    "tags": [
-      "anime",
-      "3d"
-    ],
-    "lang": "Blender 定制版",
-    "use": "二次元 3D 动画",
-    "desc": "专做动漫画风的 Blender 定制版，卡通着色控制更细。",
-    "license": "NOASSERTION",
-    "stars": 1479,
-    "pushed_at": "2026-09-15",
-    "archived": false,
-    "gh_desc": "Custom build of blender with some extra NPR features."
   },
   {
     "repo": "scallyw4g/bonsai",

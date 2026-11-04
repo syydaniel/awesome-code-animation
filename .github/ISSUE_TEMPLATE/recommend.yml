@@ -62,7 +62,7 @@ body:
     attributes:
       label: 收录标准
       options:
-        - label: 画面由代码绘制或渲染，不依赖视频或图像生成模型（Claude / Opus 区也不调用 Blender 出画面）
+        - label: 画面由代码绘制或渲染，不依赖视频或图像生成模型，也不靠 Blender 等 3D 软件出画面
           required: true
         - label: 星数 1000 以上，或近一年内有更新且星数 200 以上（小众画风和 Claude / Opus 区：近一年内有更新且星数 50 以上）
           required: false
