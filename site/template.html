@@ -148,6 +148,97 @@ tbody tr:hover td { background: color-mix(in srgb, var(--chip) 45%, transparent)
 .rel-more { margin-top: 10px; }
 .rel-more button { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 6px 14px; cursor: pointer; }
 
+/* relationship graph — same materials as the atlas: dot-grid sheet, white cards, serif names, mono counts */
+.graph-tools { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin-bottom: 12px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.seg button { border: 0; background: none; padding: 7px 14px; cursor: pointer; font-size: 14px; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.graph-search { flex: 1 1 200px; min-width: 0; max-width: 320px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.graph-types { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.graph-types .chip { display: inline-flex; align-items: center; gap: 6px; }
+.graph-types .sym { font-family: var(--font-mono); font-size: 12px; opacity: .7; }
+.graph-types .chip[aria-pressed="true"] { background: var(--surface); color: var(--accent); border-color: var(--accent); }
+.graph-types .chip[aria-pressed="false"] { color: var(--muted); opacity: .6; }
+.graph-shell { display: grid; grid-template-columns: minmax(0, 1fr) 300px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); overflow: hidden; }
+.graph-stage { position: relative; min-width: 0; height: 640px; background-color: var(--bg); background-image: radial-gradient(var(--line) 1px, transparent 1.2px); background-size: 18px 18px; }
+.graph-stage svg { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; user-select: none; }
+.graph-stage svg:active { cursor: grabbing; }
+.graph-panel { border-left: 1px solid var(--line); padding: 16px; overflow-y: auto; max-height: 640px; display: flex; flex-direction: column; gap: 12px; min-width: 0; font-size: 14px; }
+.graph-panel h3 { margin: 0; font-size: 20px; font-family: var(--font-display); font-weight: 700; }
+.graph-panel .gp-sub { color: var(--muted); font-size: 12px; font-family: var(--font-mono); }
+.graph-panel .gp-desc { margin: 0; }
+.graph-panel .gp-group { display: flex; flex-direction: column; gap: 4px; }
+.graph-panel .gp-k { font-size: 12px; color: var(--muted); letter-spacing: .06em; }
+.graph-panel .gp-v { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.graph-panel .gp-v button, .graph-panel .gp-fam button, .graph-panel .gp-chain button { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font-weight: 600; text-align: left; font-size: 14px; }
+.graph-panel button:hover { text-decoration: underline; }
+.graph-panel .gp-chain { font-size: 13.5px; line-height: 1.8; }
+.graph-panel .gp-chain .arrow { color: var(--muted); margin: 0 6px; font-family: var(--font-mono); }
+.graph-panel .gp-actions { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 4px; }
+.graph-panel .gp-actions button, .graph-panel .gp-actions a { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 6px 12px; cursor: pointer; font-size: 13px; color: var(--ink); font-weight: 400; }
+.graph-panel .gp-actions a:hover, .graph-panel .gp-actions button:hover { text-decoration: none; border-color: var(--muted); }
+.graph-panel .gp-fam { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; align-items: baseline; }
+.graph-panel .gp-fam span { color: var(--muted); font-family: var(--font-mono); font-size: 12px; text-align: right; font-variant-numeric: tabular-nums; }
+.graph-panel .gp-note { margin: 0; color: var(--muted); font-size: 12.5px; }
+.graph-zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 1; }
+.graph-zoom button { width: 32px; height: 32px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 6px; cursor: pointer; font-size: 16px; line-height: 1; }
+.graph-hint { position: absolute; left: 10px; top: 10px; font-size: 12px; color: var(--muted); background: var(--surface); border: 1px solid var(--line); padding: 3px 8px; border-radius: 6px; pointer-events: none; max-width: calc(100% - 70px); z-index: 1; }
+.graph-tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font-size: 12px; padding: 6px 9px; border-radius: 6px; max-width: 260px; line-height: 1.5; z-index: 2; }
+.graph-fallback { padding: 40px 16px; text-align: center; color: var(--muted); }
+
+.g-link { fill: none; stroke: var(--muted); stroke-width: 1; opacity: .42; }
+.g-link.sym { stroke-dasharray: 1.5 3.5; opacity: .32; }
+.g-link.hot { stroke: var(--accent); opacity: .95; stroke-width: 1.8; }
+.g-link.sym.hot { stroke-dasharray: 3 3; }
+.g-arrow { fill: var(--muted); }
+.g-arrow.hot { fill: var(--accent); }
+.g-node { cursor: pointer; }
+.g-node circle { stroke: var(--bg); stroke-width: 2; }
+.g-node:focus-visible { outline: none; }
+.g-node:focus-visible circle, .g-node.sel circle { stroke: var(--ink); stroke-width: 2.5; }
+.g-label { fill: var(--ink); paint-order: stroke; stroke: var(--bg); stroke-linejoin: round; pointer-events: none; font-family: var(--font-body); }
+.g-label.big { font-family: var(--font-display); font-weight: 700; }
+.g-label.mid { font-weight: 600; }
+.g-node.dim, .g-label.dim, .g-link.dim { opacity: .08; }
+
+.fam-wall { position: absolute; inset: 0; overflow-y: auto; padding: 52px 14px 14px; }
+.fam-cols { column-width: 250px; column-gap: 12px; }
+.fam-wall[hidden] { display: none !important; }
+.fam-card { break-inside: avoid; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px 12px; margin: 0 0 12px; display: flex; flex-direction: column; gap: 6px; }
+.fam-card.sel { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+.fam-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.fam-root { background: none; border: 0; padding: 0; cursor: pointer; text-align: left; font-family: var(--font-display); font-weight: 700; font-size: 17px; color: var(--ink); display: inline-flex; align-items: center; gap: 7px; min-width: 0; flex: 1 1 auto; overflow-wrap: anywhere; }
+.fam-root:hover { color: var(--accent); }
+.fam-ct { font-family: var(--font-mono); font-size: 12px; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.fam-meta { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); }
+.fam-tree, .fam-tree ul { list-style: none; margin: 0; padding: 0; }
+.fam-tree { margin-top: 2px; }
+.fam-tree ul { margin-left: 6px; }
+.fam-tree li { position: relative; padding-left: 16px; }
+.fam-tree li::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; border-left: 1px solid var(--line); }
+.fam-tree li:last-child::before { bottom: auto; height: .95em; }
+.fam-tree li::after { content: ""; position: absolute; left: 0; top: .95em; width: 11px; border-top: 1px solid var(--line); }
+.fam-row { display: flex; align-items: baseline; gap: 6px; padding: 2px 0; min-width: 0; }
+.fam-row button { background: none; border: 0; padding: 1px 6px 1px 0; cursor: pointer; text-align: left; color: var(--ink); font-size: 13.5px; display: inline-flex; align-items: center; gap: 6px; min-width: 0; border-radius: 4px; }
+.fam-row button:hover .nm { color: var(--accent); text-decoration: underline; }
+.fam-row .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fam-row .rt { font-family: var(--font-mono); font-size: 11px; color: var(--muted); white-space: nowrap; }
+.fam-card .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.fam-root .dot { width: 10px; height: 10px; }
+.fam-wall.focus .fam-row, .fam-wall.focus .fam-head { opacity: .32; }
+.fam-wall.focus .fam-row.on, .fam-wall.focus .fam-head.on { opacity: 1; }
+.fam-row.cur button { background: var(--accent); color: var(--accent-ink); padding-left: 6px; }
+.fam-row.cur button .nm { color: var(--accent-ink); }
+.fam-head.cur .fam-root { color: var(--accent); }
+
+@media (max-width: 760px) {
+  .graph-shell { grid-template-columns: minmax(0, 1fr); }
+  .graph-stage { height: 480px; }
+  .graph-panel { border-left: 0; border-top: 1px solid var(--line); max-height: none; }
+  .fam-cols { column-width: 220px; }
+}
+
 footer { font-size: 13px; color: var(--muted); display: flex; flex-direction: column; gap: 6px; max-width: 80ch; }
 footer p { margin: 0; }
 
@@ -184,7 +275,7 @@ footer p { margin: 0; }
     <h1>代码画风图鉴</h1>
     <p class="lede">按画风整理的代码动画、代码做 MV 的开源项目。画面都由代码绘制或渲染，不收用视频、图像生成模型出画面的项目。一个项目常能做几种画风，所以会同时出现在几个画风里；点画风卡片就能筛出对应项目。</p>
     <div class="stats" id="stats"></div>
-    <nav class="nav" aria-label="页面目录"><a href="#styles-sec">画风索引</a><a href="#niche-sec">小众画风区</a><a href="#table-sec" data-zone-link="agent">Claude / Opus 写代码出片</a><a href="#rel-sec">项目关系表</a><a href="#table-sec">项目总表</a></nav>
+    <nav class="nav" aria-label="页面目录"><a href="#styles-sec">画风索引</a><a href="#niche-sec">小众画风区</a><a href="#graph-sec">关系图谱</a><a href="#rel-sec">项目关系表</a><a href="#table-sec">项目总表</a></nav>
     <a class="repo-link" href="__REPO_URL__" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>在 GitHub 上查看和推荐项目</a>
   </header>
 
@@ -200,9 +291,35 @@ footer p { margin: 0; }
 
   <section aria-labelledby="niche-h" id="niche-sec">
     <div class="sec-head"><h2 id="niche-h">小众画风区</h2><span class="hint" id="niche-count"></span></div>
-    <p class="zone-note">用的人不多、但辨识度很高的画风。门槛放宽到近一年内有更新、星数 50 以上，有潜力的新项目也能早点被看到。</p>
+    <p class="zone-note">用的人不多、但辨识度很高的画风。门槛放宽到近一年内有更新、星数 20 以上，有意思的小项目也能被看到。</p>
     <div class="styles" id="niche"></div>
   </section>
+
+  <section aria-labelledby="graph-h" id="graph-sec">
+    <div class="sec-head"><h2 id="graph-h">关系图谱</h2><span class="hint" id="graph-count"></span></div>
+    <p class="zone-note">有关系的项目连在一起，箭头从源头指向从它演化出来的项目，点线是同类、常搭配和同一作者。「关系网」看项目怎么聚成家族，「演化树」把每个家族排成一张卡片。点任意项目看它的完整演化链。</p>
+    <div class="graph-tools">
+      <div class="seg" role="group" aria-label="布局">
+        <button type="button" data-layout="force" aria-pressed="true">关系网</button>
+        <button type="button" data-layout="tree" aria-pressed="false">演化树</button>
+      </div>
+      <input class="graph-search" id="graph-q" type="search" placeholder="在图里找项目，例如 three.js" aria-label="在图谱里搜索项目">
+    </div>
+    <div class="graph-types" id="graph-types"></div>
+    <div class="graph-shell">
+      <div class="graph-stage" id="graph-stage">
+        <div class="graph-hint" id="graph-hint">滚轮缩放 · 拖动平移 · 点节点看演化链</div>
+        <div class="graph-zoom">
+          <button type="button" id="gz-in" aria-label="放大">+</button>
+          <button type="button" id="gz-out" aria-label="缩小">−</button>
+          <button type="button" id="gz-fit" aria-label="复位视图">⤢</button>
+        </div>
+        <div class="graph-tip" id="graph-tip" hidden></div>
+      </div>
+      <aside class="graph-panel" id="graph-panel" aria-live="polite"></aside>
+    </div>
+  </section>
+
 
   <section aria-labelledby="table-h" id="table-sec">
     <div class="sec-head"><h2 id="table-h">项目总表</h2></div>
@@ -212,7 +329,6 @@ footer p { margin: 0; }
         <option value="all">全部分区</option>
         <option value="main">主流画风</option>
         <option value="niche">小众画风区</option>
-        <option value="agent">Claude / Opus 写代码出片</option>
       </select>
       <select id="sort" aria-label="排序">
         <option value="stars">按星数</option>
@@ -247,12 +363,13 @@ footer p { margin: 0; }
   </section>
 
   <footer>
-    <p>收录标准：画面由代码绘制或渲染，不用视频或图像生成模型，也不靠 Blender 等 3D 软件出画面。主流画风要求星数 1000 以上，或近一年仍在更新且星数 200 以上；小众画风区和 Claude / Opus 区放宽到近一年内有更新、星数 50 以上。已归档的仓库不收。</p>
+    <p>收录标准：画面由代码绘制或渲染，不用视频或图像生成模型，也不靠 Blender 等 3D 软件出画面。主流画风要求星数 1000 以上，或近一年仍在更新且星数 200 以上；小众画风区放宽到近一年内有更新、星数 20 以上；让 Claude / Opus 等 AI 编程助手写代码出片的项目放宽到 50 以上，照样按画风归类。已归档的仓库不收。</p>
     <p>星数、最近提交时间和许可证来自 GitHub，更新于 __DATE__。状态按最近一次推送计算：半年内为「活跃」，两年内为「放缓」，超过两年为「停更」。</p>
     <p>许可证写「见仓库」的，是 GitHub 没能自动识别的情况。打算商用前，请到仓库里核对许可证原文。</p>
   </footer>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script>
 const DATA = __PROJECTS__;
 const STYLES = __STYLES__;
@@ -298,7 +415,7 @@ function relHtml(r) {
 document.getElementById('stats').innerHTML =
   `<div><b>${DATA.length}</b><span>个项目</span></div>` +
   `<div><b>${MAIN.length}+${NICHE.length}</b><span>种画风（主流 + 小众）</span></div>` +
-  `<div><b>${DATA.filter(p => p.tags.includes('agent')).length}</b><span>个 Claude / Opus 写代码出片</span></div>` +
+  `<div><b>${DATA.filter(p => status(p)[0] === 'ok').length}</b><span>个半年内仍在更新</span></div>` +
   `<div><b>${RELS.length}</b><span>条项目关系</span></div>`;
 
 document.getElementById('picks').innerHTML = PICKS.map(pk =>
@@ -337,7 +454,6 @@ function render() {
     if (state.style && !p.tags.includes(state.style)) return false;
     if (state.zone === 'main' && !inMain(p)) return false;
     if (state.zone === 'niche' && !inNiche(p)) return false;
-    if (state.zone === 'agent' && !p.tags.includes('agent')) return false;
     if (state.active && status(p)[0] !== 'ok') return false;
     return matches(p, q);
   });
@@ -811,6 +927,108 @@ const SW = {
       c.fillStyle = `hsl(${i * 22}, 90%, 65%)`; c.fillText(txt[i], x, y);
     }
     c.fillStyle = '#FFFFFF'; const r = rng(41); for (let i = 0; i < 30; i++) c.fillRect(r() * W, 20 + r() * 40, 1, 1);
+  },
+  sand(c) {
+    fill(c, '#14161D');
+    const s = 4, cols = W / s, rows = H / s, r = rng(51);
+    const hgt = []; for (let i = 0; i < cols; i++) hgt[i] = 6 + 7 * Math.exp(-((i - 22) ** 2) / 90) + 9 * Math.exp(-((i - 44) ** 2) / 60) + 3 * Math.sin(i * .3) + r() * 1.5;
+    for (let i = 0; i < cols; i++) for (let j = 0; j < rows; j++) {
+      const depth = rows - j;
+      if (depth < hgt[i]) {
+        const layer = Math.floor((depth + Math.sin(i * .2) * 1.5) / 3) % 3;
+        c.fillStyle = ['#E8C170', '#D9A441', '#C98A2E'][layer]; if (r() < .12) c.fillStyle = '#F3D9A0';
+        c.fillRect(i * s, j * s, s, s);
+      }
+    }
+    for (let i = 0; i < 16; i++) { if (i > 4 && i < 12) continue; }
+    for (let k = 0; k < 40; k++) { const i = 50 + Math.floor(r() * 4), j = Math.floor(r() * (rows - 12)); c.fillStyle = '#E8C170'; c.fillRect(i * s, j * s, s, s); }
+    for (let i = 0; i < 12; i++) for (let j = rows - 5; j < rows; j++) if (j > rows - 2 - Math.sin(i) ) { c.fillStyle = '#3E7FB0'; c.fillRect((4 + i) * s, j * s, s, s); }
+    for (let k = 0; k < 18; k++) { const i = 30 + Math.floor(r() * 6), j = 6 + Math.floor(r() * 5); c.fillStyle = r() < .5 ? '#FF6A2B' : '#FFC23D'; c.fillRect(i * s, j * s, s, s); }
+  },
+  flow(c) {
+    fill(c, '#0C1520');
+    const r = rng(61); c.lineWidth = 1.1; c.lineCap = 'round';
+    for (let i = 0; i < 260; i++) {
+      let x = r() * W, y = r() * H; const life = 16 + r() * 22;
+      c.strokeStyle = `rgba(${120 + r() * 80}, ${200 + r() * 55}, 255, ${.25 + r() * .5})`;
+      c.beginPath(); c.moveTo(x, y);
+      for (let s = 0; s < life; s++) {
+        const a = Math.sin(y * .035) * 1.2 + Math.cos(x * .022 + y * .01) * .9 + .3;
+        x += Math.cos(a) * 2.2; y += Math.sin(a) * 2.2; c.lineTo(x, y);
+      }
+      c.stroke();
+    }
+  },
+  vhs(c) {
+    const g = c.createLinearGradient(0, 0, W, H); g.addColorStop(0, '#2A1B3D'); g.addColorStop(1, '#1B2A3D'); c.fillStyle = g; c.fillRect(0, 0, W, H);
+    c.fillStyle = '#F2B5D4'; c.beginPath(); c.arc(120, 52, 26, 0, 7); c.fill();
+    c.globalCompositeOperation = 'lighter';
+    c.fillStyle = 'rgba(255,60,90,.35)'; c.beginPath(); c.arc(125, 52, 26, 0, 7); c.fill();
+    c.fillStyle = 'rgba(60,160,255,.35)'; c.beginPath(); c.arc(115, 52, 26, 0, 7); c.fill();
+    c.globalCompositeOperation = 'source-over';
+    const cv = c.canvas, k = cv.width / W, r = rng(71);
+    for (let i = 0; i < 5; i++) { const y = Math.floor((30 + r() * 50) * k), h = Math.floor((1 + r() * 3) * k), dx = Math.floor((r() - .5) * 22 * k); c.putImageData(c.getImageData(0, y, cv.width, h), dx, y); }
+    for (let y = 0; y < H; y += 2) { c.fillStyle = 'rgba(0,0,0,.18)'; c.fillRect(0, y, W, 1); }
+    for (let i = 0; i < 260; i++) { c.fillStyle = `rgba(255,255,255,${r() * .25})`; c.fillRect(r() * W, r() * H, 1.4, .8); }
+    c.fillStyle = 'rgba(255,255,255,.85)'; c.font = '500 10px "IBM Plex Mono", monospace'; c.textBaseline = 'top';
+    c.fillText('▶ PLAY', 10, 8); c.fillText('SP 0:12:47', 176, 8);
+    c.fillStyle = 'rgba(255,255,255,.12)'; c.fillRect(0, 80, W, 6);
+  },
+  origami(c) {
+    fill(c, '#F1E8DA');
+    const tri = (pts, col) => { c.fillStyle = col; c.beginPath(); pts.forEach(([x, y], i) => i ? c.lineTo(x, y) : c.moveTo(x, y)); c.closePath(); c.fill(); };
+    tri([[70, 70], [120, 20], [120, 70]], '#E9A35D');
+    tri([[120, 20], [170, 70], [120, 70]], '#D2803A');
+    tri([[70, 70], [120, 70], [96, 86]], '#B8692B');
+    tri([[120, 70], [170, 70], [144, 86]], '#C77D2E');
+    tri([[168, 70], [196, 40], [182, 74]], '#E9A35D');
+    tri([[72, 70], [44, 48], [60, 74]], '#D2803A');
+    c.strokeStyle = 'rgba(80,50,20,.35)'; c.lineWidth = 1; c.setLineDash([3, 3]);
+    c.beginPath(); c.moveTo(120, 20); c.lineTo(120, 86); c.moveTo(70, 70); c.lineTo(170, 70); c.stroke(); c.setLineDash([]);
+    c.strokeStyle = 'rgba(80,50,20,.2)'; c.strokeRect(200.5, 10.5, 28, 28); c.beginPath(); c.moveTo(200, 10); c.lineTo(229, 39); c.moveTo(229, 10); c.lineTo(200, 39); c.stroke();
+  },
+  geo(c) {
+    fill(c, '#3A4F86');
+    const r = rng(81), pts = [];
+    for (let i = 0; i < 46; i++) pts.push([r() * W, r() * H]);
+    [[0, 0], [W, 0], [0, H], [W, H], [W / 2, 0], [W / 2, H], [0, H / 2], [W, H / 2]].forEach(p => pts.push(p));
+    const col = (x, y) => { const d = Math.hypot(x - 150, y - 40) / 160; return `hsl(${215 + d * 60}, ${55 - d * 20}%, ${62 - d * 34}%)`; };
+    for (let i = 0; i < pts.length; i++) {
+      const [x0, y0] = pts[i];
+      const near = pts.map((p, j) => [Math.hypot(p[0] - x0, p[1] - y0), j]).filter(([, j]) => j !== i).sort((a, b) => a[0] - b[0]).slice(0, 3);
+      for (let k = 0; k < 2; k++) {
+        const [, a] = near[k], [, b] = near[k + 1];
+        const cx = (x0 + pts[a][0] + pts[b][0]) / 3, cy = (y0 + pts[a][1] + pts[b][1]) / 3;
+        c.fillStyle = col(cx, cy); c.beginPath(); c.moveTo(x0, y0); c.lineTo(pts[a][0], pts[a][1]); c.lineTo(pts[b][0], pts[b][1]); c.closePath(); c.fill();
+      }
+    }
+    c.strokeStyle = 'rgba(255,255,255,.08)'; c.lineWidth = .6;
+    for (let i = 0; i < pts.length; i++) { const [x0, y0] = pts[i]; pts.map((p, j) => [Math.hypot(p[0] - x0, p[1] - y0), j]).sort((a, b) => a[0] - b[0]).slice(1, 3).forEach(([, j]) => { c.beginPath(); c.moveTo(x0, y0); c.lineTo(pts[j][0], pts[j][1]); c.stroke(); }); }
+  },
+  raytrace(c) {
+    const g = c.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#DCD6CC'); g.addColorStop(1, '#B8B0A2'); c.fillStyle = g; c.fillRect(0, 0, W, H);
+    c.fillStyle = 'rgba(60,50,40,.22)'; c.beginPath(); c.ellipse(96, 84, 34, 7, 0, 0, 7); c.fill(); c.beginPath(); c.ellipse(166, 86, 24, 5, 0, 0, 7); c.fill();
+    const sph = (x, y, rad, base, hi) => { const s = c.createRadialGradient(x - rad * .4, y - rad * .45, rad * .05, x, y, rad); s.addColorStop(0, hi); s.addColorStop(.35, base); s.addColorStop(1, 'rgba(20,18,16,1)'); c.fillStyle = s; c.beginPath(); c.arc(x, y, rad, 0, 7); c.fill(); };
+    sph(96, 52, 32, '#B04A3A', '#FFE9E0');
+    sph(166, 64, 22, '#C9B26A', '#FFFBE8');
+    const glass = c.createRadialGradient(56, 70, 2, 60, 72, 16); glass.addColorStop(0, 'rgba(255,255,255,.9)'); glass.addColorStop(.6, 'rgba(160,200,220,.35)'); glass.addColorStop(1, 'rgba(90,120,140,.55)');
+    c.fillStyle = glass; c.beginPath(); c.arc(56, 72, 14, 0, 7); c.fill();
+    c.fillStyle = 'rgba(255,250,230,.55)'; c.beginPath(); c.ellipse(60, 90, 8, 2, 0, 0, 7); c.fill();
+  },
+  space(c) {
+    fill(c, '#070818');
+    const r = rng(91);
+    for (let i = 0; i < 160; i++) { c.fillStyle = `rgba(255,255,255,${.2 + r() * .7})`; const s = r() < .08 ? 1.6 : .8; c.fillRect(r() * W, r() * H, s, s); }
+    c.globalCompositeOperation = 'lighter';
+    for (let i = 0; i < 700; i++) {
+      const arm = i % 2, t = r() * 3.6, rad = 4 + t * 16, a = t * 1.3 + arm * Math.PI + (r() - .5) * .5;
+      const x = 160 + Math.cos(a) * rad * 1.3, y = 46 + Math.sin(a) * rad * .5;
+      c.fillStyle = `hsla(${230 + t * 25}, 80%, ${60 + r() * 25}%, ${.2 + r() * .3})`; c.fillRect(x, y, 1.2, 1.2);
+    }
+    const core = c.createRadialGradient(160, 46, 0, 160, 46, 18); core.addColorStop(0, 'rgba(255,240,210,.9)'); core.addColorStop(1, 'rgba(255,200,150,0)'); c.fillStyle = core; c.fillRect(130, 20, 60, 52);
+    c.globalCompositeOperation = 'source-over';
+    const pl = c.createRadialGradient(48, 56, 2, 54, 62, 24); pl.addColorStop(0, '#9FC3FF'); pl.addColorStop(1, '#1D2A6B'); c.fillStyle = pl; c.beginPath(); c.arc(54, 62, 22, 0, 7); c.fill();
+    c.strokeStyle = 'rgba(200,210,255,.7)'; c.lineWidth = 1.5; c.beginPath(); c.ellipse(54, 62, 36, 7, -.25, 0, 7); c.stroke();
   }
 };
 function drawSwatches() {
@@ -822,4 +1040,341 @@ function drawSwatches() {
 }
 drawSwatches();
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawSwatches).catch(() => {});
+
+/* ---------- relationship graph ---------- */
+(function initGraph() {
+  const stage = document.getElementById('graph-stage');
+  const panel = document.getElementById('graph-panel');
+  if (!window.d3) {
+    stage.innerHTML = '<p class="graph-fallback">关系图谱需要加载 D3 图形库，当前网络没加载成功。下面的项目关系表包含同样的信息。</p>';
+    panel.hidden = true; return;
+  }
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const DIRECTED = new Set(['fork', 'built_on', 'plugin', 'official', 'uses', 'data']);
+  const SYM_NAME = { alt: '同类可替换', pair: '常搭配', author: '同一作者' };
+  const CHILD_LABEL = { fork: '分叉', built_on: '基于', plugin: '插件', official: '官方', uses: '渲染用', data: '用数据' };
+
+  // ---------- data ----------
+  const ids = new Set(); RELS.forEach(r => { ids.add(r.from); ids.add(r.to); });
+  const nodes = [...ids].map(id => {
+    const p = BYREPO[id];
+    return { id, p, r: Math.max(4, Math.min(19, Math.sqrt(p.stars) / 9.5)), color: SMAP[p.tags[0]].color };
+  });
+  const N = Object.fromEntries(nodes.map(n => [n.id, n]));
+  // 有方向的关系：箭头从源头指向衍生项目
+  const links = RELS.map(r => DIRECTED.has(r.type)
+    ? { s: r.to, t: r.from, type: r.type, note: r.note || '', dir: true, rel: r }
+    : { s: r.from, t: r.to, type: r.type, note: r.note || '', dir: false, rel: r });
+  const parents = {}, children = {}, sym = {};
+  links.forEach(l => {
+    if (l.dir) { (parents[l.t] = parents[l.t] || []).push(l); (children[l.s] = children[l.s] || []).push(l); }
+    else { (sym[l.s] = sym[l.s] || []).push({ other: l.t, l }); (sym[l.t] = sym[l.t] || []).push({ other: l.s, l }); }
+  });
+  const gen = {}, onStack = new Set();
+  const genOf = id => {
+    if (gen[id] !== undefined) return gen[id];
+    if (onStack.has(id)) return 0;
+    onStack.add(id);
+    const ps = parents[id] || [];
+    gen[id] = ps.length ? Math.max(...ps.map(l => genOf(l.s))) + 1 : 0;
+    onStack.delete(id); return gen[id];
+  };
+  const collect = (start, map, key) => { const out = new Map(); const q = [[start, 0]]; while (q.length) { const [id, d] = q.shift(); (map[id] || []).forEach(l => { const o = l[key]; if (!out.has(o) && o !== start) { out.set(o, d + 1); q.push([o, d + 1]); } }); } return out; };
+  const ancestorsOf = id => collect(id, parents, 's');
+  const descendantsOf = id => collect(id, children, 't');
+  nodes.forEach(n => {
+    n.gen = genOf(n.id); n.inDir = !!(parents[n.id] || children[n.id]);
+    n.deg = (parents[n.id] || []).length + (children[n.id] || []).length + (sym[n.id] || []).length;
+    n.desc = descendantsOf(n.id).size;
+  });
+  const roots = nodes.filter(n => n.gen === 0 && n.desc > 0).sort((a, b) => b.desc - a.desc || b.p.stars - a.p.stars);
+  document.getElementById('graph-count').textContent = `${nodes.length} 个项目 · ${links.length} 条关系 · ${roots.length} 个演化家族`;
+
+  const state = { layout: 'force', types: new Set(RELTYPES.map(t => t.key)), sel: null, q: '' };
+
+  // ---------- relation-type chips ----------
+  const typesEl = document.getElementById('graph-types');
+  function renderTypeChips() {
+    typesEl.innerHTML = RELTYPES.map(t => {
+      const n = links.filter(l => l.type === t.key).length;
+      return n ? `<button class="chip" data-gtype="${t.key}" aria-pressed="${state.types.has(t.key)}" title="${esc(t.desc)}"><span class="sym">${DIRECTED.has(t.key) ? '→' : '┄'}</span>${esc(t.name)}<span class="n">${n}</span></button>` : '';
+    }).join('');
+  }
+  renderTypeChips();
+
+  // ---------- force view (SVG) ----------
+  const svg = d3.select(stage).insert('svg', ':first-child').attr('role', 'img').attr('aria-label', '项目关系网');
+  const defs = svg.append('defs');
+  [['arr', 'g-arrow'], ['arr-hot', 'g-arrow hot']].forEach(([id, cls]) => defs.append('marker').attr('id', id)
+    .attr('viewBox', '0 -3.5 7 7').attr('refX', 7).attr('refY', 0).attr('markerWidth', 6).attr('markerHeight', 6).attr('orient', 'auto')
+    .append('path').attr('d', 'M0,-3.5L7,0L0,3.5Z').attr('class', cls));
+  const root = svg.append('g');
+  const linkSel = root.append('g').selectAll('path').data(links).join('path')
+    .attr('class', d => 'g-link' + (d.dir ? '' : ' sym')).attr('marker-end', d => d.dir ? 'url(#arr)' : null);
+  const nodeSel = root.append('g').selectAll('g').data(nodes, d => d.id).join('g')
+    .attr('class', 'g-node').attr('tabindex', 0).attr('role', 'button')
+    .attr('aria-label', d => `${d.p.name}，${fmtStars(d.p.stars)} 星`);
+  nodeSel.append('circle').attr('r', d => d.r).attr('fill', d => d.color);
+  const labelSel = root.append('g').selectAll('text').data(nodes, d => d.id).join('text')
+    .attr('class', d => 'g-label' + (d.r >= 13 || d.desc >= 4 ? ' big' : d.r >= 9 || d.deg >= 4 ? ' mid' : ''))
+    .attr('text-anchor', 'middle').text(d => d.p.name);
+  nodes.forEach(n => { n.fs = n.r >= 13 || n.desc >= 4 ? 13.5 : n.r >= 9 || n.deg >= 4 ? 11.5 : 11; n.tw = n.p.name.length * n.fs * 0.62 + 4; });
+  labelSel.each(function (d) { try { d.tw = this.getComputedTextLength() * d.fs / 16 + 4; } catch (e) {} });
+
+  const linkForce = d3.forceLink([]).id(d => d.id).distance(e => e.l.dir ? 46 : 64).strength(e => e.l.dir ? 0.7 : 0.15);
+  const sim = d3.forceSimulation(nodes)
+    .force('link', linkForce)
+    .force('charge', d3.forceManyBody().strength(d => -55 - d.r * 7).distanceMax(380))
+    .force('collide', d3.forceCollide(d => d.r + 5))
+    .force('x', d3.forceX(0).strength(0.05))
+    .force('y', d3.forceY(0).strength(0.07))
+    .stop();
+
+  let zoomK = 1;
+  const zoom = d3.zoom().scaleExtent([0.3, 5]).on('zoom', e => { root.attr('transform', e.transform); zoomK = e.transform.k; sizeLabels(); paintLabels(); });
+  function sizeLabels() {
+    labelSel.style('font-size', d => (d.fs / zoomK) + 'px').style('stroke-width', (3.5 / zoomK) + 'px')
+      .attr('y', d => d.y + d.r + (d.fs + 2) / zoomK);
+  }
+  svg.call(zoom).on('dblclick.zoom', null);
+  const visible = l => state.types.has(l.type);
+
+  function edgePath(l) {
+    const a = N[l.s], b = N[l.t];
+    const dx = b.x - a.x, dy = b.y - a.y, dist = Math.hypot(dx, dy) || 1;
+    const sx = a.x + dx / dist * (a.r + 1), sy = a.y + dy / dist * (a.r + 1);
+    const pad = b.r + (l.dir ? 3 : 1), tx = b.x - dx / dist * pad, ty = b.y - dy / dist * pad;
+    if (l.dir) return `M${sx},${sy}L${tx},${ty}`;
+    const mx = (sx + tx) / 2 - dy * 0.1, my = (sy + ty) / 2 + dx * 0.1;
+    return `M${sx},${sy}Q${mx},${my} ${tx},${ty}`;
+  }
+  function draw() {
+    linkSel.attr('d', edgePath);
+    nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+    labelSel.attr('x', d => d.x).attr('y', d => d.y + d.r + (d.fs + 2) / zoomK);
+  }
+  sim.on('tick', () => { draw(); });
+  sim.on('end.labels', () => paintLabels());
+
+  function fit(animated) {
+    const xs = nodes.map(n => n.x), ys = nodes.map(n => n.y);
+    const x0 = Math.min(...xs) - 40, x1 = Math.max(...xs) + 40, y0 = Math.min(...ys) - 40, y1 = Math.max(...ys) + 40;
+    const w = stage.clientWidth || 800, h = stage.clientHeight || 600;
+    const k = Math.min(2, 0.95 * Math.min(w / (x1 - x0), h / (y1 - y0)));
+    const t = d3.zoomIdentity.translate(w / 2 - k * (x0 + x1) / 2, h / 2 - k * (y0 + y1) / 2 + 8).scale(k);
+    (animated && !reduce ? svg.transition().duration(500) : svg).call(zoom.transform, t);
+  }
+  function settle(animate) {
+    linkForce.links(links.filter(visible).map(l => ({ source: l.s, target: l.t, l })));
+    linkSel.style('display', d => visible(d) ? null : 'none');
+    sim.alpha(1);
+    if (animate && !reduce) { sim.on('end.fit', () => fit(true)); sim.restart(); }
+    else { sim.stop(); for (let i = 0; i < 340; i++) sim.tick(); draw(); fit(false); }
+    sizeLabels(); paintLabels();
+  }
+
+  // ---------- family wall (HTML cards) ----------
+  const wall = document.createElement('div');
+  wall.className = 'fam-wall'; wall.id = 'fam-wall'; wall.hidden = true;
+  stage.appendChild(wall);
+  const primaryParent = id => {
+    const ps = (parents[id] || []).filter(visible).map(l => l).sort((a, b) => N[b.s].gen - N[a.s].gen || N[b.s].p.stars - N[a.s].p.stars);
+    return ps[0];
+  };
+  function renderWall() {
+    const kids = {};
+    nodes.forEach(n => { const l = primaryParent(n.id); if (l) (kids[l.s] = kids[l.s] || []).push(l); });
+    const sub = (id, seen) => (kids[id] || []).sort((a, b) => N[b.t].p.stars - N[a.t].p.stars).map(l => {
+      if (seen.has(l.t)) return '';
+      const nn = N[l.t], more = (parents[l.t] || []).filter(x => x !== l && visible(x)).map(x => BYREPO[x.s].name);
+      const inner = sub(l.t, new Set([...seen, l.t]));
+      return `<li><div class="fam-row" data-row="${esc(l.t)}"><button type="button" data-gsel="${esc(l.t)}"><span class="dot" style="background:${nn.color}"></span><span class="nm">${esc(nn.p.name)}</span></button><span class="rt">${CHILD_LABEL[l.type]}${more.length ? ' · 也基于 ' + esc(more.join('、')) : ''}</span></div>${inner ? `<ul>${inner}</ul>` : ''}</li>`;
+    }).join('');
+    const fams = nodes.filter(n => !primaryParent(n.id) && kids[n.id]).map(n => ({ n, size: descendantsOf(n.id).size }))
+      .sort((a, b) => b.size - a.size || b.n.p.stars - a.n.p.stars);
+    wall.innerHTML = '<div class="fam-cols">' + fams.map(({ n, size }) => `<article class="fam-card" data-fam="${esc(n.id)}">
+      <div class="fam-head" data-row="${esc(n.id)}"><button type="button" class="fam-root" data-gsel="${esc(n.id)}"><span class="dot" style="background:${n.color}"></span>${esc(n.p.name)}</button><span class="fam-ct">${size} 个衍生</span></div>
+      <span class="fam-meta">★ ${fmtStars(n.p.stars)} · ${esc(SMAP[n.p.tags[0]].name)}</span>
+      <ul class="fam-tree">${sub(n.id, new Set([n.id]))}</ul>
+    </article>`).join('') + '</div>';
+    if (!fams.length) wall.innerHTML = '<p class="graph-fallback">当前筛选下没有演化关系。打开「基于」「插件 / 扩展」「用它渲染」等类型试试。</p>';
+    paintWall();
+  }
+
+  // ---------- highlight ----------
+  let hoverId = null;
+  function lineage(id) {
+    const s = new Set([id]);
+    ancestorsOf(id).forEach((_, k) => s.add(k));
+    descendantsOf(id).forEach((_, k) => s.add(k));
+    return s;
+  }
+  function focusSet() {
+    const id = state.sel || hoverId;
+    if (!id) return null;
+    const s = state.sel === id ? lineage(id) : new Set([id, ...(parents[id] || []).map(l => l.s), ...(children[id] || []).map(l => l.t)]);
+    (sym[id] || []).forEach(o => { if (visible(o.l)) s.add(o.other); });
+    return s;
+  }
+  function searchSet() {
+    const q = state.q.trim().toLowerCase();
+    if (!q) return null;
+    return new Set(nodes.filter(n => (n.p.name + ' ' + n.id).toLowerCase().includes(q)).map(n => n.id));
+  }
+  function paintLabels() {
+    const fs = focusSet(), ss = searchSet();
+    const want = d => fs ? fs.has(d.id) : ss ? ss.has(d.id) : true;
+    // 按重要程度依次放标签，和已放下的标签重叠就先不显示（缩放后标签保持同样字号，放大就能看到更多）
+    const order = nodes.filter(want).sort((a, b) => (b.id === state.sel) - (a.id === state.sel) || b.r - a.r || b.deg - a.deg);
+    const placed = [], show = new Set();
+    order.forEach(d => {
+      const w = d.tw / zoomK, h = (d.fs + 3) / zoomK, cx = d.x, top = d.y + d.r + 2 / zoomK;
+      const box = [cx - w / 2, top, cx + w / 2, top + h];
+      if (placed.some(b => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) return;
+      placed.push(box); show.add(d.id);
+    });
+    labelSel.style('opacity', d => show.has(d.id) ? 1 : 0);
+  }
+  function paintForce() {
+    const fs = focusSet(), ss = searchSet(), keep = fs || ss, cur = state.sel || hoverId;
+    nodeSel.classed('dim', d => keep ? !keep.has(d.id) : false).classed('sel', d => d.id === state.sel);
+    linkSel.each(function (d) {
+      let hot = false, dim = false;
+      if (fs) { hot = fs.has(d.s) && fs.has(d.t) && (d.dir || d.s === cur || d.t === cur); dim = !hot; }
+      else if (ss) dim = !(ss.has(d.s) || ss.has(d.t));
+      this.classList.toggle('hot', hot); this.classList.toggle('dim', dim);
+      if (d.dir) this.setAttribute('marker-end', hot ? 'url(#arr-hot)' : 'url(#arr)');
+    });
+    paintLabels();
+  }
+  function paintWall() {
+    const fs = state.sel ? focusSet() : searchSet();
+    wall.classList.toggle('focus', !!fs);
+    wall.querySelectorAll('[data-row]').forEach(el => {
+      const id = el.dataset.row;
+      el.classList.toggle('on', !!fs && fs.has(id));
+      el.classList.toggle('cur', id === state.sel);
+    });
+    wall.querySelectorAll('.fam-card').forEach(c => c.classList.toggle('sel', !!state.sel && c.dataset.fam === state.sel));
+  }
+  const paint = () => { paintForce(); paintWall(); };
+
+  // ---------- tooltip ----------
+  const tip = document.getElementById('graph-tip');
+  function showTip(html, ev) {
+    tip.innerHTML = html; tip.hidden = false;
+    const r = stage.getBoundingClientRect();
+    let x = ev.clientX - r.left + 14, y = ev.clientY - r.top + 14;
+    if (x + 260 > r.width) x = Math.max(8, ev.clientX - r.left - 270);
+    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+  }
+  const hideTip = () => { tip.hidden = true; };
+  nodeSel.on('mouseenter', (ev, d) => {
+    hoverId = d.id; paintForce();
+    showTip(`<b>${esc(d.p.name)}</b><br>★ ${fmtStars(d.p.stars)} · ${status(d.p)[1]} · ${esc(d.p.tags.map(t => SMAP[t].name).join('、'))}`, ev);
+  }).on('mousemove', ev => showTip(tip.innerHTML, ev))
+    .on('mouseleave', () => { hoverId = null; paintForce(); hideTip(); })
+    .on('click', (ev, d) => { ev.stopPropagation(); select(d.id); })
+    .on('keydown', (ev, d) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); select(d.id); } });
+  linkSel.on('mouseenter', (ev, d) => showTip(`${esc(BYREPO[d.rel.from].name)} <b>${esc(RTMAP[d.type].name)}</b> ${esc(BYREPO[d.rel.to].name)}${d.note ? '<br>' + esc(d.note) : ''}`, ev))
+    .on('mousemove', ev => showTip(tip.innerHTML, ev)).on('mouseleave', hideTip);
+  svg.on('click', () => { if (state.sel) select(null); });
+
+  const drag = d3.drag()
+    .on('start', (ev, d) => { if (!ev.active && !reduce) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
+    .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; if (reduce) { d.x = ev.x; d.y = ev.y; draw(); } })
+    .on('end', (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; });
+  nodeSel.call(drag);
+
+  // ---------- side panel ----------
+  const btn = id => `<button type="button" data-gsel="${esc(id)}">${esc(BYREPO[id].name)}</button>`;
+  function chains(id) {
+    const out = [];
+    const walk = (cur, path) => {
+      if (out.length >= 4) return;
+      const ps = (parents[cur] || []).filter(visible);
+      if (!ps.length) { if (path.length > 1) out.push(path.slice().reverse()); return; }
+      ps.forEach(l => { if (!path.includes(l.s)) walk(l.s, path.concat(l.s)); });
+    };
+    walk(id, [id]);
+    return out;
+  }
+  function renderPanel() {
+    if (!state.sel) {
+      panel.innerHTML = `<h3>演化家族</h3>
+        <p class="gp-note">按衍生项目数排序，数字包括直接和间接衍生。点名字看这个家族的演化链。</p>
+        <div class="gp-fam">${roots.slice(0, 12).map(n => `${btn(n.id)}<span>${n.desc}</span>`).join('')}</div>
+        <p class="gp-note">圆点大小代表星数，颜色是主要画风。切到「演化树」会把每个家族排成一张卡片。</p>`;
+      return;
+    }
+    const id = state.sel, p = BYREPO[id];
+    const des = descendantsOf(id);
+    const direct = (parents[id] || []).filter(visible).map(l => `<span>${btn(l.s)} <span class="gp-sub">${esc(RTMAP[l.type].name)}</span></span>`).join('');
+    const kids = (children[id] || []).filter(visible).map(l => btn(l.t)).join('');
+    const indirect = [...des.entries()].filter(([, d]) => d > 1).map(([k]) => btn(k)).join('');
+    const syms = Object.entries(SYM_NAME).map(([k, name]) => {
+      const list = (sym[id] || []).filter(o => o.l.type === k && visible(o.l)).map(o => btn(o.other)).join('');
+      return list ? `<div class="gp-group"><span class="gp-k">${name}</span><span class="gp-v">${list}</span></div>` : '';
+    }).join('');
+    const ch = chains(id).map(path => `<div>${path.map((x, i) => i === path.length - 1 ? `<b>${esc(BYREPO[x].name)}</b>` : btn(x)).join('<span class="arrow">→</span>')}</div>`).join('');
+    panel.innerHTML = `<h3>${esc(p.name)}</h3>
+      <span class="gp-sub">★ ${fmtStars(p.stars)} · ${status(p)[1]} · ${esc(p.tags.map(t => SMAP[t].name).join('、'))}</span>
+      <p class="gp-desc">${esc(p.desc)}</p>
+      ${ch ? `<div class="gp-group"><span class="gp-k">演化链</span><div class="gp-chain">${ch}</div></div>` : ''}
+      ${direct ? `<div class="gp-group"><span class="gp-k">它的源头</span><span class="gp-v">${direct}</span></div>` : ''}
+      ${kids ? `<div class="gp-group"><span class="gp-k">直接衍生 · ${(children[id] || []).filter(visible).length}</span><span class="gp-v">${kids}</span></div>` : ''}
+      ${indirect ? `<div class="gp-group"><span class="gp-k">间接衍生</span><span class="gp-v">${indirect}</span></div>` : ''}
+      ${syms}
+      <div class="gp-actions"><a href="https://github.com/${esc(p.repo)}" target="_blank" rel="noopener">GitHub ↗</a><button type="button" data-find="${esc(p.repo)}">在总表中查看</button><button type="button" data-gsel="">返回家族列表</button></div>`;
+  }
+  function centerOn(id) {
+    if (state.layout === 'tree') {
+      const row = wall.querySelector(`[data-row="${CSS.escape(id)}"]`);
+      if (row) row.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' });
+      return;
+    }
+    const n = N[id], w = stage.clientWidth, h = stage.clientHeight, k = Math.max(zoomK, 1.4);
+    const t = d3.zoomIdentity.translate(w / 2 - k * n.x, h / 2 - k * n.y).scale(k);
+    (reduce ? svg : svg.transition().duration(450)).call(zoom.transform, t);
+  }
+  function select(id, center) {
+    state.sel = id || null;
+    renderPanel(); paint();
+    if (id && center) centerOn(id);
+  }
+  panel.addEventListener('click', e => { const b = e.target.closest('[data-gsel]'); if (!b) return; const id = b.dataset.gsel; select(id || null, !!id); });
+  wall.addEventListener('click', e => { const b = e.target.closest('[data-gsel]'); if (!b) return; select(b.dataset.gsel === state.sel ? null : b.dataset.gsel); });
+  typesEl.addEventListener('click', e => {
+    const b = e.target.closest('[data-gtype]'); if (!b) return;
+    const k = b.dataset.gtype;
+    state.types.has(k) ? state.types.delete(k) : state.types.add(k);
+    renderTypeChips(); settle(true); renderWall(); renderPanel(); paint();
+  });
+  const hint = document.getElementById('graph-hint');
+  const zoomBox = stage.querySelector('.graph-zoom');
+  function setLayout(layout) {
+    state.layout = layout;
+    document.querySelectorAll('[data-layout]').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.layout === layout)));
+    const tree = layout === 'tree';
+    wall.hidden = !tree; svg.style('display', tree ? 'none' : null); zoomBox.hidden = tree;
+    hint.textContent = tree ? '每张卡是一个演化家族：卡片标题是源头，往下是衍生项目' : '滚轮缩放 · 拖动平移 · 点节点看演化链';
+    if (tree) renderWall();
+  }
+  document.querySelectorAll('[data-layout]').forEach(b => b.addEventListener('click', () => setLayout(b.dataset.layout)));
+  const gq = document.getElementById('graph-q');
+  gq.addEventListener('input', () => { state.q = gq.value; paint(); });
+  gq.addEventListener('keydown', e => {
+    if (e.key !== 'Enter') return;
+    const ss = searchSet(); if (!ss || !ss.size) return;
+    const first = nodes.filter(n => ss.has(n.id)).sort((a, b) => b.p.stars - a.p.stars)[0];
+    if (first) select(first.id, true);
+  });
+  document.getElementById('gz-in').addEventListener('click', () => svg.transition().duration(reduce ? 0 : 250).call(zoom.scaleBy, 1.4));
+  document.getElementById('gz-out').addEventListener('click', () => svg.transition().duration(reduce ? 0 : 250).call(zoom.scaleBy, 1 / 1.4));
+  document.getElementById('gz-fit').addEventListener('click', () => fit(true));
+
+  settle(false); renderPanel(); paint();
+  if ('ResizeObserver' in window) { let w0 = stage.clientWidth; new ResizeObserver(() => { if (Math.abs(stage.clientWidth - w0) > 40) { w0 = stage.clientWidth; fit(false); } }).observe(stage); }
+  window.__graph = { select, setLayout };
+})();
 </script>

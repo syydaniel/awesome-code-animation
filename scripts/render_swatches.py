@@ -56,7 +56,7 @@ def main():
     with sync_playwright() as p:
         kwargs = {"executable_path": os.environ["CHROME_PATH"]} if os.environ.get("CHROME_PATH") else {}
         browser = p.chromium.launch(**kwargs)
-        page = browser.new_page(viewport={"width": 1280, "height": 900})
+        page = browser.new_page(viewport={"width": 1280, "height": 900}, device_scale_factor=2, color_scheme="light")
         page.goto(PAGE.as_uri())
         page.wait_for_function("document.fonts.status === 'loaded'")
         page.evaluate("drawSwatches()")
@@ -65,8 +65,11 @@ def main():
             url = page.eval_on_selector(f'canvas[data-swatch="{key}"]', "el => el.toDataURL('image/png')")
             save(url, OUT / "styles" / f"{key}.png")
         save(page.evaluate(BANNER_JS), OUT / "banner.png")
+        page.wait_for_function("window.__graph !== undefined", timeout=20000)
+        page.add_style_tag(content=".graph-zoom,.graph-hint,.graph-tip{display:none!important}")
+        page.locator("#graph-stage").screenshot(path=str(OUT / "graph.png"))
         browser.close()
-    print(f"已导出 {len(keys)} 张画风样图和 assets/banner.png")
+    print(f"已导出 {len(keys)} 张画风样图、assets/banner.png 和 assets/graph.png")
 
 
 if __name__ == "__main__":

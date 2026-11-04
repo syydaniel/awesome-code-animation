@@ -6,7 +6,7 @@
 
 **Open-source tools for making animations and music videos with code, indexed by visual style.** [中文](README.md)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![projects](https://img.shields.io/badge/projects-315-2E49D4) ![styles](https://img.shields.io/badge/styles-18%2B13-9265D9) ![Claude/Opus](https://img.shields.io/badge/Claude/Opus-85-7B4FD0) ![updated](https://img.shields.io/badge/updated-2026--11--03-5B6273)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![projects](https://img.shields.io/badge/projects-380-2E49D4) ![styles](https://img.shields.io/badge/styles-17%2B20-9265D9) ![updated](https://img.shields.io/badge/updated-2026--11--03-5B6273)
 
 **[🔎 Interactive version: filter by style, search, sort, see how projects relate](https://syydaniel.github.io/awesome-code-animation/)** (Chinese UI)
 
@@ -20,7 +20,8 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 - **Frames must be drawn or rendered by code.** Projects that make their pictures with image or video generation models are left out, and so are projects that render through Blender or other 3D apps. Optional features of that kind are noted per project.
 - **Main styles:** 1,000+ stars, or 200+ stars with a push in the last year.
-- **Niche styles and the Claude / Opus section:** 50+ stars with a push in the last year.
+- **Niche styles:** 20+ stars with a push in the last year.
+- **Claude / Opus agent skills and films** are filed under their visual styles like everything else: 50+ stars with a push in the last year.
 - Archived repositories are not listed. Status: 🟢 pushed within 6 months · 🟡 within 2 years · ⚪ older.
 - Stars and status refresh every Monday through GitHub Actions. Data as of 2026-11-03.
 
@@ -29,22 +30,24 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 ## Style index
 
 <table>
-<tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="Math Explainer" width="260"></a><br><b><a href="#math">Math Explainer</a></b><br><sub>数学讲解风 · 20 projects</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="Motion Graphics" width="260"></a><br><b><a href="#mg">Motion Graphics</a></b><br><sub>扁平 MG 动效 · 82 projects</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="Code & Terminal Demo" width="260"></a><br><b><a href="#code">Code & Terminal Demo</a></b><br><sub>代码演示风 · 16 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.png" alt="Kinetic Type & Lyrics" width="260"></a><br><b><a href="#type">Kinetic Type & Lyrics</a></b><br><sub>动态文字 · 歌词 · 27 projects</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="Shorts, Captions & Editing" width="260"></a><br><b><a href="#short">Shorts, Captions & Editing</a></b><br><sub>短视频 · 字幕 · 快剪 · 28 projects</sub></td><td align="center" width="33%"><a href="#agent"><img src="assets/styles/agent.png" alt="Claude & Opus Code Animation" width="260"></a><br><b><a href="#agent">Claude & Opus Code Animation</a></b><br><sub>Claude / Opus 写代码出片 · 85 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="Hand-drawn & Whiteboard" width="260"></a><br><b><a href="#hand">Hand-drawn & Whiteboard</a></b><br><sub>手绘 · 白板 · 水彩 · 19 projects</sub></td><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="Generative Art" width="260"></a><br><b><a href="#gen">Generative Art</a></b><br><sub>生成艺术 · 几何 · 32 projects</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="Shaders & Psychedelic" width="260"></a><br><b><a href="#shader">Shaders & Psychedelic</a></b><br><sub>着色器 · 迷幻光影 · 34 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding & VJ" width="260"></a><br><b><a href="#live">Live Coding & VJ</a></b><br><sub>Live Coding · VJ · 9 projects</sub></td><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="Music Visualization" width="260"></a><br><b><a href="#audio">Music Visualization</a></b><br><sub>音乐可视化 · 25 projects</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D" width="260"></a><br><b><a href="#3d">3D</a></b><br><sub>3D 渲染 · 46 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="Anime, MMD & VRM" width="260"></a><br><b><a href="#anime">Anime, MMD & VRM</a></b><br><sub>二次元 · MMD · VRM · 7 projects</sub></td><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="Particles & Physics" width="260"></a><br><b><a href="#particle">Particles & Physics</a></b><br><sub>粒子 · 流体 · 物理 · 20 projects</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="Glitch & Post FX" width="260"></a><br><b><a href="#glitch">Glitch & Post FX</a></b><br><sub>故障 · 后期特效 · 12 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#pixel"><img src="assets/styles/pixel.png" alt="Pixel & Retro" width="260"></a><br><b><a href="#pixel">Pixel & Retro</a></b><br><sub>像素 · 复古 · 20 projects</sub></td><td align="center" width="33%"><a href="#ascii"><img src="assets/styles/ascii.png" alt="ASCII & Terminal" width="260"></a><br><b><a href="#ascii">ASCII & Terminal</a></b><br><sub>ASCII · 终端 · 21 projects</sub></td><td align="center" width="33%"><a href="#data"><img src="assets/styles/data.png" alt="Data Animation" width="260"></a><br><b><a href="#data">Data Animation</a></b><br><sub>数据可视化动画 · 26 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="Math Explainer" width="260"></a><br><b><a href="#math">Math Explainer</a></b><br><sub>数学讲解风 · 21 projects</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="Motion Graphics" width="260"></a><br><b><a href="#mg">Motion Graphics</a></b><br><sub>扁平 MG 动效 · 84 projects</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="Code & Terminal Demo" width="260"></a><br><b><a href="#code">Code & Terminal Demo</a></b><br><sub>代码演示风 · 16 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.png" alt="Kinetic Type & Lyrics" width="260"></a><br><b><a href="#type">Kinetic Type & Lyrics</a></b><br><sub>动态文字 · 歌词 · 29 projects</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="Shorts, Captions & Editing" width="260"></a><br><b><a href="#short">Shorts, Captions & Editing</a></b><br><sub>短视频 · 字幕 · 快剪 · 28 projects</sub></td><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="Hand-drawn & Whiteboard" width="260"></a><br><b><a href="#hand">Hand-drawn & Whiteboard</a></b><br><sub>手绘 · 白板 · 水彩 · 23 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="Generative Art" width="260"></a><br><b><a href="#gen">Generative Art</a></b><br><sub>生成艺术 · 几何 · 37 projects</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="Shaders & Psychedelic" width="260"></a><br><b><a href="#shader">Shaders & Psychedelic</a></b><br><sub>着色器 · 迷幻光影 · 40 projects</sub></td><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding & VJ" width="260"></a><br><b><a href="#live">Live Coding & VJ</a></b><br><sub>Live Coding · VJ · 9 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="Music Visualization" width="260"></a><br><b><a href="#audio">Music Visualization</a></b><br><sub>音乐可视化 · 25 projects</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D" width="260"></a><br><b><a href="#3d">3D</a></b><br><sub>3D 渲染 · 58 projects</sub></td><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="Anime, MMD & VRM" width="260"></a><br><b><a href="#anime">Anime, MMD & VRM</a></b><br><sub>二次元 · MMD · VRM · 8 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="Particles & Physics" width="260"></a><br><b><a href="#particle">Particles & Physics</a></b><br><sub>粒子 · 流体 · 物理 · 23 projects</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="Glitch & Post FX" width="260"></a><br><b><a href="#glitch">Glitch & Post FX</a></b><br><sub>故障 · 后期特效 · 16 projects</sub></td><td align="center" width="33%"><a href="#pixel"><img src="assets/styles/pixel.png" alt="Pixel & Retro" width="260"></a><br><b><a href="#pixel">Pixel & Retro</a></b><br><sub>像素 · 复古 · 26 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#ascii"><img src="assets/styles/ascii.png" alt="ASCII & Terminal" width="260"></a><br><b><a href="#ascii">ASCII & Terminal</a></b><br><sub>ASCII · 终端 · 25 projects</sub></td><td align="center" width="33%"><a href="#data"><img src="assets/styles/data.png" alt="Data Animation" width="260"></a><br><b><a href="#data">Data Animation</a></b><br><sub>数据可视化动画 · 27 projects</sub></td></tr>
 </table>
 
 ### Niche styles
 
 <table>
-<tr><td align="center" width="33%"><a href="#ink"><img src="assets/styles/ink.png" alt="Ink Wash" width="260"></a><br><b><a href="#ink">Ink Wash</a></b><br><sub>水墨 · 山水 · 4 projects</sub></td><td align="center" width="33%"><a href="#hanzi"><img src="assets/styles/hanzi.png" alt="Handwriting & Strokes" width="260"></a><br><b><a href="#hanzi">Handwriting & Strokes</a></b><br><sub>汉字 · 手写笔画 · 4 projects</sub></td><td align="center" width="33%"><a href="#scope"><img src="assets/styles/scope.png" alt="Oscilloscope & Vector" width="260"></a><br><b><a href="#scope">Oscilloscope & Vector</a></b><br><sub>示波器 · 矢量光线 · 2 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#plotter"><img src="assets/styles/plotter.png" alt="Plotter & Line Art" width="260"></a><br><b><a href="#plotter">Plotter & Line Art</a></b><br><sub>绘图仪 · 单线画 · 6 projects</sub></td><td align="center" width="33%"><a href="#dither"><img src="assets/styles/dither.png" alt="Dither & 1-bit" width="260"></a><br><b><a href="#dither">Dither & 1-bit</a></b><br><sub>抖动 · 1-bit · 5 projects</sub></td><td align="center" width="33%"><a href="#riso"><img src="assets/styles/riso.png" alt="Riso & Paper Collage" width="260"></a><br><b><a href="#riso">Riso & Paper Collage</a></b><br><sub>Riso · 剪纸拼贴 · 5 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#alife"><img src="assets/styles/alife.png" alt="Artificial Life" width="260"></a><br><b><a href="#alife">Artificial Life</a></b><br><sub>人工生命 · 元胞自动机 · 6 projects</sub></td><td align="center" width="33%"><a href="#procgen"><img src="assets/styles/procgen.png" alt="Procedural Generation" width="260"></a><br><b><a href="#procgen">Procedural Generation</a></b><br><sub>程序化生成 · 波函数坍缩 · 9 projects</sub></td><td align="center" width="33%"><a href="#fractal"><img src="assets/styles/fractal.png" alt="Fractals & Math Art" width="260"></a><br><b><a href="#fractal">Fractals & Math Art</a></b><br><sub>分形 · 数学艺术 · 4 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#iso"><img src="assets/styles/iso.png" alt="Isometric & Voxel" width="260"></a><br><b><a href="#iso">Isometric & Voxel</a></b><br><sub>等距 · 体素 · 9 projects</sub></td><td align="center" width="33%"><a href="#scifi"><img src="assets/styles/scifi.png" alt="Sci-fi HUD" width="260"></a><br><b><a href="#scifi">Sci-fi HUD</a></b><br><sub>科幻 HUD · 赛博界面 · 4 projects</sub></td><td align="center" width="33%"><a href="#map"><img src="assets/styles/map.png" alt="Map & Route" width="260"></a><br><b><a href="#map">Map & Route</a></b><br><sub>地图 · 路线动画 · 8 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#demoscene"><img src="assets/styles/demoscene.png" alt="Demoscene" width="260"></a><br><b><a href="#demoscene">Demoscene</a></b><br><sub>Demoscene 演示场景 · 7 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#ink"><img src="assets/styles/ink.png" alt="Ink & Watercolor" width="260"></a><br><b><a href="#ink">Ink & Watercolor</a></b><br><sub>水墨 · 水彩 · 8 projects</sub></td><td align="center" width="33%"><a href="#hanzi"><img src="assets/styles/hanzi.png" alt="Handwriting & Strokes" width="260"></a><br><b><a href="#hanzi">Handwriting & Strokes</a></b><br><sub>汉字 · 手写笔画 · 4 projects</sub></td><td align="center" width="33%"><a href="#scope"><img src="assets/styles/scope.png" alt="Oscilloscope & Vector" width="260"></a><br><b><a href="#scope">Oscilloscope & Vector</a></b><br><sub>示波器 · 矢量光线 · 2 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#plotter"><img src="assets/styles/plotter.png" alt="Plotter & Line Art" width="260"></a><br><b><a href="#plotter">Plotter & Line Art</a></b><br><sub>绘图仪 · 单线画 · 7 projects</sub></td><td align="center" width="33%"><a href="#dither"><img src="assets/styles/dither.png" alt="Dither & 1-bit" width="260"></a><br><b><a href="#dither">Dither & 1-bit</a></b><br><sub>抖动 · 1-bit · 5 projects</sub></td><td align="center" width="33%"><a href="#riso"><img src="assets/styles/riso.png" alt="Riso & Paper Collage" width="260"></a><br><b><a href="#riso">Riso & Paper Collage</a></b><br><sub>Riso · 剪纸拼贴 · 6 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#alife"><img src="assets/styles/alife.png" alt="Artificial Life & Growth" width="260"></a><br><b><a href="#alife">Artificial Life & Growth</a></b><br><sub>人工生命 · 生长形态 · 8 projects</sub></td><td align="center" width="33%"><a href="#procgen"><img src="assets/styles/procgen.png" alt="Procedural Generation" width="260"></a><br><b><a href="#procgen">Procedural Generation</a></b><br><sub>程序化生成 · 波函数坍缩 · 9 projects</sub></td><td align="center" width="33%"><a href="#fractal"><img src="assets/styles/fractal.png" alt="Fractals & Chaos" width="260"></a><br><b><a href="#fractal">Fractals & Chaos</a></b><br><sub>分形 · 混沌 · 数学艺术 · 8 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#iso"><img src="assets/styles/iso.png" alt="Isometric & Voxel" width="260"></a><br><b><a href="#iso">Isometric & Voxel</a></b><br><sub>等距 · 体素 · 9 projects</sub></td><td align="center" width="33%"><a href="#scifi"><img src="assets/styles/scifi.png" alt="Sci-fi HUD" width="260"></a><br><b><a href="#scifi">Sci-fi HUD</a></b><br><sub>科幻 HUD · 赛博界面 · 4 projects</sub></td><td align="center" width="33%"><a href="#map"><img src="assets/styles/map.png" alt="Map & Route" width="260"></a><br><b><a href="#map">Map & Route</a></b><br><sub>地图 · 路线动画 · 10 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#demoscene"><img src="assets/styles/demoscene.png" alt="Demoscene" width="260"></a><br><b><a href="#demoscene">Demoscene</a></b><br><sub>Demoscene 演示场景 · 7 projects</sub></td><td align="center" width="33%"><a href="#sand"><img src="assets/styles/sand.png" alt="Falling Sand" width="260"></a><br><b><a href="#sand">Falling Sand</a></b><br><sub>落沙 · 像素物理 · 8 projects</sub></td><td align="center" width="33%"><a href="#flow"><img src="assets/styles/flow.png" alt="Flow & Wind Fields" width="260"></a><br><b><a href="#flow">Flow & Wind Fields</a></b><br><sub>流场 · 风场 · 7 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#vhs"><img src="assets/styles/vhs.png" alt="VHS & Analog" width="260"></a><br><b><a href="#vhs">VHS & Analog</a></b><br><sub>VHS · 模拟信号 · 11 projects</sub></td><td align="center" width="33%"><a href="#origami"><img src="assets/styles/origami.png" alt="Origami & Papercraft" width="260"></a><br><b><a href="#origami">Origami & Papercraft</a></b><br><sub>折纸 · 纸艺 · 8 projects</sub></td><td align="center" width="33%"><a href="#geo"><img src="assets/styles/geo.png" alt="Geometric & Low-poly" width="260"></a><br><b><a href="#geo">Geometric & Low-poly</a></b><br><sub>几何重构 · 低多边形 · 7 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#raytrace"><img src="assets/styles/raytrace.png" alt="Path Tracing" width="260"></a><br><b><a href="#raytrace">Path Tracing</a></b><br><sub>写实光追 · 6 projects</sub></td><td align="center" width="33%"><a href="#space"><img src="assets/styles/space.png" alt="Space & Stars" width="260"></a><br><b><a href="#space">Space & Stars</a></b><br><sub>星空 · 宇宙 · 7 projects</sub></td></tr>
 </table>
 
 ## Main styles
@@ -53,7 +56,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Math Explainer
 
-> 数学讲解风 · 20 projects
+> 数学讲解风 · 21 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -67,6 +70,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Code2Video](https://github.com/showlab/Code2Video) | 2.2k | 🟢 | [ICML 2026] Video generation via code |
 | [Animate](https://github.com/cth9191/animate) | 1.5k | 🟢 | Procedural animation in any style for Claude Code: short single-file canvas videos with story, look and storyboard check-ins. 7 built-in styles or one matched from your references, your own music (beat-mapped), real product screenshots, every format from one piece. |
 | [MathBox](https://github.com/unconed/mathbox) | 1.5k | ⚪ | Presentation-quality WebGL math graphing |
+| [FieldPlay](https://github.com/anvaka/fieldplay) | 1.3k | 🟢 | A vector field explorer |
 | [Manim Agent Skills](https://github.com/adithya-s-k/manim_skill) | 1.3k | 🟡 | Agent skills for Manim to create 3Blue1Brown style animations. |
 | [Reanimate](https://github.com/reanimate/reanimate) | 1.2k | 🟡 | Haskell library for building declarative animations based on SVG graphics |
 | [Manim Slides](https://github.com/jeertmans/manim-slides) | 975 | 🟢 | Tool for live presentations using manim |
@@ -84,7 +88,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Motion Graphics
 
-> 扁平 MG 动效 · 82 projects
+> 扁平 MG 动效 · 84 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -119,6 +123,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [html-video](https://github.com/nexu-io/html-video) | 4.8k | 🟢 | Programmatic video for coding agents — HTML to video on your laptop. Turn HTML, CSS & data into real MP4s with pluggable render engines, 21 templates, AI soundtrack. Apache-2.0, no per-render fees. An official project by the Open Design team. |
 | [VAP](https://github.com/Tencent/vap) | 4.2k | 🟢 | VAP是腾讯云开发，用于播放特效动画的实现方案，已经升级为 VAP Pro SDK。具有高压缩率、硬件解码等优点。同时支持 iOS,Android,Web 平台。 |
 | [Revideo](https://github.com/midrender/revideo) | 4.2k | 🟢 | Create Videos with Code |
+| [P(doom) MV（mexicat 版）](https://github.com/mexicat/pdoom-video) | 3.8k | 🟢 | Code-rendered music video for "I'm Upping My P(doom)" |
 | [onetake](https://github.com/feitangyuan/onetake) | 3.7k | 🟢 | Motion films that never cut to the next slide: every beat grows out of the one before, one continuous camera, continuity measured by an oracle. Product launch films and feature demos, made with a coding agent. |
 | [hairline](https://github.com/lucasmarkes/hairline) | 3.4k | 🟢 | Isometric line figures that answer the pointer. For React and for anything with a DOM. |
 | [fframes](https://github.com/dmtrKovalenko/fframes) | 3.2k | 🟢 | programmatic video rendering framework that is actually fast |
@@ -159,6 +164,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [shipvideo](https://github.com/diggerhq/shipvideo) | 378 | 🟢 | Paste a URL or a prompt, get a launch video. Opus 5.5 writes HTML, an OpenComputer serverless agent renders it. |
 | [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) | 369 | 🟢 | 用 Claude Opus 5.5 写代码做视频：先给三个方案和预览，确认后逐帧渲染成片 \| Canvas / WebGL / Three.js / Remotion / HyperFrames \| Claude Code Skill |
 | [motion2code](https://github.com/lovisdotio/motion2code) | 330 | 🟢 | Skills for coding agents: rebuild a motion design video as looping SVG + GSAP code, checked frame by frame against the source |
+| [Code Video Showcase](https://github.com/Moessif/code-video-showcase) | 322 | 🟢 | A pure-code beat-synced showcase-video Agent Skill: HTML/Canvas/SVG/Three.js frame-by-frame + Python numpy/scipy score + FFmpeg. No generative models. |
 | [video-director](https://github.com/win4r/video-director) | 320 | 🟢 | A Claude skill for directing, building and verifying code-rendered videos (HTML/Canvas → MP4): principles, gated workflow, QA scripts and evals. |
 | [html-anime](https://github.com/blixvip/html-anime) | 246 | 🟢 | Turn a scene prompt into a shot sheet, then have a coding agent draw the film in HTML. No video model. |
 | [What If Animation](https://github.com/kelano86/what-if-animation) | 226 | 🟢 | A free skill for Claude Code and OpenCode (runs on a free model): one topic line in, a finished 15-25 s What If animated episode out. Every frame drawn in code (SVG + Remotion); voice and sound from ElevenLabs. |
@@ -204,7 +210,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Kinetic Type & Lyrics
 
-> 动态文字 · 歌词 · 27 projects
+> 动态文字 · 歌词 · 29 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -220,6 +226,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Hanzi Writer](https://github.com/chanind/hanzi-writer) | 5.1k | 🟡 | Chinese character stroke order animations and practice quizzes |
 | [html-video](https://github.com/nexu-io/html-video) | 4.8k | 🟢 | Programmatic video for coding agents — HTML to video on your laptop. Turn HTML, CSS & data into real MP4s with pluggable render engines, 21 templates, AI soundtrack. Apache-2.0, no per-render fees. An official project by the Open Design team. |
 | [TerminalTextEffects](https://github.com/ChrisBuilds/terminaltexteffects) | 4.3k | 🟢 | TerminalTextEffects (TTE) is a terminal visual effects engine, application, and Python library. |
+| [P(doom) MV（mexicat 版）](https://github.com/mexicat/pdoom-video) | 3.8k | 🟢 | Code-rendered music video for "I'm Upping My P(doom)" |
 | [Tegaki](https://github.com/gkurt/tegaki) | 3.3k | 🟢 | Handwriting animation for the web. Supports any font or text. |
 | [P(doom) MV](https://github.com/JohnHeibel/PDoomVideo) | 2.8k | 🟢 | Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom) |
 | [AMLL](https://github.com/amll-dev/applemusic-like-lyrics) | 2.2k | 🟢 | An Apple Music style lyric player component, with React & Vue support. 一个类 Apple Music 歌词显示组件，同时提供 React 和 Vue 绑定。 |
@@ -234,6 +241,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Coldtype](https://github.com/coldtype/coldtype) | 341 | 🟢 | cross-platform display typography in python |
 | [Remotion TikTok 模板](https://github.com/remotion-dev/template-tiktok) | 301 | 🟢 | Generate TikTok-style captions with Whisper.cpp |
 | [FredTalk](https://github.com/njrhts2kvv-star/FredTalk) | 249 | 🟢 | FredTalk：口播视频制作 Skill、可检索动效库与 Remotion 审看流程。在线视觉库：https://www.fred-fu.com/visual-library |
+| [Claude MV Skill](https://github.com/Joker-chichi/claude-mv-skill) | 178 | 🟢 | Claude Code skill for hand-painted animation and lyric music videos |
 | [Vibe 知识短片](https://github.com/xiazhuo123456789/vibe-knowledge-video) | 166 | 🟢 | Vibe知识大赏风格 AI 知识视频 Skill — 纯代码生成电影感知识短视频（无配音·双语字幕·合成BGM·历史文献再现），风格规范逆向自 8 条抖音爆款原片（1091 帧逐秒分析） |
 
 <sub>[↑ Back to the style index](#index)</sub>
@@ -277,107 +285,11 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 <sub>[↑ Back to the style index](#index)</sub>
 
-<a name="agent"></a>
-
-### Claude & Opus Code Animation
-
-> Claude / Opus 写代码出片 · 85 projects
-
-| Project | Stars | Status | Description |
-| --- | ---: | :---: | --- |
-| [HyperFrames](https://github.com/heygen-com/hyperframes) | 78.8k | 🟢 | Write HTML. Render video. Built for agents. |
-| [brag](https://github.com/latent-spaces/brag) | 20.3k | 🟢 | You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command. |
-| [img2threejs](https://github.com/img2threejs/img2threejs) | 20.3k | 🟢 | Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D. |
-| [GSAP Skills](https://github.com/greensock/gsap-skills) | 17.9k | 🟢 | Official AI skills for GSAP. These skills teach AI coding agents how to correctly use GSAP (GreenSock Animation Platform), including best practices, common animation patterns, and plugin usage. |
-| [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | 16.9k | 🟢 | AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe cards, 150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) export. |
-| [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 12.2k | 🟢 | A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：66 种现成风格，也能做出你自己的 |
-| [Remotion Skills](https://github.com/remotion-dev/skills) | 6.3k | 🟢 | Agent Skills |
-| [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | 6.2k | 🟢 | 艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。 |
-| [Lottie Skill](https://github.com/diffusionstudio/lottie) | 5.7k | 🟢 | Generate production-ready Lottie animations with Claude Code or Codex |
-| [html-video](https://github.com/nexu-io/html-video) | 4.8k | 🟢 | Programmatic video for coding agents — HTML to video on your laptop. Turn HTML, CSS & data into real MP4s with pluggable render engines, 21 templates, AI soundtrack. Apache-2.0, no per-render fees. An official project by the Open Design team. |
-| [pixelfx](https://github.com/patch-gg/pixelfx) | 4.7k | 🟢 | 244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own. |
-| [ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | 4.5k | 🟢 | Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys. |
-| [onetake](https://github.com/feitangyuan/onetake) | 3.7k | 🟢 | Motion films that never cut to the next slide: every beat grows out of the one before, one continuous camera, continuity measured by an oracle. Product launch films and feature demos, made with a coding agent. |
-| [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.1k | 🟢 | 15 motion design styles, each made by Claude Opus 5.5 writing code from one prompt: watch the films, copy the prompts, read the full source. |
-| [anything2explainer](https://github.com/Vincentwei1021/anything2explainer) | 3k | 🟢 | Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion. |
-| [P(doom) MV](https://github.com/JohnHeibel/PDoomVideo) | 2.8k | 🟢 | Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom) |
-| [Motion Design Skill](https://github.com/LottieFiles/motion-design-skill) | 2.8k | 🟢 | Universal motion design principles for AI agents — timing, easing, choreography, and Disney animation principles adapted for UI |
-| [Pixel2Motion](https://github.com/nolangz/pixel2motion) | 2.6k | 🟢 | AI logo animation skill: turn raster logos into smooth SVG animation, animated HTML demos, GIF/video previews, and motion QA evidence. |
-| [Herk Edit Kit](https://github.com/nateherkai/herk-edit-kit) | 2.6k | 🟢 | Herk Edit Kit by Nate Herk: edit videos, reels, and YouTube Shorts with Codex or Claude Code. 15 skills, transcript-driven cuts, storytelling, 406 motion-graphics cards, and HyperFrames templates. |
-| [huashu-motion](https://github.com/alchaincyf/huashu-motion) | 2.3k | 🟢 | 让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it. |
-| [Code2Video](https://github.com/showlab/Code2Video) | 2.2k | 🟢 | [ICML 2026] Video generation via code |
-| [video-talkcraft](https://github.com/Vincentwei1021/video-talkcraft) | 2.1k | 🟢 | Agent skill that turns Claude Code / Codex into a motion-design studio for voiceover-driven explainer videos — word-level voiceover sync, 109 motion recipe cards, an anti-slideshow camera system, Remotion rendering. |
-| [ReelMimic](https://github.com/edenfunf/reelmimic) | 1.8k | 🟢 | Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you. |
-| [Animate](https://github.com/cth9191/animate) | 1.5k | 🟢 | Procedural animation in any style for Claude Code: short single-file canvas videos with story, look and storyboard check-ins. 7 built-in styles or one matched from your references, your own music (beat-mapped), real product screenshots, every format from one piece. |
-| [anidoodle](https://github.com/alexgreensh/anidoodle) | 1.3k | 🟢 | Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render. |
-| [Manim Agent Skills](https://github.com/adithya-s-k/manim_skill) | 1.3k | 🟡 | Agent skills for Manim to create 3Blue1Brown style animations. |
-| [motion-skills](https://github.com/iart-ai/motion-skills) | 1.2k | 🟢 | 50 open-source skills that teach your AI coding agent to make motion graphics, animation & video — kinetic typography, data-viz, explainers, TikTok/Reels, WebGL, Manim. 14 installable packs. By iart.ai, the AI motion agent. |
-| [reanimate](https://github.com/NiazMorshed2007/reanimate) | 1.2k | 🟢 | A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same. |
-| [video-spec-builder](https://github.com/feicaiclub/video-spec-builder) | 1.1k | 🟢 | video-spec-builder —— 把我想做个视频逼成一份精确到秒的分镜脚本 video-spec.md,交给 HyperFrames 渲染。一条命令装到 Claude Code / Cursor / Codex:npx skills add feicaiclub/video-spec-builder |
-| [Bang Motion](https://github.com/bangtutorial/bang-motion) | 1.1k | 🟢 | Agent skill for browser motion graphics — openers, promos, bumpers, kinetic typography, and five explainer styles that move like video, not slides. Single index.html output. Works with Claude Code, Codex, Gemini CLI, Cursor. |
-| [Motion Graphics Skills](https://github.com/Barty-Bart/motion-graphics) | 1.1k | 🟢 | Motion-graphics skills for Claude Code and Codex. |
-| [motion-anything](https://github.com/nexu-io/motion-anything) | 1k | 🟢 | ✨ The agentic motion layer — an open-source, chat-native motion engine. Describe the feeling; your AI ships the animation. |
-| [cinetic](https://github.com/Leonxlnx/cinetic) | 991 | 🟢 | Cinematic launch films and motion design from code, directed by your coding agent. |
-| [Generative Manim](https://github.com/marcelo-earth/generative-manim) | 937 | 🟢 | 🎨 GPT for video generation ⚡️ |
-| [归藏产品宣传片](https://github.com/op7418/guizang-product-video-skill) | 903 | 🟢 | 归藏 product video skill：复用真实产品组件和设计语言，用代码制作软件更新宣传片。包含分镜文案、原创配乐、动作音效与视频渲染，支持 Claude Code 和 Codex。 |
-| [SeeCode](https://github.com/Aryanutkarsh/SeeCode) | 872 | 🟢 | Animated, explorable diagrams for Claude and other coding agents, from a short JSON spec. |
-| [motion-web](https://github.com/feitangyuan/motion-web) | 836 | 🟢 | Build motion-first, high-touch creative websites on vanilla Three.js / Canvas 2D / WebGL / CSS. A Claude Agent Skill with real physics and automated verification. |
-| [Claude Remotion Skill](https://github.com/haidrrrry/claude-remotion-skill) | 828 | 🟢 | Open-source Claude agent skill that teaches Claude Code, Claude Desktop & Claude AI to create and edit professional motion graphics videos with Remotion. AI video editing, B-roll, captions, sound design — from one prompt. |
-| [Claude Motion Design](https://github.com/howseen-ai/claude-motion-design) | 766 | 🟢 | A Claude Code skill to make motion design videos in pure code: HTML + Playwright + ffmpeg. No After Effects, no Remotion license. |
-| [genjutsu](https://github.com/AThevon/genjutsu) | 745 | 🟢 | Creative coding skills for Claude Code, claude.ai and Cowork. Motion, micro-interactions and design systems across Web (GSAP, Motion, Three.js, CSS), Android (Jetpack Compose) and Apple (SwiftUI). Proposes an interaction thesis you approve before it writes any code. Anti-AI-slop. |
-| [adu-motion-video](https://github.com/adunext/adu-motion-video) | 722 | 🟢 | 阿杜的 AI 剪辑 Skill｜全系列模板已升级为 MotionGit .motion 开放格式，下载后直接发给助手即可创作。下载：https://motiongit.com/@adunext ｜精选阿杜与 Opus 5.5 制作的代码级动画模板，适合口播、知识讲解，支持多平台、多助手。 |
-| [Rossark Motion](https://github.com/rossark0/rossark-motion-skill) | 698 | 🟢 | Turn any SVG into a professional 60 fps animation. A Claude Code skill that brings anything drawn to life: live faces, full-body acting and whole scenes, in React Native and SwiftUI. |
-| [Athenaion](https://github.com/Leonxlnx/athenaion) | 680 | 🟢 | A massive ancient Greek world built entirely in code with three.js. Zero assets, made with Claude Code (Opus 5.5) |
-| [ff-tracking](https://github.com/mrsarac/ff-tracking) | 592 | 🟢 | A virtual camera films an AI agent's screen while a tracker locks onto every glyph. Two fframes passes, one SkSL shader, all sound synthesized. |
-| [MotionClone](https://github.com/blixvip/MotionClone) | 588 | 🟢 | Rebuild a reference video as an editable HyperFrames project, compare the match against the original, and export an MP4. |
-| [Machine Skill](https://github.com/AirsupHQ/machine-skill) | 579 | 🟢 | Describe any machine in one line. Claude builds a photoreal, physics based, interactive simulation of it in one HTML file, plus the film to post it. An open source Claude Code skill. |
-| [Launch Motion Skills](https://github.com/charlie947/motion-graphics-skills) | 551 | 🟢 | 13 Claude Code skills for launch-grade motion graphics. Every frame is code. No After Effects, no video generator. |
-| [LiveCanvas 实况画布](https://github.com/pengchujin/livecanvas) | 544 | 🟢 | 一句话，做成有封面、有动画的 Live 图。Turn a sentence into a Live Photo with a designed cover and animation. |
-| [代码动画画风提示词](https://github.com/XiaoyeCodes/code-animation-prompts) | 522 | 🟢 | 341 种代码动画风格提示词、196 张参考静帧与离线挑选器，封装为 Claude Code / Codex Skill，支持一键导入与 HTML 视频渲染。 |
-| [world.execute(me) 歌词 MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 511 | 🟢 | world.execute(me); — an unofficial fan-made lyric MV told as a chat with Claude, rendered frame by frame from code. Prompts included; no music or lyrics. 非官方同人歌詞 MV:以程式碼逐幀渲染,附完整提示詞,不含歌曲與歌詞。 |
-| [白板老师视频](https://github.com/liangdabiao/whiteboard-teacher-video) | 497 | 🟢 | MG动画视频skill, 抖音爆款Vibe知识大赏知识短片 ，  自动配音效，一键出片。图文讲解视频 skill  —— 把讲解稿变成「手绘会动的画面」讲解视频。  图形由代码逐笔绘出、文字逐字写出、讲到哪画到哪。五套风格可选，本地 Chrome 渲染， 零生图 API 成本 ，任何改动秒级重渲。 |
-| [ManimCat](https://github.com/Wing900/ManimCat) | 494 | 🟢 | EN: ManimCat: AI-generated math animations from natural language. High-quality Manim rendering with LaTeX support and auto-code fixing. 中: ManimCat：AI 数学动画生成器。支持描述即视频，内置 LaTeX 与代码纠错，让数学动效触手可及。 |
-| [Agentic Product Demo](https://github.com/Alexwtlf/agentic-product-demo) | 482 | 🟢 | Create polished product demo videos with AI coding agents and Remotion. The UI is code, not a screen recording. |
-| [HyperFrames Motion Director](https://github.com/geekjourneyx/hyperframes-motion-director) | 477 | 🟢 | Agent Skill for Chinese-first HyperFrames motion-video production from articles, products, websites, and README files. |
-| [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 460 | 🟢 | A blazingly fast programmatic video engine, made for agents. |
-| [Opus Video Skills](https://github.com/tuzhechen2005/opus-video-skills) | 438 | 🟢 | Video-making skills for Claude Opus 5.5 in Claude Code — every frame and note generated in code, one skill per style: hand-painted animation, kinetic-typography reels \| 用 Claude Opus 5.5 以代码制作视频的技能合集 |
-| [Product Launch Motion](https://github.com/AbubakrChan/product-launch-motion) | 421 | 🟢 | Claude Code skill for Dribbble-level product launch videos from code. One shape that never cuts, springs, a cursor that drives every change, beat-synced SFX, 60 fps motion blur. v2: use with Claude Opus 5.5. |
-| [Shader Skills](https://github.com/gokayfem/shader-skills) | 418 | 🟢 | GLSL and Shadertoy shader skills for Claude Code, Codex, Cursor, Copilot and Gemini CLI. 186 functions, SDF raymarching, procedural terrain, water, clouds and generative art, with a bundler, checker and 11 examples. |
-| [shipvideo](https://github.com/diggerhq/shipvideo) | 378 | 🟢 | Paste a URL or a prompt, get a launch video. Opus 5.5 writes HTML, an OpenComputer serverless agent renders it. |
-| [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) | 372 | 🟢 | Six Claude Code skills that make animations for reels, no footage needed: 3D cartoon explainer, stick figure, minimal line art, 3D map route, exploded view, line graph. |
-| [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) | 369 | 🟢 | 用 Claude Opus 5.5 写代码做视频：先给三个方案和预览，确认后逐帧渲染成片 \| Canvas / WebGL / Three.js / Remotion / HyperFrames \| Claude Code Skill |
-| [MathLens](https://github.com/shuyicc/MathLens) | 352 | 🟡 | MathLens 是一个专注于数学题目视频讲解的 Agent Skill。你只需粘贴一道数学题（图片或文字），它就能自动完成从题目分析、可视化讲解、配音脚本到 Manim 动画视频的全流程制作。单条视频1-10 分钟，成本 0.2-1 元以内。 |
-| [motion2code](https://github.com/lovisdotio/motion2code) | 330 | 🟢 | Skills for coding agents: rebuild a motion design video as looping SVG + GSAP code, checked frame by frame against the source |
-| [video-director](https://github.com/win4r/video-director) | 320 | 🟢 | A Claude skill for directing, building and verifying code-rendered videos (HTML/Canvas → MP4): principles, gated workflow, QA scripts and evals. |
-| [Riso Window Seat](https://github.com/sevenevesai/riso-windowseat) | 308 | 🟢 | Procedural risograph films in single HTML files (Window Seat, Roost and more), with the Claude Code skills, docs and tools to make your own. |
-| [FredTalk](https://github.com/njrhts2kvv-star/FredTalk) | 249 | 🟢 | FredTalk：口播视频制作 Skill、可检索动效库与 Remotion 审看流程。在线视觉库：https://www.fred-fu.com/visual-library |
-| [html-anime](https://github.com/blixvip/html-anime) | 246 | 🟢 | Turn a scene prompt into a shot sheet, then have a coding agent draw the film in HTML. No video model. |
-| [weilanx Claude Videos](https://github.com/Azure12355/weilanx-claude-videos) | 237 | 🟢 | Hand-drawn and pixel-art explainer videos written entirely in code — Remotion + React + SVG, procedural music & SFX, subtitle-driven timing |
-| [What If Animation](https://github.com/kelano86/what-if-animation) | 226 | 🟢 | A free skill for Claude Code and OpenCode (runs on a free model): one topic line in, a finished 15-25 s What If animated episode out. Every frame drawn in code (SVG + Remotion); voice and sound from ElevenLabs. |
-| [fy-code-animation](https://github.com/Akillll-DuoHe/fy-code-animation) | 194 | 🟢 | 把中文文案、画风提示词和声音做成前后连贯的代码动画（Remotion / Canvas / HTML）的 DeepSeek Harness 技能。341 画风库检索、语义分镜、镜头转场、角色表演、四案音乐与音效、检查返修。 |
-| [manim-skill](https://github.com/Yusuke710/manim-skill) | 193 | 🟢 | SKILL.md for creating animations with Manim. |
-| [RuiC Motion Reel](https://github.com/HRuiCcc/RuiC-motion-reel) | 182 | 🟢 | 一句话 brief 生成动态图形 / 动效宣传片 · Agent Skill。时长按 BPM×小节算（12–60 秒），默认 1920×1080；常规宣传片走 remotion/ 模板，特殊质感走自研引擎：2× 超采样矢量/文字、真 3D 点云、丝网印四色分色、普朗克/薄膜干涉物理配色、代码合成配乐，不用外部美术素材、不用 AE。16 张风格牌为参考库，已做过九种视觉语言（暗色科技 / riso / 纸艺 / 银盐 / 普朗克恒星 / 氰版蓝图 / 紫外光刻 / 品牌暗色 / 品牌亮色），成片见 docs/films/ |
-| [dashi 画风讲解](https://github.com/chuspeeism/dashi-animationstyle) | 178 | 🟢 | 把一段中文知识口播做成 7 种画风的讲解动画（Claude Code skill）：画面由 Claude 写 HTML/Canvas 代码逐帧画出，不用生图模型 |
-| [Vibe 知识短片](https://github.com/xiazhuo123456789/vibe-knowledge-video) | 166 | 🟢 | Vibe知识大赏风格 AI 知识视频 Skill — 纯代码生成电影感知识短视频（无配音·双语字幕·合成BGM·历史文献再现），风格规范逆向自 8 条抖音爆款原片（1091 帧逐秒分析） |
-| [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 150 | 🟢 | AI motion graphics for YouTube explainer videos: 74 animated HTML explainer boards (charts, diagrams, Venn, timeline, heatmap) synced to your voice with Whisper, exported frame by frame with Chrome + FFmpeg. Every prompt + Claude skills. By TEIN AI. |
-| [BB-Video](https://github.com/BubbleBrainBB/BB-Video) | 133 | 🟢 | An agent skill that makes videos in pure code — narrated explainers and product promos in 32 visual styles (whiteboard, ink-wash, shadow puppets, pixel art, isometric worlds, movie trailers, manga, animated maps, Swiss kinetic type, blueprints, paper collage, Bayeux tapestry, stick-figure parables, pencil tests, pen-drawn worlds…), 16:9 and 9:16. |
-| [Papercut Explainer](https://github.com/0xS4N4TG/papercut-explainer) | 119 | 🟢 | Short vertical cut-paper explainer reels, made by your coding agent. Nine Agent Skills plus a Remotion library. Works with Claude Code, OpenCode, Codex, Gemini CLI, Cursor, Copilot and more. |
-| [map-motion](https://github.com/SpaceZephyr/map-motion) | 110 | 🟢 | 地图动效视频 Claude Code skill：基于高德地图真实路线/边界/卫星底图，做地球俯冲、vlog 我在这里、徒步海拔、骑行旅程、航线、行政区高亮等地图动画，12 种风格 |
-| [Claude Drawing Skill](https://github.com/cloveric/claude-drawing-skill) | 101 | 🟢 | Claude paints with code: a Claude Code skill for procedural illustration in 77 styles, from ink wash (水墨), watercolour and ukiyo-e to stained glass, Roman mosaic, Art Deco, shadow puppets, X-ray, VHS tape, pastel UI, dry-brush blocks, a colour-town street, pastel vignettes, poetic Halloween. No image model: numpy + Pillow on a CPU, draw-on GIFs. |
-| [sy-style-100](https://github.com/xiaoxiong20xx-code/sy-style-100) | 65 | 🟢 | 100 条每一帧都由代码算出来的视频：20 种风格两期 + 60 条行业广告片。纯代码渲染、程序合成配乐，MIT 可商用 |
-| [code-poem-film](https://github.com/bangbuilds/code-poem-film) | 63 | 🟢 | Claude Code skill：说一首诗，做出一条水墨手绘风 2D 动画（代码逐帧绘制 + 朗诵逐字对位 + numpy 配乐） |
-| [DeepSeek Opus Motion](https://github.com/8533502-dev/deepseek-opus-motion-skill) | 57 | 🟢 | 让 DeepSeek 用和 Claude Opus 5.5 同样的提示词做出接近的 Remotion 动效视频 · A skill for Opus-parity motion design |
-| [Knowledge Explainer](https://github.com/znyupup/knowledge-explainer-skill) | 57 | 🟡 | 把一份 markdown 文稿，自动生成讲解动画视频 — Powered by Remotion + AI Agent |
-| [Creator Style Kit](https://github.com/threeaus/creator-style-kit) | 54 | 🟢 | 18 套 9:16 HyperFrames 视频风格（字体/配色/动效/音效/构图），Claude Code skill |
-| [gbro 拼贴信息动画](https://github.com/pyang5166/gbro-collage-info) | 54 | 🟢 | 半调纸拼贴风信息动画 Agent Skill · Halftone paper-collage info-graphic animations from voiceover scripts (HyperFrames, no image models) |
-
-<sub>[↑ Back to the style index](#index)</sub>
-
 <a name="hand"></a>
 
 ### Hand-drawn & Whiteboard
 
-> 手绘 · 白板 · 水彩 · 19 projects
+> 手绘 · 白板 · 水彩 · 23 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -390,6 +302,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | 6.2k | 🟢 | 艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。 |
 | [Tegaki](https://github.com/gkurt/tegaki) | 3.3k | 🟢 | Handwriting animation for the web. Supports any font or text. |
 | [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.1k | 🟢 | 15 motion design styles, each made by Claude Opus 5.5 writing code from one prompt: watch the films, copy the prompts, read the full source. |
+| [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 2.6k | 🟢 | A starter kit for animating hand-painted cartoons with Claude: p5.js + p5.brush, the Clawd character, 31 acted emotions and a guide for the model |
 | [Excalidraw Animate](https://github.com/dai-shi/excalidraw-animate) | 2.1k | 🟢 | A tool to animate Excalidraw drawings |
 | [Animate](https://github.com/cth9191/animate) | 1.5k | 🟢 | Procedural animation in any style for Claude Code: short single-file canvas videos with story, look and storyboard check-ins. 7 built-in styles or one matched from your references, your own music (beat-mapped), real product screenshots, every format from one piece. |
 | [anidoodle](https://github.com/alexgreensh/anidoodle) | 1.3k | 🟢 | Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render. |
@@ -399,7 +312,10 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [白板老师视频](https://github.com/liangdabiao/whiteboard-teacher-video) | 497 | 🟢 | MG动画视频skill, 抖音爆款Vibe知识大赏知识短片 ，  自动配音效，一键出片。图文讲解视频 skill  —— 把讲解稿变成「手绘会动的画面」讲解视频。  图形由代码逐笔绘出、文字逐字写出、讲到哪画到哪。五套风格可选，本地 Chrome 渲染， 零生图 API 成本 ，任何改动秒级重渲。 |
 | [weilanx Claude Videos](https://github.com/Azure12355/weilanx-claude-videos) | 237 | 🟢 | Hand-drawn and pixel-art explainer videos written entirely in code — Remotion + React + SVG, procedural music & SFX, subtitle-driven timing |
 | [dashi 画风讲解](https://github.com/chuspeeism/dashi-animationstyle) | 178 | 🟢 | 把一段中文知识口播做成 7 种画风的讲解动画（Claude Code skill）：画面由 Claude 写 HTML/Canvas 代码逐帧画出，不用生图模型 |
+| [Claude MV Skill](https://github.com/Joker-chichi/claude-mv-skill) | 178 | 🟢 | Claude Code skill for hand-painted animation and lyric music videos |
 | [Claude Drawing Skill](https://github.com/cloveric/claude-drawing-skill) | 101 | 🟢 | Claude paints with code: a Claude Code skill for procedural illustration in 77 styles, from ink wash (水墨), watercolour and ukiyo-e to stained glass, Roman mosaic, Art Deco, shadow puppets, X-ray, VHS tape, pastel UI, dry-brush blocks, a colour-town street, pastel vignettes, poetic Halloween. No image model: numpy + Pillow on a CPU, draw-on GIFs. |
+| [Watercolor Playground](https://github.com/msurguy/watercolor-playground) | 101 | 🟢 | Realistic watercolor drawings |
+| [wet-paint-flow](https://github.com/simonxxooxxoo/wet-paint-flow) | 66 | 🟢 | Real-time Three.js flow-field painter with persistent Bézier strokes and wet impasto shading. |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -407,7 +323,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Generative Art
 
-> 生成艺术 · 几何 · 32 projects
+> 生成艺术 · 几何 · 37 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -415,6 +331,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [raylib](https://github.com/raysan5/raylib) | 35.6k | 🟢 | A simple and easy-to-use library to enjoy videogames programming |
 | [p5.js](https://github.com/processing/p5.js) | 24.3k | 🟢 | p5.js is a client-side JS platform that empowers artists, designers, students, and anyone to learn to code and express themselves creatively on the web. It is based on the core principles of Processing. Looking for p5.js 2.0? http://beta.p5js.org |
 | [Paper.js](https://github.com/paperjs/paper.js) | 15.2k | 🟢 | The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas. Created by @lehni & @puckey |
+| [primitive](https://github.com/fogleman/primitive) | 13.6k | ⚪ | Reproducing images with geometric primitives. |
 | [openFrameworks](https://github.com/openframeworks/openFrameworks) | 10.5k | 🟢 | openFrameworks is a community-developed cross platform toolkit for creative coding in C++. |
 | [Two.js](https://github.com/jonobr1/two.js) | 8.7k | 🟢 | A renderer agnostic two-dimensional drawing api for the web |
 | [Vanta.js](https://github.com/tengbao/vanta) | 7.3k | ⚪ | Animated 3D backgrounds for your website |
@@ -443,6 +360,10 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [DrawBot](https://github.com/typemytype/drawbot) | 455 | 🟢 | 用 Python 画 2D 图形并导出 GIF/MP4，字体设计圈常用来做文字动画。 |
 | [p5.riso](https://github.com/antiboredom/p5.riso) | 373 | 🟢 | A p5js library for risograph printing by Sam Lavigne and Tega Brain. |
 | [Coldtype](https://github.com/coldtype/coldtype) | 341 | 🟢 | cross-platform display typography in python |
+| [flow-fields](https://github.com/romellogoodman/flow-fields) | 311 | 🟢 | A javascript library for creating flow fields |
+| [空间殖民实验](https://github.com/jasonwebb/2d-space-colonization-experiments) | 227 | 🟡 | Visual experiments exploring space colonization as a 2D morphogenesis tool. |
+| [L-System Explorer](https://github.com/anvaka/lsystem) | 100 | 🟢 | A simple L-Systems explorer powered by WebGL |
+| [neon](https://github.com/Stanko/neon) | 44 | 🟡 | Generative art piece made using 2d vector field |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -450,7 +371,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Shaders & Psychedelic
 
-> 着色器 · 迷幻光影 · 34 projects
+> 着色器 · 迷幻光影 · 40 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -470,6 +391,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [gl-react](https://github.com/gre/gl-react) | 3k | 🟢 | gl-react – React library to write and compose WebGL shaders |
 | [Hydra](https://github.com/hydra-synth/hydra) | 2.7k | 🟡 | Livecoding networked visuals in the browser |
 | [glslCanvas](https://github.com/patriciogonzalezvivo/glslCanvas) | 2.3k | ⚪ | Simple tool to load GLSL shaders on HTML Canvas using WebGL |
+| [GLSL-PathTracer](https://github.com/knightcrawler25/GLSL-PathTracer) | 2.1k | ⚪ | A toy physically based GPU path tracer (C++/OpenGL/GLSL) |
 | [Butterchurn](https://github.com/jberg/butterchurn) | 2k | 🟡 | Butterchurn is a WebGL implementation of the Milkdrop Visualizer |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | 🟡 | Surface-Stable Fractal Dithering |
 | [MilkDrop 3](https://github.com/milkdrop2077/MilkDrop3) | 1.5k | 🟢 | MilkDrop 3.0, supports any audio source, double-preset (.milk2), loading presets based on beat detection and much more... |
@@ -484,10 +406,15 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Shader Toy for VS Code](https://github.com/stevensona/shader-toy) | 721 | 🟢 | Shadertoy-like live preview for GLSL shaders in Visual Studio Code |
 | [Shader Minifier](https://github.com/laurentlb/shader-minifier) | 583 | 🟢 | Minify and obfuscate GLSL or HLSL code |
 | [cables](https://github.com/cables-gl/cables) | 572 | 🟢 | cables is a tool for creating beautiful interactive content |
+| [Retro Crisis 着色器](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 480 | 🟢 | Retro Crisis libretro CRT shader presets, based on Guest Advanced NTSC shader |
 | [Shader Skills](https://github.com/gokayfem/shader-skills) | 418 | 🟢 | GLSL and Shadertoy shader skills for Claude Code, Codex, Cursor, Copilot and Gemini CLI. 186 functions, SDF raymarching, procedural terrain, water, clouds and generative art, with a bundler, checker and 11 examples. |
+| [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | 383 | 🟡 | WebGL 实现的水墨画背景特效 - 个人主页 |
+| [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) | 347 | 🟢 | 41 hand-curated drop-in SwiftUI Metal shader effects — holographic foil, kaleidoscope, magnetic fields, glitch, neon edges and more. Typed View modifiers, agent-friendly docs. |
 | [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 343 | 🟢 | Shaders bringing 5th-gen console aesthetics to Godot 4. |
 | [Dithering Shader](https://github.com/niccolofanton/dithering-shader) | 294 | 🟢 | Real-time ordered (Bayer) dithering post-processing effect for 3D scenes, built with React Three Fiber and Three.js |
+| [Black Hole](https://github.com/ibra-kdbra/black-hole) | 112 | 🟢 | Black hole with three.js, glsl shaders |
 | [ditherwave](https://github.com/sahilsaini5/ditherwave) | 88 | 🟡 | A tiny WebGL2 dithering primitive for React. Bayer, halftone, ASCII, error-diffusion. Under 8kb gz. |
+| [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | 🟡 | A performant Three.js galaxy shader with customizable colors, spiral patterns, and black hole effects |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -551,7 +478,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### 3D
 
-> 3D 渲染 · 46 projects
+> 3D 渲染 · 58 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -576,13 +503,17 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [WFC 无限城市](https://github.com/marian42/wavefunctioncollapse) | 4.9k | ⚪ | Walk through an infinite, procedurally generated city |
 | [farbrausch 工具集](https://github.com/farbrausch/fr_public) | 3.8k | ⚪ | Farbrausch demo tools 2001-2011 |
 | [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.1k | 🟢 | 15 motion design styles, each made by Claude Opus 5.5 writing code from one prompt: watch the films, copy the prompts, read the full source. |
+| [Mitsuba 3](https://github.com/mitsuba-renderer/mitsuba3) | 3k | 🟢 | Mitsuba 3: A Retargetable Forward and Inverse Renderer |
 | [postprocessing](https://github.com/pmndrs/postprocessing) | 3k | 🟢 | A post processing library for three.js. |
+| [Yocto/GL](https://github.com/xelatihy/yocto-gl) | 2.9k | ⚪ | Yocto/GL: Tiny C++ Libraries for Data-Driven Physically-based Graphics |
 | [zero](https://github.com/sinclairzx81/zero) | 2.5k | 🟢 | A 3D renderer written in JavaScript and rendered to the terminal. |
 | [huashu-motion](https://github.com/alchaincyf/huashu-motion) | 2.3k | 🟢 | 让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it. |
 | [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | 🟢 | Use VRM on Three.js |
+| [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) | 2k | 🟢 | Path tracing renderer and utilities for three.js built on top of three-mesh-bvh. |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | 🟡 | Surface-Stable Fractal Dithering |
 | [MathBox](https://github.com/unconed/mathbox) | 1.5k | ⚪ | Presentation-quality WebGL math graphing |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | 🟢 | The procedural generation voxel engine |
+| [Origami Simulator](https://github.com/amandaghassaei/OrigamiSimulator) | 1.4k | 🟢 | Realtime WebGL origami simulator |
 | [TerraForge3D](https://github.com/Jaysmito101/TerraForge3D) | 1.3k | 🟢 | Cross Platform Professional Procedural Terrain Generation & Texturing Tool |
 | [three-nebula](https://github.com/creativelifeform/three-nebula) | 1.2k | 🟢 | WebGL based particle system engine for three.js |
 | [three.quarks](https://github.com/Alchemist0823/three.quarks) | 1.2k | 🟢 | Three.quarks is a general purpose particle system /  VFX engine for three.js |
@@ -590,6 +521,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 919 | 🟢 | A procedural terrain generation engine for use with the Three.js 3D graphics library for the web. |
 | [motion-web](https://github.com/feitangyuan/motion-web) | 836 | 🟢 | Build motion-first, high-touch creative websites on vanilla Three.js / Canvas 2D / WebGL / CSS. A Claude Agent Skill with real physics and automated verification. |
 | [Shader Park](https://github.com/shader-park/shader-park-core) | 831 | 🟢 | A JavaScript library for creating real-time 2D and 3D shaders. JS -> Shader. https://shaderpark.com/  https://twitter.com/shaderpark |
+| [遨游太阳系](https://github.com/hyqzz/Solar-Wanderer) | 764 | 🟢 | Solar Wanderer / 遨游太阳系 - 1:1 Real-Time Solar System Explorer in the Browser. NASA JPL ephemeris, WebGL2, Three.js. From solar surface to 100,000 AU Oort Cloud. |
 | [Athenaion](https://github.com/Leonxlnx/athenaion) | 680 | 🟢 | A massive ancient Greek world built entirely in code with three.js. Zero assets, made with Claude Code (Opus 5.5) |
 | [heerich](https://github.com/meodai/heerich) | 630 | 🟢 | Tiny engine for 3D voxel scenes rendered to SVG — boolean ops, oblique/perspective cameras, zero dependencies. Inspired by the geometric cardboard sculptures of Erwin Heerich. |
 | [Machine Skill](https://github.com/AirsupHQ/machine-skill) | 579 | 🟢 | Describe any machine in one line. Claude builds a photoreal, physics based, interactive simulation of it in one HTML file, plus the film to post it. An open source Claude Code skill. |
@@ -597,10 +529,17 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) | 372 | 🟢 | Six Claude Code skills that make animations for reels, no footage needed: 3D cartoon explainer, stick figure, minimal line art, 3D map route, exploded view, line graph. |
 | [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) | 369 | 🟢 | 用 Claude Opus 5.5 写代码做视频：先给三个方案和预览，确认后逐帧渲染成片 \| Canvas / WebGL / Three.js / Remotion / HyperFrames \| Claude Code Skill |
 | [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 343 | 🟢 | Shaders bringing 5th-gen console aesthetics to Godot 4. |
+| [Code Video Showcase](https://github.com/Moessif/code-video-showcase) | 322 | 🟢 | A pure-code beat-synced showcase-video Agent Skill: HTML/Canvas/SVG/Three.js frame-by-frame + Python numpy/scipy score + FFmpeg. No generative models. |
+| [OriSim3D](https://github.com/RemiKoutcherawy/OriSim3D-Android) | 304 | 🟢 | OriSim3D origami folding simulation on Android with openGL. |
 | [Dithering Shader](https://github.com/niccolofanton/dithering-shader) | 294 | 🟢 | Real-time ordered (Bayer) dithering post-processing effect for 3D scenes, built with React Three Fiber and Three.js |
+| [Papercraft](https://github.com/rodrigorc/papercraft) | 289 | 🟢 | Papercraft is a tool to unwrap 3D models. |
 | [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 261 | 🟢 | babylon.js mmd loader and runtime |
 | [Krbn](https://github.com/vpalos/Krbn) | 248 | 🟢 | A web engine for pencil-style rendering of 3D scenes to SVG — exact silhouettes, hidden-line ghosting, hatching. Great for abstract and technical scenes. |
+| [Papercraft World](https://github.com/andrewwoan/aimee-xus-papercraft-world) | 197 | 🟢 | A Seasonal Papercraft Portfolio! |
+| [mutracer](https://github.com/pissang/mutracer) | 173 | 🟢 | WebGPU physically based path tracer |
+| [I, Voyager Planetarium](https://github.com/ivoyager/planetarium) | 162 | 🟢 | Our Planetarium project! |
 | [BB-Video](https://github.com/BubbleBrainBB/BB-Video) | 133 | 🟢 | An agent skill that makes videos in pure code — narrated explainers and product promos in 32 visual styles (whiteboard, ink-wash, shadow puppets, pixel art, isometric worlds, movie trailers, manga, animated maps, Swiss kinetic type, blueprints, paper collage, Bayeux tapestry, stick-figure parables, pencil tests, pen-drawn worlds…), 16:9 and 9:16. |
+| [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 80 | 🟢 | Built with Three.js: MeshSurfaceSampler • 3D flow field particles • Custom post-processing effects, including chromatic aberration, glow, and film grain. |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -608,11 +547,12 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Anime, MMD & VRM
 
-> 二次元 · MMD · VRM · 7 projects
+> 二次元 · MMD · VRM · 8 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
 | [Kalidokit](https://github.com/yeemachine/kalidokit) | 5.7k | 🟡 | Blendshape and kinematics calculator for Mediapipe/Tensorflow.js Face, Eyes, Pose, and Finger tracking models. |
+| [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 2.6k | 🟢 | A starter kit for animating hand-painted cartoons with Claude: p5.js + p5.brush, the Clawd character, 31 acted emotions and a guide for the model |
 | [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | 🟢 | Use VRM on Three.js |
 | [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) | 1.5k | ⚪ | A PixiJS plugin to display Live2D models of any kind. |
 | [Aora Bot](https://github.com/sam70361/aora-bot) | 619 | 🟢 | Aora Bot：代码绘制的网页角色引擎，46 个原创角色、44 种动画状态，支持 React、Web Component 与头像接口（原 Emotion Ball 表情馆） |
@@ -626,7 +566,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Particles & Physics
 
-> 粒子 · 流体 · 物理 · 20 projects
+> 粒子 · 流体 · 物理 · 23 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -641,6 +581,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [tsParticles](https://github.com/tsparticles/tsparticles) | 9.1k | 🟢 | tsParticles - Easily create highly customizable JavaScript particles effects, confetti explosions and fireworks animations and use them as animated backgrounds for your website. Ready to use components available for React.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Solid, Riot and Web Components. |
 | [Galacean Engine](https://github.com/galacean/engine) | 5.9k | 🟢 | A typescript interactive engine, support 2D, 3D, animation, physics, built on WebGL and glTF. |
 | [ALIEN](https://github.com/chrxh/alien) | 5.6k | 🟢 | ALIEN is a CUDA-powered artificial life simulation program. |
+| [The Powder Toy](https://github.com/The-Powder-Toy/The-Powder-Toy) | 5.4k | 🟢 | Written in C++ and using SDL, The Powder Toy is a desktop version of the classic 'falling sand' physics sandbox, it simulates air pressure and velocity as well as heat. |
 | [Canvas UI](https://github.com/DavidHDev/canvas-ui) | 5.3k | 🟢 | A library of creative canvas components. Real HTML with WebGL effects running over it. React, Vue, Svelte, vanilla. |
 | [Particle Life](https://github.com/hunar4321/particle-life) | 3.4k | ⚪ | A simple program to simulate artificial life using attraction/reuplsion forces between many particles |
 | [Proton](https://github.com/drawcall/Proton) | 2.5k | 🟡 | Javascript particle animation library |
@@ -650,6 +591,8 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Particle Life App](https://github.com/tom-mohr/particle-life-app) | 1k | 🟡 | 🦠 Simulator for a particle system showing life-like behaviour. |
 | [manim-physics](https://github.com/Matheart/manim-physics) | 412 | 🟢 | Physics simulation plugin of Manim that can generate scenes in various branches of Physics. |
 | [cbirds](https://github.com/clainstone/cbirds) | 286 | 🟢 | A flock of birds in your terminal: Craig Reynolds' boids, in braille in any terminal and as sprites in Kitty and Ghostty. One C99 program, no dependencies. Linux and macOS |
+| [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 80 | 🟢 | Built with Three.js: MeshSurfaceSampler • 3D flow field particles • Custom post-processing effects, including chromatic aberration, glow, and film grain. |
+| [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | 🟡 | A performant Three.js galaxy shader with customizable colors, spiral patterns, and black hole effects |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -657,7 +600,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Glitch & Post FX
 
-> 故障 · 后期特效 · 12 projects
+> 故障 · 后期特效 · 16 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -667,12 +610,16 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [ShaderGlass](https://github.com/mausimus/ShaderGlass) | 4.4k | 🟢 | Overlay for running GPU shaders on top of Windows desktop and Wine |
 | [postprocessing](https://github.com/pmndrs/postprocessing) | 3k | 🟢 | A post processing library for three.js. |
 | [Hydra](https://github.com/hydra-synth/hydra) | 2.7k | 🟡 | Livecoding networked visuals in the browser |
+| [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) | 2.7k | 🟢 | Free, open-source VHS effect. Standalone application + plugin (After Effects, Premiere, and OpenFX). |
 | [GL Transitions](https://github.com/gl-transitions/gl-transitions) | 2.2k | 🟢 | The open collection of GL Transitions |
 | [glitch-this](https://github.com/TotallyNotChase/glitch-this) | 1.8k | ⚪ | :camera: Glitchify images and GIF - with highly customizable options! |
 | [VFX-JS](https://github.com/fand/vfx-js) | 1.2k | 🟢 | WebGL effects made easy. |
+| [ntscqt](https://github.com/JargeZ/ntscqt) | 1.2k | ⚪ | AKA Line Maker 10.0 \| GUI for VHS video simulator |
 | [PixiJS Filters](https://github.com/pixijs/filters) | 1.1k | 🟡 | Collection of community-authored custom display filters for PixiJS |
 | [pixelsort](https://github.com/satyarth/pixelsort) | 875 | 🟢 | Pixel sorting images in python. |
 | [ff-tracking](https://github.com/mrsarac/ff-tracking) | 592 | 🟢 | A virtual camera films an AI agent's screen while a tracker locks onto every glyph. Two fframes passes, one SkSL shader, all sound synthesized. |
+| [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) | 347 | 🟢 | 41 hand-curated drop-in SwiftUI Metal shader effects — holographic foil, kaleidoscope, magnetic fields, glitch, neon edges and more. Typed View modifiers, agent-friendly docs. |
+| [VhsFx](https://github.com/NullTale/VhsFx) | 89 | 🟡 | ⬜ Vhs post effect for Unity Urp |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -680,7 +627,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Pixel & Retro
 
-> 像素 · 复古 · 20 projects
+> 像素 · 复古 · 26 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -695,15 +642,21 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [TIC-80](https://github.com/nesbox/TIC-80) | 6.2k | 🟢 | TIC-80 is a fantasy computer for making, playing and sharing tiny games. |
 | [pixelfx](https://github.com/patch-gg/pixelfx) | 4.7k | 🟢 | 244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own. |
 | [ShaderGlass](https://github.com/mausimus/ShaderGlass) | 4.4k | 🟢 | Overlay for running GPU shaders on top of Windows desktop and Wine |
+| [Sandspiel](https://github.com/MaxBittker/sandspiel) | 3.2k | 🟢 | Creative cellular automata browser game |
 | [timg](https://github.com/hzeller/timg) | 2.8k | 🟢 | A terminal image and video viewer. |
 | [obelisk.js](https://github.com/nosir/obelisk.js) | 2.3k | ⚪ | Build pixel isometric graphics with HTML5 canvas |
 | [WASM-4](https://github.com/aduros/wasm4) | 1.5k | 🟢 | Build retro games using WebAssembly for a fantasy console. |
 | [Animate](https://github.com/cth9191/animate) | 1.5k | 🟢 | Procedural animation in any style for Claude Code: short single-file canvas videos with story, look and storyboard check-ins. 7 built-in styles or one matched from your references, your own music (beat-mapped), real product screenshots, every format from one piece. |
 | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | 🟢 | This repo is for glsl shaders converted by hand from libretro's common-shaders repo, since some don't play nicely with the cg2glsl script. |
 | [DOjS](https://github.com/SuperIlu/DOjS) | 963 | 🟡 | A MS-DOS Creative Coding IDE/platform based on JavaScript |
+| [NTSC-CRT](https://github.com/LMP88959/NTSC-CRT) | 577 | 🟢 | NTSC encoding/decoding in C89 using only integers and fixed point math. Supports NES decoding. Can be used as an image filter for games or real-time applications. |
+| [Retro Crisis 着色器](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 480 | 🟢 | Retro Crisis libretro CRT shader presets, based on Guest Advanced NTSC shader |
+| [Sandboxels](https://github.com/R74nCom/sandboxels) | 477 | 🟢 | In-browser falling-sand simulation game with over 500 elements and thousands of reactions. |
 | [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 343 | 🟢 | Shaders bringing 5th-gen console aesthetics to Godot 4. |
 | [hitherdither](https://github.com/hbldh/hitherdither) | 260 | 🟢 | Dithering algorithms for arbitrary palettes in PIL |
 | [weilanx Claude Videos](https://github.com/Azure12355/weilanx-claude-videos) | 237 | 🟢 | Hand-drawn and pixel-art explainer videos written entirely in code — Remotion + React + SVG, procedural music & SFX, subtitle-driven timing |
+| [Sand Slide](https://github.com/kiwijuice56/sand-slide) | 143 | 🟢 | Fast falling sand game made within Godot and utilizing GDExtension features |
+| [FallingSandEngine](https://github.com/PieKing1215/FallingSandEngine) | 76 | 🟡 | Experimental 2D falling sand engine written in Rust |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -711,7 +664,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### ASCII & Terminal
 
-> ASCII · 终端 · 21 projects
+> ASCII · 终端 · 25 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -733,9 +686,13 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [video-to-ascii](https://github.com/joelibaceta/video-to-ascii) | 1.9k | 🟡 | It is a simple python package to play videos in the terminal using characters as pixels |
 | [Durdraw](https://github.com/durdraw/durdraw) | 1.9k | 🟢 | Versatile ASCII and ANSI Art text editor for drawing in the Linux/Unix/macOS terminal, with animation, 256 and 16 colors, Unicode and CP437, and customizable themes |
 | [scope-tui](https://github.com/alemidev/scope-tui) | 753 | 🟢 | oscilloscope/vectorscope/spectroscope for your terminal |
+| [linecast](https://github.com/ashuttl/linecast) | 667 | 🟢 | Weather, tides, the sun, the moon, maps, and a planetarium, in your terminal. The Old Farmer's Almanac meets Minitel. |
 | [play.core](https://github.com/ertdfgcvb/play.core) | 544 | 🟡 | ASCII Playground |
 | [Open Cubic Player](https://github.com/mywave82/opencubicplayer) | 451 | 🟢 | Open Cubic Player (unix fork). Music visualizer for various tracked music formats (amiga modules, S3M, IT), chiptunes and other formats related to demoscene |
+| [termsand](https://github.com/cgsdev0/termsand) | 317 | 🟢 | falling sand sim for tmux 3.4+ |
 | [cbirds](https://github.com/clainstone/cbirds) | 286 | 🟢 | A flock of birds in your terminal: Craig Reynolds' boids, in braille in any terminal and as sprites in Kitty and Ghostty. One C99 program, no dependencies. Linux and macOS |
+| [proof-engine](https://github.com/Mattbusel/proof-engine) | 32 | 🟢 | Rust rendering and game engine where every visual is math: glyphs and particles driven by strange attractors, force fields and spring physics, with OpenGL post-FX, synth audio, a scripting VM and an egui scene editor. |
+| [TermiSand](https://github.com/BobdaProgrammer/TermiSand) | 22 | 🟡 | A falling sand simulator in your terminal! |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -743,7 +700,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Data Animation
 
-> 数据可视化动画 · 26 projects
+> 数据可视化动画 · 27 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -759,6 +716,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [AntV G2](https://github.com/antvis/G2) | 12.7k | 🟢 | 📊 The concise and progressive visualization grammar. |
 | [chart.xkcd](https://github.com/timqian/chart.xkcd) | 7.9k | 🟢 | xkcd styled chart lib |
 | [roughViz](https://github.com/jwilber/roughViz) | 7.2k | ⚪ | Reusable JavaScript library for creating sketchy/hand-drawn styled charts in the browser. |
+| [earth](https://github.com/cambecc/earth) | 6.6k | ⚪ | a project to visualize global weather conditions |
 | [Pts](https://github.com/williamngan/pts) | 5.4k | 🟢 | A library for visualization and creative-coding |
 | [git-sim](https://github.com/initialcommit-com/git-sim) | 4.7k | 🟢 | The visual layer for Git in your own repos: simulate, record, replay, audit, and share entire Git workflows, wherever you or your agents run them. |
 | [AntV L7](https://github.com/antvis/L7) | 4.1k | 🟢 | 🌎 Large-scale WebGL-powered Geospatial Data Visualization analysis engine. |
@@ -780,16 +738,20 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 <a name="ink"></a>
 
-### Ink Wash
+### Ink & Watercolor
 
-> 水墨 · 山水 · 4 projects
+> 水墨 · 水彩 · 8 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
 | [Shan-Shui-Inf 千里江山](https://github.com/LingDong-/shan-shui-inf) | 6.4k | ⚪ | Procedurally generated Chinese landscape painting. |
 | [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | 6.2k | 🟢 | 艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。 |
+| [水墨 UI](https://github.com/shuimo-design/shuimo-ui) | 399 | 🟢 | 一款水墨风UI |
+| [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | 383 | 🟡 | WebGL 实现的水墨画背景特效 - 个人主页 |
 | [Claude Drawing Skill](https://github.com/cloveric/claude-drawing-skill) | 101 | 🟢 | Claude paints with code: a Claude Code skill for procedural illustration in 77 styles, from ink wash (水墨), watercolour and ukiyo-e to stained glass, Roman mosaic, Art Deco, shadow puppets, X-ray, VHS tape, pastel UI, dry-brush blocks, a colour-town street, pastel vignettes, poetic Halloween. No image model: numpy + Pillow on a CPU, draw-on GIFs. |
+| [Watercolor Playground](https://github.com/msurguy/watercolor-playground) | 101 | 🟢 | Realistic watercolor drawings |
 | [code-poem-film](https://github.com/bangbuilds/code-poem-film) | 63 | 🟢 | Claude Code skill：说一首诗，做出一条水墨手绘风 2D 动画（代码逐帧绘制 + 朗诵逐字对位 + numpy 配乐） |
+| [国风纸片动画](https://github.com/AllenAI2014/remotion-guofeng-starter) | 34 | 🟢 | 国风纸片动画：Remotion 风格资产库 + 制作流程 Skill。给 AI 一首诗/成语，照这套国风纸片拼贴风格从零出片，全程代码渲染不进剪辑。 |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -825,7 +787,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Plotter & Line Art
 
-> 绘图仪 · 单线画 · 6 projects
+> 绘图仪 · 单线画 · 7 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -835,6 +797,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [vsketch](https://github.com/abey79/vsketch) | 610 | 🟢 | Generative plotter art environment for Python |
 | [Krbn](https://github.com/vpalos/Krbn) | 248 | 🟢 | A web engine for pencil-style rendering of 3D scenes to SVG — exact silhouettes, hidden-line ghosting, hatching. Great for abstract and technical scenes. |
 | [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) | 217 | 🟢 | A p5.js library for exporting SVG files tailored for pen plotting. |
+| [Delaunay Stippler](https://github.com/NHasan143/delaunay-stippler) | 68 | 🟢 | A modern JavaScript image stippling generator that turns uploaded images into stipple art using weighted Lloyd relaxation. Includes Voronoi and Delaunay visualization modes, runs in a Web Worker for speed, and supports PNG export. Built with Vite + d3-delaunay |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -858,7 +821,7 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Riso & Paper Collage
 
-> Riso · 剪纸拼贴 · 5 projects
+> Riso · 剪纸拼贴 · 6 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -867,14 +830,15 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Riso Window Seat](https://github.com/sevenevesai/riso-windowseat) | 308 | 🟢 | Procedural risograph films in single HTML files (Window Seat, Roost and more), with the Claude Code skills, docs and tools to make your own. |
 | [Papercut Explainer](https://github.com/0xS4N4TG/papercut-explainer) | 119 | 🟢 | Short vertical cut-paper explainer reels, made by your coding agent. Nine Agent Skills plus a Remotion library. Works with Claude Code, OpenCode, Codex, Gemini CLI, Cursor, Copilot and more. |
 | [gbro 拼贴信息动画](https://github.com/pyang5166/gbro-collage-info) | 54 | 🟢 | 半调纸拼贴风信息动画 Agent Skill · Halftone paper-collage info-graphic animations from voiceover scripts (HyperFrames, no image models) |
+| [国风纸片动画](https://github.com/AllenAI2014/remotion-guofeng-starter) | 34 | 🟢 | 国风纸片动画：Remotion 风格资产库 + 制作流程 Skill。给 AI 一首诗/成语，照这套国风纸片拼贴风格从零出片，全程代码渲染不进剪辑。 |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
 <a name="alife"></a>
 
-### Artificial Life
+### Artificial Life & Growth
 
-> 人工生命 · 元胞自动机 · 6 projects
+> 人工生命 · 生长形态 · 8 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -884,6 +848,8 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [The Nature of Code](https://github.com/nature-of-code/noc-book-2) | 2k | 🟢 | The 2024 edition of The Nature of Code with p5.js. Includes Notion workflow and build system. |
 | [Particle Life App](https://github.com/tom-mohr/particle-life-app) | 1k | 🟡 | 🦠 Simulator for a particle system showing life-like behaviour. |
 | [algovivo](https://github.com/juniorrojas/algovivo) | 388 | 🟢 | An energy-based formulation for soft-bodied virtual creatures |
+| [空间殖民实验](https://github.com/jasonwebb/2d-space-colonization-experiments) | 227 | 🟡 | Visual experiments exploring space colonization as a 2D morphogenesis tool. |
+| [L-System Explorer](https://github.com/anvaka/lsystem) | 100 | 🟢 | A simple L-Systems explorer powered by WebGL |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -909,9 +875,9 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 <a name="fractal"></a>
 
-### Fractals & Math Art
+### Fractals & Chaos
 
-> 分形 · 数学艺术 · 4 projects
+> 分形 · 混沌 · 数学艺术 · 8 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
@@ -919,6 +885,10 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Fractal Sound Explorer](https://github.com/HackerPoet/FractalSoundExplorer) | 1.3k | ⚪ | Explore fractals in an audio-visual sandbox |
 | [Mandelbulber](https://github.com/buddhi1980/mandelbulber2) | 1.1k | 🟢 | Official repository for Mandelbulber v2 |
 | [XaoS](https://github.com/xaos-project/XaoS) | 627 | 🟢 | Real-time interactive fractal zoomer |
+| [Strange Attractor Renderer](https://github.com/Icelk/strange-attractor-renderer) | 88 | 🟡 | A multithreaded strange attractor renderer |
+| [Hopalong Attractor](https://github.com/ratwolfzero/hopalong_python) | 38 | 🟢 | Generative Density Approximation for Deterministic Chaos The Hopalong Attractor |
+| [proof-engine](https://github.com/Mattbusel/proof-engine) | 32 | 🟢 | Rust rendering and game engine where every visual is math: glyphs and particles driven by strange attractors, force fields and spring physics, with OpenGL post-FX, synth audio, a scripting VM and an egui scene editor. |
+| [attractors](https://github.com/vdesmond/attractors) | 23 | 🟡 | package for simulation and visualization of strange attractors |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -961,14 +931,16 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 
 ### Map & Route
 
-> 地图 · 路线动画 · 8 projects
+> 地图 · 路线动画 · 10 projects
 
 | Project | Stars | Status | Description |
 | --- | ---: | :---: | --- |
 | [deck.gl](https://github.com/visgl/deck.gl) | 14.7k | 🟢 | WebGL2 powered visualization framework |
 | [MapSCII](https://github.com/rastapasta/mapscii) | 9.3k | 🟡 | 🗺  MapSCII is a Braille & ASCII world map renderer for your console - enter => telnet mapscii.me <= on Mac (brew install telnet) and Linux, connect with PuTTY on Windows |
+| [earth](https://github.com/cambecc/earth) | 6.6k | ⚪ | a project to visualize global weather conditions |
 | [Fantasy Map Generator](https://github.com/Azgaar/Fantasy-Map-Generator) | 6.2k | 🟢 | Web application generating interactive and highly customizable maps |
 | [AntV L7](https://github.com/antvis/L7) | 4.1k | 🟢 | 🌎 Large-scale WebGL-powered Geospatial Data Visualization analysis engine. |
+| [webgl-wind](https://github.com/mapbox/webgl-wind) | 1.1k | 🟢 | Wind power visualization with WebGL particles |
 | [mapgen4](https://github.com/redblobgames/mapgen4) | 948 | 🟡 | Mapgen4 procedural wilderness map generator |
 | [Trail](https://github.com/amalChandran/trail-android) | 516 | 🟢 | 🚕 Simple, smooth animation for route / polylines on google maps using projections. |
 | [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) | 372 | 🟢 | Six Claude Code skills that make animations for reels, no footage needed: 3D cartoon explainer, stick figure, minimal line art, 3D map route, exploded view, line graph. |
@@ -991,6 +963,137 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [frame.js](https://github.com/mrdoob/frame.js) | 1.2k | 🟡 | JavaScript Sequence Editor |
 | [Shader Minifier](https://github.com/laurentlb/shader-minifier) | 583 | 🟢 | Minify and obfuscate GLSL or HLSL code |
 | [Open Cubic Player](https://github.com/mywave82/opencubicplayer) | 451 | 🟢 | Open Cubic Player (unix fork). Music visualizer for various tracked music formats (amiga modules, S3M, IT), chiptunes and other formats related to demoscene |
+
+<sub>[↑ Back to the style index](#index)</sub>
+
+<a name="sand"></a>
+
+### Falling Sand
+
+> 落沙 · 像素物理 · 8 projects
+
+| Project | Stars | Status | Description |
+| --- | ---: | :---: | --- |
+| [The Powder Toy](https://github.com/The-Powder-Toy/The-Powder-Toy) | 5.4k | 🟢 | Written in C++ and using SDL, The Powder Toy is a desktop version of the classic 'falling sand' physics sandbox, it simulates air pressure and velocity as well as heat. |
+| [Sandspiel](https://github.com/MaxBittker/sandspiel) | 3.2k | 🟢 | Creative cellular automata browser game |
+| [Sandboxels](https://github.com/R74nCom/sandboxels) | 477 | 🟢 | In-browser falling-sand simulation game with over 500 elements and thousands of reactions. |
+| [termsand](https://github.com/cgsdev0/termsand) | 317 | 🟢 | falling sand sim for tmux 3.4+ |
+| [Sand Slide](https://github.com/kiwijuice56/sand-slide) | 143 | 🟢 | Fast falling sand game made within Godot and utilizing GDExtension features |
+| [FallingSandEngine](https://github.com/PieKing1215/FallingSandEngine) | 76 | 🟡 | Experimental 2D falling sand engine written in Rust |
+| [VSand](https://github.com/Ealrann/VSand) | 31 | 🟢 | Rewrite of the "Falling Sand" game with Vulkan. |
+| [TermiSand](https://github.com/BobdaProgrammer/TermiSand) | 22 | 🟡 | A falling sand simulator in your terminal! |
+
+<sub>[↑ Back to the style index](#index)</sub>
+
+<a name="flow"></a>
+
+### Flow & Wind Fields
+
+> 流场 · 风场 · 7 projects
+
+| Project | Stars | Status | Description |
+| --- | ---: | :---: | --- |
+| [earth](https://github.com/cambecc/earth) | 6.6k | ⚪ | a project to visualize global weather conditions |
+| [FieldPlay](https://github.com/anvaka/fieldplay) | 1.3k | 🟢 | A vector field explorer |
+| [webgl-wind](https://github.com/mapbox/webgl-wind) | 1.1k | 🟢 | Wind power visualization with WebGL particles |
+| [flow-fields](https://github.com/romellogoodman/flow-fields) | 311 | 🟢 | A javascript library for creating flow fields |
+| [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 80 | 🟢 | Built with Three.js: MeshSurfaceSampler • 3D flow field particles • Custom post-processing effects, including chromatic aberration, glow, and film grain. |
+| [wet-paint-flow](https://github.com/simonxxooxxoo/wet-paint-flow) | 66 | 🟢 | Real-time Three.js flow-field painter with persistent Bézier strokes and wet impasto shading. |
+| [neon](https://github.com/Stanko/neon) | 44 | 🟡 | Generative art piece made using 2d vector field |
+
+<sub>[↑ Back to the style index](#index)</sub>
+
+<a name="vhs"></a>
+
+### VHS & Analog
+
+> VHS · 模拟信号 · 11 projects
+
+| Project | Stars | Status | Description |
+| --- | ---: | :---: | --- |
+| [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) | 26.6k | 🟢 | A good looking terminal emulator which mimics the old cathode display... |
+| [ShaderGlass](https://github.com/mausimus/ShaderGlass) | 4.4k | 🟢 | Overlay for running GPU shaders on top of Windows desktop and Wine |
+| [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) | 2.7k | 🟢 | Free, open-source VHS effect. Standalone application + plugin (After Effects, Premiere, and OpenFX). |
+| [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | 🟢 | This repo is for glsl shaders converted by hand from libretro's common-shaders repo, since some don't play nicely with the cg2glsl script. |
+| [ntscqt](https://github.com/JargeZ/ntscqt) | 1.2k | ⚪ | AKA Line Maker 10.0 \| GUI for VHS video simulator |
+| [NTSC-CRT](https://github.com/LMP88959/NTSC-CRT) | 577 | 🟢 | NTSC encoding/decoding in C89 using only integers and fixed point math. Supports NES decoding. Can be used as an image filter for games or real-time applications. |
+| [Retro Crisis 着色器](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 480 | 🟢 | Retro Crisis libretro CRT shader presets, based on Guest Advanced NTSC shader |
+| [NTSCRT](https://github.com/finnmckenty/NTSCRT) | 187 | 🟢 | Vintage analog TV/VHS image tool for macOS: ntsc-rs signal emulation + RetroArch CRT shaders (librashader), glued together with SwiftUI/Metal |
+| [NTSCplayer](https://github.com/ferropop/NTSCplayer) | 141 | 🟢 | NTSC/VHS inspired Media Player |
+| [VhsFx](https://github.com/NullTale/VhsFx) | 89 | 🟡 | ⬜ Vhs post effect for Unity Urp |
+| [VHSEffect](https://github.com/zulubo/VHSEffect) | 33 | 🟡 | A realistic VHS post processing effect for Unity |
+
+<sub>[↑ Back to the style index](#index)</sub>
+
+<a name="origami"></a>
+
+### Origami & Papercraft
+
+> 折纸 · 纸艺 · 8 projects
+
+| Project | Stars | Status | Description |
+| --- | ---: | :---: | --- |
+| [Origami Simulator](https://github.com/amandaghassaei/OrigamiSimulator) | 1.4k | 🟢 | Realtime WebGL origami simulator |
+| [Rabbit Ear](https://github.com/rabbit-ear/rabbit-ear) | 655 | 🟢 | computational origami library |
+| [ORIPA](https://github.com/oripa/oripa) | 334 | 🟢 | ORIPA is a drawing software dedicated to designing the crease patterns of origami. The unique feature of ORIPA is calculation of the folded shape from the pattern. |
+| [OriSim3D](https://github.com/RemiKoutcherawy/OriSim3D-Android) | 304 | 🟢 | OriSim3D origami folding simulation on Android with openGL. |
+| [Papercraft](https://github.com/rodrigorc/papercraft) | 289 | 🟢 | Papercraft is a tool to unwrap 3D models. |
+| [Papercraft World](https://github.com/andrewwoan/aimee-xus-papercraft-world) | 197 | 🟢 | A Seasonal Papercraft Portfolio! |
+| [Oriedita](https://github.com/oriedita/oriedita) | 134 | 🟢 | Oriedita (fork of Orihime) is an origami crease pattern editor and folding simulator. |
+| [kami](https://github.com/maxwase/kami) | 134 | 🟢 | Origami simulator driven by a physical hinge |
+
+<sub>[↑ Back to the style index](#index)</sub>
+
+<a name="geo"></a>
+
+### Geometric & Low-poly
+
+> 几何重构 · 低多边形 · 7 projects
+
+| Project | Stars | Status | Description |
+| --- | ---: | :---: | --- |
+| [primitive](https://github.com/fogleman/primitive) | 13.6k | ⚪ | Reproducing images with geometric primitives. |
+| [Triangula](https://github.com/rh12503/triangula) | 3.9k | 🟡 | Generate high-quality triangulated and polygonal art from images. |
+| [Geometrize](https://github.com/Tw1ddle/geometrize) | 2.2k | ⚪ | :white_square_button: Geometrize is a desktop app that geometrizes images into geometric primitives |
+| [Polyvia](https://github.com/Ovilia/Polyvia) | 1.2k | ⚪ | Low-Poly Image and Video Processing |
+| [triangler](https://github.com/tdh8316/triangler) | 99 | 🟢 | :triangular_ruler: Convert images to Low-Poly art using Delaunay triangulation. |
+| [lowpoly](https://github.com/tasercake/lowpoly) | 87 | 🟡 | Robust Low-Poly Image Generator |
+| [Delaunay Stippler](https://github.com/NHasan143/delaunay-stippler) | 68 | 🟢 | A modern JavaScript image stippling generator that turns uploaded images into stipple art using weighted Lloyd relaxation. Includes Voronoi and Delaunay visualization modes, runs in a Web Worker for speed, and supports PNG export. Built with Vite + d3-delaunay |
+
+<sub>[↑ Back to the style index](#index)</sub>
+
+<a name="raytrace"></a>
+
+### Path Tracing
+
+> 写实光追 · 6 projects
+
+| Project | Stars | Status | Description |
+| --- | ---: | :---: | --- |
+| [Mitsuba 3](https://github.com/mitsuba-renderer/mitsuba3) | 3k | 🟢 | Mitsuba 3: A Retargetable Forward and Inverse Renderer |
+| [Yocto/GL](https://github.com/xelatihy/yocto-gl) | 2.9k | ⚪ | Yocto/GL: Tiny C++ Libraries for Data-Driven Physically-based Graphics |
+| [GLSL-PathTracer](https://github.com/knightcrawler25/GLSL-PathTracer) | 2.1k | ⚪ | A toy physically based GPU path tracer (C++/OpenGL/GLSL) |
+| [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) | 2k | 🟢 | Path tracing renderer and utilities for three.js built on top of three-mesh-bvh. |
+| [ToyPathTracer](https://github.com/aras-p/ToyPathTracer) | 1.1k | 🟡 | Toy path tracer for my own learning purposes (CPU/GPU, C++/C#, Win/Mac/Wasm, DX11/Metal, also Unity) |
+| [mutracer](https://github.com/pissang/mutracer) | 173 | 🟢 | WebGPU physically based path tracer |
+
+<sub>[↑ Back to the style index](#index)</sub>
+
+<a name="space"></a>
+
+### Space & Stars
+
+> 星空 · 宇宙 · 7 projects
+
+| Project | Stars | Status | Description |
+| --- | ---: | :---: | --- |
+| [astroterm](https://github.com/da-luce/astroterm) | 2.5k | 🟢 | A planetarium for your terminal! Explore stars, planets, constellations, and more, all rendered right in the command line—no telescope required. ✨🪐 |
+| [遨游太阳系](https://github.com/hyqzz/Solar-Wanderer) | 764 | 🟢 | Solar Wanderer / 遨游太阳系 - 1:1 Real-Time Solar System Explorer in the Browser. NASA JPL ephemeris, WebGL2, Three.js. From solar surface to 100,000 AU Oort Cloud. |
+| [linecast](https://github.com/ashuttl/linecast) | 667 | 🟢 | Weather, tides, the sun, the moon, maps, and a planetarium, in your terminal. The Old Farmer's Almanac meets Minitel. |
+| [Stellarium Web](https://github.com/Stellarium/stellarium-web-engine) | 660 | 🟢 | JavaScript planetarium engine |
+| [I, Voyager Planetarium](https://github.com/ivoyager/planetarium) | 162 | 🟢 | Our Planetarium project! |
+| [Black Hole](https://github.com/ibra-kdbra/black-hole) | 112 | 🟢 | Black hole with three.js, glsl shaders |
+| [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | 🟡 | A performant Three.js galaxy shader with customizable colors, spiral patterns, and black hole effects |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1172,6 +1275,32 @@ Pick a look first, then a tool. Every project here draws or renders its frames i
 | [Shader Editor](https://github.com/markusfisch/ShaderEditor) | alternative to | [Shader Toy for VS Code](https://github.com/stevensona/shader-toy) |
 | [Shader Minifier](https://github.com/laurentlb/shader-minifier) | pairs with | [Bonzomatic](https://github.com/Gargaj/Bonzomatic) |
 | [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) | pairs with | [WaveFunctionCollapse](https://github.com/mxgmn/WaveFunctionCollapse) |
+| [Sandboxels](https://github.com/R74nCom/sandboxels) | alternative to | [Sandspiel](https://github.com/MaxBittker/sandspiel) |
+| [The Powder Toy](https://github.com/The-Powder-Toy/The-Powder-Toy) | alternative to | [Sandspiel](https://github.com/MaxBittker/sandspiel) |
+| [TermiSand](https://github.com/BobdaProgrammer/TermiSand) | alternative to | [termsand](https://github.com/cgsdev0/termsand) |
+| [webgl-wind](https://github.com/mapbox/webgl-wind) | alternative to | [earth](https://github.com/cambecc/earth) |
+| [L-System Explorer](https://github.com/anvaka/lsystem) | same author as | [FieldPlay](https://github.com/anvaka/fieldplay) |
+| [ntscqt](https://github.com/JargeZ/ntscqt) | alternative to | [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) |
+| [NTSCRT](https://github.com/finnmckenty/NTSCRT) | renders with | [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) |
+| [Retro Crisis 着色器](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | alternative to | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) |
+| [VhsFx](https://github.com/NullTale/VhsFx) | alternative to | [VHSEffect](https://github.com/zulubo/VHSEffect) |
+| [Oriedita](https://github.com/oriedita/oriedita) | alternative to | [ORIPA](https://github.com/oripa/oripa) |
+| [OriSim3D](https://github.com/RemiKoutcherawy/OriSim3D-Android) | alternative to | [Origami Simulator](https://github.com/amandaghassaei/OrigamiSimulator) |
+| [Geometrize](https://github.com/Tw1ddle/geometrize) | alternative to | [primitive](https://github.com/fogleman/primitive) |
+| [Triangula](https://github.com/rh12503/triangula) | alternative to | [primitive](https://github.com/fogleman/primitive) |
+| [triangler](https://github.com/tdh8316/triangler) | alternative to | [Triangula](https://github.com/rh12503/triangula) |
+| [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) | plugin for | [three.js](https://github.com/mrdoob/three.js) |
+| [mutracer](https://github.com/pissang/mutracer) | alternative to | [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) |
+| [GLSL-PathTracer](https://github.com/knightcrawler25/GLSL-PathTracer) | alternative to | [ToyPathTracer](https://github.com/aras-p/ToyPathTracer) |
+| [Strange Attractor Renderer](https://github.com/Icelk/strange-attractor-renderer) | alternative to | [attractors](https://github.com/vdesmond/attractors) |
+| [国风纸片动画](https://github.com/AllenAI2014/remotion-guofeng-starter) | renders with | [Remotion](https://github.com/remotion-dev/remotion) |
+| [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | built on | [p5.js](https://github.com/processing/p5.js) |
+| [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | renders with | [p5.brush](https://github.com/acamposuribe/p5.brush) |
+| [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | same author as | [P(doom) MV](https://github.com/JohnHeibel/PDoomVideo) |
+| [P(doom) MV（mexicat 版）](https://github.com/mexicat/pdoom-video) | alternative to | [P(doom) MV](https://github.com/JohnHeibel/PDoomVideo) |
+| [Stellarium Web](https://github.com/Stellarium/stellarium-web-engine) | alternative to | [遨游太阳系](https://github.com/hyqzz/Solar-Wanderer) |
+| [linecast](https://github.com/ashuttl/linecast) | alternative to | [astroterm](https://github.com/da-luce/astroterm) |
+| [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | alternative to | [Shan-Shui-Inf 千里江山](https://github.com/LingDong-/shan-shui-inf) |
 
 ## Contributing
 

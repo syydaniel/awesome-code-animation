@@ -52,11 +52,11 @@
     "repo": "heygen-com/hyperframes",
     "name": "HyperFrames",
     "tags": [
-      "agent",
       "mg",
       "type",
       "short"
     ],
+    "agent": true,
     "lang": "HTML / CSS / GSAP",
     "use": "MV · 短视频 · AI 生成",
     "desc": "HeyGen 开源，用 HTML/CSS 写画面、GSAP 做动画，直接渲染成 MP4，专门为 AI 编程助手设计。",
@@ -366,7 +366,8 @@
     "name": "cool-retro-term",
     "tags": [
       "ascii",
-      "pixel"
+      "pixel",
+      "vhs"
     ],
     "lang": "QML / C++",
     "use": "复古终端",
@@ -493,9 +494,9 @@
     "repo": "latent-spaces/brag",
     "name": "brag",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Python / 技能",
     "use": "项目宣传片",
     "desc": "做完一个项目，一条命令生成带音乐的宣传短片和文案，用 HyperFrames 渲染。",
@@ -509,9 +510,9 @@
     "repo": "img2threejs/img2threejs",
     "name": "img2threejs",
     "tags": [
-      "3d",
-      "agent"
+      "3d"
     ],
+    "agent": true,
     "lang": "Python / three.js",
     "use": "3D 素材",
     "desc": "AI 编程助手技能：照着参考图，用纯代码重建程序化的 three.js 3D 模型，可直接做动画。",
@@ -619,9 +620,9 @@
     "repo": "greensock/gsap-skills",
     "name": "GSAP Skills",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "技能",
     "use": "网页动画",
     "desc": "GSAP 官方的 AI 技能，教编程助手正确使用 GSAP 和它的插件。",
@@ -650,10 +651,10 @@
     "repo": "Vincentwei1021/video-shotcraft",
     "name": "video-shotcraft",
     "tags": [
-      "agent",
       "mg",
       "short"
     ],
+    "agent": true,
     "lang": "React / TS",
     "use": "产品宣传片",
     "desc": "AI 编程助手技能：截取你的真实网页，用 Remotion 做成电影感的产品宣传片。",
@@ -790,6 +791,23 @@
     "gh_desc": "WebGL2 powered visualization framework"
   },
   {
+    "repo": "fogleman/primitive",
+    "name": "primitive",
+    "tags": [
+      "geo",
+      "gen"
+    ],
+    "lang": "Go",
+    "use": "几何重构",
+    "desc": "用三角形、椭圆等几何图形一步步逼近一张照片，过程可以导出成动画。",
+    "note": "2024 年后未更新。",
+    "license": "MIT",
+    "stars": 13578,
+    "pushed_at": "2024-07-22",
+    "archived": false,
+    "gh_desc": "Reproducing images with geometric primitives."
+  },
+  {
     "repo": "acaudwell/Gource",
     "name": "Gource",
     "tags": [
@@ -855,11 +873,11 @@
     "repo": "lemomo-ai/lemo-opuscar",
     "name": "Lemo-Opuscar",
     "tags": [
-      "agent",
       "mg",
       "hand",
       "pixel"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "MV · 短片",
     "desc": "代码实现的影片画风工具箱：66 种现成画风（孟菲斯、地铁线路图、黑板等），让 AI 编程助手按画风出片，全部用代码绘制。",
@@ -1180,6 +1198,24 @@
     "gh_desc": "A Creative Coding Framework for Rust."
   },
   {
+    "repo": "cambecc/earth",
+    "name": "earth",
+    "tags": [
+      "flow",
+      "map",
+      "data"
+    ],
+    "lang": "JavaScript",
+    "use": "全球风场",
+    "desc": "著名的全球天气动画，风、洋流和气温在地球上实时流动。",
+    "note": "2022 年后未更新，效果和代码仍是经典参考。",
+    "license": "MIT",
+    "stars": 6625,
+    "pushed_at": "2022-10-01",
+    "archived": false,
+    "gh_desc": "a project to visualize global weather conditions"
+  },
+  {
     "repo": "karlstav/cava",
     "name": "CAVA",
     "tags": [
@@ -1216,9 +1252,9 @@
     "repo": "remotion-dev/skills",
     "name": "Remotion Skills",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Markdown 技能",
     "use": "MV · 短视频",
     "desc": "Remotion 官方的 AI 编程助手技能，让 Claude Code 等直接写 Remotion 视频。",
@@ -1232,10 +1268,10 @@
     "repo": "alchaincyf/huashu-art-motion",
     "name": "huashu-art-motion",
     "tags": [
-      "agent",
       "hand",
       "ink"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "艺术动画",
     "desc": "国人作品：35 种艺术画风、9 种解说语法，用代码让画动起来，配乐也是代码合成。",
@@ -1360,9 +1396,9 @@
     "repo": "diffusionstudio/lottie",
     "name": "Lottie Skill",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "Lottie 动画",
     "desc": "让 Claude Code / Codex 直接写出可上线的 Lottie 动画文件。",
@@ -1450,6 +1486,23 @@
     "pushed_at": "2026-03-17",
     "archived": false,
     "gh_desc": "Build rich content websites with Markdown and React"
+  },
+  {
+    "repo": "The-Powder-Toy/The-Powder-Toy",
+    "name": "The Powder Toy",
+    "tags": [
+      "sand",
+      "particle"
+    ],
+    "lang": "C++",
+    "use": "粒子沙盒",
+    "desc": "经典落沙物理沙盒：模拟气压、温度、电和上百种元素的反应。",
+    "note": "以游戏为主，适合录制物理反应画面。",
+    "license": "GPL-3.0",
+    "stars": 5392,
+    "pushed_at": "2026-11-04",
+    "archived": false,
+    "gh_desc": "Written in C++ and using SDL, The Powder Toy is a desktop version of the classic 'falling sand' physics sandbox, it simulates air pressure and velocity as well as heat."
   },
   {
     "repo": "hpjansson/chafa",
@@ -1613,10 +1666,10 @@
     "repo": "nexu-io/html-video",
     "name": "html-video",
     "tags": [
-      "agent",
       "mg",
       "type"
     ],
+    "agent": true,
     "lang": "HTML / CSS",
     "use": "短视频 · 宣传片",
     "desc": "让本地 AI 编程助手把 HTML/CSS 写成视频，自带动态字体、瑞士网格、数据卡片等 21 个模板。",
@@ -1646,9 +1699,9 @@
     "repo": "patch-gg/pixelfx",
     "name": "pixelfx",
     "tags": [
-      "pixel",
-      "agent"
+      "pixel"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "像素特效素材",
     "desc": "244 个用代码写的像素特效动画：火焰、爆炸、魔法、天气等，可导出精灵图；附带 AI 编程助手技能。",
@@ -1693,9 +1746,9 @@
     "repo": "kajisho5/ffmpeg-skill",
     "name": "ffmpeg-skill",
     "tags": [
-      "agent",
       "short"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "剪辑",
     "desc": "给 AI 编程助手用的本地剪辑工具：42 个 FFmpeg 工具，切片、字幕、调色都能让助手完成。",
@@ -1710,7 +1763,8 @@
     "name": "ShaderGlass",
     "tags": [
       "pixel",
-      "glitch"
+      "glitch",
+      "vhs"
     ],
     "lang": "C++（Windows）",
     "use": "复古后期",
@@ -1848,6 +1902,21 @@
     "gh_desc": "Lenia - Mathematical Life Forms"
   },
   {
+    "repo": "rh12503/triangula",
+    "name": "Triangula",
+    "tags": [
+      "geo"
+    ],
+    "lang": "Go",
+    "use": "低多边形",
+    "desc": "把图片变成高质量的三角形 / 多边形抽象画。",
+    "license": "MIT",
+    "stars": 3877,
+    "pushed_at": "2026-03-21",
+    "archived": false,
+    "gh_desc": "Generate high-quality triangulated and polygonal art from images."
+  },
+  {
     "repo": "thi-ng/umbrella",
     "name": "thi.ng/umbrella",
     "tags": [
@@ -1881,12 +1950,29 @@
     "gh_desc": "Farbrausch demo tools 2001-2011"
   },
   {
+    "repo": "mexicat/pdoom-video",
+    "name": "P(doom) MV（mexicat 版）",
+    "tags": [
+      "type",
+      "mg"
+    ],
+    "lang": "JavaScript",
+    "use": "歌词 MV",
+    "desc": "《I'm Upping My P(doom)》的另一支代码渲染 MV，歌词逐字卡点。",
+    "note": "只用了 AI 做音频分轨，画面全部由代码渲染。",
+    "license": "MIT",
+    "stars": 3787,
+    "pushed_at": "2026-10-05",
+    "archived": false,
+    "gh_desc": "Code-rendered music video for \"I'm Upping My P(doom)\""
+  },
+  {
     "repo": "feitangyuan/onetake",
     "name": "onetake",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Python / HTML",
     "use": "产品发布片",
     "desc": "一镜到底的动效短片技能：每个画面都从上一个画面里长出来，不像 PPT 那样换页。",
@@ -2043,6 +2129,22 @@
     "gh_desc": "Handwriting animation for the web. Supports any font or text."
   },
   {
+    "repo": "MaxBittker/sandspiel",
+    "name": "Sandspiel",
+    "tags": [
+      "sand",
+      "pixel"
+    ],
+    "lang": "Rust / WASM",
+    "use": "落沙画面",
+    "desc": "浏览器里的落沙沙盒：沙、水、火、植物按元胞自动机规则互相作用，画面像会流动的像素画。",
+    "license": "MIT",
+    "stars": 3220,
+    "pushed_at": "2026-09-10",
+    "archived": false,
+    "gh_desc": "Creative cellular automata browser game"
+  },
+  {
     "repo": "dmtrKovalenko/fframes",
     "name": "fframes",
     "tags": [
@@ -2077,11 +2179,11 @@
     "repo": "Vincentwei1021/mg-styles-15",
     "name": "MG Styles 15",
     "tags": [
-      "agent",
       "mg",
       "3d",
       "hand"
     ],
+    "agent": true,
     "lang": "Python / Web",
     "use": "画风样片",
     "desc": "15 种动效画风样片，每支都由 Claude Opus 5.5 根据一句提示词写代码做出，附提示词和源码。",
@@ -2111,10 +2213,10 @@
     "repo": "Vincentwei1021/anything2explainer",
     "name": "anything2explainer",
     "tags": [
-      "agent",
       "data",
       "mg"
     ],
+    "agent": true,
     "lang": "React / TS",
     "use": "讲解视频",
     "desc": "输入一个话题，生成黑底动态图形讲解视频（带配音和字幕），画面全部由代码渲染。",
@@ -2140,6 +2242,22 @@
     "gh_desc": "gl-react – React library to write and compose WebGL shaders"
   },
   {
+    "repo": "mitsuba-renderer/mitsuba3",
+    "name": "Mitsuba 3",
+    "tags": [
+      "raytrace",
+      "3d"
+    ],
+    "lang": "C++ / Python",
+    "use": "写实渲染",
+    "desc": "研究级物理渲染器，用 Python 脚本搭场景、渲染逐帧动画。",
+    "license": "NOASSERTION",
+    "stars": 2972,
+    "pushed_at": "2026-10-30",
+    "archived": false,
+    "gh_desc": "Mitsuba 3: A Retargetable Forward and Inverse Renderer"
+  },
+  {
     "repo": "pmndrs/postprocessing",
     "name": "postprocessing",
     "tags": [
@@ -2154,6 +2272,23 @@
     "pushed_at": "2026-11-01",
     "archived": false,
     "gh_desc": "A post processing library for three.js."
+  },
+  {
+    "repo": "xelatihy/yocto-gl",
+    "name": "Yocto/GL",
+    "tags": [
+      "raytrace",
+      "3d"
+    ],
+    "lang": "C++",
+    "use": "写实渲染",
+    "desc": "数据驱动的物理渲染小型 C++ 库，学术界常用。",
+    "note": "2024 年后未更新。",
+    "license": null,
+    "stars": 2932,
+    "pushed_at": "2024-02-21",
+    "archived": false,
+    "gh_desc": "Yocto/GL: Tiny C++ Libraries for Data-Driven Physically-based Graphics"
   },
   {
     "repo": "jdan/isomer",
@@ -2175,10 +2310,10 @@
     "repo": "JohnHeibel/PDoomVideo",
     "name": "P(doom) MV",
     "tags": [
-      "agent",
       "type",
       "mg"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "MV",
     "desc": "Claude Opus 5.5 写代码做出的音乐 MV《I'm Upping My P(doom)》完整源码。",
@@ -2209,9 +2344,9 @@
     "repo": "LottieFiles/motion-design-skill",
     "name": "Motion Design Skill",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Markdown 技能",
     "use": "动效设计",
     "desc": "教 AI 助手动效设计原则：节奏、缓动、编排和迪士尼动画法则。",
@@ -2256,12 +2391,28 @@
     "gh_desc": "Livecoding networked visuals in the browser"
   },
   {
+    "repo": "ntsc-rs/ntsc-rs",
+    "name": "ntsc-rs",
+    "tags": [
+      "vhs",
+      "glitch"
+    ],
+    "lang": "Rust",
+    "use": "VHS 后期",
+    "desc": "开源 VHS 效果：模拟 NTSC 信号和录像带的色渗、抖动、雪花，可单独用，也是 AE、PR、OFX 插件。",
+    "license": "NOASSERTION",
+    "stars": 2700,
+    "pushed_at": "2026-10-15",
+    "archived": false,
+    "gh_desc": "Free, open-source VHS effect. Standalone application + plugin (After Effects, Premiere, and OpenFX)."
+  },
+  {
     "repo": "nolangz/pixel2motion",
     "name": "Pixel2Motion",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Python / SVG",
     "use": "Logo 动画",
     "desc": "把位图 Logo 转成干净的 SVG，再做成 Logo 动画和视频预览。",
@@ -2272,12 +2423,29 @@
     "gh_desc": "AI logo animation skill: turn raster logos into smooth SVG animation, animated HTML demos, GIF/video previews, and motion QA evidence."
   },
   {
+    "repo": "JohnHeibel/ClaudeAnimationBase",
+    "name": "Claude Animation Base",
+    "tags": [
+      "hand",
+      "anime"
+    ],
+    "agent": true,
+    "lang": "p5.js",
+    "use": "手绘卡通",
+    "desc": "让 Claude 画手绘卡通动画的起步模板：p5.js + p5.brush，附角色和镜头工具。",
+    "license": "MIT",
+    "stars": 2568,
+    "pushed_at": "2026-09-24",
+    "archived": false,
+    "gh_desc": "A starter kit for animating hand-painted cartoons with Claude: p5.js + p5.brush, the Clawd character, 31 acted emotions and a guide for the model"
+  },
+  {
     "repo": "nateherkai/herk-edit-kit",
     "name": "Herk Edit Kit",
     "tags": [
-      "agent",
       "short"
     ],
+    "agent": true,
     "lang": "HTML / 技能",
     "use": "剪辑 · 短视频",
     "desc": "用 Codex 或 Claude Code 剪口播、Reels 和 YouTube Shorts 的技能包。",
@@ -2308,7 +2476,8 @@
     "repo": "da-luce/astroterm",
     "name": "astroterm",
     "tags": [
-      "ascii"
+      "ascii",
+      "space"
     ],
     "lang": "C（命令行）",
     "use": "终端星空",
@@ -2354,10 +2523,10 @@
     "repo": "alchaincyf/huashu-motion",
     "name": "huashu-motion",
     "tags": [
-      "agent",
       "mg",
       "3d"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "产品宣传片",
     "desc": "国人作品：让 AI 编程助手做产品发布片，自己写配乐，可以指着画面改。",
@@ -2435,9 +2604,9 @@
     "repo": "showlab/Code2Video",
     "name": "Code2Video",
     "tags": [
-      "math",
-      "agent"
+      "math"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "讲解视频",
     "desc": "学术项目：让大模型编写 Manim 代码，自动生成教学讲解视频，画面全部由代码渲染。",
@@ -2481,6 +2650,22 @@
     "gh_desc": "An Apple Music style lyric player component, with React & Vue support. 一个类 Apple Music 歌词显示组件，同时提供 React 和 Vue 绑定。"
   },
   {
+    "repo": "Tw1ddle/geometrize",
+    "name": "Geometrize",
+    "tags": [
+      "geo"
+    ],
+    "lang": "C++",
+    "use": "几何重构",
+    "desc": "把图片几何化成基本图形的桌面软件，可以导出 SVG 和过程动画。",
+    "note": "2022 年后未更新；以图形界面为主。",
+    "license": "NOASSERTION",
+    "stars": 2153,
+    "pushed_at": "2022-08-18",
+    "archived": false,
+    "gh_desc": ":white_square_button: Geometrize is a desktop app that geometrizes images into geometric primitives"
+  },
+  {
     "repo": "dai-shi/excalidraw-animate",
     "name": "Excalidraw Animate",
     "tags": [
@@ -2514,10 +2699,10 @@
     "repo": "Vincentwei1021/video-talkcraft",
     "name": "video-talkcraft",
     "tags": [
-      "agent",
       "short",
       "type"
     ],
+    "agent": true,
     "lang": "React / TS",
     "use": "口播视频",
     "desc": "口播视频技能：按配音逐字对齐，用 Remotion 渲染动态字卡和运镜。",
@@ -2526,6 +2711,23 @@
     "pushed_at": "2026-10-12",
     "archived": false,
     "gh_desc": "Agent skill that turns Claude Code / Codex into a motion-design studio for voiceover-driven explainer videos — word-level voiceover sync, 109 motion recipe cards, an anti-slideshow camera system, Remotion rendering."
+  },
+  {
+    "repo": "knightcrawler25/GLSL-PathTracer",
+    "name": "GLSL-PathTracer",
+    "tags": [
+      "raytrace",
+      "shader"
+    ],
+    "lang": "C++ / GLSL",
+    "use": "写实渲染",
+    "desc": "小巧的 GPU 物理路径追踪器，适合学习和渲染材质展示。",
+    "note": "2024 年后未更新。",
+    "license": "MIT",
+    "stars": 2064,
+    "pushed_at": "2024-02-09",
+    "archived": false,
+    "gh_desc": "A toy physically based GPU path tracer (C++/OpenGL/GLSL)"
   },
   {
     "repo": "vizzuhq/vizzu-lib",
@@ -2541,6 +2743,22 @@
     "pushed_at": "2026-04-20",
     "archived": false,
     "gh_desc": "Library for animated data visualizations and data stories."
+  },
+  {
+    "repo": "gkjohnson/three-gpu-pathtracer",
+    "name": "three-gpu-pathtracer",
+    "tags": [
+      "raytrace",
+      "3d"
+    ],
+    "lang": "JavaScript",
+    "use": "写实渲染",
+    "desc": "three.js 的 GPU 路径追踪渲染器，让网页 3D 场景有真实的光照、反射和景深。",
+    "license": "MIT",
+    "stars": 2019,
+    "pushed_at": "2026-11-04",
+    "archived": false,
+    "gh_desc": "Path tracing renderer and utilities for three.js built on top of three-mesh-bvh."
   },
   {
     "repo": "astrofox-io/astrofox",
@@ -2673,9 +2891,9 @@
     "repo": "edenfunf/reelmimic",
     "name": "ReelMimic",
     "tags": [
-      "agent",
       "short"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "仿风格短视频",
     "desc": "给它一支你喜欢的视频，AI 小组照着同样的风格用 HyperFrames 做一支新的。",
@@ -2803,12 +3021,12 @@
     "repo": "cth9191/animate",
     "name": "Animate",
     "tags": [
-      "agent",
       "hand",
       "pixel",
       "math",
       "riso"
     ],
+    "agent": true,
     "lang": "JavaScript / Canvas",
     "use": "讲解视频 · 短片",
     "desc": "Claude Code 技能：用单个 canvas 程序化绘制短动画，内置剪纸、排线墨水、Riso 印刷、速写本、数学、像素、等距 7 种画风。",
@@ -2930,13 +3148,45 @@
     "gh_desc": "Cyberpunk-inspired web UI made easy. Get augmented."
   },
   {
+    "repo": "amandaghassaei/OrigamiSimulator",
+    "name": "Origami Simulator",
+    "tags": [
+      "origami",
+      "3d"
+    ],
+    "lang": "JavaScript / WebGL",
+    "use": "折纸动画",
+    "desc": "实时 WebGL 折纸模拟：导入折痕图，看一张纸自己折成纸鹤。",
+    "license": "MIT",
+    "stars": 1408,
+    "pushed_at": "2026-10-13",
+    "archived": false,
+    "gh_desc": "Realtime WebGL origami simulator"
+  },
+  {
+    "repo": "anvaka/fieldplay",
+    "name": "FieldPlay",
+    "tags": [
+      "flow",
+      "math"
+    ],
+    "lang": "JavaScript / GLSL",
+    "use": "矢量场动画",
+    "desc": "写一个向量场公式，成千上万的粒子就沿着它流动，画面像流动的丝线。",
+    "license": "MIT",
+    "stars": 1332,
+    "pushed_at": "2026-09-23",
+    "archived": false,
+    "gh_desc": "A vector field explorer"
+  },
+  {
     "repo": "alexgreensh/anidoodle",
     "name": "anidoodle",
     "tags": [
-      "agent",
       "hand",
       "gen"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "插画 · 循环动画 · 短片",
     "desc": "AI 编程助手技能：用代码画插画、循环动画和带配乐的短片，几十种画风，每次渲染结果一致。",
@@ -2966,7 +3216,8 @@
     "name": "libretro GLSL Shaders",
     "tags": [
       "pixel",
-      "shader"
+      "shader",
+      "vhs"
     ],
     "lang": "GLSL",
     "use": "复古后期",
@@ -2997,9 +3248,9 @@
     "repo": "adithya-s-k/manim_skill",
     "name": "Manim Agent Skills",
     "tags": [
-      "agent",
       "math"
     ],
+    "agent": true,
     "lang": "Python / 技能",
     "use": "讲解视频",
     "desc": "做 3Blue1Brown 风格动画的 Manim 技能和最佳实践。",
@@ -3095,9 +3346,9 @@
     "repo": "iart-ai/motion-skills",
     "name": "motion-skills",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Markdown 技能",
     "use": "各类视频",
     "desc": "50 个 AI 编程助手技能：动态文字、数据可视化、讲解视频、竖屏短视频、WebGL、Manim。",
@@ -3143,9 +3394,9 @@
     "repo": "NiazMorshed2007/reanimate",
     "name": "reanimate",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "复刻动画",
     "desc": "Claude Code 技能：逐帧拆解任何一段动画，再用代码复刻，并逐帧验证复刻得像不像。",
@@ -3154,6 +3405,22 @@
     "pushed_at": "2026-10-31",
     "archived": false,
     "gh_desc": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same."
+  },
+  {
+    "repo": "Ovilia/Polyvia",
+    "name": "Polyvia",
+    "tags": [
+      "geo"
+    ],
+    "lang": "JavaScript",
+    "use": "低多边形",
+    "desc": "低多边形风格的图片和视频处理。",
+    "note": "2019 年后未更新。",
+    "license": "MIT",
+    "stars": 1164,
+    "pushed_at": "2019-01-29",
+    "archived": false,
+    "gh_desc": "Low-Poly Image and Video Processing"
   },
   {
     "repo": "fand/vfx-js",
@@ -3170,6 +3437,23 @@
     "pushed_at": "2026-11-04",
     "archived": false,
     "gh_desc": "WebGL effects made easy."
+  },
+  {
+    "repo": "JargeZ/ntscqt",
+    "name": "ntscqt",
+    "tags": [
+      "vhs",
+      "glitch"
+    ],
+    "lang": "Python",
+    "use": "VHS 后期",
+    "desc": "VHS 视频模拟器的图形界面，给视频加老录像带质感。",
+    "note": "2024 年后未更新，新项目建议用 ntsc-rs。",
+    "license": "Apache-2.0",
+    "stars": 1163,
+    "pushed_at": "2024-02-01",
+    "archived": false,
+    "gh_desc": "AKA Line Maker 10.0 | GUI for VHS video simulator"
   },
   {
     "repo": "etro-js/etro",
@@ -3201,6 +3485,37 @@
     "pushed_at": "2026-02-13",
     "archived": false,
     "gh_desc": "Collection of community-authored custom display filters for PixiJS"
+  },
+  {
+    "repo": "aras-p/ToyPathTracer",
+    "name": "ToyPathTracer",
+    "tags": [
+      "raytrace"
+    ],
+    "lang": "C++ / C#",
+    "use": "教程",
+    "desc": "Unity 图形大牛 Aras 的玩具路径追踪器，配了一系列讲优化的博客。",
+    "license": "Unlicense",
+    "stars": 1119,
+    "pushed_at": "2025-04-12",
+    "archived": false,
+    "gh_desc": "Toy path tracer for my own learning purposes (CPU/GPU, C++/C#, Win/Mac/Wasm, DX11/Metal, also Unity)"
+  },
+  {
+    "repo": "mapbox/webgl-wind",
+    "name": "webgl-wind",
+    "tags": [
+      "flow",
+      "map"
+    ],
+    "lang": "JavaScript / WebGL",
+    "use": "风场动画",
+    "desc": "Mapbox 的 WebGL 风场粒子可视化，几十万个粒子在地图上随风流动。",
+    "license": "ISC",
+    "stars": 1112,
+    "pushed_at": "2026-08-06",
+    "archived": false,
+    "gh_desc": "Wind power visualization with WebGL particles"
   },
   {
     "repo": "markusfisch/ShaderEditor",
@@ -3269,9 +3584,9 @@
     "repo": "feicaiclub/video-spec-builder",
     "name": "video-spec-builder",
     "tags": [
-      "agent",
       "short"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "分镜脚本",
     "desc": "国人作品：把「我想做个视频」逼成精确到秒的分镜脚本，再交给 HyperFrames 渲染。",
@@ -3285,10 +3600,10 @@
     "repo": "bangtutorial/bang-motion",
     "name": "Bang Motion",
     "tags": [
-      "agent",
       "mg",
       "type"
     ],
+    "agent": true,
     "lang": "HTML",
     "use": "片头 · 宣传片",
     "desc": "浏览器动效技能：片头、宣传片、转场、动态文字，五种风格。",
@@ -3303,9 +3618,9 @@
     "repo": "Barty-Bart/motion-graphics",
     "name": "Motion Graphics Skills",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "HTML / 技能",
     "use": "MG 动画",
     "desc": "给 Claude Code 和 Codex 用的动态图形技能合集。",
@@ -3335,10 +3650,10 @@
     "repo": "nexu-io/motion-anything",
     "name": "motion-anything",
     "tags": [
-      "agent",
       "mg",
       "shader"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "动效页面 · 发布片",
     "desc": "用一句话描述感觉，AI 生成动效页面和发布视频；自带可直接复用的着色器、Canvas 和动态文字配方。",
@@ -3383,9 +3698,9 @@
     "repo": "Leonxlnx/cinetic",
     "name": "cinetic",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "发布片",
     "desc": "让 AI 编程助手当导演，用代码做电影感发布片和动效，默认用 Remotion 渲染。",
@@ -3526,9 +3841,9 @@
     "repo": "marcelo-earth/generative-manim",
     "name": "Generative Manim",
     "tags": [
-      "math",
-      "agent"
+      "math"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "讲解视频",
     "desc": "用自然语言描述，由大模型写出 Manim 代码并渲染成动画。",
@@ -3558,9 +3873,9 @@
     "repo": "op7418/guizang-product-video-skill",
     "name": "归藏产品宣传片",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "软件宣传片",
     "desc": "归藏的宣传片技能：复用产品的真实组件和设计语言，用代码做软件更新宣传片，含文案、配乐和配音。",
@@ -3589,10 +3904,10 @@
     "repo": "Aryanutkarsh/SeeCode",
     "name": "SeeCode",
     "tags": [
-      "agent",
       "code",
       "iso"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "代码讲解图",
     "desc": "用一小段 JSON 生成可以探索的动画示意图，给 Claude 等编程助手讲解代码结构用。",
@@ -3622,10 +3937,10 @@
     "repo": "feitangyuan/motion-web",
     "name": "motion-web",
     "tags": [
-      "agent",
       "3d",
       "mg"
     ],
+    "agent": true,
     "lang": "HTML / JS",
     "use": "动效网站",
     "desc": "onetake 作者的另一套技能：用原生 three.js、Canvas、WebGL 做动效优先的创意网站。",
@@ -3655,9 +3970,9 @@
     "repo": "haidrrrry/claude-remotion-skill",
     "name": "Claude Remotion Skill",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "短视频",
     "desc": "教 Claude Code、Claude Desktop 写 Remotion 视频的开源技能。",
@@ -3703,9 +4018,9 @@
     "repo": "howseen-ai/claude-motion-design",
     "name": "Claude Motion Design",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "MG 视频",
     "desc": "纯代码动效视频技能：HTML + Playwright + ffmpeg，全程不用 AI 生成画面。",
@@ -3714,6 +4029,22 @@
     "pushed_at": "2026-10-04",
     "archived": false,
     "gh_desc": "A Claude Code skill to make motion design videos in pure code: HTML + Playwright + ffmpeg. No After Effects, no Remotion license."
+  },
+  {
+    "repo": "hyqzz/Solar-Wanderer",
+    "name": "遨游太阳系",
+    "tags": [
+      "space",
+      "3d"
+    ],
+    "lang": "three.js",
+    "use": "太阳系动画",
+    "desc": "国人作品：浏览器里 1:1 实时的太阳系，用 NASA JPL 星历数据，可以飞到任意行星。",
+    "license": "MIT",
+    "stars": 764,
+    "pushed_at": "2026-10-19",
+    "archived": false,
+    "gh_desc": "Solar Wanderer / 遨游太阳系 - 1:1 Real-Time Solar System Explorer in the Browser. NASA JPL ephemeris, WebGL2, Three.js. From solar surface to 100,000 AU Oort Cloud."
   },
   {
     "repo": "rizznme/cosmic-ui",
@@ -3751,10 +4082,10 @@
     "repo": "AThevon/genjutsu",
     "name": "genjutsu",
     "tags": [
-      "agent",
       "gen",
       "mg"
     ],
+    "agent": true,
     "lang": "Python / 技能",
     "use": "创意编程",
     "desc": "给 Claude Code、claude.ai 用的创意编程技能：动效、微交互和设计感。",
@@ -3784,9 +4115,9 @@
     "repo": "adunext/adu-motion-video",
     "name": "adu-motion-video",
     "tags": [
-      "agent",
       "short"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "剪辑 · 短视频",
     "desc": "国人作品：AI 剪辑技能，模板采用 MotionGit .motion 开放格式。",
@@ -3830,9 +4161,9 @@
     "repo": "rossark0/rossark-motion-skill",
     "name": "Rossark Motion",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Swift / SVG",
     "use": "SVG 动画",
     "desc": "Claude Code 技能：把任意 SVG 做成 60 帧的专业动画。",
@@ -3862,9 +4193,9 @@
     "repo": "Leonxlnx/athenaion",
     "name": "Athenaion",
     "tags": [
-      "agent",
       "3d"
     ],
+    "agent": true,
     "lang": "three.js",
     "use": "3D 世界",
     "desc": "用 three.js 纯代码搭出的古希腊城邦世界，零素材，由 Claude 制作。",
@@ -3873,6 +4204,22 @@
     "pushed_at": "2026-10-17",
     "archived": false,
     "gh_desc": "A massive ancient Greek world built entirely in code with three.js. Zero assets, made with Claude Code (Opus 5.5)"
+  },
+  {
+    "repo": "ashuttl/linecast",
+    "name": "linecast",
+    "tags": [
+      "space",
+      "ascii"
+    ],
+    "lang": "命令行",
+    "use": "终端天象",
+    "desc": "终端里的天气、潮汐、日月和星空，复古年历风格。",
+    "license": "MIT",
+    "stars": 667,
+    "pushed_at": "2026-11-02",
+    "archived": false,
+    "gh_desc": "Weather, tides, the sun, the moon, maps, and a planetarium, in your terminal. The Old Farmer's Almanac meets Minitel."
   },
   {
     "repo": "AzurIce/ranim",
@@ -3888,6 +4235,36 @@
     "pushed_at": "2026-10-31",
     "archived": false,
     "gh_desc": "An animation engine implemented in rust, inspired by manim and JAnim"
+  },
+  {
+    "repo": "Stellarium/stellarium-web-engine",
+    "name": "Stellarium Web",
+    "tags": [
+      "space"
+    ],
+    "lang": "JavaScript / C",
+    "use": "星空",
+    "desc": "著名天文软件 Stellarium 的网页引擎，实时渲染逼真的星空。",
+    "license": null,
+    "stars": 660,
+    "pushed_at": "2026-10-20",
+    "archived": false,
+    "gh_desc": "JavaScript planetarium engine"
+  },
+  {
+    "repo": "rabbit-ear/rabbit-ear",
+    "name": "Rabbit Ear",
+    "tags": [
+      "origami"
+    ],
+    "lang": "JavaScript",
+    "use": "折纸几何",
+    "desc": "计算折纸库：折痕图、折叠模拟、生成折纸 SVG。",
+    "license": "GPL-3.0",
+    "stars": 655,
+    "pushed_at": "2026-10-21",
+    "archived": false,
+    "gh_desc": "computational origami library"
   },
   {
     "repo": "hvianna/audioMotion.js",
@@ -3972,10 +4349,10 @@
     "repo": "mrsarac/ff-tracking",
     "name": "ff-tracking",
     "tags": [
-      "agent",
       "mg",
       "glitch"
     ],
+    "agent": true,
     "lang": "Rust",
     "use": "动效短片",
     "desc": "虚拟镜头拍摄 AI 助手的屏幕、追踪每个字形的短片，用 fframes 两遍渲染加 SkSL 着色器，音效也是代码合成。",
@@ -3989,9 +4366,9 @@
     "repo": "blixvip/MotionClone",
     "name": "MotionClone",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "复刻动效",
     "desc": "把参考视频重建成可编辑的 HyperFrames 项目，并和原片逐帧比对。",
@@ -4022,9 +4399,9 @@
     "repo": "AirsupHQ/machine-skill",
     "name": "Machine Skill",
     "tags": [
-      "agent",
       "3d"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "3D 机械动画",
     "desc": "一句话描述一台机器，Claude 用代码搭出写实、带物理的交互式 3D 模拟和拆解动画。",
@@ -4033,6 +4410,22 @@
     "pushed_at": "2026-10-13",
     "archived": false,
     "gh_desc": "Describe any machine in one line. Claude builds a photoreal, physics based, interactive simulation of it in one HTML file, plus the film to post it. An open source Claude Code skill."
+  },
+  {
+    "repo": "LMP88959/NTSC-CRT",
+    "name": "NTSC-CRT",
+    "tags": [
+      "vhs",
+      "pixel"
+    ],
+    "lang": "C",
+    "use": "CRT 模拟",
+    "desc": "只用整数运算的 NTSC 编解码模拟，能还原 NES 等老主机在电视上的画面。",
+    "license": "NOASSERTION",
+    "stars": 577,
+    "pushed_at": "2026-07-19",
+    "archived": false,
+    "gh_desc": "NTSC encoding/decoding in C89 using only integers and fixed point math. Supports NES decoding. Can be used as an image filter for games or real-time applications."
   },
   {
     "repo": "cables-gl/cables",
@@ -4055,9 +4448,9 @@
     "repo": "charlie947/motion-graphics-skills",
     "name": "Launch Motion Skills",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Shell / 技能",
     "use": "发布片",
     "desc": "13 个做发布级动态图形的 Claude Code 技能，每一帧都是代码，不用 After Effects。",
@@ -4087,9 +4480,9 @@
     "repo": "pengchujin/livecanvas",
     "name": "LiveCanvas 实况画布",
     "tags": [
-      "agent",
       "short"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "Live 图",
     "desc": "国人作品：一句话做成带封面和动画的苹果 Live 图，分镜、Remotion 动画、导出一条龙。",
@@ -4118,9 +4511,9 @@
     "repo": "XiaoyeCodes/code-animation-prompts",
     "name": "代码动画画风提示词",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "HTML / 技能",
     "use": "画风提示词",
     "desc": "341 种代码动画画风提示词和 196 张参考静帧，带离线挑选器，可装成 Claude Code / Codex 技能。",
@@ -4166,10 +4559,10 @@
     "repo": "Nyankomintsu/world-execute-me-lyric-mv",
     "name": "world.execute(me) 歌词 MV",
     "tags": [
-      "agent",
       "type",
       "anime"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "歌词 MV",
     "desc": "粉丝自制的歌词 MV，把歌词演成和 Claude 的聊天，逐帧代码渲染到 4K60。",
@@ -4183,9 +4576,9 @@
     "repo": "liangdabiao/whiteboard-teacher-video",
     "name": "白板老师视频",
     "tags": [
-      "agent",
       "hand"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "知识短视频",
     "desc": "国人作品：把讲解稿变成白板手绘讲解视频，图形逐笔绘出、文字逐字写出，零生图成本。",
@@ -4215,9 +4608,9 @@
     "repo": "Wing900/ManimCat",
     "name": "ManimCat",
     "tags": [
-      "agent",
       "math"
     ],
+    "agent": true,
     "lang": "TypeScript / Python",
     "use": "数学讲解视频",
     "desc": "国人作品：用一句话描述，由 AI 写 Manim 代码生成数学动画，支持 LaTeX，渲染出错会自动修代码。",
@@ -4232,9 +4625,9 @@
     "repo": "Alexwtlf/agentic-product-demo",
     "name": "Agentic Product Demo",
     "tags": [
-      "agent",
       "short"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "产品演示视频",
     "desc": "让 AI 编程助手用 Remotion 做产品演示视频，界面是用代码重建的，不是录屏。",
@@ -4245,13 +4638,30 @@
     "gh_desc": "Create polished product demo videos with AI coding agents and Remotion. The UI is code, not a screen recording."
   },
   {
+    "repo": "RetroCrisis/Retro-Crisis-GDV-NTSC",
+    "name": "Retro Crisis 着色器",
+    "tags": [
+      "vhs",
+      "pixel",
+      "shader"
+    ],
+    "lang": "Slang Shader",
+    "use": "CRT 后期",
+    "desc": "RetroArch 的 CRT 着色器预设合集，基于 Guest Advanced NTSC，复刻各种老电视的画面。",
+    "license": "GPL-3.0",
+    "stars": 480,
+    "pushed_at": "2026-09-27",
+    "archived": false,
+    "gh_desc": "Retro Crisis libretro CRT shader presets, based on Guest Advanced NTSC shader"
+  },
+  {
     "repo": "geekjourneyx/hyperframes-motion-director",
     "name": "HyperFrames Motion Director",
     "tags": [
-      "agent",
       "short",
       "type"
     ],
+    "agent": true,
     "lang": "技能",
     "use": "竖屏宣传片",
     "desc": "国人作品：把文章、产品、网站或 README 做成中文优先的竖屏 HyperFrames 动效视频，交付前带检查。",
@@ -4260,6 +4670,22 @@
     "pushed_at": "2026-07-26",
     "archived": false,
     "gh_desc": "Agent Skill for Chinese-first HyperFrames motion-video production from articles, products, websites, and README files."
+  },
+  {
+    "repo": "R74nCom/sandboxels",
+    "name": "Sandboxels",
+    "tags": [
+      "sand",
+      "pixel"
+    ],
+    "lang": "JavaScript",
+    "use": "落沙画面",
+    "desc": "网页落沙模拟，500 多种元素、上千种反应，元素可以用 mod 自己写。",
+    "license": "NOASSERTION",
+    "stars": 477,
+    "pushed_at": "2026-06-03",
+    "archived": false,
+    "gh_desc": "In-browser falling-sand simulation game with over 500 elements and thousands of reactions."
   },
   {
     "repo": "parsimonhi/animCJK",
@@ -4282,10 +4708,10 @@
     "repo": "0xS4N4TG/kinetograph",
     "name": "Kinetograph",
     "tags": [
-      "agent",
       "short",
       "mg"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "批量出片",
     "desc": "给 AI 编程助手用的高速代码视频引擎。",
@@ -4335,10 +4761,10 @@
     "repo": "tuzhechen2005/opus-video-skills",
     "name": "Opus Video Skills",
     "tags": [
-      "agent",
       "mg",
       "audio"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "短片 · MV",
     "desc": "给 Claude Opus 用的做视频技能，每一帧画面和每一个音符都用代码生成。",
@@ -4370,9 +4796,9 @@
     "repo": "AbubakrChan/product-launch-motion",
     "name": "Product Launch Motion",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "产品发布片",
     "desc": "Claude Code 技能：用代码做 Dribbble 水准的产品发布片，一个形状贯穿到底不切镜。",
@@ -4386,9 +4812,9 @@
     "repo": "gokayfem/shader-skills",
     "name": "Shader Skills",
     "tags": [
-      "agent",
       "shader"
     ],
+    "agent": true,
     "lang": "GLSL",
     "use": "着色器",
     "desc": "给 AI 编程助手的 GLSL / Shadertoy 技能，附 186 个着色器函数。",
@@ -4415,6 +4841,21 @@
     "gh_desc": "Physics simulation plugin of Manim that can generate scenes in various branches of Physics."
   },
   {
+    "repo": "shuimo-design/shuimo-ui",
+    "name": "水墨 UI",
+    "tags": [
+      "ink"
+    ],
+    "lang": "Vue / TypeScript",
+    "use": "水墨风界面",
+    "desc": "国人作品：水墨风的界面组件库，按钮、弹窗都是水墨笔触。",
+    "license": "MIT",
+    "stars": 399,
+    "pushed_at": "2026-07-27",
+    "archived": false,
+    "gh_desc": "一款水墨风UI"
+  },
+  {
     "repo": "juniorrojas/algovivo",
     "name": "algovivo",
     "tags": [
@@ -4430,12 +4871,28 @@
     "gh_desc": "An energy-based formulation for soft-bodied virtual creatures"
   },
   {
+    "repo": "WishMelz/AquaInkGL",
+    "name": "AquaInkGL",
+    "tags": [
+      "ink",
+      "shader"
+    ],
+    "lang": "WebGL",
+    "use": "水墨背景",
+    "desc": "国人作品：WebGL 实现的水墨画背景特效，墨色在宣纸上晕开流动。",
+    "license": null,
+    "stars": 383,
+    "pushed_at": "2025-12-29",
+    "archived": false,
+    "gh_desc": "WebGL 实现的水墨画背景特效 - 个人主页"
+  },
+  {
     "repo": "diggerhq/shipvideo",
     "name": "shipvideo",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "产品发布片",
     "desc": "贴一个网址或一句话，Opus 写 HTML、云端渲染，得到 20–40 秒的发布视频，不用视频模型。",
@@ -4466,10 +4923,10 @@
     "repo": "artemnovitckii/claude-animation-skills",
     "name": "Claude Animation Skills",
     "tags": [
-      "agent",
       "3d",
       "map"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "竖屏短视频",
     "desc": "六个做短视频动画的 Claude 技能：three.js 3D 卡通讲解、火柴人、地图路线、爆炸拆解图等。",
@@ -4483,10 +4940,10 @@
     "repo": "Kianzzz/xilo-opus-video",
     "name": "xilo-opus-video",
     "tags": [
-      "agent",
       "mg",
       "3d"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "短片",
     "desc": "国人作品：用 Claude Opus 写代码做视频，先给三个方案和预览，确认后逐帧渲染成片。",
@@ -4500,9 +4957,9 @@
     "repo": "shuyicc/MathLens",
     "name": "MathLens",
     "tags": [
-      "agent",
       "math"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "数学讲解视频",
     "desc": "国人作品：粘贴一道数学题，自动分析、写配音稿、生成带配音的 Manim 讲解视频。",
@@ -4511,6 +4968,22 @@
     "pushed_at": "2026-03-10",
     "archived": false,
     "gh_desc": "MathLens 是一个专注于数学题目视频讲解的 Agent Skill。你只需粘贴一道数学题（图片或文字），它就能自动完成从题目分析、可视化讲解、配音脚本到 Manim 动画视频的全流程制作。单条视频1-10 分钟，成本 0.2-1 元以内。"
+  },
+  {
+    "repo": "krispuckett/SwiftUIShaders",
+    "name": "SwiftUI Shaders",
+    "tags": [
+      "shader",
+      "glitch"
+    ],
+    "lang": "Swift（iOS）",
+    "use": "App 动效",
+    "desc": "41 个可直接用在 SwiftUI 里的 Metal 着色器：全息箔、万花筒、磁力扭曲等，适合手机 App 动效。",
+    "license": "MIT",
+    "stars": 347,
+    "pushed_at": "2026-09-30",
+    "archived": false,
+    "gh_desc": "41 hand-curated drop-in SwiftUI Metal shader effects — holographic foil, kaleidoscope, magnetic fields, glitch, neon edges and more. Typed View modifiers, agent-friendly docs."
   },
   {
     "repo": "Zorochase/ultimate-retro-shader-collection",
@@ -4546,12 +5019,28 @@
     "gh_desc": "cross-platform display typography in python"
   },
   {
+    "repo": "oripa/oripa",
+    "name": "ORIPA",
+    "tags": [
+      "origami"
+    ],
+    "lang": "Java",
+    "use": "折纸设计",
+    "desc": "专门设计折纸折痕图的软件，可以预览折好的样子。",
+    "note": "以图形界面为主。",
+    "license": "GPL-3.0",
+    "stars": 334,
+    "pushed_at": "2026-11-01",
+    "archived": false,
+    "gh_desc": "ORIPA is a drawing software dedicated to designing the crease patterns of origami. The unique feature of ORIPA is calculation of the folded shape from the pattern."
+  },
+  {
     "repo": "lovisdotio/motion2code",
     "name": "motion2code",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "HTML",
     "use": "复刻动效",
     "desc": "把一段动效视频复刻成循环的 SVG + GSAP 代码，并逐帧比对。",
@@ -4578,12 +5067,29 @@
     "gh_desc": "Manim plugin for all things voiceover"
   },
   {
+    "repo": "Moessif/code-video-showcase",
+    "name": "Code Video Showcase",
+    "tags": [
+      "mg",
+      "3d"
+    ],
+    "agent": true,
+    "lang": "HTML / Canvas / three.js",
+    "use": "卡点展示片",
+    "desc": "国人作品：纯代码的卡点展示视频技能，HTML / Canvas / SVG / three.js 逐帧渲染。",
+    "license": "MIT",
+    "stars": 322,
+    "pushed_at": "2026-10-28",
+    "archived": false,
+    "gh_desc": "A pure-code beat-synced showcase-video Agent Skill: HTML/Canvas/SVG/Three.js frame-by-frame + Python numpy/scipy score + FFmpeg. No generative models."
+  },
+  {
     "repo": "win4r/video-director",
     "name": "video-director",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "代码视频导演",
     "desc": "Claude 技能：导演、搭建并逐帧检查 HTML / Canvas 渲染的视频。",
@@ -4594,12 +5100,44 @@
     "gh_desc": "A Claude skill for directing, building and verifying code-rendered videos (HTML/Canvas → MP4): principles, gated workflow, QA scripts and evals."
   },
   {
+    "repo": "cgsdev0/termsand",
+    "name": "termsand",
+    "tags": [
+      "sand",
+      "ascii"
+    ],
+    "lang": "Shell / tmux",
+    "use": "终端动画",
+    "desc": "在 tmux 里跑的落沙模拟，鼠标一点沙子就从终端顶上落下来。",
+    "license": "MIT",
+    "stars": 317,
+    "pushed_at": "2026-07-21",
+    "archived": false,
+    "gh_desc": "falling sand sim for tmux 3.4+"
+  },
+  {
+    "repo": "romellogoodman/flow-fields",
+    "name": "flow-fields",
+    "tags": [
+      "flow",
+      "gen"
+    ],
+    "lang": "JavaScript",
+    "use": "流场生成艺术",
+    "desc": "创建流场的 JavaScript 库，画出顺着噪声流动的线条。",
+    "license": "MIT",
+    "stars": 311,
+    "pushed_at": "2026-09-20",
+    "archived": false,
+    "gh_desc": "A javascript library for creating flow fields"
+  },
+  {
     "repo": "sevenevesai/riso-windowseat",
     "name": "Riso Window Seat",
     "tags": [
-      "agent",
       "riso"
     ],
+    "agent": true,
     "lang": "HTML",
     "use": "Riso 短片",
     "desc": "程序化生成的 Riso 印刷风短片，每支都是单个 HTML 文件，附 Claude 提示词。",
@@ -4608,6 +5146,22 @@
     "pushed_at": "2026-10-28",
     "archived": false,
     "gh_desc": "Procedural risograph films in single HTML files (Window Seat, Roost and more), with the Claude Code skills, docs and tools to make your own."
+  },
+  {
+    "repo": "RemiKoutcherawy/OriSim3D-Android",
+    "name": "OriSim3D",
+    "tags": [
+      "origami",
+      "3d"
+    ],
+    "lang": "Kotlin（安卓）",
+    "use": "手机折纸动画",
+    "desc": "安卓上的 OpenGL 折纸折叠模拟，可以按步骤演示折法。",
+    "license": null,
+    "stars": 304,
+    "pushed_at": "2026-09-06",
+    "archived": false,
+    "gh_desc": "OriSim3D origami folding simulation on Android with openGL."
   },
   {
     "repo": "remotion-dev/template-tiktok",
@@ -4643,6 +5197,22 @@
     "pushed_at": "2026-09-20",
     "archived": false,
     "gh_desc": "Real-time ordered (Bayer) dithering post-processing effect for 3D scenes, built with React Three Fiber and Three.js"
+  },
+  {
+    "repo": "rodrigorc/papercraft",
+    "name": "Papercraft",
+    "tags": [
+      "origami",
+      "3d"
+    ],
+    "lang": "Rust",
+    "use": "纸模展开",
+    "desc": "把 3D 模型展开成可以打印、剪下、粘起来的纸模。",
+    "license": "GPL-3.0",
+    "stars": 289,
+    "pushed_at": "2026-11-01",
+    "archived": false,
+    "gh_desc": "Papercraft is a tool to unwrap 3D models."
   },
   {
     "repo": "clainstone/cbirds",
@@ -4714,10 +5284,10 @@
     "repo": "njrhts2kvv-star/FredTalk",
     "name": "FredTalk",
     "tags": [
-      "agent",
       "short",
       "type"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "口播视频",
     "desc": "国人作品：口播视频制作技能、可检索的动效库和 Remotion 审看流程。",
@@ -4747,10 +5317,10 @@
     "repo": "blixvip/html-anime",
     "name": "html-anime",
     "tags": [
-      "agent",
       "anime",
       "mg"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "动画短片",
     "desc": "把场景描述变成分镜表，再让编程助手用 HTML 把整部片画出来，不调用视频模型。",
@@ -4764,10 +5334,10 @@
     "repo": "Azure12355/weilanx-claude-videos",
     "name": "weilanx Claude Videos",
     "tags": [
-      "agent",
       "hand",
       "pixel"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "讲解视频",
     "desc": "国人作品：手绘风和像素风讲解视频，用 Remotion + React + SVG 纯代码写成。",
@@ -4779,12 +5349,28 @@
     "gh_desc": "Hand-drawn and pixel-art explainer videos written entirely in code — Remotion + React + SVG, procedural music & SFX, subtitle-driven timing"
   },
   {
+    "repo": "jasonwebb/2d-space-colonization-experiments",
+    "name": "空间殖民实验",
+    "tags": [
+      "alife",
+      "gen"
+    ],
+    "lang": "JavaScript",
+    "use": "生长动画",
+    "desc": "用空间殖民算法长出树枝、叶脉、珊瑚的生长动画实验。",
+    "license": "NOASSERTION",
+    "stars": 227,
+    "pushed_at": "2025-11-27",
+    "archived": false,
+    "gh_desc": "Visual experiments exploring space colonization as a 2D morphogenesis tool."
+  },
+  {
     "repo": "kelano86/what-if-animation",
     "name": "What If Animation",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "讲解短片",
     "desc": "输入一个「如果……会怎样」的话题，出一支完整的讲解动画，不用图像或视频模型。",
@@ -4810,12 +5396,28 @@
     "gh_desc": "A p5.js library for exporting SVG files tailored for pen plotting."
   },
   {
+    "repo": "andrewwoan/aimee-xus-papercraft-world",
+    "name": "Papercraft World",
+    "tags": [
+      "origami",
+      "3d"
+    ],
+    "lang": "three.js",
+    "use": "纸艺 3D 网页",
+    "desc": "纸艺风格的季节主题 3D 作品集网站，可以当纸艺画风的 three.js 参考。",
+    "license": "MIT",
+    "stars": 197,
+    "pushed_at": "2026-10-11",
+    "archived": false,
+    "gh_desc": "A Seasonal Papercraft Portfolio!"
+  },
+  {
     "repo": "Akillll-DuoHe/fy-code-animation",
     "name": "fy-code-animation",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "讲解动画",
     "desc": "国人作品：把中文文案、画风提示词和声音做成连贯的代码动画（Remotion / Canvas / HTML）。",
@@ -4829,9 +5431,9 @@
     "repo": "Yusuke710/manim-skill",
     "name": "manim-skill",
     "tags": [
-      "agent",
       "math"
     ],
+    "agent": true,
     "lang": "技能",
     "use": "讲解视频",
     "desc": "教 AI 助手写 Manim 动画的 SKILL.md。",
@@ -4842,12 +5444,27 @@
     "gh_desc": "SKILL.md for creating animations with Manim."
   },
   {
+    "repo": "finnmckenty/NTSCRT",
+    "name": "NTSCRT",
+    "tags": [
+      "vhs"
+    ],
+    "lang": "Swift（macOS）",
+    "use": "老电视画面",
+    "desc": "macOS 上的复古电视 / VHS 图片工具：ntsc-rs 信号模拟加 RetroArch CRT 着色器。",
+    "license": null,
+    "stars": 187,
+    "pushed_at": "2026-10-11",
+    "archived": false,
+    "gh_desc": "Vintage analog TV/VHS image tool for macOS: ntsc-rs signal emulation + RetroArch CRT shaders (librashader), glued together with SwiftUI/Metal"
+  },
+  {
     "repo": "HRuiCcc/RuiC-motion-reel",
     "name": "RuiC Motion Reel",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "宣传片",
     "desc": "国人作品：一句话生成动效宣传片，时长按 BPM 和小节计算，常规宣传片走 Remotion 模板。",
@@ -4861,9 +5478,9 @@
     "repo": "chuspeeism/dashi-animationstyle",
     "name": "dashi 画风讲解",
     "tags": [
-      "agent",
       "hand"
     ],
+    "agent": true,
     "lang": "HTML",
     "use": "知识讲解",
     "desc": "国人作品：把中文知识口播做成 7 种画风的讲解动画，画面由 Claude 写 HTML / Canvas 逐帧画出。",
@@ -4874,13 +5491,46 @@
     "gh_desc": "把一段中文知识口播做成 7 种画风的讲解动画（Claude Code skill）：画面由 Claude 写 HTML/Canvas 代码逐帧画出，不用生图模型"
   },
   {
+    "repo": "Joker-chichi/claude-mv-skill",
+    "name": "Claude MV Skill",
+    "tags": [
+      "hand",
+      "type"
+    ],
+    "agent": true,
+    "lang": "技能",
+    "use": "手绘 MV",
+    "desc": "教 Claude 做手绘风动画和歌词 MV：分镜、动画、审片、歌词对位，画面全部程序化生成。",
+    "license": "NOASSERTION",
+    "stars": 178,
+    "pushed_at": "2026-10-15",
+    "archived": false,
+    "gh_desc": "Claude Code skill for hand-painted animation and lyric music videos"
+  },
+  {
+    "repo": "pissang/mutracer",
+    "name": "mutracer",
+    "tags": [
+      "raytrace",
+      "3d"
+    ],
+    "lang": "TypeScript / WebGPU",
+    "use": "写实渲染",
+    "desc": "ECharts 作者之一写的 WebGPU 物理渲染路径追踪器。",
+    "license": "MIT",
+    "stars": 173,
+    "pushed_at": "2026-11-04",
+    "archived": false,
+    "gh_desc": "WebGPU physically based path tracer"
+  },
+  {
     "repo": "xiazhuo123456789/vibe-knowledge-video",
     "name": "Vibe 知识短片",
     "tags": [
-      "agent",
       "type",
       "mg"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "知识短视频",
     "desc": "国人作品：纯代码生成电影感知识短视频，双语字幕、合成配乐、历史文献再现。",
@@ -4891,13 +5541,29 @@
     "gh_desc": "Vibe知识大赏风格 AI 知识视频 Skill — 纯代码生成电影感知识短视频（无配音·双语字幕·合成BGM·历史文献再现），风格规范逆向自 8 条抖音爆款原片（1091 帧逐秒分析）"
   },
   {
+    "repo": "ivoyager/planetarium",
+    "name": "I, Voyager Planetarium",
+    "tags": [
+      "space",
+      "3d"
+    ],
+    "lang": "Godot",
+    "use": "太阳系",
+    "desc": "基于 Godot 的开源太阳系模拟。",
+    "license": "Apache-2.0",
+    "stars": 162,
+    "pushed_at": "2026-10-31",
+    "archived": false,
+    "gh_desc": "Our Planetarium project!"
+  },
+  {
     "repo": "sirioberati/YouTube-AI-Motion-Graphics",
     "name": "YouTube Motion Graphics",
     "tags": [
-      "agent",
       "data",
       "mg"
     ],
+    "agent": true,
     "lang": "HTML",
     "use": "讲解视频素材",
     "desc": "74 块 HTML 动画讲解板：图表、示意图、流程，给 YouTube 讲解视频用。",
@@ -4908,13 +5574,75 @@
     "gh_desc": "AI motion graphics for YouTube explainer videos: 74 animated HTML explainer boards (charts, diagrams, Venn, timeline, heatmap) synced to your voice with Whisper, exported frame by frame with Chrome + FFmpeg. Every prompt + Claude skills. By TEIN AI."
   },
   {
+    "repo": "kiwijuice56/sand-slide",
+    "name": "Sand Slide",
+    "tags": [
+      "sand",
+      "pixel"
+    ],
+    "lang": "Godot / C++",
+    "use": "落沙画面",
+    "desc": "用 Godot 和 GDExtension 写的高速落沙游戏，元素种类很多。",
+    "license": "MIT",
+    "stars": 143,
+    "pushed_at": "2026-09-08",
+    "archived": false,
+    "gh_desc": "Fast falling sand game made within Godot and utilizing GDExtension features"
+  },
+  {
+    "repo": "ferropop/NTSCplayer",
+    "name": "NTSCplayer",
+    "tags": [
+      "vhs"
+    ],
+    "lang": "C++",
+    "use": "复古播放器",
+    "desc": "播放视频时实时加上 NTSC / VHS 质感的媒体播放器。",
+    "license": null,
+    "stars": 141,
+    "pushed_at": "2026-10-22",
+    "archived": false,
+    "gh_desc": "NTSC/VHS inspired Media Player"
+  },
+  {
+    "repo": "oriedita/oriedita",
+    "name": "Oriedita",
+    "tags": [
+      "origami"
+    ],
+    "lang": "Java",
+    "use": "折纸设计",
+    "desc": "折纸折痕编辑器和折叠模拟器（Orihime 的分支）。",
+    "note": "以图形界面为主。",
+    "license": "NOASSERTION",
+    "stars": 134,
+    "pushed_at": "2026-11-03",
+    "archived": false,
+    "gh_desc": "Oriedita (fork of Orihime) is an origami crease pattern editor and folding simulator."
+  },
+  {
+    "repo": "maxwase/kami",
+    "name": "kami",
+    "tags": [
+      "origami"
+    ],
+    "lang": "Rust",
+    "use": "折纸模拟",
+    "desc": "用物理铰链驱动的折纸模拟器。",
+    "license": "MIT",
+    "stars": 134,
+    "pushed_at": "2026-10-19",
+    "archived": false,
+    "gh_desc": "Origami simulator driven by a physical hinge"
+  },
+  {
     "repo": "BubbleBrainBB/BB-Video",
     "name": "BB-Video",
     "tags": [
-      "agent",
       "mg",
       "3d"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "讲解 · 宣传片",
     "desc": "纯代码做视频的技能：带配音的讲解片和产品宣传片，32 种画风。",
@@ -4929,10 +5657,10 @@
     "repo": "0xS4N4TG/papercut-explainer",
     "name": "Papercut Explainer",
     "tags": [
-      "agent",
       "riso",
       "short"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "竖屏讲解",
     "desc": "剪纸风竖屏讲解短视频，9 个技能加 Remotion 模板，背景和音效都在仓库里。",
@@ -4943,12 +5671,28 @@
     "gh_desc": "Short vertical cut-paper explainer reels, made by your coding agent. Nine Agent Skills plus a Remotion library. Works with Claude Code, OpenCode, Codex, Gemini CLI, Cursor, Copilot and more."
   },
   {
+    "repo": "ibra-kdbra/black-hole",
+    "name": "Black Hole",
+    "tags": [
+      "space",
+      "shader"
+    ],
+    "lang": "three.js / GLSL",
+    "use": "宇宙特效",
+    "desc": "three.js 和 GLSL 着色器做的黑洞和吸积盘。",
+    "license": null,
+    "stars": 112,
+    "pushed_at": "2026-08-24",
+    "archived": false,
+    "gh_desc": "Black hole with three.js, glsl shaders"
+  },
+  {
     "repo": "SpaceZephyr/map-motion",
     "name": "map-motion",
     "tags": [
-      "agent",
       "map"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "地图动效视频",
     "desc": "国人作品：基于高德地图真实路线和卫星底图，做地球俯冲、旅行路线、徒步海拔等地图动效视频。",
@@ -4963,10 +5707,10 @@
     "repo": "cloveric/claude-drawing-skill",
     "name": "Claude Drawing Skill",
     "tags": [
-      "agent",
       "ink",
       "hand"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "插画 · 水墨",
     "desc": "Claude 用代码一笔一笔作画，77 种画风：水墨、油画、黏土、蓝晒、彩色玻璃、江南园林等，不用生图模型。",
@@ -4975,6 +5719,69 @@
     "pushed_at": "2026-10-30",
     "archived": false,
     "gh_desc": "Claude paints with code: a Claude Code skill for procedural illustration in 77 styles, from ink wash (水墨), watercolour and ukiyo-e to stained glass, Roman mosaic, Art Deco, shadow puppets, X-ray, VHS tape, pastel UI, dry-brush blocks, a colour-town street, pastel vignettes, poetic Halloween. No image model: numpy + Pillow on a CPU, draw-on GIFs."
+  },
+  {
+    "repo": "msurguy/watercolor-playground",
+    "name": "Watercolor Playground",
+    "tags": [
+      "ink",
+      "hand"
+    ],
+    "lang": "TypeScript",
+    "use": "水彩绘画",
+    "desc": "写实水彩模拟：颜料在纸上晕染、沉淀、干燥。",
+    "license": "MIT",
+    "stars": 101,
+    "pushed_at": "2026-10-07",
+    "archived": false,
+    "gh_desc": "Realistic watercolor drawings"
+  },
+  {
+    "repo": "anvaka/lsystem",
+    "name": "L-System Explorer",
+    "tags": [
+      "alife",
+      "gen"
+    ],
+    "lang": "JavaScript / WebGL",
+    "use": "生长图案",
+    "desc": "WebGL 的 L 系统浏览器，几行规则长出植物、雪花和分形曲线。",
+    "license": "MIT",
+    "stars": 100,
+    "pushed_at": "2026-08-07",
+    "archived": false,
+    "gh_desc": "A simple L-Systems explorer powered by WebGL"
+  },
+  {
+    "repo": "tdh8316/triangler",
+    "name": "triangler",
+    "tags": [
+      "geo"
+    ],
+    "lang": "Python",
+    "use": "低多边形",
+    "desc": "用德劳内三角剖分把图片转成低多边形画。",
+    "license": "MIT",
+    "stars": 99,
+    "pushed_at": "2026-10-29",
+    "archived": false,
+    "gh_desc": ":triangular_ruler: Convert images to Low-Poly art using Delaunay triangulation."
+  },
+  {
+    "repo": "NullTale/VhsFx",
+    "name": "VhsFx",
+    "tags": [
+      "vhs",
+      "glitch"
+    ],
+    "lang": "Unity",
+    "use": "VHS 后期",
+    "desc": "Unity URP 的 VHS 后期效果。",
+    "license": "NOASSERTION",
+    "stars": 89,
+    "pushed_at": "2026-03-20",
+    "archived": false,
+    "gh_desc": "⬜ Vhs post effect for Unity Urp"
   },
   {
     "repo": "sahilsaini5/ditherwave",
@@ -4993,12 +5800,124 @@
     "gh_desc": "A tiny WebGL2 dithering primitive for React. Bayer, halftone, ASCII, error-diffusion. Under 8kb gz."
   },
   {
+    "repo": "Icelk/strange-attractor-renderer",
+    "name": "Strange Attractor Renderer",
+    "tags": [
+      "fractal"
+    ],
+    "lang": "Rust",
+    "use": "混沌艺术",
+    "desc": "多线程的奇异吸引子渲染器，画出像丝绸一样的混沌轨迹。",
+    "license": "LGPL-3.0",
+    "stars": 88,
+    "pushed_at": "2026-02-09",
+    "archived": false,
+    "gh_desc": "A multithreaded strange attractor renderer"
+  },
+  {
+    "repo": "tasercake/lowpoly",
+    "name": "lowpoly",
+    "tags": [
+      "geo"
+    ],
+    "lang": "Python",
+    "use": "低多边形",
+    "desc": "稳定的低多边形图片生成器。",
+    "license": "MIT",
+    "stars": 87,
+    "pushed_at": "2026-04-23",
+    "archived": false,
+    "gh_desc": "Robust Low-Poly Image Generator"
+  },
+  {
+    "repo": "SahilK-027/Cyber-Ocean",
+    "name": "Cyber Ocean",
+    "tags": [
+      "flow",
+      "3d",
+      "particle"
+    ],
+    "lang": "three.js",
+    "use": "3D 粒子",
+    "desc": "three.js 做的 3D 流场粒子海洋，配自定义后期效果。",
+    "license": null,
+    "stars": 80,
+    "pushed_at": "2026-06-24",
+    "archived": false,
+    "gh_desc": "Built with Three.js: MeshSurfaceSampler • 3D flow field particles • Custom post-processing effects, including chromatic aberration, glow, and film grain."
+  },
+  {
+    "repo": "PieKing1215/FallingSandEngine",
+    "name": "FallingSandEngine",
+    "tags": [
+      "sand",
+      "pixel"
+    ],
+    "lang": "Rust",
+    "use": "落沙引擎",
+    "desc": "Rust 写的实验性 2D 落沙引擎，类似《Noita》那样每个像素都参与物理。",
+    "license": "BSD-3-Clause",
+    "stars": 76,
+    "pushed_at": "2026-04-20",
+    "archived": false,
+    "gh_desc": "Experimental 2D falling sand engine written in Rust"
+  },
+  {
+    "repo": "AmitDigga/threejs-galaxy-shader",
+    "name": "Galaxy Shader",
+    "tags": [
+      "space",
+      "shader",
+      "particle"
+    ],
+    "lang": "three.js",
+    "use": "星系特效",
+    "desc": "高性能的 three.js 星系着色器，可调颜色、旋臂和黑洞效果。",
+    "license": "MIT",
+    "stars": 73,
+    "pushed_at": "2026-03-27",
+    "archived": false,
+    "gh_desc": "A performant Three.js galaxy shader with customizable colors, spiral patterns, and black hole effects"
+  },
+  {
+    "repo": "NHasan143/delaunay-stippler",
+    "name": "Delaunay Stippler",
+    "tags": [
+      "geo",
+      "plotter"
+    ],
+    "lang": "JavaScript",
+    "use": "点彩画",
+    "desc": "把图片变成点彩画的网页工具，用加权 Voronoi 算法排布墨点。",
+    "license": null,
+    "stars": 68,
+    "pushed_at": "2026-09-22",
+    "archived": false,
+    "gh_desc": "A modern JavaScript image stippling generator that turns uploaded images into stipple art using weighted Lloyd relaxation. Includes Voronoi and Delaunay visualization modes, runs in a Web Worker for speed, and supports PNG export. Built with Vite + d3-delaunay"
+  },
+  {
+    "repo": "simonxxooxxoo/wet-paint-flow",
+    "name": "wet-paint-flow",
+    "tags": [
+      "flow",
+      "hand"
+    ],
+    "lang": "three.js",
+    "use": "流场绘画",
+    "desc": "实时 three.js 流场画笔，画出带湿润厚涂质感的贝塞尔笔触。",
+    "license": "MIT",
+    "stars": 66,
+    "pushed_at": "2026-08-20",
+    "archived": false,
+    "gh_desc": "Real-time Three.js flow-field painter with persistent Bézier strokes and wet impasto shading."
+  },
+  {
     "repo": "xiaoxiong20xx-code/sy-style-100",
     "name": "sy-style-100",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "HTML",
     "use": "画风样片",
     "desc": "国人作品：100 条每一帧都由代码算出来的视频，20 种画风加 60 条行业广告，可商用。",
@@ -5012,9 +5931,9 @@
     "repo": "bangbuilds/code-poem-film",
     "name": "code-poem-film",
     "tags": [
-      "agent",
       "ink"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "诗词动画",
     "desc": "说一首诗，做出水墨手绘风 2D 动画：代码逐帧绘制，朗诵逐字对位，配乐用 numpy 合成。",
@@ -5028,9 +5947,9 @@
     "repo": "8533502-dev/deepseek-opus-motion-skill",
     "name": "DeepSeek Opus Motion",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "TypeScript",
     "use": "动效视频",
     "desc": "让 DeepSeek 用和 Claude Opus 同样的提示词做出接近的 Remotion 动效视频。",
@@ -5044,9 +5963,9 @@
     "repo": "znyupup/knowledge-explainer-skill",
     "name": "Knowledge Explainer",
     "tags": [
-      "agent",
       "mg"
     ],
+    "agent": true,
     "lang": "JavaScript",
     "use": "讲解动画",
     "desc": "把一份 Markdown 文稿自动做成讲解动画视频，用 Remotion 渲染。",
@@ -5060,9 +5979,9 @@
     "repo": "threeaus/creator-style-kit",
     "name": "Creator Style Kit",
     "tags": [
-      "agent",
       "short"
     ],
+    "agent": true,
     "lang": "Python",
     "use": "竖屏短视频",
     "desc": "18 套竖屏 HyperFrames 视频风格（字体、配色、动效、音效、构图）。",
@@ -5076,10 +5995,10 @@
     "repo": "pyang5166/gbro-collage-info",
     "name": "gbro 拼贴信息动画",
     "tags": [
-      "agent",
       "riso",
       "dither"
     ],
+    "agent": true,
     "lang": "HTML / CSS / GSAP",
     "use": "信息动画",
     "desc": "半调网点纸拼贴风的信息图动画技能，按口播稿逐段生成，不用生图模型。",
@@ -5088,5 +6007,130 @@
     "pushed_at": "2026-08-01",
     "archived": false,
     "gh_desc": "半调纸拼贴风信息动画 Agent Skill · Halftone paper-collage info-graphic animations from voiceover scripts (HyperFrames, no image models)"
+  },
+  {
+    "repo": "Stanko/neon",
+    "name": "neon",
+    "tags": [
+      "flow",
+      "gen"
+    ],
+    "lang": "JavaScript",
+    "use": "生成艺术",
+    "desc": "用二维向量场生成的霓虹线条生成艺术。",
+    "license": null,
+    "stars": 44,
+    "pushed_at": "2026-01-06",
+    "archived": false,
+    "gh_desc": "Generative art piece made using 2d vector field"
+  },
+  {
+    "repo": "ratwolfzero/hopalong_python",
+    "name": "Hopalong Attractor",
+    "tags": [
+      "fractal"
+    ],
+    "lang": "Python",
+    "use": "混沌艺术",
+    "desc": "Hopalong 吸引子的密度可视化，画出星云一样的图案。",
+    "license": "MIT",
+    "stars": 38,
+    "pushed_at": "2026-10-27",
+    "archived": false,
+    "gh_desc": "Generative Density Approximation for Deterministic Chaos The Hopalong Attractor"
+  },
+  {
+    "repo": "AllenAI2014/remotion-guofeng-starter",
+    "name": "国风纸片动画",
+    "tags": [
+      "ink",
+      "riso"
+    ],
+    "agent": true,
+    "lang": "React / Remotion",
+    "use": "诗词动画",
+    "desc": "国风纸片拼贴动画素材库和制作技能：给 AI 一首诗或成语，全程代码渲染出片。",
+    "license": "NOASSERTION",
+    "stars": 34,
+    "pushed_at": "2026-09-02",
+    "archived": false,
+    "gh_desc": "国风纸片动画：Remotion 风格资产库 + 制作流程 Skill。给 AI 一首诗/成语，照这套国风纸片拼贴风格从零出片，全程代码渲染不进剪辑。"
+  },
+  {
+    "repo": "zulubo/VHSEffect",
+    "name": "VHSEffect",
+    "tags": [
+      "vhs"
+    ],
+    "lang": "Unity",
+    "use": "VHS 后期",
+    "desc": "写实的 Unity VHS 后期效果。",
+    "license": "MIT",
+    "stars": 33,
+    "pushed_at": "2025-11-18",
+    "archived": false,
+    "gh_desc": "A realistic VHS post processing effect for Unity"
+  },
+  {
+    "repo": "Mattbusel/proof-engine",
+    "name": "proof-engine",
+    "tags": [
+      "fractal",
+      "ascii"
+    ],
+    "lang": "Rust",
+    "use": "数学画面",
+    "desc": "每一个画面都是数学的渲染引擎：字形和粒子由奇异吸引子驱动。",
+    "license": "MIT",
+    "stars": 32,
+    "pushed_at": "2026-10-23",
+    "archived": false,
+    "gh_desc": "Rust rendering and game engine where every visual is math: glyphs and particles driven by strange attractors, force fields and spring physics, with OpenGL post-FX, synth audio, a scripting VM and an egui scene editor."
+  },
+  {
+    "repo": "Ealrann/VSand",
+    "name": "VSand",
+    "tags": [
+      "sand"
+    ],
+    "lang": "Vulkan / C++",
+    "use": "落沙画面",
+    "desc": "用 Vulkan 重写的经典「Falling Sand」，GPU 上跑大规模像素模拟。",
+    "license": "GPL-3.0",
+    "stars": 31,
+    "pushed_at": "2026-07-20",
+    "archived": false,
+    "gh_desc": "Rewrite of the \"Falling Sand\" game with Vulkan."
+  },
+  {
+    "repo": "vdesmond/attractors",
+    "name": "attractors",
+    "tags": [
+      "fractal"
+    ],
+    "lang": "Python",
+    "use": "混沌动画",
+    "desc": "模拟和可视化奇异吸引子的 Python 包，可以直接导出动画。",
+    "license": "MIT",
+    "stars": 23,
+    "pushed_at": "2026-02-08",
+    "archived": false,
+    "gh_desc": "package for simulation and visualization of strange attractors"
+  },
+  {
+    "repo": "BobdaProgrammer/TermiSand",
+    "name": "TermiSand",
+    "tags": [
+      "sand",
+      "ascii"
+    ],
+    "lang": "命令行",
+    "use": "终端动画",
+    "desc": "终端里的落沙模拟器，用字符画出沙子和水。",
+    "license": "MIT",
+    "stars": 22,
+    "pushed_at": "2026-04-21",
+    "archived": false,
+    "gh_desc": "A falling sand simulator in your terminal!"
   }
 ]

@@ -141,6 +141,10 @@ def picks_table():
 
 def relations_section():
     parts = [
+        f"[![关系图谱](assets/graph.png)]({PAGES_URL}#graph-sec)",
+        "",
+        f"<sub>点图打开[可交互版本]({PAGES_URL}#graph-sec)：箭头从源头指向从它演化出来的项目，可以拖动、缩放、切换「演化树」布局，点一个项目看它的完整演化链。</sub>",
+        "",
         f"共 {len(relations)} 条关系。想换工具时先看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。",
         "",
     ]
@@ -184,7 +188,7 @@ def style_section(s, en=False):
 
 def counts():
     active = sum(1 for p in projects if status(p)[2] == "active")
-    agent = len(in_style("agent"))
+    agent = sum(1 for p in projects if p.get("agent"))
     niche = len({p["repo"] for s in NICHE for p in in_style(s["key"])})
     return active, agent, niche
 
@@ -201,14 +205,13 @@ def readme():
             "[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
             badge("项目", len(projects), "2E49D4"),
             badge("画风", f"{len(MAIN)}+{len(NICHE)}", "9265D9"),
-            badge("Claude/Opus", agent, "7B4FD0"),
             badge("活跃项目", active, "1E8A4B"),
             badge("数据更新", UPDATED, "5B6273"),
         ]), "",
-        f"**[🔎 网页版：可按画风筛选、搜索、排序、看项目关系]({PAGES_URL})**", "",
+        f"**[🔎 网页版：可按画风筛选、搜索、排序]({PAGES_URL})** · **[🕸️ 可交互的关系图谱]({PAGES_URL}#graph-sec)**", "",
         " · ".join([
-            "[画风索引](#index)", "[小众画风区](#niche)", "[Claude / Opus 写代码出片](#agent)",
-            "[项目关系表](#relations)", "[收录标准](#rules)", "[全部项目](#all)",
+            "[画风索引](#index)", "[小众画风区](#niche)", "[关系图谱](#relations)",
+            "[收录标准](#rules)", "[全部项目](#all)",
             f"[推荐项目]({REPO_URL}/issues/new/choose)",
         ]), "",
         "</div>", "",
@@ -217,12 +220,13 @@ def readme():
         "这里把 GitHub 上用代码做动画、做视频的开源项目按**画风**归类：3B1B 式数学讲解、扁平 MG、着色器迷幻光影、像素复古、ASCII 终端、音乐可视化、二次元 MMD……"
         "先挑画风，再挑工具。一个项目常能做好几种画风，所以会同时出现在几个画风里。", "",
         f"除了 {len(MAIN)} 种主流画风，还有收录小众画风的[小众画风区](#niche)（水墨山水、汉字笔顺、示波器、绘图仪、人工生命……），"
-        f"以及 {agent} 个让 Claude、Opus 等 AI 编程助手[用纯代码出片](#agent)的项目。[项目关系表](#relations)说明了谁基于谁、谁能替换谁。", "",
+        f"其中 {agent} 个是让 Claude、Opus 等 AI 编程助手写代码出片的技能和作品，也都按画风归在各自的分类里。[关系图谱](#relations)把有关系的项目连在一起，看得出谁从谁演化而来、谁能替换谁。", "",
         '<a name="rules"></a>', "",
         "## 收录标准", "",
         "- **画面必须由代码绘制或渲染。** 用视频生成、图像生成模型出画面的项目不收，用 Blender 等 3D 软件出画面的也不收。个别项目带有可选的生成功能或 Blender 选项，会在说明里注明。",
         "- **主流画风：** GitHub 星数 1000 以上，或近一年内有更新且星数 200 以上。",
-        "- **小众画风区和 Claude / Opus 区：** 门槛放宽到近一年内有更新、星数 50 以上，好让有潜力的新项目早点被看到。",
+        "- **小众画风区：** 门槛放宽到近一年内有更新、星数 20 以上，星数不高但有意思的项目也能被看到。",
+        "- **让 Claude / Opus 等 AI 编程助手写代码出片的技能和作品：** 照样按画风归类，门槛放宽到近一年内有更新、星数 50 以上。",
         "- **已归档（只读）的仓库不收。** 看过但没收的项目和原因记在 [`data/excluded.json`](data/excluded.json)。",
         "- 状态按仓库最近一次推送计算：🟢 活跃（半年内）· 🟡 放缓（两年内）· ⚪ 停更（超过两年，多数仍能用，只是不再加新功能）。",
         f"- 星数和状态每周一由 GitHub Actions 自动刷新，新项目候选每周自动整理成 Issue，当前数据更新于 {UPDATED}。", "",
@@ -248,7 +252,7 @@ def readme():
         parts += style_section(s)
     parts += [
         '<a name="relations"></a>', "",
-        "## 项目关系表", "",
+        "## 关系图谱", "",
         relations_section(),
         '<a name="all"></a>', "",
         "## 全部项目", "",
@@ -310,7 +314,6 @@ def readme_en():
             "[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
             badge("projects", len(projects), "2E49D4"),
             badge("styles", f"{len(MAIN)}+{len(NICHE)}", "9265D9"),
-            badge("Claude/Opus", agent, "7B4FD0"),
             badge("updated", UPDATED, "5B6273"),
         ]), "",
         f"**[🔎 Interactive version: filter by style, search, sort, see how projects relate]({PAGES_URL})** (Chinese UI)", "",
@@ -323,7 +326,8 @@ def readme_en():
         "- **Frames must be drawn or rendered by code.** Projects that make their pictures with image or video generation models are left out, "
         "and so are projects that render through Blender or other 3D apps. Optional features of that kind are noted per project.",
         "- **Main styles:** 1,000+ stars, or 200+ stars with a push in the last year.",
-        "- **Niche styles and the Claude / Opus section:** 50+ stars with a push in the last year.",
+        "- **Niche styles:** 20+ stars with a push in the last year.",
+        "- **Claude / Opus agent skills and films** are filed under their visual styles like everything else: 50+ stars with a push in the last year.",
         "- Archived repositories are not listed. Status: 🟢 pushed within 6 months · 🟡 within 2 years · ⚪ older.",
         f"- Stars and status refresh every Monday through GitHub Actions. Data as of {UPDATED}.", "",
         '<a name="index"></a>', "",

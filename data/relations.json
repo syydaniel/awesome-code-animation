@@ -1090,6 +1090,162 @@
       "type": "pair",
       "to": "mxgmn/WaveFunctionCollapse",
       "note": "都是程序化生成的基础工具"
+    },
+    {
+      "from": "R74nCom/sandboxels",
+      "type": "alt",
+      "to": "MaxBittker/sandspiel",
+      "note": "都是网页落沙沙盒"
+    },
+    {
+      "from": "The-Powder-Toy/The-Powder-Toy",
+      "type": "alt",
+      "to": "MaxBittker/sandspiel",
+      "note": "落沙游戏的老前辈，元素和物理更复杂"
+    },
+    {
+      "from": "BobdaProgrammer/TermiSand",
+      "type": "alt",
+      "to": "cgsdev0/termsand",
+      "note": "都是终端里的落沙模拟"
+    },
+    {
+      "from": "mapbox/webgl-wind",
+      "type": "alt",
+      "to": "cambecc/earth",
+      "note": "都做风场粒子动画"
+    },
+    {
+      "from": "anvaka/lsystem",
+      "type": "author",
+      "to": "anvaka/fieldplay",
+      "note": "同一作者 anvaka"
+    },
+    {
+      "from": "JargeZ/ntscqt",
+      "type": "alt",
+      "to": "ntsc-rs/ntsc-rs",
+      "note": "都做 VHS 效果；ntsc-rs 更新更勤"
+    },
+    {
+      "from": "finnmckenty/NTSCRT",
+      "type": "uses",
+      "to": "ntsc-rs/ntsc-rs",
+      "note": "信号模拟用 ntsc-rs"
+    },
+    {
+      "from": "RetroCrisis/Retro-Crisis-GDV-NTSC",
+      "type": "alt",
+      "to": "libretro/glsl-shaders",
+      "note": "都是 RetroArch 的复古着色器"
+    },
+    {
+      "from": "NullTale/VhsFx",
+      "type": "alt",
+      "to": "zulubo/VHSEffect",
+      "note": "都是 Unity 的 VHS 后期"
+    },
+    {
+      "from": "oriedita/oriedita",
+      "type": "alt",
+      "to": "oripa/oripa",
+      "note": "都是折痕图编辑器"
+    },
+    {
+      "from": "RemiKoutcherawy/OriSim3D-Android",
+      "type": "alt",
+      "to": "amandaghassaei/OrigamiSimulator",
+      "note": "都做折纸折叠模拟；OriSim3D 在安卓上"
+    },
+    {
+      "from": "Tw1ddle/geometrize",
+      "type": "alt",
+      "to": "fogleman/primitive",
+      "note": "Geometrize 是 primitive 思路的移植版"
+    },
+    {
+      "from": "rh12503/triangula",
+      "type": "alt",
+      "to": "fogleman/primitive",
+      "note": "都用几何图形重构图片"
+    },
+    {
+      "from": "tdh8316/triangler",
+      "type": "alt",
+      "to": "rh12503/triangula",
+      "note": "都把图片转成低多边形"
+    },
+    {
+      "from": "gkjohnson/three-gpu-pathtracer",
+      "type": "plugin",
+      "to": "mrdoob/three.js",
+      "note": "three.js 的路径追踪渲染器"
+    },
+    {
+      "from": "pissang/mutracer",
+      "type": "alt",
+      "to": "gkjohnson/three-gpu-pathtracer",
+      "note": "都在网页里做路径追踪"
+    },
+    {
+      "from": "knightcrawler25/GLSL-PathTracer",
+      "type": "alt",
+      "to": "aras-p/ToyPathTracer",
+      "note": "都是学习用的路径追踪器"
+    },
+    {
+      "from": "Icelk/strange-attractor-renderer",
+      "type": "alt",
+      "to": "vdesmond/attractors",
+      "note": "都画奇异吸引子"
+    },
+    {
+      "from": "AllenAI2014/remotion-guofeng-starter",
+      "type": "uses",
+      "to": "remotion-dev/remotion",
+      "note": ""
+    },
+    {
+      "from": "JohnHeibel/ClaudeAnimationBase",
+      "type": "built_on",
+      "to": "processing/p5.js",
+      "note": ""
+    },
+    {
+      "from": "JohnHeibel/ClaudeAnimationBase",
+      "type": "uses",
+      "to": "acamposuribe/p5.brush",
+      "note": "手绘笔触用 p5.brush"
+    },
+    {
+      "from": "JohnHeibel/ClaudeAnimationBase",
+      "type": "author",
+      "to": "JohnHeibel/PDoomVideo",
+      "note": "同一作者"
+    },
+    {
+      "from": "mexicat/pdoom-video",
+      "type": "alt",
+      "to": "JohnHeibel/PDoomVideo",
+      "note": "同一首歌，两位作者各自用代码做的 MV"
+    },
+    {
+      "from": "Stellarium/stellarium-web-engine",
+      "type": "alt",
+      "to": "hyqzz/Solar-Wanderer",
+      "note": "都在浏览器里渲染天体"
+    },
+    {
+      "from": "ashuttl/linecast",
+      "type": "alt",
+      "to": "da-luce/astroterm",
+      "note": "都在终端里画星空"
+    },
+    {
+      "from": "WishMelz/AquaInkGL",
+      "type": "alt",
+      "to": "LingDong-/shan-shui-inf",
+      "note": "都是网页里的程序化水墨"
     }
   ]
 }

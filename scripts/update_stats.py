@@ -50,7 +50,7 @@ def main():
         p["archived"] = info["archived"]
         p["license"] = (info.get("license") or {}).get("spdx_id")
         p["gh_desc"] = (info.get("description") or "").strip()
-        ok, why = qualifies(p["stars"], p["pushed_at"], p["archived"], p["tags"], today)
+        ok, why = qualifies(p["stars"], p["pushed_at"], p["archived"], p["tags"], p.get("agent", False), today)
         if not ok:
             problems.append(f"{p['repo']} 不再满足收录标准（{why}）")
         time.sleep(0.1 if TOKEN else 1.0)
