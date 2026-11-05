@@ -1,6 +1,6 @@
 # Contributing
 
-[中文](CONTRIBUTING.md)
+[Chinese version](CONTRIBUTING.md)
 
 Thanks for suggesting a project! This list exists to help people find the right code animation tool by **visual style**, so two things matter most: the picture is really drawn by code, and the project is still worth using.
 
@@ -30,9 +30,9 @@ Every Monday an automatic "weekly candidates" issue lists projects that were fou
      "name": "Display name",
      "tags": ["mg", "type"],
      "lang": "TypeScript",
-     "use": "MV · 短视频",
+     "use": "Music videos · Short videos",
      "use_en": "MV · Shorts",
-     "desc": "（可选的中文说明）",
+     "desc": "(optional Chinese description)",
      "desc_en": "One sentence on what kind of picture it makes.",
      "note_en": "(Optional) Anything to warn about, like license limits or an optional generation feature.",
      "license": null,
@@ -49,7 +49,7 @@ Every Monday an automatic "weekly candidates" issue lists projects that were fou
 2. If it relates to a listed project (built on it, a plugin for it, similar to it), add an entry to [`data/relations.json`](data/relations.json):
 
    ```json
-   {"from": "owner/name", "type": "plugin", "to": "mrdoob/three.js", "note": "一句话说明", "note_en": "One short clause."}
+   {"from": "owner/name", "type": "plugin", "to": "mrdoob/three.js", "note": "(Chinese note)", "note_en": "One short clause."}
    ```
 
    `type` is one of: `fork`, `built_on`, `plugin`, `official`, `uses`, `data`, `alt`, `pair`, `author`.

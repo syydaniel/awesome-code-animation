@@ -1989,7 +1989,8 @@
     "stars": 4870,
     "pushed_at": "2021-03-28",
     "archived": false,
-    "gh_desc": "Walk through an infinite, procedurally generated city"
+    "gh_desc": "Walk through an infinite, procedurally generated city",
+    "lang_en": "C# (Unity)"
   },
   {
     "repo": "dfranx/SHADERed",
@@ -2133,7 +2134,8 @@
     "stars": 4498,
     "pushed_at": "2026-08-26",
     "archived": false,
-    "gh_desc": "Compose Multiplatform Liquid Glass effect"
+    "gh_desc": "Compose Multiplatform Liquid Glass effect",
+    "lang_en": "Kotlin (Compose)"
   },
   {
     "repo": "stackgl/shader-school",
@@ -2171,7 +2173,8 @@
     "stars": 4370,
     "pushed_at": "2026-11-01",
     "archived": false,
-    "gh_desc": "Overlay for running GPU shaders on top of Windows desktop and Wine"
+    "gh_desc": "Overlay for running GPU shaders on top of Windows desktop and Wine",
+    "lang_en": "C++ (Windows)"
   },
   {
     "repo": "peterbrittain/asciimatics",
@@ -2837,7 +2840,8 @@
     "stars": 2936,
     "pushed_at": "2026-05-17",
     "archived": false,
-    "gh_desc": "Metal shaders for SwiftUI."
+    "gh_desc": "Metal shaders for SwiftUI.",
+    "lang_en": "Swift / Metal (iOS)"
   },
   {
     "repo": "xelatihy/yocto-gl",
@@ -3829,7 +3833,8 @@
     "stars": 1544,
     "pushed_at": "2026-09-27",
     "archived": false,
-    "gh_desc": "MilkDrop 3.0, supports any audio source, double-preset (.milk2), loading presets based on beat detection and much more..."
+    "gh_desc": "MilkDrop 3.0, supports any audio source, double-preset (.milk2), loading presets based on beat detection and much more...",
+    "lang_en": "C++ (Windows)"
   },
   {
     "repo": "cth9191/animate",
@@ -3923,7 +3928,8 @@
     "stars": 1503,
     "pushed_at": "2021-02-07",
     "archived": false,
-    "gh_desc": "Convert ShaderToy to Unity  HLSL/CG"
+    "gh_desc": "Convert ShaderToy to Unity  HLSL/CG",
+    "lang_en": "C# (Unity)"
   },
   {
     "repo": "tsoding/musializer",
@@ -4162,7 +4168,8 @@
     "stars": 1292,
     "pushed_at": "2026-09-13",
     "archived": false,
-    "gh_desc": "☁️ Kotlin Multiplatform blur and liquid glass effect library for Compose, with GPU-accelerated rendering and CPU fallback for older devices."
+    "gh_desc": "☁️ Kotlin Multiplatform blur and liquid glass effect library for Compose, with GPU-accelerated rendering and CPU fallback for older devices.",
+    "lang_en": "Kotlin (Compose)"
   },
   {
     "repo": "rvanwijnen/spectral.js",
@@ -4956,7 +4963,8 @@
     "stars": 963,
     "pushed_at": "2025-11-22",
     "archived": false,
-    "gh_desc": "A MS-DOS Creative Coding IDE/platform based on JavaScript"
+    "gh_desc": "A MS-DOS Creative Coding IDE/platform based on JavaScript",
+    "lang_en": "JavaScript (DOS)"
   },
   {
     "repo": "raphaelameaume/fragment",
@@ -5755,7 +5763,8 @@
     "stars": 597,
     "pushed_at": "2026-05-25",
     "archived": false,
-    "gh_desc": "a playground for making 3D art with lisp and math"
+    "gh_desc": "a playground for making 3D art with lisp and math",
+    "lang_en": "Janet (Lisp)"
   },
   {
     "repo": "mrsarac/ff-tracking",
@@ -6164,7 +6173,8 @@
     "stars": 489,
     "pushed_at": "2026-08-19",
     "archived": false,
-    "gh_desc": "A Swift package for composable Metal shaders and holographic UI effects in SwiftUI."
+    "gh_desc": "A Swift package for composable Metal shaders and holographic UI effects in SwiftUI.",
+    "lang_en": "Swift / Metal (iOS)"
   },
   {
     "repo": "Alexwtlf/agentic-product-demo",
@@ -6673,7 +6683,8 @@
     "stars": 347,
     "pushed_at": "2026-09-30",
     "archived": false,
-    "gh_desc": "41 hand-curated drop-in SwiftUI Metal shader effects — holographic foil, kaleidoscope, magnetic fields, glitch, neon edges and more. Typed View modifiers, agent-friendly docs."
+    "gh_desc": "41 hand-curated drop-in SwiftUI Metal shader effects — holographic foil, kaleidoscope, magnetic fields, glitch, neon edges and more. Typed View modifiers, agent-friendly docs.",
+    "lang_en": "Swift (iOS)"
   },
   {
     "repo": "markusmoenig/ShaderMania",
@@ -6690,7 +6701,8 @@
     "stars": 347,
     "pushed_at": "2026-05-23",
     "archived": false,
-    "gh_desc": "A Metal fragment shader editor for macOS and iPadOS"
+    "gh_desc": "A Metal fragment shader editor for macOS and iPadOS",
+    "lang_en": "Swift (macOS / iPad)"
   },
   {
     "repo": "Zorochase/ultimate-retro-shader-collection",
@@ -7417,7 +7429,8 @@
     "stars": 187,
     "pushed_at": "2026-10-11",
     "archived": false,
-    "gh_desc": "Vintage analog TV/VHS image tool for macOS: ntsc-rs signal emulation + RetroArch CRT shaders (librashader), glued together with SwiftUI/Metal"
+    "gh_desc": "Vintage analog TV/VHS image tool for macOS: ntsc-rs signal emulation + RetroArch CRT shaders (librashader), glued together with SwiftUI/Metal",
+    "lang_en": "Swift (macOS)"
   },
   {
     "repo": "Mortd3kay/liquid-glass-android",
@@ -7434,7 +7447,8 @@
     "stars": 187,
     "pushed_at": "2025-12-08",
     "archived": false,
-    "gh_desc": "✨ Glass morphism library for Jetpack Compose with AGSL shaders (Android 13+). Supports blur, distortion, shadows, and more."
+    "gh_desc": "✨ Glass morphism library for Jetpack Compose with AGSL shaders (Android 13+). Supports blur, distortion, shadows, and more.",
+    "lang_en": "Kotlin (Compose)"
   },
   {
     "repo": "HRuiCcc/RuiC-motion-reel",

@@ -344,7 +344,7 @@ footer p { margin: 0; }
   <header>
     <div class="head-top">
       <div class="eyebrow" data-en="Animation and music videos made with code">Awesome Code Animation · 用代码做动画和 MV</div>
-      <div class="seg lang-seg" role="group" aria-label="语言 / Language"><a href="?lang=zh" data-lang="zh" lang="zh-CN">中文</a><a href="?lang=en" data-lang="en" lang="en">English</a></div>
+      <div class="seg lang-seg" role="group" aria-label="语言" data-en-aria="Language"><a href="?lang=zh" data-lang="zh" data-en="Chinese">中文</a><a href="?lang=en" data-lang="en" lang="en">English</a></div>
     </div>
     <h1 data-en="Awesome Code Animation">代码画风图鉴</h1>
     <p class="lede" data-en="Open-source tools for making animation and music videos with code, indexed by visual style. Every frame is drawn or rendered by code, so projects that make their pictures with video or image generation models aren't listed. One project can do several styles, so it can show up under several. Click a style card to filter the table.">按画风整理的代码动画、代码做 MV 的开源项目。画面都由代码绘制或渲染，不收用视频、图像生成模型出画面的项目。一个项目常能做几种画风，所以会同时出现在几个画风里；点画风卡片就能筛出对应项目。</p>
@@ -488,7 +488,7 @@ if (EN) {
   RELS.forEach(r => swapLang(r, ['note']));
   RELTYPES.forEach(t => swapLang(t, ['name', 'desc']));
   SHOWCASE.forEach(it => {
-    swapLang(it, ['title', 'video_label', 'player_note', 'desc', 'credits', 'note', 'breakdown_title']);
+    swapLang(it, ['title', 'poster', 'video_label', 'player_note', 'desc', 'credits', 'note', 'breakdown_title']);
     (it.links || []).forEach(l => swapLang(l, ['label']));
     (it.breakdown || []).forEach(b => swapLang(b, ['style_name', 'what']));
   });
@@ -986,6 +986,15 @@ const SW = {
     c.strokeStyle = '#C2413A'; c.lineWidth = 1.5; c.strokeRect(x0 + .5, y0 + .5, s - 1, s - 1);
     c.lineCap = 'round'; c.lineJoin = 'round';
     const stroke = (pts, col, w) => { c.strokeStyle = col; c.lineWidth = w; c.beginPath(); pts.forEach(([x, y], i) => i ? c.lineTo(x0 + x * s, y0 + y * s) : c.moveTo(x0 + x * s, y0 + y * s)); c.stroke(); };
+    if (EN) {
+      // The letter A being written stroke by stroke, instead of a Chinese character.
+      stroke([[.5, .14], [.24, .86]], '#1F1C1A', 7);
+      stroke([[.5, .14], [.76, .86]], '#1F1C1A', 7);
+      c.strokeStyle = 'rgba(31,28,26,.18)'; c.lineWidth = 7; c.beginPath(); c.moveTo(x0 + .52 * s, y0 + .6 * s); c.lineTo(x0 + .67 * s, y0 + .6 * s); c.stroke();
+      stroke([[.33, .6], [.52, .6]], '#C2413A', 7);
+      c.fillStyle = '#C2413A'; c.beginPath(); c.arc(x0 + .52 * s, y0 + .6 * s, 3.5, 0, 7); c.fill();
+      return;
+    }
     stroke([[.42, .12], [.5, .2]], '#1F1C1A', 7);
     stroke([[.22, .32], [.78, .32]], '#1F1C1A', 7);
     stroke([[.5, .32], [.5, .86], [.42, .8]], '#1F1C1A', 7);

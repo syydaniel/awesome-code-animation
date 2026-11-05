@@ -1,9 +1,9 @@
 {
-  "_说明": "作品展示：用图鉴里的工具做出来的作品。video / poster / readme_cover 放在 docs/showcase/ 下，网页版和 README 会自动显示在最前面。README 不能内嵌 iframe 和仓库里的视频，所以显示 readme_cover（可以是带播放按钮的封面），点击去网页版看完整视频。bilibili 填 BV 号：网页版多一个 B 站播放器的按钮，README 的片中位置会链接到 B 站对应时间。tools 填 projects.json 里的 repo，会链接到对应项目；不在图鉴里的工具，在 names 里写显示名。英文都放在同名字段加 _en（title_en、desc_en、note_en、what_en、player_note_en、video_label_en 等）。breakdown 是可选的工具说明表：style 填 styles.json 的 key，没有对应画风时用 style_name；t 是片中位置（秒），网页版点击可以跳转。写了 breakdown 就不用再写 tools。",
+  "_说明": "作品展示：用图鉴里的工具做出来的作品。video / poster / readme_cover 放在 docs/showcase/ 下，网页版和 README 会自动显示在最前面。README 不能内嵌 iframe 和仓库里的视频，所以显示 readme_cover（可以是带播放按钮的封面），点击去网页版看完整视频。bilibili 填 BV 号：网页版多一个 B 站播放器的按钮，README 的片中位置会链接到 B 站对应时间。tools 填 projects.json 里的 repo，会链接到对应项目；不在图鉴里的工具，在 names 里写显示名。英文都放在同名字段加 _en（title_en、desc_en、note_en、what_en、player_note_en、video_label_en、poster_en、readme_cover_en 等），英文版不出现中文。breakdown 是可选的工具说明表：style 填 styles.json 的 key，没有对应画风时用 style_name；t 是片中位置（秒），网页版点击可以跳转。写了 breakdown 就不用再写 tools。",
   "items": [
     {
       "title": "画风不合",
-      "title_en": "画风不合 (Clashing Styles)",
+      "title_en": "Clashing Styles",
       "author": "syydaniel",
       "author_url": "https://github.com/syydaniel",
       "video": "docs/showcase/huafeng-buhe.mp4",
@@ -14,7 +14,13 @@
       "video_label_en": "This site, 720p60",
       "player_note": "这里放的是完整片子。网速慢可以换成 B 站播放器，不过没登录时 B 站外链只有 360P，想看高清请去 B 站。",
       "player_note_en": "This is the full film. On a slow connection, switch to the Bilibili player. Bilibili embeds only play 360p when you aren't logged in, so go to Bilibili for HD.",
-      "links": [{"label": "去 B 站看高清", "label_en": "Watch on Bilibili", "url": "https://www.bilibili.com/video/BV1DNxU6WEqv/"}],
+      "links": [
+        {
+          "label": "去 B 站看高清",
+          "label_en": "Watch on Bilibili",
+          "url": "https://www.bilibili.com/video/BV1DNxU6WEqv/"
+        }
+      ],
       "desc": "这支 MV 是给这个图鉴拍的宣传片。他住在一行代码里，她坐在一张水彩纸上，两个人不停换画风去找对方，每次都差一帧。片子走过 18 种画风、28 种画面，全部由代码渲染，没有用 AI 生成视频，每段用的工具都写在画面角上。",
       "desc_en": "The promo film for this list. He lives in a line of code, she sits on a sheet of watercolor paper, and they keep switching styles to reach each other, always one frame apart. The film moves through 18 styles and 28 looks. All of it is rendered by code, with no AI-generated video, and each shot names its tools in the corner.",
       "credits": "歌的词、曲、演唱都由 AI 完成：Claude Code 写词，ACE-Step 1.5 作曲演唱。代码也是 Claude Code 写的，用 DaVinci Resolve 剪辑。",
@@ -28,36 +34,278 @@
       "breakdown_title": "18 种画风、28 种画面分别用了什么工具",
       "breakdown_title_en": "Which tools made each of the 18 styles and 28 looks",
       "breakdown": [
-        {"style": "math", "tools": ["ManimCommunity/manim"], "t": 10.2, "what": "每一帧都由 Manim 社区版渲染，再按节拍播放", "what_en": "Every frame is rendered by Manim Community, then played back on the beat"},
-        {"style": "math", "tools": ["unconed/mathbox"], "t": 73.5, "what": "三维曲面在节拍上折成一颗心的等值面，方程写在旁边", "what_en": "A 3D surface that folds into a heart-shaped level set on the beat, with the equation beside it"},
-        {"style": "mg", "tools": ["greensock/GSAP", "juliangarnier/anime", "mojs/mojs"], "t": 52.0, "what": "GSAP 和 anime.js 排时间线，mo.js 做爆点和线条", "what_en": "GSAP and anime.js timelines, with bursts and streaks from mo.js"},
-        {"style": "mg", "tools": ["metafizzy/zdog"], "t": 160.0, "what": "玩具盒世界，人物和道具全是 Zdog 形状", "what_en": "A toy box where the characters and every prop are Zdog shapes"},
-        {"style": "mg", "tools": ["pixijs/pixijs"], "t": 161.6, "what": "霓虹夜街，pixi-filters 做湿地倒影、辉光和冲击波", "what_en": "A neon night street, with wet reflections, glow and shockwaves from pixi-filters"},
-        {"style": "code", "tools": ["shikijs/shiki"], "t": 11.5, "what": "编辑器里是这支片子自己的脚本，用 Shiki 高亮", "what_en": "The editor shows this film's own script, highlighted by Shiki"},
-        {"style": "type", "tools": ["shshaw/Splitting", "greensock/GSAP"], "t": 49.2, "what": "Splitting 把字拆开，GSAP 逐字驱动", "what_en": "Splitting breaks up the glyphs and GSAP drives each one"},
-        {"style": "short", "tools": ["greensock/GSAP"], "t": 97.5, "what": "竖屏手机划过，字幕一个词一个词弹出来", "what_en": "Phones slide past while captions bounce in one word at a time"},
-        {"style_name": "AI 写代码出片", "style_name_en": "AI-written code", "tools": ["anthropics/claude-code"], "t": 8.5, "what": "终端里打印这支片子的文件名、命令和源码，旁边是预览窗", "what_en": "A terminal prints this film's file names, commands and source next to a preview window"},
-        {"style": "hand", "tools": ["acamposuribe/p5.brush", "rough-stuff/rough"], "t": 23.2, "what": "p5.brush 画水彩，Rough.js 画铅笔线", "what_en": "p5.brush paints the watercolor and Rough.js draws the pencil lines"},
-        {"style": "gen", "tools": ["processing/p5.js"], "t": 71.8, "what": "流场版画，线条绕开人物，人物成了留白", "what_en": "A flow-field print whose lines bend around the character, leaving it as negative space"},
-        {"style": "gen", "tools": ["paperjs/paper.js"], "t": 34.0, "what": "液态包豪斯海报，全是矢量路径，图形在节拍上变形", "what_en": "A liquid Bauhaus poster of vector paths that morph on the beat"},
-        {"style": "shader", "tools": ["patriciogonzalezvivo/lygia", "paper-design/shaders"], "t": 78.4, "what": "LYGIA 的 GLSL 函数做色场，Paper Shaders 的 neuro-noise 叠一层脉络", "what_en": "Color fields from LYGIA's GLSL functions, with a vein layer from Paper Shaders' neuro-noise"},
-        {"style": "live", "tools": ["hydra-synth/hydra"], "t": 82.3, "what": "屏幕上的代码就是正在跑的代码，每写完一行画面就变", "what_en": "The code on screen is the code running: each finished line changes the picture"},
-        {"style": "audio", "tools": ["jberg/butterchurn"], "t": 83.0, "what": "Butterchurn 吃这首歌自己的音频，地面是真实频谱", "what_en": "Butterchurn is fed the song's own audio, over a real spectrum on the ground line"},
-        {"style": "3d", "tools": ["mrdoob/three.js", "pmndrs/postprocessing"], "t": 54.6, "what": "PBR 人物、镜面地板和发光网格，加辉光和景深", "what_en": "A PBR character, mirror floor and glowing grid, with bloom and depth of field"},
-        {"style": "3d", "tools": ["tengbao/vanta"], "t": 50.1, "what": "Vanta.js 的鸟群绕开人物飞，偶尔聚成一颗心", "what_en": "Vanta.js birds flock around the character and sometimes form a heart"},
-        {"style": "anime", "tools": ["pixiv/three-vrm"], "t": 152.7, "what": "和 3D 世界同一个模型，换成 MToon 卡通着色", "what_en": "The same model as the 3D world, restyled with MToon toon shading"},
-        {"style": "particle", "tools": ["PavelDoGreat/WebGL-Fluid-Simulation"], "t": 84.1, "what": "GPU 流体求解，围巾往流场里倒墨水", "what_en": "A GPU fluid solver, with the scarf pouring ink into the flow"},
-        {"style": "particle", "tools": ["liabru/matter-js"], "t": 46.6, "what": "「画风不合」四个字和方块砸下来，落点卡在节拍上", "what_en": "The title's glyphs and black blocks rain down and land on the beat"},
-        {"style": "particle", "tools": ["taichi-dev/taichi"], "t": 105.7, "what": "10.4 万粒子的 MLS-MPM 模拟，预先烘焙成序列帧", "what_en": "104,000 MLS-MPM particles, baked ahead of time to an image sequence"},
-        {"style": "glitch", "tools": ["pmndrs/postprocessing", "satyarth/pixelsort"], "t": 86.1, "what": "pixelsort 处理过的贴图，加 postprocessing 的故障和色差", "what_en": "Plates sorted by pixelsort, with glitch and chromatic aberration from postprocessing"},
-        {"style": "pixel", "tools": ["libretro/glsl-shaders"], "t": 56.0, "what": "320×180 的 8-bit 平台游戏，再过一层 crt-lottes 显像管着色器", "what_en": "A 320×180 8-bit platformer, through the crt-lottes CRT shader"},
-        {"style": "ascii", "tools": ["ChrisBuilds/terminaltexteffects"], "t": 15.6, "what": "开机文字由 TerminalTextEffects 跑出来，画面按亮度换成字符", "what_en": "Boot text from TerminalTextEffects, with the scene turned into characters by brightness"},
-        {"style": "data", "tools": ["d3/d3"], "t": 37.1, "what": "深色仪表盘，数字是图鉴里项目的 GitHub 星数", "what_en": "A dark dashboard charting the GitHub stars of projects in this list"},
-        {"style": "data", "tools": ["apache/echarts"], "t": 163.5, "what": "当时图鉴里全部 159 个项目连成的星图", "what_en": "A constellation of all 159 projects the list had at the time"},
-        {"style": "data", "tools": ["acaudwell/Gource"], "t": 104.8, "what": "three.js 的真实提交历史长成一棵光树", "what_en": "The real commit history of three.js growing into a tree of light"},
-        {"style": "data", "tools": ["visgl/deck.gl"], "t": 105.7, "what": "16 万个点聚合成等距的数据城市", "what_en": "160,000 points aggregated into an isometric data city"},
-        {"style_name": "全片转场", "style_name_en": "Transitions", "tools": ["gl-transitions/gl-transitions"], "what": "108 个镜头之间用了 42 种转场", "what_en": "42 kinds of transition across 108 shots"}
-      ]
+        {
+          "style": "math",
+          "tools": [
+            "ManimCommunity/manim"
+          ],
+          "t": 10.2,
+          "what": "每一帧都由 Manim 社区版渲染，再按节拍播放",
+          "what_en": "Every frame is rendered by Manim Community, then played back on the beat"
+        },
+        {
+          "style": "math",
+          "tools": [
+            "unconed/mathbox"
+          ],
+          "t": 73.5,
+          "what": "三维曲面在节拍上折成一颗心的等值面，方程写在旁边",
+          "what_en": "A 3D surface that folds into a heart-shaped level set on the beat, with the equation beside it"
+        },
+        {
+          "style": "mg",
+          "tools": [
+            "greensock/GSAP",
+            "juliangarnier/anime",
+            "mojs/mojs"
+          ],
+          "t": 52.0,
+          "what": "GSAP 和 anime.js 排时间线，mo.js 做爆点和线条",
+          "what_en": "GSAP and anime.js timelines, with bursts and streaks from mo.js"
+        },
+        {
+          "style": "mg",
+          "tools": [
+            "metafizzy/zdog"
+          ],
+          "t": 160.0,
+          "what": "玩具盒世界，人物和道具全是 Zdog 形状",
+          "what_en": "A toy box where the characters and every prop are Zdog shapes"
+        },
+        {
+          "style": "mg",
+          "tools": [
+            "pixijs/pixijs"
+          ],
+          "t": 161.6,
+          "what": "霓虹夜街，pixi-filters 做湿地倒影、辉光和冲击波",
+          "what_en": "A neon night street, with wet reflections, glow and shockwaves from pixi-filters"
+        },
+        {
+          "style": "code",
+          "tools": [
+            "shikijs/shiki"
+          ],
+          "t": 11.5,
+          "what": "编辑器里是这支片子自己的脚本，用 Shiki 高亮",
+          "what_en": "The editor shows this film's own script, highlighted by Shiki"
+        },
+        {
+          "style": "type",
+          "tools": [
+            "shshaw/Splitting",
+            "greensock/GSAP"
+          ],
+          "t": 49.2,
+          "what": "Splitting 把字拆开，GSAP 逐字驱动",
+          "what_en": "Splitting breaks up the glyphs and GSAP drives each one"
+        },
+        {
+          "style": "short",
+          "tools": [
+            "greensock/GSAP"
+          ],
+          "t": 97.5,
+          "what": "竖屏手机划过，字幕一个词一个词弹出来",
+          "what_en": "Phones slide past while captions bounce in one word at a time"
+        },
+        {
+          "style_name": "AI 写代码出片",
+          "style_name_en": "AI-written code",
+          "tools": [
+            "anthropics/claude-code"
+          ],
+          "t": 8.5,
+          "what": "终端里打印这支片子的文件名、命令和源码，旁边是预览窗",
+          "what_en": "A terminal prints this film's file names, commands and source next to a preview window"
+        },
+        {
+          "style": "hand",
+          "tools": [
+            "acamposuribe/p5.brush",
+            "rough-stuff/rough"
+          ],
+          "t": 23.2,
+          "what": "p5.brush 画水彩，Rough.js 画铅笔线",
+          "what_en": "p5.brush paints the watercolor and Rough.js draws the pencil lines"
+        },
+        {
+          "style": "gen",
+          "tools": [
+            "processing/p5.js"
+          ],
+          "t": 71.8,
+          "what": "流场版画，线条绕开人物，人物成了留白",
+          "what_en": "A flow-field print whose lines bend around the character, leaving it as negative space"
+        },
+        {
+          "style": "gen",
+          "tools": [
+            "paperjs/paper.js"
+          ],
+          "t": 34.0,
+          "what": "液态包豪斯海报，全是矢量路径，图形在节拍上变形",
+          "what_en": "A liquid Bauhaus poster of vector paths that morph on the beat"
+        },
+        {
+          "style": "shader",
+          "tools": [
+            "patriciogonzalezvivo/lygia",
+            "paper-design/shaders"
+          ],
+          "t": 78.4,
+          "what": "LYGIA 的 GLSL 函数做色场，Paper Shaders 的 neuro-noise 叠一层脉络",
+          "what_en": "Color fields from LYGIA's GLSL functions, with a vein layer from Paper Shaders' neuro-noise"
+        },
+        {
+          "style": "live",
+          "tools": [
+            "hydra-synth/hydra"
+          ],
+          "t": 82.3,
+          "what": "屏幕上的代码就是正在跑的代码，每写完一行画面就变",
+          "what_en": "The code on screen is the code running: each finished line changes the picture"
+        },
+        {
+          "style": "audio",
+          "tools": [
+            "jberg/butterchurn"
+          ],
+          "t": 83.0,
+          "what": "Butterchurn 吃这首歌自己的音频，地面是真实频谱",
+          "what_en": "Butterchurn is fed the song's own audio, over a real spectrum on the ground line"
+        },
+        {
+          "style": "3d",
+          "tools": [
+            "mrdoob/three.js",
+            "pmndrs/postprocessing"
+          ],
+          "t": 54.6,
+          "what": "PBR 人物、镜面地板和发光网格，加辉光和景深",
+          "what_en": "A PBR character, mirror floor and glowing grid, with bloom and depth of field"
+        },
+        {
+          "style": "3d",
+          "tools": [
+            "tengbao/vanta"
+          ],
+          "t": 50.1,
+          "what": "Vanta.js 的鸟群绕开人物飞，偶尔聚成一颗心",
+          "what_en": "Vanta.js birds flock around the character and sometimes form a heart"
+        },
+        {
+          "style": "anime",
+          "tools": [
+            "pixiv/three-vrm"
+          ],
+          "t": 152.7,
+          "what": "和 3D 世界同一个模型，换成 MToon 卡通着色",
+          "what_en": "The same model as the 3D world, restyled with MToon toon shading"
+        },
+        {
+          "style": "particle",
+          "tools": [
+            "PavelDoGreat/WebGL-Fluid-Simulation"
+          ],
+          "t": 84.1,
+          "what": "GPU 流体求解，围巾往流场里倒墨水",
+          "what_en": "A GPU fluid solver, with the scarf pouring ink into the flow"
+        },
+        {
+          "style": "particle",
+          "tools": [
+            "liabru/matter-js"
+          ],
+          "t": 46.6,
+          "what": "「画风不合」四个字和方块砸下来，落点卡在节拍上",
+          "what_en": "The title's glyphs and black blocks rain down and land on the beat"
+        },
+        {
+          "style": "particle",
+          "tools": [
+            "taichi-dev/taichi"
+          ],
+          "t": 105.7,
+          "what": "10.4 万粒子的 MLS-MPM 模拟，预先烘焙成序列帧",
+          "what_en": "104,000 MLS-MPM particles, baked ahead of time to an image sequence"
+        },
+        {
+          "style": "glitch",
+          "tools": [
+            "pmndrs/postprocessing",
+            "satyarth/pixelsort"
+          ],
+          "t": 86.1,
+          "what": "pixelsort 处理过的贴图，加 postprocessing 的故障和色差",
+          "what_en": "Plates sorted by pixelsort, with glitch and chromatic aberration from postprocessing"
+        },
+        {
+          "style": "pixel",
+          "tools": [
+            "libretro/glsl-shaders"
+          ],
+          "t": 56.0,
+          "what": "320×180 的 8-bit 平台游戏，再过一层 crt-lottes 显像管着色器",
+          "what_en": "A 320×180 8-bit platformer, through the crt-lottes CRT shader"
+        },
+        {
+          "style": "ascii",
+          "tools": [
+            "ChrisBuilds/terminaltexteffects"
+          ],
+          "t": 15.6,
+          "what": "开机文字由 TerminalTextEffects 跑出来，画面按亮度换成字符",
+          "what_en": "Boot text from TerminalTextEffects, with the scene turned into characters by brightness"
+        },
+        {
+          "style": "data",
+          "tools": [
+            "d3/d3"
+          ],
+          "t": 37.1,
+          "what": "深色仪表盘，数字是图鉴里项目的 GitHub 星数",
+          "what_en": "A dark dashboard charting the GitHub stars of projects in this list"
+        },
+        {
+          "style": "data",
+          "tools": [
+            "apache/echarts"
+          ],
+          "t": 163.5,
+          "what": "当时图鉴里全部 159 个项目连成的星图",
+          "what_en": "A constellation of all 159 projects the list had at the time"
+        },
+        {
+          "style": "data",
+          "tools": [
+            "acaudwell/Gource"
+          ],
+          "t": 104.8,
+          "what": "three.js 的真实提交历史长成一棵光树",
+          "what_en": "The real commit history of three.js growing into a tree of light"
+        },
+        {
+          "style": "data",
+          "tools": [
+            "visgl/deck.gl"
+          ],
+          "t": 105.7,
+          "what": "16 万个点聚合成等距的数据城市",
+          "what_en": "160,000 points aggregated into an isometric data city"
+        },
+        {
+          "style_name": "全片转场",
+          "style_name_en": "Transitions",
+          "tools": [
+            "gl-transitions/gl-transitions"
+          ],
+          "what": "108 个镜头之间用了 42 种转场",
+          "what_en": "42 kinds of transition across 108 shots"
+        }
+      ],
+      "poster_en": "docs/showcase/huafeng-buhe.en.jpg",
+      "readme_cover_en": "docs/showcase/huafeng-buhe-cover.en.jpg"
     }
   ]
 }

@@ -16,7 +16,7 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parent.parent
 PAGE = ROOT / "docs" / "index.html"
 OUT = ROOT / "assets"
-TEXT_SWATCHES = {"type", "liquid"}  # 这两张样图上画了文字，有单独的英文版
+TEXT_SWATCHES = {"type", "liquid", "hanzi"}  # 这几张样图上画了文字，有单独的英文版
 
 BANNER_JS = r"""
 () => {

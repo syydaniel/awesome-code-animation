@@ -257,7 +257,8 @@ def showcase_md(en=False):
         return []
     out = ['<a name="showcase"></a>', "", "## 🎬 Showcase" if en else "## 🎬 作品展示", ""]
     for it in showcase:
-        cover = it.get("readme_cover") or it.get("poster")
+        cover = (it.get("readme_cover_en") or it.get("poster_en")) if en else None
+        cover = cover or it.get("readme_cover") or it.get("poster")
         watch = page_url("showcase", en)
         title = it.get("title_en", it["title"]) if en else it["title"]
         if cover:
@@ -448,7 +449,7 @@ def readme_en():
         '<div align="center">', "",
         f'<img src="{banner}" alt="Awesome Code Animation" width="100%">', "",
         "# Awesome Code Animation", "",
-        "**Open-source tools for making animations and music videos with code, indexed by visual style.** [中文](README.md)", "",
+        "**Open-source tools for making animations and music videos with code, indexed by visual style.** [Chinese version](README.md)", "",
         " ".join([
             "[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
             badge("projects", len(projects), "2E49D4"),
@@ -546,7 +547,8 @@ def page_showcase(standalone):
     for it in showcase:
         x = dict(it)
         x.pop("readme_cover", None)  # 只给 README 用
-        for k in ("video", "poster"):
+        x.pop("readme_cover_en", None)
+        for k in ("video", "poster", "poster_en"):
             if x.get(k):
                 rel = x[k][5:] if x[k].startswith("docs/") else x[k]
                 x[k] = rel
@@ -554,11 +556,12 @@ def page_showcase(standalone):
             # artifact 页面不能加载外站的图片和视频：封面内嵌成 data URI，视频改成去网页版观看
             x.pop("video", None)
             x.pop("bilibili", None)
-            src = ROOT / it.get("poster", "")
-            if it.get("poster") and src.is_file():
-                import base64, mimetypes
-                mime = mimetypes.guess_type(src.name)[0] or "image/jpeg"
-                x["poster"] = f"data:{mime};base64," + base64.b64encode(src.read_bytes()).decode()
+            for k in ("poster", "poster_en"):
+                src = ROOT / it.get(k, "")
+                if it.get(k) and src.is_file():
+                    import base64, mimetypes
+                    mime = mimetypes.guess_type(src.name)[0] or "image/jpeg"
+                    x[k] = f"data:{mime};base64," + base64.b64encode(src.read_bytes()).decode()
         x["watch"] = PAGES_URL + "#showcase"
         items.append(x)
     return items
@@ -596,6 +599,12 @@ def main():
         print(page(standalone=False))
         return
     outputs = {ROOT / "README.md": readme(), ROOT / "README.en.md": readme_en(), ROOT / "docs" / "index.html": page()}
+    # 英文版只放英文：README.en.md 里出现中文或全角标点就算失败。
+    leftovers = [l for l in readme_en().splitlines() if CJK.search(l) or re.search(r"[\uff00-\uffef\u3000-\u303f]", l)]
+    if leftovers:
+        print("README.en.md 还有中文：", *[l[:100] for l in leftovers[:8]], sep="\n  ", file=sys.stderr)
+        if "--check" in sys.argv:
+            sys.exit(1)
     if "--check" in sys.argv:
         stale = [str(p.relative_to(ROOT)) for p, text in outputs.items()
                  if not p.exists() or p.read_text(encoding="utf-8") != text]
