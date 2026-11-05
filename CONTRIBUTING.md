@@ -1,5 +1,7 @@
 # 参与贡献
 
+[English](CONTRIBUTING.en.md)
+
 谢谢你愿意推荐项目！这份合集的目标是帮人按**画风**找到合适的代码动画工具，所以收录时最看重两点：画面确实是代码画出来的，以及项目还值得用。
 
 ## 收录标准
@@ -30,6 +32,7 @@
      "lang": "TypeScript",
      "use": "MV · 短视频",
      "desc": "一句话说明它能做出什么样的画面。",
+     "desc_en": "（可选）英文说明，网页英文版和 README.en.md 用它，没写时先用 GitHub 简介。",
      "note": "（可选）需要提醒的事，比如许可证限制、可选的生成功能。",
      "license": null,
      "stars": 0,
@@ -39,6 +42,8 @@
    ```
 
    `tags` 用 [`data/styles.json`](data/styles.json) 里的 `key`，可以写多个，第一个放最主要的画风。带 `"zone": "niche"` 的是小众画风区。`stars`、`pushed_at`、`archived`、`license` 随便填，下一步会自动刷新。
+
+   网站和 README 都有中英两版。`name`、`desc`、`use`、`note`、`lang` 都可以加对应的 `*_en` 字段写英文；`relations.json` 的 `note` 同样可以加 `note_en`。不会写英文也没关系，维护者会补上。
 
 2. 如果它和已收录的项目有关系（基于谁、是谁的插件、和谁同类），在 [`data/relations.json`](data/relations.json) 里加一条：
 

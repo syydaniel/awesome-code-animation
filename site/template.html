@@ -4,6 +4,24 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@700;900&display=swap">
+<script>
+/* 语言：网址的 ?lang= 优先，其次是上次的选择，否则看浏览器语言。英文模式先隐藏页面，换好文字再显示，避免闪一下中文。 */
+(() => {
+  let l = null;
+  try { l = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+  if (l !== 'zh' && l !== 'en') { try { l = localStorage.getItem('aca-lang'); } catch (e) {} }
+  if (l !== 'zh' && l !== 'en') l = /^zh/i.test(navigator.language || '') ? 'zh' : 'en';
+  window.LANG = l;
+  const root = document.documentElement;
+  root.lang = l === 'en' ? 'en' : 'zh-CN';
+  if (l === 'en') {
+    root.classList.add('i18n-wait');
+    document.title = 'Awesome Code Animation';
+    const m = document.querySelector('meta[name="description"]');
+    if (m) m.content = 'Open-source tools for making animation and music videos with code, indexed by visual style.';
+  }
+})();
+</script>
 <style>
 /* Layout: a contact sheet of style thumbnails on top, a sortable ledger of projects below. */
 :root {
@@ -51,7 +69,14 @@ a:hover { text-decoration: underline; }
 button, input, select { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
+.i18n-wait .wrap { visibility: hidden; }
 header { display: flex; flex-direction: column; gap: 14px; }
+.head-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+.lang-seg { flex: none; }
+.lang-seg a { display: block; padding: 5px 12px; font-size: 13px; color: var(--ink); }
+.lang-seg a + a { border-left: 1px solid var(--line); }
+.lang-seg a:hover { text-decoration: none; background: var(--chip); }
+.lang-seg a[aria-current="true"] { background: var(--accent); color: var(--accent-ink); }
 .eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
 h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(34px, 6vw, 56px); line-height: 1.1; margin: 0; text-wrap: balance; letter-spacing: .02em; }
 .lede { margin: 0; max-width: 64ch; color: var(--muted); }
@@ -317,53 +342,56 @@ footer p { margin: 0; }
 
 <div class="wrap">
   <header>
-    <div class="eyebrow">Awesome Code Animation · 用代码做动画和 MV</div>
-    <h1>代码画风图鉴</h1>
-    <p class="lede">按画风整理的代码动画、代码做 MV 的开源项目。画面都由代码绘制或渲染，不收用视频、图像生成模型出画面的项目。一个项目常能做几种画风，所以会同时出现在几个画风里；点画风卡片就能筛出对应项目。</p>
+    <div class="head-top">
+      <div class="eyebrow" data-en="Animation and music videos made with code">Awesome Code Animation · 用代码做动画和 MV</div>
+      <div class="seg lang-seg" role="group" aria-label="语言 / Language"><a href="?lang=zh" data-lang="zh" lang="zh-CN">中文</a><a href="?lang=en" data-lang="en" lang="en">English</a></div>
+    </div>
+    <h1 data-en="Awesome Code Animation">代码画风图鉴</h1>
+    <p class="lede" data-en="Open-source tools for making animation and music videos with code, indexed by visual style. Every frame is drawn or rendered by code, so projects that make their pictures with video or image generation models aren't listed. One project can do several styles, so it can show up under several. Click a style card to filter the table.">按画风整理的代码动画、代码做 MV 的开源项目。画面都由代码绘制或渲染，不收用视频、图像生成模型出画面的项目。一个项目常能做几种画风，所以会同时出现在几个画风里；点画风卡片就能筛出对应项目。</p>
     <div class="stats" id="stats"></div>
-    <nav class="nav" aria-label="页面目录"><a href="#showcase" id="nav-showcase" hidden>作品展示</a><a href="#styles-sec">画风索引</a><a href="#niche-sec">小众画风区</a><a href="#graph-sec">关系图谱</a><a href="#rel-sec">项目关系表</a><a href="#table-sec">项目总表</a></nav>
-    <a class="repo-link" href="__REPO_URL__" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>在 GitHub 上查看和推荐项目</a>
+    <nav class="nav" aria-label="页面目录" data-en-aria="Page contents"><a href="#showcase" id="nav-showcase" hidden data-en="Showcase">作品展示</a><a href="#styles-sec" data-en="Style index">画风索引</a><a href="#niche-sec" data-en="Niche styles">小众画风区</a><a href="#graph-sec" data-en="Relationship graph">关系图谱</a><a href="#rel-sec" data-en="Relationship table">项目关系表</a><a href="#table-sec" data-en="All projects">项目总表</a></nav>
+    <a class="repo-link" href="__REPO_URL__" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span data-en="View on GitHub and suggest a project">在 GitHub 上查看和推荐项目</span></a>
   </header>
 
   <section aria-labelledby="sc-h" id="showcase" hidden>
-    <div class="sec-head"><h2 id="sc-h">作品展示</h2><span class="hint">用图鉴里的工具做出来的作品</span></div>
+    <div class="sec-head"><h2 id="sc-h" data-en="Showcase">作品展示</h2><span class="hint" data-en="Made with the tools in this list">用图鉴里的工具做出来的作品</span></div>
     <div class="sc-list" id="sc-list"></div>
   </section>
 
   <section aria-labelledby="picks-h">
-    <div class="sec-head"><h2 id="picks-h">按目的先挑</h2><span class="hint">点名字直接在表里定位</span></div>
+    <div class="sec-head"><h2 id="picks-h" data-en="Start from your goal">按目的先挑</h2><span class="hint" data-en="Click a name to find it in the table">点名字直接在表里定位</span></div>
     <div class="picks" id="picks"></div>
   </section>
 
   <section aria-labelledby="styles-h" id="styles-sec">
-    <div class="sec-head"><h2 id="styles-h">画风索引</h2><span class="hint">点一个画风筛选下表，再点一次取消</span></div>
+    <div class="sec-head"><h2 id="styles-h" data-en="Style index">画风索引</h2><span class="hint" data-en="Click a style to filter the table, click again to clear">点一个画风筛选下表，再点一次取消</span></div>
     <div class="styles" id="styles"></div>
   </section>
 
   <section aria-labelledby="niche-h" id="niche-sec">
-    <div class="sec-head"><h2 id="niche-h">小众画风区</h2><span class="hint" id="niche-count"></span></div>
-    <p class="zone-note">用的人不多、但辨识度很高的画风。门槛放宽到近一年内有更新、星数 20 以上，有意思的小项目也能被看到。</p>
+    <div class="sec-head"><h2 id="niche-h" data-en="Niche styles">小众画风区</h2><span class="hint" id="niche-count"></span></div>
+    <p class="zone-note" data-en="Fewer people use these, but you'd recognize them anywhere. The bar is lower here, 20+ stars with a push in the last year, so small and interesting projects get seen too.">用的人不多、但辨识度很高的画风。门槛放宽到近一年内有更新、星数 20 以上，有意思的小项目也能被看到。</p>
     <div class="styles" id="niche"></div>
   </section>
 
   <section aria-labelledby="graph-h" id="graph-sec">
-    <div class="sec-head"><h2 id="graph-h">关系图谱</h2><span class="hint" id="graph-count"></span></div>
-    <p class="zone-note">有关系的项目连在一起，箭头从源头指向从它演化出来的项目，点线是同类、常搭配和同一作者。「关系网」看项目怎么聚成家族，「演化树」把每个家族排成一张卡片。点任意项目看它的完整演化链。</p>
+    <div class="sec-head"><h2 id="graph-h" data-en="Relationship graph">关系图谱</h2><span class="hint" id="graph-count"></span></div>
+    <p class="zone-note" data-en="Related projects are linked. Arrows point from a source to what grew out of it, and dotted lines mean similar, often paired, or same author. Network shows how projects cluster into families, and Family tree lays each family out as a card. Click any project to see its full lineage.">有关系的项目连在一起，箭头从源头指向从它演化出来的项目，点线是同类、常搭配和同一作者。「关系网」看项目怎么聚成家族，「演化树」把每个家族排成一张卡片。点任意项目看它的完整演化链。</p>
     <div class="graph-tools">
-      <div class="seg" role="group" aria-label="布局">
-        <button type="button" data-layout="force" aria-pressed="true">关系网</button>
-        <button type="button" data-layout="tree" aria-pressed="false">演化树</button>
+      <div class="seg" role="group" aria-label="布局" data-en-aria="Layout">
+        <button type="button" data-layout="force" aria-pressed="true" data-en="Network">关系网</button>
+        <button type="button" data-layout="tree" aria-pressed="false" data-en="Family tree">演化树</button>
       </div>
-      <input class="graph-search" id="graph-q" type="search" placeholder="在图里找项目，例如 three.js" aria-label="在图谱里搜索项目">
+      <input class="graph-search" id="graph-q" type="search" placeholder="在图里找项目，例如 three.js" aria-label="在图谱里搜索项目" data-en-ph="Find a project, e.g. three.js" data-en-aria="Search the graph">
     </div>
     <div class="graph-types" id="graph-types"></div>
     <div class="graph-shell">
       <div class="graph-stage" id="graph-stage">
-        <div class="graph-hint" id="graph-hint">滚轮缩放 · 拖动平移 · 点节点看演化链</div>
+        <div class="graph-hint" id="graph-hint" data-en="Scroll to zoom · Drag to pan · Click a node for its lineage">滚轮缩放 · 拖动平移 · 点节点看演化链</div>
         <div class="graph-zoom">
-          <button type="button" id="gz-in" aria-label="放大">+</button>
-          <button type="button" id="gz-out" aria-label="缩小">−</button>
-          <button type="button" id="gz-fit" aria-label="复位视图">⤢</button>
+          <button type="button" id="gz-in" aria-label="放大" data-en-aria="Zoom in">+</button>
+          <button type="button" id="gz-out" aria-label="缩小" data-en-aria="Zoom out">−</button>
+          <button type="button" id="gz-fit" aria-label="复位视图" data-en-aria="Reset view">⤢</button>
         </div>
         <div class="graph-tip" id="graph-tip" hidden></div>
       </div>
@@ -373,53 +401,73 @@ footer p { margin: 0; }
 
 
   <section aria-labelledby="table-h" id="table-sec">
-    <div class="sec-head"><h2 id="table-h">项目总表</h2></div>
+    <div class="sec-head"><h2 id="table-h" data-en="All projects">项目总表</h2></div>
     <div class="toolbar">
-      <div class="search"><input id="q" type="search" placeholder="搜项目名、语言、用途，例如 Python、MV、字幕" aria-label="搜索项目"></div>
-      <select id="zone" aria-label="分区">
-        <option value="all">全部分区</option>
-        <option value="main">主流画风</option>
-        <option value="niche">小众画风区</option>
+      <div class="search"><input id="q" type="search" placeholder="搜项目名、语言、用途，例如 Python、MV、字幕" aria-label="搜索项目" data-en-ph="Search name, language or use, e.g. Python, MV, captions" data-en-aria="Search projects"></div>
+      <select id="zone" aria-label="分区" data-en-aria="Zone">
+        <option value="all" data-en="All zones">全部分区</option>
+        <option value="main" data-en="Main styles">主流画风</option>
+        <option value="niche" data-en="Niche styles">小众画风区</option>
       </select>
-      <select id="sort" aria-label="排序">
-        <option value="stars">按星数</option>
-        <option value="pushed">按最近提交</option>
-        <option value="name">按名称</option>
+      <select id="sort" aria-label="排序" data-en-aria="Sort">
+        <option value="stars" data-en="By stars">按星数</option>
+        <option value="pushed" data-en="By latest push">按最近提交</option>
+        <option value="name" data-en="By name">按名称</option>
       </select>
-      <label class="chk"><input id="hide" type="checkbox"> 只看活跃项目</label>
+      <label class="chk"><input id="hide" type="checkbox"> <span data-en="Active only">只看活跃项目</span></label>
       <button class="active-filter" id="clear" hidden></button>
       <span class="count" id="count"></span>
     </div>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>项目</th><th>画风</th><th>说明</th><th>写法</th><th class="num">星数</th><th>最近提交</th><th>许可证</th></tr></thead>
+        <thead><tr><th data-en="Project">项目</th><th data-en="Styles">画风</th><th data-en="Description">说明</th><th data-en="Language">写法</th><th class="num" data-en="Stars">星数</th><th data-en="Latest push">最近提交</th><th data-en="License">许可证</th></tr></thead>
         <tbody id="rows"></tbody>
       </table>
-      <div class="empty" id="empty" hidden>没有符合条件的项目，换个关键词或取消画风筛选试试。</div>
+      <div class="empty" id="empty" hidden data-en="Nothing matches. Try another keyword or clear the style filter.">没有符合条件的项目，换个关键词或取消画风筛选试试。</div>
     </div>
   </section>
 
   <section aria-labelledby="rel-h" id="rel-sec">
-    <div class="sec-head"><h2 id="rel-h">项目关系表</h2><span class="hint">点项目名会在总表里定位它</span></div>
-    <p class="zone-note">想换工具时看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。上面的搜索框会同时筛选这张表。</p>
+    <div class="sec-head"><h2 id="rel-h" data-en="Relationship table">项目关系表</h2><span class="hint" data-en="Click a name to find it in the table">点项目名会在总表里定位它</span></div>
+    <p class="zone-note" data-en="Looking to switch tools? See Alternative. Want more features? See Plugin / extension and Built on. The search box above filters this table too.">想换工具时看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。上面的搜索框会同时筛选这张表。</p>
     <div class="chips" id="rel-types"></div>
     <div class="rel-wrap">
       <table class="rel-table">
-        <thead><tr><th>项目</th><th>关系</th><th>项目</th><th>说明</th></tr></thead>
+        <thead><tr><th data-en="Project">项目</th><th data-en="Relation">关系</th><th data-en="Project">项目</th><th data-en="Note">说明</th></tr></thead>
         <tbody id="rel-rows"></tbody>
       </table>
-      <div class="empty" id="rel-empty" hidden>没有符合条件的关系。</div>
+      <div class="empty" id="rel-empty" hidden data-en="No matching relationships.">没有符合条件的关系。</div>
     </div>
     <div class="rel-more" id="rel-more" hidden><button type="button" id="rel-more-btn"></button></div>
   </section>
 
   <footer>
-    <p>收录标准：画面由代码绘制或渲染，不用视频或图像生成模型，也不靠 Blender 等 3D 软件出画面。主流画风要求星数 1000 以上，或近一年仍在更新且星数 200 以上；小众画风区放宽到近一年内有更新、星数 20 以上；让 Claude / Opus 等 AI 编程助手写代码出片的项目放宽到 50 以上，照样按画风归类。已归档的仓库不收。</p>
-    <p>星数、最近提交时间和许可证来自 GitHub，更新于 __DATE__。状态按最近一次推送计算：半年内为「活跃」，两年内为「放缓」，超过两年为「停更」。</p>
-    <p>许可证写「见仓库」的，是 GitHub 没能自动识别的情况。打算商用前，请到仓库里核对许可证原文。</p>
+    <p data-en="What gets listed: frames drawn or rendered by code, without video or image generation models, and not through 3D apps like Blender. Main styles need 1,000+ stars, or 200+ stars with a push in the last year. Niche styles need 20+ stars with a push in the last year. Projects where AI coding agents like Claude or Opus write the code for a video need 50+, and are filed by style like everything else. Archived repositories are not listed.">收录标准：画面由代码绘制或渲染，不用视频或图像生成模型，也不靠 Blender 等 3D 软件出画面。主流画风要求星数 1000 以上，或近一年仍在更新且星数 200 以上；小众画风区放宽到近一年内有更新、星数 20 以上；让 Claude / Opus 等 AI 编程助手写代码出片的项目放宽到 50 以上，照样按画风归类。已归档的仓库不收。</p>
+    <p data-en="Stars, latest push and license come from GitHub, last updated __DATE__. Status follows the latest push: within 6 months is Active, within 2 years is Slowing, older is Dormant.">星数、最近提交时间和许可证来自 GitHub，更新于 __DATE__。状态按最近一次推送计算：半年内为「活跃」，两年内为「放缓」，超过两年为「停更」。</p>
+    <p data-en="&quot;See repo&quot; means GitHub couldn't detect the license. Check the license text in the repository before commercial use.">许可证写「见仓库」的，是 GitHub 没能自动识别的情况。打算商用前，请到仓库里核对许可证原文。</p>
   </footer>
 </div>
 
+<script>
+/* 静态文字的英文写在 data-en 属性里，这里统一换上，再把语言切换接好。 */
+(() => {
+  const en = window.LANG === 'en';
+  if (en) {
+    document.querySelectorAll('[data-en]').forEach(el => { el.textContent = el.dataset.en; });
+    document.querySelectorAll('[data-en-ph]').forEach(el => { el.placeholder = el.dataset.enPh; });
+    document.querySelectorAll('[data-en-aria]').forEach(el => { el.setAttribute('aria-label', el.dataset.enAria); });
+  }
+  document.documentElement.classList.remove('i18n-wait');
+  document.querySelectorAll('[data-lang]').forEach(a => {
+    a.setAttribute('aria-current', String(a.dataset.lang === window.LANG));
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      try { localStorage.setItem('aca-lang', a.dataset.lang); } catch (err) {}
+      location.href = location.pathname + '?lang=' + a.dataset.lang + location.hash;
+    });
+  });
+})();
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script>
 const DATA = __PROJECTS__;
@@ -429,6 +477,22 @@ const RELS = __RELATIONS__;
 const RELTYPES = __RELTYPES__;
 const SNAPSHOT = Date.parse('__DATE__');
 const SHOWCASE = __SHOWCASE__;
+const EN = window.LANG === 'en';
+const L = (zh, en) => EN ? en : zh;
+// 英文模式：把数据里的中文字段换成 *_en，后面的渲染代码不用区分语言；原文留在 *_zh 里给搜索用。缺译文时显示原文。
+const swapLang = (o, keys) => keys.forEach(k => { if (o[k + '_en']) { o[k + '_zh'] = o[k]; o[k] = o[k + '_en']; } });
+if (EN) {
+  DATA.forEach(p => swapLang(p, ['name', 'desc', 'use', 'note', 'lang', 'license_display']));
+  STYLES.forEach(s => { s.name_zh = s.name; s.name = s.en; swapLang(s, ['look']); });
+  PICKS.forEach(pk => swapLang(pk, ['goal']));
+  RELS.forEach(r => swapLang(r, ['note']));
+  RELTYPES.forEach(t => swapLang(t, ['name', 'desc']));
+  SHOWCASE.forEach(it => {
+    swapLang(it, ['title', 'video_label', 'player_note', 'desc', 'credits', 'note', 'breakdown_title']);
+    (it.links || []).forEach(l => swapLang(l, ['label']));
+    (it.breakdown || []).forEach(b => swapLang(b, ['style_name', 'what']));
+  });
+}
 const SMAP = Object.fromEntries(STYLES.map(s => [s.key, s]));
 const MAIN = STYLES.filter(s => s.zone !== 'niche');
 const NICHE = STYLES.filter(s => s.zone === 'niche');
@@ -445,18 +509,22 @@ const state = { style: null, q: '', sort: 'stars', active: false, zone: 'all', r
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmtStars = n => n >= 1000 ? (n/1000).toFixed(n >= 100000 ? 0 : 1).replace(/\.0$/, '') + 'k' : String(n);
-const lic = p => p.license_display || (p.license && p.license !== 'NOASSERTION' ? p.license : '见仓库');
+const lic = p => p.license_display || (p.license && p.license !== 'NOASSERTION' ? p.license : L('见仓库', 'See repo'));
 const inNiche = p => p.tags.some(t => NICHE_KEYS.has(t));
 const inMain = p => p.tags.some(t => !NICHE_KEYS.has(t));
 function status(p) {
-  if (p.archived) return ['off','已归档'];
+  if (p.archived) return ['off', L('已归档', 'Archived')];
   const d = (SNAPSHOT - Date.parse(p.pushed_at)) / 864e5;
-  if (d <= 183) return ['ok','活跃'];
-  if (d <= 730) return ['slow','放缓'];
-  return ['off','停更'];
+  if (d <= 183) return ['ok', L('活跃', 'Active')];
+  if (d <= 730) return ['slow', L('放缓', 'Slowing')];
+  return ['off', L('停更', 'Dormant')];
 }
-const REL_FWD = { fork: '分叉自', built_on: '基于', plugin: '扩展了', official: '官方配套', uses: '渲染用', data: '数据来自', alt: '同类', pair: '常搭配', author: '同作者' };
-const REL_REV = { fork: '从它分叉', built_on: '基于它', plugin: '是它的扩展', official: '是它的官方配套', uses: '用它渲染', data: '用它的数据', alt: '同类', pair: '常搭配', author: '同作者' };
+const REL_FWD = EN
+  ? { fork: 'forked from', built_on: 'built on', plugin: 'extends', official: 'official add-on for', uses: 'renders with', data: 'data from', alt: 'alternative to', pair: 'pairs with', author: 'same author as' }
+  : { fork: '分叉自', built_on: '基于', plugin: '扩展了', official: '官方配套', uses: '渲染用', data: '数据来自', alt: '同类', pair: '常搭配', author: '同作者' };
+const REL_REV = EN
+  ? { fork: 'forked from this', built_on: 'is built on this', plugin: 'extends this', official: 'is its official add-on', uses: 'renders with this', data: 'uses its data', alt: 'alternative to', pair: 'pairs with', author: 'same author as' }
+  : { fork: '从它分叉', built_on: '基于它', plugin: '是它的扩展', official: '是它的官方配套', uses: '用它渲染', data: '用它的数据', alt: '同类', pair: '常搭配', author: '同作者' };
 function relHtml(r) {
   const btn = `<button data-find="${esc(r.other)}">${esc(BYREPO[r.other].name)}</button>`;
   return r.reverse && !['alt', 'pair', 'author'].includes(r.type)
@@ -465,10 +533,10 @@ function relHtml(r) {
 }
 
 document.getElementById('stats').innerHTML =
-  `<div><b>${DATA.length}</b><span>个项目</span></div>` +
-  `<div><b>${MAIN.length}+${NICHE.length}</b><span>种画风（主流 + 小众）</span></div>` +
-  `<div><b>${DATA.filter(p => status(p)[0] === 'ok').length}</b><span>个半年内仍在更新</span></div>` +
-  `<div><b>${RELS.length}</b><span>条项目关系</span></div>`;
+  `<div><b>${DATA.length}</b><span>${L('个项目', 'projects')}</span></div>` +
+  `<div><b>${MAIN.length}+${NICHE.length}</b><span>${L('种画风（主流 + 小众）', 'styles (main + niche)')}</span></div>` +
+  `<div><b>${DATA.filter(p => status(p)[0] === 'ok').length}</b><span>${L('个半年内仍在更新', 'updated in the last 6 months')}</span></div>` +
+  `<div><b>${RELS.length}</b><span>${L('条项目关系', 'relationships')}</span></div>`;
 
 if (SHOWCASE.length) {
   document.getElementById('showcase').hidden = false;
@@ -476,20 +544,20 @@ if (SHOWCASE.length) {
   document.getElementById('sc-list').innerHTML = SHOWCASE.map(it => {
     const media = it.video
       ? `<video controls playsinline preload="metadata" ${it.poster ? `poster="${esc(it.poster)}"` : ''} src="${esc(it.video)}"></video>`
-      : (it.poster ? `<img src="${esc(it.poster)}" alt="${esc(it.title)}"><a class="sc-play" href="${esc(it.watch)}" target="_blank" rel="noopener">▶ 在网页版观看</a>` : '');
+      : (it.poster ? `<img src="${esc(it.poster)}" alt="${esc(it.title)}"><a class="sc-play" href="${esc(it.watch)}" target="_blank" rel="noopener">▶ ${L('在网页版观看', 'Watch on the site')}</a>` : '');
     // 写了 breakdown 的作品，工具和画风都在说明表里，不再重复放标签
     const tools = it.breakdown ? '' : (it.tools || []).map(r => BYREPO[r] ? `<button type="button" data-find="${esc(r)}">${esc(BYREPO[r].name)}</button>` : `<button type="button" onclick="window.open('https://github.com/${esc(r)}','_blank')">${esc(r)}</button>`).join('');
     const styles = it.breakdown ? '' : (it.styles || []).filter(s => SMAP[s]).map(s => `<button type="button" data-sc-style="${s}"><span class="dot" style="background:${SMAP[s].color};display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px"></span>${esc(SMAP[s].name)}</button>`).join('');
     const links = (it.links || []).map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join('');
-    const sources = it.video && it.bilibili ? `<div class="sc-src" role="group" aria-label="播放源"><button type="button" data-sc-src="self" aria-pressed="true">${esc(it.video_label || '本站')}</button><button type="button" data-sc-src="bili" aria-pressed="false">B 站播放器</button></div>` : '';
+    const sources = it.video && it.bilibili ? `<div class="sc-src" role="group" aria-label="${L('播放源', 'Video source')}"><button type="button" data-sc-src="self" aria-pressed="true">${esc(it.video_label || L('本站', 'This site'))}</button><button type="button" data-sc-src="bili" aria-pressed="false">${L('B 站播放器', 'Bilibili player')}</button></div>` : '';
     return `<article class="sc-card"${it.bilibili ? ` data-bvid="${esc(it.bilibili)}"` : ''}><div class="sc-media">${media}</div><div class="sc-info">
       <h3>${esc(it.title)}</h3>
-      ${it.author ? `<span class="sc-by">作者 ${it.author_url ? `<a href="${esc(it.author_url)}" target="_blank" rel="noopener">${esc(it.author)}</a>` : esc(it.author)}</span>` : ''}
+      ${it.author ? `<span class="sc-by">${L('作者', 'by')} ${it.author_url ? `<a href="${esc(it.author_url)}" target="_blank" rel="noopener">${esc(it.author)}</a>` : esc(it.author)}</span>` : ''}
       ${it.desc ? `<p class="sc-desc">${esc(it.desc)}</p>` : ''}
       ${it.credits ? `<p class="sc-desc">${esc(it.credits)}</p>` : ''}
       ${it.note ? `<p class="sc-note">${esc(it.note)}</p>` : ''}
-      ${tools ? `<span class="sc-k">用到的工具</span><div class="sc-tools">${tools}</div>` : ''}
-      ${styles ? `<span class="sc-k">画风</span><div class="sc-tools">${styles}</div>` : ''}
+      ${tools ? `<span class="sc-k">${L('用到的工具', 'Built with')}</span><div class="sc-tools">${tools}</div>` : ''}
+      ${styles ? `<span class="sc-k">${L('画风', 'Styles')}</span><div class="sc-tools">${styles}</div>` : ''}
       ${sources}
       ${sources && it.player_note ? `<p class="sc-note">${esc(it.player_note)}</p>` : ''}
       ${links ? `<div class="sc-links">${links}</div>` : ''}
@@ -531,12 +599,12 @@ function scBreakdown(it) {
     const name = SMAP[b.style]
       ? `<button type="button" data-sc-style="${esc(b.style)}"><span class="dot" style="background:${SMAP[b.style].color}"></span>${esc(SMAP[b.style].name)}</button>`
       : esc(b.style_name || '');
-    const time = b.t == null ? '全片' : (it.video ? `<button type="button" data-seek="${b.t}" aria-label="跳到 ${mmss(b.t)}">${mmss(b.t)}</button>` : mmss(b.t));
+    const time = b.t == null ? L('全片', 'Throughout') : (it.video ? `<button type="button" data-seek="${b.t}" aria-label="${L('跳到', 'Jump to')} ${mmss(b.t)}">${mmss(b.t)}</button>` : mmss(b.t));
     return `<tr>${first ? `<td class="sc-s" rowspan="${span}">${name}</td>` : ''}<td class="sc-n">${b.tools.map(r => scTool(r, it)).join(' · ')}</td><td class="sc-t">${time}</td><td class="sc-w">${esc(b.what)}</td></tr>`;
   }).join('');
   const open = matchMedia('(max-width: 760px)').matches ? '' : ' open';
-  return `<details class="sc-break"${open}><summary>${esc(it.breakdown_title || '用到的工具')}${it.video ? '<span class="hint">点时间跳到片中位置</span>' : ''}</summary>
-    <table class="sc-table"><thead><tr><th>画风</th><th>工具</th><th>片中位置</th><th>这段怎么做的</th></tr></thead><tbody>${body}</tbody></table></details>`;
+  return `<details class="sc-break"${open}><summary>${esc(it.breakdown_title || L('用到的工具', 'Tools used'))}${it.video ? `<span class="hint">${L('点时间跳到片中位置', 'Click a time to jump there')}</span>` : ''}</summary>
+    <table class="sc-table"><thead><tr><th>${L('画风', 'Style')}</th><th>${L('工具', 'Tools')}</th><th>${L('片中位置', 'At')}</th><th>${L('这段怎么做的', "How it's used")}</th></tr></thead><tbody>${body}</tbody></table></details>`;
 }
 
 // 在本站视频和 B 站外链播放器之间切换。B 站播放器只有切换时才加载，跳转靠重设地址的 t 参数。
@@ -548,7 +616,7 @@ function scPlayer(card, src, t, play) {
     video.hidden = true;
     if (!frame) {
       frame = document.createElement('iframe');
-      frame.title = 'B 站播放器';
+      frame.title = L('B 站播放器', 'Bilibili player');
       frame.allow = 'autoplay; fullscreen';
       frame.allowFullscreen = true;
       frame.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation');
@@ -572,11 +640,11 @@ document.getElementById('picks').innerHTML = PICKS.map(pk =>
 function styleCards(group) {
   return group.map(s => {
     const ps = DATA.filter(p => p.tags.includes(s.key)).sort((a,b) => b.stars - a.stars);
-    const top = ps.slice(0, 8).map(p => esc(p.name)).join(' · ') + (ps.length > 8 ? ` 等 ${ps.length} 个` : '');
+    const top = ps.slice(0, 8).map(p => esc(p.name)).join(' · ') + (ps.length > 8 ? L(` 等 ${ps.length} 个`, ` and ${ps.length - 8} more`) : '');
     return `<button class="style" data-style="${s.key}" aria-pressed="false">
       <canvas width="480" height="192" data-swatch="${s.key}" aria-hidden="true"></canvas>
       <span class="body">
-        <span class="top"><span class="nm">${esc(s.name)}</span><span class="ct">${ps.length} 个</span></span>
+        <span class="top"><span class="nm">${esc(s.name)}</span><span class="ct">${ps.length}${L(' 个', '')}</span></span>
         <span class="look">${esc(s.look)}</span>
         <span class="who">${top}</span>
       </span>
@@ -587,12 +655,13 @@ const stylesEl = document.getElementById('styles');
 const nicheEl = document.getElementById('niche');
 stylesEl.innerHTML = styleCards(MAIN);
 nicheEl.innerHTML = styleCards(NICHE);
-document.getElementById('niche-count').textContent = `${NICHE.length} 种画风 · ${DATA.filter(inNiche).length} 个项目`;
+document.getElementById('niche-count').textContent = L(`${NICHE.length} 种画风 · ${DATA.filter(inNiche).length} 个项目`, `${NICHE.length} styles · ${DATA.filter(inNiche).length} projects`);
 
 const rowsEl = document.getElementById('rows');
 function matches(p, q) {
   if (!q) return true;
-  const hay = [p.name, p.repo, p.lang, p.use, p.desc, p.note || '', lic(p), ...p.tags.map(t => SMAP[t].name + ' ' + SMAP[t].en)].join(' ').toLowerCase();
+  // 两种语言都能搜
+  const hay = [p.name, p.name_en, p.name_zh, p.repo, p.lang, p.lang_en, p.lang_zh, p.use, p.use_en, p.use_zh, p.desc, p.desc_en, p.desc_zh, p.note, p.note_en, p.note_zh, lic(p), ...p.tags.map(t => [SMAP[t].name, SMAP[t].name_zh, SMAP[t].en].join(' '))].join(' ').toLowerCase();
   return hay.includes(q);
 }
 function render() {
@@ -606,18 +675,18 @@ function render() {
   });
   if (state.sort === 'stars') list.sort((a,b) => b.stars - a.stars);
   else if (state.sort === 'pushed') list.sort((a,b) => b.pushed_at.localeCompare(a.pushed_at));
-  else list.sort((a,b) => a.name.localeCompare(b.name, 'zh'));
+  else list.sort((a,b) => a.name.localeCompare(b.name, L('zh', 'en')));
 
   rowsEl.innerHTML = list.map(p => {
     const [cls, label] = status(p);
     const url = 'https://github.com/' + p.repo;
     const tags = p.tags.map(t => `<button class="tag${state.style === t ? ' on' : ''}" data-style="${t}"><span class="dot" style="background:${SMAP[t].color}"></span>${esc(SMAP[t].name)}</button>`).join('');
     const all = RELS_OF[p.repo] || [];
-    const rs = all.slice(0, 5).map(relHtml).join('') + (all.length > 5 ? `<span class="lbl">等 ${all.length} 条关系</span>` : '');
+    const rs = all.slice(0, 5).map(relHtml).join('') + (all.length > 5 ? `<span class="lbl">${L(`等 ${all.length} 条关系`, `${all.length} relationships in all`)}</span>` : '');
     return `<tr id="p-${esc(p.repo.replace('/', '__'))}">
       <td class="c-name"><a href="${url}" target="_blank" rel="noopener">${esc(p.name)}</a><span class="repo">${esc(p.repo)}</span></td>
       <td class="c-tags"><div class="tags">${tags}</div></td>
-      <td class="c-desc"><p class="desc">${esc(p.desc)}</p><p class="use">适合：${esc(p.use)}</p>${p.note ? `<p class="note">注意：${esc(p.note)}</p>` : ''}${rs ? `<p class="rels">${rs}</p>` : ''}</td>
+      <td class="c-desc"><p class="desc">${esc(p.desc)}</p><p class="use">${L('适合：', 'Good for: ')}${esc(p.use)}</p>${p.note ? `<p class="note">${L('注意：', 'Note: ')}${esc(p.note)}</p>` : ''}${rs ? `<p class="rels">${rs}</p>` : ''}</td>
       <td class="c-lang">${esc(p.lang)}</td>
       <td class="c-stars">★ ${fmtStars(p.stars)}</td>
       <td class="c-date">${p.pushed_at}<span class="st ${cls}"><i></i>${label}</span></td>
@@ -626,10 +695,10 @@ function render() {
     </tr>`;
   }).join('');
   document.getElementById('empty').hidden = list.length > 0;
-  document.getElementById('count').textContent = `显示 ${list.length} / ${DATA.length}`;
+  document.getElementById('count').textContent = `${L('显示', 'Showing')} ${list.length} / ${DATA.length}`;
   const clear = document.getElementById('clear');
   clear.hidden = !state.style;
-  if (state.style) clear.textContent = `画风：${SMAP[state.style].name}  ✕`;
+  if (state.style) clear.textContent = `${L('画风：', 'Style: ')}${SMAP[state.style].name}  ✕`;
   document.querySelectorAll('.style').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.style === state.style)));
   renderRels();
 }
@@ -639,8 +708,8 @@ const relRowsEl = document.getElementById('rel-rows');
 const REL_PAGE = 40;
 function renderRels() {
   const q = state.q.trim().toLowerCase();
-  const base = RELS.filter(r => !q || matches(BYREPO[r.from], q) || matches(BYREPO[r.to], q) || (r.note || '').toLowerCase().includes(q));
-  relTypesEl.innerHTML = [`<button class="chip" data-rtype="" aria-pressed="${!state.relType}">全部<span class="n">${base.length}</span></button>`]
+  const base = RELS.filter(r => !q || matches(BYREPO[r.from], q) || matches(BYREPO[r.to], q) || [r.note, r.note_en, r.note_zh].join(' ').toLowerCase().includes(q));
+  relTypesEl.innerHTML = [`<button class="chip" data-rtype="" aria-pressed="${!state.relType}">${L('全部', 'All')}<span class="n">${base.length}</span></button>`]
     .concat(RELTYPES.map(t => {
       const n = base.filter(r => r.type === t.key).length;
       return n ? `<button class="chip" data-rtype="${t.key}" aria-pressed="${state.relType === t.key}" title="${esc(t.desc)}">${esc(t.name)}<span class="n">${n}</span></button>` : '';
@@ -655,7 +724,7 @@ function renderRels() {
   document.getElementById('rel-empty').hidden = list.length > 0;
   const more = document.getElementById('rel-more');
   more.hidden = list.length <= REL_PAGE;
-  document.getElementById('rel-more-btn').textContent = state.relAll ? '收起' : `显示全部 ${list.length} 条`;
+  document.getElementById('rel-more-btn').textContent = state.relAll ? L('收起', 'Show less') : L(`显示全部 ${list.length} 条`, `Show all ${list.length}`);
 }
 relTypesEl.addEventListener('click', e => { const b = e.target.closest('[data-rtype]'); if (!b) return; state.relType = b.dataset.rtype || null; renderRels(); });
 document.getElementById('rel-more-btn').addEventListener('click', () => { state.relAll = !state.relAll; renderRels(); });
@@ -741,9 +810,9 @@ const SW = {
   },
   type(c) {
     fill(c, '#0D0C10');
-    c.font = '900 60px "Noto Serif SC", "Songti SC", serif'; c.textBaseline = 'middle';
-    c.fillStyle = '#FF3D7F'; c.fillText('歌词', 34, 51);
-    c.fillStyle = '#FFFFFF'; c.fillText('歌词', 30, 47);
+    c.font = L('900 60px', '900 46px') + ' "Noto Serif SC", "Songti SC", serif'; c.textBaseline = 'middle';
+    c.fillStyle = '#FF3D7F'; c.fillText(L('歌词', 'Lyric'), 34, 51);
+    c.fillStyle = '#FFFFFF'; c.fillText(L('歌词', 'Lyric'), 30, 47);
     c.fillStyle = '#FFE14D'; c.fillRect(160, 56, 66, 15);
     c.font = '500 11px "IBM Plex Mono", monospace'; c.fillStyle = '#0D0C10'; c.fillText('00:01:24', 166, 64);
   },
@@ -1179,7 +1248,7 @@ const SW = {
   },
   liquid(c) {
     const g = c.createLinearGradient(0, 0, W, H); g.addColorStop(0, '#FF9A8B'); g.addColorStop(.5, '#A18CD1'); g.addColorStop(1, '#5AA9C9'); c.fillStyle = g; c.fillRect(0, 0, W, H);
-    c.fillStyle = 'rgba(255,255,255,.9)'; c.font = '700 22px "Noto Serif SC", serif'; c.textBaseline = 'middle'; c.fillText('液态玻璃 Liquid', 26, 48);
+    c.fillStyle = 'rgba(255,255,255,.9)'; c.font = '700 22px "Noto Serif SC", serif'; c.textBaseline = 'middle'; c.fillText(L('液态玻璃 Liquid', 'Liquid Glass'), 26, 48);
     const glass = (x, y, w, h, r) => {
       c.save(); c.beginPath(); c.roundRect(x, y, w, h, r); c.clip();
       c.filter = 'blur(6px)'; c.drawImage(c.canvas, 0, 0, c.canvas.width, c.canvas.height, 0, 0, W, H); c.filter = 'none';
@@ -1207,13 +1276,13 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawSwatch
   const stage = document.getElementById('graph-stage');
   const panel = document.getElementById('graph-panel');
   if (!window.d3) {
-    stage.innerHTML = '<p class="graph-fallback">关系图谱需要加载 D3 图形库，当前网络没加载成功。下面的项目关系表包含同样的信息。</p>';
+    stage.innerHTML = `<p class="graph-fallback">${L('关系图谱需要加载 D3 图形库，当前网络没加载成功。下面的项目关系表包含同样的信息。', "The graph needs the D3 library, which didn't load on this connection. The table below has the same information.")}</p>`;
     panel.hidden = true; return;
   }
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const DIRECTED = new Set(['fork', 'built_on', 'plugin', 'official', 'uses', 'data']);
-  const SYM_NAME = { alt: '同类可替换', pair: '常搭配', author: '同一作者' };
-  const CHILD_LABEL = { fork: '分叉', built_on: '基于', plugin: '插件', official: '官方', uses: '渲染用', data: '用数据' };
+  const SYM_NAME = EN ? { alt: 'Alternatives', pair: 'Often paired with', author: 'Same author' } : { alt: '同类可替换', pair: '常搭配', author: '同一作者' };
+  const CHILD_LABEL = EN ? { fork: 'fork', built_on: 'built on', plugin: 'plugin', official: 'official', uses: 'renders with', data: 'uses data' } : { fork: '分叉', built_on: '基于', plugin: '插件', official: '官方', uses: '渲染用', data: '用数据' };
 
   // ---------- data ----------
   const ids = new Set(); RELS.forEach(r => { ids.add(r.from); ids.add(r.to); });
@@ -1249,7 +1318,7 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawSwatch
     n.desc = descendantsOf(n.id).size;
   });
   const roots = nodes.filter(n => n.gen === 0 && n.desc > 0).sort((a, b) => b.desc - a.desc || b.p.stars - a.p.stars);
-  document.getElementById('graph-count').textContent = `${nodes.length} 个项目 · ${links.length} 条关系 · ${roots.length} 个演化家族`;
+  document.getElementById('graph-count').textContent = L(`${nodes.length} 个项目 · ${links.length} 条关系 · ${roots.length} 个演化家族`, `${nodes.length} projects · ${links.length} relationships · ${roots.length} families`);
 
   const state = { layout: 'force', types: new Set(RELTYPES.map(t => t.key)), sel: null, q: '' };
 
@@ -1264,7 +1333,7 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawSwatch
   renderTypeChips();
 
   // ---------- force view (SVG) ----------
-  const svg = d3.select(stage).insert('svg', ':first-child').attr('role', 'img').attr('aria-label', '项目关系网');
+  const svg = d3.select(stage).insert('svg', ':first-child').attr('role', 'img').attr('aria-label', L('项目关系网', 'Project relationship network'));
   const defs = svg.append('defs');
   [['arr', 'g-arrow'], ['arr-hot', 'g-arrow hot']].forEach(([id, cls]) => defs.append('marker').attr('id', id)
     .attr('viewBox', '0 -3.5 7 7').attr('refX', 7).attr('refY', 0).attr('markerWidth', 6).attr('markerHeight', 6).attr('orient', 'auto')
@@ -1274,7 +1343,7 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawSwatch
     .attr('class', d => 'g-link' + (d.dir ? '' : ' sym')).attr('marker-end', d => d.dir ? 'url(#arr)' : null);
   const nodeSel = root.append('g').selectAll('g').data(nodes, d => d.id).join('g')
     .attr('class', 'g-node').attr('tabindex', 0).attr('role', 'button')
-    .attr('aria-label', d => `${d.p.name}，${fmtStars(d.p.stars)} 星`);
+    .attr('aria-label', d => L(`${d.p.name}，${fmtStars(d.p.stars)} 星`, `${d.p.name}, ${fmtStars(d.p.stars)} stars`));
   nodeSel.append('circle').attr('r', d => d.r).attr('fill', d => d.color);
   const labelSel = root.append('g').selectAll('text').data(nodes, d => d.id).join('text')
     .attr('class', d => 'g-label' + (d.r >= 13 || d.desc >= 4 ? ' big' : d.r >= 9 || d.deg >= 4 ? ' mid' : ''))
@@ -1349,16 +1418,16 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawSwatch
       if (seen.has(l.t)) return '';
       const nn = N[l.t], more = (parents[l.t] || []).filter(x => x !== l && visible(x)).map(x => BYREPO[x.s].name);
       const inner = sub(l.t, new Set([...seen, l.t]));
-      return `<li><div class="fam-row" data-row="${esc(l.t)}"><button type="button" data-gsel="${esc(l.t)}"><span class="dot" style="background:${nn.color}"></span><span class="nm">${esc(nn.p.name)}</span></button><span class="rt">${CHILD_LABEL[l.type]}${more.length ? ' · 也基于 ' + esc(more.join('、')) : ''}</span></div>${inner ? `<ul>${inner}</ul>` : ''}</li>`;
+      return `<li><div class="fam-row" data-row="${esc(l.t)}"><button type="button" data-gsel="${esc(l.t)}"><span class="dot" style="background:${nn.color}"></span><span class="nm">${esc(nn.p.name)}</span></button><span class="rt">${CHILD_LABEL[l.type]}${more.length ? L(' · 也基于 ', ' · also on ') + esc(more.join(L('、', ', '))) : ''}</span></div>${inner ? `<ul>${inner}</ul>` : ''}</li>`;
     }).join('');
     const fams = nodes.filter(n => !primaryParent(n.id) && kids[n.id]).map(n => ({ n, size: descendantsOf(n.id).size }))
       .sort((a, b) => b.size - a.size || b.n.p.stars - a.n.p.stars);
     wall.innerHTML = '<div class="fam-cols">' + fams.map(({ n, size }) => `<article class="fam-card" data-fam="${esc(n.id)}">
-      <div class="fam-head" data-row="${esc(n.id)}"><button type="button" class="fam-root" data-gsel="${esc(n.id)}"><span class="dot" style="background:${n.color}"></span>${esc(n.p.name)}</button><span class="fam-ct">${size} 个衍生</span></div>
+      <div class="fam-head" data-row="${esc(n.id)}"><button type="button" class="fam-root" data-gsel="${esc(n.id)}"><span class="dot" style="background:${n.color}"></span>${esc(n.p.name)}</button><span class="fam-ct">${size} ${L('个衍生', 'derived')}</span></div>
       <span class="fam-meta">★ ${fmtStars(n.p.stars)} · ${esc(SMAP[n.p.tags[0]].name)}</span>
       <ul class="fam-tree">${sub(n.id, new Set([n.id]))}</ul>
     </article>`).join('') + '</div>';
-    if (!fams.length) wall.innerHTML = '<p class="graph-fallback">当前筛选下没有演化关系。打开「基于」「插件 / 扩展」「用它渲染」等类型试试。</p>';
+    if (!fams.length) wall.innerHTML = `<p class="graph-fallback">${L('当前筛选下没有演化关系。打开「基于」「插件 / 扩展」「用它渲染」等类型试试。', 'No lineage under this filter. Try turning on Built on, Plugin / extension or Renders with.')}</p>`;
     paintWall();
   }
 
@@ -1462,10 +1531,10 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawSwatch
   }
   function renderPanel() {
     if (!state.sel) {
-      panel.innerHTML = `<h3>演化家族</h3>
-        <p class="gp-note">按衍生项目数排序，数字包括直接和间接衍生。点名字看这个家族的演化链。</p>
+      panel.innerHTML = `<h3>${L('演化家族', 'Families')}</h3>
+        <p class="gp-note">${L('按衍生项目数排序，数字包括直接和间接衍生。点名字看这个家族的演化链。', 'Sorted by how many projects grew from each, direct and indirect. Click a name to see the lineage.')}</p>
         <div class="gp-fam">${roots.slice(0, 12).map(n => `${btn(n.id)}<span>${n.desc}</span>`).join('')}</div>
-        <p class="gp-note">圆点大小代表星数，颜色是主要画风。切到「演化树」会把每个家族排成一张卡片。</p>`;
+        <p class="gp-note">${L('圆点大小代表星数，颜色是主要画风。切到「演化树」会把每个家族排成一张卡片。', 'Dot size shows stars, and color shows the main style. Family tree lays each family out as a card.')}</p>`;
       return;
     }
     const id = state.sel, p = BYREPO[id];
@@ -1479,14 +1548,14 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawSwatch
     }).join('');
     const ch = chains(id).map(path => `<div>${path.map((x, i) => i === path.length - 1 ? `<b>${esc(BYREPO[x].name)}</b>` : btn(x)).join('<span class="arrow">→</span>')}</div>`).join('');
     panel.innerHTML = `<h3>${esc(p.name)}</h3>
-      <span class="gp-sub">★ ${fmtStars(p.stars)} · ${status(p)[1]} · ${esc(p.tags.map(t => SMAP[t].name).join('、'))}</span>
+      <span class="gp-sub">★ ${fmtStars(p.stars)} · ${status(p)[1]} · ${esc(p.tags.map(t => SMAP[t].name).join(L('、', ', ')))}</span>
       <p class="gp-desc">${esc(p.desc)}</p>
-      ${ch ? `<div class="gp-group"><span class="gp-k">演化链</span><div class="gp-chain">${ch}</div></div>` : ''}
-      ${direct ? `<div class="gp-group"><span class="gp-k">它的源头</span><span class="gp-v">${direct}</span></div>` : ''}
-      ${kids ? `<div class="gp-group"><span class="gp-k">直接衍生 · ${(children[id] || []).filter(visible).length}</span><span class="gp-v">${kids}</span></div>` : ''}
-      ${indirect ? `<div class="gp-group"><span class="gp-k">间接衍生</span><span class="gp-v">${indirect}</span></div>` : ''}
+      ${ch ? `<div class="gp-group"><span class="gp-k">${L('演化链', 'Lineage')}</span><div class="gp-chain">${ch}</div></div>` : ''}
+      ${direct ? `<div class="gp-group"><span class="gp-k">${L('它的源头', 'Comes from')}</span><span class="gp-v">${direct}</span></div>` : ''}
+      ${kids ? `<div class="gp-group"><span class="gp-k">${L('直接衍生', 'Direct descendants')} · ${(children[id] || []).filter(visible).length}</span><span class="gp-v">${kids}</span></div>` : ''}
+      ${indirect ? `<div class="gp-group"><span class="gp-k">${L('间接衍生', 'Indirect descendants')}</span><span class="gp-v">${indirect}</span></div>` : ''}
       ${syms}
-      <div class="gp-actions"><a href="https://github.com/${esc(p.repo)}" target="_blank" rel="noopener">GitHub ↗</a><button type="button" data-find="${esc(p.repo)}">在总表中查看</button><button type="button" data-gsel="">返回家族列表</button></div>`;
+      <div class="gp-actions"><a href="https://github.com/${esc(p.repo)}" target="_blank" rel="noopener">GitHub ↗</a><button type="button" data-find="${esc(p.repo)}">${L('在总表中查看', 'Find in table')}</button><button type="button" data-gsel="">${L('返回家族列表', 'Back to families')}</button></div>`;
   }
   function centerOn(id) {
     if (state.layout === 'tree') {
@@ -1518,7 +1587,9 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawSwatch
     document.querySelectorAll('[data-layout]').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.layout === layout)));
     const tree = layout === 'tree';
     wall.hidden = !tree; svg.style('display', tree ? 'none' : null); zoomBox.hidden = tree;
-    hint.textContent = tree ? '每张卡是一个演化家族：卡片标题是源头，往下是衍生项目' : '滚轮缩放 · 拖动平移 · 点节点看演化链';
+    hint.textContent = tree
+      ? L('每张卡是一个演化家族：卡片标题是源头，往下是衍生项目', 'Each card is a family: the title is the source, and descendants run below it')
+      : L('滚轮缩放 · 拖动平移 · 点节点看演化链', 'Scroll to zoom · Drag to pan · Click a node for its lineage');
     if (tree) renderWall();
   }
   document.querySelectorAll('[data-layout]').forEach(b => b.addEventListener('click', () => setLayout(b.dataset.layout)));

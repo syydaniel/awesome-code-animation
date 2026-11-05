@@ -1,65 +1,73 @@
-name: 推荐项目
-description: 推荐一个用代码做动画、做 MV 的开源项目
-title: "[推荐] "
+name: 推荐项目 / Suggest a project
+description: 推荐一个用代码做动画、做 MV 的开源项目 / Suggest an open-source project that makes animation or music videos with code
+title: "[推荐 / Suggestion] "
 labels: ["推荐项目"]
 body:
   - type: input
     id: repo
     attributes:
-      label: 仓库地址
+      label: 仓库地址 / Repository URL
       placeholder: https://github.com/owner/name
     validations:
       required: true
   - type: dropdown
     id: styles
     attributes:
-      label: 画风（可多选）
+      label: 画风（可多选）/ Styles (pick any)
       multiple: true
       options:
-        - 数学讲解风
-        - 扁平 MG 动效
-        - 代码演示风
-        - 动态文字 · 歌词
-        - 短视频 · 字幕 · 快剪
-        - 手绘 · 白板 · 水彩
-        - 生成艺术 · 几何
-        - 着色器 · 迷幻光影
-        - Live Coding · VJ
-        - 音乐可视化
-        - 3D 渲染
-        - 二次元 · MMD · VRM
-        - 粒子 · 流体 · 物理
-        - 故障 · 后期特效
-        - 像素 · 复古
-        - ASCII · 终端
-        - 数据可视化动画
-        - 水墨 · 山水（小众）
-        - 汉字 · 手写笔画（小众）
-        - 示波器 · 矢量光线（小众）
-        - 绘图仪 · 单线画（小众）
-        - 抖动 · 1-bit（小众）
-        - Riso · 剪纸拼贴（小众）
-        - 人工生命 · 元胞自动机（小众）
-        - 程序化生成 · 波函数坍缩（小众）
-        - 分形 · 数学艺术（小众）
-        - 等距 · 体素（小众）
-        - 科幻 HUD · 赛博界面（小众）
-        - 地图 · 路线动画（小众）
-        - Demoscene 演示场景（小众）
-        - 其他（请在说明里写）
+        - 数学讲解风 / Math Explainer
+        - 扁平 MG 动效 / Motion Graphics
+        - 代码演示风 / Code & Terminal Demo
+        - 动态文字 · 歌词 / Kinetic Type & Lyrics
+        - 短视频 · 字幕 · 快剪 / Shorts, Captions & Editing
+        - 手绘 · 白板 · 水彩 / Hand-drawn & Whiteboard
+        - 生成艺术 · 几何 / Generative Art
+        - 着色器 · 迷幻光影 / Shaders & Psychedelic
+        - Live Coding · VJ / Live Coding & VJ
+        - 音乐可视化 / Music Visualization
+        - 3D 渲染 / 3D
+        - 二次元 · MMD · VRM / Anime, MMD & VRM
+        - 粒子 · 流体 · 物理 / Particles & Physics
+        - 故障 · 后期特效 / Glitch & Post FX
+        - 像素 · 复古 / Pixel & Retro
+        - ASCII · 终端 / ASCII & Terminal
+        - 数据可视化动画 / Data Animation
+        - 水墨 · 水彩 / Ink & Watercolor（小众 niche）
+        - 汉字 · 手写笔画 / Handwriting & Strokes（小众 niche）
+        - 示波器 · 矢量光线 / Oscilloscope & Vector（小众 niche）
+        - 绘图仪 · 单线画 / Plotter & Line Art（小众 niche）
+        - 抖动 · 1-bit / Dither & 1-bit（小众 niche）
+        - Riso · 剪纸拼贴 / Riso & Paper Collage（小众 niche）
+        - 人工生命 · 生长形态 / Artificial Life & Growth（小众 niche）
+        - 程序化生成 · 波函数坍缩 / Procedural Generation（小众 niche）
+        - 分形 · 混沌 · 数学艺术 / Fractals & Chaos（小众 niche）
+        - 等距 · 体素 / Isometric & Voxel（小众 niche）
+        - 科幻 HUD · 赛博界面 / Sci-fi HUD（小众 niche）
+        - 地图 · 路线动画 / Map & Route（小众 niche）
+        - Demoscene 演示场景 / Demoscene（小众 niche）
+        - 落沙 · 像素物理 / Falling Sand（小众 niche）
+        - 流场 · 风场 / Flow & Wind Fields（小众 niche）
+        - VHS · 模拟信号 / VHS & Analog（小众 niche）
+        - 折纸 · 纸艺 / Origami & Papercraft（小众 niche）
+        - 几何重构 · 低多边形 / Geometric & Low-poly（小众 niche）
+        - 写实光追 / Path Tracing（小众 niche）
+        - 星空 · 宇宙 / Space & Stars（小众 niche）
+        - 液态玻璃 · 玻璃拟态 / Liquid Glass（小众 niche）
+        - 其他（请在说明里写）/ Other (describe below)
     validations:
       required: true
   - type: textarea
     id: why
     attributes:
-      label: 一句话说明
-      description: 它能做出什么样的画面？有作品链接更好。和已收录的哪个项目有关系（基于、插件、同类）也可以写上。
+      label: 一句话说明 / One-line description
+      description: 它能做出什么样的画面？有作品链接更好。和已收录的哪个项目有关系（基于、插件、同类）也可以写上。 / What does it make? Links to work help, and so does any relation to listed projects.
     validations:
       required: true
   - type: checkboxes
     id: rules
     attributes:
-      label: 收录标准
+      label: 收录标准 / Rules
       options:
         - label: 画面由代码绘制或渲染，不依赖视频或图像生成模型，也不靠 Blender 等 3D 软件出画面
           required: true

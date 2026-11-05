@@ -4,119 +4,136 @@
     "name": "数学讲解风",
     "en": "Math Explainer",
     "color": "#3B9BC4",
-    "look": "公式、坐标系、几何变换，3B1B 式的蓝黑画面"
+    "look": "公式、坐标系、几何变换，3B1B 式的蓝黑画面",
+    "look_en": "Equations, axes and geometric transforms on a 3Blue1Brown-style dark canvas"
   },
   {
     "key": "mg",
     "name": "扁平 MG 动效",
     "en": "Motion Graphics",
     "color": "#E07A3F",
-    "look": "扁平图形、弹性缓动、形状变换"
+    "look": "扁平图形、弹性缓动、形状变换",
+    "look_en": "Flat shapes, springy easing and shape morphs"
   },
   {
     "key": "code",
     "name": "代码演示风",
     "en": "Code & Terminal Demo",
     "color": "#8A6BD6",
-    "look": "代码高亮、逐行出现、终端录屏、算法动画"
+    "look": "代码高亮、逐行出现、终端录屏、算法动画",
+    "look_en": "Syntax highlighting, code appearing line by line, terminal recordings, algorithm animations"
   },
   {
     "key": "type",
     "name": "动态文字 · 歌词",
     "en": "Kinetic Type & Lyrics",
     "color": "#D9466F",
-    "look": "字形变形、逐字出场、跟着歌词卡点"
+    "look": "字形变形、逐字出场、跟着歌词卡点",
+    "look_en": "Morphing glyphs, word-by-word entrances, text that hits the lyrics on the beat"
   },
   {
     "key": "short",
     "name": "短视频 · 字幕 · 快剪",
     "en": "Shorts, Captions & Editing",
     "color": "#C9A227",
-    "look": "自动字幕、转场、用代码批量剪辑出片"
+    "look": "自动字幕、转场、用代码批量剪辑出片",
+    "look_en": "Auto captions, transitions, batch-editing videos with code"
   },
   {
     "key": "hand",
     "name": "手绘 · 白板 · 水彩",
     "en": "Hand-drawn & Whiteboard",
     "color": "#7A8F55",
-    "look": "草图线条、逐笔绘制、水彩笔触、手绘图表"
+    "look": "草图线条、逐笔绘制、水彩笔触、手绘图表",
+    "look_en": "Sketchy lines, stroke-by-stroke drawing, watercolor brushes, hand-drawn charts"
   },
   {
     "key": "gen",
     "name": "生成艺术 · 几何",
     "en": "Generative Art",
     "color": "#2F9E8F",
-    "look": "算法图案、流场、无缝循环"
+    "look": "算法图案、流场、无缝循环",
+    "look_en": "Algorithmic patterns, flow fields, seamless loops"
   },
   {
     "key": "shader",
     "name": "着色器 · 迷幻光影",
     "en": "Shaders & Psychedelic",
     "color": "#B24FC4",
-    "look": "程序化光影、噪声、流体渐变、抽象造型"
+    "look": "程序化光影、噪声、流体渐变、抽象造型",
+    "look_en": "Procedural light, noise, fluid gradients and abstract forms"
   },
   {
     "key": "live",
     "name": "Live Coding · VJ",
     "en": "Live Coding & VJ",
     "color": "#E0569B",
-    "look": "现场写代码出画面，视频合成器质感"
+    "look": "现场写代码出画面，视频合成器质感",
+    "look_en": "Writing code live to make the picture, with a video-synth feel"
   },
   {
     "key": "audio",
     "name": "音乐可视化",
     "en": "Music Visualization",
     "color": "#4F7BE0",
-    "look": "频谱、波形、MilkDrop 式随音乐律动"
+    "look": "频谱、波形、MilkDrop 式随音乐律动",
+    "look_en": "Spectrums, waveforms and MilkDrop-style visuals that move with the music"
   },
   {
     "key": "3d",
     "name": "3D 渲染",
     "en": "3D",
     "color": "#6B7FA8",
-    "look": "三维场景、镜头运动、材质灯光"
+    "look": "三维场景、镜头运动、材质灯光",
+    "look_en": "3D scenes, camera moves, materials and lighting"
   },
   {
     "key": "anime",
     "name": "二次元 · MMD · VRM",
     "en": "Anime, MMD & VRM",
     "color": "#F07AAE",
-    "look": "动漫角色、虚拟形象、舞蹈 MV"
+    "look": "动漫角色、虚拟形象、舞蹈 MV",
+    "look_en": "Anime characters, avatars and dance music videos"
   },
   {
     "key": "particle",
     "name": "粒子 · 流体 · 物理",
     "en": "Particles & Physics",
     "color": "#E58E2A",
-    "look": "烟雾、流体、烟花、碰撞模拟"
+    "look": "烟雾、流体、烟花、碰撞模拟",
+    "look_en": "Smoke, fluid, fireworks and collision simulations"
   },
   {
     "key": "glitch",
     "name": "故障 · 后期特效",
     "en": "Glitch & Post FX",
     "color": "#D04545",
-    "look": "RGB 偏移、扭曲、辉光、像素排序、合成"
+    "look": "RGB 偏移、扭曲、辉光、像素排序、合成",
+    "look_en": "RGB shift, distortion, bloom, pixel sorting and compositing"
   },
   {
     "key": "pixel",
     "name": "像素 · 复古",
     "en": "Pixel & Retro",
     "color": "#3C9A4F",
-    "look": "低分辨率、有限色板、CRT 扫描线、PS1 质感"
+    "look": "低分辨率、有限色板、CRT 扫描线、PS1 质感",
+    "look_en": "Low resolution, limited palettes, CRT scanlines, PS1 texture"
   },
   {
     "key": "ascii",
     "name": "ASCII · 终端",
     "en": "ASCII & Terminal",
     "color": "#4BA36B",
-    "look": "字符画、盲文点阵、终端里的文字特效"
+    "look": "字符画、盲文点阵、终端里的文字特效",
+    "look_en": "Text art, Braille dots and text effects in the terminal"
   },
   {
     "key": "data",
     "name": "数据可视化动画",
     "en": "Data Animation",
     "color": "#3E7FB0",
-    "look": "图表生长、条形图竞赛、Git 历史动画"
+    "look": "图表生长、条形图竞赛、Git 历史动画",
+    "look_en": "Growing charts, bar chart races, Git history animations"
   },
   {
     "key": "ink",
@@ -124,7 +141,8 @@
     "name": "水墨 · 水彩",
     "en": "Ink & Watercolor",
     "color": "#5C6670",
-    "look": "程序化山水长卷、水墨晕染、水彩沉淀和留白"
+    "look": "程序化山水长卷、水墨晕染、水彩沉淀和留白",
+    "look_en": "Procedural landscape scrolls, ink bleeds, watercolor pigment and empty space"
   },
   {
     "key": "hanzi",
@@ -132,7 +150,8 @@
     "name": "汉字 · 手写笔画",
     "en": "Handwriting & Strokes",
     "color": "#C2413A",
-    "look": "按笔顺一笔一笔写出来的汉字和手写字"
+    "look": "按笔顺一笔一笔写出来的汉字和手写字",
+    "look_en": "Chinese characters and handwriting written out stroke by stroke"
   },
   {
     "key": "scope",
@@ -140,7 +159,8 @@
     "name": "示波器 · 矢量光线",
     "en": "Oscilloscope & Vector",
     "color": "#3FBF6A",
-    "look": "示波器上发光的矢量线，图形和声音互相转换"
+    "look": "示波器上发光的矢量线，图形和声音互相转换",
+    "look_en": "Glowing vector lines on an oscilloscope, where pictures and sound turn into each other"
   },
   {
     "key": "plotter",
@@ -148,7 +168,8 @@
     "name": "绘图仪 · 单线画",
     "en": "Plotter & Line Art",
     "color": "#4A5468",
-    "look": "绘图仪画出的单线、排线和线稿"
+    "look": "绘图仪画出的单线、排线和线稿",
+    "look_en": "Single lines, hatching and line art drawn by a pen plotter"
   },
   {
     "key": "dither",
@@ -156,7 +177,8 @@
     "name": "抖动 · 1-bit",
     "en": "Dither & 1-bit",
     "color": "#6E6E6E",
-    "look": "黑白两色的抖动网点，复古 Mac 和《奥伯拉丁》式质感"
+    "look": "黑白两色的抖动网点，复古 Mac 和《奥伯拉丁》式质感",
+    "look_en": "Black-and-white dither dots, with an old Mac and Return of the Obra Dinn feel"
   },
   {
     "key": "riso",
@@ -164,7 +186,8 @@
     "name": "Riso · 剪纸拼贴",
     "en": "Riso & Paper Collage",
     "color": "#E8508C",
-    "look": "孔版印刷的套色错位、半调网点、剪纸拼贴"
+    "look": "孔版印刷的套色错位、半调网点、剪纸拼贴",
+    "look_en": "Misregistered risograph colors, halftone dots and paper collage"
   },
   {
     "key": "alife",
@@ -172,7 +195,8 @@
     "name": "人工生命 · 生长形态",
     "en": "Artificial Life & Growth",
     "color": "#2BA39B",
-    "look": "从简单规则里涌现、生长出来的图案：元胞自动机、粒子生命、空间殖民、L 系统"
+    "look": "从简单规则里涌现、生长出来的图案：元胞自动机、粒子生命、空间殖民、L 系统",
+    "look_en": "Patterns that emerge and grow from simple rules: cellular automata, particle life, space colonization, L-systems"
   },
   {
     "key": "procgen",
@@ -180,7 +204,8 @@
     "name": "程序化生成 · 波函数坍缩",
     "en": "Procedural Generation",
     "color": "#8C6D3F",
-    "look": "从小样图长出地图、城市和迷宫，生成过程本身就是动画"
+    "look": "从小样图长出地图、城市和迷宫，生成过程本身就是动画",
+    "look_en": "Maps, cities and mazes grown from small samples, where the generating itself is the animation"
   },
   {
     "key": "fractal",
@@ -188,7 +213,8 @@
     "name": "分形 · 混沌 · 数学艺术",
     "en": "Fractals & Chaos",
     "color": "#7B4FD0",
-    "look": "无限放大的分形、奇异吸引子的混沌轨迹、数学镶嵌"
+    "look": "无限放大的分形、奇异吸引子的混沌轨迹、数学镶嵌",
+    "look_en": "Endless fractal zooms, chaotic strange attractors and mathematical tilings"
   },
   {
     "key": "iso",
@@ -196,7 +222,8 @@
     "name": "等距 · 体素",
     "en": "Isometric & Voxel",
     "color": "#C77D2E",
-    "look": "等距视角的积木、体素地形和小人"
+    "look": "等距视角的积木、体素地形和小人",
+    "look_en": "Isometric blocks, voxel terrain and little figures"
   },
   {
     "key": "scifi",
@@ -204,7 +231,8 @@
     "name": "科幻 HUD · 赛博界面",
     "en": "Sci-fi HUD",
     "color": "#1FB5D1",
-    "look": "发光线框、切角边框、文字解码的未来感界面"
+    "look": "发光线框、切角边框、文字解码的未来感界面",
+    "look_en": "Glowing wireframes, chamfered frames and futuristic interfaces with decoding text"
   },
   {
     "key": "map",
@@ -212,7 +240,8 @@
     "name": "地图 · 路线动画",
     "en": "Map & Route",
     "color": "#3B8F5A",
-    "look": "飞线、轨迹描线、地球俯冲、旅行路线"
+    "look": "飞线、轨迹描线、地球俯冲、旅行路线",
+    "look_en": "Flight arcs, traced routes, dives toward the globe and travel paths"
   },
   {
     "key": "demoscene",
@@ -220,7 +249,8 @@
     "name": "Demoscene 演示场景",
     "en": "Demoscene",
     "color": "#C8A020",
-    "look": "几 KB 代码做出的实时短片、正弦滚动字幕和彩虹条"
+    "look": "几 KB 代码做出的实时短片、正弦滚动字幕和彩虹条",
+    "look_en": "Real-time shorts from a few KB of code, sine scrollers and rainbow bars"
   },
   {
     "key": "sand",
@@ -228,7 +258,8 @@
     "name": "落沙 · 像素物理",
     "en": "Falling Sand",
     "color": "#D9A441",
-    "look": "每个像素都是一粒沙、一滴水，按规则流动、燃烧、生长"
+    "look": "每个像素都是一粒沙、一滴水，按规则流动、燃烧、生长",
+    "look_en": "Every pixel is a grain of sand or a drop of water, flowing, burning and growing by rules"
   },
   {
     "key": "flow",
@@ -236,7 +267,8 @@
     "name": "流场 · 风场",
     "en": "Flow & Wind Fields",
     "color": "#3E8FB0",
-    "look": "成千上万的粒子顺着矢量场流动，像丝线、像风"
+    "look": "成千上万的粒子顺着矢量场流动，像丝线、像风",
+    "look_en": "Thousands of particles following a vector field, like silk threads or wind"
   },
   {
     "key": "vhs",
@@ -244,7 +276,8 @@
     "name": "VHS · 模拟信号",
     "en": "VHS & Analog",
     "color": "#B5506E",
-    "look": "录像带色渗、信号抖动、扫描线和老电视质感"
+    "look": "录像带色渗、信号抖动、扫描线和老电视质感",
+    "look_en": "Tape color bleed, signal jitter, scanlines and old TV texture"
   },
   {
     "key": "origami",
@@ -252,7 +285,8 @@
     "name": "折纸 · 纸艺",
     "en": "Origami & Papercraft",
     "color": "#C7894A",
-    "look": "一张纸按折痕折起来，纸模、纸雕和纸艺风 3D"
+    "look": "一张纸按折痕折起来，纸模、纸雕和纸艺风 3D",
+    "look_en": "A sheet of paper folding along its creases, plus paper models and papercraft-style 3D"
   },
   {
     "key": "geo",
@@ -260,7 +294,8 @@
     "name": "几何重构 · 低多边形",
     "en": "Geometric & Low-poly",
     "color": "#5D7FC9",
-    "look": "用三角形、圆和点一步步逼近一张图，低多边形和点彩"
+    "look": "用三角形、圆和点一步步逼近一张图，低多边形和点彩",
+    "look_en": "A picture approximated step by step with triangles, circles and dots, low-poly and pointillist"
   },
   {
     "key": "raytrace",
@@ -268,7 +303,8 @@
     "name": "写实光追",
     "en": "Path Tracing",
     "color": "#8A7A62",
-    "look": "物理正确的光线反弹，柔和阴影、焦散和景深"
+    "look": "物理正确的光线反弹，柔和阴影、焦散和景深",
+    "look_en": "Physically correct light bounces, with soft shadows, caustics and depth of field"
   },
   {
     "key": "space",
@@ -276,7 +312,8 @@
     "name": "星空 · 宇宙",
     "en": "Space & Stars",
     "color": "#4A4FA8",
-    "look": "太阳系、星空、星系旋臂和黑洞"
+    "look": "太阳系、星空、星系旋臂和黑洞",
+    "look_en": "The solar system, starfields, galaxy arms and black holes"
   },
   {
     "key": "liquid",
@@ -284,6 +321,7 @@
     "name": "液态玻璃 · 玻璃拟态",
     "en": "Liquid Glass",
     "color": "#5AA9C9",
-    "look": "会折射、会色散的玻璃界面和液态金属，苹果液态玻璃风"
+    "look": "会折射、会色散的玻璃界面和液态金属，苹果液态玻璃风",
+    "look_en": "Refracting, color-splitting glass interfaces and liquid metal, in the style of Apple's Liquid Glass"
   }
 ]

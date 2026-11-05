@@ -1,6 +1,7 @@
 [
   {
     "goal": "做知识讲解视频",
+    "goal_en": "Explainer videos",
     "projects": [
       "ManimCommunity/manim",
       "motion-canvas/motion-canvas",
@@ -9,6 +10,7 @@
   },
   {
     "goal": "做 MV、批量出短视频",
+    "goal_en": "Music videos and batch-made shorts",
     "projects": [
       "remotion-dev/remotion",
       "heygen-com/hyperframes",
@@ -17,6 +19,7 @@
   },
   {
     "goal": "用 Claude / Opus 写代码出片",
+    "goal_en": "Have Claude / Opus code your video",
     "projects": [
       "lemomo-ai/lemo-opuscar",
       "remotion-dev/skills",
@@ -25,6 +28,7 @@
   },
   {
     "goal": "中国风：水墨、汉字、诗词",
+    "goal_en": "Chinese style: ink wash, characters, poetry",
     "projects": [
       "LingDong-/shan-shui-inf",
       "chanind/hanzi-writer",
@@ -33,6 +37,7 @@
   },
   {
     "goal": "现场 VJ、迷幻画面",
+    "goal_en": "Live VJ sets and psychedelic visuals",
     "projects": [
       "hydra-synth/hydra",
       "tixl3d/tixl",
@@ -41,6 +46,7 @@
   },
   {
     "goal": "音乐可视化",
+    "goal_en": "Music visualization",
     "projects": [
       "jberg/butterchurn",
       "projectM-visualizer/projectm",
@@ -49,6 +55,7 @@
   },
   {
     "goal": "程序员科普视频",
+    "goal_en": "Tech explainers for programmers",
     "projects": [
       "slidevjs/slidev",
       "charmbracelet/vhs",
@@ -57,6 +64,7 @@
   },
   {
     "goal": "看看小众画风",
+    "goal_en": "Explore niche styles",
     "projects": [
       "jameshball/osci-render",
       "Chakazul/Lenia",

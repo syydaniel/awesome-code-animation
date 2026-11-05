@@ -1,5 +1,5 @@
 {
-  "_说明": "作品展示：用图鉴里的工具做出来的作品。video / poster / readme_cover 放在 docs/showcase/ 下，网页版和 README 会自动显示在最前面。README 不能内嵌 iframe 和仓库里的视频，所以显示 readme_cover（可以是带播放按钮的封面），点击去网页版看完整视频。bilibili 填 BV 号：网页版多一个 B 站播放器的按钮，README 的片中位置会链接到 B 站对应时间。tools 填 projects.json 里的 repo，会链接到对应项目；不在图鉴里的工具，在 names 里写显示名。breakdown 是可选的工具说明表：style 填 styles.json 的 key，没有对应画风时用 style_name；t 是片中位置（秒），网页版点击可以跳转。写了 breakdown 就不用再写 tools。",
+  "_说明": "作品展示：用图鉴里的工具做出来的作品。video / poster / readme_cover 放在 docs/showcase/ 下，网页版和 README 会自动显示在最前面。README 不能内嵌 iframe 和仓库里的视频，所以显示 readme_cover（可以是带播放按钮的封面），点击去网页版看完整视频。bilibili 填 BV 号：网页版多一个 B 站播放器的按钮，README 的片中位置会链接到 B 站对应时间。tools 填 projects.json 里的 repo，会链接到对应项目；不在图鉴里的工具，在 names 里写显示名。英文都放在同名字段加 _en（title_en、desc_en、note_en、what_en、player_note_en、video_label_en 等）。breakdown 是可选的工具说明表：style 填 styles.json 的 key，没有对应画风时用 style_name；t 是片中位置（秒），网页版点击可以跳转。写了 breakdown 就不用再写 tools。",
   "items": [
     {
       "title": "画风不合",
@@ -11,14 +11,16 @@
       "readme_cover": "docs/showcase/huafeng-buhe-cover.jpg",
       "bilibili": "BV1DNxU6WEqv",
       "video_label": "本站 720P60",
+      "video_label_en": "This site, 720p60",
       "player_note": "这里放的是完整片子。网速慢可以换成 B 站播放器，不过没登录时 B 站外链只有 360P，想看高清请去 B 站。",
+      "player_note_en": "This is the full film. On a slow connection, switch to the Bilibili player. Bilibili embeds only play 360p when you aren't logged in, so go to Bilibili for HD.",
       "links": [{"label": "去 B 站看高清", "label_en": "Watch on Bilibili", "url": "https://www.bilibili.com/video/BV1DNxU6WEqv/"}],
       "desc": "这支 MV 是给这个图鉴拍的宣传片。他住在一行代码里，她坐在一张水彩纸上，两个人不停换画风去找对方，每次都差一帧。片子走过 18 种画风、28 种画面，全部由代码渲染，没有用 AI 生成视频，每段用的工具都写在画面角上。",
       "desc_en": "The promo film for this list. He lives in a line of code, she sits on a sheet of watercolor paper, and they keep switching styles to reach each other, always one frame apart. The film moves through 18 styles and 28 looks. All of it is rendered by code, with no AI-generated video, and each shot names its tools in the corner.",
       "credits": "歌的词、曲、演唱都由 AI 完成：Claude Code 写词，ACE-Step 1.5 作曲演唱。代码也是 Claude Code 写的，用 DaVinci Resolve 剪辑。",
       "credits_en": "The song's lyrics, music and vocals are AI-made: Claude Code wrote the lyrics, and ACE-Step 1.5 composed and sang. Claude Code also wrote the code. Edited in DaVinci Resolve.",
       "note": "片尾的 159 和 18 是开拍时的数字，图鉴现在收得更多了。当时的第 18 种画风「AI 写代码出片」后来不再单独成类。Shiki 和 Claude Code 不在图鉴里，其余工具都能在图鉴里找到。",
-      "note_en": "The 159 and 18 at the end were the numbers when the film was made. The list has grown since, and the 18th style, AI-written code, no longer has its own category. Shiki and Claude Code are not in this list. Every other tool is.",
+      "note_en": "The 159 and 18 at the end were the numbers when the film was made. The list has grown since, and the 18th style, AI-written code, no longer has its own category. Shiki and Claude Code are not in this list. Every other tool is. The song is sung in Chinese.",
       "names": {
         "shikijs/shiki": "Shiki",
         "anthropics/claude-code": "Claude Code"

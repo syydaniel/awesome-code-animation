@@ -10,7 +10,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![项目](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE-443-2E49D4) ![画风](https://img.shields.io/badge/%E7%94%BB%E9%A3%8E-17%2B21-9265D9) ![活跃项目](https://img.shields.io/badge/%E6%B4%BB%E8%B7%83%E9%A1%B9%E7%9B%AE-324-1E8A4B) ![数据更新](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--11--03-5B6273)
 
-**[🌐 网页版](https://syydaniel.github.io/awesome-code-animation/)**<sub>（按画风筛选、搜索、排序）</sub> · **[🕸️ 关系图谱](https://syydaniel.github.io/awesome-code-animation/#graph-sec)**<sub>（可拖动缩放、看演化树）</sub> · **[🎨 画风索引](#index)**
+**[🌐 网页版](https://syydaniel.github.io/awesome-code-animation/?lang=zh)**<sub>（按画风筛选、搜索、排序，可切换中英文）</sub> · **[🕸️ 关系图谱](https://syydaniel.github.io/awesome-code-animation/?lang=zh#graph-sec)**<sub>（可拖动缩放、看演化树）</sub> · **[🎨 画风索引](#index)**
 
 [画风索引](#index) · [小众画风区](#niche) · [关系图谱](#relations) · [收录标准](#rules) · [全部项目](#all) · [推荐项目](https://github.com/syydaniel/awesome-code-animation/issues/new/choose)
 
@@ -20,11 +20,11 @@ A curated list of open-source tools for making animations and music videos **wit
 
 ## 🎬 作品展示
 
-[![画风不合](docs/showcase/huafeng-buhe-cover.jpg)](https://syydaniel.github.io/awesome-code-animation/#showcase)
+[![画风不合](docs/showcase/huafeng-buhe-cover.jpg)](https://syydaniel.github.io/awesome-code-animation/?lang=zh#showcase)
 
 **画风不合** · 作者：[syydaniel](https://github.com/syydaniel)
 
-[▶ 在网页版看完整 MV（有声音）](https://syydaniel.github.io/awesome-code-animation/#showcase) · [去 B 站看高清](https://www.bilibili.com/video/BV1DNxU6WEqv/)
+[▶ 在网页版看完整 MV（有声音）](https://syydaniel.github.io/awesome-code-animation/?lang=zh#showcase) · [去 B 站看高清](https://www.bilibili.com/video/BV1DNxU6WEqv/)
 
 这支 MV 是给这个图鉴拍的宣传片。他住在一行代码里，她坐在一张水彩纸上，两个人不停换画风去找对方，每次都差一帧。片子走过 18 种画风、28 种画面，全部由代码渲染，没有用 AI 生成视频，每段用的工具都写在画面角上。
 
@@ -1540,9 +1540,9 @@ A curated list of open-source tools for making animations and music videos **wit
 
 ## 关系图谱
 
-[![关系图谱](assets/graph.png)](https://syydaniel.github.io/awesome-code-animation/#graph-sec)
+[![关系图谱](assets/graph.png)](https://syydaniel.github.io/awesome-code-animation/?lang=zh#graph-sec)
 
-<sub>点图打开[可交互的关系图谱](https://syydaniel.github.io/awesome-code-animation/#graph-sec)：箭头从源头指向从它演化出来的项目，点线是同类、常搭配和同一作者；可以拖动、缩放、切换「演化树」卡片视图，点项目看完整演化链。</sub>
+<sub>点图打开[可交互的关系图谱](https://syydaniel.github.io/awesome-code-animation/?lang=zh#graph-sec)：箭头从源头指向从它演化出来的项目，点线是同类、常搭配和同一作者；可以拖动、缩放、切换「演化树」卡片视图，点项目看完整演化链。</sub>
 
 共 233 条关系。想换工具时先看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。
 
