@@ -3,47 +3,65 @@
     {
       "key": "fork",
       "name": "分叉自",
-      "desc": "从另一个项目分出来独立发展"
+      "desc": "从另一个项目分出来独立发展",
+      "name_en": "Forked from",
+      "desc_en": "Split off from another project and developed separately"
     },
     {
       "key": "built_on",
       "name": "基于",
-      "desc": "建立在另一个项目之上，离开它不能用"
+      "desc": "建立在另一个项目之上，离开它不能用",
+      "name_en": "Built on",
+      "desc_en": "Built on another project and can't run without it"
     },
     {
       "key": "plugin",
       "name": "插件 / 扩展",
-      "desc": "给另一个项目加功能"
+      "desc": "给另一个项目加功能",
+      "name_en": "Plugin / extension",
+      "desc_en": "Adds features to another project"
     },
     {
       "key": "official",
       "name": "官方模板 / 技能",
-      "desc": "同一团队出的模板或 AI 技能"
+      "desc": "同一团队出的模板或 AI 技能",
+      "name_en": "Official template / skill",
+      "desc_en": "A template or AI skill from the same team"
     },
     {
       "key": "uses",
       "name": "用它渲染",
-      "desc": "默认用另一个项目做渲染或底层处理"
+      "desc": "默认用另一个项目做渲染或底层处理",
+      "name_en": "Renders with",
+      "desc_en": "Uses another project for rendering or low-level work by default"
     },
     {
       "key": "data",
       "name": "数据来源",
-      "desc": "用另一个项目提供的数据"
+      "desc": "用另一个项目提供的数据",
+      "name_en": "Data source",
+      "desc_en": "Uses data from another project"
     },
     {
       "key": "alt",
       "name": "同类可替换",
-      "desc": "做的事情相近，可以互相替换"
+      "desc": "做的事情相近，可以互相替换",
+      "name_en": "Alternative",
+      "desc_en": "Does similar work, so one can replace the other"
     },
     {
       "key": "pair",
       "name": "常搭配",
-      "desc": "经常一起使用"
+      "desc": "经常一起使用",
+      "name_en": "Often paired",
+      "desc_en": "Often used together"
     },
     {
       "key": "author",
       "name": "同一作者",
-      "desc": "同一个人或团队的作品"
+      "desc": "同一个人或团队的作品",
+      "name_en": "Same author",
+      "desc_en": "By the same person or team"
     }
   ],
   "relations": [
@@ -51,289 +69,337 @@
       "from": "ManimCommunity/manim",
       "type": "fork",
       "to": "3b1b/manim",
-      "note": "社区版从 3b1b 的 ManimGL 分出，文档更全，API 有差异"
+      "note": "社区版从 3b1b 的 ManimGL 分出，文档更全，API 有差异",
+      "note_en": "Community fork of 3b1b's ManimGL, with fuller docs and a different API"
     },
     {
       "from": "midrender/revideo",
       "type": "fork",
       "to": "motion-canvas/motion-canvas",
-      "note": "去掉编辑器依赖，主打无界面批量渲染"
+      "note": "去掉编辑器依赖，主打无界面批量渲染",
+      "note_en": "Drops the editor dependency; built for headless batch rendering"
     },
     {
       "from": "tsparticles/tsparticles",
       "type": "alt",
       "to": "VincentGarreau/particles.js",
-      "note": "tsParticles 兼容 particles.js 的配置，可以直接替换"
+      "note": "tsParticles 兼容 particles.js 的配置，可以直接替换",
+      "note_en": "tsParticles reads particles.js configs, so it works as a drop-in replacement"
     },
     {
       "from": "pmndrs/react-three-fiber",
       "type": "built_on",
       "to": "mrdoob/three.js",
-      "note": "用 React 写 three.js 场景"
+      "note": "用 React 写 three.js 场景",
+      "note_en": "Write three.js scenes with React"
     },
     {
       "from": "pixiv/three-vrm",
       "type": "plugin",
       "to": "mrdoob/three.js",
-      "note": "让 three.js 加载 VRM 虚拟形象"
+      "note": "让 three.js 加载 VRM 虚拟形象",
+      "note_en": "Lets three.js load VRM avatars"
     },
     {
       "from": "pmndrs/postprocessing",
       "type": "plugin",
       "to": "mrdoob/three.js",
-      "note": "three.js 后期效果"
+      "note": "three.js 后期效果",
+      "note_en": "Post-processing effects for three.js"
     },
     {
       "from": "Alchemist0823/three.quarks",
       "type": "plugin",
       "to": "mrdoob/three.js",
-      "note": "three.js 粒子特效"
+      "note": "three.js 粒子特效",
+      "note_en": "Particle effects for three.js"
     },
     {
       "from": "creativelifeform/three-nebula",
       "type": "plugin",
       "to": "mrdoob/three.js",
-      "note": "three.js 粒子系统"
+      "note": "three.js 粒子系统",
+      "note_en": "Particle system for three.js"
     },
     {
       "from": "tengbao/vanta",
       "type": "built_on",
       "to": "mrdoob/three.js",
-      "note": "多数动态背景用 three.js 绘制"
+      "note": "多数动态背景用 three.js 绘制",
+      "note_en": "Most of the animated backgrounds are drawn with three.js"
     },
     {
       "from": "ruucm/shadergradient",
       "type": "built_on",
       "to": "pmndrs/react-three-fiber",
-      "note": "用 React Three Fiber 渲染渐变"
+      "note": "用 React Three Fiber 渲染渐变",
+      "note_en": "Renders gradients with React Three Fiber"
     },
     {
       "from": "niccolofanton/dithering-shader",
       "type": "built_on",
       "to": "pmndrs/react-three-fiber",
-      "note": "作为 R3F 的后期效果使用"
+      "note": "作为 R3F 的后期效果使用",
+      "note_en": "Used as a post-processing effect in R3F"
     },
     {
       "from": "theatre-js/theatre",
       "type": "pair",
       "to": "mrdoob/three.js",
-      "note": "给 three.js 场景做可视化时间轴和镜头动画"
+      "note": "给 three.js 场景做可视化时间轴和镜头动画",
+      "note_en": "Visual timeline and camera animation for three.js scenes"
     },
     {
       "from": "mrdoob/frame.js",
       "type": "author",
       "to": "mrdoob/three.js",
-      "note": "three.js 作者 mrdoob 写的时间轴编辑器"
+      "note": "three.js 作者 mrdoob 写的时间轴编辑器",
+      "note_en": "Timeline editor written by mrdoob, the three.js author"
     },
     {
       "from": "BabylonJS/Babylon.js",
       "type": "alt",
       "to": "mrdoob/three.js",
-      "note": "网页 3D 引擎，功能更全、自带编辑工具"
+      "note": "网页 3D 引擎，功能更全、自带编辑工具",
+      "note_en": "Web 3D engine with more features and built-in editing tools"
     },
     {
       "from": "playcanvas/engine",
       "type": "alt",
       "to": "mrdoob/three.js",
-      "note": "网页 3D 引擎，偏游戏和高斯泼溅"
+      "note": "网页 3D 引擎，偏游戏和高斯泼溅",
+      "note_en": "Web 3D engine, geared toward games and Gaussian splatting"
     },
     {
       "from": "noname0310/babylon-mmd",
       "type": "plugin",
       "to": "BabylonJS/Babylon.js",
-      "note": "在 Babylon.js 里播放 MMD 模型和动作"
+      "note": "在 Babylon.js 里播放 MMD 模型和动作",
+      "note_en": "Plays MMD models and motions in Babylon.js"
     },
     {
       "from": "guansss/pixi-live2d-display",
       "type": "plugin",
       "to": "pixijs/pixijs",
-      "note": "在 PixiJS 里显示 Live2D 模型"
+      "note": "在 PixiJS 里显示 Live2D 模型",
+      "note_en": "Displays Live2D models in PixiJS"
     },
     {
       "from": "pixijs/filters",
       "type": "plugin",
       "to": "pixijs/pixijs",
-      "note": "PixiJS 官方社区滤镜"
+      "note": "PixiJS 官方社区滤镜",
+      "note_en": "Official community filters for PixiJS"
     },
     {
       "from": "konvajs/konva",
       "type": "alt",
       "to": "pixijs/pixijs",
-      "note": "都是 2D Canvas 渲染；Konva 偏交互编辑，PixiJS 偏性能"
+      "note": "都是 2D Canvas 渲染；Konva 偏交互编辑，PixiJS 偏性能",
+      "note_en": "Both render 2D Canvas; Konva favors interactive editing, PixiJS favors performance"
     },
     {
       "from": "jonobr1/two.js",
       "type": "alt",
       "to": "paperjs/paper.js",
-      "note": "都是 2D 矢量绘图 API"
+      "note": "都是 2D 矢量绘图 API",
+      "note_en": "Both are 2D vector drawing APIs"
     },
     {
       "from": "acamposuribe/p5.brush",
       "type": "plugin",
       "to": "processing/p5.js",
-      "note": "给 p5.js 加自然笔刷和水彩"
+      "note": "给 p5.js 加自然笔刷和水彩",
+      "note_en": "Adds natural brushes and watercolor to p5.js"
     },
     {
       "from": "antiboredom/p5.riso",
       "type": "plugin",
       "to": "processing/p5.js",
-      "note": "给 p5.js 加 Riso 分色印刷"
+      "note": "给 p5.js 加 Riso 分色印刷",
+      "note_en": "Adds Riso-style color-separated printing to p5.js"
     },
     {
       "from": "golanlevin/p5.plotSvg",
       "type": "plugin",
       "to": "processing/p5.js",
-      "note": "把 p5.js 作品导出成绘图仪 SVG"
+      "note": "把 p5.js 作品导出成绘图仪 SVG",
+      "note_en": "Exports p5.js sketches as pen plotter SVG"
     },
     {
       "from": "generative-design/Code-Package-p5.js",
       "type": "built_on",
       "to": "processing/p5.js",
-      "note": "《Generative Design》书中示例用 p5.js 写成"
+      "note": "《Generative Design》书中示例用 p5.js 写成",
+      "note_en": "Examples from the book Generative Design, written in p5.js"
     },
     {
       "from": "nature-of-code/noc-book-2",
       "type": "built_on",
       "to": "processing/p5.js",
-      "note": "《代码本色》新版示例用 p5.js 写成"
+      "note": "《代码本色》新版示例用 p5.js 写成",
+      "note_en": "Examples from the new edition of The Nature of Code, written in p5.js"
     },
     {
       "from": "processing/p5.js",
       "type": "author",
       "to": "processing/processing4",
-      "note": "都由 Processing 基金会维护，p5.js 是网页版"
+      "note": "都由 Processing 基金会维护，p5.js 是网页版",
+      "note_en": "Both maintained by the Processing Foundation; p5.js is the web version"
     },
     {
       "from": "SuperIlu/DOjS",
       "type": "alt",
       "to": "processing/p5.js",
-      "note": "API 仿照 p5.js，但跑在 MS-DOS 上"
+      "note": "API 仿照 p5.js，但跑在 MS-DOS 上",
+      "note_en": "API modeled on p5.js, but runs on MS-DOS"
     },
     {
       "from": "mattdesl/canvas-sketch",
       "type": "alt",
       "to": "raphaelameaume/fragment",
-      "note": "都是生成艺术的工作流工具"
+      "note": "都是生成艺术的工作流工具",
+      "note_en": "Both are workflow tools for generative art"
     },
     {
       "from": "nannou-org/nannou",
       "type": "alt",
       "to": "openframeworks/openFrameworks",
-      "note": "创意编程框架：Rust 版和 C++ 版"
+      "note": "创意编程框架：Rust 版和 C++ 版",
+      "note_en": "Creative coding frameworks: the Rust one and the C++ one"
     },
     {
       "from": "cinder/Cinder",
       "type": "alt",
       "to": "openframeworks/openFrameworks",
-      "note": "都是 C++ 创意编程框架"
+      "note": "都是 C++ 创意编程框架",
+      "note_en": "Both are C++ creative coding frameworks"
     },
     {
       "from": "openrndr/openrndr",
       "type": "alt",
       "to": "openframeworks/openFrameworks",
-      "note": "创意编程框架：Kotlin 版"
+      "note": "创意编程框架：Kotlin 版",
+      "note_en": "Creative coding framework in Kotlin"
     },
     {
       "from": "jeertmans/manim-slides",
       "type": "plugin",
       "to": "ManimCommunity/manim",
-      "note": "把 Manim 动画做成可逐页播放的幻灯片"
+      "note": "把 Manim 动画做成可逐页播放的幻灯片",
+      "note_en": "Turns Manim animations into slides you can step through"
     },
     {
       "from": "ManimCommunity/manim-voiceover",
       "type": "plugin",
       "to": "ManimCommunity/manim",
-      "note": "社区官方的配音插件"
+      "note": "社区官方的配音插件",
+      "note_en": "Official community voiceover plugin"
     },
     {
       "from": "helblazer811/ManimML",
       "type": "plugin",
       "to": "ManimCommunity/manim",
-      "note": "机器学习概念动画组件"
+      "note": "机器学习概念动画组件",
+      "note_en": "Components for animating machine learning concepts"
     },
     {
       "from": "Matheart/manim-physics",
       "type": "plugin",
       "to": "ManimCommunity/manim",
-      "note": "物理模拟扩展"
+      "note": "物理模拟扩展",
+      "note_en": "Physics simulation extension"
     },
     {
       "from": "initialcommit-com/git-sim",
       "type": "built_on",
       "to": "ManimCommunity/manim",
-      "note": "用 Manim 把 Git 操作画成动画"
+      "note": "用 Manim 把 Git 操作画成动画",
+      "note_en": "Uses Manim to animate Git operations"
     },
     {
       "from": "showlab/Code2Video",
       "type": "uses",
       "to": "ManimCommunity/manim",
-      "note": "大模型写 Manim 代码生成教学视频"
+      "note": "大模型写 Manim 代码生成教学视频",
+      "note_en": "An LLM writes Manim code to generate teaching videos"
     },
     {
       "from": "marcelo-earth/generative-manim",
       "type": "uses",
       "to": "ManimCommunity/manim",
-      "note": "大模型写 Manim 代码"
+      "note": "大模型写 Manim 代码",
+      "note_en": "An LLM writes Manim code"
     },
     {
       "from": "shuyicc/MathLens",
       "type": "uses",
       "to": "ManimCommunity/manim",
-      "note": "数学题讲解视频用 Manim 渲染"
+      "note": "数学题讲解视频用 Manim 渲染",
+      "note_en": "Math problem explainer videos rendered with Manim"
     },
     {
       "from": "Yusuke710/manim-skill",
       "type": "uses",
       "to": "ManimCommunity/manim",
-      "note": "教 AI 助手写 Manim"
+      "note": "教 AI 助手写 Manim",
+      "note_en": "Teaches an AI coding agent to write Manim"
     },
     {
       "from": "adithya-s-k/manim_skill",
       "type": "uses",
       "to": "ManimCommunity/manim",
-      "note": "教 AI 助手写 Manim"
+      "note": "教 AI 助手写 Manim",
+      "note_en": "Teaches an AI coding agent to write Manim"
     },
     {
       "from": "motion-canvas/motion-canvas",
       "type": "alt",
       "to": "ManimCommunity/manim",
-      "note": "都适合讲解动画；Motion Canvas 用 TypeScript、带时间轴编辑器"
+      "note": "都适合讲解动画；Motion Canvas 用 TypeScript、带时间轴编辑器",
+      "note_en": "Both suit explainer animation; Motion Canvas uses TypeScript and has a timeline editor"
     },
     {
       "from": "stevenpetryk/mafs",
       "type": "alt",
       "to": "unconed/mathbox",
-      "note": "都做网页数学可视化；Mafs 偏 2D 交互，MathBox 偏 3D"
+      "note": "都做网页数学可视化；Mafs 偏 2D 交互，MathBox 偏 3D",
+      "note_en": "Both do web math visualization; Mafs leans 2D interactive, MathBox leans 3D"
     },
     {
       "from": "remotion-dev/template-tiktok",
       "type": "official",
       "to": "remotion-dev/remotion",
-      "note": "官方字幕短视频模板"
+      "note": "官方字幕短视频模板",
+      "note_en": "Official template for captioned short videos"
     },
     {
       "from": "remotion-dev/template-audiogram",
       "type": "official",
       "to": "remotion-dev/remotion",
-      "note": "官方播客音频图模板"
+      "note": "官方播客音频图模板",
+      "note_en": "Official podcast audiogram template"
     },
     {
       "from": "remotion-dev/skills",
       "type": "official",
       "to": "remotion-dev/remotion",
-      "note": "官方 AI 编程助手技能"
+      "note": "官方 AI 编程助手技能",
+      "note_en": "Official AI coding agent skill"
     },
     {
       "from": "Remocn/remocn",
       "type": "plugin",
       "to": "remotion-dev/remotion",
-      "note": "社区动画和转场组件库"
+      "note": "社区动画和转场组件库",
+      "note_en": "Community library of animation and transition components"
     },
     {
       "from": "code-hike/codehike",
       "type": "pair",
       "to": "remotion-dev/remotion",
-      "note": "代码讲解组件，可在 Remotion 里渲染成视频"
+      "note": "代码讲解组件，可在 Remotion 里渲染成视频",
+      "note_en": "Code explainer components that can render to video in Remotion"
     },
     {
       "from": "Vincentwei1021/video-shotcraft",
@@ -375,7 +441,8 @@
       "from": "Leonxlnx/cinetic",
       "type": "uses",
       "to": "remotion-dev/remotion",
-      "note": "默认引擎是 Remotion，也支持 HyperFrames"
+      "note": "默认引擎是 Remotion，也支持 HyperFrames",
+      "note_en": "Defaults to the Remotion engine; also supports HyperFrames"
     },
     {
       "from": "njrhts2kvv-star/FredTalk",
@@ -387,7 +454,8 @@
       "from": "HRuiCcc/RuiC-motion-reel",
       "type": "uses",
       "to": "remotion-dev/remotion",
-      "note": "常规宣传片走 Remotion 模板"
+      "note": "常规宣传片走 Remotion 模板",
+      "note_en": "Standard promo videos use Remotion templates"
     },
     {
       "from": "znyupup/knowledge-explainer-skill",
@@ -411,37 +479,43 @@
       "from": "Akillll-DuoHe/fy-code-animation",
       "type": "uses",
       "to": "remotion-dev/remotion",
-      "note": "也支持 Canvas / HTML"
+      "note": "也支持 Canvas / HTML",
+      "note_en": "Also supports Canvas and HTML"
     },
     {
       "from": "heygen-com/hyperframes",
       "type": "alt",
       "to": "remotion-dev/remotion",
-      "note": "都把网页渲染成视频；HyperFrames 写 HTML/CSS，Remotion 写 React"
+      "note": "都把网页渲染成视频；HyperFrames 写 HTML/CSS，Remotion 写 React",
+      "note_en": "Both render web pages to video; HyperFrames uses HTML/CSS, Remotion uses React"
     },
     {
       "from": "motion-canvas/motion-canvas",
       "type": "alt",
       "to": "remotion-dev/remotion",
-      "note": "都用 TypeScript 写视频"
+      "note": "都用 TypeScript 写视频",
+      "note_en": "Both write video in TypeScript"
     },
     {
       "from": "dmtrKovalenko/fframes",
       "type": "alt",
       "to": "remotion-dev/remotion",
-      "note": "都用代码写视频；fframes 用 Rust + SVG，主打速度"
+      "note": "都用代码写视频；fframes 用 Rust + SVG，主打速度",
+      "note_en": "Both write video in code; fframes uses Rust and SVG, built for speed"
     },
     {
       "from": "heygen-com/hyperframes",
       "type": "uses",
       "to": "greensock/GSAP",
-      "note": "画面动画默认用 GSAP"
+      "note": "画面动画默认用 GSAP",
+      "note_en": "Uses GSAP for animation by default"
     },
     {
       "from": "nexu-io/html-video",
       "type": "uses",
       "to": "heygen-com/hyperframes",
-      "note": "也支持 Remotion"
+      "note": "也支持 Remotion",
+      "note_en": "Also supports Remotion"
     },
     {
       "from": "latent-spaces/brag",
@@ -459,7 +533,8 @@
       "from": "blixvip/MotionClone",
       "type": "uses",
       "to": "heygen-com/hyperframes",
-      "note": "把参考视频重建成 HyperFrames 项目"
+      "note": "把参考视频重建成 HyperFrames 项目",
+      "note_en": "Rebuilds a reference video as a HyperFrames project"
     },
     {
       "from": "blixvip/html-anime",
@@ -471,79 +546,92 @@
       "from": "artemnovitckii/claude-animation-skills",
       "type": "uses",
       "to": "heygen-com/hyperframes",
-      "note": "2D 技能用 HyperFrames，3D 用 three.js"
+      "note": "2D 技能用 HyperFrames，3D 用 three.js",
+      "note_en": "2D skills use HyperFrames, 3D uses three.js"
     },
     {
       "from": "greensock/gsap-skills",
       "type": "official",
       "to": "greensock/GSAP",
-      "note": "官方 AI 技能"
+      "note": "官方 AI 技能",
+      "note_en": "Official AI skills"
     },
     {
       "from": "lovisdotio/motion2code",
       "type": "uses",
       "to": "greensock/GSAP",
-      "note": "复刻结果是 SVG + GSAP 代码"
+      "note": "复刻结果是 SVG + GSAP 代码",
+      "note_en": "The recreated output is SVG plus GSAP code"
     },
     {
       "from": "juliangarnier/anime",
       "type": "alt",
       "to": "greensock/GSAP",
-      "note": "JS 动画引擎，更轻量"
+      "note": "JS 动画引擎，更轻量",
+      "note_en": "JS animation engine, lighter weight"
     },
     {
       "from": "motiondivision/motion",
       "type": "alt",
       "to": "greensock/GSAP",
-      "note": "JS / React 动画库"
+      "note": "JS / React 动画库",
+      "note_en": "JS and React animation library"
     },
     {
       "from": "pmndrs/react-spring",
       "type": "alt",
       "to": "motiondivision/motion",
-      "note": "都是 React 动画库；react-spring 以弹簧物理为主"
+      "note": "都是 React 动画库；react-spring 以弹簧物理为主",
+      "note_en": "Both are React animation libraries; react-spring centers on spring physics"
     },
     {
       "from": "LottieFiles/dotlottie-web",
       "type": "alt",
       "to": "airbnb/lottie-web",
-      "note": "LottieFiles 官方播放器，性能更好"
+      "note": "LottieFiles 官方播放器，性能更好",
+      "note_en": "Official LottieFiles player with better performance"
     },
     {
       "from": "diffusionstudio/lottie",
       "type": "pair",
       "to": "airbnb/lottie-web",
-      "note": "让 AI 写出 Lottie 文件，再用 Lottie 播放"
+      "note": "让 AI 写出 Lottie 文件，再用 Lottie 播放",
+      "note_en": "Has AI write Lottie files, then plays them with Lottie"
     },
     {
       "from": "Tencent/libpag",
       "type": "alt",
       "to": "airbnb/lottie-web",
-      "note": "腾讯的 AE 动画方案，支持更多 AE 特性"
+      "note": "腾讯的 AE 动画方案，支持更多 AE 特性",
+      "note_en": "Tencent's After Effects animation solution, supporting more AE features"
     },
     {
       "from": "rive-app/rive-wasm",
       "type": "alt",
       "to": "airbnb/lottie-web",
-      "note": "带状态机的交互动画格式"
+      "note": "带状态机的交互动画格式",
+      "note_en": "Interactive animation format with state machines"
     },
     {
       "from": "Tencent/vap",
       "type": "author",
       "to": "Tencent/libpag",
-      "note": "都是腾讯开源的动画特效方案"
+      "note": "都是腾讯开源的动画特效方案",
+      "note_en": "Both are animation effect tools open-sourced by Tencent"
     },
     {
       "from": "LottieFiles/motion-design-skill",
       "type": "author",
       "to": "LottieFiles/dotlottie-web",
-      "note": "LottieFiles 团队出品"
+      "note": "LottieFiles 团队出品",
+      "note_en": "Made by the LottieFiles team"
     },
     {
       "from": "diffusionstudio/lottie",
       "type": "author",
       "to": "diffusionstudio/core",
-      "note": "Diffusion Studio 团队出品"
+      "note": "Diffusion Studio 团队出品",
+      "note_en": "Made by the Diffusion Studio team"
     },
     {
       "from": "mifi/editly",
@@ -555,7 +643,8 @@
       "from": "mifi/editly",
       "type": "uses",
       "to": "gl-transitions/gl-transitions",
-      "note": "转场效果来自 GL Transitions"
+      "note": "转场效果来自 GL Transitions",
+      "note_en": "Transition effects come from GL Transitions"
     },
     {
       "from": "Zulko/moviepy",
@@ -573,313 +662,365 @@
       "from": "kajisho5/ffmpeg-skill",
       "type": "uses",
       "to": "FFmpeg/FFmpeg",
-      "note": "把 FFmpeg 包装成 AI 助手能调用的工具"
+      "note": "把 FFmpeg 包装成 AI 助手能调用的工具",
+      "note_en": "Wraps FFmpeg as a tool AI coding agents can call"
     },
     {
       "from": "Zulko/moviepy",
       "type": "alt",
       "to": "mifi/editly",
-      "note": "都用代码剪辑；MoviePy 写 Python，editly 写 JSON"
+      "note": "都用代码剪辑；MoviePy 写 Python，editly 写 JSON",
+      "note_en": "Both edit video in code; MoviePy uses Python, editly uses JSON"
     },
     {
       "from": "jberg/butterchurn",
       "type": "alt",
       "to": "projectM-visualizer/projectm",
-      "note": "都兼容 MilkDrop 预设；Butterchurn 跑在浏览器里"
+      "note": "都兼容 MilkDrop 预设；Butterchurn 跑在浏览器里",
+      "note_en": "Both read MilkDrop presets; Butterchurn runs in the browser"
     },
     {
       "from": "milkdrop2077/MilkDrop3",
       "type": "alt",
       "to": "projectM-visualizer/projectm",
-      "note": "MilkDrop 原版的延续"
+      "note": "MilkDrop 原版的延续",
+      "note_en": "Continuation of the original MilkDrop"
     },
     {
       "from": "patriciogonzalezvivo/lygia",
       "type": "author",
       "to": "patriciogonzalezvivo/glslViewer",
-      "note": "Patricio Gonzalez Vivo 的着色器工具链"
+      "note": "Patricio Gonzalez Vivo 的着色器工具链",
+      "note_en": "Patricio Gonzalez Vivo's shader toolchain"
     },
     {
       "from": "patriciogonzalezvivo/glslCanvas",
       "type": "author",
       "to": "patriciogonzalezvivo/thebookofshaders",
-      "note": "《The Book of Shaders》网页示例用 glslCanvas 运行"
+      "note": "《The Book of Shaders》网页示例用 glslCanvas 运行",
+      "note_en": "The web examples in The Book of Shaders run on glslCanvas"
     },
     {
       "from": "patriciogonzalezvivo/glslViewer",
       "type": "author",
       "to": "patriciogonzalezvivo/thebookofshaders",
-      "note": "同一作者"
+      "note": "同一作者",
+      "note_en": "Same author"
     },
     {
       "from": "mausimus/ShaderGlass",
       "type": "uses",
       "to": "libretro/glsl-shaders",
-      "note": "内置 RetroArch 的复古着色器"
+      "note": "内置 RetroArch 的复古着色器",
+      "note_en": "Bundles RetroArch's retro shaders"
     },
     {
       "from": "Swordfish90/cool-retro-term",
       "type": "alt",
       "to": "mausimus/ShaderGlass",
-      "note": "都能做出 CRT 显示器质感"
+      "note": "都能做出 CRT 显示器质感",
+      "note_en": "Both can produce a CRT monitor look"
     },
     {
       "from": "hydra-synth/hydra",
       "type": "alt",
       "to": "cables-gl/cables",
-      "note": "都做实时视觉；Hydra 写代码，cables 连节点"
+      "note": "都做实时视觉；Hydra 写代码，cables 连节点",
+      "note_en": "Both do real-time visuals; Hydra is code, cables is node patching"
     },
     {
       "from": "tixl3d/tixl",
       "type": "alt",
       "to": "cables-gl/cables",
-      "note": "节点式实时动态图形，TiXL 偏桌面端"
+      "note": "节点式实时动态图形，TiXL 偏桌面端",
+      "note_en": "Node-based real-time motion graphics; TiXL is desktop-oriented"
     },
     {
       "from": "Gargaj/Bonzomatic",
       "type": "pair",
       "to": "nesbox/TIC-80",
-      "note": "Demoscene 现场写码比赛常用的两个工具"
+      "note": "Demoscene 现场写码比赛常用的两个工具",
+      "note_en": "Two tools commonly used in Demoscene live coding competitions"
     },
     {
       "from": "runevision/Dither3D",
       "type": "alt",
       "to": "niccolofanton/dithering-shader",
-      "note": "都做 3D 抖动；Dither3D 用于 Unity，另一个用于 R3F"
+      "note": "都做 3D 抖动；Dither3D 用于 Unity，另一个用于 R3F",
+      "note_en": "Both do 3D dithering; Dither3D is for Unity, the other for R3F"
     },
     {
       "from": "rough-stuff/rough-notation",
       "type": "author",
       "to": "rough-stuff/rough",
-      "note": "Rough.js 作者的手绘标注库"
+      "note": "Rough.js 作者的手绘标注库",
+      "note_en": "Hand-drawn annotation library by the Rough.js author"
     },
     {
       "from": "jwilber/roughViz",
       "type": "built_on",
       "to": "rough-stuff/rough",
-      "note": "手绘线条来自 Rough.js"
+      "note": "手绘线条来自 Rough.js",
+      "note_en": "Hand-drawn lines come from Rough.js"
     },
     {
       "from": "dai-shi/excalidraw-animate",
       "type": "pair",
       "to": "rough-stuff/rough",
-      "note": "Excalidraw 的手绘线条由 Rough.js 绘制"
+      "note": "Excalidraw 的手绘线条由 Rough.js 绘制",
+      "note_en": "Excalidraw's hand-drawn lines are drawn by Rough.js"
     },
     {
       "from": "timqian/chart.xkcd",
       "type": "alt",
       "to": "jwilber/roughViz",
-      "note": "都是手绘风图表"
+      "note": "都是手绘风图表",
+      "note_en": "Both are hand-drawn style chart libraries"
     },
     {
       "from": "chanind/hanzi-writer",
       "type": "data",
       "to": "skishore/makemeahanzi",
-      "note": "笔画数据来自 Make Me a Hanzi"
+      "note": "笔画数据来自 Make Me a Hanzi",
+      "note_en": "Stroke data comes from Make Me a Hanzi"
     },
     {
       "from": "gkurt/tegaki",
       "type": "alt",
       "to": "chanind/hanzi-writer",
-      "note": "都是书写动画；Tegaki 支持任意字体"
+      "note": "都是书写动画；Tegaki 支持任意字体",
+      "note_en": "Both are writing animation tools; Tegaki supports any font"
     },
     {
       "from": "LingDong-/fishdraw",
       "type": "author",
       "to": "LingDong-/shan-shui-inf",
-      "note": "黄令东（LingDong）的程序化绘画作品"
+      "note": "黄令东（LingDong）的程序化绘画作品",
+      "note_en": "Procedural drawing work by LingDong"
     },
     {
       "from": "abey79/vsketch",
       "type": "built_on",
       "to": "abey79/vpype",
-      "note": "同一作者；vsketch 输出直接交给 vpype 处理"
+      "note": "同一作者；vsketch 输出直接交给 vpype 处理",
+      "note_en": "Same author; vsketch output goes straight into vpype for processing"
     },
     {
       "from": "jameshball/osci-render",
       "type": "alt",
       "to": "alemidev/scope-tui",
-      "note": "都和示波器画面有关；osci-render 负责画，scope-tui 负责看"
+      "note": "都和示波器画面有关；osci-render 负责画，scope-tui 负责看",
+      "note_en": "Both relate to oscilloscope visuals; osci-render draws them, scope-tui views them"
     },
     {
       "from": "mxgmn/MarkovJunior",
       "type": "author",
       "to": "mxgmn/WaveFunctionCollapse",
-      "note": "同一作者的两个程序化生成项目"
+      "note": "同一作者的两个程序化生成项目",
+      "note_en": "Two procedural generation projects by the same author"
     },
     {
       "from": "marian42/wavefunctioncollapse",
       "type": "built_on",
       "to": "mxgmn/WaveFunctionCollapse",
-      "note": "用 WFC 算法生成 3D 城市"
+      "note": "用 WFC 算法生成 3D 城市",
+      "note_en": "Generates 3D cities with the WFC algorithm"
     },
     {
       "from": "tom-mohr/particle-life-app",
       "type": "alt",
       "to": "hunar4321/particle-life",
-      "note": "都是粒子生命；particle-life-app 带图形界面"
+      "note": "都是粒子生命；particle-life-app 带图形界面",
+      "note_en": "Both are particle life; particle-life-app has a graphical interface"
     },
     {
       "from": "chrxh/alien",
       "type": "alt",
       "to": "Chakazul/Lenia",
-      "note": "都是人工生命模拟"
+      "note": "都是人工生命模拟",
+      "note_en": "Both are artificial life simulations"
     },
     {
       "from": "buddhi1980/mandelbulber2",
       "type": "alt",
       "to": "xaos-project/XaoS",
-      "note": "都做分形动画；Mandelbulber 做 3D，XaoS 做 2D 缩放"
+      "note": "都做分形动画；Mandelbulber 做 3D，XaoS 做 2D 缩放",
+      "note_en": "Both do fractal animation; Mandelbulber does 3D, XaoS does 2D zoom"
     },
     {
       "from": "metafizzy/zdog",
       "type": "alt",
       "to": "jdan/isomer",
-      "note": "都是轻量伪 3D 图形库"
+      "note": "都是轻量伪 3D 图形库",
+      "note_en": "Both are lightweight pseudo-3D graphics libraries"
     },
     {
       "from": "nosir/obelisk.js",
       "type": "alt",
       "to": "jdan/isomer",
-      "note": "都画等距图形；obelisk.js 偏像素风"
+      "note": "都画等距图形；obelisk.js 偏像素风",
+      "note_en": "Both draw isometric graphics; obelisk.js leans pixel art"
     },
     {
       "from": "arwes/arwes",
       "type": "alt",
       "to": "rizznme/cosmic-ui",
-      "note": "都是科幻风界面组件"
+      "note": "都是科幻风界面组件",
+      "note_en": "Both are sci-fi style UI components"
     },
     {
       "from": "propjockey/augmented-ui",
       "type": "alt",
       "to": "arwes/arwes",
-      "note": "纯 CSS 的赛博朋克边框"
+      "note": "纯 CSS 的赛博朋克边框",
+      "note_en": "Cyberpunk borders in pure CSS"
     },
     {
       "from": "antvis/L7",
       "type": "alt",
       "to": "visgl/deck.gl",
-      "note": "都做大规模地图可视化和轨迹动画"
+      "note": "都做大规模地图可视化和轨迹动画",
+      "note_en": "Both do large-scale map visualization and trajectory animation"
     },
     {
       "from": "antvis/L7",
       "type": "author",
       "to": "antvis/G2",
-      "note": "蚂蚁 AntV 团队出品"
+      "note": "蚂蚁 AntV 团队出品",
+      "note_en": "Made by Ant Group's AntV team"
     },
     {
       "from": "antvis/G2",
       "type": "alt",
       "to": "apache/echarts",
-      "note": "国内常用的两个图表库"
+      "note": "国内常用的两个图表库",
+      "note_en": "Two chart libraries widely used in China"
     },
     {
       "from": "vizzuhq/vizzu-lib",
       "type": "alt",
       "to": "dexplo/bar_chart_race",
-      "note": "都做数据动画；Vizzu 擅长图表间变形过渡"
+      "note": "都做数据动画；Vizzu 擅长图表间变形过渡",
+      "note_en": "Both do data animation; Vizzu excels at morphing transitions between charts"
     },
     {
       "from": "dexplo/bar_chart_race",
       "type": "built_on",
       "to": "matplotlib/matplotlib",
-      "note": "用 Matplotlib 画每一帧"
+      "note": "用 Matplotlib 画每一帧",
+      "note_en": "Draws each frame with Matplotlib"
     },
     {
       "from": "acaudwell/Logstalgia",
       "type": "author",
       "to": "acaudwell/Gource",
-      "note": "同一作者"
+      "note": "同一作者",
+      "note_en": "Same author"
     },
     {
       "from": "kitao/pyxel",
       "type": "alt",
       "to": "nesbox/TIC-80",
-      "note": "都是复古游戏引擎 / 幻想主机"
+      "note": "都是复古游戏引擎 / 幻想主机",
+      "note_en": "Both are retro game engines or fantasy consoles"
     },
     {
       "from": "aduros/wasm4",
       "type": "alt",
       "to": "nesbox/TIC-80",
-      "note": "都是幻想主机"
+      "note": "都是幻想主机",
+      "note_en": "Both are fantasy consoles"
     },
     {
       "from": "love2d/love",
       "type": "alt",
       "to": "raysan5/raylib",
-      "note": "都是轻量 2D/3D 编程库；LÖVE 写 Lua，raylib 写 C"
+      "note": "都是轻量 2D/3D 编程库；LÖVE 写 Lua，raylib 写 C",
+      "note_en": "Both are lightweight 2D/3D programming libraries; LÖVE uses Lua, raylib uses C"
     },
     {
       "from": "drawcall/Proton",
       "type": "alt",
       "to": "tsparticles/tsparticles",
-      "note": "都是网页粒子库"
+      "note": "都是网页粒子库",
+      "note_en": "Both are web particle libraries"
     },
     {
       "from": "Alchemist0823/three.quarks",
       "type": "alt",
       "to": "creativelifeform/three-nebula",
-      "note": "都是 three.js 粒子系统"
+      "note": "都是 three.js 粒子系统",
+      "note_en": "Both are three.js particle systems"
     },
     {
       "from": "charmbracelet/vhs",
       "type": "alt",
       "to": "asciinema/asciinema",
-      "note": "都做终端演示；VHS 按脚本自动录制，asciinema 录真实操作"
+      "note": "都做终端演示；VHS 按脚本自动录制，asciinema 录真实操作",
+      "note_en": "Both make terminal demos; VHS records from a script, asciinema records real sessions"
     },
     {
       "from": "faressoft/terminalizer",
       "type": "alt",
       "to": "asciinema/asciinema",
-      "note": "录终端并渲染成 GIF"
+      "note": "录终端并渲染成 GIF",
+      "note_en": "Records the terminal and renders it to GIF"
     },
     {
       "from": "ChrisBuilds/terminaltexteffects",
       "type": "alt",
       "to": "peterbrittain/asciimatics",
-      "note": "都是 Python 终端动画库"
+      "note": "都是 Python 终端动画库",
+      "note_en": "Both are Python terminal animation libraries"
     },
     {
       "from": "TheZoraiz/ascii-image-converter",
       "type": "alt",
       "to": "hpjansson/chafa",
-      "note": "都把图片转成终端字符画"
+      "note": "都把图片转成终端字符画",
+      "note_en": "Both convert images to terminal text art"
     },
     {
       "from": "slidevjs/slidev",
       "type": "alt",
       "to": "hakimel/reveal.js",
-      "note": "都用代码写演示；Slidev 写 Markdown + Vue"
+      "note": "都用代码写演示；Slidev 写 Markdown + Vue",
+      "note_en": "Both write presentations in code; Slidev uses Markdown and Vue"
     },
     {
       "from": "animotionjs/animotion",
       "type": "alt",
       "to": "slidevjs/slidev",
-      "note": "用 Svelte 写带动画的演示"
+      "note": "用 Svelte 写带动画的演示",
+      "note_en": "Animated presentations written in Svelte"
     },
     {
       "from": "yeemachine/kalidokit",
       "type": "pair",
       "to": "pixiv/three-vrm",
-      "note": "用摄像头动作驱动 VRM 角色"
+      "note": "用摄像头动作驱动 VRM 角色",
+      "note_en": "Drives VRM characters with camera motion tracking"
     },
     {
       "from": "yeemachine/kalidokit",
       "type": "pair",
       "to": "guansss/pixi-live2d-display",
-      "note": "用摄像头动作驱动 Live2D 角色"
+      "note": "用摄像头动作驱动 Live2D 角色",
+      "note_en": "Drives Live2D characters with camera motion tracking"
     },
     {
       "from": "storytold/effectcraft",
       "type": "alt",
       "to": "NatronGitHub/Natron",
-      "note": "都是开源合成软件"
+      "note": "都是开源合成软件",
+      "note_en": "Both are open-source compositing software"
     },
     {
       "from": "Vincentwei1021/video-talkcraft",
       "type": "author",
       "to": "Vincentwei1021/video-shotcraft",
-      "note": "shotcraft 系列：宣传片、口播、讲解、画风样片"
+      "note": "shotcraft 系列：宣传片、口播、讲解、画风样片",
+      "note_en": "The shotcraft series: promo videos, talking-head, explainers, style sample clips"
     },
     {
       "from": "Vincentwei1021/anything2explainer",
@@ -897,133 +1038,155 @@
       "from": "alchaincyf/huashu-art-motion",
       "type": "author",
       "to": "alchaincyf/huashu-motion",
-      "note": "花叔的动画技能系列"
+      "note": "花叔的动画技能系列",
+      "note_en": "Huashu's animation skill series"
     },
     {
       "from": "feitangyuan/motion-web",
       "type": "author",
       "to": "feitangyuan/onetake",
-      "note": "同一作者"
+      "note": "同一作者",
+      "note_en": "Same author"
     },
     {
       "from": "Leonxlnx/athenaion",
       "type": "author",
       "to": "Leonxlnx/cinetic",
-      "note": "同一作者"
+      "note": "同一作者",
+      "note_en": "Same author"
     },
     {
       "from": "blixvip/MotionClone",
       "type": "author",
       "to": "blixvip/html-anime",
-      "note": "同一作者"
+      "note": "同一作者",
+      "note_en": "Same author"
     },
     {
       "from": "DavidHDev/canvas-ui",
       "type": "author",
       "to": "DavidHDev/react-bits",
-      "note": "React Bits 作者的 WebGL 特效组件"
+      "note": "React Bits 作者的 WebGL 特效组件",
+      "note_en": "WebGL effect components by the author of React Bits"
     },
     {
       "from": "cth9191/animate",
       "type": "alt",
       "to": "lemomo-ai/lemo-opuscar",
-      "note": "都是让 Claude 按画风写代码出片的工具箱"
+      "note": "都是让 Claude 按画风写代码出片的工具箱",
+      "note_en": "Both are toolkits that have Claude write code in a chosen style to make videos"
     },
     {
       "from": "cloveric/claude-drawing-skill",
       "type": "alt",
       "to": "alchaincyf/huashu-art-motion",
-      "note": "都是多画风的代码绘画技能"
+      "note": "都是多画风的代码绘画技能",
+      "note_en": "Both are multi-style code drawing skills"
     },
     {
       "from": "XiaoyeCodes/code-animation-prompts",
       "type": "pair",
       "to": "lemomo-ai/lemo-opuscar",
-      "note": "画风提示词库，可以配合画风工具箱使用"
+      "note": "画风提示词库，可以配合画风工具箱使用",
+      "note_en": "Style prompt library, usable with the style toolkit"
     },
     {
       "from": "NiazMorshed2007/reanimate",
       "type": "alt",
       "to": "lovisdotio/motion2code",
-      "note": "都是用代码逐帧复刻现成动画"
+      "note": "都是用代码逐帧复刻现成动画",
+      "note_en": "Both recreate existing animations frame by frame in code"
     },
     {
       "from": "blixvip/MotionClone",
       "type": "alt",
       "to": "NiazMorshed2007/reanimate",
-      "note": "都是复刻参考视频"
+      "note": "都是复刻参考视频",
+      "note_en": "Both recreate reference videos"
     },
     {
       "from": "hvianna/audioMotion.js",
       "type": "author",
       "to": "hvianna/audioMotion-analyzer",
-      "note": "同一作者：播放器和频谱分析库"
+      "note": "同一作者：播放器和频谱分析库",
+      "note_en": "Same author: a player and a spectrum analyzer library"
     },
     {
       "from": "AzurIce/ranim",
       "type": "alt",
       "to": "ManimCommunity/manim",
-      "note": "受 Manim 启发的 Rust 动画引擎"
+      "note": "受 Manim 启发的 Rust 动画引擎",
+      "note_en": "Rust animation engine inspired by Manim"
     },
     {
       "from": "parsimonhi/animCJK",
       "type": "alt",
       "to": "chanind/hanzi-writer",
-      "note": "都是汉字笔顺动画；animCJK 直接给出 SVG 动画"
+      "note": "都是汉字笔顺动画；animCJK 直接给出 SVG 动画",
+      "note_en": "Both are Chinese character stroke order animation; animCJK provides SVG animation directly"
     },
     {
       "from": "meodai/heerich",
       "type": "alt",
       "to": "jdan/isomer",
-      "note": "都画等距 / 体素图形；heerich 输出 SVG"
+      "note": "都画等距 / 体素图形；heerich 输出 SVG",
+      "note_en": "Both draw isometric or voxel graphics; heerich outputs SVG"
     },
     {
       "from": "IceCreamYou/THREE.Terrain",
       "type": "plugin",
       "to": "mrdoob/three.js",
-      "note": "three.js 程序化地形"
+      "note": "three.js 程序化地形",
+      "note_en": "Procedural terrain for three.js"
     },
     {
       "from": "redblobgames/mapgen4",
       "type": "alt",
       "to": "Azgaar/Fantasy-Map-Generator",
-      "note": "都是程序化地图生成"
+      "note": "都是程序化地图生成",
+      "note_en": "Both are procedural map generators"
     },
     {
       "from": "mrsarac/ff-tracking",
       "type": "uses",
       "to": "dmtrKovalenko/fframes",
-      "note": "用 fframes 渲染"
+      "note": "用 fframes 渲染",
+      "note_en": "Renders with fframes"
     },
     {
       "from": "dgageot/demoit",
       "type": "alt",
       "to": "sloria/doitlive",
-      "note": "都用来做现场代码演示"
+      "note": "都用来做现场代码演示",
+      "note_en": "Both are used for live code demos"
     },
     {
       "from": "sloria/doitlive",
       "type": "alt",
       "to": "charmbracelet/vhs",
-      "note": "都用来录终端演示；doitlive 现场敲，VHS 按脚本自动录"
+      "note": "都用来录终端演示；doitlive 现场敲，VHS 按脚本自动录",
+      "note_en": "Both record terminal demos; doitlive types live, VHS records from a script"
     },
     {
       "from": "hzeller/timg",
       "type": "alt",
       "to": "joelibaceta/video-to-ascii",
-      "note": "都在终端里播放视频"
+      "note": "都在终端里播放视频",
+      "note_en": "Both play video in the terminal"
     },
     {
       "from": "aiXander/Realtime_PyAudio_FFT",
       "type": "alt",
       "to": "meyda/meyda",
-      "note": "都做音频特征提取；一个 Python，一个 JavaScript"
+      "note": "都做音频特征提取；一个 Python，一个 JavaScript",
+      "note_en": "Both extract audio features; one in Python, one in JavaScript"
     },
     {
       "from": "preziotte/party-mode",
       "type": "built_on",
       "to": "d3/d3",
-      "note": "用 D3 画可视化"
+      "note": "用 D3 画可视化",
+      "note_en": "Draws visualizations with D3"
     },
     {
       "from": "geekjourneyx/hyperframes-motion-director",
@@ -1035,7 +1198,8 @@
       "from": "feicaiclub/video-spec-builder",
       "type": "uses",
       "to": "heygen-com/hyperframes",
-      "note": "分镜脚本交给 HyperFrames 渲染"
+      "note": "分镜脚本交给 HyperFrames 渲染",
+      "note_en": "Hands the storyboard script to HyperFrames to render"
     },
     {
       "from": "edenfunf/reelmimic",
@@ -1059,145 +1223,169 @@
       "from": "0xS4N4TG/kinetograph",
       "type": "author",
       "to": "0xS4N4TG/papercut-explainer",
-      "note": "同一作者"
+      "note": "同一作者",
+      "note_en": "Same author"
     },
     {
       "from": "d3cod3/Mosaic",
       "type": "built_on",
       "to": "openframeworks/openFrameworks",
-      "note": "基于 openFrameworks"
+      "note": "基于 openFrameworks",
+      "note_en": "Built on openFrameworks"
     },
     {
       "from": "Wing900/ManimCat",
       "type": "alt",
       "to": "marcelo-earth/generative-manim",
-      "note": "都是一句话让 AI 写 Manim 动画"
+      "note": "都是一句话让 AI 写 Manim 动画",
+      "note_en": "Both have AI write Manim animations from a single sentence"
     },
     {
       "from": "markusfisch/ShaderEditor",
       "type": "alt",
       "to": "stevensona/shader-toy",
-      "note": "都能实时预览 GLSL；一个在安卓手机上，一个在 VS Code 里"
+      "note": "都能实时预览 GLSL；一个在安卓手机上，一个在 VS Code 里",
+      "note_en": "Both preview GLSL live; one on Android phones, one in VS Code"
     },
     {
       "from": "laurentlb/shader-minifier",
       "type": "pair",
       "to": "Gargaj/Bonzomatic",
-      "note": "Demoscene 着色器常用工具"
+      "note": "Demoscene 着色器常用工具",
+      "note_en": "Common tool for Demoscene shaders"
     },
     {
       "from": "Auburn/FastNoiseLite",
       "type": "pair",
       "to": "mxgmn/WaveFunctionCollapse",
-      "note": "都是程序化生成的基础工具"
+      "note": "都是程序化生成的基础工具",
+      "note_en": "Both are foundational tools for procedural generation"
     },
     {
       "from": "R74nCom/sandboxels",
       "type": "alt",
       "to": "MaxBittker/sandspiel",
-      "note": "都是网页落沙沙盒"
+      "note": "都是网页落沙沙盒",
+      "note_en": "Both are web falling sand sandboxes"
     },
     {
       "from": "The-Powder-Toy/The-Powder-Toy",
       "type": "alt",
       "to": "MaxBittker/sandspiel",
-      "note": "落沙游戏的老前辈，元素和物理更复杂"
+      "note": "落沙游戏的老前辈，元素和物理更复杂",
+      "note_en": "Veteran falling sand game, with more complex elements and physics"
     },
     {
       "from": "BobdaProgrammer/TermiSand",
       "type": "alt",
       "to": "cgsdev0/termsand",
-      "note": "都是终端里的落沙模拟"
+      "note": "都是终端里的落沙模拟",
+      "note_en": "Both are falling sand simulations in the terminal"
     },
     {
       "from": "mapbox/webgl-wind",
       "type": "alt",
       "to": "cambecc/earth",
-      "note": "都做风场粒子动画"
+      "note": "都做风场粒子动画",
+      "note_en": "Both do wind field particle animation"
     },
     {
       "from": "anvaka/lsystem",
       "type": "author",
       "to": "anvaka/fieldplay",
-      "note": "同一作者 anvaka"
+      "note": "同一作者 anvaka",
+      "note_en": "Same author, anvaka"
     },
     {
       "from": "JargeZ/ntscqt",
       "type": "alt",
       "to": "ntsc-rs/ntsc-rs",
-      "note": "都做 VHS 效果；ntsc-rs 更新更勤"
+      "note": "都做 VHS 效果；ntsc-rs 更新更勤",
+      "note_en": "Both do VHS effects; ntsc-rs is updated more often"
     },
     {
       "from": "finnmckenty/NTSCRT",
       "type": "uses",
       "to": "ntsc-rs/ntsc-rs",
-      "note": "信号模拟用 ntsc-rs"
+      "note": "信号模拟用 ntsc-rs",
+      "note_en": "Uses ntsc-rs for signal simulation"
     },
     {
       "from": "RetroCrisis/Retro-Crisis-GDV-NTSC",
       "type": "alt",
       "to": "libretro/glsl-shaders",
-      "note": "都是 RetroArch 的复古着色器"
+      "note": "都是 RetroArch 的复古着色器",
+      "note_en": "Both are retro shaders for RetroArch"
     },
     {
       "from": "NullTale/VhsFx",
       "type": "alt",
       "to": "zulubo/VHSEffect",
-      "note": "都是 Unity 的 VHS 后期"
+      "note": "都是 Unity 的 VHS 后期",
+      "note_en": "Both are VHS post-processing for Unity"
     },
     {
       "from": "oriedita/oriedita",
       "type": "alt",
       "to": "oripa/oripa",
-      "note": "都是折痕图编辑器"
+      "note": "都是折痕图编辑器",
+      "note_en": "Both are crease pattern editors"
     },
     {
       "from": "RemiKoutcherawy/OriSim3D-Android",
       "type": "alt",
       "to": "amandaghassaei/OrigamiSimulator",
-      "note": "都做折纸折叠模拟；OriSim3D 在安卓上"
+      "note": "都做折纸折叠模拟；OriSim3D 在安卓上",
+      "note_en": "Both simulate origami folding; OriSim3D runs on Android"
     },
     {
       "from": "Tw1ddle/geometrize",
       "type": "alt",
       "to": "fogleman/primitive",
-      "note": "Geometrize 是 primitive 思路的移植版"
+      "note": "Geometrize 是 primitive 思路的移植版",
+      "note_en": "Geometrize is a port of the primitive approach"
     },
     {
       "from": "rh12503/triangula",
       "type": "alt",
       "to": "fogleman/primitive",
-      "note": "都用几何图形重构图片"
+      "note": "都用几何图形重构图片",
+      "note_en": "Both rebuild images from geometric shapes"
     },
     {
       "from": "tdh8316/triangler",
       "type": "alt",
       "to": "rh12503/triangula",
-      "note": "都把图片转成低多边形"
+      "note": "都把图片转成低多边形",
+      "note_en": "Both convert images to low poly"
     },
     {
       "from": "gkjohnson/three-gpu-pathtracer",
       "type": "plugin",
       "to": "mrdoob/three.js",
-      "note": "three.js 的路径追踪渲染器"
+      "note": "three.js 的路径追踪渲染器",
+      "note_en": "Path tracing renderer for three.js"
     },
     {
       "from": "pissang/mutracer",
       "type": "alt",
       "to": "gkjohnson/three-gpu-pathtracer",
-      "note": "都在网页里做路径追踪"
+      "note": "都在网页里做路径追踪",
+      "note_en": "Both do path tracing in the browser"
     },
     {
       "from": "knightcrawler25/GLSL-PathTracer",
       "type": "alt",
       "to": "aras-p/ToyPathTracer",
-      "note": "都是学习用的路径追踪器"
+      "note": "都是学习用的路径追踪器",
+      "note_en": "Both are path tracers for learning"
     },
     {
       "from": "Icelk/strange-attractor-renderer",
       "type": "alt",
       "to": "vdesmond/attractors",
-      "note": "都画奇异吸引子"
+      "note": "都画奇异吸引子",
+      "note_en": "Both draw strange attractors"
     },
     {
       "from": "AllenAI2014/remotion-guofeng-starter",
@@ -1215,55 +1403,64 @@
       "from": "JohnHeibel/ClaudeAnimationBase",
       "type": "uses",
       "to": "acamposuribe/p5.brush",
-      "note": "手绘笔触用 p5.brush"
+      "note": "手绘笔触用 p5.brush",
+      "note_en": "Hand-drawn strokes use p5.brush"
     },
     {
       "from": "JohnHeibel/ClaudeAnimationBase",
       "type": "author",
       "to": "JohnHeibel/PDoomVideo",
-      "note": "同一作者"
+      "note": "同一作者",
+      "note_en": "Same author"
     },
     {
       "from": "mexicat/pdoom-video",
       "type": "alt",
       "to": "JohnHeibel/PDoomVideo",
-      "note": "同一首歌，两位作者各自用代码做的 MV"
+      "note": "同一首歌，两位作者各自用代码做的 MV",
+      "note_en": "Same song, two authors each making an MV in code"
     },
     {
       "from": "Stellarium/stellarium-web-engine",
       "type": "alt",
       "to": "hyqzz/Solar-Wanderer",
-      "note": "都在浏览器里渲染天体"
+      "note": "都在浏览器里渲染天体",
+      "note_en": "Both render celestial bodies in the browser"
     },
     {
       "from": "ashuttl/linecast",
       "type": "alt",
       "to": "da-luce/astroterm",
-      "note": "都在终端里画星空"
+      "note": "都在终端里画星空",
+      "note_en": "Both draw starfields in the terminal"
     },
     {
       "from": "WishMelz/AquaInkGL",
       "type": "alt",
       "to": "LingDong-/shan-shui-inf",
-      "note": "都是网页里的程序化水墨"
+      "note": "都是网页里的程序化水墨",
+      "note_en": "Both are procedural ink wash in the browser"
     },
     {
       "from": "FarazzShaikh/THREE-CustomShaderMaterial",
       "type": "plugin",
       "to": "mrdoob/three.js",
-      "note": "给 three.js 材质叠加自定义着色器"
+      "note": "给 three.js 材质叠加自定义着色器",
+      "note_en": "Layers custom shaders onto three.js materials"
     },
     {
       "from": "Ameobea/three-good-godrays",
       "type": "plugin",
       "to": "pmndrs/postprocessing",
-      "note": "作为 postprocessing 的效果使用"
+      "note": "作为 postprocessing 的效果使用",
+      "note_en": "Used as an effect in postprocessing"
     },
     {
       "from": "boytchev/tsl-textures",
       "type": "plugin",
       "to": "mrdoob/three.js",
-      "note": "three.js 着色语言 TSL 的纹理"
+      "note": "three.js 着色语言 TSL 的纹理",
+      "note_en": "Textures for TSL, the three.js shading language"
     },
     {
       "from": "owenyuwono/poseidon",
@@ -1281,169 +1478,197 @@
       "from": "patriciogonzalezvivo/glslEditor",
       "type": "author",
       "to": "patriciogonzalezvivo/glslViewer",
-      "note": "同一作者"
+      "note": "同一作者",
+      "note_en": "Same author"
     },
     {
       "from": "jamieowen/glsl-blend",
       "type": "plugin",
       "to": "glslify/glslify",
-      "note": "按 glslify 模块格式发布"
+      "note": "按 glslify 模块格式发布",
+      "note_en": "Published in the glslify module format"
     },
     {
       "from": "mrdoob/glsl-sandbox",
       "type": "author",
       "to": "mrdoob/three.js",
-      "note": "three.js 作者 mrdoob 的着色器画廊"
+      "note": "three.js 作者 mrdoob 的着色器画廊",
+      "note_en": "Shader gallery by mrdoob, the three.js author"
     },
     {
       "from": "keijiro/NoiseShader",
       "type": "alt",
       "to": "ashima/webgl-noise",
-      "note": "都是噪声着色器函数；NoiseShader 用于 Unity"
+      "note": "都是噪声着色器函数；NoiseShader 用于 Unity",
+      "note_en": "Both are noise shader functions; NoiseShader is for Unity"
     },
     {
       "from": "ashima/webgl-noise",
       "type": "alt",
       "to": "patriciogonzalezvivo/lygia",
-      "note": "都提供着色器噪声函数；LYGIA 覆盖更广"
+      "note": "都提供着色器噪声函数；LYGIA 覆盖更广",
+      "note_en": "Both provide shader noise functions; LYGIA covers more"
     },
     {
       "from": "poiyomi/PoiyomiToonShader",
       "type": "alt",
       "to": "unity3d-jp/UnityChanToonShaderVer2_Project",
-      "note": "都是 Unity 卡通着色器"
+      "note": "都是 Unity 卡通着色器",
+      "note_en": "Both are Unity toon shaders"
     },
     {
       "from": "Unity-Technologies/com.unity.toonshader",
       "type": "alt",
       "to": "unity3d-jp/UnityChanToonShaderVer2_Project",
-      "note": "都是 Unity 的日式卡通着色器"
+      "note": "都是 Unity 的日式卡通着色器",
+      "note_en": "Both are Japanese-style toon shaders for Unity"
     },
     {
       "from": "ChiliMilk/URP_Toon",
       "type": "alt",
       "to": "ColinLeung-NiloCat/UnityURPToonLitShaderExample",
-      "note": "都是 Unity URP 卡通着色器"
+      "note": "都是 Unity URP 卡通着色器",
+      "note_en": "Both are Unity URP toon shaders"
     },
     {
       "from": "you-ri/LiliumToonGraph",
       "type": "alt",
       "to": "ColinLeung-NiloCat/UnityURPToonLitShaderExample",
-      "note": "都是 Unity URP 卡通着色器"
+      "note": "都是 Unity URP 卡通着色器",
+      "note_en": "Both are Unity URP toon shaders"
     },
     {
       "from": "V-Sekai/godot-vrm",
       "type": "alt",
       "to": "pixiv/three-vrm",
-      "note": "同一种 VRM 格式；一个用于 Godot，一个用于 three.js"
+      "note": "同一种 VRM 格式；一个用于 Godot，一个用于 three.js",
+      "note_en": "Same VRM format; one for Godot, one for three.js"
     },
     {
       "from": "twostraws/Inferno",
       "type": "alt",
       "to": "krispuckett/SwiftUIShaders",
-      "note": "都是 SwiftUI 的 Metal 着色器合集"
+      "note": "都是 SwiftUI 的 Metal 着色器合集",
+      "note_en": "Both are Metal shader collections for SwiftUI"
     },
     {
       "from": "jamesrochabrun/ShaderKit",
       "type": "alt",
       "to": "twostraws/Inferno",
-      "note": "都给 SwiftUI 加 Metal 着色器效果"
+      "note": "都给 SwiftUI 加 Metal 着色器效果",
+      "note_en": "Both add Metal shader effects to SwiftUI"
     },
     {
       "from": "mejdi14/Android-AGSL-Shader-Playground",
       "type": "alt",
       "to": "markusfisch/ShaderEditor",
-      "note": "都在安卓上跑着色器"
+      "note": "都在安卓上跑着色器",
+      "note_en": "Both run shaders on Android"
     },
     {
       "from": "basementstudio/shader-lab",
       "type": "alt",
       "to": "paper-design/shaders",
-      "note": "都是网页着色器效果工具包"
+      "note": "都是网页着色器效果工具包",
+      "note_en": "Both are web shader effect toolkits"
     },
     {
       "from": "paper-design/liquid-logo",
       "type": "author",
       "to": "paper-design/shaders",
-      "note": "Paper 团队出品"
+      "note": "Paper 团队出品",
+      "note_en": "Made by the Paper team"
     },
     {
       "from": "Leonxlnx/lumenshaders",
       "type": "author",
       "to": "Leonxlnx/cinetic",
-      "note": "同一作者"
+      "note": "同一作者",
+      "note_en": "Same author"
     },
     {
       "from": "cashew-olddew/Universal-Transition-Shader",
       "type": "alt",
       "to": "gl-transitions/gl-transitions",
-      "note": "都是着色器转场合集；一个用于 Godot"
+      "note": "都是着色器转场合集；一个用于 Godot",
+      "note_en": "Both are shader transition collections; one is for Godot"
     },
     {
       "from": "ahopness/GodotRetro",
       "type": "alt",
       "to": "Zorochase/ultimate-retro-shader-collection",
-      "note": "都是 Godot 复古着色器"
+      "note": "都是 Godot 复古着色器",
+      "note_en": "Both are retro shaders for Godot"
     },
     {
       "from": "tessarakkt/godot4-oceanfft",
       "type": "alt",
       "to": "owenyuwono/poseidon",
-      "note": "都用 FFT 做实时海洋"
+      "note": "都用 FFT 做实时海洋",
+      "note_en": "Both use FFT for real-time ocean"
     },
     {
       "from": "smkplus/ShaderMan",
       "type": "alt",
       "to": "stevensona/shader-toy",
-      "note": "都围绕 Shadertoy 风格着色器"
+      "note": "都围绕 Shadertoy 风格着色器",
+      "note_en": "Both revolve around Shadertoy-style shaders"
     },
     {
       "from": "callstack/liquid-glass",
       "type": "alt",
       "to": "AndrewPrifer/liquid-dom",
-      "note": "都是液态玻璃效果；一个用于 React Native，一个用于网页"
+      "note": "都是液态玻璃效果；一个用于 React Native，一个用于网页",
+      "note_en": "Both are liquid glass effects; one for React Native, one for the web"
     },
     {
       "from": "naughtyduk/liquidGL",
       "type": "alt",
       "to": "iyinchao/liquid-glass-studio",
-      "note": "都在网页里做液态玻璃"
+      "note": "都在网页里做液态玻璃",
+      "note_en": "Both do liquid glass on the web"
     },
     {
       "from": "shuding/liquid-glass",
       "type": "alt",
       "to": "AndrewPrifer/liquid-dom",
-      "note": "都是网页液态玻璃"
+      "note": "都是网页液态玻璃",
+      "note_en": "Both are web liquid glass"
     },
     {
       "from": "Kyant0/AndroidLiquidGlass",
       "type": "alt",
       "to": "skydoves/Cloudy",
-      "note": "都是 Compose 的玻璃效果"
+      "note": "都是 Compose 的玻璃效果",
+      "note_en": "Both are glass effects for Compose"
     },
     {
       "from": "Mortd3kay/liquid-glass-android",
       "type": "alt",
       "to": "Kyant0/AndroidLiquidGlass",
-      "note": "都是安卓液态玻璃"
+      "note": "都是安卓液态玻璃",
+      "note_en": "Both are Android liquid glass"
     },
     {
       "from": "gingerbeardman/webgl-crt-shader",
       "type": "alt",
       "to": "Swordfish90/cool-retro-term",
-      "note": "都做 CRT 显示器质感"
+      "note": "都做 CRT 显示器质感",
+      "note_en": "Both produce a CRT monitor look"
     },
     {
       "from": "stackgl/shader-school",
       "type": "alt",
       "to": "patriciogonzalezvivo/thebookofshaders",
-      "note": "都是着色器入门教程"
+      "note": "都是着色器入门教程",
+      "note_en": "Both are beginner shader tutorials"
     },
     {
       "from": "electricsquare/raymarching-workshop",
       "type": "alt",
       "to": "ianthehenry/bauble",
-      "note": "都围绕 SDF 光线步进"
+      "note": "都围绕 SDF 光线步进",
+      "note_en": "Both revolve around SDF ray marching"
     }
   ]
 }
