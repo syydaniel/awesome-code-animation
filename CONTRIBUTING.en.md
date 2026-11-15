@@ -67,6 +67,12 @@ Please don't edit `README.md`, `README.en.md` or `docs/index.html` by hand. They
 
 Projects we looked at and decided against go in [`data/excluded.json`](data/excluded.json) with a reason, so automatic discovery stops suggesting them.
 
+## Picks for each style
+
+The 3D style gateway at the top of the web page has a gallery for every style that shows its best projects, and the "Picks" line at the start of each style in the README uses the same list. It lives in [`data/featured.json`](data/featured.json): list 3 to 5 projects per style, best first. Each one must already be listed and carry that style's tag, or the build skips it with a warning. Styles without a list get their most-starred active projects.
+
+The gateway's code is in [`site/gateway.js`](site/gateway.js) and is inlined into the page at build time.
+
 ## Adding a style
 
 Add an entry to `data/styles.json` (with `"zone": "niche"` for a niche style), and write a thumbnail function for it in the `SW` object in [`site/template.html`](site/template.html), using a 240×96 canvas. Then run:

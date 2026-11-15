@@ -6,9 +6,9 @@
 
 **Open-source tools for making animations and music videos with code, indexed by visual style.** [Chinese version](README.md)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![projects](https://img.shields.io/badge/projects-443-2E49D4) ![styles](https://img.shields.io/badge/styles-17%2B21-9265D9) ![active](https://img.shields.io/badge/active-323-1E8A4B) ![updated](https://img.shields.io/badge/updated-2026--11--09-5B6273)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![projects](https://img.shields.io/badge/projects-478-2E49D4) ![styles](https://img.shields.io/badge/styles-17%2B21-9265D9) ![active](https://img.shields.io/badge/active-357-1E8A4B) ![updated](https://img.shields.io/badge/updated-2026--11--15-5B6273)
 
-**[🌐 Web version](https://syydaniel.github.io/awesome-code-animation/?lang=en)**<sub> (filter by style, search, sort, switch languages)</sub> · **[🕸️ Relationship graph](https://syydaniel.github.io/awesome-code-animation/?lang=en#graph-sec)**<sub> (drag, zoom, family trees)</sub> · **[🎨 Style index](#index)**
+**[🌌 3D style gateway](https://syydaniel.github.io/awesome-code-animation/?lang=en)**<sub> (spin the style carousel, open a gallery of picks for each style)</sub> · **[🌐 Web version](https://syydaniel.github.io/awesome-code-animation/?lang=en#table-sec)**<sub> (filter by style, search, sort)</sub> · **[🕸️ Relationship graph](https://syydaniel.github.io/awesome-code-animation/?lang=en#graph-sec)** · **[🎨 Style index](#index)**
 
 [Style index](#index) · [Niche styles](#niche) · [Relationships](#relations) · [Rules](#rules) · [All projects](#all) · [Suggest a project](https://github.com/syydaniel/awesome-code-animation/issues/new/choose)
 
@@ -72,7 +72,7 @@ Built with: [Manim Community](https://github.com/ManimCommunity/manim) · [MathB
 
 When you want to make a music video, an explainer or an intro with code, the first question is usually which tool makes the look you have in mind. This list sorts open-source animation and video projects on GitHub by **visual style**: 3Blue1Brown-style math, flat motion graphics, psychedelic shaders, pixel art, ASCII, music visualizers, anime dance videos and more. Pick a style first, then pick a tool. One project often does several styles, so it can appear under several.
 
-Beyond the 17 main styles, the [niche section](#niche) covers ink-wash landscapes, Chinese stroke-order animation, oscilloscope art, plotters, artificial life and others. 89 entries are skills and films where AI coding agents like Claude or Opus write the code, and they're filed by style like everything else. The [relationship graph](#relations) links related projects, so you can see what grew out of what and what can replace what.
+Beyond the 17 main styles, the [niche section](#niche) covers ink-wash landscapes, Chinese stroke-order animation, oscilloscope art, plotters, artificial life and others. 101 entries are skills and films where AI coding agents like Claude or Opus write the code, and they're filed by style like everything else. The [relationship graph](#relations) links related projects, so you can see what grew out of what and what can replace what.
 
 <a name="rules"></a>
 
@@ -84,7 +84,7 @@ Beyond the 17 main styles, the [niche section](#niche) covers ink-wash landscape
 - **Skills and films where AI coding agents like Claude or Opus write the code:** filed by style as usual, with 50+ stars and a push in the last year.
 - **Archived (read-only) repositories aren't listed.** Projects we looked at and left out are recorded in [`data/excluded.json`](data/excluded.json), with reasons in Chinese.
 - Status follows the latest push: 🟢 Active (within 6 months) · 🟡 Slowing (within 2 years) · ⚪ Dormant (older; most still work, they just don't get new features).
-- Stars and status refresh every Monday through GitHub Actions, and new candidates are collected into a weekly issue. Data as of 2026-11-09.
+- Stars and status refresh every Monday through GitHub Actions, and new candidates are collected into a weekly issue. Data as of 2026-11-15.
 
 <a name="picks"></a>
 
@@ -108,24 +108,24 @@ Beyond the 17 main styles, the [niche section](#niche) covers ink-wash landscape
 Click a picture to jump to that style's table. Every thumbnail is drawn with code, and the code is in [`site/template.html`](site/template.html).
 
 <table>
-<tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="Math Explainer" width="260"></a><br><b><a href="#math">Math Explainer</a></b><br><sub>21 projects</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="Motion Graphics" width="260"></a><br><b><a href="#mg">Motion Graphics</a></b><br><sub>87 projects</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="Code & Terminal Demo" width="260"></a><br><b><a href="#code">Code & Terminal Demo</a></b><br><sub>16 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.en.png" alt="Kinetic Type & Lyrics" width="260"></a><br><b><a href="#type">Kinetic Type & Lyrics</a></b><br><sub>29 projects</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="Shorts, Captions & Editing" width="260"></a><br><b><a href="#short">Shorts, Captions & Editing</a></b><br><sub>29 projects</sub></td><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="Hand-drawn & Whiteboard" width="260"></a><br><b><a href="#hand">Hand-drawn & Whiteboard</a></b><br><sub>23 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="Generative Art" width="260"></a><br><b><a href="#gen">Generative Art</a></b><br><sub>40 projects</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="Shaders & Psychedelic" width="260"></a><br><b><a href="#shader">Shaders & Psychedelic</a></b><br><sub>96 projects</sub></td><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding & VJ" width="260"></a><br><b><a href="#live">Live Coding & VJ</a></b><br><sub>13 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="Music Visualization" width="260"></a><br><b><a href="#audio">Music Visualization</a></b><br><sub>26 projects</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D" width="260"></a><br><b><a href="#3d">3D</a></b><br><sub>74 projects</sub></td><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="Anime, MMD & VRM" width="260"></a><br><b><a href="#anime">Anime, MMD & VRM</a></b><br><sub>15 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="Particles & Physics" width="260"></a><br><b><a href="#particle">Particles & Physics</a></b><br><sub>26 projects</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="Glitch & Post FX" width="260"></a><br><b><a href="#glitch">Glitch & Post FX</a></b><br><sub>17 projects</sub></td><td align="center" width="33%"><a href="#pixel"><img src="assets/styles/pixel.png" alt="Pixel & Retro" width="260"></a><br><b><a href="#pixel">Pixel & Retro</a></b><br><sub>28 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#ascii"><img src="assets/styles/ascii.png" alt="ASCII & Terminal" width="260"></a><br><b><a href="#ascii">ASCII & Terminal</a></b><br><sub>25 projects</sub></td><td align="center" width="33%"><a href="#data"><img src="assets/styles/data.png" alt="Data Animation" width="260"></a><br><b><a href="#data">Data Animation</a></b><br><sub>27 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="Math Explainer" width="260"></a><br><b><a href="#math">Math Explainer</a></b><br><sub>25 projects</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="Motion Graphics" width="260"></a><br><b><a href="#mg">Motion Graphics</a></b><br><sub>97 projects</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="Code & Terminal Demo" width="260"></a><br><b><a href="#code">Code & Terminal Demo</a></b><br><sub>17 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.en.png" alt="Kinetic Type & Lyrics" width="260"></a><br><b><a href="#type">Kinetic Type & Lyrics</a></b><br><sub>33 projects</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="Shorts, Captions & Editing" width="260"></a><br><b><a href="#short">Shorts, Captions & Editing</a></b><br><sub>33 projects</sub></td><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="Hand-drawn & Whiteboard" width="260"></a><br><b><a href="#hand">Hand-drawn & Whiteboard</a></b><br><sub>25 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="Generative Art" width="260"></a><br><b><a href="#gen">Generative Art</a></b><br><sub>44 projects</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="Shaders & Psychedelic" width="260"></a><br><b><a href="#shader">Shaders & Psychedelic</a></b><br><sub>103 projects</sub></td><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding & VJ" width="260"></a><br><b><a href="#live">Live Coding & VJ</a></b><br><sub>16 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="Music Visualization" width="260"></a><br><b><a href="#audio">Music Visualization</a></b><br><sub>28 projects</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D" width="260"></a><br><b><a href="#3d">3D</a></b><br><sub>83 projects</sub></td><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="Anime, MMD & VRM" width="260"></a><br><b><a href="#anime">Anime, MMD & VRM</a></b><br><sub>15 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="Particles & Physics" width="260"></a><br><b><a href="#particle">Particles & Physics</a></b><br><sub>28 projects</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="Glitch & Post FX" width="260"></a><br><b><a href="#glitch">Glitch & Post FX</a></b><br><sub>17 projects</sub></td><td align="center" width="33%"><a href="#pixel"><img src="assets/styles/pixel.png" alt="Pixel & Retro" width="260"></a><br><b><a href="#pixel">Pixel & Retro</a></b><br><sub>31 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#ascii"><img src="assets/styles/ascii.png" alt="ASCII & Terminal" width="260"></a><br><b><a href="#ascii">ASCII & Terminal</a></b><br><sub>26 projects</sub></td><td align="center" width="33%"><a href="#data"><img src="assets/styles/data.png" alt="Data Animation" width="260"></a><br><b><a href="#data">Data Animation</a></b><br><sub>29 projects</sub></td></tr>
 </table>
 
 ### Niche styles
 
 <table>
-<tr><td align="center" width="33%"><a href="#ink"><img src="assets/styles/ink.png" alt="Ink & Watercolor" width="260"></a><br><b><a href="#ink">Ink & Watercolor</a></b><br><sub>8 projects</sub></td><td align="center" width="33%"><a href="#hanzi"><img src="assets/styles/hanzi.en.png" alt="Handwriting & Strokes" width="260"></a><br><b><a href="#hanzi">Handwriting & Strokes</a></b><br><sub>4 projects</sub></td><td align="center" width="33%"><a href="#scope"><img src="assets/styles/scope.png" alt="Oscilloscope & Vector" width="260"></a><br><b><a href="#scope">Oscilloscope & Vector</a></b><br><sub>2 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#plotter"><img src="assets/styles/plotter.png" alt="Plotter & Line Art" width="260"></a><br><b><a href="#plotter">Plotter & Line Art</a></b><br><sub>7 projects</sub></td><td align="center" width="33%"><a href="#dither"><img src="assets/styles/dither.png" alt="Dither & 1-bit" width="260"></a><br><b><a href="#dither">Dither & 1-bit</a></b><br><sub>5 projects</sub></td><td align="center" width="33%"><a href="#riso"><img src="assets/styles/riso.png" alt="Riso & Paper Collage" width="260"></a><br><b><a href="#riso">Riso & Paper Collage</a></b><br><sub>6 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#alife"><img src="assets/styles/alife.png" alt="Artificial Life & Growth" width="260"></a><br><b><a href="#alife">Artificial Life & Growth</a></b><br><sub>8 projects</sub></td><td align="center" width="33%"><a href="#procgen"><img src="assets/styles/procgen.png" alt="Procedural Generation" width="260"></a><br><b><a href="#procgen">Procedural Generation</a></b><br><sub>12 projects</sub></td><td align="center" width="33%"><a href="#fractal"><img src="assets/styles/fractal.png" alt="Fractals & Chaos" width="260"></a><br><b><a href="#fractal">Fractals & Chaos</a></b><br><sub>8 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#iso"><img src="assets/styles/iso.png" alt="Isometric & Voxel" width="260"></a><br><b><a href="#iso">Isometric & Voxel</a></b><br><sub>9 projects</sub></td><td align="center" width="33%"><a href="#scifi"><img src="assets/styles/scifi.png" alt="Sci-fi HUD" width="260"></a><br><b><a href="#scifi">Sci-fi HUD</a></b><br><sub>4 projects</sub></td><td align="center" width="33%"><a href="#map"><img src="assets/styles/map.png" alt="Map & Route" width="260"></a><br><b><a href="#map">Map & Route</a></b><br><sub>10 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#ink"><img src="assets/styles/ink.png" alt="Ink & Watercolor" width="260"></a><br><b><a href="#ink">Ink & Watercolor</a></b><br><sub>8 projects</sub></td><td align="center" width="33%"><a href="#hanzi"><img src="assets/styles/hanzi.en.png" alt="Handwriting & Strokes" width="260"></a><br><b><a href="#hanzi">Handwriting & Strokes</a></b><br><sub>5 projects</sub></td><td align="center" width="33%"><a href="#scope"><img src="assets/styles/scope.png" alt="Oscilloscope & Vector" width="260"></a><br><b><a href="#scope">Oscilloscope & Vector</a></b><br><sub>3 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#plotter"><img src="assets/styles/plotter.png" alt="Plotter & Line Art" width="260"></a><br><b><a href="#plotter">Plotter & Line Art</a></b><br><sub>8 projects</sub></td><td align="center" width="33%"><a href="#dither"><img src="assets/styles/dither.png" alt="Dither & 1-bit" width="260"></a><br><b><a href="#dither">Dither & 1-bit</a></b><br><sub>7 projects</sub></td><td align="center" width="33%"><a href="#riso"><img src="assets/styles/riso.png" alt="Riso & Paper Collage" width="260"></a><br><b><a href="#riso">Riso & Paper Collage</a></b><br><sub>6 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#alife"><img src="assets/styles/alife.png" alt="Artificial Life & Growth" width="260"></a><br><b><a href="#alife">Artificial Life & Growth</a></b><br><sub>8 projects</sub></td><td align="center" width="33%"><a href="#procgen"><img src="assets/styles/procgen.png" alt="Procedural Generation" width="260"></a><br><b><a href="#procgen">Procedural Generation</a></b><br><sub>13 projects</sub></td><td align="center" width="33%"><a href="#fractal"><img src="assets/styles/fractal.png" alt="Fractals & Chaos" width="260"></a><br><b><a href="#fractal">Fractals & Chaos</a></b><br><sub>9 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#iso"><img src="assets/styles/iso.png" alt="Isometric & Voxel" width="260"></a><br><b><a href="#iso">Isometric & Voxel</a></b><br><sub>11 projects</sub></td><td align="center" width="33%"><a href="#scifi"><img src="assets/styles/scifi.png" alt="Sci-fi HUD" width="260"></a><br><b><a href="#scifi">Sci-fi HUD</a></b><br><sub>4 projects</sub></td><td align="center" width="33%"><a href="#map"><img src="assets/styles/map.png" alt="Map & Route" width="260"></a><br><b><a href="#map">Map & Route</a></b><br><sub>10 projects</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#demoscene"><img src="assets/styles/demoscene.png" alt="Demoscene" width="260"></a><br><b><a href="#demoscene">Demoscene</a></b><br><sub>7 projects</sub></td><td align="center" width="33%"><a href="#sand"><img src="assets/styles/sand.png" alt="Falling Sand" width="260"></a><br><b><a href="#sand">Falling Sand</a></b><br><sub>8 projects</sub></td><td align="center" width="33%"><a href="#flow"><img src="assets/styles/flow.png" alt="Flow & Wind Fields" width="260"></a><br><b><a href="#flow">Flow & Wind Fields</a></b><br><sub>7 projects</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#vhs"><img src="assets/styles/vhs.png" alt="VHS & Analog" width="260"></a><br><b><a href="#vhs">VHS & Analog</a></b><br><sub>13 projects</sub></td><td align="center" width="33%"><a href="#origami"><img src="assets/styles/origami.png" alt="Origami & Papercraft" width="260"></a><br><b><a href="#origami">Origami & Papercraft</a></b><br><sub>8 projects</sub></td><td align="center" width="33%"><a href="#geo"><img src="assets/styles/geo.png" alt="Geometric & Low-poly" width="260"></a><br><b><a href="#geo">Geometric & Low-poly</a></b><br><sub>7 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#raytrace"><img src="assets/styles/raytrace.png" alt="Path Tracing" width="260"></a><br><b><a href="#raytrace">Path Tracing</a></b><br><sub>7 projects</sub></td><td align="center" width="33%"><a href="#space"><img src="assets/styles/space.png" alt="Space & Stars" width="260"></a><br><b><a href="#space">Space & Stars</a></b><br><sub>8 projects</sub></td><td align="center" width="33%"><a href="#liquid"><img src="assets/styles/liquid.en.png" alt="Liquid Glass" width="260"></a><br><b><a href="#liquid">Liquid Glass</a></b><br><sub>12 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#raytrace"><img src="assets/styles/raytrace.png" alt="Path Tracing" width="260"></a><br><b><a href="#raytrace">Path Tracing</a></b><br><sub>7 projects</sub></td><td align="center" width="33%"><a href="#space"><img src="assets/styles/space.png" alt="Space & Stars" width="260"></a><br><b><a href="#space">Space & Stars</a></b><br><sub>9 projects</sub></td><td align="center" width="33%"><a href="#liquid"><img src="assets/styles/liquid.en.png" alt="Liquid Glass" width="260"></a><br><b><a href="#liquid">Liquid Glass</a></b><br><sub>16 projects</sub></td></tr>
 </table>
 
 ## Main styles
@@ -138,33 +138,39 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Equations, axes and geometric transforms on a 3Blue1Brown-style dark canvas
 
-21 projects, sorted by stars.
+**Picks:** [Manim Community](https://github.com/ManimCommunity/manim) · [Manim (3b1b)](https://github.com/3b1b/manim) · [Motion Canvas](https://github.com/motion-canvas/motion-canvas) · [MathBox](https://github.com/unconed/mathbox) · [Code2Video](https://github.com/showlab/Code2Video)
+
+25 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [Manim (3b1b)](https://github.com/3b1b/manim) | 96.3k | 🟢 Active | Python | The math animation engine 3Blue1Brown himself uses (ManimGL): formulas, coordinate systems, shape transforms, in the classic blue-and-black explainer style.<br><sub>Good for: Explainer videos · Also in: Data Animation</sub><br><sub>⚠️ Sparse docs; beginners should start with the community edition.</sub> |
-| [Manim Community](https://github.com/ManimCommunity/manim) | 42.4k | 🟢 Active | Python | Community-maintained fork of Manim with the most complete docs and tutorials. Used for many math, physics and algorithm explainer videos on Bilibili.<br><sub>Good for: Explainer videos · Also in: Data Animation, Code & Terminal Demo</sub> |
-| [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | 19.7k | 🟢 Active | TypeScript | Write animations as TypeScript generator functions, with a timeline editor and audio sync. Well suited to explainer videos and code demos.<br><sub>Good for: Explainer videos · MV · Also in: Motion Graphics, Code & Terminal Demo</sub> |
+| [Manim (3b1b)](https://github.com/3b1b/manim) | 96.5k | 🟢 Active | Python | The math animation engine 3Blue1Brown himself uses (ManimGL): formulas, coordinate systems, shape transforms, in the classic blue-and-black explainer style.<br><sub>Good for: Explainer videos · Also in: Data Animation</sub><br><sub>⚠️ Sparse docs; beginners should start with the community edition.</sub> |
+| [Manim Community](https://github.com/ManimCommunity/manim) | 42.6k | 🟢 Active | Python | Community-maintained fork of Manim with the most complete docs and tutorials. Used for many math, physics and algorithm explainer videos on Bilibili.<br><sub>Good for: Explainer videos · Also in: Data Animation, Code & Terminal Demo</sub> |
+| [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | 19.9k | 🟢 Active | TypeScript | Write animations as TypeScript generator functions, with a timeline editor and audio sync. Well suited to explainer videos and code demos.<br><sub>Good for: Explainer videos · MV · Also in: Motion Graphics, Code & Terminal Demo</sub> |
 | [pywonderland](https://github.com/neozhaoliang/pywonderland) | 4.2k | 🟡 Slowing | Python | Made by a Chinese developer: math visuals in Python, including fractals, tilings, reaction-diffusion, and maze generation animations.<br><sub>Good for: Math art · Also in: Fractals & Chaos</sub> |
 | [Lenia](https://github.com/Chakazul/Lenia) | 3.9k | ⚪ Dormant | Python / JS | Continuous cellular automata that grow moving, splitting "mathematical life forms", looking like organisms under a microscope.<br><sub>Good for: Artificial life · Also in: Artificial Life & Growth</sub><br><sub>⚠️ Not updated since 2024.</sub> |
 | [ManimML](https://github.com/helblazer811/ManimML) | 3.5k | ⚪ Dormant | Python | Machine learning concept animations built on Manim: explainer animations of neural networks, convolutions, and similar structures.<br><sub>Good for: Explainer videos · Also in: Data Animation</sub> |
-| [Mafs](https://github.com/stevenpetryk/mafs) | 3.4k | 🟢 Active | React | React components for interactive math: coordinate planes, function plots, vectors. Build draggable math explainer animations.<br><sub>Good for: Interactive math</sub> |
+| [Mafs](https://github.com/stevenpetryk/mafs) | 3.5k | 🟢 Active | React | React components for interactive math: coordinate planes, function plots, vectors. Build draggable math explainer animations.<br><sub>Good for: Interactive math</sub> |
+| [Math-To-Manim](https://github.com/HarleyCoops/Math-To-Manim) | 2.9k | 🟢 Active | Python (Manim) | A chain of AI agents turns a math or physics concept into a storyboard, writes the Manim code and revises it after looking at the renders; it can make films up to ten minutes long.<br><sub>Good for: Math explainers · Science films · Also in: 3D</sub><br><sub>⚠️ The newer Studio pipeline renders 3D shots with Blender EEVEE; the original main pipeline uses Manim only.</sub> |
+| [ManimGX](https://github.com/academa-labs/manimgx) | 2.8k | 🟢 Active | Python / Rust (wgpu) | An animation engine compatible with the Manim CE API, rebuilt on Rust and wgpu so math and 3D scenes render faster; it also runs in the browser.<br><sub>Good for: Math animation · 3D explainers · Also in: 3D</sub> |
 | [Code2Video](https://github.com/showlab/Code2Video) | 2.4k | 🟢 Active | Python | Academic project: has a large language model write Manim code to automatically generate educational explainer videos, with every frame rendered by code.<br><sub>Good for: Explainer videos</sub> |
-| [Animate](https://github.com/cth9191/animate) | 1.7k | 🟢 Active | JavaScript / Canvas | Claude Code skill: draws short animations procedurally on a single canvas, with 7 built-in styles: paper cut-out, hatched ink, Riso print, sketchbook, math, pixel, and isometric.<br><sub>Good for: Explainer videos · Short films · Also in: Hand-drawn & Whiteboard, Pixel & Retro, Riso & Paper Collage</sub> |
+| [Animate](https://github.com/cth9191/animate) | 2k | 🟢 Active | JavaScript / Canvas | Claude Code skill: draws short animations procedurally on a single canvas, with 7 built-in styles: paper cut-out, hatched ink, Riso print, sketchbook, math, pixel, and isometric.<br><sub>Good for: Explainer videos · Short films · Also in: Hand-drawn & Whiteboard, Pixel & Retro, Riso & Paper Collage</sub> |
 | [MathBox](https://github.com/unconed/mathbox) | 1.5k | ⚪ Dormant | JavaScript | 3D math visualization in the browser: surfaces, vector fields and coordinate grids, with clean, polished visuals.<br><sub>Good for: Explainer videos · Also in: 3D</sub> |
-| [Reanimate](https://github.com/reanimate/reanimate) | 1.3k | 🟡 Slowing | Haskell | SVG animation library written in Haskell, with LaTeX formula support and a look close to 3B1B.<br><sub>Good for: Explainer videos · Also in: Motion Graphics</sub><br><sub>⚠️ Niche language, small community.</sub> |
+| [Reanimate](https://github.com/reanimate/reanimate) | 1.4k | 🟡 Slowing | Haskell | SVG animation library written in Haskell, with LaTeX formula support and a look close to 3B1B.<br><sub>Good for: Explainer videos · Also in: Motion Graphics</sub><br><sub>⚠️ Niche language, small community.</sub> |
 | [FieldPlay](https://github.com/anvaka/fieldplay) | 1.3k | 🟢 Active | JavaScript / GLSL | Write a vector field formula and thousands of particles flow along it, like streams of silk.<br><sub>Good for: Vector field animation · Also in: Flow & Wind Fields</sub> |
 | [Manim Agent Skills](https://github.com/adithya-s-k/manim_skill) | 1.3k | 🟡 Slowing | Python / skill | Manim skills and best practices for making 3Blue1Brown-style animations.<br><sub>Good for: Explainer videos</sub> |
-| [Manim Slides](https://github.com/jeertmans/manim-slides) | 978 | 🟢 Active | Python | Turn Manim animations into presentation slides you can play page by page. Can also export to a web page.<br><sub>Good for: Explainer videos · Talks · Also in: Code & Terminal Demo</sub> |
-| [Generative Manim](https://github.com/marcelo-earth/generative-manim) | 941 | 🟢 Active | Python | Describe an animation in natural language; an LLM writes the Manim code and renders it.<br><sub>Good for: Explainer videos</sub> |
-| [ranim](https://github.com/AzurIce/ranim) | 663 | 🟢 Active | Rust | Animation engine written in Rust, inspired by Manim.<br><sub>Good for: Explainer videos</sub> |
-| [ManimCat](https://github.com/Wing900/ManimCat) | 499 | 🟢 Active | TypeScript / Python | Describe an animation in one sentence and AI writes the Manim code for a math animation. Supports LaTeX and auto-fixes code when rendering fails.<br><sub>Good for: Math explainer videos</sub><br><sub>⚠️ AGPL-3.0: if you use it in a network service offered to others, you must publish your modified source.</sub> |
+| [Manim Slides](https://github.com/jeertmans/manim-slides) | 985 | 🟢 Active | Python | Turn Manim animations into presentation slides you can play page by page. Can also export to a web page.<br><sub>Good for: Explainer videos · Talks · Also in: Code & Terminal Demo</sub> |
+| [Generative Manim](https://github.com/marcelo-earth/generative-manim) | 943 | 🟢 Active | Python | Describe an animation in natural language; an LLM writes the Manim code and renders it.<br><sub>Good for: Explainer videos</sub> |
+| [ranim](https://github.com/AzurIce/ranim) | 664 | 🟢 Active | Rust | Animation engine written in Rust, inspired by Manim.<br><sub>Good for: Explainer videos</sub> |
+| [manim-web](https://github.com/maloyan/manim-web) | 515 | 🟢 Active | TypeScript | A TypeScript port of 3Blue1Brown's Manim that renders in a browser canvas, plus molecular, chemistry, biology and map modules.<br><sub>Good for: Math animation · Web · Also in: Data Animation</sub> |
+| [ManimCat](https://github.com/Wing900/ManimCat) | 502 | 🟢 Active | TypeScript / Python | Describe an animation in one sentence and AI writes the Manim code for a math animation. Supports LaTeX and auto-fixes code when rendering fails.<br><sub>Good for: Math explainer videos</sub><br><sub>⚠️ AGPL-3.0: if you use it in a network service offered to others, you must publish your modified source.</sub> |
 | [manim-physics](https://github.com/Matheart/manim-physics) | 413 | 🟢 Active | Python | Physics simulation extension for Manim: rigid bodies, electromagnetic fields, waves, pendulums, and other physics animations.<br><sub>Good for: Explainer videos · Also in: Particles & Physics</sub> |
-| [MathLens](https://github.com/shuyicc/MathLens) | 348 | 🟡 Slowing | Python | From a Chinese developer: paste a math problem and it analyzes it, writes a voiceover script and generates a narrated Manim explainer video.<br><sub>Good for: Math explainer videos</sub> |
+| [MathLens](https://github.com/shuyicc/MathLens) | 350 | 🟡 Slowing | Python | From a Chinese developer: paste a math problem and it analyzes it, writes a voiceover script and generates a narrated Manim explainer video.<br><sub>Good for: Math explainer videos</sub> |
 | [manim-voiceover](https://github.com/ManimCommunity/manim-voiceover) | 327 | 🟢 Active | Python | Adds voiceover to Manim animations, syncing animation timing to the speech automatically.<br><sub>Good for: Explainer videos</sub> |
-| [manim-skill](https://github.com/Yusuke710/manim-skill) | 197 | 🟢 Active | Skill | SKILL.md that teaches AI agents to write Manim animations.<br><sub>Good for: Explainer videos</sub> |
+| [manim-skill](https://github.com/Yusuke710/manim-skill) | 204 | 🟢 Active | Skill | SKILL.md that teaches AI agents to write Manim animations.<br><sub>Good for: Explainer videos</sub> |
+| [Fractal Garden](https://github.com/trebeljahr/fractal-garden) | 164 | 🟢 Active | TypeScript | 62 fractals in the browser: zoom into the Mandelbrot set, fly through a Menger sponge or write your own L-systems, each with an explainer.<br><sub>Good for: Fractals · Math art · Also in: Fractals & Chaos</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -176,99 +182,111 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Flat shapes, springy easing and shape morphs
 
-87 projects, sorted by stars.
+**Picks:** [GSAP](https://github.com/greensock/GSAP) · [anime.js](https://github.com/juliangarnier/anime) · [Remotion](https://github.com/remotion-dev/remotion) · [HyperFrames](https://github.com/heygen-com/hyperframes) · [mo.js](https://github.com/mojs/mojs)
+
+97 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [HyperFrames](https://github.com/heygen-com/hyperframes) | 81.4k | 🟢 Active | HTML / CSS / GSAP | Open-sourced by HeyGen. Write scenes in HTML/CSS, animate with GSAP, render straight to MP4. Designed for AI coding agents.<br><sub>Good for: MV · Short videos · AI generation · Also in: Kinetic Type & Lyrics, Shorts, Captions & Editing</sub><br><sub>⚠️ The official skill pack's asset skills can optionally call generation services; the rendering itself is HTML code.</sub> |
-| [anime.js](https://github.com/juliangarnier/anime) | 74.5k | 🟢 Active | JavaScript | Lightweight JS animation library. Timelines, stagger, and SVG stroke animation are easy to use.<br><sub>Good for: Web animation · MV · Also in: Kinetic Type & Lyrics</sub> |
-| [reveal.js](https://github.com/hakimel/reveal.js) | 72.5k | 🟢 Active | HTML / JS | Write presentations in HTML. Auto-Animate tweens elements automatically between slides.<br><sub>Good for: Explainer videos · Talks · Also in: Code & Terminal Demo</sub> |
-| [Remotion](https://github.com/remotion-dev/remotion) | 71.9k | 🟢 Active | React / TS | Write videos as React components and render them to MP4, with batch generation. Official add-on packages cover captions, audio visualization, three.js, and more.<br><sub>Good for: MV · Short videos · Batch video rendering · Also in: Shorts, Captions & Editing, Kinetic Type & Lyrics, 3D</sub><br><sub>⚠️ Free for individuals and small companies (commercial use included); larger companies need to buy a company license.</sub> |
-| [React Bits](https://github.com/DavidHDev/react-bits) | 51.6k | 🟢 Active | React | Lots of animated React components: text effects, animated backgrounds, interactive motion. Copy and use.<br><sub>Good for: Web motion · Assets · Also in: Kinetic Type & Lyrics, Shaders & Psychedelic</sub> |
+| [HyperFrames](https://github.com/heygen-com/hyperframes) | 84.6k | 🟢 Active | HTML / CSS / GSAP | Open-sourced by HeyGen. Write scenes in HTML/CSS, animate with GSAP, render straight to MP4. Designed for AI coding agents.<br><sub>Good for: MV · Short videos · AI generation · Also in: Kinetic Type & Lyrics, Shorts, Captions & Editing</sub><br><sub>⚠️ The official skill pack's asset skills can optionally call generation services; the rendering itself is HTML code.</sub> |
+| [anime.js](https://github.com/juliangarnier/anime) | 74.7k | 🟢 Active | JavaScript | Lightweight JS animation library. Timelines, stagger, and SVG stroke animation are easy to use.<br><sub>Good for: Web animation · MV · Also in: Kinetic Type & Lyrics</sub> |
+| [Remotion](https://github.com/remotion-dev/remotion) | 73.4k | 🟢 Active | React / TS | Write videos as React components and render them to MP4, with batch generation. Official add-on packages cover captions, audio visualization, three.js, and more.<br><sub>Good for: MV · Short videos · Batch video rendering · Also in: Shorts, Captions & Editing, Kinetic Type & Lyrics, 3D</sub><br><sub>⚠️ Free for individuals and small companies (commercial use included); larger companies need to buy a company license.</sub> |
+| [reveal.js](https://github.com/hakimel/reveal.js) | 72.6k | 🟢 Active | HTML / JS | Write presentations in HTML. Auto-Animate tweens elements automatically between slides.<br><sub>Good for: Explainer videos · Talks · Also in: Code & Terminal Demo</sub> |
+| [React Bits](https://github.com/DavidHDev/react-bits) | 52k | 🟢 Active | React | Lots of animated React components: text effects, animated backgrounds, interactive motion. Copy and use.<br><sub>Good for: Web motion · Assets · Also in: Kinetic Type & Lyrics, Shaders & Psychedelic</sub> |
 | [PixiJS](https://github.com/pixijs/pixijs) | 48.7k | 🟢 Active | TypeScript | Fast 2D rendering engine (WebGL / WebGPU) for large numbers of sprites, filters, and 2D motion effects.<br><sub>Good for: Web animation · MV · Also in: Particles & Physics, Generative Art</sub> |
-| [Motion](https://github.com/motiondivision/motion) | 35k | 🟢 Active | React / JS | Formerly Framer Motion. An animation library for React and JS with smooth springs, gestures, and layout transitions.<br><sub>Good for: Web motion</sub> |
-| [Lottie](https://github.com/airbnb/lottie-web) | 32.4k | 🟡 Slowing | JavaScript | Plays After Effects animations exported as Bodymovin JSON in the browser. The common format for flat illustration and icon animation.<br><sub>Good for: Effect assets · Web animation</sub><br><sub>⚠️ The animation itself is usually made in AE; code handles playback and control.</sub> |
-| [GSAP](https://github.com/greensock/GSAP) | 30.4k | 🟢 Active | JavaScript | Long-established JS animation engine. Plugins like SplitText and MorphSVG are now all free. Strong at split-text animation and SVG morphing.<br><sub>Good for: MV · Web animation · Also in: Kinetic Type & Lyrics</sub><br><sub>⚠️ Free for commercial use, but under GreenSock's own license, not an OSI-approved open-source license.</sub> |
+| [Motion](https://github.com/motiondivision/motion) | 35.2k | 🟢 Active | React / JS | Formerly Framer Motion. An animation library for React and JS with smooth springs, gestures, and layout transitions.<br><sub>Good for: Web motion</sub> |
+| [Lottie](https://github.com/airbnb/lottie-web) | 32.5k | 🟡 Slowing | JavaScript | Plays After Effects animations exported as Bodymovin JSON in the browser. The common format for flat illustration and icon animation.<br><sub>Good for: Effect assets · Web animation</sub><br><sub>⚠️ The animation itself is usually made in AE; code handles playback and control.</sub> |
+| [GSAP](https://github.com/greensock/GSAP) | 30.7k | 🟢 Active | JavaScript | Long-established JS animation engine. Plugins like SplitText and MorphSVG are now all free. Strong at split-text animation and SVG morphing.<br><sub>Good for: MV · Web animation · Also in: Kinetic Type & Lyrics</sub><br><sub>⚠️ Free for commercial use, but under GreenSock's own license, not an OSI-approved open-source license.</sub> |
 | [react-spring](https://github.com/pmndrs/react-spring) | 29.3k | 🟢 Active | React | React animation library built on spring physics, for natural, bouncy motion.<br><sub>Good for: Web motion</sub> |
-| [Magic UI](https://github.com/magicuidesign/magicui) | 23.2k | 🟢 Active | React | React component library with motion built in: text animations, glowing borders, particle backgrounds, and more.<br><sub>Good for: Web motion · Also in: Kinetic Type & Lyrics</sub> |
-| [brag](https://github.com/latent-spaces/brag) | 20.8k | 🟢 Active | Python / skill | After you finish a project, one command makes a short promo video with music and copy, rendered with HyperFrames.<br><sub>Good for: Project promo videos</sub> |
-| [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | 19.7k | 🟢 Active | TypeScript | Write animations as TypeScript generator functions, with a timeline editor and audio sync. Well suited to explainer videos and code demos.<br><sub>Good for: Explainer videos · MV · Also in: Code & Terminal Demo, Math Explainer</sub> |
+| [Graphite](https://github.com/GraphiteEditor/Graphite) | 27.9k | 🟢 Active | Rust / Node graph | An open-source 2D graphics editor with a node graph under the layers: shapes, patterns and arrangements are generated procedurally with nodes and can be tweaked live.<br><sub>Good for: Vector art · Procedural design · Also in: Generative Art</sub><br><sub>⚠️ Still in alpha; motion graphics are on the roadmap, and today it is mainly for vector and procedural design.</sub> |
+| [Magic UI](https://github.com/magicuidesign/magicui) | 23.3k | 🟢 Active | React | React component library with motion built in: text animations, glowing borders, particle backgrounds, and more.<br><sub>Good for: Web motion · Also in: Kinetic Type & Lyrics</sub> |
+| [brag](https://github.com/latent-spaces/brag) | 21.6k | 🟢 Active | Python / skill | After you finish a project, one command makes a short promo video with music and copy, rendered with HyperFrames.<br><sub>Good for: Project promo videos</sub> |
+| [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | 19.9k | 🟢 Active | TypeScript | Write animations as TypeScript generator functions, with a timeline editor and audio sync. Well suited to explainer videos and code demos.<br><sub>Good for: Explainer videos · MV · Also in: Code & Terminal Demo, Math Explainer</sub> |
+| [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | 19.9k | 🟢 Active | React / TS | AI coding agent skill: captures screenshots of your real web pages and turns them into cinematic product promo videos with Remotion.<br><sub>Good for: Product promo videos · Also in: Shorts, Captions & Editing</sub> |
 | [mo.js](https://github.com/mojs/mojs) | 18.9k | 🟢 Active | JavaScript | JS library built for motion graphics: bursts, ripples, shape pop-ins and other small MG effects.<br><sub>Good for: Effect assets</sub> |
-| [GSAP Skills](https://github.com/greensock/gsap-skills) | 18.1k | 🟢 Active | Skill | Official GSAP AI skills that teach coding agents to use GSAP and its plugins correctly.<br><sub>Good for: Web animation</sub> |
-| [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | 18.1k | 🟢 Active | React / TS | AI coding agent skill: captures screenshots of your real web pages and turns them into cinematic product promo videos with Remotion.<br><sub>Good for: Product promo videos · Also in: Shorts, Captions & Editing</sub> |
+| [GSAP Skills](https://github.com/greensock/gsap-skills) | 18.5k | 🟢 Active | Skill | Official GSAP AI skills that teach coding agents to use GSAP and its plugins correctly.<br><sub>Good for: Web animation</sub> |
+| [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 16.6k | 🟢 Active | JavaScript | A toolbox of film styles made in code: 66 ready-made styles (Memphis, subway map, chalkboard, and more) that let an AI coding agent make videos in each style, all drawn with code.<br><sub>Good for: MV · Short films · Also in: Hand-drawn & Whiteboard, Pixel & Retro</sub><br><sub>⚠️ Styles are tuned for Claude; results may differ with other models.</sub> |
+| [Awesome Opus 5.5 Videos](https://github.com/yihui-dev/awesome-opus5-5-videos) | 15.3k | 🟢 Active | HTML / Canvas / three.js | 703 prompts people used to make videos with Claude Opus 5.5, each linked to the original post and a live remake. The picture is drawn in code (Canvas, SVG, three.js): mostly motion graphics, explainers and 3D scenes.<br><sub>Good for: Prompt collection · MV · Also in: 3D, Generative Art</sub><br><sub>⚠️ A few entries overlay AI-generated images or use Blender; those are labeled.</sub> |
 | [Paper.js](https://github.com/paperjs/paper.js) | 15.2k | 🟢 Active | JavaScript | Vector graphics scripting framework with strong path operations and Bezier curves, good for vector-style generative art.<br><sub>Good for: Generative art · Also in: Generative Art</sub> |
-| [Konva](https://github.com/konvajs/konva) | 14.9k | 🟢 Active | TypeScript | HTML5 Canvas framework with shapes, tweened animation and drag interaction. Official React and Vue wrappers.<br><sub>Good for: Canvas animation</sub> |
-| [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 13.9k | 🟢 Active | JavaScript | A toolbox of film styles made in code: 66 ready-made styles (Memphis, subway map, chalkboard, and more) that let an AI coding agent make videos in each style, all drawn with code.<br><sub>Good for: MV · Short films · Also in: Hand-drawn & Whiteboard, Pixel & Retro</sub><br><sub>⚠️ Styles are tuned for Claude; results may differ with other models.</sub> |
+| [Konva](https://github.com/konvajs/konva) | 15k | 🟢 Active | TypeScript | HTML5 Canvas framework with shapes, tweened animation and drag interaction. Official React and Vue wrappers.<br><sub>Good for: Canvas animation</sub> |
 | [Theatre.js](https://github.com/theatre-js/theatre) | 13k | ⚪ Dormant | TypeScript | Visual timeline for web animation: define properties in code, drag keyframes in the UI. Often paired with three.js for 3D camera animation.<br><sub>Good for: MV · Web animation · Also in: 3D</sub> |
 | [SVG.js](https://github.com/svgdotjs/svg.js) | 11.9k | 🟢 Active | JavaScript | Lightweight library for manipulating and animating SVG.<br><sub>Good for: Web animation</sub> |
 | [Zdog](https://github.com/metafizzy/zdog) | 10.7k | ⚪ Dormant | JavaScript | Pseudo-3D flat engine that draws rounded, cute flat-shaded 3D shapes.<br><sub>Good for: Web animation · Also in: 3D, Isometric & Voxel</sub><br><sub>⚠️ Not updated in years; simple and stable.</sub> |
+| [EffectCraft](https://github.com/storytold/effectcraft) | 8.8k | 🟢 Active | Rust (GUI) | Open-source compositing app written from scratch, After Effects-style: layers, keyframes, expressions, 300+ effects.<br><sub>Good for: Motion graphics · Post compositing · Also in: Glitch & Post FX</sub><br><sub>⚠️ Mostly a graphical interface; the expressions part can be scripted in code.</sub> |
 | [React Native Skia](https://github.com/wcandillon/react-native-skia) | 8.8k | 🟢 Active | React Native | Draw high-performance 2D graphics and animations in React Native with Skia. Supports runtime shaders.<br><sub>Good for: Mobile motion · Also in: Shaders & Psychedelic</sub> |
 | [Two.js](https://github.com/jonobr1/two.js) | 8.7k | 🟢 Active | JavaScript | 2D vector drawing API. The same code outputs SVG, Canvas, or WebGL, good for flat geometric animation.<br><sub>Good for: Web animation · Also in: Generative Art</sub> |
-| [EffectCraft](https://github.com/storytold/effectcraft) | 8.6k | 🟢 Active | Rust (GUI) | Open-source compositing app written from scratch, After Effects-style: layers, keyframes, expressions, 300+ effects.<br><sub>Good for: Motion graphics · Post compositing · Also in: Glitch & Post FX</sub><br><sub>⚠️ Mostly a graphical interface; the expressions part can be scripted in code.</sub> |
 | [Arwes](https://github.com/arwes/arwes) | 7.6k | 🟢 Active | TypeScript | Sci-fi web UI framework with futuristic effects: glowing borders, expanding lines, and text decoding.<br><sub>Good for: Sci-fi UI · Also in: Sci-fi HUD</sub> |
-| [Remotion Skills](https://github.com/remotion-dev/skills) | 6.7k | 🟢 Active | Markdown skill | Official Remotion skills for AI coding agents, so Claude Code and others can write Remotion videos directly.<br><sub>Good for: MV · Short videos</sub> |
+| [Remotion Skills](https://github.com/remotion-dev/skills) | 7.2k | 🟢 Active | Markdown skill | Official Remotion skills for AI coding agents, so Claude Code and others can write Remotion videos directly.<br><sub>Good for: MV · Short videos</sub> |
 | [PAG](https://github.com/Tencent/libpag) | 5.8k | 🟢 Active | C++ / cross-platform | Tencent's open-source After Effects animation solution. Similar idea to Lottie but supports more AE features, and text and images inside can be replaced from code.<br><sub>Good for: Effect assets</sub> |
-| [Lottie Skill](https://github.com/diffusionstudio/lottie) | 5.7k | 🟢 Active | TypeScript | Lets Claude Code or Codex write production-ready Lottie animation files directly.<br><sub>Good for: Lottie animation</sub> |
+| [Lottie Skill](https://github.com/diffusionstudio/lottie) | 5.8k | 🟢 Active | TypeScript | Lets Claude Code or Codex write production-ready Lottie animation files directly.<br><sub>Good for: Lottie animation</sub> |
 | [html-video](https://github.com/nexu-io/html-video) | 4.8k | 🟢 Active | HTML / CSS | Lets a local AI coding agent turn HTML/CSS into video. Ships with 21 templates, including kinetic type, Swiss grid and data cards.<br><sub>Good for: Short videos · Promo videos · Also in: Kinetic Type & Lyrics</sub> |
 | [Revideo](https://github.com/midrender/revideo) | 4.2k | 🟢 Active | TypeScript | Fork of Motion Canvas focused on headless rendering, so videos can be generated in bulk through an API.<br><sub>Good for: Short videos · Batch video rendering · Also in: Shorts, Captions & Editing</sub> |
 | [VAP](https://github.com/Tencent/vap) | 4.2k | 🟢 Active | Cross-platform | Tencent's open-source player for videos with an alpha channel, often used for complex effects such as live-stream gifts.<br><sub>Good for: Effect assets</sub> |
-| [onetake](https://github.com/feitangyuan/onetake) | 4k | 🟢 Active | Python / HTML | Skill for single-take motion shorts: every scene grows out of the previous one instead of switching pages like a slideshow.<br><sub>Good for: Product launch videos</sub><br><sub>⚠️ A paid Pro version is also available.</sub> |
-| [P(doom) MV (mexicat version)](https://github.com/mexicat/pdoom-video) | 3.8k | 🟢 Active | JavaScript | Another code-rendered music video for "I'm Upping My P(doom)", with word-by-word beat-synced lyrics.<br><sub>Good for: Lyric MV · Also in: Kinetic Type & Lyrics</sub><br><sub>⚠️ AI was used only to split the audio into stems; all visuals are rendered by code.</sub> |
-| [hairline](https://github.com/lucasmarkes/hairline) | 3.5k | 🟢 Active | TypeScript | Isometric line figures and objects that turn to follow the mouse. Works with React and plain web pages.<br><sub>Good for: Web motion · Also in: Isometric & Voxel</sub> |
-| [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.3k | 🟢 Active | Python / Web | 15 motion design style demo films, each written as code by Claude Opus 5.5 from a single prompt. Prompts and source included.<br><sub>Good for: Style sample clips · Also in: 3D, Hand-drawn & Whiteboard</sub><br><sub>⚠️ Of the 15, only the 3D one uses Blender; the rest are pure code.</sub> |
-| [anything2explainer](https://github.com/Vincentwei1021/anything2explainer) | 3.2k | 🟢 Active | React / TS | Give it a topic and it makes a black-background motion graphics explainer video, with voiceover and captions. Every frame is rendered in code.<br><sub>Good for: Explainer videos · Also in: Data Animation</sub> |
-| [fframes](https://github.com/dmtrKovalenko/fframes) | 3k | 🟢 Active | Rust / SVG | Write video with Rust and SVG, rendered on the GPU, with a focus on speed. Also includes a skill for AI coding agents.<br><sub>Good for: Batch video rendering · Also in: Shorts, Captions & Editing</sub> |
-| [Motion Design Skill](https://github.com/LottieFiles/motion-design-skill) | 2.9k | 🟢 Active | Markdown skill | Teaches AI agents motion design principles: timing, easing, choreography, and the Disney animation principles.<br><sub>Good for: Motion design</sub> |
+| [onetake](https://github.com/feitangyuan/onetake) | 4.1k | 🟢 Active | Python / HTML | Skill for single-take motion shorts: every scene grows out of the previous one instead of switching pages like a slideshow.<br><sub>Good for: Product launch videos</sub><br><sub>⚠️ A paid Pro version is also available.</sub> |
+| [P(doom) MV (mexicat version)](https://github.com/mexicat/pdoom-video) | 3.9k | 🟢 Active | JavaScript | Another code-rendered music video for "I'm Upping My P(doom)", with word-by-word beat-synced lyrics.<br><sub>Good for: Lyric MV · Also in: Kinetic Type & Lyrics</sub><br><sub>⚠️ AI was used only to split the audio into stems; all visuals are rendered by code.</sub> |
+| [hairline](https://github.com/lucasmarkes/hairline) | 3.9k | 🟢 Active | TypeScript | Isometric line figures and objects that turn to follow the mouse. Works with React and plain web pages.<br><sub>Good for: Web motion · Also in: Isometric & Voxel</sub> |
+| [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.5k | 🟢 Active | Python / Web | 15 motion design style demo films, each written as code by Claude Opus 5.5 from a single prompt. Prompts and source included.<br><sub>Good for: Style sample clips · Also in: 3D, Hand-drawn & Whiteboard</sub><br><sub>⚠️ Of the 15, only the 3D one uses Blender; the rest are pure code.</sub> |
+| [anything2explainer](https://github.com/Vincentwei1021/anything2explainer) | 3.3k | 🟢 Active | React / TS | Give it a topic and it makes a black-background motion graphics explainer video, with voiceover and captions. Every frame is rendered in code.<br><sub>Good for: Explainer videos · Also in: Data Animation</sub> |
+| [Motion Design Skill](https://github.com/LottieFiles/motion-design-skill) | 3.1k | 🟢 Active | Markdown skill | Teaches AI agents motion design principles: timing, easing, choreography, and the Disney animation principles.<br><sub>Good for: Motion design</sub> |
+| [fframes](https://github.com/dmtrKovalenko/fframes) | 3.1k | 🟢 Active | Rust / SVG | Write video with Rust and SVG, rendered on the GPU, with a focus on speed. Also includes a skill for AI coding agents.<br><sub>Good for: Batch video rendering · Also in: Shorts, Captions & Editing</sub> |
 | [P(doom) MV](https://github.com/JohnHeibel/PDoomVideo) | 2.9k | 🟢 Active | JavaScript | Full source for the music video "I'm Upping My P(doom)", made by Claude Opus 5.5 writing code.<br><sub>Good for: MV · Also in: Kinetic Type & Lyrics</sub> |
-| [Pixel2Motion](https://github.com/nolangz/pixel2motion) | 2.6k | 🟢 Active | Python / SVG | Converts raster logos to clean SVG, then makes logo animations and video previews.<br><sub>Good for: Logo animation</sub> |
-| [huashu-motion](https://github.com/alchaincyf/huashu-motion) | 2.5k | 🟢 Active | JavaScript | Has an AI coding agent make product launch films, compose its own soundtrack, and take edits by pointing at the frame.<br><sub>Good for: Product promo videos · Also in: 3D</sub> |
+| [huashu-motion](https://github.com/alchaincyf/huashu-motion) | 2.7k | 🟢 Active | JavaScript | Has an AI coding agent make product launch films, compose its own soundtrack, and take edits by pointing at the frame.<br><sub>Good for: Product promo videos · Also in: 3D</sub> |
+| [Pixel2Motion](https://github.com/nolangz/pixel2motion) | 2.7k | 🟢 Active | Python / SVG | Converts raster logos to clean SVG, then makes logo animations and video previews.<br><sub>Good for: Logo animation</sub> |
+| [Bang Motion](https://github.com/bangtutorial/bang-motion) | 2.2k | 🟢 Active | HTML | Browser motion graphics skill: intros, promos, transitions, and kinetic typography, in five styles.<br><sub>Good for: Intros · Promo videos · Also in: Kinetic Type & Lyrics</sub><br><sub>⚠️ The optional After Effects cartoon explainer goes through a Higgsfield bridge; the default workflow is code animation in the browser.</sub> |
 | [Astrofox](https://github.com/astrofox-io/astrofox) | 2k | 🟢 Active | TypeScript (GUI) | Motion graphics software that turns audio into visualizer videos: spectrum, waveform, text, and 3D layers can be combined and exported.<br><sub>Good for: Music visualizer · MV · Also in: Music Visualization</sub><br><sub>⚠️ Mainly a graphical interface.</sub> |
-| [Bang Motion](https://github.com/bangtutorial/bang-motion) | 1.9k | 🟢 Active | HTML | Browser motion graphics skill: intros, promos, transitions, and kinetic typography, in five styles.<br><sub>Good for: Intros · Promo videos · Also in: Kinetic Type & Lyrics</sub><br><sub>⚠️ The optional After Effects cartoon explainer goes through a Higgsfield bridge; the default workflow is code animation in the browser.</sub> |
+| [AI Animation Skills](https://github.com/Unclecheng-li/AI_Animation) | 1.8k | 🟢 Active | HTML / skill | 17 skills that have an AI coding agent write single-file HTML animations: PPT-style explainers, flowcharts, network protocols, animated architecture diagrams, storyboards and more.<br><sub>Good for: Explainer decks · Concept animations · Also in: Data Animation</sub> |
 | [Animotion](https://github.com/animotionjs/animotion) | 1.8k | 🟢 Active | Svelte | Write animated presentations in Svelte, with smooth code highlight transitions and element tweens.<br><sub>Good for: Explainer videos · Talks · Also in: Code & Terminal Demo</sub> |
 | [remocn](https://github.com/Remocn/remocn) | 1.7k | 🟢 Active | React / TS | Ready-made animations, transitions, backgrounds, and scene components for Remotion.<br><sub>Good for: MV · Short videos · Also in: Shorts, Captions & Editing</sub><br><sub>⚠️ Requires Remotion; Remotion's own license terms still apply.</sub> |
-| [reanimate](https://github.com/NiazMorshed2007/reanimate) | 1.5k | 🟢 Active | JavaScript | Claude Code skill: breaks any animation down frame by frame, recreates it in code, and checks frame by frame how closely the copy matches.<br><sub>Good for: Animation recreation</sub> |
-| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.4k | 🟡 Slowing | TypeScript | Small tool from the Paper team: turns a logo into a flowing liquid-metal animation.<br><sub>Good for: Logo motion · Also in: Liquid Glass, Shaders & Psychedelic</sub> |
-| [Reanimate](https://github.com/reanimate/reanimate) | 1.3k | 🟡 Slowing | Haskell | SVG animation library written in Haskell, with LaTeX formula support and a look close to 3B1B.<br><sub>Good for: Explainer videos · Also in: Math Explainer</sub><br><sub>⚠️ Niche language, small community.</sub> |
-| [motion-skills](https://github.com/iart-ai/motion-skills) | 1.3k | 🟢 Active | Markdown skill | 50 AI coding agent skills: kinetic typography, data visualization, explainer videos, vertical short videos, WebGL, Manim.<br><sub>Good for: Various videos</sub> |
+| [reanimate](https://github.com/NiazMorshed2007/reanimate) | 1.7k | 🟢 Active | JavaScript | Claude Code skill: breaks any animation down frame by frame, recreates it in code, and checks frame by frame how closely the copy matches.<br><sub>Good for: Animation recreation</sub> |
+| [motion-skills](https://github.com/iart-ai/motion-skills) | 1.5k | 🟢 Active | Markdown skill | 50 AI coding agent skills: kinetic typography, data visualization, explainer videos, vertical short videos, WebGL, Manim.<br><sub>Good for: Various videos</sub> |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.5k | 🟡 Slowing | TypeScript | Small tool from the Paper team: turns a logo into a flowing liquid-metal animation.<br><sub>Good for: Logo motion · Also in: Liquid Glass, Shaders & Psychedelic</sub> |
+| [Reanimate](https://github.com/reanimate/reanimate) | 1.4k | 🟡 Slowing | Haskell | SVG animation library written in Haskell, with LaTeX formula support and a look close to 3B1B.<br><sub>Good for: Explainer videos · Also in: Math Explainer</sub><br><sub>⚠️ Niche language, small community.</sub> |
+| [Motion Graphics Skills](https://github.com/Barty-Bart/motion-graphics) | 1.3k | 🟢 Active | HTML / skill | Collection of motion graphics skills for Claude Code and Codex.<br><sub>Good for: Motion graphics</sub> |
+| [cinetic](https://github.com/Leonxlnx/cinetic) | 1.2k | 🟢 Active | TypeScript | Has an AI coding agent direct cinematic launch films and motion design from code, rendered with Remotion by default.<br><sub>Good for: Launch videos</sub> |
 | [frame.js](https://github.com/mrdoob/frame.js) | 1.2k | 🟡 Slowing | JavaScript | JavaScript timeline editor by the author of three.js, for sequencing shots and effects in web demos.<br><sub>Good for: Web demo choreography · Also in: Demoscene</sub> |
-| [Motion Graphics Skills](https://github.com/Barty-Bart/motion-graphics) | 1.1k | 🟢 Active | HTML / skill | Collection of motion graphics skills for Claude Code and Codex.<br><sub>Good for: Motion graphics</sub> |
-| [cinetic](https://github.com/Leonxlnx/cinetic) | 1.1k | 🟢 Active | TypeScript | Has an AI coding agent direct cinematic launch films and motion design from code, rendered with Remotion by default.<br><sub>Good for: Launch videos</sub> |
+| [Opus 5.5 Video Prompts](https://github.com/joeseesun/opus-video-prompts) | 1.1k | 🟢 Active | Prompts / HTML | A Chinese roundup of Opus 5.5 code-rendered videos: 18 full prompts and 54 public cases, including line-art animation, science explainers, launch films and lyric MVs.<br><sub>Good for: Prompt collection · Explainers · MV · Also in: Hand-drawn & Whiteboard, Shorts, Captions & Editing</sub><br><sub>⚠️ A few cases in the overview use Seedance, Runway or Blender, and the table says so; the featured prompts are all code-rendered.</sub> |
+| [Code Animation Style Prompts](https://github.com/XiaoyeCodes/code-animation-prompts) | 1.1k | 🟢 Active | HTML / skill | 341 code-animation style prompts and 196 reference stills, with an offline picker. Can be installed as a Claude Code / Codex skill.<br><sub>Good for: Style prompts</sub> |
 | [motion-anything](https://github.com/nexu-io/motion-anything) | 1.1k | 🟢 Active | JavaScript | Describe the feel in one sentence and AI generates motion pages and launch videos. Comes with reusable shader, Canvas, and animated text recipes.<br><sub>Good for: Motion pages · Launch videos · Also in: Shaders & Psychedelic</sub> |
+| [Claude Remotion Skill](https://github.com/haidrrrry/claude-remotion-skill) | 1k | 🟢 Active | TypeScript | Open-source skill that teaches Claude Code and Claude Desktop to write Remotion videos.<br><sub>Good for: Short videos</sub> |
 | [Rive Runtime](https://github.com/rive-app/rive-wasm) | 1k | 🟢 Active | TypeScript | Web runtime for Rive animations: vector interactive animations with state machines, with state changes controlled from code.<br><sub>Good for: Interactive animation</sub><br><sub>⚠️ Animations are usually made in the Rive editor, which is not open source.</sub> |
-| [dotLottie Web](https://github.com/LottieFiles/dotlottie-web) | 939 | 🟢 Active | TypeScript | Official LottieFiles web player for Lottie / dotLottie, built on Rust + WASM for better performance.<br><sub>Good for: Effect assets · Web animation</sub> |
-| [Guizang Product Video](https://github.com/op7418/guizang-product-video-skill) | 920 | 🟢 Active | Python | Guizang's promo video skill: reuses a product's real components and design language to make software update promos in code, with script, music, and voiceover.<br><sub>Good for: Software promo videos</sub> |
-| [Claude Remotion Skill](https://github.com/haidrrrry/claude-remotion-skill) | 897 | 🟢 Active | TypeScript | Open-source skill that teaches Claude Code and Claude Desktop to write Remotion videos.<br><sub>Good for: Short videos</sub> |
-| [Code Animation Style Prompts](https://github.com/XiaoyeCodes/code-animation-prompts) | 864 | 🟢 Active | HTML / skill | 341 code-animation style prompts and 196 reference stills, with an offline picker. Can be installed as a Claude Code / Codex skill.<br><sub>Good for: Style prompts</sub> |
-| [motion-web](https://github.com/feitangyuan/motion-web) | 854 | 🟢 Active | HTML / JS | Another skill set from the onetake author: motion-first creative websites built on vanilla three.js, Canvas, and WebGL.<br><sub>Good for: Motion websites · Also in: 3D</sub> |
-| [Claude Motion Design](https://github.com/howseen-ai/claude-motion-design) | 798 | 🟢 Active | Python | Skill for pure-code motion videos: HTML + Playwright + ffmpeg, with no AI-generated imagery.<br><sub>Good for: Motion graphics video</sub> |
-| [genjutsu](https://github.com/AThevon/genjutsu) | 767 | 🟢 Active | Python / skill | Creative coding skills for Claude Code and claude.ai: motion, micro-interactions, and design sense.<br><sub>Good for: Creative coding · Also in: Generative Art</sub> |
-| [Rossark Motion](https://github.com/rossark0/rossark-motion-skill) | 761 | 🟢 Active | Swift / SVG | Claude Code skill: turns any SVG into a professional 60 fps animation.<br><sub>Good for: SVG animation</sub> |
-| [Shader Lab](https://github.com/basementstudio/shader-lab) | 719 | 🟢 Active | TypeScript | Toolkit for creating, stacking, and animating shaders. Combine multiple effects like layers.<br><sub>Good for: Shader motion · Also in: Shaders & Psychedelic</sub> |
-| [drawsvg](https://github.com/cduck/drawsvg) | 696 | 🟢 Active | Python | Generate SVG graphics and animations from Python, with interactive preview in Jupyter.<br><sub>Good for: SVG animation · Also in: Data Animation</sub> |
-| [Aora Bot](https://github.com/sam70361/aora-bot) | 639 | 🟢 Active | TypeScript | A web character engine drawn in code, with 46 original characters and 44 animation states.<br><sub>Good for: Character animation · Also in: Anime, MMD & VRM</sub> |
-| [Launch Motion Skills](https://github.com/charlie947/motion-graphics-skills) | 615 | 🟢 Active | Shell / skill | 13 Claude Code skills for making launch-quality motion graphics. Every frame is code, no After Effects.<br><sub>Good for: Launch videos</sub> |
-| [ff-tracking](https://github.com/mrsarac/ff-tracking) | 596 | 🟢 Active | Rust | Short film where a virtual camera films an AI agent's screen and tracks every glyph. Uses fframes two-pass rendering and SkSL shaders; the sound effects are also synthesized in code.<br><sub>Good for: Motion shorts · Also in: Glitch & Post FX</sub> |
-| [MotionClone](https://github.com/blixvip/MotionClone) | 588 | 🟢 Active | Python | Rebuilds a reference video as an editable HyperFrames project and compares it with the original frame by frame.<br><sub>Good for: Motion recreation</sub> |
-| [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 484 | 🟢 Active | TypeScript | Fast programmatic video engine made for AI coding agents.<br><sub>Good for: Batch video rendering · Also in: Shorts, Captions & Editing</sub><br><sub>⚠️ PolyForm Small Business license: free for individuals and small companies; larger companies need a commercial license.</sub> |
-| [Opus Video Skills](https://github.com/tuzhechen2005/opus-video-skills) | 472 | 🟢 Active | JavaScript | Video-making skills for Claude Opus, where every frame and every note is generated in code.<br><sub>Good for: Short films · MV · Also in: Music Visualization</sub> |
-| [Product Launch Motion](https://github.com/AbubakrChan/product-launch-motion) | 438 | 🟢 Active | JavaScript | Claude Code skill for Dribbble-quality product launch videos from code, with one shape carrying through without cuts.<br><sub>Good for: Product launch videos</sub> |
-| [video-director](https://github.com/win4r/video-director) | 415 | 🟢 Active | Python | Claude skill: directs, builds, and checks frame by frame videos rendered from HTML / Canvas.<br><sub>Good for: Code video director</sub> |
-| [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) | 386 | 🟢 Active | Python | Made by a Chinese developer: Claude Opus writes code to make videos. It proposes three options with previews first, then renders the chosen one frame by frame.<br><sub>Good for: Short films · Also in: 3D</sub> |
-| [Code Video Showcase](https://github.com/Moessif/code-video-showcase) | 385 | 🟢 Active | HTML / Canvas / three.js | Pure-code beat-synced showcase video skill, rendered frame by frame with HTML, Canvas, SVG, and three.js.<br><sub>Good for: Beat-synced showreels · Also in: 3D</sub> |
-| [shipvideo](https://github.com/diggerhq/shipvideo) | 381 | 🟢 Active | TypeScript | Paste a URL or a one-line prompt: Opus writes HTML and renders it in the cloud, giving a 20 to 40 second launch video with no video model.<br><sub>Good for: Product launch videos</sub> |
-| [motion2code](https://github.com/lovisdotio/motion2code) | 344 | 🟢 Active | HTML | Rebuilds a motion video as looping SVG + GSAP code, checked frame by frame against the source.<br><sub>Good for: Motion recreation</sub><br><sub>⚠️ The reference videos in the examples were made by a video model; this skill only handles recreating them in code.</sub> |
-| [fy-code-animation](https://github.com/Akillll-DuoHe/fy-code-animation) | 288 | 🟢 Active | TypeScript | Turns Chinese copy, style prompts, and sound into coherent code animation (Remotion / Canvas / HTML).<br><sub>Good for: Explainer animation</sub> |
-| [What If Animation](https://github.com/kelano86/what-if-animation) | 280 | 🟢 Active | TypeScript | Enter a "what if..." topic and get a complete explainer animation, with no image or video models.<br><sub>Good for: Explainer shorts</sub> |
-| [html-anime](https://github.com/blixvip/html-anime) | 246 | 🟢 Active | JavaScript | Turns a scene description into a storyboard sheet, then has a coding agent draw the whole film in HTML. No video model is called.<br><sub>Good for: Animated shorts · Also in: Anime, MMD & VRM</sub> |
-| [RuiC Motion Reel](https://github.com/HRuiCcc/RuiC-motion-reel) | 193 | 🟢 Active | Python | One sentence generates a motion promo film, with length computed from BPM and bars; standard promos use a Remotion template.<br><sub>Good for: Promo videos</sub> |
-| [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 180 | 🟢 Active | HTML | 74 animated HTML explainer boards (charts, diagrams, flows) for YouTube explainer videos.<br><sub>Good for: Explainer video assets · Also in: Data Animation</sub> |
-| [Vibe Knowledge Shorts](https://github.com/xiazhuo123456789/vibe-knowledge-video) | 179 | 🟢 Active | Python | Generates cinematic knowledge short videos in pure code, with bilingual captions, synthesized music, and recreated historical documents.<br><sub>Good for: Knowledge shorts · Also in: Kinetic Type & Lyrics</sub> |
-| [BB-Video](https://github.com/BubbleBrainBB/BB-Video) | 158 | 🟢 Active | JavaScript | Skill for making videos in pure code: narrated explainers and product promos in 32 visual styles.<br><sub>Good for: Explainers · Promo videos · Also in: 3D</sub><br><sub>⚠️ 3D mascots can optionally be made in Blender; without Blender it falls back to three.js.</sub> |
-| [sy-style-100](https://github.com/xiaoxiong20xx-code/sy-style-100) | 71 | 🟢 Active | HTML | Made by a Chinese developer: 100 videos where every frame is computed by code. 20 styles plus 60 industry ads, usable commercially.<br><sub>Good for: Style sample clips</sub> |
-| [DeepSeek Opus Motion](https://github.com/8533502-dev/deepseek-opus-motion-skill) | 65 | 🟢 Active | TypeScript | Gets DeepSeek to make Remotion motion videos close to Claude Opus quality using the same prompts.<br><sub>Good for: Motion videos</sub> |
-| [Knowledge Explainer](https://github.com/znyupup/knowledge-explainer-skill) | 62 | 🟡 Slowing | JavaScript | Automatically turns a Markdown script into an explainer animation video, rendered with Remotion.<br><sub>Good for: Explainer animation</sub> |
+| [dotLottie Web](https://github.com/LottieFiles/dotlottie-web) | 947 | 🟢 Active | TypeScript | Official LottieFiles web player for Lottie / dotLottie, built on Rust + WASM for better performance.<br><sub>Good for: Effect assets · Web animation</sub> |
+| [Guizang Product Video](https://github.com/op7418/guizang-product-video-skill) | 943 | 🟢 Active | Python | Guizang's promo video skill: reuses a product's real components and design language to make software update promos in code, with script, music, and voiceover.<br><sub>Good for: Software promo videos</sub> |
+| [motion-web](https://github.com/feitangyuan/motion-web) | 859 | 🟢 Active | HTML / JS | Another skill set from the onetake author: motion-first creative websites built on vanilla three.js, Canvas, and WebGL.<br><sub>Good for: Motion websites · Also in: 3D</sub> |
+| [Rossark Motion](https://github.com/rossark0/rossark-motion-skill) | 832 | 🟢 Active | Swift / SVG | Claude Code skill: turns any SVG into a professional 60 fps animation.<br><sub>Good for: SVG animation</sub> |
+| [Claude Motion Design](https://github.com/howseen-ai/claude-motion-design) | 826 | 🟢 Active | Python | Skill for pure-code motion videos: HTML + Playwright + ffmpeg, with no AI-generated imagery.<br><sub>Good for: Motion graphics video</sub> |
+| [genjutsu](https://github.com/AThevon/genjutsu) | 805 | 🟢 Active | Python / skill | Creative coding skills for Claude Code and claude.ai: motion, micro-interactions, and design sense.<br><sub>Good for: Creative coding · Also in: Generative Art</sub> |
+| [Shader Lab](https://github.com/basementstudio/shader-lab) | 724 | 🟢 Active | TypeScript | Toolkit for creating, stacking, and animating shaders. Combine multiple effects like layers.<br><sub>Good for: Shader motion · Also in: Shaders & Psychedelic</sub> |
+| [drawsvg](https://github.com/cduck/drawsvg) | 697 | 🟢 Active | Python | Generate SVG graphics and animations from Python, with interactive preview in Jupyter.<br><sub>Good for: SVG animation · Also in: Data Animation</sub> |
+| [Launch Motion Skills](https://github.com/charlie947/motion-graphics-skills) | 684 | 🟢 Active | Shell / skill | 13 Claude Code skills for making launch-quality motion graphics. Every frame is code, no After Effects.<br><sub>Good for: Launch videos</sub> |
+| [MotionClone](https://github.com/blixvip/MotionClone) | 672 | 🟢 Active | Python | Rebuilds a reference video as an editable HyperFrames project and compares it with the original frame by frame.<br><sub>Good for: Motion recreation</sub> |
+| [Aora Bot](https://github.com/sam70361/aora-bot) | 663 | 🟢 Active | TypeScript | A web character engine drawn in code, with 46 original characters and 44 animation states.<br><sub>Good for: Character animation · Also in: Anime, MMD & VRM</sub> |
+| [snapcn](https://github.com/shadcn-labs/snapcn) | 628 | 🟢 Active | TypeScript (Remotion) | A Remotion component registry for product demo videos: AI chat streams, terminal sessions, device frames and captions, installed with the shadcn CLI.<br><sub>Good for: Product demo videos · Also in: Shorts, Captions & Editing, Code & Terminal Demo</sub> |
+| [ff-tracking](https://github.com/mrsarac/ff-tracking) | 618 | 🟢 Active | Rust | Short film where a virtual camera films an AI agent's screen and tracks every glyph. Uses fframes two-pass rendering and SkSL shaders; the sound effects are also synthesized in code.<br><sub>Good for: Motion shorts · Also in: Glitch & Post FX</sub> |
+| [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 523 | 🟢 Active | TypeScript | Fast programmatic video engine made for AI coding agents.<br><sub>Good for: Batch video rendering · Also in: Shorts, Captions & Editing</sub><br><sub>⚠️ PolyForm Small Business license: free for individuals and small companies; larger companies need a commercial license.</sub> |
+| [Remotion Bits](https://github.com/av/remotion-bits) | 517 | 🟢 Active | TypeScript (Remotion) | Ready-made animation components for Remotion: text effects, gradient transitions, particles, 3D scenes, charts and more; pull in only what you need.<br><sub>Good for: MG components · Short videos · Also in: Kinetic Type & Lyrics, Particles & Physics</sub><br><sub>⚠️ Not affiliated with the Remotion team.</sub> |
+| [Opus Video Skills](https://github.com/tuzhechen2005/opus-video-skills) | 501 | 🟢 Active | JavaScript | Video-making skills for Claude Opus, where every frame and every note is generated in code.<br><sub>Good for: Short films · MV · Also in: Music Visualization</sub> |
+| [video-director](https://github.com/win4r/video-director) | 476 | 🟢 Active | Python | Claude skill: directs, builds, and checks frame by frame videos rendered from HTML / Canvas.<br><sub>Good for: Code video director</sub> |
+| [Product Launch Motion](https://github.com/AbubakrChan/product-launch-motion) | 465 | 🟢 Active | JavaScript | Claude Code skill for Dribbble-quality product launch videos from code, with one shape carrying through without cuts.<br><sub>Good for: Product launch videos</sub> |
+| [Code Video Showcase](https://github.com/Moessif/code-video-showcase) | 446 | 🟢 Active | HTML / Canvas / three.js | Pure-code beat-synced showcase video skill, rendered frame by frame with HTML, Canvas, SVG, and three.js.<br><sub>Good for: Beat-synced showreels · Also in: 3D</sub> |
+| [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) | 405 | 🟢 Active | Python | Made by a Chinese developer: Claude Opus writes code to make videos. It proposes three options with previews first, then renders the chosen one frame by frame.<br><sub>Good for: Short films · Also in: 3D</sub> |
+| [shipvideo](https://github.com/diggerhq/shipvideo) | 384 | 🟢 Active | TypeScript | Paste a URL or a one-line prompt: Opus writes HTML and renders it in the cloud, giving a 20 to 40 second launch video with no video model.<br><sub>Good for: Product launch videos</sub> |
+| [iso-figure](https://github.com/MrBongoC/ai-iso-skill) | 357 | 🟢 Active | SVG / skill | A Claude skill: name an object and get one HTML file with a hairline isometric drawing whose parts move, count or play notes when pressed.<br><sub>Good for: Isometric figures · Interactive animation · Also in: Isometric & Voxel</sub> |
+| [motion2code](https://github.com/lovisdotio/motion2code) | 354 | 🟢 Active | HTML | Rebuilds a motion video as looping SVG + GSAP code, checked frame by frame against the source.<br><sub>Good for: Motion recreation</sub><br><sub>⚠️ The reference videos in the examples were made by a video model; this skill only handles recreating them in code.</sub> |
+| [lemo-wake](https://github.com/lemomo-ai/lemo-wake) | 354 | 🟢 Active | Python / HTML | Give Claude Code one picture and it takes the text, objects and people apart, rebuilds them in code and makes a seamless loop of about five seconds.<br><sub>Good for: Photo loops · Logo motion · Also in: Shorts, Captions & Editing</sub><br><sub>⚠️ Code and docs are CC BY-NC 4.0 (no commercial use). Optional small local models handle cut-outs, depth and background fill (LaMa) and are only downloaded after you agree; no image generation.</sub> |
+| [What If Animation](https://github.com/kelano86/what-if-animation) | 351 | 🟢 Active | TypeScript | Enter a "what if..." topic and get a complete explainer animation, with no image or video models.<br><sub>Good for: Explainer shorts</sub> |
+| [fy-code-animation](https://github.com/Akillll-DuoHe/fy-code-animation) | 350 | 🟢 Active | TypeScript | Turns Chinese copy, style prompts, and sound into coherent code animation (Remotion / Canvas / HTML).<br><sub>Good for: Explainer animation</sub> |
+| [html-anime](https://github.com/blixvip/html-anime) | 269 | 🟢 Active | JavaScript | Turns a scene description into a storyboard sheet, then has a coding agent draw the whole film in HTML. No video model is called.<br><sub>Good for: Animated shorts · Also in: Anime, MMD & VRM</sub> |
+| [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 207 | 🟢 Active | HTML | 74 animated HTML explainer boards (charts, diagrams, flows) for YouTube explainer videos.<br><sub>Good for: Explainer video assets · Also in: Data Animation</sub> |
+| [RuiC Motion Reel](https://github.com/HRuiCcc/RuiC-motion-reel) | 200 | 🟢 Active | Python | One sentence generates a motion promo film, with length computed from BPM and bars; standard promos use a Remotion template.<br><sub>Good for: Promo videos</sub> |
+| [Vibe Knowledge Shorts](https://github.com/xiazhuo123456789/vibe-knowledge-video) | 192 | 🟢 Active | Python | Generates cinematic knowledge short videos in pure code, with bilingual captions, synthesized music, and recreated historical documents.<br><sub>Good for: Knowledge shorts · Also in: Kinetic Type & Lyrics</sub> |
+| [HyperFrames Motion Reel](https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill) | 186 | 🟢 Active | HTML / GSAP | A Claude Code skill that turns a one-line theme into a beat-synced motion-graphics reel with bold type, morphing transitions, particles and camera moves, rendered with HyperFrames.<br><sub>Good for: Showreels · Beat-synced MG · Also in: Kinetic Type & Lyrics</sub> |
+| [BB-Video](https://github.com/BubbleBrainBB/BB-Video) | 182 | 🟢 Active | JavaScript | Skill for making videos in pure code: narrated explainers and product promos in 32 visual styles.<br><sub>Good for: Explainers · Promo videos · Also in: 3D</sub><br><sub>⚠️ 3D mascots can optionally be made in Blender; without Blender it falls back to three.js.</sub> |
+| [persian-motion-director](https://github.com/atmirrr/persian-motion-director) | 152 | 🟢 Active | JavaScript (Remotion) | A Claude skill for Persian kinetic typography and motion films: per-letter and per-dot animation that keeps letters joined, with the music locked first and cuts on the beat.<br><sub>Good for: Persian kinetic type · Also in: Kinetic Type & Lyrics</sub><br><sub>⚠️ Code is MIT; ships the Vazirmatn font (OFL).</sub> |
+| [DeepSeek Opus Motion](https://github.com/8533502-dev/deepseek-opus-motion-skill) | 81 | 🟢 Active | TypeScript | Gets DeepSeek to make Remotion motion videos close to Claude Opus quality using the same prompts.<br><sub>Good for: Motion videos</sub> |
+| [sy-style-100](https://github.com/xiaoxiong20xx-code/sy-style-100) | 79 | 🟢 Active | HTML | Made by a Chinese developer: 100 videos where every frame is computed by code. 20 styles plus 60 industry ads, usable commercially.<br><sub>Good for: Style sample clips</sub> |
+| [Knowledge Explainer](https://github.com/znyupup/knowledge-explainer-skill) | 67 | 🟡 Slowing | JavaScript | Automatically turns a Markdown script into an explainer animation video, rendered with Remotion.<br><sub>Good for: Explainer animation</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -280,28 +298,31 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Syntax highlighting, code appearing line by line, terminal recordings, algorithm animations
 
-16 projects, sorted by stars.
+**Picks:** [Slidev](https://github.com/slidevjs/slidev) · [VHS](https://github.com/charmbracelet/vhs) · [Code Hike](https://github.com/code-hike/codehike) · [git-sim](https://github.com/initialcommit-com/git-sim) · [Animotion](https://github.com/animotionjs/animotion)
+
+17 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [reveal.js](https://github.com/hakimel/reveal.js) | 72.5k | 🟢 Active | HTML / JS | Write presentations in HTML. Auto-Animate tweens elements automatically between slides.<br><sub>Good for: Explainer videos · Talks · Also in: Motion Graphics</sub> |
-| [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer) | 49.4k | ⚪ Dormant | JavaScript | Animates how algorithms run, including sorting, graphs, and dynamic programming.<br><sub>Good for: Explainer videos · Also in: Data Animation</sub> |
-| [Slidev](https://github.com/slidevjs/slidev) | 49.4k | 🟢 Active | Markdown / Vue | Write presentations in Markdown, with built-in code highlighting, smooth code transition animations, and recording.<br><sub>Good for: Explainer videos · Talks</sub> |
-| [Manim Community](https://github.com/ManimCommunity/manim) | 42.4k | 🟢 Active | Python | Community-maintained fork of Manim with the most complete docs and tutorials. Used for many math, physics and algorithm explainer videos on Bilibili.<br><sub>Good for: Explainer videos · Also in: Math Explainer, Data Animation</sub> |
+| [reveal.js](https://github.com/hakimel/reveal.js) | 72.6k | 🟢 Active | HTML / JS | Write presentations in HTML. Auto-Animate tweens elements automatically between slides.<br><sub>Good for: Explainer videos · Talks · Also in: Motion Graphics</sub> |
+| [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer) | 49.5k | ⚪ Dormant | JavaScript | Animates how algorithms run, including sorting, graphs, and dynamic programming.<br><sub>Good for: Explainer videos · Also in: Data Animation</sub> |
+| [Slidev](https://github.com/slidevjs/slidev) | 49.5k | 🟢 Active | Markdown / Vue | Write presentations in Markdown, with built-in code highlighting, smooth code transition animations, and recording.<br><sub>Good for: Explainer videos · Talks</sub> |
+| [Manim Community](https://github.com/ManimCommunity/manim) | 42.6k | 🟢 Active | Python | Community-maintained fork of Manim with the most complete docs and tutorials. Used for many math, physics and algorithm explainer videos on Bilibili.<br><sub>Good for: Explainer videos · Also in: Math Explainer, Data Animation</sub> |
 | [VHS](https://github.com/charmbracelet/vhs) | 21.3k | 🟢 Active | VHS script | Script terminal actions and record them automatically as a GIF or video. The easiest way to make command-line demos.<br><sub>Good for: Explainer videos · GIF · Also in: ASCII & Terminal</sub> |
-| [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | 19.7k | 🟢 Active | TypeScript | Write animations as TypeScript generator functions, with a timeline editor and audio sync. Well suited to explainer videos and code demos.<br><sub>Good for: Explainer videos · MV · Also in: Motion Graphics, Math Explainer</sub> |
-| [asciinema](https://github.com/asciinema/asciinema) | 17.9k | 🟢 Active | Rust (CLI) | Records terminal sessions and replays them in a web player. Small files, copyable text.<br><sub>Good for: Explainer videos · Also in: ASCII & Terminal</sub> |
+| [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | 19.9k | 🟢 Active | TypeScript | Write animations as TypeScript generator functions, with a timeline editor and audio sync. Well suited to explainer videos and code demos.<br><sub>Good for: Explainer videos · MV · Also in: Motion Graphics, Math Explainer</sub> |
+| [asciinema](https://github.com/asciinema/asciinema) | 18k | 🟢 Active | Rust (CLI) | Records terminal sessions and replays them in a web player. Small files, copyable text.<br><sub>Good for: Explainer videos · Also in: ASCII & Terminal</sub> |
 | [Terminalizer](https://github.com/faressoft/terminalizer) | 16.2k | ⚪ Dormant | JavaScript (CLI) | Records terminal sessions and renders them as animated GIFs with a window frame.<br><sub>Good for: GIF · Also in: ASCII & Terminal</sub> |
 | [Gource](https://github.com/acaudwell/Gource) | 13.2k | 🟡 Slowing | C++ (CLI) | Renders Git commit history as a video of code "growing". A classic piece of footage for programmers.<br><sub>Good for: Developer videos · Also in: Data Animation</sub> |
 | [Code Hike](https://github.com/code-hike/codehike) | 5.4k | 🟡 Slowing | React / Markdown | Code walkthroughs built with Markdown and React. Can be rendered with Remotion into code explainer videos.<br><sub>Good for: Explainer videos</sub> |
 | [git-sim](https://github.com/initialcommit-com/git-sim) | 4.7k | 🟢 Active | Python | Draws the effect of Git commands as diagrams and animations (built on Manim). Good for Git teaching videos.<br><sub>Good for: Explainer videos · Also in: Data Animation</sub> |
 | [doitlive](https://github.com/sloria/doitlive) | 3.6k | 🟢 Active | Python | Pre-write your commands, then mash the keyboard live and they type out character by character. Terminal demos without typos.<br><sub>Good for: Terminal demos · Also in: ASCII & Terminal</sub> |
 | [Animotion](https://github.com/animotionjs/animotion) | 1.8k | 🟢 Active | Svelte | Write animated presentations in Svelte, with smooth code highlight transitions and element tweens.<br><sub>Good for: Explainer videos · Talks · Also in: Motion Graphics</sub> |
-| [Manim Slides](https://github.com/jeertmans/manim-slides) | 978 | 🟢 Active | Python | Turn Manim animations into presentation slides you can play page by page. Can also export to a web page.<br><sub>Good for: Explainer videos · Talks · Also in: Math Explainer</sub> |
-| [SeeCode](https://github.com/Aryanutkarsh/SeeCode) | 910 | 🟢 Active | JavaScript | Generates explorable animated diagrams from a short JSON spec, so coding agents like Claude can explain code structure.<br><sub>Good for: Code explainer visuals · Also in: Isometric & Voxel</sub> |
+| [Manim Slides](https://github.com/jeertmans/manim-slides) | 985 | 🟢 Active | Python | Turn Manim animations into presentation slides you can play page by page. Can also export to a web page.<br><sub>Good for: Explainer videos · Talks · Also in: Math Explainer</sub> |
+| [SeeCode](https://github.com/Aryanutkarsh/SeeCode) | 954 | 🟢 Active | JavaScript | Generates explorable animated diagrams from a short JSON spec, so coding agents like Claude can explain code structure.<br><sub>Good for: Code explainer visuals · Also in: Isometric & Voxel</sub> |
 | [demoit](https://github.com/dgageot/demoit) | 780 | 🟢 Active | JavaScript | Tool for live code demos: slides, code and terminal on one page, so you don't switch windows.<br><sub>Good for: Live code demos</sub> |
+| [snapcn](https://github.com/shadcn-labs/snapcn) | 628 | 🟢 Active | TypeScript (Remotion) | A Remotion component registry for product demo videos: AI chat streams, terminal sessions, device frames and captions, installed with the shadcn CLI.<br><sub>Good for: Product demo videos · Also in: Shorts, Captions & Editing, Motion Graphics</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -313,41 +334,47 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Morphing glyphs, word-by-word entrances, text that hits the lyrics on the beat
 
-29 projects, sorted by stars.
+**Picks:** [Typed.js](https://github.com/mattboldt/typed.js) · [Splitting](https://github.com/shshaw/Splitting) · [Coldtype](https://github.com/coldtype/coldtype) · [P(doom) MV (mexicat version)](https://github.com/mexicat/pdoom-video) · [AMLL](https://github.com/amll-dev/applemusic-like-lyrics)
+
+33 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [HyperFrames](https://github.com/heygen-com/hyperframes) | 81.4k | 🟢 Active | HTML / CSS / GSAP | Open-sourced by HeyGen. Write scenes in HTML/CSS, animate with GSAP, render straight to MP4. Designed for AI coding agents.<br><sub>Good for: MV · Short videos · AI generation · Also in: Motion Graphics, Shorts, Captions & Editing</sub><br><sub>⚠️ The official skill pack's asset skills can optionally call generation services; the rendering itself is HTML code.</sub> |
-| [anime.js](https://github.com/juliangarnier/anime) | 74.5k | 🟢 Active | JavaScript | Lightweight JS animation library. Timelines, stagger, and SVG stroke animation are easy to use.<br><sub>Good for: Web animation · MV · Also in: Motion Graphics</sub> |
-| [Remotion](https://github.com/remotion-dev/remotion) | 71.9k | 🟢 Active | React / TS | Write videos as React components and render them to MP4, with batch generation. Official add-on packages cover captions, audio visualization, three.js, and more.<br><sub>Good for: MV · Short videos · Batch video rendering · Also in: Motion Graphics, Shorts, Captions & Editing, 3D</sub><br><sub>⚠️ Free for individuals and small companies (commercial use included); larger companies need to buy a company license.</sub> |
-| [React Bits](https://github.com/DavidHDev/react-bits) | 51.6k | 🟢 Active | React | Lots of animated React components: text effects, animated backgrounds, interactive motion. Copy and use.<br><sub>Good for: Web motion · Assets · Also in: Motion Graphics, Shaders & Psychedelic</sub> |
-| [GSAP](https://github.com/greensock/GSAP) | 30.4k | 🟢 Active | JavaScript | Long-established JS animation engine. Plugins like SplitText and MorphSVG are now all free. Strong at split-text animation and SVG morphing.<br><sub>Good for: MV · Web animation · Also in: Motion Graphics</sub><br><sub>⚠️ Free for commercial use, but under GreenSock's own license, not an OSI-approved open-source license.</sub> |
-| [Magic UI](https://github.com/magicuidesign/magicui) | 23.2k | 🟢 Active | React | React component library with motion built in: text animations, glowing borders, particle backgrounds, and more.<br><sub>Good for: Web motion · Also in: Motion Graphics</sub> |
+| [HyperFrames](https://github.com/heygen-com/hyperframes) | 84.6k | 🟢 Active | HTML / CSS / GSAP | Open-sourced by HeyGen. Write scenes in HTML/CSS, animate with GSAP, render straight to MP4. Designed for AI coding agents.<br><sub>Good for: MV · Short videos · AI generation · Also in: Motion Graphics, Shorts, Captions & Editing</sub><br><sub>⚠️ The official skill pack's asset skills can optionally call generation services; the rendering itself is HTML code.</sub> |
+| [anime.js](https://github.com/juliangarnier/anime) | 74.7k | 🟢 Active | JavaScript | Lightweight JS animation library. Timelines, stagger, and SVG stroke animation are easy to use.<br><sub>Good for: Web animation · MV · Also in: Motion Graphics</sub> |
+| [Remotion](https://github.com/remotion-dev/remotion) | 73.4k | 🟢 Active | React / TS | Write videos as React components and render them to MP4, with batch generation. Official add-on packages cover captions, audio visualization, three.js, and more.<br><sub>Good for: MV · Short videos · Batch video rendering · Also in: Motion Graphics, Shorts, Captions & Editing, 3D</sub><br><sub>⚠️ Free for individuals and small companies (commercial use included); larger companies need to buy a company license.</sub> |
+| [React Bits](https://github.com/DavidHDev/react-bits) | 52k | 🟢 Active | React | Lots of animated React components: text effects, animated backgrounds, interactive motion. Copy and use.<br><sub>Good for: Web motion · Assets · Also in: Motion Graphics, Shaders & Psychedelic</sub> |
+| [GSAP](https://github.com/greensock/GSAP) | 30.7k | 🟢 Active | JavaScript | Long-established JS animation engine. Plugins like SplitText and MorphSVG are now all free. Strong at split-text animation and SVG morphing.<br><sub>Good for: MV · Web animation · Also in: Motion Graphics</sub><br><sub>⚠️ Free for commercial use, but under GreenSock's own license, not an OSI-approved open-source license.</sub> |
+| [Magic UI](https://github.com/magicuidesign/magicui) | 23.3k | 🟢 Active | React | React component library with motion built in: text animations, glowing borders, particle backgrounds, and more.<br><sub>Good for: Web motion · Also in: Motion Graphics</sub> |
 | [Typed.js](https://github.com/mattboldt/typed.js) | 16.3k | 🟡 Slowing | JavaScript | Typewriter-effect text animation library.<br><sub>Good for: Web motion</sub> |
 | [Rough Notation](https://github.com/rough-stuff/rough-notation) | 9.7k | ⚪ Dormant | TypeScript | Hand-drawn annotation animations: circle, underline, and highlight text.<br><sub>Good for: Explainer videos · Web animation · Also in: Hand-drawn & Whiteboard</sub> |
 | [editly](https://github.com/mifi/editly) | 5.6k | 🟡 Slowing | JSON / Node | Declarative video editing from JSON or the command line, with built-in transitions, titles, and Ken Burns pan-and-zoom.<br><sub>Good for: Fast cuts · Short videos · Also in: Shorts, Captions & Editing</sub> |
 | [Hanzi Writer](https://github.com/chanind/hanzi-writer) | 5.1k | 🟡 Slowing | TypeScript | Chinese character stroke order animation and writing practice library. One line of code animates a character stroke by stroke.<br><sub>Good for: Stroke order animation · Also in: Handwriting & Strokes</sub> |
 | [html-video](https://github.com/nexu-io/html-video) | 4.8k | 🟢 Active | HTML / CSS | Lets a local AI coding agent turn HTML/CSS into video. Ships with 21 templates, including kinetic type, Swiss grid and data cards.<br><sub>Good for: Short videos · Promo videos · Also in: Motion Graphics</sub> |
 | [TerminalTextEffects](https://github.com/ChrisBuilds/terminaltexteffects) | 4.3k | 🟢 Active | Python | Terminal text effects library with dozens of text entrance animations (burn, rain, decrypt and more).<br><sub>Good for: Intros · Text effects · Also in: ASCII & Terminal</sub> |
-| [P(doom) MV (mexicat version)](https://github.com/mexicat/pdoom-video) | 3.8k | 🟢 Active | JavaScript | Another code-rendered music video for "I'm Upping My P(doom)", with word-by-word beat-synced lyrics.<br><sub>Good for: Lyric MV · Also in: Motion Graphics</sub><br><sub>⚠️ AI was used only to split the audio into stems; all visuals are rendered by code.</sub> |
+| [P(doom) MV (mexicat version)](https://github.com/mexicat/pdoom-video) | 3.9k | 🟢 Active | JavaScript | Another code-rendered music video for "I'm Upping My P(doom)", with word-by-word beat-synced lyrics.<br><sub>Good for: Lyric MV · Also in: Motion Graphics</sub><br><sub>⚠️ AI was used only to split the audio into stems; all visuals are rendered by code.</sub> |
 | [Tegaki](https://github.com/gkurt/tegaki) | 3.3k | 🟢 Active | TypeScript | Handwriting animation for the web: any font and any text can be turned into a pen-writing effect.<br><sub>Good for: Handwriting animation · Also in: Handwriting & Strokes, Hand-drawn & Whiteboard</sub> |
 | [P(doom) MV](https://github.com/JohnHeibel/PDoomVideo) | 2.9k | 🟢 Active | JavaScript | Full source for the music video "I'm Upping My P(doom)", made by Claude Opus 5.5 writing code.<br><sub>Good for: MV · Also in: Motion Graphics</sub> |
-| [video-talkcraft](https://github.com/Vincentwei1021/video-talkcraft) | 2.2k | 🟢 Active | React / TS | Talking-head video skill: aligns to the voiceover word by word and renders animated text cards and camera moves with Remotion.<br><sub>Good for: Talking-head videos · Also in: Shorts, Captions & Editing</sub> |
+| [video-talkcraft](https://github.com/Vincentwei1021/video-talkcraft) | 2.3k | 🟢 Active | React / TS | Talking-head video skill: aligns to the voiceover word by word and renders animated text cards and camera moves with Remotion.<br><sub>Good for: Talking-head videos · Also in: Shorts, Captions & Editing</sub> |
+| [Bang Motion](https://github.com/bangtutorial/bang-motion) | 2.2k | 🟢 Active | HTML | Browser motion graphics skill: intros, promos, transitions, and kinetic typography, in five styles.<br><sub>Good for: Intros · Promo videos · Also in: Motion Graphics</sub><br><sub>⚠️ The optional After Effects cartoon explainer goes through a Higgsfield bridge; the default workflow is code animation in the browser.</sub> |
 | [AMLL](https://github.com/amll-dev/applemusic-like-lyrics) | 2.2k | 🟢 Active | React / Vue | Apple Music-style lyrics component built by a Chinese developer: word-by-word highlighting, springy scrolling, fluid background.<br><sub>Good for: Lyric MV · Players · Also in: Music Visualization</sub><br><sub>⚠️ AGPL-3.0: if used in a network service offered to others, you must publish your modified source.</sub> |
-| [Bang Motion](https://github.com/bangtutorial/bang-motion) | 1.9k | 🟢 Active | HTML | Browser motion graphics skill: intros, promos, transitions, and kinetic typography, in five styles.<br><sub>Good for: Intros · Promo videos · Also in: Motion Graphics</sub><br><sub>⚠️ The optional After Effects cartoon explainer goes through a Higgsfield bridge; the default workflow is code animation in the browser.</sub> |
 | [Splitting](https://github.com/shshaw/Splitting) | 1.8k | ⚪ Dormant | JavaScript | Splits text into characters or words and adds CSS variables, making per-letter animation easy.<br><sub>Good for: Web motion</sub> |
 | [VFX-JS](https://github.com/fand/vfx-js) | 1.2k | 🟢 Active | TypeScript | Add WebGL effects to images, video, and text on web pages: glitch, RGB shift, distortion, and more.<br><sub>Good for: Web effects · MV · Also in: Glitch & Post FX</sub> |
-| [world.execute(me) Lyric MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 529 | 🟢 Active | JavaScript | Fan-made lyric MV that plays the lyrics as a chat with Claude, rendered frame by frame from code at 4K60.<br><sub>Good for: Lyric MV · Also in: Anime, MMD & VRM</sub> |
-| [HyperFrames Motion Director](https://github.com/geekjourneyx/hyperframes-motion-director) | 482 | 🟢 Active | Skill | Turns articles, products, websites, or READMEs into Chinese-first vertical HyperFrames motion videos, with checks before delivery.<br><sub>Good for: Vertical promo videos · Also in: Shorts, Captions & Editing</sub> |
-| [animCJK](https://github.com/parsimonhi/animCJK) | 476 | 🟢 Active | SVG / HTML | SVG animations of Chinese, Japanese and Korean characters written in correct stroke order, including Japanese kana and Korean hanja.<br><sub>Good for: Stroke order animation · Also in: Handwriting & Strokes</sub> |
-| [DrawBot](https://github.com/typemytype/drawbot) | 455 | 🟢 Active | Python | Draw 2D graphics in Python and export GIF/MP4; commonly used by type designers for text animation.<br><sub>Good for: Kinetic type · GIF · Also in: Generative Art</sub><br><sub>⚠️ macOS only.</sub> |
-| [Coldtype](https://github.com/coldtype/coldtype) | 341 | 🟢 Active | Python | Python display typography and animation tool. Letterforms can follow the audio rhythm, good for lyric videos and kinetic type.<br><sub>Good for: Lyric MV · Kinetic type · Also in: Generative Art</sub> |
-| [Remotion TikTok Template](https://github.com/remotion-dev/template-tiktok) | 304 | 🟢 Active | React / TS | Official Remotion template: automatic speech recognition generates short-video captions that bounce word by word.<br><sub>Good for: Short videos · Also in: Shorts, Captions & Editing</sub><br><sub>⚠️ Same license terms as Remotion.</sub> |
-| [FredTalk](https://github.com/njrhts2kvv-star/FredTalk) | 256 | 🟢 Active | TypeScript | A talking-head video skill, a searchable motion library, and a Remotion review workflow.<br><sub>Good for: Talking-head videos · Also in: Shorts, Captions & Editing</sub> |
-| [Claude MV Skill](https://github.com/Joker-chichi/claude-mv-skill) | 203 | 🟢 Active | Skill | Teaches Claude to make hand-painted animation and lyric MVs: storyboard, animation, review and lyric sync, with all visuals generated procedurally.<br><sub>Good for: Hand-drawn MV · Also in: Hand-drawn & Whiteboard</sub> |
-| [Vibe Knowledge Shorts](https://github.com/xiazhuo123456789/vibe-knowledge-video) | 179 | 🟢 Active | Python | Generates cinematic knowledge short videos in pure code, with bilingual captions, synthesized music, and recreated historical documents.<br><sub>Good for: Knowledge shorts · Also in: Motion Graphics</sub> |
+| [world.execute(me) Lyric MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 550 | 🟢 Active | JavaScript | Fan-made lyric MV that plays the lyrics as a chat with Claude, rendered frame by frame from code at 4K60.<br><sub>Good for: Lyric MV · Also in: Anime, MMD & VRM</sub> |
+| [Remotion Bits](https://github.com/av/remotion-bits) | 517 | 🟢 Active | TypeScript (Remotion) | Ready-made animation components for Remotion: text effects, gradient transitions, particles, 3D scenes, charts and more; pull in only what you need.<br><sub>Good for: MG components · Short videos · Also in: Motion Graphics, Particles & Physics</sub><br><sub>⚠️ Not affiliated with the Remotion team.</sub> |
+| [HyperFrames Motion Director](https://github.com/geekjourneyx/hyperframes-motion-director) | 483 | 🟢 Active | Skill | Turns articles, products, websites, or READMEs into Chinese-first vertical HyperFrames motion videos, with checks before delivery.<br><sub>Good for: Vertical promo videos · Also in: Shorts, Captions & Editing</sub> |
+| [animCJK](https://github.com/parsimonhi/animCJK) | 479 | 🟢 Active | SVG / HTML | SVG animations of Chinese, Japanese and Korean characters written in correct stroke order, including Japanese kana and Korean hanja.<br><sub>Good for: Stroke order animation · Also in: Handwriting & Strokes</sub> |
+| [DrawBot](https://github.com/typemytype/drawbot) | 456 | 🟢 Active | Python | Draw 2D graphics in Python and export GIF/MP4; commonly used by type designers for text animation.<br><sub>Good for: Kinetic type · GIF · Also in: Generative Art</sub><br><sub>⚠️ macOS only.</sub> |
+| [Coldtype](https://github.com/coldtype/coldtype) | 342 | 🟢 Active | Python | Python display typography and animation tool. Letterforms can follow the audio rhythm, good for lyric videos and kinetic type.<br><sub>Good for: Lyric MV · Kinetic type · Also in: Generative Art</sub> |
+| [Remotion TikTok Template](https://github.com/remotion-dev/template-tiktok) | 308 | 🟢 Active | React / TS | Official Remotion template: automatic speech recognition generates short-video captions that bounce word by word.<br><sub>Good for: Short videos · Also in: Shorts, Captions & Editing</sub><br><sub>⚠️ Same license terms as Remotion.</sub> |
+| [FredTalk](https://github.com/njrhts2kvv-star/FredTalk) | 298 | 🟢 Active | TypeScript | A talking-head video skill, a searchable motion library, and a Remotion review workflow.<br><sub>Good for: Talking-head videos · Also in: Shorts, Captions & Editing</sub> |
+| [svg-text-animate](https://github.com/oubenruing/svg-text-animate) | 280 | 🟢 Active | JavaScript | Turns text in any font into an SVG stroke animation in the browser, written out stroke by stroke.<br><sub>Good for: Text stroke animation · Also in: Hand-drawn & Whiteboard</sub> |
+| [Claude MV Skill](https://github.com/Joker-chichi/claude-mv-skill) | 230 | 🟢 Active | Skill | Teaches Claude to make hand-painted animation and lyric MVs: storyboard, animation, review and lyric sync, with all visuals generated procedurally.<br><sub>Good for: Hand-drawn MV · Also in: Hand-drawn & Whiteboard</sub> |
+| [Vibe Knowledge Shorts](https://github.com/xiazhuo123456789/vibe-knowledge-video) | 192 | 🟢 Active | Python | Generates cinematic knowledge short videos in pure code, with bilingual captions, synthesized music, and recreated historical documents.<br><sub>Good for: Knowledge shorts · Also in: Motion Graphics</sub> |
+| [HyperFrames Motion Reel](https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill) | 186 | 🟢 Active | HTML / GSAP | A Claude Code skill that turns a one-line theme into a beat-synced motion-graphics reel with bold type, morphing transitions, particles and camera moves, rendered with HyperFrames.<br><sub>Good for: Showreels · Beat-synced MG · Also in: Motion Graphics</sub> |
+| [persian-motion-director](https://github.com/atmirrr/persian-motion-director) | 152 | 🟢 Active | JavaScript (Remotion) | A Claude skill for Persian kinetic typography and motion films: per-letter and per-dot animation that keeps letters joined, with the music locked first and cuts on the beat.<br><sub>Good for: Persian kinetic type · Also in: Motion Graphics</sub><br><sub>⚠️ Code is MIT; ships the Vazirmatn font (OFL).</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -359,41 +386,47 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Auto captions, transitions, batch-editing videos with code
 
-29 projects, sorted by stars.
+**Picks:** [FFmpeg](https://github.com/FFmpeg/FFmpeg) · [MoviePy](https://github.com/Zulko/moviepy) · [editly](https://github.com/mifi/editly) · [GL Transitions](https://github.com/gl-transitions/gl-transitions) · [ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill)
+
+33 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [HyperFrames](https://github.com/heygen-com/hyperframes) | 81.4k | 🟢 Active | HTML / CSS / GSAP | Open-sourced by HeyGen. Write scenes in HTML/CSS, animate with GSAP, render straight to MP4. Designed for AI coding agents.<br><sub>Good for: MV · Short videos · AI generation · Also in: Motion Graphics, Kinetic Type & Lyrics</sub><br><sub>⚠️ The official skill pack's asset skills can optionally call generation services; the rendering itself is HTML code.</sub> |
-| [Remotion](https://github.com/remotion-dev/remotion) | 71.9k | 🟢 Active | React / TS | Write videos as React components and render them to MP4, with batch generation. Official add-on packages cover captions, audio visualization, three.js, and more.<br><sub>Good for: MV · Short videos · Batch video rendering · Also in: Motion Graphics, Kinetic Type & Lyrics, 3D</sub><br><sub>⚠️ Free for individuals and small companies (commercial use included); larger companies need to buy a company license.</sub> |
-| [FFmpeg](https://github.com/FFmpeg/FFmpeg) | 66.8k | 🟢 Active | C (CLI) | The foundation under almost every code-to-video tool: transcoding, concatenation, filters and burned-in captions, all from the command line.<br><sub>Good for: Editing and compositing · Post-processing · Also in: Glitch & Post FX</sub><br><sub>⚠️ Mirror repository on GitHub.</sub> |
-| [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | 18.1k | 🟢 Active | React / TS | AI coding agent skill: captures screenshots of your real web pages and turns them into cinematic product promo videos with Remotion.<br><sub>Good for: Product promo videos · Also in: Motion Graphics</sub> |
-| [MoviePy](https://github.com/Zulko/moviepy) | 15.1k | 🟢 Active | Python | Python video editing library: cutting, concatenating, adding captions, and compositing, all in code.<br><sub>Good for: Editing and compositing</sub> |
+| [HyperFrames](https://github.com/heygen-com/hyperframes) | 84.6k | 🟢 Active | HTML / CSS / GSAP | Open-sourced by HeyGen. Write scenes in HTML/CSS, animate with GSAP, render straight to MP4. Designed for AI coding agents.<br><sub>Good for: MV · Short videos · AI generation · Also in: Motion Graphics, Kinetic Type & Lyrics</sub><br><sub>⚠️ The official skill pack's asset skills can optionally call generation services; the rendering itself is HTML code.</sub> |
+| [Remotion](https://github.com/remotion-dev/remotion) | 73.4k | 🟢 Active | React / TS | Write videos as React components and render them to MP4, with batch generation. Official add-on packages cover captions, audio visualization, three.js, and more.<br><sub>Good for: MV · Short videos · Batch video rendering · Also in: Motion Graphics, Kinetic Type & Lyrics, 3D</sub><br><sub>⚠️ Free for individuals and small companies (commercial use included); larger companies need to buy a company license.</sub> |
+| [FFmpeg](https://github.com/FFmpeg/FFmpeg) | 67.3k | 🟢 Active | C (CLI) | The foundation under almost every code-to-video tool: transcoding, concatenation, filters and burned-in captions, all from the command line.<br><sub>Good for: Editing and compositing · Post-processing · Also in: Glitch & Post FX</sub><br><sub>⚠️ Mirror repository on GitHub.</sub> |
+| [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | 19.9k | 🟢 Active | React / TS | AI coding agent skill: captures screenshots of your real web pages and turns them into cinematic product promo videos with Remotion.<br><sub>Good for: Product promo videos · Also in: Motion Graphics</sub> |
+| [MoviePy](https://github.com/Zulko/moviepy) | 15.2k | 🟢 Active | Python | Python video editing library: cutting, concatenating, adding captions, and compositing, all in code.<br><sub>Good for: Editing and compositing</sub> |
+| [ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | 5.8k | 🟢 Active | Python | Local editing toolkit for AI coding agents: 42 FFmpeg tools, so the agent can cut, caption and color grade.<br><sub>Good for: Video editing</sub> |
 | [editly](https://github.com/mifi/editly) | 5.6k | 🟡 Slowing | JSON / Node | Declarative video editing from JSON or the command line, with built-in transitions, titles, and Ken Burns pan-and-zoom.<br><sub>Good for: Fast cuts · Short videos · Also in: Kinetic Type & Lyrics</sub> |
-| [ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | 4.9k | 🟢 Active | Python | Local editing toolkit for AI coding agents: 42 FFmpeg tools, so the agent can cut, caption and color grade.<br><sub>Good for: Video editing</sub> |
 | [Revideo](https://github.com/midrender/revideo) | 4.2k | 🟢 Active | TypeScript | Fork of Motion Canvas focused on headless rendering, so videos can be generated in bulk through an API.<br><sub>Good for: Short videos · Batch video rendering · Also in: Motion Graphics</sub> |
+| [Claude Animated Shorts](https://github.com/mromidev/claude-animated-shorts) | 3.5k | 🟢 Active | TypeScript (Remotion + three.js) | A Claude skill for ~1-minute vertical animated story shorts: 2D characters in a colourful 3D town with ink outlines, lens blur and gliding cameras, rendered with three.js inside Remotion.<br><sub>Good for: Vertical story shorts · Also in: 3D</sub> |
 | [FFCreator](https://github.com/tnfe/FFCreator) | 3.2k | 🟡 Slowing | Node.js | Node.js library for generating short videos, open-sourced by a Tencent team. Quickly composes videos from images, text, and transitions.<br><sub>Good for: Short videos · Batch video rendering</sub> |
-| [fframes](https://github.com/dmtrKovalenko/fframes) | 3k | 🟢 Active | Rust / SVG | Write video with Rust and SVG, rendered on the GPU, with a focus on speed. Also includes a skill for AI coding agents.<br><sub>Good for: Batch video rendering · Also in: Motion Graphics</sub> |
-| [Herk Edit Kit](https://github.com/nateherkai/herk-edit-kit) | 2.7k | 🟢 Active | HTML / skill | Skill pack for editing talking-head videos, Reels, and YouTube Shorts with Codex or Claude Code.<br><sub>Good for: Video editing · Short videos</sub> |
-| [GL Transitions](https://github.com/gl-transitions/gl-transitions) | 2.2k | 🟢 Active | GLSL | Open collection of GLSL transitions. Plugs into editors like editly.<br><sub>Good for: Transitions · Also in: Glitch & Post FX</sub> |
-| [video-talkcraft](https://github.com/Vincentwei1021/video-talkcraft) | 2.2k | 🟢 Active | React / TS | Talking-head video skill: aligns to the voiceover word by word and renders animated text cards and camera moves with Remotion.<br><sub>Good for: Talking-head videos · Also in: Kinetic Type & Lyrics</sub> |
-| [ReelMimic](https://github.com/edenfunf/reelmimic) | 1.9k | 🟢 Active | JavaScript | Give it a video you like and an AI crew makes a new one in the same style using HyperFrames.<br><sub>Good for: Style-imitation shorts</sub><br><sub>⚠️ The repo was briefly made private in October 2026 and its stars were reset to zero, so actual interest is higher.</sub> |
+| [fframes](https://github.com/dmtrKovalenko/fframes) | 3.1k | 🟢 Active | Rust / SVG | Write video with Rust and SVG, rendered on the GPU, with a focus on speed. Also includes a skill for AI coding agents.<br><sub>Good for: Batch video rendering · Also in: Motion Graphics</sub> |
+| [Herk Edit Kit](https://github.com/nateherkai/herk-edit-kit) | 2.9k | 🟢 Active | HTML / skill | Skill pack for editing talking-head videos, Reels, and YouTube Shorts with Codex or Claude Code.<br><sub>Good for: Video editing · Short videos</sub> |
+| [video-talkcraft](https://github.com/Vincentwei1021/video-talkcraft) | 2.3k | 🟢 Active | React / TS | Talking-head video skill: aligns to the voiceover word by word and renders animated text cards and camera moves with Remotion.<br><sub>Good for: Talking-head videos · Also in: Kinetic Type & Lyrics</sub> |
+| [GL Transitions](https://github.com/gl-transitions/gl-transitions) | 2.3k | 🟢 Active | GLSL | Open collection of GLSL transitions. Plugs into editors like editly.<br><sub>Good for: Transitions · Also in: Glitch & Post FX</sub> |
+| [ReelMimic](https://github.com/edenfunf/reelmimic) | 2k | 🟢 Active | JavaScript | Give it a video you like and an AI crew makes a new one in the same style using HyperFrames.<br><sub>Good for: Style-imitation shorts</sub><br><sub>⚠️ The repo was briefly made private in October 2026 and its stars were reset to zero, so actual interest is higher.</sub> |
 | [remocn](https://github.com/Remocn/remocn) | 1.7k | 🟢 Active | React / TS | Ready-made animations, transitions, backgrounds, and scene components for Remotion.<br><sub>Good for: MV · Short videos · Also in: Motion Graphics</sub><br><sub>⚠️ Requires Remotion; Remotion's own license terms still apply.</sub> |
 | [Diffusion Studio Core](https://github.com/diffusionstudio/core) | 1.3k | 🟡 Slowing | TypeScript | Browser-based video engine. Edit and composite video in code, built on WebCodecs.<br><sub>Good for: Editing and compositing</sub> |
 | [Etro](https://github.com/etro-js/etro) | 1.2k | 🟢 Active | TypeScript | Composite video in the browser with TypeScript: layers, effects, keyframes, and export.<br><sub>Good for: Editing and compositing</sub> |
+| [Opus 5.5 Video Prompts](https://github.com/joeseesun/opus-video-prompts) | 1.1k | 🟢 Active | Prompts / HTML | A Chinese roundup of Opus 5.5 code-rendered videos: 18 full prompts and 54 public cases, including line-art animation, science explainers, launch films and lyric MVs.<br><sub>Good for: Prompt collection · Explainers · MV · Also in: Motion Graphics, Hand-drawn & Whiteboard</sub><br><sub>⚠️ A few cases in the overview use Seedance, Runway or Blender, and the table says so; the featured prompts are all code-rendered.</sub> |
 | [video-spec-builder](https://github.com/feicaiclub/video-spec-builder) | 1.1k | 🟢 Active | JavaScript | Pushes "I want to make a video" into a storyboard script precise to the second, then hands it to HyperFrames to render.<br><sub>Good for: Storyboard scripts</sub> |
-| [adu-motion-video](https://github.com/adunext/adu-motion-video) | 782 | 🟢 Active | JavaScript | By a Chinese developer: AI video editing skill with templates in the open MotionGit .motion format.<br><sub>Good for: Video editing · Short videos</sub> |
-| [LiveCanvas](https://github.com/pengchujin/livecanvas) | 549 | 🟢 Active | Python | Turn one sentence into an Apple Live Photo with a cover and animation. Storyboard, Remotion animation, and export in one flow.<br><sub>Good for: Live photos</sub> |
-| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | 524 | 🟡 Slowing | Godot Shader | Packs the common transition effects into a single Godot shader.<br><sub>Good for: Transitions · Also in: Shaders & Psychedelic</sub> |
-| [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 484 | 🟢 Active | TypeScript | Fast programmatic video engine made for AI coding agents.<br><sub>Good for: Batch video rendering · Also in: Motion Graphics</sub><br><sub>⚠️ PolyForm Small Business license: free for individuals and small companies; larger companies need a commercial license.</sub> |
-| [HyperFrames Motion Director](https://github.com/geekjourneyx/hyperframes-motion-director) | 482 | 🟢 Active | Skill | Turns articles, products, websites, or READMEs into Chinese-first vertical HyperFrames motion videos, with checks before delivery.<br><sub>Good for: Vertical promo videos · Also in: Kinetic Type & Lyrics</sub> |
-| [Agentic Product Demo](https://github.com/Alexwtlf/agentic-product-demo) | 452 | 🟢 Active | TypeScript | Has an AI coding agent make product demo videos with Remotion. The UI is rebuilt in code, not screen-recorded.<br><sub>Good for: Product demo videos</sub> |
-| [Remotion TikTok Template](https://github.com/remotion-dev/template-tiktok) | 304 | 🟢 Active | React / TS | Official Remotion template: automatic speech recognition generates short-video captions that bounce word by word.<br><sub>Good for: Short videos · Also in: Kinetic Type & Lyrics</sub><br><sub>⚠️ Same license terms as Remotion.</sub> |
-| [Remotion Audiogram Template](https://github.com/remotion-dev/template-audiogram) | 277 | 🟢 Active | React / TS | Official Remotion template: turns podcast audio into short videos with a waveform and captions.<br><sub>Good for: Short videos · Podcasts · Also in: Music Visualization</sub><br><sub>⚠️ Same license terms as Remotion.</sub> |
-| [FredTalk](https://github.com/njrhts2kvv-star/FredTalk) | 256 | 🟢 Active | TypeScript | A talking-head video skill, a searchable motion library, and a Remotion review workflow.<br><sub>Good for: Talking-head videos · Also in: Kinetic Type & Lyrics</sub> |
-| [Papercut Explainer](https://github.com/0xS4N4TG/papercut-explainer) | 171 | 🟢 Active | TypeScript | Vertical cut-paper style explainer shorts: 9 skills plus Remotion templates, with backgrounds and sound effects included in the repo.<br><sub>Good for: Vertical explainers · Also in: Riso & Paper Collage</sub> |
-| [Creator Style Kit](https://github.com/threeaus/creator-style-kit) | 56 | 🟢 Active | Python | 18 vertical HyperFrames video styles (fonts, colors, motion, sound effects, composition).<br><sub>Good for: Vertical shorts</sub> |
+| [adu-motion-video](https://github.com/adunext/adu-motion-video) | 852 | 🟢 Active | JavaScript | By a Chinese developer: AI video editing skill with templates in the open MotionGit .motion format.<br><sub>Good for: Video editing · Short videos</sub> |
+| [snapcn](https://github.com/shadcn-labs/snapcn) | 628 | 🟢 Active | TypeScript (Remotion) | A Remotion component registry for product demo videos: AI chat streams, terminal sessions, device frames and captions, installed with the shadcn CLI.<br><sub>Good for: Product demo videos · Also in: Motion Graphics, Code & Terminal Demo</sub> |
+| [LiveCanvas](https://github.com/pengchujin/livecanvas) | 556 | 🟢 Active | Python | Turn one sentence into an Apple Live Photo with a cover and animation. Storyboard, Remotion animation, and export in one flow.<br><sub>Good for: Live photos</sub> |
+| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | 527 | 🟡 Slowing | Godot Shader | Packs the common transition effects into a single Godot shader.<br><sub>Good for: Transitions · Also in: Shaders & Psychedelic</sub> |
+| [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 523 | 🟢 Active | TypeScript | Fast programmatic video engine made for AI coding agents.<br><sub>Good for: Batch video rendering · Also in: Motion Graphics</sub><br><sub>⚠️ PolyForm Small Business license: free for individuals and small companies; larger companies need a commercial license.</sub> |
+| [HyperFrames Motion Director](https://github.com/geekjourneyx/hyperframes-motion-director) | 483 | 🟢 Active | Skill | Turns articles, products, websites, or READMEs into Chinese-first vertical HyperFrames motion videos, with checks before delivery.<br><sub>Good for: Vertical promo videos · Also in: Kinetic Type & Lyrics</sub> |
+| [Agentic Product Demo](https://github.com/Alexwtlf/agentic-product-demo) | 455 | 🟢 Active | TypeScript | Has an AI coding agent make product demo videos with Remotion. The UI is rebuilt in code, not screen-recorded.<br><sub>Good for: Product demo videos</sub> |
+| [lemo-wake](https://github.com/lemomo-ai/lemo-wake) | 354 | 🟢 Active | Python / HTML | Give Claude Code one picture and it takes the text, objects and people apart, rebuilds them in code and makes a seamless loop of about five seconds.<br><sub>Good for: Photo loops · Logo motion · Also in: Motion Graphics</sub><br><sub>⚠️ Code and docs are CC BY-NC 4.0 (no commercial use). Optional small local models handle cut-outs, depth and background fill (LaMa) and are only downloaded after you agree; no image generation.</sub> |
+| [Remotion TikTok Template](https://github.com/remotion-dev/template-tiktok) | 308 | 🟢 Active | React / TS | Official Remotion template: automatic speech recognition generates short-video captions that bounce word by word.<br><sub>Good for: Short videos · Also in: Kinetic Type & Lyrics</sub><br><sub>⚠️ Same license terms as Remotion.</sub> |
+| [FredTalk](https://github.com/njrhts2kvv-star/FredTalk) | 298 | 🟢 Active | TypeScript | A talking-head video skill, a searchable motion library, and a Remotion review workflow.<br><sub>Good for: Talking-head videos · Also in: Kinetic Type & Lyrics</sub> |
+| [Remotion Audiogram Template](https://github.com/remotion-dev/template-audiogram) | 279 | 🟢 Active | React / TS | Official Remotion template: turns podcast audio into short videos with a waveform and captions.<br><sub>Good for: Short videos · Podcasts · Also in: Music Visualization</sub><br><sub>⚠️ Same license terms as Remotion.</sub> |
+| [Papercut Explainer](https://github.com/0xS4N4TG/papercut-explainer) | 225 | 🟢 Active | TypeScript | Vertical cut-paper style explainer shorts: 9 skills plus Remotion templates, with backgrounds and sound effects included in the repo.<br><sub>Good for: Vertical explainers · Also in: Riso & Paper Collage</sub> |
+| [Creator Style Kit](https://github.com/threeaus/creator-style-kit) | 57 | 🟢 Active | Python | 18 vertical HyperFrames video styles (fonts, colors, motion, sound effects, composition).<br><sub>Good for: Vertical shorts</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -405,34 +438,38 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Sketchy lines, stroke-by-stroke drawing, watercolor brushes, hand-drawn charts
 
-23 projects, sorted by stars.
+**Picks:** [Rough.js](https://github.com/rough-stuff/rough) · [p5.brush](https://github.com/acamposuribe/p5.brush) · [Vivus](https://github.com/maxwellito/vivus) · [Excalidraw Animate](https://github.com/dai-shi/excalidraw-animate) · [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion)
+
+25 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
 | [Rough.js](https://github.com/rough-stuff/rough) | 21.4k | ⚪ Dormant | JavaScript | Generates hand-drawn, sketchy lines and shapes. Can be combined with other animation libraries for hand-drawn style animation.<br><sub>Good for: Explainer videos · Web animation</sub> |
+| [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 16.6k | 🟢 Active | JavaScript | A toolbox of film styles made in code: 66 ready-made styles (Memphis, subway map, chalkboard, and more) that let an AI coding agent make videos in each style, all drawn with code.<br><sub>Good for: MV · Short films · Also in: Motion Graphics, Pixel & Retro</sub><br><sub>⚠️ Styles are tuned for Claude; results may differ with other models.</sub> |
 | [Vivus](https://github.com/maxwellito/vivus) | 15.5k | ⚪ Dormant | JavaScript | SVG line-drawing animation that draws line art stroke by stroke.<br><sub>Good for: Web animation</sub><br><sub>⚠️ Not updated since 2022; simple and stable.</sub> |
-| [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 13.9k | 🟢 Active | JavaScript | A toolbox of film styles made in code: 66 ready-made styles (Memphis, subway map, chalkboard, and more) that let an AI coding agent make videos in each style, all drawn with code.<br><sub>Good for: MV · Short films · Also in: Motion Graphics, Pixel & Retro</sub><br><sub>⚠️ Styles are tuned for Claude; results may differ with other models.</sub> |
 | [Rough Notation](https://github.com/rough-stuff/rough-notation) | 9.7k | ⚪ Dormant | TypeScript | Hand-drawn annotation animations: circle, underline, and highlight text.<br><sub>Good for: Explainer videos · Web animation · Also in: Kinetic Type & Lyrics</sub> |
 | [chart.xkcd](https://github.com/timqian/chart.xkcd) | 7.9k | 🟢 Active | JavaScript | Hand-drawn chart library in the xkcd comic style, with wobbly lines and a comic font.<br><sub>Good for: Hand-drawn charts · Also in: Data Animation</sub> |
 | [roughViz](https://github.com/jwilber/roughViz) | 7.2k | ⚪ Dormant | JavaScript | Sketchy chart library built on Rough.js. Bar and pie charts get a hand-drawn look.<br><sub>Good for: Hand-drawn charts · Also in: Data Animation</sub><br><sub>⚠️ Not updated since 2024.</sub> |
-| [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | 6.6k | 🟢 Active | JavaScript | 35 art styles and 9 narration grammars, animating pictures with code. The soundtrack is also synthesized in code.<br><sub>Good for: Art animation · Also in: Ink & Watercolor</sub><br><sub>⚠️ When a real person is needed on screen, an image generation model produces the frame; everything else is drawn in code.</sub> |
-| [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.3k | 🟢 Active | Python / Web | 15 motion design style demo films, each written as code by Claude Opus 5.5 from a single prompt. Prompts and source included.<br><sub>Good for: Style sample clips · Also in: Motion Graphics, 3D</sub><br><sub>⚠️ Of the 15, only the 3D one uses Blender; the rest are pure code.</sub> |
+| [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | 7k | 🟢 Active | JavaScript | 35 art styles and 9 narration grammars, animating pictures with code. The soundtrack is also synthesized in code.<br><sub>Good for: Art animation · Also in: Ink & Watercolor</sub><br><sub>⚠️ When a real person is needed on screen, an image generation model produces the frame; everything else is drawn in code.</sub> |
+| [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.5k | 🟢 Active | Python / Web | 15 motion design style demo films, each written as code by Claude Opus 5.5 from a single prompt. Prompts and source included.<br><sub>Good for: Style sample clips · Also in: Motion Graphics, 3D</sub><br><sub>⚠️ Of the 15, only the 3D one uses Blender; the rest are pure code.</sub> |
 | [Tegaki](https://github.com/gkurt/tegaki) | 3.3k | 🟢 Active | TypeScript | Handwriting animation for the web: any font and any text can be turned into a pen-writing effect.<br><sub>Good for: Handwriting animation · Also in: Handwriting & Strokes, Kinetic Type & Lyrics</sub> |
-| [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 2.8k | 🟢 Active | p5.js | Starter template for having Claude make hand-painted cartoon animation: p5.js + p5.brush, with character and camera tools.<br><sub>Good for: Hand-drawn cartoons · Also in: Anime, MMD & VRM</sub> |
+| [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 3k | 🟢 Active | p5.js | Starter template for having Claude make hand-painted cartoon animation: p5.js + p5.brush, with character and camera tools.<br><sub>Good for: Hand-drawn cartoons · Also in: Anime, MMD & VRM</sub> |
 | [Excalidraw Animate](https://github.com/dai-shi/excalidraw-animate) | 2.1k | 🟢 Active | TypeScript | Turns Excalidraw whiteboard drawings into stroke-by-stroke animations, exportable as video.<br><sub>Good for: Explainer videos</sub> |
-| [Animate](https://github.com/cth9191/animate) | 1.7k | 🟢 Active | JavaScript / Canvas | Claude Code skill: draws short animations procedurally on a single canvas, with 7 built-in styles: paper cut-out, hatched ink, Riso print, sketchbook, math, pixel, and isometric.<br><sub>Good for: Explainer videos · Short films · Also in: Pixel & Retro, Math Explainer, Riso & Paper Collage</sub> |
-| [anidoodle](https://github.com/alexgreensh/anidoodle) | 1.5k | 🟢 Active | TypeScript | AI coding agent skill: draws illustrations, loop animations, and short films with soundtracks in code, in dozens of styles, with identical results on every render.<br><sub>Good for: Illustration · Looping animation · Short films · Also in: Generative Art</sub> |
-| [p5.brush](https://github.com/acamposuribe/p5.brush) | 1.3k | 🟢 Active | JavaScript | Adds natural brushes, watercolor fills, and hatching to p5.js for hand-drawn and watercolor textures.<br><sub>Good for: Generative art · MV · Also in: Generative Art</sub> |
+| [Animate](https://github.com/cth9191/animate) | 2k | 🟢 Active | JavaScript / Canvas | Claude Code skill: draws short animations procedurally on a single canvas, with 7 built-in styles: paper cut-out, hatched ink, Riso print, sketchbook, math, pixel, and isometric.<br><sub>Good for: Explainer videos · Short films · Also in: Pixel & Retro, Math Explainer, Riso & Paper Collage</sub> |
+| [anidoodle](https://github.com/alexgreensh/anidoodle) | 1.7k | 🟢 Active | TypeScript | AI coding agent skill: draws illustrations, loop animations, and short films with soundtracks in code, in dozens of styles, with identical results on every render.<br><sub>Good for: Illustration · Looping animation · Short films · Also in: Generative Art</sub> |
+| [p5.brush](https://github.com/acamposuribe/p5.brush) | 1.4k | 🟢 Active | JavaScript | Adds natural brushes, watercolor fills, and hatching to p5.js for hand-drawn and watercolor textures.<br><sub>Good for: Generative art · MV · Also in: Generative Art</sub> |
 | [spectral.js](https://github.com/rvanwijnen/spectral.js) | 1.3k | 🟡 Slowing | JavaScript | Mixes colors the way real paint does (Kubelka-Munk), so blue plus yellow gives green, not gray. For watercolor and oil-paint looks.<br><sub>Good for: Paint mixing</sub> |
-| [Pintr](https://github.com/javierbyte/pintr) | 837 | 🟢 Active | TypeScript | Turns photos into single-line illustrations drawn in one continuous stroke.<br><sub>Good for: Single-stroke drawing · Also in: Plotter & Line Art</sub> |
-| [Whiteboard Teacher Video](https://github.com/liangdabiao/whiteboard-teacher-video) | 526 | 🟢 Active | Python | Made by a Chinese developer: turns an explainer script into a hand-drawn whiteboard video. Shapes are drawn stroke by stroke and text is written character by character, with zero image-generation cost.<br><sub>Good for: Knowledge shorts</sub> |
-| [weilanx Claude Videos](https://github.com/Azure12355/weilanx-claude-videos) | 249 | 🟢 Active | TypeScript | Made by a Chinese developer: hand-drawn and pixel-art explainer videos written purely in code with Remotion + React + SVG.<br><sub>Good for: Explainer videos · Also in: Pixel & Retro</sub><br><sub>⚠️ One skill's cover image used text-to-image generation; it can be swapped for a code-rendered frame.</sub> |
-| [Claude MV Skill](https://github.com/Joker-chichi/claude-mv-skill) | 203 | 🟢 Active | Skill | Teaches Claude to make hand-painted animation and lyric MVs: storyboard, animation, review and lyric sync, with all visuals generated procedurally.<br><sub>Good for: Hand-drawn MV · Also in: Kinetic Type & Lyrics</sub> |
-| [Dashi Style Explainers](https://github.com/chuspeeism/dashi-animationstyle) | 185 | 🟢 Active | HTML | By a Chinese developer: turns Chinese talking-head knowledge scripts into explainer animations in 7 styles. Claude writes HTML / Canvas code to draw each frame.<br><sub>Good for: Explainers</sub> |
-| [Claude Drawing Skill](https://github.com/cloveric/claude-drawing-skill) | 154 | 🟢 Active | Python | Claude paints stroke by stroke with code, in 77 styles including ink wash, oil painting, clay, cyanotype, stained glass, and Jiangnan gardens, with no image generation model.<br><sub>Good for: Illustration · Ink wash · Also in: Ink & Watercolor</sub> |
-| [Watercolor Playground](https://github.com/msurguy/watercolor-playground) | 103 | 🟢 Active | TypeScript | Realistic watercolor simulation: paint bleeds, settles, and dries on paper.<br><sub>Good for: Watercolor painting · Also in: Ink & Watercolor</sub> |
+| [Opus 5.5 Video Prompts](https://github.com/joeseesun/opus-video-prompts) | 1.1k | 🟢 Active | Prompts / HTML | A Chinese roundup of Opus 5.5 code-rendered videos: 18 full prompts and 54 public cases, including line-art animation, science explainers, launch films and lyric MVs.<br><sub>Good for: Prompt collection · Explainers · MV · Also in: Motion Graphics, Shorts, Captions & Editing</sub><br><sub>⚠️ A few cases in the overview use Seedance, Runway or Blender, and the table says so; the featured prompts are all code-rendered.</sub> |
+| [Pintr](https://github.com/javierbyte/pintr) | 843 | 🟢 Active | TypeScript | Turns photos into single-line illustrations drawn in one continuous stroke.<br><sub>Good for: Single-stroke drawing · Also in: Plotter & Line Art</sub> |
+| [Whiteboard Teacher Video](https://github.com/liangdabiao/whiteboard-teacher-video) | 550 | 🟢 Active | Python | Made by a Chinese developer: turns an explainer script into a hand-drawn whiteboard video. Shapes are drawn stroke by stroke and text is written character by character, with zero image-generation cost.<br><sub>Good for: Knowledge shorts</sub> |
+| [svg-text-animate](https://github.com/oubenruing/svg-text-animate) | 280 | 🟢 Active | JavaScript | Turns text in any font into an SVG stroke animation in the browser, written out stroke by stroke.<br><sub>Good for: Text stroke animation · Also in: Kinetic Type & Lyrics</sub> |
+| [weilanx Claude Videos](https://github.com/Azure12355/weilanx-claude-videos) | 260 | 🟢 Active | TypeScript | Made by a Chinese developer: hand-drawn and pixel-art explainer videos written purely in code with Remotion + React + SVG.<br><sub>Good for: Explainer videos · Also in: Pixel & Retro</sub><br><sub>⚠️ One skill's cover image used text-to-image generation; it can be swapped for a code-rendered frame.</sub> |
+| [Claude Drawing Skill](https://github.com/cloveric/claude-drawing-skill) | 247 | 🟢 Active | Python | Claude paints stroke by stroke with code, in 77 styles including ink wash, oil painting, clay, cyanotype, stained glass, and Jiangnan gardens, with no image generation model.<br><sub>Good for: Illustration · Ink wash · Also in: Ink & Watercolor</sub> |
+| [Claude MV Skill](https://github.com/Joker-chichi/claude-mv-skill) | 230 | 🟢 Active | Skill | Teaches Claude to make hand-painted animation and lyric MVs: storyboard, animation, review and lyric sync, with all visuals generated procedurally.<br><sub>Good for: Hand-drawn MV · Also in: Kinetic Type & Lyrics</sub> |
+| [Dashi Style Explainers](https://github.com/chuspeeism/dashi-animationstyle) | 198 | 🟢 Active | HTML | By a Chinese developer: turns Chinese talking-head knowledge scripts into explainer animations in 7 styles. Claude writes HTML / Canvas code to draw each frame.<br><sub>Good for: Explainers</sub> |
+| [Watercolor Playground](https://github.com/msurguy/watercolor-playground) | 106 | 🟢 Active | TypeScript | Realistic watercolor simulation: paint bleeds, settles, and dries on paper.<br><sub>Good for: Watercolor painting · Also in: Ink & Watercolor</sub> |
 | [wet-paint-flow](https://github.com/simonxxooxxoo/wet-paint-flow) | 67 | 🟢 Active | three.js | Real-time three.js flow-field painter that draws Bezier strokes with a wet, thick-paint look.<br><sub>Good for: Flow field drawing · Also in: Flow & Wind Fields</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
@@ -445,50 +482,56 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Algorithmic patterns, flow fields, seamless loops
 
-40 projects, sorted by stars.
+**Picks:** [p5.js](https://github.com/processing/p5.js) · [Paper.js](https://github.com/paperjs/paper.js) · [nannou](https://github.com/nannou-org/nannou) · [canvas-sketch](https://github.com/mattdesl/canvas-sketch) · [css-doodle](https://github.com/css-doodle/css-doodle)
+
+44 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
 | [PixiJS](https://github.com/pixijs/pixijs) | 48.7k | 🟢 Active | TypeScript | Fast 2D rendering engine (WebGL / WebGPU) for large numbers of sprites, filters, and 2D motion effects.<br><sub>Good for: Web animation · MV · Also in: Motion Graphics, Particles & Physics</sub> |
-| [raylib](https://github.com/raysan5/raylib) | 35.6k | 🟢 Active | C (many bindings) | Simple, beginner-friendly C graphics library with bindings for dozens of languages. Quick for 2D/3D animations and small demos.<br><sub>Good for: 2D/3D animation · Mini games · Also in: Pixel & Retro, 3D</sub> |
-| [p5.js](https://github.com/processing/p5.js) | 24.3k | 🟢 Active | JavaScript | The most popular creative coding library: draw, build interactions, and animate on the web. Plenty of Chinese tutorials too.<br><sub>Good for: Generative art · MV · Also in: Particles & Physics, Music Visualization</sub><br><sub>⚠️ Exporting video takes extra steps (save frames one by one, or screen-record).</sub> |
+| [raylib](https://github.com/raysan5/raylib) | 35.7k | 🟢 Active | C (many bindings) | Simple, beginner-friendly C graphics library with bindings for dozens of languages. Quick for 2D/3D animations and small demos.<br><sub>Good for: 2D/3D animation · Mini games · Also in: Pixel & Retro, 3D</sub> |
+| [Graphite](https://github.com/GraphiteEditor/Graphite) | 27.9k | 🟢 Active | Rust / Node graph | An open-source 2D graphics editor with a node graph under the layers: shapes, patterns and arrangements are generated procedurally with nodes and can be tweaked live.<br><sub>Good for: Vector art · Procedural design · Also in: Motion Graphics</sub><br><sub>⚠️ Still in alpha; motion graphics are on the roadmap, and today it is mainly for vector and procedural design.</sub> |
+| [p5.js](https://github.com/processing/p5.js) | 24.4k | 🟢 Active | JavaScript | The most popular creative coding library: draw, build interactions, and animate on the web. Plenty of Chinese tutorials too.<br><sub>Good for: Generative art · MV · Also in: Particles & Physics, Music Visualization</sub><br><sub>⚠️ Exporting video takes extra steps (save frames one by one, or screen-record).</sub> |
+| [Awesome Opus 5.5 Videos](https://github.com/yihui-dev/awesome-opus5-5-videos) | 15.3k | 🟢 Active | HTML / Canvas / three.js | 703 prompts people used to make videos with Claude Opus 5.5, each linked to the original post and a live remake. The picture is drawn in code (Canvas, SVG, three.js): mostly motion graphics, explainers and 3D scenes.<br><sub>Good for: Prompt collection · MV · Also in: Motion Graphics, 3D</sub><br><sub>⚠️ A few entries overlay AI-generated images or use Blender; those are labeled.</sub> |
 | [Paper.js](https://github.com/paperjs/paper.js) | 15.2k | 🟢 Active | JavaScript | Vector graphics scripting framework with strong path operations and Bezier curves, good for vector-style generative art.<br><sub>Good for: Generative art · Also in: Motion Graphics</sub> |
 | [primitive](https://github.com/fogleman/primitive) | 13.6k | ⚪ Dormant | Go | Approximates a photo step by step with triangles, ellipses, and other shapes. The process can be exported as an animation.<br><sub>Good for: Geometric reconstruction · Also in: Geometric & Low-poly</sub><br><sub>⚠️ Not updated since 2024.</sub> |
 | [openFrameworks](https://github.com/openframeworks/openFrameworks) | 10.5k | 🟢 Active | C++ | C++ creative coding framework with strong performance. Often used for interactive installations, stage visuals, and music visualization.<br><sub>Good for: Performances · Installations · MV · Also in: Music Visualization, 3D</sub> |
 | [Two.js](https://github.com/jonobr1/two.js) | 8.7k | 🟢 Active | JavaScript | 2D vector drawing API. The same code outputs SVG, Canvas, or WebGL, good for flat geometric animation.<br><sub>Good for: Web animation · Also in: Motion Graphics</sub> |
 | [Vanta.js](https://github.com/tengbao/vanta) | 7.4k | ⚪ Dormant | JavaScript | A few lines of code give you animated 3D backgrounds: waves, birds, fog, grids, and more.<br><sub>Good for: Background assets · Also in: 3D</sub> |
 | [nannou](https://github.com/nannou-org/nannou) | 6.8k | 🟢 Active | Rust | Rust creative coding framework with audio and OSC modules, suited to real-time audiovisual work.<br><sub>Good for: Generative art · Performances · Also in: Music Visualization</sub> |
-| [Shan-Shui-Inf](https://github.com/LingDong-/shan-shui-inf) | 6.4k | ⚪ Dormant | JavaScript | Procedurally generated, endlessly scrolling Chinese landscape painting. Mountains, rocks, trees, and pavilions are all drawn stroke by stroke by algorithms.<br><sub>Good for: Ink wash scrolls · Generative art · Also in: Ink & Watercolor</sub><br><sub>⚠️ Not updated since 2018; the work itself is complete and usable.</sub> |
+| [Shan-Shui-Inf](https://github.com/LingDong-/shan-shui-inf) | 6.5k | ⚪ Dormant | JavaScript | Procedurally generated, endlessly scrolling Chinese landscape painting. Mountains, rocks, trees, and pavilions are all drawn stroke by stroke by algorithms.<br><sub>Good for: Ink wash scrolls · Generative art · Also in: Ink & Watercolor</sub><br><sub>⚠️ Not updated since 2018; the work itself is complete and usable.</sub> |
 | [css-doodle](https://github.com/css-doodle/css-doodle) | 6.1k | 🟢 Active | CSS | Web component that generates patterns and animations in bulk from CSS rules.<br><sub>Good for: Generative art</sub> |
-| [Cinder](https://github.com/cinder/Cinder) | 5.5k | 🟡 Slowing | C++ | C++ creative coding framework geared toward professional real-time graphics and installation work.<br><sub>Good for: Performances · Installations · Also in: 3D</sub> |
+| [Cinder](https://github.com/cinder/Cinder) | 5.6k | 🟡 Slowing | C++ | C++ creative coding framework geared toward professional real-time graphics and installation work.<br><sub>Good for: Performances · Installations · Also in: 3D</sub> |
 | [Pts](https://github.com/williamngan/pts) | 5.4k | 🟢 Active | TypeScript | Visualization and creative coding library built around geometric relations of points, lines and shapes.<br><sub>Good for: Generative art · Also in: Data Animation</sub> |
 | [canvas-sketch](https://github.com/mattdesl/canvas-sketch) | 5.3k | 🟢 Active | JavaScript | Generative art workflow that exports high-res frames, GIFs, and MP4, well suited to seamless looping animation.<br><sub>Good for: Generative art · Looping animation</sub> |
 | [Tweakpane](https://github.com/cocopon/tweakpane) | 4.7k | 🟡 Slowing | TypeScript | Compact parameter panel for tweaking color, speed, and count live while creative coding.<br><sub>Good for: Parameter panels</sub> |
 | [thi.ng/umbrella](https://github.com/thi-ng/umbrella) | 3.8k | 🟢 Active | TypeScript | Toolkit of over a hundred TypeScript packages for generative art and visualization, long maintained by its author.<br><sub>Good for: Generative art · Also in: Data Animation</sub> |
-| [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) | 3.5k | 🟢 Active | Multiple languages | Cross-language noise function library (C#, C++, GLSL, JS, Rust, and more). Basic material for flow fields, terrain, and textures.<br><sub>Good for: Noise functions · Also in: Procedural Generation</sub> |
+| [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) | 3.6k | 🟢 Active | Multiple languages | Cross-language noise function library (C#, C++, GLSL, JS, Rust, and more). Basic material for flow fields, terrain, and textures.<br><sub>Good for: Noise functions · Also in: Procedural Generation</sub> |
 | [fishdraw](https://github.com/LingDong-/fishdraw) | 2.5k | ⚪ Dormant | JavaScript | Procedurally generates line drawings of fish, output as single-line SVG that a pen plotter can draw directly.<br><sub>Good for: Line art · Pen plotters · Also in: Plotter & Line Art</sub><br><sub>⚠️ Not updated since 2021.</sub> |
 | [The Nature of Code](https://github.com/nature-of-code/noc-book-2) | 2k | 🟡 Slowing | p5.js | 2024 edition of The Nature of Code: simulate forces, particles, flocking, and cellular automata with p5.js. Essential reading for generative art beginners.<br><sub>Good for: Tutorials · Also in: Particles & Physics, Artificial Life & Growth</sub> |
-| [anidoodle](https://github.com/alexgreensh/anidoodle) | 1.5k | 🟢 Active | TypeScript | AI coding agent skill: draws illustrations, loop animations, and short films with soundtracks in code, in dozens of styles, with identical results on every render.<br><sub>Good for: Illustration · Looping animation · Short films · Also in: Hand-drawn & Whiteboard</sub> |
-| [p5.brush](https://github.com/acamposuribe/p5.brush) | 1.3k | 🟢 Active | JavaScript | Adds natural brushes, watercolor fills, and hatching to p5.js for hand-drawn and watercolor textures.<br><sub>Good for: Generative art · MV · Also in: Hand-drawn & Whiteboard</sub> |
+| [anidoodle](https://github.com/alexgreensh/anidoodle) | 1.7k | 🟢 Active | TypeScript | AI coding agent skill: draws illustrations, loop animations, and short films with soundtracks in code, in dozens of styles, with identical results on every render.<br><sub>Good for: Illustration · Looping animation · Short films · Also in: Hand-drawn & Whiteboard</sub> |
+| [p5.brush](https://github.com/acamposuribe/p5.brush) | 1.4k | 🟢 Active | JavaScript | Adds natural brushes, watercolor fills, and hatching to p5.js for hand-drawn and watercolor textures.<br><sub>Good for: Generative art · MV · Also in: Hand-drawn & Whiteboard</sub> |
 | [Radiant](https://github.com/pbakaus/radiant) | 1k | 🟢 Active | GLSL / WebGL | Curated collection of generative shader art; every piece runs directly in the browser.<br><sub>Good for: Shader art · Also in: Shaders & Psychedelic</sub> |
 | [Generative Design Code Package](https://github.com/generative-design/Code-Package-p5.js) | 1k | 🟢 Active | JavaScript | All the p5.js example code from the book Generative Design, a classic generative design textbook.<br><sub>Good for: Tutorials · Generative art</sub> |
-| [OPENRNDR](https://github.com/openrndr/openrndr) | 986 | 🟢 Active | Kotlin | Kotlin creative coding framework, good for generative graphics and real-time visuals.<br><sub>Good for: Generative art · Performances</sub> |
-| [DOjS](https://github.com/SuperIlu/DOjS) | 964 | 🟡 Slowing | JavaScript (DOS) | JavaScript creative coding environment that runs on MS-DOS, with a p5.js-like API and plenty of retro flavor.<br><sub>Good for: Retro creative coding · Also in: Pixel & Retro</sub> |
-| [Fragment](https://github.com/raphaelameaume/fragment) | 949 | 🟢 Active | JavaScript | Modern creative coding toolkit with hot reload, a parameter panel, and frame sequence export built in.<br><sub>Good for: Generative art · Also in: Shaders & Psychedelic</sub><br><sub>⚠️ Still in alpha.</sub> |
-| [genjutsu](https://github.com/AThevon/genjutsu) | 767 | 🟢 Active | Python / skill | Creative coding skills for Claude Code and claude.ai: motion, micro-interactions, and design sense.<br><sub>Good for: Creative coding · Also in: Motion Graphics</sub> |
-| [vsketch](https://github.com/abey79/vsketch) | 612 | 🟢 Active | Python | Python generative art environment for pen plotters. Tweak parameters with live preview, export single-line SVG.<br><sub>Good for: Generative art · Pen plotters · Also in: Plotter & Line Art</sub> |
+| [OPENRNDR](https://github.com/openrndr/openrndr) | 987 | 🟢 Active | Kotlin | Kotlin creative coding framework, good for generative graphics and real-time visuals.<br><sub>Good for: Generative art · Performances</sub> |
+| [DOjS](https://github.com/SuperIlu/DOjS) | 966 | 🟡 Slowing | JavaScript (DOS) | JavaScript creative coding environment that runs on MS-DOS, with a p5.js-like API and plenty of retro flavor.<br><sub>Good for: Retro creative coding · Also in: Pixel & Retro</sub> |
+| [Fragment](https://github.com/raphaelameaume/fragment) | 951 | 🟢 Active | JavaScript | Modern creative coding toolkit with hot reload, a parameter panel, and frame sequence export built in.<br><sub>Good for: Generative art · Also in: Shaders & Psychedelic</sub><br><sub>⚠️ Still in alpha.</sub> |
+| [genjutsu](https://github.com/AThevon/genjutsu) | 805 | 🟢 Active | Python / skill | Creative coding skills for Claude Code and claude.ai: motion, micro-interactions, and design sense.<br><sub>Good for: Creative coding · Also in: Motion Graphics</sub> |
+| [vsketch](https://github.com/abey79/vsketch) | 614 | 🟢 Active | Python | Python generative art environment for pen plotters. Tweak parameters with live preview, export single-line SVG.<br><sub>Good for: Generative art · Pen plotters · Also in: Plotter & Line Art</sub> |
 | [Bauble](https://github.com/ianthehenry/bauble) | 597 | 🟢 Active | Janet (Lisp) | Playground for making 3D art with Lisp and math, built on signed distance field ray marching.<br><sub>Good for: 3D math art · Also in: Shaders & Psychedelic, 3D</sub> |
+| [Processing](https://github.com/processing/processing4) | 547 | 🟢 Active | Java | The long-standing creative coding tool; save images frame by frame and stitch them into video.<br><sub>Good for: Generative art</sub> |
 | [play.core](https://github.com/ertdfgcvb/play.core) | 544 | 🟡 Slowing | JavaScript | Experimental platform for ASCII character animation in JS. Each character is a "pixel".<br><sub>Good for: Generative art · Also in: ASCII & Terminal</sub> |
-| [Processing](https://github.com/processing/processing4) | 542 | 🟢 Active | Java | The long-standing creative coding tool; save images frame by frame and stitch them into video.<br><sub>Good for: Generative art</sub> |
-| [Mosaic](https://github.com/d3cod3/Mosaic) | 518 | 🟢 Active | C++ | Visual patching creative coding platform built on openFrameworks, connecting nodes, code, and audio.<br><sub>Good for: Node-based creative coding · Also in: Live Coding & VJ</sub> |
-| [DrawBot](https://github.com/typemytype/drawbot) | 455 | 🟢 Active | Python | Draw 2D graphics in Python and export GIF/MP4; commonly used by type designers for text animation.<br><sub>Good for: Kinetic type · GIF · Also in: Kinetic Type & Lyrics</sub><br><sub>⚠️ macOS only.</sub> |
-| [p5.riso](https://github.com/antiboredom/p5.riso) | 375 | 🟢 Active | JavaScript | Risograph printing library for p5.js: ink color separation, misregistration, and halftone dots for a stencil-print look.<br><sub>Good for: Riso print look · Also in: Riso & Paper Collage</sub> |
-| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | 366 | 🟢 Active | WebGL2 | Generative shader studio with 9 WebGL2 art modes. Blend styles and export seamless loops.<br><sub>Good for: Shader art · Also in: Shaders & Psychedelic</sub> |
-| [Coldtype](https://github.com/coldtype/coldtype) | 341 | 🟢 Active | Python | Python display typography and animation tool. Letterforms can follow the audio rhythm, good for lyric videos and kinetic type.<br><sub>Good for: Lyric MV · Kinetic type · Also in: Kinetic Type & Lyrics</sub> |
-| [flow-fields](https://github.com/romellogoodman/flow-fields) | 311 | 🟢 Active | JavaScript | JavaScript library for creating flow fields: lines that flow along noise.<br><sub>Good for: Flow field art · Also in: Flow & Wind Fields</sub> |
+| [Mosaic](https://github.com/d3cod3/Mosaic) | 519 | 🟢 Active | C++ | Visual patching creative coding platform built on openFrameworks, connecting nodes, code, and audio.<br><sub>Good for: Node-based creative coding · Also in: Live Coding & VJ</sub> |
+| [DrawBot](https://github.com/typemytype/drawbot) | 456 | 🟢 Active | Python | Draw 2D graphics in Python and export GIF/MP4; commonly used by type designers for text animation.<br><sub>Good for: Kinetic type · GIF · Also in: Kinetic Type & Lyrics</sub><br><sub>⚠️ macOS only.</sub> |
+| [p5.riso](https://github.com/antiboredom/p5.riso) | 376 | 🟢 Active | JavaScript | Risograph printing library for p5.js: ink color separation, misregistration, and halftone dots for a stencil-print look.<br><sub>Good for: Riso print look · Also in: Riso & Paper Collage</sub> |
+| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | 367 | 🟢 Active | WebGL2 | Generative shader studio with 9 WebGL2 art modes. Blend styles and export seamless loops.<br><sub>Good for: Shader art · Also in: Shaders & Psychedelic</sub> |
+| [Coldtype](https://github.com/coldtype/coldtype) | 342 | 🟢 Active | Python | Python display typography and animation tool. Letterforms can follow the audio rhythm, good for lyric videos and kinetic type.<br><sub>Good for: Lyric MV · Kinetic type · Also in: Kinetic Type & Lyrics</sub> |
+| [flow-fields](https://github.com/romellogoodman/flow-fields) | 312 | 🟢 Active | JavaScript | JavaScript library for creating flow fields: lines that flow along noise.<br><sub>Good for: Flow field art · Also in: Flow & Wind Fields</sub> |
 | [Space Colonization Experiments](https://github.com/jasonwebb/2d-space-colonization-experiments) | 228 | 🟡 Slowing | JavaScript | Growth animation experiments that use the space colonization algorithm to grow tree branches, leaf veins, and coral.<br><sub>Good for: Growth animation · Also in: Artificial Life & Growth</sub> |
+| [Patchies](https://github.com/heypoom/patchies) | 214 | 🟢 Active | TypeScript / Web | A creative coding patcher in the browser: wire small p5.js, Hydra, GLSL and three.js programs together like modules for audio-reactive visuals.<br><sub>Good for: Live coding · Creative coding · Also in: Live Coding & VJ</sub><br><sub>⚠️ AGPL-3.0 licensed.</sub> |
+| [genart](https://github.com/camilleroux/genart-skill) | 166 | 🟢 Active | JavaScript / skill | A generative art plugin for Claude Code: hash-seeded, deterministic pieces that render the same at any resolution, covering Canvas, p5.js, three.js, SVG and pen-plotter export.<br><sub>Good for: Generative art · On-chain art · Also in: Plotter & Line Art</sub> |
 | [L-System Explorer](https://github.com/anvaka/lsystem) | 100 | 🟢 Active | JavaScript / WebGL | L-system explorer in WebGL. A few rules grow plants, snowflakes and fractal curves.<br><sub>Good for: Growth patterns · Also in: Artificial Life & Growth</sub> |
 | [neon](https://github.com/Stanko/neon) | 44 | 🟡 Slowing | JavaScript | Generative art of neon lines made with a 2D vector field.<br><sub>Good for: Generative art · Also in: Flow & Wind Fields</sub> |
 
@@ -502,16 +545,18 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Procedural light, noise, fluid gradients and abstract forms
 
-96 projects, sorted by stars.
+**Picks:** [The Book of Shaders](https://github.com/patriciogonzalezvivo/thebookofshaders) · [LYGIA](https://github.com/patriciogonzalezvivo/lygia) · [Paper Shaders](https://github.com/paper-design/shaders) · [ShaderGradient](https://github.com/ruucm/shadergradient) · [TypeGPU](https://github.com/software-mansion/TypeGPU)
+
+103 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
 | [three.js](https://github.com/mrdoob/three.js) | 118k | 🟢 Active | JavaScript | The de facto standard for 3D on the web: scenes, materials, particles, and post-processing, with lots of examples.<br><sub>Good for: MV · Web 3D · Also in: 3D, Particles & Physics</sub> |
-| [React Bits](https://github.com/DavidHDev/react-bits) | 51.6k | 🟢 Active | React | Lots of animated React components: text effects, animated backgrounds, interactive motion. Copy and use.<br><sub>Good for: Web motion · Assets · Also in: Motion Graphics, Kinetic Type & Lyrics</sub> |
+| [React Bits](https://github.com/DavidHDev/react-bits) | 52k | 🟢 Active | React | Lots of animated React components: text effects, animated backgrounds, interactive motion. Copy and use.<br><sub>Good for: Web motion · Assets · Also in: Motion Graphics, Kinetic Type & Lyrics</sub> |
 | [3D Game Shaders for Beginners](https://github.com/lettier/3d-game-shaders-for-beginners) | 20k | ⚪ Dormant | GLSL / C++ | Illustrated step-by-step tutorial for dozens of 3D shader effects: SSAO, depth of field, bloom, cartoon outlines, pixelation, and more.<br><sub>Good for: Tutorials · Also in: 3D</sub><br><sub>⚠️ Not updated since 2023; the tutorial content is complete.</sub> |
-| [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) | 16.8k | 🟡 Slowing | JavaScript | Real-time fluid simulation in the browser. The colorful smoke looks great on video.<br><sub>Good for: Effect assets · Also in: Particles & Physics</sub> |
+| [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) | 16.8k | ⚪ Dormant | JavaScript | Real-time fluid simulation in the browser. The colorful smoke looks great on video.<br><sub>Good for: Effect assets · Also in: Particles & Physics</sub> |
 | [React Native Skia](https://github.com/wcandillon/react-native-skia) | 8.8k | 🟢 Active | React Native | Draw high-performance 2D graphics and animations in React Native with Skia. Supports runtime shaders.<br><sub>Good for: Mobile motion · Also in: Motion Graphics</sub> |
 | [URP Toon Shader Example](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample) | 7.9k | 🟢 Active | Unity HLSL | Toon lighting shader example for Unity URP. A beginner reference for anime character outlines and stepped-shade shadows.<br><sub>Good for: Anime rendering · Also in: Anime, MMD & VRM</sub> |
 | [The Book of Shaders](https://github.com/patriciogonzalezvivo/thebookofshaders) | 7.1k | 🟡 Slowing | GLSL | Beginner book on shaders (a Chinese edition exists). Learn to write fragment shaders step by step.<br><sub>Good for: Tutorials</sub> |
@@ -526,14 +571,15 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [Shader School](https://github.com/stackgl/shader-school) | 4.4k | ⚪ Dormant | GLSL | A level-by-level GLSL shader course: write shaders one exercise at a time in the browser.<br><sub>Good for: Tutorials</sub><br><sub>⚠️ Not updated since 2021.</sub> |
 | [Godot Shaders](https://github.com/gdquest-demos/godot-shaders) | 4.2k | 🟢 Active | Godot Shader | GDQuest's large collection of Godot 2D and 3D shaders: dissolve, outline, water, pixelation, and more.<br><sub>Good for: Shader collections · Also in: 3D, Pixel & Retro</sub> |
 | [UnityChan Toon Shader](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) | 4.1k | ⚪ Dormant | Unity | Toon shader from Unity's official Japan team, for cel-shaded anime-look characters and scenes.<br><sub>Good for: Anime rendering · Also in: Anime, MMD & VRM</sub><br><sub>⚠️ Not updated since 2024. New projects can use Unity Toon Shader.</sub> |
-| [Paper Shaders](https://github.com/paper-design/shaders) | 3.9k | 🟢 Active | TypeScript | Shader components from the Paper team: mesh gradients, grain, metallic sheen, and more. Zero dependencies.<br><sub>Good for: Background assets · Web</sub> |
+| [Paper Shaders](https://github.com/paper-design/shaders) | 4k | 🟢 Active | TypeScript | Shader components from the Paper team: mesh gradients, grain, metallic sheen, and more. Zero dependencies.<br><sub>Good for: Background assets · Web</sub> |
 | [LYGIA](https://github.com/patriciogonzalezvivo/lygia) | 3.5k | 🟢 Active | GLSL / HLSL / WGSL | Large shader function library: noise, lighting, color, filters. Building blocks for psychedelic visuals.<br><sub>Good for: Effect assets</sub><br><sub>⚠️ Free for non-commercial use; commercial use needs a separate license.</sub> |
 | [TypeGPU](https://github.com/software-mansion/TypeGPU) | 3.3k | 🟢 Active | TypeScript / WebGPU | Toolkit for writing WebGPU shaders in TypeScript. Type-safe, works on the web and in React Native.<br><sub>Good for: WebGPU shaders</sub> |
-| [ShaderGradient](https://github.com/ruucm/shadergradient) | 3.1k | 🟢 Active | TypeScript | Adjustable animated 3D gradients, the fluid-gradient style that has been popular in recent years.<br><sub>Good for: Background assets</sub> |
-| [gl-react](https://github.com/gre/gl-react) | 3k | 🟢 Active | TypeScript | Write and compose WebGL shaders as React components. Also works with React Native.<br><sub>Good for: React shaders</sub> |
+| [ShaderGradient](https://github.com/ruucm/shadergradient) | 3.2k | 🟢 Active | TypeScript | Adjustable animated 3D gradients, the fluid-gradient style that has been popular in recent years.<br><sub>Good for: Background assets</sub> |
 | [webgl-noise](https://github.com/ashima/webgl-noise) | 3k | 🟡 Slowing | GLSL | Classic GLSL procedural noise library. The noise in countless shader works comes from here.<br><sub>Good for: Noise functions · Also in: Procedural Generation</sub> |
+| [gl-react](https://github.com/gre/gl-react) | 3k | 🟢 Active | TypeScript | Write and compose WebGL shaders as React components. Also works with React Native.<br><sub>Good for: React shaders</sub> |
 | [Inferno](https://github.com/twostraws/Inferno) | 2.9k | 🟢 Active | Swift / Metal (iOS) | Collection of Metal shaders for SwiftUI: fire, water ripples, pixelation, shine sweeps, and more. Ready to use in mobile apps.<br><sub>Good for: App motion · Also in: Glitch & Post FX</sub> |
 | [Hydra](https://github.com/hydra-synth/hydra) | 2.8k | 🟡 Slowing | JavaScript | Real-time video synthesizer in the browser, modeled on analog signal synthesizers. A few lines of code give feedback, distortion, and psychedelic color visuals.<br><sub>Good for: Live VJ · MV · Also in: Live Coding & VJ, Glitch & Post FX</sub><br><sub>⚠️ AGPL-3.0: if used in a network service offered to others, you must publish your modified source.</sub> |
+| [vgpu](https://github.com/vercel-labs/vgpu) | 2.7k | 🟢 Active | TypeScript / WGSL | A small WebGPU library from Vercel: import WGSL shaders like TypeScript modules and render the same code in the browser or headless Node.<br><sub>Good for: WebGPU effects · Web 3D · Also in: 3D</sub> |
 | [glslEditor](https://github.com/patriciogonzalezvivo/glslEditor) | 2.6k | ⚪ Dormant | JavaScript | In-browser GLSL fragment shader editor with visual controls for colors and values.<br><sub>Good for: Shader editors</sub><br><sub>⚠️ Not updated since 2023.</sub> |
 | [glslify](https://github.com/glslify/glslify) | 2.3k | ⚪ Dormant | JavaScript | Import modules into GLSL shaders the way npm does, so functions like noise and blend modes can be reused directly.<br><sub>Good for: Shader modules</sub><br><sub>⚠️ Not updated since 2022.</sub> |
 | [glslCanvas](https://github.com/patriciogonzalezvivo/glslCanvas) | 2.3k | ⚪ Dormant | JavaScript | Small tool that runs GLSL shaders on a web page canvas. Used by The Book of Shaders.<br><sub>Good for: Web shaders</sub><br><sub>⚠️ Not updated since 2023.</sub> |
@@ -546,14 +592,14 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [MilkDrop 3](https://github.com/milkdrop2077/MilkDrop3) | 1.6k | 🟢 Active | C++ (Windows) | A continuation of MilkDrop, with new features such as any audio source and double-preset blending.<br><sub>Good for: Music visualizer · Also in: Music Visualization</sub> |
 | [Bonzomatic](https://github.com/Gargaj/Bonzomatic) | 1.5k | 🟡 Slowing | GLSL | Live shader coding tool used in the demoscene Shader Showdown contest. Write code live and see the picture live.<br><sub>Good for: Live performances · Also in: Live Coding & VJ, Demoscene</sub> |
 | [ShaderMan](https://github.com/smkplus/ShaderMan) | 1.5k | ⚪ Dormant | C# (Unity) | Converts Shadertoy shaders into HLSL / CG that Unity can use.<br><sub>Good for: Shader ports</sub><br><sub>⚠️ Not updated since 2021.</sub> |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.5k | 🟡 Slowing | TypeScript | Small tool from the Paper team: turns a logo into a flowing liquid-metal animation.<br><sub>Good for: Logo motion · Also in: Liquid Glass, Motion Graphics</sub> |
 | [GLSL Primer Cards](https://github.com/wshxbqq/GLSL-Card) | 1.5k | ⚪ Dormant | GLSL | GLSL shader language primer compiled by a Chinese developer, with functions and usage laid out as cards.<br><sub>Good for: Chinese tutorials</sub><br><sub>⚠️ Not updated since 2019.</sub> |
-| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.4k | 🟡 Slowing | TypeScript | Small tool from the Paper team: turns a logo into a flowing liquid-metal animation.<br><sub>Good for: Logo motion · Also in: Liquid Glass, Motion Graphics</sub> |
 | [NoiseShader](https://github.com/keijiro/NoiseShader) | 1.4k | 🟡 Slowing | Unity HLSL | Keijiro's Unity noise shader library, with simplex noise, Perlin noise and more.<br><sub>Good for: Noise functions · Also in: Procedural Generation</sub> |
 | [CustomShaderMaterial](https://github.com/FarazzShaikh/THREE-CustomShaderMaterial) | 1.4k | 🟡 Slowing | TypeScript | Layer your own shaders on top of three.js standard materials while keeping lighting and shadows.<br><sub>Good for: three.js shaders · Also in: 3D</sub> |
 | [URP_Toon](https://github.com/ChiliMilk/URP_Toon) | 1.4k | ⚪ Dormant | Unity | Toon shader for Unity URP with outlines, stepped shading, and rim light.<br><sub>Good for: Anime rendering · Also in: Anime, MMD & VRM</sub><br><sub>⚠️ Not updated since 2024.</sub> |
 | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | 🟢 Active | GLSL | RetroArch shader collection: CRT scanlines, pixel upscaling, and other retro display effects.<br><sub>Good for: Retro post-processing · Also in: Pixel & Retro, VHS & Analog</sub> |
 | [shuding/liquid-glass](https://github.com/shuding/liquid-glass) | 1.2k | 🟡 Slowing | SVG / JS | Copy-and-paste liquid glass shader, built with SVG filters.<br><sub>Good for: Liquid glass · Also in: Liquid Glass</sub> |
-| [PixiJS Filters](https://github.com/pixijs/filters) | 1.1k | 🟡 Slowing | TypeScript | Community filter collection for PixiJS: glitch, glow, pixelate, CRT, and dozens more effects.<br><sub>Good for: 2D effects · Also in: Glitch & Post FX</sub> |
+| [PixiJS Filters](https://github.com/pixijs/filters) | 1.2k | 🟡 Slowing | TypeScript | Community filter collection for PixiJS: glitch, glow, pixelate, CRT, and dozens more effects.<br><sub>Good for: 2D effects · Also in: Glitch & Post FX</sub> |
 | [glsl-blend](https://github.com/jamieowen/glsl-blend) | 1.1k | ⚪ Dormant | GLSL | GLSL implementations of the full set of Photoshop layer blend modes.<br><sub>Good for: Blend modes</sub><br><sub>⚠️ Not updated since 2022.</sub> |
 | [twigl](https://github.com/doxas/twigl) | 1.1k | 🟡 Slowing | GLSL | Minimal online GLSL editor popular in Japan's tweet-sized GLSL scene. Exports GIFs and videos.<br><sub>Good for: Short films · GIF · Also in: Live Coding & VJ</sub> |
 | [Shader Editor](https://github.com/markusfisch/ShaderEditor) | 1.1k | 🟢 Active | Java (Android) | Write GLSL shaders on an Android phone and set them directly as live wallpaper.<br><sub>Good for: Phone shader coding</sub> |
@@ -561,47 +607,53 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [liquidGL](https://github.com/naughtyduk/liquidGL) | 1.1k | 🟢 Active | WebGL / WebGPU | Liquid glass effect for the web, implemented in WebGL and WebGPU.<br><sub>Good for: Liquid glass · Also in: Liquid Glass</sub> |
 | [Radiant](https://github.com/pbakaus/radiant) | 1k | 🟢 Active | GLSL / WebGL | Curated collection of generative shader art; every piece runs directly in the browser.<br><sub>Good for: Shader art · Also in: Generative Art</sub> |
 | [Raymarching Workshop](https://github.com/electricsquare/raymarching-workshop) | 1k | ⚪ Dormant | GLSL | Beginner raymarching workshop: build up 3D shapes step by step with signed distance fields.<br><sub>Good for: Tutorials · Also in: 3D</sub><br><sub>⚠️ Not updated since 2021.</sub> |
-| [Godot Realistic Water](https://github.com/godot-extended-libraries/godot-realistic-water) | 978 | 🟡 Slowing | Godot Shader | Realistic water surface shader for Godot.<br><sub>Good for: Water surfaces · Also in: 3D</sub> |
-| [Fragment](https://github.com/raphaelameaume/fragment) | 949 | 🟢 Active | JavaScript | Modern creative coding toolkit with hot reload, a parameter panel, and frame sequence export built in.<br><sub>Good for: Generative art · Also in: Generative Art</sub><br><sub>⚠️ Still in alpha.</sub> |
-| [Shader Park](https://github.com/shader-park/shader-park-core) | 832 | 🟢 Active | JavaScript | Write SDF shaders in JS-like syntax to make sculptural 3D abstract forms.<br><sub>Good for: MV · Generative art · Also in: 3D</sub> |
-| [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) | 821 | 🟢 Active | WebGL2 / WebGPU | By a Chinese developer: recreates Apple's liquid glass interface on the web, with real-time control of refraction, dispersion, and highlights.<br><sub>Good for: Liquid glass · Also in: Liquid Glass</sub> |
-| [GodotRetro](https://github.com/ahopness/GodotRetro) | 806 | 🟢 Active | Godot Shader | Retro post-processing effects pack for Godot: CRT, VHS, dithering, pixelation.<br><sub>Good for: Retro post-processing · Also in: Pixel & Retro, VHS & Analog</sub> |
-| [orb](https://github.com/LerSent001/orb) | 751 | 🟢 Active | WebGPU | From a Chinese developer: real-time WebGPU liquid glass orb editor, exportable to the web or SwiftUI / Metal.<br><sub>Good for: Liquid glass orbs · Also in: Liquid Glass</sub> |
+| [Godot Realistic Water](https://github.com/godot-extended-libraries/godot-realistic-water) | 982 | 🟡 Slowing | Godot Shader | Realistic water surface shader for Godot.<br><sub>Good for: Water surfaces · Also in: 3D</sub> |
+| [Fragment](https://github.com/raphaelameaume/fragment) | 951 | 🟢 Active | JavaScript | Modern creative coding toolkit with hot reload, a parameter panel, and frame sequence export built in.<br><sub>Good for: Generative art · Also in: Generative Art</sub><br><sub>⚠️ Still in alpha.</sub> |
+| [Shader Park](https://github.com/shader-park/shader-park-core) | 834 | 🟢 Active | JavaScript | Write SDF shaders in JS-like syntax to make sculptural 3D abstract forms.<br><sub>Good for: MV · Generative art · Also in: 3D</sub> |
+| [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) | 827 | 🟢 Active | WebGL2 / WebGPU | By a Chinese developer: recreates Apple's liquid glass interface on the web, with real-time control of refraction, dispersion, and highlights.<br><sub>Good for: Liquid glass · Also in: Liquid Glass</sub> |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | 809 | 🟢 Active | Godot Shader | Retro post-processing effects pack for Godot: CRT, VHS, dithering, pixelation.<br><sub>Good for: Retro post-processing · Also in: Pixel & Retro, VHS & Analog</sub> |
+| [orb](https://github.com/LerSent001/orb) | 756 | 🟢 Active | WebGPU | From a Chinese developer: real-time WebGPU liquid glass orb editor, exportable to the web or SwiftUI / Metal.<br><sub>Good for: Liquid glass orbs · Also in: Liquid Glass</sub> |
 | [shadplay](https://github.com/alphastrata/shadplay) | 727 | 🟢 Active | Rust / WGSL | Real-time WGSL shader visualization tool: write and see the result live, handy for learning shaders.<br><sub>Good for: Shader practice · Also in: Live Coding & VJ</sub> |
-| [Shader Toy for VS Code](https://github.com/stevensona/shader-toy) | 720 | 🟢 Active | TypeScript | Live preview of Shadertoy-style GLSL shaders inside VS Code.<br><sub>Good for: Shader development</sub> |
-| [Shader Lab](https://github.com/basementstudio/shader-lab) | 719 | 🟢 Active | TypeScript | Toolkit for creating, stacking, and animating shaders. Combine multiple effects like layers.<br><sub>Good for: Shader motion · Also in: Motion Graphics</sub> |
-| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 612 | 🟡 Slowing | Godot | Ocean waves and buoyancy based on Tessendorf FFT, implemented with compute shaders in Godot 4.<br><sub>Good for: Ocean · Also in: 3D, Particles & Physics</sub> |
+| [Shader Lab](https://github.com/basementstudio/shader-lab) | 724 | 🟢 Active | TypeScript | Toolkit for creating, stacking, and animating shaders. Combine multiple effects like layers.<br><sub>Good for: Shader motion · Also in: Motion Graphics</sub> |
+| [Shader Toy for VS Code](https://github.com/stevensona/shader-toy) | 722 | 🟢 Active | TypeScript | Live preview of Shadertoy-style GLSL shaders inside VS Code.<br><sub>Good for: Shader development</sub> |
+| [LiquidGlass](https://github.com/ybouane/liquidglass) | 625 | 🟢 Active | TypeScript / WebGL | A liquid glass effect library for the web: WebGL shaders add refraction, blur, chromatic aberration and lighting to any HTML element.<br><sub>Good for: Liquid glass · Also in: Liquid Glass</sub> |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 613 | 🟡 Slowing | Godot | Ocean waves and buoyancy based on Tessendorf FFT, implemented with compute shaders in Godot 4.<br><sub>Good for: Ocean · Also in: 3D, Particles & Physics</sub> |
 | [LiliumToonGraph](https://github.com/you-ri/LiliumToonGraph) | 609 | 🟢 Active | Unity Shader Graph | Unity URP toon shader built with Shader Graph.<br><sub>Good for: Anime rendering · Also in: Anime, MMD & VRM</sub> |
+| [Fabric](https://github.com/Fabric-Project/Fabric) | 606 | 🟢 Active | Swift (Metal) | A node-based creative coding tool in the spirit of Quartz Composer, rendering 3D, image effects and audio-reactive scenes with Metal.<br><sub>Good for: Real-time visuals · Node-based creation · Also in: Live Coding & VJ, 3D</sub><br><sub>⚠️ macOS 15+ only.</sub> |
 | [Bauble](https://github.com/ianthehenry/bauble) | 597 | 🟢 Active | Janet (Lisp) | Playground for making 3D art with Lisp and math, built on signed distance field ray marching.<br><sub>Good for: 3D math art · Also in: 3D, Generative Art</sub> |
-| [shader-doodle](https://github.com/mmmerl/shader-doodle) | 589 | 🟢 Active | Web Component | Web component for writing and displaying shaders. One tag puts Shadertoy-style code on a page.<br><sub>Good for: Web shaders</sub> |
-| [Shader Minifier](https://github.com/laurentlb/shader-minifier) | 584 | 🟢 Active | F# | Shrinks GLSL / HLSL code to the minimum. A must for 4KB and 64KB demos.<br><sub>Good for: Demoscene · Also in: Demoscene</sub> |
-| [cables](https://github.com/cables-gl/cables) | 574 | 🟢 Active | Node graph / JS | Node-based visual programming platform. Wire up real-time WebGL visuals in the browser, often used for music videos and live show visuals.<br><sub>Good for: MV · Live performances · Also in: Live Coding & VJ, 3D</sub> |
-| [Beam](https://github.com/doodlewind/beam) | 528 | 🟢 Active | JavaScript / WebGPU | Lightweight WebGPU library by a Chinese developer. Builds shader rendering pipelines with very little code.<br><sub>Good for: Shader rendering</sub> |
-| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | 524 | 🟡 Slowing | Godot Shader | Packs the common transition effects into a single Godot shader.<br><sub>Good for: Transitions · Also in: Shorts, Captions & Editing</sub> |
-| [Learn wgpu (Chinese edition)](https://github.com/jinleili/learn-wgpu-zh) | 512 | 🟢 Active | Rust / WGSL | Chinese edition of the wgpu graphics programming tutorial, from the first triangle to shaders and compute pipelines.<br><sub>Good for: Chinese tutorials · Also in: 3D</sub> |
-| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | 489 | 🟢 Active | Swift / Metal (iOS) | Composable Metal shaders and holographic UI effects for SwiftUI.<br><sub>Good for: App motion · Also in: Liquid Glass</sub> |
-| [Retro Crisis Shaders](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 481 | 🟢 Active | Slang Shader | Collection of CRT shader presets for RetroArch, based on Guest Advanced NTSC. Recreates the look of various old TVs.<br><sub>Good for: CRT post-processing · Also in: VHS & Analog, Pixel & Retro</sub> |
-| [Svader](https://github.com/sockmaster27/svader) | 464 | 🟢 Active | Svelte | Svelte components rendered with GPU shaders.<br><sub>Good for: Web shaders</sub> |
-| [Shader Skills](https://github.com/gokayfem/shader-skills) | 427 | 🟢 Active | GLSL | GLSL and Shadertoy skills for AI coding agents, with 186 shader functions.<br><sub>Good for: Shaders</sub> |
-| [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | 384 | 🟡 Slowing | WebGL | WebGL ink-wash background effect, with ink bleeding and flowing across rice paper.<br><sub>Good for: Ink wash backgrounds · Also in: Ink & Watercolor</sub> |
-| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | 366 | 🟢 Active | WebGL2 | Generative shader studio with 9 WebGL2 art modes. Blend styles and export seamless loops.<br><sub>Good for: Shader art · Also in: Generative Art</sub> |
+| [shader-doodle](https://github.com/mmmerl/shader-doodle) | 591 | 🟢 Active | Web Component | Web component for writing and displaying shaders. One tag puts Shadertoy-style code on a page.<br><sub>Good for: Web shaders</sub> |
+| [Shader Minifier](https://github.com/laurentlb/shader-minifier) | 585 | 🟢 Active | F# | Shrinks GLSL / HLSL code to the minimum. A must for 4KB and 64KB demos.<br><sub>Good for: Demoscene · Also in: Demoscene</sub> |
+| [cables](https://github.com/cables-gl/cables) | 575 | 🟢 Active | Node graph / JS | Node-based visual programming platform. Wire up real-time WebGL visuals in the browser, often used for music videos and live show visuals.<br><sub>Good for: MV · Live performances · Also in: Live Coding & VJ, 3D</sub> |
+| [Glass SDK Liquid Glass](https://github.com/Glass-HQ/liquid-glass) | 531 | 🟢 Active | TypeScript / WebGPU | Liquid glass materials and controls for React, the web and Electron that refract live content with WebGPU, in light and dark appearances.<br><sub>Good for: Liquid glass · Also in: Liquid Glass</sub><br><sub>⚠️ Requires WebGPU; Safari has known rendering issues.</sub> |
+| [Beam](https://github.com/doodlewind/beam) | 529 | 🟢 Active | JavaScript / WebGPU | Lightweight WebGPU library by a Chinese developer. Builds shader rendering pipelines with very little code.<br><sub>Good for: Shader rendering</sub> |
+| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | 527 | 🟡 Slowing | Godot Shader | Packs the common transition effects into a single Godot shader.<br><sub>Good for: Transitions · Also in: Shorts, Captions & Editing</sub> |
+| [Learn wgpu (Chinese edition)](https://github.com/jinleili/learn-wgpu-zh) | 513 | 🟢 Active | Rust / WGSL | Chinese edition of the wgpu graphics programming tutorial, from the first triangle to shaders and compute pipelines.<br><sub>Good for: Chinese tutorials · Also in: 3D</sub> |
+| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | 490 | 🟢 Active | Swift / Metal (iOS) | Composable Metal shaders and holographic UI effects for SwiftUI.<br><sub>Good for: App motion · Also in: Liquid Glass</sub> |
+| [Retro Crisis Shaders](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 482 | 🟢 Active | Slang Shader | Collection of CRT shader presets for RetroArch, based on Guest Advanced NTSC. Recreates the look of various old TVs.<br><sub>Good for: CRT post-processing · Also in: VHS & Analog, Pixel & Retro</sub> |
+| [Svader](https://github.com/sockmaster27/svader) | 465 | 🟢 Active | Svelte | Svelte components rendered with GPU shaders.<br><sub>Good for: Web shaders</sub> |
+| [liquid_glass_renderer](https://github.com/whynotmake-it/flutter_liquid_glass) | 461 | 🟢 Active | Dart (Flutter) | A Flutter package that renders liquid glass with fragment shaders (refraction, blending and lighting); several Flutter glass widget kits build on it.<br><sub>Good for: Liquid glass · Also in: Liquid Glass</sub> |
+| [Shader Skills](https://github.com/gokayfem/shader-skills) | 453 | 🟢 Active | GLSL | GLSL and Shadertoy skills for AI coding agents, with 186 shader functions.<br><sub>Good for: Shaders</sub> |
+| [react-native-effects](https://github.com/blazejkustra/react-native-effects) | 391 | 🟢 Active | TypeScript / WGSL | WebGPU shader effect components for React Native: aurora, liquid chrome, lava lamp, CRT-off and more, or write your own in WGSL.<br><sub>Good for: App effect backgrounds</sub><br><sub>⚠️ Experimental; the API may change.</sub> |
+| [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | 386 | 🟡 Slowing | WebGL | WebGL ink-wash background effect, with ink bleeding and flowing across rice paper.<br><sub>Good for: Ink wash backgrounds · Also in: Ink & Watercolor</sub> |
+| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | 367 | 🟢 Active | WebGL2 | Generative shader studio with 9 WebGL2 art modes. Blend styles and export seamless loops.<br><sub>Good for: Shader art · Also in: Generative Art</sub> |
 | [RayTK](https://github.com/t3kt/raytk) | 359 | 🟡 Slowing | TouchDesigner | Raymarching shader toolkit for TouchDesigner; build SDF scenes with nodes.<br><sub>Good for: Ray marching · Also in: Live Coding & VJ, 3D</sub><br><sub>⚠️ Requires TouchDesigner (commercial software, with a free version).</sub> |
 | [Godot VFX Library](https://github.com/haowg/GODOT-VFX-LIBRARY) | 358 | 🟡 Slowing | Godot | Collection of particle effects and shaders for Godot 4.<br><sub>Good for: Effect assets · Also in: Particles & Physics</sub> |
-| [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) | 348 | 🟢 Active | Swift (iOS) | 41 Metal shaders ready to drop into SwiftUI: holographic foil, kaleidoscope, magnetic distortion, and more. Good for mobile app motion.<br><sub>Good for: App motion · Also in: Glitch & Post FX</sub> |
-| [ShaderMania](https://github.com/markusmoenig/ShaderMania) | 347 | 🟢 Active | Swift (macOS / iPad) | Metal fragment shader editor for macOS and iPadOS.<br><sub>Good for: Shader editors</sub> |
-| [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 343 | 🟢 Active | Godot Shader | Retro shader collection for Godot 4, giving the dithering, low-poly, and texture-wobble look of the PS1 and N64 era.<br><sub>Good for: PS1 retro 3D · Also in: Pixel & Retro, 3D</sub> |
-| [Poseidon](https://github.com/owenyuwono/poseidon) | 318 | 🟢 Active | three.js / TSL | GPU-driven real-time FFT ocean, in three.js with WebGPU.<br><sub>Good for: Ocean · Also in: 3D</sub> |
-| [Singularity](https://github.com/MisterPrada/singularity) | 317 | 🟡 Slowing | three.js / TSL | Black hole written in TSL, the three.js shading language. Runs on WebGPU and WebGL.<br><sub>Good for: Space effects · Also in: Space & Stars</sub> |
-| [ShaderToy Browser Extension](https://github.com/patuwwy/ShaderToy-Chrome-Plugin) | 313 | 🟢 Active | JavaScript | Browser extension that adds features to shadertoy.com: resolution control, recording, slow motion, and more.<br><sub>Good for: Shadertoy tools</sub> |
-| [AGSL Shader Playground](https://github.com/mejdi14/Android-AGSL-Shader-Playground) | 308 | 🟢 Active | Kotlin (Android) | Android AGSL shader effect library. Adds glow, ripple, gradient, and similar effects to apps.<br><sub>Good for: App motion</sub> |
-| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 303 | 🟢 Active | WebGPU | Fully procedural cinematic ocean and extreme weather simulation in the browser: storms, waves, tornadoes.<br><sub>Good for: Weather effects · Also in: Particles & Physics, 3D</sub> |
+| [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) | 350 | 🟢 Active | Swift (iOS) | 41 Metal shaders ready to drop into SwiftUI: holographic foil, kaleidoscope, magnetic distortion, and more. Good for mobile app motion.<br><sub>Good for: App motion · Also in: Glitch & Post FX</sub> |
+| [ShaderMania](https://github.com/markusmoenig/ShaderMania) | 348 | 🟢 Active | Swift (macOS / iPad) | Metal fragment shader editor for macOS and iPadOS.<br><sub>Good for: Shader editors</sub> |
+| [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 345 | 🟢 Active | Godot Shader | Retro shader collection for Godot 4, giving the dithering, low-poly, and texture-wobble look of the PS1 and N64 era.<br><sub>Good for: PS1 retro 3D · Also in: Pixel & Retro, 3D</sub> |
+| [Plasma UI](https://github.com/CruxGarden/plasma-ui) | 333 | 🟢 Active | TypeScript (React / WebGL) | Liquid React panels rendered in WebGL: they fuse like droplets when they touch and refract whatever is behind them.<br><sub>Good for: Liquid glass · Interfaces · Also in: Liquid Glass</sub><br><sub>⚠️ Pre-1.0 and GPU-heavy; does not run well on mobile.</sub> |
+| [Poseidon](https://github.com/owenyuwono/poseidon) | 323 | 🟢 Active | three.js / TSL | GPU-driven real-time FFT ocean, in three.js with WebGPU.<br><sub>Good for: Ocean · Also in: 3D</sub> |
+| [Singularity](https://github.com/MisterPrada/singularity) | 319 | 🟡 Slowing | three.js / TSL | Black hole written in TSL, the three.js shading language. Runs on WebGPU and WebGL.<br><sub>Good for: Space effects · Also in: Space & Stars</sub> |
+| [ShaderToy Browser Extension](https://github.com/patuwwy/ShaderToy-Chrome-Plugin) | 314 | 🟢 Active | JavaScript | Browser extension that adds features to shadertoy.com: resolution control, recording, slow motion, and more.<br><sub>Good for: Shadertoy tools</sub> |
+| [AGSL Shader Playground](https://github.com/mejdi14/Android-AGSL-Shader-Playground) | 310 | 🟢 Active | Kotlin (Android) | Android AGSL shader effect library. Adds glow, ripple, gradient, and similar effects to apps.<br><sub>Good for: App motion</sub> |
+| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 304 | 🟢 Active | WebGPU | Fully procedural cinematic ocean and extreme weather simulation in the browser: storms, waves, tornadoes.<br><sub>Good for: Weather effects · Also in: Particles & Physics, 3D</sub> |
 | [Dithering Shader](https://github.com/niccolofanton/dithering-shader) | 294 | 🟢 Active | React / TS | Real-time Bayer dithering post-processing effect for React Three Fiber, turning 3D scenes into a retro dithered look.<br><sub>Good for: 3D post-processing · Also in: Dither & 1-bit, 3D</sub> |
-| [TSL Textures](https://github.com/boytchev/tsl-textures) | 272 | 🟢 Active | three.js / TSL | Procedural textures for three.js's shading language TSL: marble, wood grain, clouds, starfields.<br><sub>Good for: Procedural textures · Also in: Procedural Generation</sub> |
+| [TSL Textures](https://github.com/boytchev/tsl-textures) | 275 | 🟢 Active | three.js / TSL | Procedural textures for three.js's shading language TSL: marble, wood grain, clouds, starfields.<br><sub>Good for: Procedural textures · Also in: Procedural Generation</sub> |
 | [Radiance](https://github.com/zbanks/radiance) | 249 | 🟡 Slowing | C++ | Video art software for VJs: beat detection, shader effect chains, and mixing of GIF and video clips.<br><sub>Good for: VJ · Also in: Live Coding & VJ, Music Visualization</sub> |
-| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | 236 | 🟢 Active | TypeScript | Screen-space ray-marched volumetric light (god rays) for three.js.<br><sub>Good for: 3D post-processing · Also in: 3D</sub> |
+| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | 238 | 🟢 Active | TypeScript | Screen-space ray-marched volumetric light (god rays) for three.js.<br><sub>Good for: 3D post-processing · Also in: 3D</sub> |
 | [retrace.gl](https://github.com/stasilo/retrace.gl) | 196 | 🟢 Active | JavaScript | Define signed distance field CSG shapes in code, ray trace them, and export the result.<br><sub>Good for: Ray-traced 3D · Also in: Path Tracing, 3D</sub> |
 | [WebGL CRT Shader](https://github.com/gingerbeardman/webgl-crt-shader) | 188 | 🟡 Slowing | WebGL | Adjustable CRT shader for web canvas: scanlines, screen curvature, phosphor ghosting.<br><sub>Good for: CRT post-processing · Also in: VHS & Analog</sub> |
-| [Black Hole](https://github.com/ibra-kdbra/black-hole) | 112 | 🟢 Active | three.js / GLSL | Black hole and accretion disk made with three.js and GLSL shaders.<br><sub>Good for: Space effects · Also in: Space & Stars</sub> |
+| [Black Hole](https://github.com/ibra-kdbra/black-hole) | 113 | 🟢 Active | three.js / GLSL | Black hole and accretion disk made with three.js and GLSL shaders.<br><sub>Good for: Space effects · Also in: Space & Stars</sub> |
 | [ditherwave](https://github.com/sahilsaini5/ditherwave) | 89 | 🟡 Slowing | React / WebGL2 | WebGL2 dithering component under 8KB: Bayer, halftone, ASCII, and error diffusion.<br><sub>Good for: Web effects · Also in: Dither & 1-bit</sub> |
 | [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | 🟡 Slowing | three.js | High-performance three.js galaxy shader with adjustable colors, spiral arms, and black hole effects.<br><sub>Good for: Galaxy effects · Also in: Space & Stars, Particles & Physics</sub> |
 
@@ -615,7 +667,9 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Writing code live to make the picture, with a video-synth feel
 
-13 projects, sorted by stars.
+**Picks:** [Hydra](https://github.com/hydra-synth/hydra) · [TiXL](https://github.com/tixl3d/tixl) · [cables](https://github.com/cables-gl/cables) · [Bonzomatic](https://github.com/Gargaj/Bonzomatic) · [ossia score](https://github.com/ossia/score)
+
+16 projects, sorted by stars.
 
 <br clear="right">
 
@@ -629,11 +683,14 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [Bonzomatic](https://github.com/Gargaj/Bonzomatic) | 1.5k | 🟡 Slowing | GLSL | Live shader coding tool used in the demoscene Shader Showdown contest. Write code live and see the picture live.<br><sub>Good for: Live performances · Also in: Shaders & Psychedelic, Demoscene</sub> |
 | [twigl](https://github.com/doxas/twigl) | 1.1k | 🟡 Slowing | GLSL | Minimal online GLSL editor popular in Japan's tweet-sized GLSL scene. Exports GIFs and videos.<br><sub>Good for: Short films · GIF · Also in: Shaders & Psychedelic</sub> |
 | [shadplay](https://github.com/alphastrata/shadplay) | 727 | 🟢 Active | Rust / WGSL | Real-time WGSL shader visualization tool: write and see the result live, handy for learning shaders.<br><sub>Good for: Shader practice · Also in: Shaders & Psychedelic</sub> |
-| [cables](https://github.com/cables-gl/cables) | 574 | 🟢 Active | Node graph / JS | Node-based visual programming platform. Wire up real-time WebGL visuals in the browser, often used for music videos and live show visuals.<br><sub>Good for: MV · Live performances · Also in: Shaders & Psychedelic, 3D</sub> |
-| [Mosaic](https://github.com/d3cod3/Mosaic) | 518 | 🟢 Active | C++ | Visual patching creative coding platform built on openFrameworks, connecting nodes, code, and audio.<br><sub>Good for: Node-based creative coding · Also in: Generative Art</sub> |
-| [modV](https://github.com/vcync/modV) | 498 | 🟡 Slowing | JavaScript | Modular music visualizer and VJ tool. Write modules in JavaScript and shaders.<br><sub>Good for: VJ · Music visualizer · Also in: Music Visualization</sub> |
+| [Fabric](https://github.com/Fabric-Project/Fabric) | 606 | 🟢 Active | Swift (Metal) | A node-based creative coding tool in the spirit of Quartz Composer, rendering 3D, image effects and audio-reactive scenes with Metal.<br><sub>Good for: Real-time visuals · Node-based creation · Also in: 3D, Shaders & Psychedelic</sub><br><sub>⚠️ macOS 15+ only.</sub> |
+| [cables](https://github.com/cables-gl/cables) | 575 | 🟢 Active | Node graph / JS | Node-based visual programming platform. Wire up real-time WebGL visuals in the browser, often used for music videos and live show visuals.<br><sub>Good for: MV · Live performances · Also in: Shaders & Psychedelic, 3D</sub> |
+| [Mosaic](https://github.com/d3cod3/Mosaic) | 519 | 🟢 Active | C++ | Visual patching creative coding platform built on openFrameworks, connecting nodes, code, and audio.<br><sub>Good for: Node-based creative coding · Also in: Generative Art</sub> |
+| [modV](https://github.com/vcync/modV) | 499 | 🟡 Slowing | JavaScript | Modular music visualizer and VJ tool. Write modules in JavaScript and shaders.<br><sub>Good for: VJ · Music visualizer · Also in: Music Visualization</sub> |
 | [RayTK](https://github.com/t3kt/raytk) | 359 | 🟡 Slowing | TouchDesigner | Raymarching shader toolkit for TouchDesigner; build SDF scenes with nodes.<br><sub>Good for: Ray marching · Also in: Shaders & Psychedelic, 3D</sub><br><sub>⚠️ Requires TouchDesigner (commercial software, with a free version).</sub> |
+| [Infinite](https://github.com/n1m21n/Infinite) | 331 | 🟢 Active | C++ / Node graph | An open-source audiovisual workstation: visuals, music and code share one node canvas, with GPU compositing, procedural 3D and a synth rack that modulate each other.<br><sub>Good for: Audiovisual live · MV · Also in: Music Visualization, 3D</sub> |
 | [Radiance](https://github.com/zbanks/radiance) | 249 | 🟡 Slowing | C++ | Video art software for VJs: beat detection, shader effect chains, and mixing of GIF and video clips.<br><sub>Good for: VJ · Also in: Shaders & Psychedelic, Music Visualization</sub> |
+| [Patchies](https://github.com/heypoom/patchies) | 214 | 🟢 Active | TypeScript / Web | A creative coding patcher in the browser: wire small p5.js, Hydra, GLSL and three.js programs together like modules for audio-reactive visuals.<br><sub>Good for: Live coding · Creative coding · Also in: Generative Art</sub><br><sub>⚠️ AGPL-3.0 licensed.</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -645,13 +702,15 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Spectrums, waveforms and MilkDrop-style visuals that move with the music
 
-26 projects, sorted by stars.
+**Picks:** [Butterchurn](https://github.com/jberg/butterchurn) · [projectM](https://github.com/projectM-visualizer/projectm) · [CAVA](https://github.com/karlstav/cava) · [Astrofox](https://github.com/astrofox-io/astrofox) · [audioMotion](https://github.com/hvianna/audioMotion-analyzer)
+
+28 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [p5.js](https://github.com/processing/p5.js) | 24.3k | 🟢 Active | JavaScript | The most popular creative coding library: draw, build interactions, and animate on the web. Plenty of Chinese tutorials too.<br><sub>Good for: Generative art · MV · Also in: Generative Art, Particles & Physics</sub><br><sub>⚠️ Exporting video takes extra steps (save frames one by one, or screen-record).</sub> |
+| [p5.js](https://github.com/processing/p5.js) | 24.4k | 🟢 Active | JavaScript | The most popular creative coding library: draw, build interactions, and animate on the web. Plenty of Chinese tutorials too.<br><sub>Good for: Generative art · MV · Also in: Generative Art, Particles & Physics</sub><br><sub>⚠️ Exporting video takes extra steps (save frames one by one, or screen-record).</sub> |
 | [wavesurfer.js](https://github.com/katspaugh/wavesurfer.js) | 10.5k | 🟢 Active | TypeScript | Draws and plays audio waveforms on the web. Can be used for waveform animation and audio editing interfaces.<br><sub>Good for: Audio waveforms</sub> |
 | [openFrameworks](https://github.com/openframeworks/openFrameworks) | 10.5k | 🟢 Active | C++ | C++ creative coding framework with strong performance. Often used for interactive installations, stage visuals, and music visualization.<br><sub>Good for: Performances · Installations · MV · Also in: Generative Art, 3D</sub> |
 | [nannou](https://github.com/nannou-org/nannou) | 6.8k | 🟢 Active | Rust | Rust creative coding framework with audio and OSC modules, suited to real-time audiovisual work.<br><sub>Good for: Generative art · Performances · Also in: Generative Art</sub> |
@@ -665,18 +724,20 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [Musializer](https://github.com/tsoding/musializer) | 1.5k | 🟢 Active | C | Music visualizer written in C that can render straight to video.<br><sub>Good for: Music visualizer · MV</sub> |
 | [Fractal Sound Explorer](https://github.com/HackerPoet/FractalSoundExplorer) | 1.3k | ⚪ Dormant | C++ | Click in a fractal and the path turns into sound; visuals and audio evolve together.<br><sub>Good for: Fractals · Audio-visual · Also in: Fractals & Chaos</sub><br><sub>⚠️ Not updated since 2021.</sub> |
 | [Realtime PyAudio FFT](https://github.com/aiXander/Realtime_PyAudio_FFT) | 1.1k | 🟢 Active | Python | Analyzes audio in real time and sends the results to other programs over OSC, to drive visuals that react to music.<br><sub>Good for: Audio analysis</sub> |
-| [audioMotion](https://github.com/hvianna/audioMotion-analyzer) | 971 | 🟢 Active | JavaScript | High-resolution real-time spectrum analyzer with adjustable bar, radial, and other styles.<br><sub>Good for: Music visualizer · Also in: Data Animation</sub><br><sub>⚠️ AGPL-3.0: if used in a network service offered to others, you must publish your modified source.</sub> |
-| [party-mode](https://github.com/preziotte/party-mode) | 807 | 🟢 Active | JavaScript | Experimental D3-based music visualizer with several rhythmic geometric patterns.<br><sub>Good for: Music visualizer · Also in: Data Animation</sub> |
-| [scope-tui](https://github.com/alemidev/scope-tui) | 755 | 🟢 Active | Rust (CLI) | Oscilloscope, vectorscope, and spectroscope in your terminal, drawing waveforms with characters.<br><sub>Good for: Terminal oscilloscope · Also in: Oscilloscope & Vector, ASCII & Terminal</sub> |
-| [osci-render](https://github.com/jameshball/osci-render) | 741 | 🟢 Active | C++ / Lua | Synthesizer plugin that draws shapes on an oscilloscope: shapes become sound, and the sound turns back into glowing vector lines on the scope.<br><sub>Good for: Oscilloscope music · MV · Also in: Oscilloscope & Vector</sub> |
-| [Waveform for OBS](https://github.com/phandasm/waveform) | 714 | 🟢 Active | C++ | Audio spectrum plugin for OBS that shows a live spectrum while streaming or recording.<br><sub>Good for: Live audio visualizer</sub> |
-| [audioMotion Player](https://github.com/hvianna/audioMotion.js) | 643 | 🟢 Active | JavaScript | Web music player with real-time spectrum analysis, from the author of audioMotion-analyzer.<br><sub>Good for: Music visualizer</sub><br><sub>⚠️ AGPL-3.0: if used in a network service offered to others, you must publish your modified source.</sub> |
-| [HaloFlux](https://github.com/Ryder191/haloflux) | 584 | 🟢 Active | Canvas | Sci-fi light-ring visualization that pulses to the beat. Pure Canvas in a single HTML file, no dependencies.<br><sub>Good for: Music visualizer · Also in: Sci-fi HUD</sub><br><sub>⚠️ Noncommercial use only.</sub> |
-| [modV](https://github.com/vcync/modV) | 498 | 🟡 Slowing | JavaScript | Modular music visualizer and VJ tool. Write modules in JavaScript and shaders.<br><sub>Good for: VJ · Music visualizer · Also in: Live Coding & VJ</sub> |
-| [Opus Video Skills](https://github.com/tuzhechen2005/opus-video-skills) | 472 | 🟢 Active | JavaScript | Video-making skills for Claude Opus, where every frame and every note is generated in code.<br><sub>Good for: Short films · MV · Also in: Motion Graphics</sub> |
-| [Open Cubic Player](https://github.com/mywave82/opencubicplayer) | 451 | 🟢 Active | C | Unix version of the classic DOS player. Plays tracker music such as MOD and S3M, with retro visualizations.<br><sub>Good for: Retro music visualizer · Also in: Demoscene, ASCII & Terminal</sub> |
-| [Remotion Audiogram Template](https://github.com/remotion-dev/template-audiogram) | 277 | 🟢 Active | React / TS | Official Remotion template: turns podcast audio into short videos with a waveform and captions.<br><sub>Good for: Short videos · Podcasts · Also in: Shorts, Captions & Editing</sub><br><sub>⚠️ Same license terms as Remotion.</sub> |
+| [audioMotion](https://github.com/hvianna/audioMotion-analyzer) | 975 | 🟢 Active | JavaScript | High-resolution real-time spectrum analyzer with adjustable bar, radial, and other styles.<br><sub>Good for: Music visualizer · Also in: Data Animation</sub><br><sub>⚠️ AGPL-3.0: if used in a network service offered to others, you must publish your modified source.</sub> |
+| [party-mode](https://github.com/preziotte/party-mode) | 808 | 🟢 Active | JavaScript | Experimental D3-based music visualizer with several rhythmic geometric patterns.<br><sub>Good for: Music visualizer · Also in: Data Animation</sub> |
+| [HaloFlux](https://github.com/Ryder191/haloflux) | 760 | 🟢 Active | Canvas | Sci-fi light-ring visualization that pulses to the beat. Pure Canvas in a single HTML file, no dependencies.<br><sub>Good for: Music visualizer · Also in: Sci-fi HUD</sub><br><sub>⚠️ Noncommercial use only.</sub> |
+| [scope-tui](https://github.com/alemidev/scope-tui) | 759 | 🟢 Active | Rust (CLI) | Oscilloscope, vectorscope, and spectroscope in your terminal, drawing waveforms with characters.<br><sub>Good for: Terminal oscilloscope · Also in: Oscilloscope & Vector, ASCII & Terminal</sub> |
+| [osci-render](https://github.com/jameshball/osci-render) | 742 | 🟢 Active | C++ / Lua | Synthesizer plugin that draws shapes on an oscilloscope: shapes become sound, and the sound turns back into glowing vector lines on the scope.<br><sub>Good for: Oscilloscope music · MV · Also in: Oscilloscope & Vector</sub> |
+| [Waveform for OBS](https://github.com/phandasm/waveform) | 717 | 🟢 Active | C++ | Audio spectrum plugin for OBS that shows a live spectrum while streaming or recording.<br><sub>Good for: Live audio visualizer</sub> |
+| [audioMotion Player](https://github.com/hvianna/audioMotion.js) | 645 | 🟢 Active | JavaScript | Web music player with real-time spectrum analysis, from the author of audioMotion-analyzer.<br><sub>Good for: Music visualizer</sub><br><sub>⚠️ AGPL-3.0: if used in a network service offered to others, you must publish your modified source.</sub> |
+| [Opus Video Skills](https://github.com/tuzhechen2005/opus-video-skills) | 501 | 🟢 Active | JavaScript | Video-making skills for Claude Opus, where every frame and every note is generated in code.<br><sub>Good for: Short films · MV · Also in: Motion Graphics</sub> |
+| [modV](https://github.com/vcync/modV) | 499 | 🟡 Slowing | JavaScript | Modular music visualizer and VJ tool. Write modules in JavaScript and shaders.<br><sub>Good for: VJ · Music visualizer · Also in: Live Coding & VJ</sub> |
+| [Open Cubic Player](https://github.com/mywave82/opencubicplayer) | 452 | 🟢 Active | C | Unix version of the classic DOS player. Plays tracker music such as MOD and S3M, with retro visualizations.<br><sub>Good for: Retro music visualizer · Also in: Demoscene, ASCII & Terminal</sub> |
+| [Infinite](https://github.com/n1m21n/Infinite) | 331 | 🟢 Active | C++ / Node graph | An open-source audiovisual workstation: visuals, music and code share one node canvas, with GPU compositing, procedural 3D and a synth rack that modulate each other.<br><sub>Good for: Audiovisual live · MV · Also in: Live Coding & VJ, 3D</sub> |
+| [Remotion Audiogram Template](https://github.com/remotion-dev/template-audiogram) | 279 | 🟢 Active | React / TS | Official Remotion template: turns podcast audio into short videos with a waveform and captions.<br><sub>Good for: Short videos · Podcasts · Also in: Shorts, Captions & Editing</sub><br><sub>⚠️ Same license terms as Remotion.</sub> |
 | [Radiance](https://github.com/zbanks/radiance) | 249 | 🟡 Slowing | C++ | Video art software for VJs: beat detection, shader effect chains, and mixing of GIF and video clips.<br><sub>Good for: VJ · Also in: Live Coding & VJ, Shaders & Psychedelic</sub> |
+| [Oscillody](https://github.com/Akosmo/Oscillody) | 56 | 🟢 Active | GDScript (Godot) | An oscilloscope-style audio visualizer: import up to four stems, draw their waveforms in real time, style them and export a video.<br><sub>Good for: Oscilloscope waveforms · Music visualization · Also in: Oscilloscope & Vector</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -688,44 +749,51 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > 3D scenes, camera moves, materials and lighting
 
-74 projects, sorted by stars.
+**Picks:** [three.js](https://github.com/mrdoob/three.js) · [React Three Fiber](https://github.com/pmndrs/react-three-fiber) · [Babylon.js](https://github.com/BabylonJS/Babylon.js) · [PlayCanvas](https://github.com/playcanvas/engine)
+
+83 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
 | [three.js](https://github.com/mrdoob/three.js) | 118k | 🟢 Active | JavaScript | The de facto standard for 3D on the web: scenes, materials, particles, and post-processing, with lots of examples.<br><sub>Good for: MV · Web 3D · Also in: Particles & Physics, Shaders & Psychedelic</sub> |
-| [Remotion](https://github.com/remotion-dev/remotion) | 71.9k | 🟢 Active | React / TS | Write videos as React components and render them to MP4, with batch generation. Official add-on packages cover captions, audio visualization, three.js, and more.<br><sub>Good for: MV · Short videos · Batch video rendering · Also in: Motion Graphics, Shorts, Captions & Editing, Kinetic Type & Lyrics</sub><br><sub>⚠️ Free for individuals and small companies (commercial use included); larger companies need to buy a company license.</sub> |
-| [raylib](https://github.com/raysan5/raylib) | 35.6k | 🟢 Active | C (many bindings) | Simple, beginner-friendly C graphics library with bindings for dozens of languages. Quick for 2D/3D animations and small demos.<br><sub>Good for: 2D/3D animation · Mini games · Also in: Pixel & Retro, Generative Art</sub> |
-| [React Three Fiber](https://github.com/pmndrs/react-three-fiber) | 33.6k | 🟢 Active | React / TS | Write three.js scenes in React; pairs with Remotion to render 3D videos.<br><sub>Good for: MV · Web 3D</sub> |
+| [Remotion](https://github.com/remotion-dev/remotion) | 73.4k | 🟢 Active | React / TS | Write videos as React components and render them to MP4, with batch generation. Official add-on packages cover captions, audio visualization, three.js, and more.<br><sub>Good for: MV · Short videos · Batch video rendering · Also in: Motion Graphics, Shorts, Captions & Editing, Kinetic Type & Lyrics</sub><br><sub>⚠️ Free for individuals and small companies (commercial use included); larger companies need to buy a company license.</sub> |
+| [raylib](https://github.com/raysan5/raylib) | 35.7k | 🟢 Active | C (many bindings) | Simple, beginner-friendly C graphics library with bindings for dozens of languages. Quick for 2D/3D animations and small demos.<br><sub>Good for: 2D/3D animation · Mini games · Also in: Pixel & Retro, Generative Art</sub> |
+| [React Three Fiber](https://github.com/pmndrs/react-three-fiber) | 33.7k | 🟢 Active | React / TS | Write three.js scenes in React; pairs with Remotion to render 3D videos.<br><sub>Good for: MV · Web 3D</sub> |
 | [Taichi](https://github.com/taichi-dev/taichi) | 28.5k | 🟢 Active | Python | High-performance parallel computing in Python, often used for physics simulations such as fluids, elastic bodies, and particles.<br><sub>Good for: Physics simulation · Also in: Particles & Physics</sub> |
-| [Babylon.js](https://github.com/BabylonJS/Babylon.js) | 26.3k | 🟢 Active | TypeScript | Web 3D engine maintained by a Microsoft team, with a wide feature set and built-in online editing tools.<br><sub>Good for: Web 3D · MV</sub> |
-| [img2threejs](https://github.com/img2threejs/img2threejs) | 21k | 🟢 Active | Python / three.js | AI coding agent skill: rebuilds a reference image as a procedural three.js 3D model in pure code, ready to animate.<br><sub>Good for: 3D assets</sub><br><sub>⚠️ Includes an optional Blender export bridge; the core is a pure-code three.js model.</sub> |
+| [Babylon.js](https://github.com/BabylonJS/Babylon.js) | 26.4k | 🟢 Active | TypeScript | Web 3D engine maintained by a Microsoft team, with a wide feature set and built-in online editing tools.<br><sub>Good for: Web 3D · MV</sub> |
+| [img2threejs](https://github.com/img2threejs/img2threejs) | 21.4k | 🟢 Active | Python / three.js | AI coding agent skill: rebuilds a reference image as a procedural three.js 3D model in pure code, ready to animate.<br><sub>Good for: 3D assets</sub><br><sub>⚠️ Includes an optional Blender export bridge; the core is a pure-code three.js model.</sub> |
 | [3D Game Shaders for Beginners](https://github.com/lettier/3d-game-shaders-for-beginners) | 20k | ⚪ Dormant | GLSL / C++ | Illustrated step-by-step tutorial for dozens of 3D shader effects: SSAO, depth of field, bloom, cartoon outlines, pixelation, and more.<br><sub>Good for: Tutorials · Also in: Shaders & Psychedelic</sub><br><sub>⚠️ Not updated since 2023; the tutorial content is complete.</sub> |
-| [PlayCanvas](https://github.com/playcanvas/engine) | 17.2k | 🟢 Active | JavaScript | Web 3D engine supporting WebGL, WebGPU, and Gaussian splatting.<br><sub>Good for: Web 3D</sub> |
-| [deck.gl](https://github.com/visgl/deck.gl) | 14.7k | 🟢 Active | TypeScript | Large-scale geospatial data visualization: animated trajectories, 3D column maps, and more.<br><sub>Good for: Map animation · Also in: Data Animation, Map & Route</sub> |
+| [PlayCanvas](https://github.com/playcanvas/engine) | 17.3k | 🟢 Active | JavaScript | Web 3D engine supporting WebGL, WebGPU, and Gaussian splatting.<br><sub>Good for: Web 3D</sub> |
+| [Awesome Opus 5.5 Videos](https://github.com/yihui-dev/awesome-opus5-5-videos) | 15.3k | 🟢 Active | HTML / Canvas / three.js | 703 prompts people used to make videos with Claude Opus 5.5, each linked to the original post and a live remake. The picture is drawn in code (Canvas, SVG, three.js): mostly motion graphics, explainers and 3D scenes.<br><sub>Good for: Prompt collection · MV · Also in: Motion Graphics, Generative Art</sub><br><sub>⚠️ A few entries overlay AI-generated images or use Blender; those are labeled.</sub> |
+| [deck.gl](https://github.com/visgl/deck.gl) | 14.8k | 🟢 Active | TypeScript | Large-scale geospatial data visualization: animated trajectories, 3D column maps, and more.<br><sub>Good for: Map animation · Also in: Data Animation, Map & Route</sub> |
 | [Theatre.js](https://github.com/theatre-js/theatre) | 13k | ⚪ Dormant | TypeScript | Visual timeline for web animation: define properties in code, drag keyframes in the UI. Often paired with three.js for 3D camera animation.<br><sub>Good for: MV · Web animation · Also in: Motion Graphics</sub> |
 | [Zdog](https://github.com/metafizzy/zdog) | 10.7k | ⚪ Dormant | JavaScript | Pseudo-3D flat engine that draws rounded, cute flat-shaded 3D shapes.<br><sub>Good for: Web animation · Also in: Motion Graphics, Isometric & Voxel</sub><br><sub>⚠️ Not updated in years; simple and stable.</sub> |
 | [openFrameworks](https://github.com/openframeworks/openFrameworks) | 10.5k | 🟢 Active | C++ | C++ creative coding framework with strong performance. Often used for interactive installations, stage visuals, and music visualization.<br><sub>Good for: Performances · Installations · MV · Also in: Generative Art, Music Visualization</sub> |
 | [Vanta.js](https://github.com/tengbao/vanta) | 7.4k | ⚪ Dormant | JavaScript | A few lines of code give you animated 3D backgrounds: waves, birds, fog, grids, and more.<br><sub>Good for: Background assets · Also in: Generative Art</sub> |
-| [ThreeUI](https://github.com/MengTo/threeui) | 7.2k | 🟢 Active | three.js | Directory of interactive three.js components, each with adjustable parameters and source code.<br><sub>Good for: Web 3D · Assets</sub> |
+| [ThreeUI](https://github.com/MengTo/threeui) | 7.3k | 🟢 Active | three.js | Directory of interactive three.js components, each with adjustable parameters and source code.<br><sub>Good for: Web 3D · Assets</sub> |
 | [VoxelSpace](https://github.com/s-macke/VoxelSpace) | 6.8k | ⚪ Dormant | C / JS | Recreates the 90s game Comanche's voxel terrain flight view in under 20 lines of code, with an explanation of how it works.<br><sub>Good for: Retro voxel terrain · Also in: Isometric & Voxel, Pixel & Retro</sub> |
 | [Unity Shader Essentials (book source)](https://github.com/candycat1992/Unity_Shaders_Book) | 6.1k | ⚪ Dormant | Unity ShaderLab | Full source code for a classic Chinese textbook on Unity shaders, Unity Shader Essentials.<br><sub>Good for: Chinese tutorials · Also in: Shaders & Psychedelic</sub><br><sub>⚠️ Not updated since 2023; the book's content is complete.</sub> |
 | [Galacean Engine](https://github.com/galacean/engine) | 5.9k | 🟢 Active | TypeScript | Web graphics engine open-sourced by Ant Group, covering 2D, 3D, particles, and Lottie.<br><sub>Good for: Web 3D · Interactive · Also in: Particles & Physics</sub> |
-| [Cinder](https://github.com/cinder/Cinder) | 5.5k | 🟡 Slowing | C++ | C++ creative coding framework geared toward professional real-time graphics and installation work.<br><sub>Good for: Performances · Installations · Also in: Generative Art</sub> |
+| [Cinder](https://github.com/cinder/Cinder) | 5.6k | 🟡 Slowing | C++ | C++ creative coding framework geared toward professional real-time graphics and installation work.<br><sub>Good for: Performances · Installations · Also in: Generative Art</sub> |
 | [Orillusion](https://github.com/Orillusion/orillusion) | 5.2k | 🟢 Active | TypeScript / WebGPU | Pure WebGPU web 3D engine built by a Chinese team.<br><sub>Good for: Web 3D · Also in: Shaders & Psychedelic</sub> |
 | [TiXL](https://github.com/tixl3d/tixl) | 5.2k | 🟢 Active | Node graph / C# | Formerly Tooll3. Open-source real-time motion graphics software with nodes and a timeline. Often used for music videos and live shows.<br><sub>Good for: MV · Live performances · Also in: Live Coding & VJ, Shaders & Psychedelic</sub> |
 | [WFC Infinite City](https://github.com/marian42/wavefunctioncollapse) | 4.9k | ⚪ Dormant | C# (Unity) | Uses wave function collapse to generate an endless 3D city in real time that you can keep walking through.<br><sub>Good for: Procedural generation · Also in: Procedural Generation</sub><br><sub>⚠️ Not updated since 2021.</sub> |
 | [Godot Shaders](https://github.com/gdquest-demos/godot-shaders) | 4.2k | 🟢 Active | Godot Shader | GDQuest's large collection of Godot 2D and 3D shaders: dissolve, outline, water, pixelation, and more.<br><sub>Good for: Shader collections · Also in: Shaders & Psychedelic, Pixel & Retro</sub> |
 | [farbrausch Tools](https://github.com/farbrausch/fr_public) | 3.8k | ⚪ Dormant | C++ | Tool source code from the legendary demo group farbrausch, 2001-2011, including .werkkzeug, which made their 64KB 3D shorts.<br><sub>Good for: Demoscene · Also in: Demoscene</sub><br><sub>⚠️ Historical source archive; hard to compile and use.</sub> |
-| [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.3k | 🟢 Active | Python / Web | 15 motion design style demo films, each written as code by Claude Opus 5.5 from a single prompt. Prompts and source included.<br><sub>Good for: Style sample clips · Also in: Motion Graphics, Hand-drawn & Whiteboard</sub><br><sub>⚠️ Of the 15, only the 3D one uses Blender; the rest are pure code.</sub> |
+| [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.5k | 🟢 Active | Python / Web | 15 motion design style demo films, each written as code by Claude Opus 5.5 from a single prompt. Prompts and source included.<br><sub>Good for: Style sample clips · Also in: Motion Graphics, Hand-drawn & Whiteboard</sub><br><sub>⚠️ Of the 15, only the 3D one uses Blender; the rest are pure code.</sub> |
+| [Claude Animated Shorts](https://github.com/mromidev/claude-animated-shorts) | 3.5k | 🟢 Active | TypeScript (Remotion + three.js) | A Claude skill for ~1-minute vertical animated story shorts: 2D characters in a colourful 3D town with ink outlines, lens blur and gliding cameras, rendered with three.js inside Remotion.<br><sub>Good for: Vertical story shorts · Also in: Shorts, Captions & Editing</sub> |
 | [Mitsuba 3](https://github.com/mitsuba-renderer/mitsuba3) | 3k | 🟢 Active | C++ / Python | Research-grade physically based renderer. Build scenes and render frame-by-frame animation with Python scripts.<br><sub>Good for: Realistic rendering · Also in: Path Tracing</sub> |
 | [postprocessing](https://github.com/pmndrs/postprocessing) | 3k | 🟢 Active | JavaScript | Post-processing library for three.js: bloom, chromatic aberration, glitch, depth of field, and more.<br><sub>Good for: 3D post-processing · Also in: Glitch & Post FX</sub> |
 | [Yocto/GL](https://github.com/xelatihy/yocto-gl) | 2.9k | ⚪ Dormant | C++ | Small C++ libraries for data-driven physically based rendering, common in academia.<br><sub>Good for: Realistic rendering · Also in: Path Tracing</sub><br><sub>⚠️ Not updated since 2024.</sub> |
-| [huashu-motion](https://github.com/alchaincyf/huashu-motion) | 2.5k | 🟢 Active | JavaScript | Has an AI coding agent make product launch films, compose its own soundtrack, and take edits by pointing at the frame.<br><sub>Good for: Product promo videos · Also in: Motion Graphics</sub> |
+| [Math-To-Manim](https://github.com/HarleyCoops/Math-To-Manim) | 2.9k | 🟢 Active | Python (Manim) | A chain of AI agents turns a math or physics concept into a storyboard, writes the Manim code and revises it after looking at the renders; it can make films up to ten minutes long.<br><sub>Good for: Math explainers · Science films · Also in: Math Explainer</sub><br><sub>⚠️ The newer Studio pipeline renders 3D shots with Blender EEVEE; the original main pipeline uses Manim only.</sub> |
+| [ManimGX](https://github.com/academa-labs/manimgx) | 2.8k | 🟢 Active | Python / Rust (wgpu) | An animation engine compatible with the Manim CE API, rebuilt on Rust and wgpu so math and 3D scenes render faster; it also runs in the browser.<br><sub>Good for: Math animation · 3D explainers · Also in: Math Explainer</sub> |
+| [huashu-motion](https://github.com/alchaincyf/huashu-motion) | 2.7k | 🟢 Active | JavaScript | Has an AI coding agent make product launch films, compose its own soundtrack, and take edits by pointing at the frame.<br><sub>Good for: Product promo videos · Also in: Motion Graphics</sub> |
+| [vgpu](https://github.com/vercel-labs/vgpu) | 2.7k | 🟢 Active | TypeScript / WGSL | A small WebGPU library from Vercel: import WGSL shaders like TypeScript modules and render the same code in the browser or headless Node.<br><sub>Good for: WebGPU effects · Web 3D · Also in: Shaders & Psychedelic</sub> |
 | [zero](https://github.com/sinclairzx81/zero) | 2.5k | 🟢 Active | TypeScript | 3D renderer written in JavaScript that draws 3D scenes directly in the terminal.<br><sub>Good for: Terminal animation · Also in: ASCII & Terminal</sub> |
 | [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | 🟢 Active | TypeScript | From pixiv: use VRM anime avatars in three.js.<br><sub>Good for: Anime MV · Avatars · Also in: Anime, MMD & VRM</sub> |
-| [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) | 2k | 🟢 Active | JavaScript | GPU path tracing renderer for three.js, giving web 3D scenes realistic lighting, reflections, and depth of field.<br><sub>Good for: Realistic rendering · Also in: Path Tracing</sub> |
+| [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) | 2.1k | 🟢 Active | JavaScript | GPU path tracing renderer for three.js, giving web 3D scenes realistic lighting, reflections, and depth of field.<br><sub>Good for: Realistic rendering · Also in: Path Tracing</sub> |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | 🟡 Slowing | Unity Shader | Fractal dithering shader that sticks to object surfaces and doesn't flicker when the camera moves. For 1-bit style 3D visuals.<br><sub>Good for: 1-bit 3D · Also in: Dither & 1-bit, Shaders & Psychedelic</sub><br><sub>⚠️ Unity shader; not updated since early 2025.</sub> |
 | [MathBox](https://github.com/unconed/mathbox) | 1.5k | ⚪ Dormant | JavaScript | 3D math visualization in the browser: surfaces, vector fields and coordinate grids, with clean, polished visuals.<br><sub>Good for: Explainer videos · Also in: Math Explainer</sub> |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | 🟢 Active | C | Procedurally generated voxel engine. Terrain and buildings are grown from code.<br><sub>Good for: Procedural voxels · Also in: Procedural Generation, Isometric & Voxel</sub> |
@@ -736,38 +804,42 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [three.quarks](https://github.com/Alchemist0823/three.quarks) | 1.2k | 🟢 Active | TypeScript | Particle effects system for three.js: fire, explosions, magic, and other VFX.<br><sub>Good for: 3D effects · Also in: Particles & Physics</sub> |
 | [Mandelbulber](https://github.com/buddhi1980/mandelbulber2) | 1.1k | 🟢 Active | C++ | 3D fractal renderer. Fractals like the Mandelbulb can be keyframed for fly-through animations.<br><sub>Good for: 3D fractal animation · Also in: Fractals & Chaos</sub><br><sub>⚠️ Mainly a graphical app; also supports batch rendering from the command line.</sub> |
 | [Raymarching Workshop](https://github.com/electricsquare/raymarching-workshop) | 1k | ⚪ Dormant | GLSL | Beginner raymarching workshop: build up 3D shapes step by step with signed distance fields.<br><sub>Good for: Tutorials · Also in: Shaders & Psychedelic</sub><br><sub>⚠️ Not updated since 2021.</sub> |
-| [Godot Realistic Water](https://github.com/godot-extended-libraries/godot-realistic-water) | 978 | 🟡 Slowing | Godot Shader | Realistic water surface shader for Godot.<br><sub>Good for: Water surfaces · Also in: Shaders & Psychedelic</sub> |
-| [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 919 | 🟢 Active | JavaScript | Procedural terrain generation engine for three.js.<br><sub>Good for: Procedural terrain · Also in: Procedural Generation</sub> |
-| [motion-web](https://github.com/feitangyuan/motion-web) | 854 | 🟢 Active | HTML / JS | Another skill set from the onetake author: motion-first creative websites built on vanilla three.js, Canvas, and WebGL.<br><sub>Good for: Motion websites · Also in: Motion Graphics</sub> |
-| [Shader Park](https://github.com/shader-park/shader-park-core) | 832 | 🟢 Active | JavaScript | Write SDF shaders in JS-like syntax to make sculptural 3D abstract forms.<br><sub>Good for: MV · Generative art · Also in: Shaders & Psychedelic</sub> |
-| [Solar Wanderer](https://github.com/hyqzz/Solar-Wanderer) | 767 | 🟢 Active | three.js | A 1:1 real-time solar system in the browser using NASA JPL ephemeris data. Fly to any planet.<br><sub>Good for: Solar system animation · Also in: Space & Stars</sub> |
-| [Athenaion](https://github.com/Leonxlnx/athenaion) | 691 | 🟢 Active | three.js | Ancient Greek city-state world built purely in code with three.js. Zero assets, made by Claude.<br><sub>Good for: 3D worlds</sub> |
-| [heerich](https://github.com/meodai/heerich) | 631 | 🟢 Active | JavaScript | Small engine that renders 3D voxel scenes to SVG. Supports boolean operations and oblique and perspective cameras. No WebGL.<br><sub>Good for: Voxel illustration · Also in: Isometric & Voxel</sub> |
-| [Machine Skill](https://github.com/AirsupHQ/machine-skill) | 616 | 🟢 Active | JavaScript | Describe a machine in one line and Claude builds a realistic, physics-based interactive 3D simulation and teardown animation in code.<br><sub>Good for: 3D mechanical animation</sub> |
-| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 612 | 🟡 Slowing | Godot | Ocean waves and buoyancy based on Tessendorf FFT, implemented with compute shaders in Godot 4.<br><sub>Good for: Ocean · Also in: Shaders & Psychedelic, Particles & Physics</sub> |
+| [Godot Realistic Water](https://github.com/godot-extended-libraries/godot-realistic-water) | 982 | 🟡 Slowing | Godot Shader | Realistic water surface shader for Godot.<br><sub>Good for: Water surfaces · Also in: Shaders & Psychedelic</sub> |
+| [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 923 | 🟢 Active | JavaScript | Procedural terrain generation engine for three.js.<br><sub>Good for: Procedural terrain · Also in: Procedural Generation</sub> |
+| [motion-web](https://github.com/feitangyuan/motion-web) | 859 | 🟢 Active | HTML / JS | Another skill set from the onetake author: motion-first creative websites built on vanilla three.js, Canvas, and WebGL.<br><sub>Good for: Motion websites · Also in: Motion Graphics</sub> |
+| [Shader Park](https://github.com/shader-park/shader-park-core) | 834 | 🟢 Active | JavaScript | Write SDF shaders in JS-like syntax to make sculptural 3D abstract forms.<br><sub>Good for: MV · Generative art · Also in: Shaders & Psychedelic</sub> |
+| [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) | 781 | 🟢 Active | JavaScript | Six Claude skills for short-video animation: 3D cartoon explainers in three.js, stick figures, map routes, exploded-view diagrams and more.<br><sub>Good for: Vertical shorts · Also in: Map & Route</sub> |
+| [Solar Wanderer](https://github.com/hyqzz/Solar-Wanderer) | 771 | 🟢 Active | three.js | A 1:1 real-time solar system in the browser using NASA JPL ephemeris data. Fly to any planet.<br><sub>Good for: Solar system animation · Also in: Space & Stars</sub> |
+| [Athenaion](https://github.com/Leonxlnx/athenaion) | 708 | 🟢 Active | three.js | Ancient Greek city-state world built purely in code with three.js. Zero assets, made by Claude.<br><sub>Good for: 3D worlds</sub> |
+| [Machine Skill](https://github.com/AirsupHQ/machine-skill) | 676 | 🟢 Active | JavaScript | Describe a machine in one line and Claude builds a realistic, physics-based interactive 3D simulation and teardown animation in code.<br><sub>Good for: 3D mechanical animation</sub> |
+| [Procedural Terrains](https://github.com/ZyFou/ProceduralTerrains) | 673 | 🟢 Active | JavaScript (three.js) | A three.js procedural terrain studio: height and biomes are computed on the GPU for tiles, infinite worlds, planets and dioramas, with water and volumetric clouds.<br><sub>Good for: Terrain · Dioramas · Also in: Procedural Generation</sub><br><sub>⚠️ Ships optional Unity and Blender export plugins; the rendering itself is three.js.</sub> |
+| [heerich](https://github.com/meodai/heerich) | 635 | 🟢 Active | JavaScript | Small engine that renders 3D voxel scenes to SVG. Supports boolean operations and oblique and perspective cameras. No WebGL.<br><sub>Good for: Voxel illustration · Also in: Isometric & Voxel</sub> |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 613 | 🟡 Slowing | Godot | Ocean waves and buoyancy based on Tessendorf FFT, implemented with compute shaders in Godot 4.<br><sub>Good for: Ocean · Also in: Shaders & Psychedelic, Particles & Physics</sub> |
+| [Fabric](https://github.com/Fabric-Project/Fabric) | 606 | 🟢 Active | Swift (Metal) | A node-based creative coding tool in the spirit of Quartz Composer, rendering 3D, image effects and audio-reactive scenes with Metal.<br><sub>Good for: Real-time visuals · Node-based creation · Also in: Live Coding & VJ, Shaders & Psychedelic</sub><br><sub>⚠️ macOS 15+ only.</sub> |
 | [Bauble](https://github.com/ianthehenry/bauble) | 597 | 🟢 Active | Janet (Lisp) | Playground for making 3D art with Lisp and math, built on signed distance field ray marching.<br><sub>Good for: 3D math art · Also in: Shaders & Psychedelic, Generative Art</sub> |
-| [cables](https://github.com/cables-gl/cables) | 574 | 🟢 Active | Node graph / JS | Node-based visual programming platform. Wire up real-time WebGL visuals in the browser, often used for music videos and live show visuals.<br><sub>Good for: MV · Live performances · Also in: Live Coding & VJ, Shaders & Psychedelic</sub> |
-| [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) | 534 | 🟢 Active | JavaScript | Six Claude skills for short-video animation: 3D cartoon explainers in three.js, stick figures, map routes, exploded-view diagrams and more.<br><sub>Good for: Vertical shorts · Also in: Map & Route</sub> |
-| [Learn wgpu (Chinese edition)](https://github.com/jinleili/learn-wgpu-zh) | 512 | 🟢 Active | Rust / WGSL | Chinese edition of the wgpu graphics programming tutorial, from the first triangle to shaders and compute pipelines.<br><sub>Good for: Chinese tutorials · Also in: Shaders & Psychedelic</sub> |
-| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | 481 | 🟢 Active | Godot | VRM avatar import and export for Godot, with a built-in MToon toon shader.<br><sub>Good for: Anime 3D · Also in: Anime, MMD & VRM</sub> |
-| [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) | 386 | 🟢 Active | Python | Made by a Chinese developer: Claude Opus writes code to make videos. It proposes three options with previews first, then renders the chosen one frame by frame.<br><sub>Good for: Short films · Also in: Motion Graphics</sub> |
-| [Code Video Showcase](https://github.com/Moessif/code-video-showcase) | 385 | 🟢 Active | HTML / Canvas / three.js | Pure-code beat-synced showcase video skill, rendered frame by frame with HTML, Canvas, SVG, and three.js.<br><sub>Good for: Beat-synced showreels · Also in: Motion Graphics</sub> |
+| [cables](https://github.com/cables-gl/cables) | 575 | 🟢 Active | Node graph / JS | Node-based visual programming platform. Wire up real-time WebGL visuals in the browser, often used for music videos and live show visuals.<br><sub>Good for: MV · Live performances · Also in: Live Coding & VJ, Shaders & Psychedelic</sub> |
+| [Diorama](https://github.com/sloemo01/diorama) | 535 | 🟢 Active | JavaScript (three.js) | A playbook for AI coding agents to build three.js dioramas: tiny people with joint animation, a 64-colour ordered-dither pixel look by default, or stroked toon.<br><sub>Good for: Miniature scene clips · Also in: Pixel & Retro, Dither & 1-bit</sub><br><sub>⚠️ By default mixes commercially licensed 3D assets with hand-built geometry; sources are recorded in the repo.</sub> |
+| [Learn wgpu (Chinese edition)](https://github.com/jinleili/learn-wgpu-zh) | 513 | 🟢 Active | Rust / WGSL | Chinese edition of the wgpu graphics programming tutorial, from the first triangle to shaders and compute pipelines.<br><sub>Good for: Chinese tutorials · Also in: Shaders & Psychedelic</sub> |
+| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | 482 | 🟢 Active | Godot | VRM avatar import and export for Godot, with a built-in MToon toon shader.<br><sub>Good for: Anime 3D · Also in: Anime, MMD & VRM</sub> |
+| [Code Video Showcase](https://github.com/Moessif/code-video-showcase) | 446 | 🟢 Active | HTML / Canvas / three.js | Pure-code beat-synced showcase video skill, rendered frame by frame with HTML, Canvas, SVG, and three.js.<br><sub>Good for: Beat-synced showreels · Also in: Motion Graphics</sub> |
+| [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) | 405 | 🟢 Active | Python | Made by a Chinese developer: Claude Opus writes code to make videos. It proposes three options with previews first, then renders the chosen one frame by frame.<br><sub>Good for: Short films · Also in: Motion Graphics</sub> |
 | [RayTK](https://github.com/t3kt/raytk) | 359 | 🟡 Slowing | TouchDesigner | Raymarching shader toolkit for TouchDesigner; build SDF scenes with nodes.<br><sub>Good for: Ray marching · Also in: Shaders & Psychedelic, Live Coding & VJ</sub><br><sub>⚠️ Requires TouchDesigner (commercial software, with a free version).</sub> |
-| [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 343 | 🟢 Active | Godot Shader | Retro shader collection for Godot 4, giving the dithering, low-poly, and texture-wobble look of the PS1 and N64 era.<br><sub>Good for: PS1 retro 3D · Also in: Pixel & Retro, Shaders & Psychedelic</sub> |
-| [Poseidon](https://github.com/owenyuwono/poseidon) | 318 | 🟢 Active | three.js / TSL | GPU-driven real-time FFT ocean, in three.js with WebGPU.<br><sub>Good for: Ocean · Also in: Shaders & Psychedelic</sub> |
+| [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 345 | 🟢 Active | Godot Shader | Retro shader collection for Godot 4, giving the dithering, low-poly, and texture-wobble look of the PS1 and N64 era.<br><sub>Good for: PS1 retro 3D · Also in: Pixel & Retro, Shaders & Psychedelic</sub> |
+| [Infinite](https://github.com/n1m21n/Infinite) | 331 | 🟢 Active | C++ / Node graph | An open-source audiovisual workstation: visuals, music and code share one node canvas, with GPU compositing, procedural 3D and a synth rack that modulate each other.<br><sub>Good for: Audiovisual live · MV · Also in: Live Coding & VJ, Music Visualization</sub> |
+| [Poseidon](https://github.com/owenyuwono/poseidon) | 323 | 🟢 Active | three.js / TSL | GPU-driven real-time FFT ocean, in three.js with WebGPU.<br><sub>Good for: Ocean · Also in: Shaders & Psychedelic</sub> |
 | [OriSim3D](https://github.com/RemiKoutcherawy/OriSim3D-Android) | 304 | 🟢 Active | Kotlin (Android) | OpenGL origami folding simulation on Android that can demonstrate folds step by step.<br><sub>Good for: Mobile origami animation · Also in: Origami & Papercraft</sub> |
-| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 303 | 🟢 Active | WebGPU | Fully procedural cinematic ocean and extreme weather simulation in the browser: storms, waves, tornadoes.<br><sub>Good for: Weather effects · Also in: Shaders & Psychedelic, Particles & Physics</sub> |
+| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 304 | 🟢 Active | WebGPU | Fully procedural cinematic ocean and extreme weather simulation in the browser: storms, waves, tornadoes.<br><sub>Good for: Weather effects · Also in: Shaders & Psychedelic, Particles & Physics</sub> |
 | [Dithering Shader](https://github.com/niccolofanton/dithering-shader) | 294 | 🟢 Active | React / TS | Real-time Bayer dithering post-processing effect for React Three Fiber, turning 3D scenes into a retro dithered look.<br><sub>Good for: 3D post-processing · Also in: Dither & 1-bit, Shaders & Psychedelic</sub> |
-| [Papercraft](https://github.com/rodrigorc/papercraft) | 289 | 🟢 Active | Rust | Unfolds 3D models into paper models you can print, cut out, and glue together.<br><sub>Good for: Paper model unfolding · Also in: Origami & Papercraft</sub> |
-| [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 262 | 🟢 Active | TypeScript | Loads and plays MMD models and motions in Babylon.js, for anime character dance MVs.<br><sub>Good for: Anime MV · Also in: Anime, MMD & VRM</sub> |
+| [Papercraft](https://github.com/rodrigorc/papercraft) | 290 | 🟢 Active | Rust | Unfolds 3D models into paper models you can print, cut out, and glue together.<br><sub>Good for: Paper model unfolding · Also in: Origami & Papercraft</sub> |
+| [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 265 | 🟢 Active | TypeScript | Loads and plays MMD models and motions in Babylon.js, for anime character dance MVs.<br><sub>Good for: Anime MV · Also in: Anime, MMD & VRM</sub> |
 | [Krbn](https://github.com/vpalos/Krbn) | 249 | 🟢 Active | TypeScript | Renders 3D scenes as pencil-sketch SVG: exact outlines, hidden lines, hatched shading.<br><sub>Good for: 3D line art · Also in: Plotter & Line Art</sub> |
-| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | 236 | 🟢 Active | TypeScript | Screen-space ray-marched volumetric light (god rays) for three.js.<br><sub>Good for: 3D post-processing · Also in: Shaders & Psychedelic</sub> |
+| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | 238 | 🟢 Active | TypeScript | Screen-space ray-marched volumetric light (god rays) for three.js.<br><sub>Good for: 3D post-processing · Also in: Shaders & Psychedelic</sub> |
 | [Papercraft World](https://github.com/andrewwoan/aimee-xus-papercraft-world) | 199 | 🟢 Active | three.js | Papercraft-style seasonal 3D portfolio site. Useful as a three.js reference for the papercraft style.<br><sub>Good for: Papercraft 3D web · Also in: Origami & Papercraft</sub> |
 | [retrace.gl](https://github.com/stasilo/retrace.gl) | 196 | 🟢 Active | JavaScript | Define signed distance field CSG shapes in code, ray trace them, and export the result.<br><sub>Good for: Ray-traced 3D · Also in: Path Tracing, Shaders & Psychedelic</sub> |
-| [mutracer](https://github.com/pissang/mutracer) | 178 | 🟢 Active | TypeScript / WebGPU | WebGPU physically based path tracer, written by one of the ECharts authors.<br><sub>Good for: Realistic rendering · Also in: Path Tracing</sub> |
+| [mutracer](https://github.com/pissang/mutracer) | 187 | 🟢 Active | TypeScript / WebGPU | WebGPU physically based path tracer, written by one of the ECharts authors.<br><sub>Good for: Realistic rendering · Also in: Path Tracing</sub> |
+| [BB-Video](https://github.com/BubbleBrainBB/BB-Video) | 182 | 🟢 Active | JavaScript | Skill for making videos in pure code: narrated explainers and product promos in 32 visual styles.<br><sub>Good for: Explainers · Promo videos · Also in: Motion Graphics</sub><br><sub>⚠️ 3D mascots can optionally be made in Blender; without Blender it falls back to three.js.</sub> |
 | [I, Voyager Planetarium](https://github.com/ivoyager/planetarium) | 162 | 🟢 Active | Godot | Open-source solar system simulation built on Godot.<br><sub>Good for: Solar system · Also in: Space & Stars</sub> |
-| [BB-Video](https://github.com/BubbleBrainBB/BB-Video) | 158 | 🟢 Active | JavaScript | Skill for making videos in pure code: narrated explainers and product promos in 32 visual styles.<br><sub>Good for: Explainers · Promo videos · Also in: Motion Graphics</sub><br><sub>⚠️ 3D mascots can optionally be made in Blender; without Blender it falls back to three.js.</sub> |
-| [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 81 | 🟢 Active | three.js | 3D flow-field particle ocean built with three.js, with custom post-processing.<br><sub>Good for: 3D particles · Also in: Flow & Wind Fields, Particles & Physics</sub> |
+| [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 82 | 🟢 Active | three.js | 3D flow-field particle ocean built with three.js, with custom post-processing.<br><sub>Good for: 3D particles · Also in: Flow & Wind Fields, Particles & Physics</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -779,6 +851,8 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Anime characters, avatars and dance music videos
 
+**Picks:** [three-vrm](https://github.com/pixiv/three-vrm) · [Kalidokit](https://github.com/yeemachine/kalidokit) · [babylon-mmd](https://github.com/noname0310/babylon-mmd) · [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) · [URP Toon Shader Example](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample)
+
 15 projects, sorted by stars.
 
 <br clear="right">
@@ -788,18 +862,18 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [URP Toon Shader Example](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample) | 7.9k | 🟢 Active | Unity HLSL | Toon lighting shader example for Unity URP. A beginner reference for anime character outlines and stepped-shade shadows.<br><sub>Good for: Anime rendering · Also in: Shaders & Psychedelic</sub> |
 | [Kalidokit](https://github.com/yeemachine/kalidokit) | 5.7k | 🟡 Slowing | TypeScript | Captures face and body motion from a webcam to drive VRM / Live2D characters.<br><sub>Good for: Avatars</sub> |
 | [UnityChan Toon Shader](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) | 4.1k | ⚪ Dormant | Unity | Toon shader from Unity's official Japan team, for cel-shaded anime-look characters and scenes.<br><sub>Good for: Anime rendering · Also in: Shaders & Psychedelic</sub><br><sub>⚠️ Not updated since 2024. New projects can use Unity Toon Shader.</sub> |
-| [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 2.8k | 🟢 Active | p5.js | Starter template for having Claude make hand-painted cartoon animation: p5.js + p5.brush, with character and camera tools.<br><sub>Good for: Hand-drawn cartoons · Also in: Hand-drawn & Whiteboard</sub> |
+| [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 3k | 🟢 Active | p5.js | Starter template for having Claude make hand-painted cartoon animation: p5.js + p5.brush, with character and camera tools.<br><sub>Good for: Hand-drawn cartoons · Also in: Hand-drawn & Whiteboard</sub> |
 | [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | 🟢 Active | TypeScript | From pixiv: use VRM anime avatars in three.js.<br><sub>Good for: Anime MV · Avatars · Also in: 3D</sub> |
 | [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) | 1.7k | 🟢 Active | Unity | Full-featured Unity toon shader, commonly used for VRChat avatars.<br><sub>Good for: Anime rendering · Also in: Shaders & Psychedelic</sub> |
 | [Unity Toon Shader](https://github.com/Unity-Technologies/com.unity.toonshader) | 1.6k | 🟢 Active | Unity | Unity's official toon shader for Japanese anime-style characters and scenes.<br><sub>Good for: Anime rendering · Also in: Shaders & Psychedelic</sub> |
 | [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) | 1.5k | ⚪ Dormant | TypeScript | Displays and drives Live2D models in PixiJS, for 2D anime character animation.<br><sub>Good for: Anime animation</sub> |
 | [URP_Toon](https://github.com/ChiliMilk/URP_Toon) | 1.4k | ⚪ Dormant | Unity | Toon shader for Unity URP with outlines, stepped shading, and rim light.<br><sub>Good for: Anime rendering · Also in: Shaders & Psychedelic</sub><br><sub>⚠️ Not updated since 2024.</sub> |
-| [Aora Bot](https://github.com/sam70361/aora-bot) | 639 | 🟢 Active | TypeScript | A web character engine drawn in code, with 46 original characters and 44 animation states.<br><sub>Good for: Character animation · Also in: Motion Graphics</sub> |
+| [Aora Bot](https://github.com/sam70361/aora-bot) | 663 | 🟢 Active | TypeScript | A web character engine drawn in code, with 46 original characters and 44 animation states.<br><sub>Good for: Character animation · Also in: Motion Graphics</sub> |
 | [LiliumToonGraph](https://github.com/you-ri/LiliumToonGraph) | 609 | 🟢 Active | Unity Shader Graph | Unity URP toon shader built with Shader Graph.<br><sub>Good for: Anime rendering · Also in: Shaders & Psychedelic</sub> |
-| [world.execute(me) Lyric MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 529 | 🟢 Active | JavaScript | Fan-made lyric MV that plays the lyrics as a chat with Claude, rendered frame by frame from code at 4K60.<br><sub>Good for: Lyric MV · Also in: Kinetic Type & Lyrics</sub> |
-| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | 481 | 🟢 Active | Godot | VRM avatar import and export for Godot, with a built-in MToon toon shader.<br><sub>Good for: Anime 3D · Also in: 3D</sub> |
-| [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 262 | 🟢 Active | TypeScript | Loads and plays MMD models and motions in Babylon.js, for anime character dance MVs.<br><sub>Good for: Anime MV · Also in: 3D</sub> |
-| [html-anime](https://github.com/blixvip/html-anime) | 246 | 🟢 Active | JavaScript | Turns a scene description into a storyboard sheet, then has a coding agent draw the whole film in HTML. No video model is called.<br><sub>Good for: Animated shorts · Also in: Motion Graphics</sub> |
+| [world.execute(me) Lyric MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 550 | 🟢 Active | JavaScript | Fan-made lyric MV that plays the lyrics as a chat with Claude, rendered frame by frame from code at 4K60.<br><sub>Good for: Lyric MV · Also in: Kinetic Type & Lyrics</sub> |
+| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | 482 | 🟢 Active | Godot | VRM avatar import and export for Godot, with a built-in MToon toon shader.<br><sub>Good for: Anime 3D · Also in: 3D</sub> |
+| [html-anime](https://github.com/blixvip/html-anime) | 269 | 🟢 Active | JavaScript | Turns a scene description into a storyboard sheet, then has a coding agent draw the whole film in HTML. No video model is called.<br><sub>Good for: Animated shorts · Also in: Motion Graphics</sub> |
+| [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 265 | 🟢 Active | TypeScript | Loads and plays MMD models and motions in Babylon.js, for anime character dance MVs.<br><sub>Good for: Anime MV · Also in: 3D</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -811,7 +885,9 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Smoke, fluid, fireworks and collision simulations
 
-26 projects, sorted by stars.
+**Picks:** [Taichi](https://github.com/taichi-dev/taichi) · [Matter.js](https://github.com/liabru/matter-js) · [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) · [tsParticles](https://github.com/tsparticles/tsparticles) · [three.quarks](https://github.com/Alchemist0823/three.quarks)
+
+28 projects, sorted by stars.
 
 <br clear="right">
 
@@ -821,27 +897,29 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [PixiJS](https://github.com/pixijs/pixijs) | 48.7k | 🟢 Active | TypeScript | Fast 2D rendering engine (WebGL / WebGPU) for large numbers of sprites, filters, and 2D motion effects.<br><sub>Good for: Web animation · MV · Also in: Motion Graphics, Generative Art</sub> |
 | [particles.js](https://github.com/VincentGarreau/particles.js) | 30.2k | ⚪ Dormant | JavaScript | Classic particle background library for web pages.<br><sub>Good for: Background assets</sub><br><sub>⚠️ Not updated in years. For new projects, use tsParticles.</sub> |
 | [Taichi](https://github.com/taichi-dev/taichi) | 28.5k | 🟢 Active | Python | High-performance parallel computing in Python, often used for physics simulations such as fluids, elastic bodies, and particles.<br><sub>Good for: Physics simulation · Also in: 3D</sub> |
-| [p5.js](https://github.com/processing/p5.js) | 24.3k | 🟢 Active | JavaScript | The most popular creative coding library: draw, build interactions, and animate on the web. Plenty of Chinese tutorials too.<br><sub>Good for: Generative art · MV · Also in: Generative Art, Music Visualization</sub><br><sub>⚠️ Exporting video takes extra steps (save frames one by one, or screen-record).</sub> |
+| [p5.js](https://github.com/processing/p5.js) | 24.4k | 🟢 Active | JavaScript | The most popular creative coding library: draw, build interactions, and animate on the web. Plenty of Chinese tutorials too.<br><sub>Good for: Generative art · MV · Also in: Generative Art, Music Visualization</sub><br><sub>⚠️ Exporting video takes extra steps (save frames one by one, or screen-record).</sub> |
 | [Matter.js](https://github.com/liabru/matter-js) | 18.6k | 🟢 Active | JavaScript | 2D physics engine for collisions, bouncing, stacking, and similar physics animation.<br><sub>Good for: Physics animation</sub> |
-| [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) | 16.8k | 🟡 Slowing | JavaScript | Real-time fluid simulation in the browser. The colorful smoke looks great on video.<br><sub>Good for: Effect assets · Also in: Shaders & Psychedelic</sub> |
+| [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) | 16.8k | ⚪ Dormant | JavaScript | Real-time fluid simulation in the browser. The colorful smoke looks great on video.<br><sub>Good for: Effect assets · Also in: Shaders & Psychedelic</sub> |
 | [canvas-confetti](https://github.com/catdad/canvas-confetti) | 12.9k | 🟡 Slowing | JavaScript | Confetti and fireworks effects in one line of code.<br><sub>Good for: Web effects</sub> |
 | [tsParticles](https://github.com/tsparticles/tsparticles) | 9.1k | 🟢 Active | TypeScript | Library of particle, confetti, and fireworks effects. Change the config and it works.<br><sub>Good for: Web effects</sub> |
 | [Galacean Engine](https://github.com/galacean/engine) | 5.9k | 🟢 Active | TypeScript | Web graphics engine open-sourced by Ant Group, covering 2D, 3D, particles, and Lottie.<br><sub>Good for: Web 3D · Interactive · Also in: 3D</sub> |
 | [ALIEN](https://github.com/chrxh/alien) | 5.6k | 🟢 Active | C++ / CUDA | GPU-accelerated artificial life simulation where thousands of particles form evolving organisms.<br><sub>Good for: Artificial life · Also in: Artificial Life & Growth</sub><br><sub>⚠️ Requires an NVIDIA GPU.</sub> |
-| [The Powder Toy](https://github.com/The-Powder-Toy/The-Powder-Toy) | 5.4k | 🟢 Active | C++ | Classic falling-sand physics sandbox: simulates air pressure, temperature, electricity, and reactions among hundreds of elements.<br><sub>Good for: Particle sandbox · Also in: Falling Sand</sub><br><sub>⚠️ Mainly a game; good for recording physics reactions.</sub> |
 | [Canvas UI](https://github.com/DavidHDev/canvas-ui) | 5.4k | 🟢 Active | TypeScript | Component library that layers WebGL fluid, shader, and 3D effects over real web UI.<br><sub>Good for: Web effects · Also in: Shaders & Psychedelic</sub> |
+| [The Powder Toy](https://github.com/The-Powder-Toy/The-Powder-Toy) | 5.4k | 🟢 Active | C++ | Classic falling-sand physics sandbox: simulates air pressure, temperature, electricity, and reactions among hundreds of elements.<br><sub>Good for: Particle sandbox · Also in: Falling Sand</sub><br><sub>⚠️ Mainly a game; good for recording physics reactions.</sub> |
 | [Particle Life](https://github.com/hunar4321/particle-life) | 3.4k | ⚪ Dormant | JS / C++ / Python | Set attraction and repulsion between a few kinds of particles and cell-like group motion emerges. Very short code.<br><sub>Good for: Artificial life · Also in: Artificial Life & Growth</sub><br><sub>⚠️ Not updated since 2024.</sub> |
 | [Proton](https://github.com/drawcall/Proton) | 2.5k | 🟡 Slowing | JavaScript | JavaScript particle animation engine. Renders to Canvas, WebGL or the DOM, and can plug into three.js and PixiJS.<br><sub>Good for: Particle animation</sub> |
 | [The Nature of Code](https://github.com/nature-of-code/noc-book-2) | 2k | 🟡 Slowing | p5.js | 2024 edition of The Nature of Code: simulate forces, particles, flocking, and cellular automata with p5.js. Essential reading for generative art beginners.<br><sub>Good for: Tutorials · Also in: Generative Art, Artificial Life & Growth</sub> |
 | [three-nebula](https://github.com/creativelifeform/three-nebula) | 1.2k | 🟢 Active | JavaScript | WebGL particle system engine for three.js, with a visual editor.<br><sub>Good for: 3D particles · Also in: 3D</sub> |
 | [three.quarks](https://github.com/Alchemist0823/three.quarks) | 1.2k | 🟢 Active | TypeScript | Particle effects system for three.js: fire, explosions, magic, and other VFX.<br><sub>Good for: 3D effects · Also in: 3D</sub> |
 | [Particle Life App](https://github.com/tom-mohr/particle-life-app) | 1k | 🟡 Slowing | Java | Particle life simulator with a graphical interface. Tweak the rules and record the emergent behavior.<br><sub>Good for: Artificial life · Also in: Artificial Life & Growth</sub> |
-| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 612 | 🟡 Slowing | Godot | Ocean waves and buoyancy based on Tessendorf FFT, implemented with compute shaders in Godot 4.<br><sub>Good for: Ocean · Also in: Shaders & Psychedelic, 3D</sub> |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 613 | 🟡 Slowing | Godot | Ocean waves and buoyancy based on Tessendorf FFT, implemented with compute shaders in Godot 4.<br><sub>Good for: Ocean · Also in: Shaders & Psychedelic, 3D</sub> |
+| [Remotion Bits](https://github.com/av/remotion-bits) | 517 | 🟢 Active | TypeScript (Remotion) | Ready-made animation components for Remotion: text effects, gradient transitions, particles, 3D scenes, charts and more; pull in only what you need.<br><sub>Good for: MG components · Short videos · Also in: Motion Graphics, Kinetic Type & Lyrics</sub><br><sub>⚠️ Not affiliated with the Remotion team.</sub> |
 | [manim-physics](https://github.com/Matheart/manim-physics) | 413 | 🟢 Active | Python | Physics simulation extension for Manim: rigid bodies, electromagnetic fields, waves, pendulums, and other physics animations.<br><sub>Good for: Explainer videos · Also in: Math Explainer</sub> |
 | [Godot VFX Library](https://github.com/haowg/GODOT-VFX-LIBRARY) | 358 | 🟡 Slowing | Godot | Collection of particle effects and shaders for Godot 4.<br><sub>Good for: Effect assets · Also in: Shaders & Psychedelic</sub> |
-| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 303 | 🟢 Active | WebGPU | Fully procedural cinematic ocean and extreme weather simulation in the browser: storms, waves, tornadoes.<br><sub>Good for: Weather effects · Also in: Shaders & Psychedelic, 3D</sub> |
-| [cbirds](https://github.com/clainstone/cbirds) | 295 | 🟢 Active | C (CLI) | A flock of birds in your terminal: the Boids flocking algorithm drawn with braille dots, also exportable as sprites.<br><sub>Good for: Terminal animation · Also in: ASCII & Terminal</sub> |
-| [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 81 | 🟢 Active | three.js | 3D flow-field particle ocean built with three.js, with custom post-processing.<br><sub>Good for: 3D particles · Also in: Flow & Wind Fields, 3D</sub> |
+| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 304 | 🟢 Active | WebGPU | Fully procedural cinematic ocean and extreme weather simulation in the browser: storms, waves, tornadoes.<br><sub>Good for: Weather effects · Also in: Shaders & Psychedelic, 3D</sub> |
+| [cbirds](https://github.com/clainstone/cbirds) | 304 | 🟢 Active | C (CLI) | A flock of birds in your terminal: the Boids flocking algorithm drawn with braille dots, also exportable as sprites.<br><sub>Good for: Terminal animation · Also in: ASCII & Terminal</sub> |
+| [Galaxy Simulation](https://github.com/N0rvel/galaxy_sim) | 161 | 🟢 Active | JavaScript (three.js) | Simulates gravity between thousands of particles with three.js and shaders: a single galaxy, two colliding galaxies or an expanding universe.<br><sub>Good for: Galaxies · Particles · Also in: Space & Stars</sub> |
+| [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 82 | 🟢 Active | three.js | 3D flow-field particle ocean built with three.js, with custom post-processing.<br><sub>Good for: 3D particles · Also in: Flow & Wind Fields, 3D</sub> |
 | [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | 🟡 Slowing | three.js | High-performance three.js galaxy shader with adjustable colors, spiral arms, and black hole effects.<br><sub>Good for: Galaxy effects · Also in: Space & Stars, Shaders & Psychedelic</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
@@ -854,28 +932,30 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > RGB shift, distortion, bloom, pixel sorting and compositing
 
+**Picks:** [postprocessing](https://github.com/pmndrs/postprocessing) · [VFX-JS](https://github.com/fand/vfx-js) · [pixelsort](https://github.com/satyarth/pixelsort) · [PixiJS Filters](https://github.com/pixijs/filters) · [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs)
+
 17 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [FFmpeg](https://github.com/FFmpeg/FFmpeg) | 66.8k | 🟢 Active | C (CLI) | The foundation under almost every code-to-video tool: transcoding, concatenation, filters and burned-in captions, all from the command line.<br><sub>Good for: Editing and compositing · Post-processing · Also in: Shorts, Captions & Editing</sub><br><sub>⚠️ Mirror repository on GitHub.</sub> |
-| [EffectCraft](https://github.com/storytold/effectcraft) | 8.6k | 🟢 Active | Rust (GUI) | Open-source compositing app written from scratch, After Effects-style: layers, keyframes, expressions, 300+ effects.<br><sub>Good for: Motion graphics · Post compositing · Also in: Motion Graphics</sub><br><sub>⚠️ Mostly a graphical interface; the expressions part can be scripted in code.</sub> |
+| [FFmpeg](https://github.com/FFmpeg/FFmpeg) | 67.3k | 🟢 Active | C (CLI) | The foundation under almost every code-to-video tool: transcoding, concatenation, filters and burned-in captions, all from the command line.<br><sub>Good for: Editing and compositing · Post-processing · Also in: Shorts, Captions & Editing</sub><br><sub>⚠️ Mirror repository on GitHub.</sub> |
+| [EffectCraft](https://github.com/storytold/effectcraft) | 8.8k | 🟢 Active | Rust (GUI) | Open-source compositing app written from scratch, After Effects-style: layers, keyframes, expressions, 300+ effects.<br><sub>Good for: Motion graphics · Post compositing · Also in: Motion Graphics</sub><br><sub>⚠️ Mostly a graphical interface; the expressions part can be scripted in code.</sub> |
 | [Natron](https://github.com/NatronGitHub/Natron) | 5.7k | 🟢 Active | C++ / Python | Open-source node-based compositing software, scriptable with Python, for post-production compositing and effects.<br><sub>Good for: Post compositing</sub> |
 | [ShaderGlass](https://github.com/mausimus/ShaderGlass) | 4.4k | 🟢 Active | C++ (Windows) | Overlays retro shaders (CRT, pixel, and others) on the Windows desktop; screen-record to get a retro look.<br><sub>Good for: Retro post-processing · Also in: Pixel & Retro, VHS & Analog</sub> |
 | [postprocessing](https://github.com/pmndrs/postprocessing) | 3k | 🟢 Active | JavaScript | Post-processing library for three.js: bloom, chromatic aberration, glitch, depth of field, and more.<br><sub>Good for: 3D post-processing · Also in: 3D</sub> |
 | [Inferno](https://github.com/twostraws/Inferno) | 2.9k | 🟢 Active | Swift / Metal (iOS) | Collection of Metal shaders for SwiftUI: fire, water ripples, pixelation, shine sweeps, and more. Ready to use in mobile apps.<br><sub>Good for: App motion · Also in: Shaders & Psychedelic</sub> |
 | [Hydra](https://github.com/hydra-synth/hydra) | 2.8k | 🟡 Slowing | JavaScript | Real-time video synthesizer in the browser, modeled on analog signal synthesizers. A few lines of code give feedback, distortion, and psychedelic color visuals.<br><sub>Good for: Live VJ · MV · Also in: Live Coding & VJ, Shaders & Psychedelic</sub><br><sub>⚠️ AGPL-3.0: if used in a network service offered to others, you must publish your modified source.</sub> |
 | [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) | 2.7k | 🟢 Active | Rust | Open-source VHS effect: simulates NTSC signal and tape color bleed, jitter, and snow. Works standalone and as an AE, PR, and OFX plugin.<br><sub>Good for: VHS post-processing · Also in: VHS & Analog</sub> |
-| [GL Transitions](https://github.com/gl-transitions/gl-transitions) | 2.2k | 🟢 Active | GLSL | Open collection of GLSL transitions. Plugs into editors like editly.<br><sub>Good for: Transitions · Also in: Shorts, Captions & Editing</sub> |
+| [GL Transitions](https://github.com/gl-transitions/gl-transitions) | 2.3k | 🟢 Active | GLSL | Open collection of GLSL transitions. Plugs into editors like editly.<br><sub>Good for: Transitions · Also in: Shorts, Captions & Editing</sub> |
 | [glitch-this](https://github.com/TotallyNotChase/glitch-this) | 1.8k | ⚪ Dormant | Python | Adds glitch effects to images and GIFs with adjustable parameters, and can output glitched GIFs directly.<br><sub>Good for: Glitch GIFs</sub><br><sub>⚠️ Not updated since 2024.</sub> |
 | [VFX-JS](https://github.com/fand/vfx-js) | 1.2k | 🟢 Active | TypeScript | Add WebGL effects to images, video, and text on web pages: glitch, RGB shift, distortion, and more.<br><sub>Good for: Web effects · MV · Also in: Kinetic Type & Lyrics</sub> |
 | [ntscqt](https://github.com/JargeZ/ntscqt) | 1.2k | ⚪ Dormant | Python | GUI for a VHS video simulator, giving video an old videotape look.<br><sub>Good for: VHS post-processing · Also in: VHS & Analog</sub><br><sub>⚠️ Not updated since 2024; use ntsc-rs for new projects.</sub> |
-| [PixiJS Filters](https://github.com/pixijs/filters) | 1.1k | 🟡 Slowing | TypeScript | Community filter collection for PixiJS: glitch, glow, pixelate, CRT, and dozens more effects.<br><sub>Good for: 2D effects · Also in: Shaders & Psychedelic</sub> |
-| [pixelsort](https://github.com/satyarth/pixelsort) | 875 | 🟢 Active | Python | Pixel sorting glitch art: rearranges pixels by rules such as brightness.<br><sub>Good for: Glitch art</sub> |
-| [ff-tracking](https://github.com/mrsarac/ff-tracking) | 596 | 🟢 Active | Rust | Short film where a virtual camera films an AI agent's screen and tracks every glyph. Uses fframes two-pass rendering and SkSL shaders; the sound effects are also synthesized in code.<br><sub>Good for: Motion shorts · Also in: Motion Graphics</sub> |
-| [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) | 348 | 🟢 Active | Swift (iOS) | 41 Metal shaders ready to drop into SwiftUI: holographic foil, kaleidoscope, magnetic distortion, and more. Good for mobile app motion.<br><sub>Good for: App motion · Also in: Shaders & Psychedelic</sub> |
+| [PixiJS Filters](https://github.com/pixijs/filters) | 1.2k | 🟡 Slowing | TypeScript | Community filter collection for PixiJS: glitch, glow, pixelate, CRT, and dozens more effects.<br><sub>Good for: 2D effects · Also in: Shaders & Psychedelic</sub> |
+| [pixelsort](https://github.com/satyarth/pixelsort) | 876 | 🟢 Active | Python | Pixel sorting glitch art: rearranges pixels by rules such as brightness.<br><sub>Good for: Glitch art</sub> |
+| [ff-tracking](https://github.com/mrsarac/ff-tracking) | 618 | 🟢 Active | Rust | Short film where a virtual camera films an AI agent's screen and tracks every glyph. Uses fframes two-pass rendering and SkSL shaders; the sound effects are also synthesized in code.<br><sub>Good for: Motion shorts · Also in: Motion Graphics</sub> |
+| [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) | 350 | 🟢 Active | Swift (iOS) | 41 Metal shaders ready to drop into SwiftUI: holographic foil, kaleidoscope, magnetic distortion, and more. Good for mobile app motion.<br><sub>Good for: App motion · Also in: Shaders & Psychedelic</sub> |
 | [VhsFx](https://github.com/NullTale/VhsFx) | 89 | 🟡 Slowing | Unity | VHS post-processing effect for Unity URP.<br><sub>Good for: VHS post-processing · Also in: VHS & Analog</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
@@ -888,38 +968,43 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Low resolution, limited palettes, CRT scanlines, PS1 texture
 
-28 projects, sorted by stars.
+**Picks:** [Pyxel](https://github.com/kitao/pyxel) · [TIC-80](https://github.com/nesbox/TIC-80) · [raylib](https://github.com/raysan5/raylib) · [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) · [pixelfx](https://github.com/patch-gg/pixelfx)
+
+31 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [raylib](https://github.com/raysan5/raylib) | 35.6k | 🟢 Active | C (many bindings) | Simple, beginner-friendly C graphics library with bindings for dozens of languages. Quick for 2D/3D animations and small demos.<br><sub>Good for: 2D/3D animation · Mini games · Also in: 3D, Generative Art</sub> |
+| [raylib](https://github.com/raysan5/raylib) | 35.7k | 🟢 Active | C (many bindings) | Simple, beginner-friendly C graphics library with bindings for dozens of languages. Quick for 2D/3D animations and small demos.<br><sub>Good for: 2D/3D animation · Mini games · Also in: 3D, Generative Art</sub> |
 | [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) | 26.6k | 🟢 Active | QML / C++ | Terminal that imitates an old CRT monitor: scanlines, glow, screen curvature. Screen recordings come out looking retro.<br><sub>Good for: Retro terminals · Also in: ASCII & Terminal, VHS & Analog</sub> |
 | [WaveFunctionCollapse](https://github.com/mxgmn/WaveFunctionCollapse) | 25.5k | 🟢 Active | C# | Wave Function Collapse algorithm: generates endless variations of pixel images and maps from one small sample. The generation process itself is fun to watch.<br><sub>Good for: Procedural generation · Also in: Procedural Generation</sub> |
 | [Pyxel](https://github.com/kitao/pyxel) | 18.6k | 🟢 Active | Python | Retro game engine for Python with a 16-color pixel display. Also good for small pixel-art animations.<br><sub>Good for: Pixel animation</sub> |
-| [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 13.9k | 🟢 Active | JavaScript | A toolbox of film styles made in code: 66 ready-made styles (Memphis, subway map, chalkboard, and more) that let an AI coding agent make videos in each style, all drawn with code.<br><sub>Good for: MV · Short films · Also in: Motion Graphics, Hand-drawn & Whiteboard</sub><br><sub>⚠️ Styles are tuned for Claude; results may differ with other models.</sub> |
-| [LÖVE](https://github.com/love2d/love) | 8.9k | 🟢 Active | Lua | Framework for making 2D games and animations in Lua. Lots of pixel-art work.<br><sub>Good for: Pixel animation · Mini games</sub> |
+| [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 16.6k | 🟢 Active | JavaScript | A toolbox of film styles made in code: 66 ready-made styles (Memphis, subway map, chalkboard, and more) that let an AI coding agent make videos in each style, all drawn with code.<br><sub>Good for: MV · Short films · Also in: Motion Graphics, Hand-drawn & Whiteboard</sub><br><sub>⚠️ Styles are tuned for Claude; results may differ with other models.</sub> |
+| [LÖVE](https://github.com/love2d/love) | 9k | 🟢 Active | Lua | Framework for making 2D games and animations in Lua. Lots of pixel-art work.<br><sub>Good for: Pixel animation · Mini games</sub> |
 | [MarkovJunior](https://github.com/mxgmn/MarkovJunior) | 8.5k | 🟡 Slowing | C# | From the same author: a procedural generation language that uses rewrite rules to grow mazes, cities, and voxel buildings step by step. Comes with 153 example animations.<br><sub>Good for: Procedural generation · Also in: Procedural Generation, Isometric & Voxel</sub> |
+| [pixelfx](https://github.com/patch-gg/pixelfx) | 7.5k | 🟢 Active | JavaScript | 244 pixel effect animations written in code: fire, explosions, magic, weather, and more. Exports sprite sheets. Includes an AI coding agent skill.<br><sub>Good for: Pixel effect assets</sub> |
 | [VoxelSpace](https://github.com/s-macke/VoxelSpace) | 6.8k | ⚪ Dormant | C / JS | Recreates the 90s game Comanche's voxel terrain flight view in under 20 lines of code, with an explanation of how it works.<br><sub>Good for: Retro voxel terrain · Also in: Isometric & Voxel, 3D</sub> |
-| [pixelfx](https://github.com/patch-gg/pixelfx) | 6.2k | 🟢 Active | JavaScript | 244 pixel effect animations written in code: fire, explosions, magic, weather, and more. Exports sprite sheets. Includes an AI coding agent skill.<br><sub>Good for: Pixel effect assets</sub> |
 | [TIC-80](https://github.com/nesbox/TIC-80) | 6.2k | 🟢 Active | Lua / JS and more | Fantasy console (240x136 pixels, 16 colors), popular for tiny demoscene pieces and live Byte Jam streams.<br><sub>Good for: Pixel animation · Live · Also in: Live Coding & VJ, Demoscene</sub> |
 | [ShaderGlass](https://github.com/mausimus/ShaderGlass) | 4.4k | 🟢 Active | C++ (Windows) | Overlays retro shaders (CRT, pixel, and others) on the Windows desktop; screen-record to get a retro look.<br><sub>Good for: Retro post-processing · Also in: Glitch & Post FX, VHS & Analog</sub> |
 | [Godot Shaders](https://github.com/gdquest-demos/godot-shaders) | 4.2k | 🟢 Active | Godot Shader | GDQuest's large collection of Godot 2D and 3D shaders: dissolve, outline, water, pixelation, and more.<br><sub>Good for: Shader collections · Also in: Shaders & Psychedelic, 3D</sub> |
 | [Sandspiel](https://github.com/MaxBittker/sandspiel) | 3.2k | 🟢 Active | Rust / WASM | Falling-sand sandbox in the browser: sand, water, fire, and plants interact by cellular automata rules, like flowing pixel art.<br><sub>Good for: Falling sand visuals · Also in: Falling Sand</sub> |
 | [timg](https://github.com/hzeller/timg) | 2.8k | 🟢 Active | C++ (CLI) | Shows images and plays video in the terminal, using character blocks and terminal graphics protocols.<br><sub>Good for: Terminal playback · Also in: ASCII & Terminal</sub> |
 | [obelisk.js](https://github.com/nosir/obelisk.js) | 2.3k | ⚪ Dormant | JavaScript | Builds pixel-style isometric graphics on Canvas, stacking pixel blocks one by one.<br><sub>Good for: Pixel isometric · Also in: Isometric & Voxel</sub><br><sub>⚠️ Not updated since 2019.</sub> |
-| [Animate](https://github.com/cth9191/animate) | 1.7k | 🟢 Active | JavaScript / Canvas | Claude Code skill: draws short animations procedurally on a single canvas, with 7 built-in styles: paper cut-out, hatched ink, Riso print, sketchbook, math, pixel, and isometric.<br><sub>Good for: Explainer videos · Short films · Also in: Hand-drawn & Whiteboard, Math Explainer, Riso & Paper Collage</sub> |
-| [WASM-4](https://github.com/aduros/wasm4) | 1.5k | 🟢 Active | Multiple languages | Minimal fantasy console (160x160 pixels, 4 colors). Write small pixel-art pieces in many languages.<br><sub>Good for: Pixel animation</sub> |
+| [Animate](https://github.com/cth9191/animate) | 2k | 🟢 Active | JavaScript / Canvas | Claude Code skill: draws short animations procedurally on a single canvas, with 7 built-in styles: paper cut-out, hatched ink, Riso print, sketchbook, math, pixel, and isometric.<br><sub>Good for: Explainer videos · Short films · Also in: Hand-drawn & Whiteboard, Math Explainer, Riso & Paper Collage</sub> |
+| [WASM-4](https://github.com/aduros/wasm4) | 1.6k | 🟢 Active | Multiple languages | Minimal fantasy console (160x160 pixels, 4 colors). Write small pixel-art pieces in many languages.<br><sub>Good for: Pixel animation</sub> |
 | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | 🟢 Active | GLSL | RetroArch shader collection: CRT scanlines, pixel upscaling, and other retro display effects.<br><sub>Good for: Retro post-processing · Also in: Shaders & Psychedelic, VHS & Analog</sub> |
-| [DOjS](https://github.com/SuperIlu/DOjS) | 964 | 🟡 Slowing | JavaScript (DOS) | JavaScript creative coding environment that runs on MS-DOS, with a p5.js-like API and plenty of retro flavor.<br><sub>Good for: Retro creative coding · Also in: Generative Art</sub> |
-| [GodotRetro](https://github.com/ahopness/GodotRetro) | 806 | 🟢 Active | Godot Shader | Retro post-processing effects pack for Godot: CRT, VHS, dithering, pixelation.<br><sub>Good for: Retro post-processing · Also in: Shaders & Psychedelic, VHS & Analog</sub> |
+| [DOjS](https://github.com/SuperIlu/DOjS) | 966 | 🟡 Slowing | JavaScript (DOS) | JavaScript creative coding environment that runs on MS-DOS, with a p5.js-like API and plenty of retro flavor.<br><sub>Good for: Retro creative coding · Also in: Generative Art</sub> |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | 809 | 🟢 Active | Godot Shader | Retro post-processing effects pack for Godot: CRT, VHS, dithering, pixelation.<br><sub>Good for: Retro post-processing · Also in: Shaders & Psychedelic, VHS & Analog</sub> |
 | [NTSC-CRT](https://github.com/LMP88959/NTSC-CRT) | 577 | 🟢 Active | C | NTSC encoding/decoding simulation using only integer math, able to recreate how old consoles like the NES looked on a TV.<br><sub>Good for: CRT simulation · Also in: VHS & Analog</sub> |
-| [Retro Crisis Shaders](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 481 | 🟢 Active | Slang Shader | Collection of CRT shader presets for RetroArch, based on Guest Advanced NTSC. Recreates the look of various old TVs.<br><sub>Good for: CRT post-processing · Also in: VHS & Analog, Shaders & Psychedelic</sub> |
-| [Sandboxels](https://github.com/R74nCom/sandboxels) | 478 | 🟢 Active | JavaScript | Browser falling-sand simulation with 500+ elements and thousands of reactions. You can write your own elements as mods.<br><sub>Good for: Falling sand visuals · Also in: Falling Sand</sub> |
-| [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 343 | 🟢 Active | Godot Shader | Retro shader collection for Godot 4, giving the dithering, low-poly, and texture-wobble look of the PS1 and N64 era.<br><sub>Good for: PS1 retro 3D · Also in: 3D, Shaders & Psychedelic</sub> |
+| [Diorama](https://github.com/sloemo01/diorama) | 535 | 🟢 Active | JavaScript (three.js) | A playbook for AI coding agents to build three.js dioramas: tiny people with joint animation, a 64-colour ordered-dither pixel look by default, or stroked toon.<br><sub>Good for: Miniature scene clips · Also in: 3D, Dither & 1-bit</sub><br><sub>⚠️ By default mixes commercially licensed 3D assets with hand-built geometry; sources are recorded in the repo.</sub> |
+| [Sandboxels](https://github.com/R74nCom/sandboxels) | 486 | 🟢 Active | JavaScript | Browser falling-sand simulation with 500+ elements and thousands of reactions. You can write your own elements as mods.<br><sub>Good for: Falling sand visuals · Also in: Falling Sand</sub> |
+| [Retro Crisis Shaders](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 482 | 🟢 Active | Slang Shader | Collection of CRT shader presets for RetroArch, based on Guest Advanced NTSC. Recreates the look of various old TVs.<br><sub>Good for: CRT post-processing · Also in: VHS & Analog, Shaders & Psychedelic</sub> |
+| [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 345 | 🟢 Active | Godot Shader | Retro shader collection for Godot 4, giving the dithering, low-poly, and texture-wobble look of the PS1 and N64 era.<br><sub>Good for: PS1 retro 3D · Also in: 3D, Shaders & Psychedelic</sub> |
 | [hitherdither](https://github.com/hbldh/hitherdither) | 260 | 🟢 Active | Python | Python dithering algorithm library with support for arbitrary palettes. For limited-color pixel looks and retro print textures.<br><sub>Good for: Dithering assets · Also in: Dither & 1-bit</sub> |
-| [weilanx Claude Videos](https://github.com/Azure12355/weilanx-claude-videos) | 249 | 🟢 Active | TypeScript | Made by a Chinese developer: hand-drawn and pixel-art explainer videos written purely in code with Remotion + React + SVG.<br><sub>Good for: Explainer videos · Also in: Hand-drawn & Whiteboard</sub><br><sub>⚠️ One skill's cover image used text-to-image generation; it can be swapped for a code-rendered frame.</sub> |
+| [weilanx Claude Videos](https://github.com/Azure12355/weilanx-claude-videos) | 260 | 🟢 Active | TypeScript | Made by a Chinese developer: hand-drawn and pixel-art explainer videos written purely in code with Remotion + React + SVG.<br><sub>Good for: Explainer videos · Also in: Hand-drawn & Whiteboard</sub><br><sub>⚠️ One skill's cover image used text-to-image generation; it can be swapped for a code-rendered frame.</sub> |
+| [Dither Guy](https://github.com/manoelpiovesan/dither-guy) | 253 | 🟢 Active | Python | An open-source alternative to Dither Boy: applies Bayer, Floyd-Steinberg and other dithering to images and video for a low-colour retro display look.<br><sub>Good for: Dithering · Retro look · Also in: Dither & 1-bit</sub> |
+| [Codixel](https://github.com/mankidev/codixel) | 188 | 🟢 Active | JavaScript / skill | Teaches Claude Code to make pixel animation in code: assemble a character from reference images, rig it, then pixelate it; also covers fire, smoke and beam effects.<br><sub>Good for: Pixel sprites · Game effects</sub><br><sub>⚠️ You supply the reference images (your own or suitably licensed); no image generation is used.</sub> |
 | [Sand Slide](https://github.com/kiwijuice56/sand-slide) | 143 | 🟢 Active | Godot / C++ | Fast falling sand game built with Godot and GDExtension, with many element types.<br><sub>Good for: Falling sand visuals · Also in: Falling Sand</sub> |
 | [FallingSandEngine](https://github.com/PieKing1215/FallingSandEngine) | 76 | 🟡 Slowing | Rust | Experimental 2D falling sand engine in Rust, where every pixel takes part in physics like in Noita.<br><sub>Good for: Falling sand engines · Also in: Falling Sand</sub> |
 
@@ -933,7 +1018,9 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Text art, Braille dots and text effects in the terminal
 
-25 projects, sorted by stars.
+**Picks:** [TerminalTextEffects](https://github.com/ChrisBuilds/terminaltexteffects) · [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) · [Chafa](https://github.com/hpjansson/chafa) · [asciimatics](https://github.com/peterbrittain/asciimatics) · [play.core](https://github.com/ertdfgcvb/play.core)
+
+26 projects, sorted by stars.
 
 <br clear="right">
 
@@ -941,7 +1028,7 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | --- | ---: | :---: | --- | --- |
 | [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) | 26.6k | 🟢 Active | QML / C++ | Terminal that imitates an old CRT monitor: scanlines, glow, screen curvature. Screen recordings come out looking retro.<br><sub>Good for: Retro terminals · Also in: Pixel & Retro, VHS & Analog</sub> |
 | [VHS](https://github.com/charmbracelet/vhs) | 21.3k | 🟢 Active | VHS script | Script terminal actions and record them automatically as a GIF or video. The easiest way to make command-line demos.<br><sub>Good for: Explainer videos · GIF · Also in: Code & Terminal Demo</sub> |
-| [asciinema](https://github.com/asciinema/asciinema) | 17.9k | 🟢 Active | Rust (CLI) | Records terminal sessions and replays them in a web player. Small files, copyable text.<br><sub>Good for: Explainer videos · Also in: Code & Terminal Demo</sub> |
+| [asciinema](https://github.com/asciinema/asciinema) | 18k | 🟢 Active | Rust (CLI) | Records terminal sessions and replays them in a web player. Small files, copyable text.<br><sub>Good for: Explainer videos · Also in: Code & Terminal Demo</sub> |
 | [Terminalizer](https://github.com/faressoft/terminalizer) | 16.2k | ⚪ Dormant | JavaScript (CLI) | Records terminal sessions and renders them as animated GIFs with a window frame.<br><sub>Good for: GIF · Also in: Code & Terminal Demo</sub> |
 | [MapSCII](https://github.com/rastapasta/mapscii) | 9.3k | ⚪ Dormant | JavaScript | Renders a world map in the terminal with Braille dots and characters; you can zoom and drag.<br><sub>Good for: Terminal maps · Also in: Map & Route</sub><br><sub>⚠️ Not updated since 2024.</sub> |
 | [CAVA](https://github.com/karlstav/cava) | 6.5k | 🟢 Active | C (CLI) | Audio spectrum visualizer for the terminal.<br><sub>Good for: Music visualizer · Also in: Music Visualization</sub> |
@@ -956,12 +1043,13 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [zero](https://github.com/sinclairzx81/zero) | 2.5k | 🟢 Active | TypeScript | 3D renderer written in JavaScript that draws 3D scenes directly in the terminal.<br><sub>Good for: Terminal animation · Also in: 3D</sub> |
 | [video-to-ascii](https://github.com/joelibaceta/video-to-ascii) | 1.9k | 🟡 Slowing | Python | Plays video in the terminal as character art.<br><sub>Good for: Effect assets</sub> |
 | [Durdraw](https://github.com/durdraw/durdraw) | 1.9k | 🟢 Active | Python (terminal) | ASCII/ANSI art editor for the terminal, with frame-by-frame character animation.<br><sub>Good for: ANSI text animation</sub> |
-| [scope-tui](https://github.com/alemidev/scope-tui) | 755 | 🟢 Active | Rust (CLI) | Oscilloscope, vectorscope, and spectroscope in your terminal, drawing waveforms with characters.<br><sub>Good for: Terminal oscilloscope · Also in: Oscilloscope & Vector, Music Visualization</sub> |
-| [linecast](https://github.com/ashuttl/linecast) | 676 | 🟢 Active | CLI | Weather, tides, sun, moon, and stars in the terminal, in a retro almanac style.<br><sub>Good for: Terminal sky charts · Also in: Space & Stars</sub> |
+| [scope-tui](https://github.com/alemidev/scope-tui) | 759 | 🟢 Active | Rust (CLI) | Oscilloscope, vectorscope, and spectroscope in your terminal, drawing waveforms with characters.<br><sub>Good for: Terminal oscilloscope · Also in: Oscilloscope & Vector, Music Visualization</sub> |
+| [linecast](https://github.com/ashuttl/linecast) | 685 | 🟢 Active | CLI | Weather, tides, sun, moon, and stars in the terminal, in a retro almanac style.<br><sub>Good for: Terminal sky charts · Also in: Space & Stars</sub> |
 | [play.core](https://github.com/ertdfgcvb/play.core) | 544 | 🟡 Slowing | JavaScript | Experimental platform for ASCII character animation in JS. Each character is a "pixel".<br><sub>Good for: Generative art · Also in: Generative Art</sub> |
-| [Open Cubic Player](https://github.com/mywave82/opencubicplayer) | 451 | 🟢 Active | C | Unix version of the classic DOS player. Plays tracker music such as MOD and S3M, with retro visualizations.<br><sub>Good for: Retro music visualizer · Also in: Music Visualization, Demoscene</sub> |
+| [Open Cubic Player](https://github.com/mywave82/opencubicplayer) | 452 | 🟢 Active | C | Unix version of the classic DOS player. Plays tracker music such as MOD and S3M, with retro visualizations.<br><sub>Good for: Retro music visualizer · Also in: Music Visualization, Demoscene</sub> |
+| [ASCII Magic](https://github.com/kailashsr38/ascii-magic-art) | 441 | 🟢 Active | JavaScript | 734 animated ASCII pieces in 24 categories. Preview them in the terminal, switch looks (halftone, binary, dither), then hand one to an AI coding agent to add to a page.<br><sub>Good for: ASCII animation assets</sub> |
 | [termsand](https://github.com/cgsdev0/termsand) | 318 | 🟢 Active | Shell / tmux | Falling sand simulation that runs in tmux. Click with the mouse and sand falls from the top of the terminal.<br><sub>Good for: Terminal animation · Also in: Falling Sand</sub> |
-| [cbirds](https://github.com/clainstone/cbirds) | 295 | 🟢 Active | C (CLI) | A flock of birds in your terminal: the Boids flocking algorithm drawn with braille dots, also exportable as sprites.<br><sub>Good for: Terminal animation · Also in: Particles & Physics</sub> |
+| [cbirds](https://github.com/clainstone/cbirds) | 304 | 🟢 Active | C (CLI) | A flock of birds in your terminal: the Boids flocking algorithm drawn with braille dots, also exportable as sprites.<br><sub>Good for: Terminal animation · Also in: Particles & Physics</sub> |
 | [proof-engine](https://github.com/Mattbusel/proof-engine) | 32 | 🟢 Active | Rust | Rendering engine where every visual is math: glyphs and particles driven by strange attractors.<br><sub>Good for: Math visuals · Also in: Fractals & Chaos</sub> |
 | [TermiSand](https://github.com/BobdaProgrammer/TermiSand) | 22 | 🟡 Slowing | CLI | Falling-sand simulator in your terminal, drawing sand and water with characters.<br><sub>Good for: Terminal animation · Also in: Falling Sand</sub> |
 
@@ -975,20 +1063,22 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 > Growing charts, bar chart races, Git history animations
 
-27 projects, sorted by stars.
+**Picks:** [D3](https://github.com/d3/d3) · [Apache ECharts](https://github.com/apache/echarts) · [Gource](https://github.com/acaudwell/Gource) · [Vizzu](https://github.com/vizzuhq/vizzu-lib) · [deck.gl](https://github.com/visgl/deck.gl)
+
+29 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
 | [D3](https://github.com/d3/d3) | 114k | 🟢 Active | JavaScript | Low-level data visualization library with strong transition animation, often used for data journalism animations.<br><sub>Good for: Data videos · Web</sub> |
-| [Manim (3b1b)](https://github.com/3b1b/manim) | 96.3k | 🟢 Active | Python | The math animation engine 3Blue1Brown himself uses (ManimGL): formulas, coordinate systems, shape transforms, in the classic blue-and-black explainer style.<br><sub>Good for: Explainer videos · Also in: Math Explainer</sub><br><sub>⚠️ Sparse docs; beginners should start with the community edition.</sub> |
+| [Manim (3b1b)](https://github.com/3b1b/manim) | 96.5k | 🟢 Active | Python | The math animation engine 3Blue1Brown himself uses (ManimGL): formulas, coordinate systems, shape transforms, in the classic blue-and-black explainer style.<br><sub>Good for: Explainer videos · Also in: Math Explainer</sub><br><sub>⚠️ Sparse docs; beginners should start with the community edition.</sub> |
 | [Apache ECharts](https://github.com/apache/echarts) | 67.7k | 🟢 Active | TypeScript | One of the most widely used chart libraries in China, with rich built-in transition animations and timeline playback.<br><sub>Good for: Data videos · Web</sub> |
-| [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer) | 49.4k | ⚪ Dormant | JavaScript | Animates how algorithms run, including sorting, graphs, and dynamic programming.<br><sub>Good for: Explainer videos · Also in: Code & Terminal Demo</sub> |
-| [Manim Community](https://github.com/ManimCommunity/manim) | 42.4k | 🟢 Active | Python | Community-maintained fork of Manim with the most complete docs and tutorials. Used for many math, physics and algorithm explainer videos on Bilibili.<br><sub>Good for: Explainer videos · Also in: Math Explainer, Code & Terminal Demo</sub> |
-| [Matplotlib](https://github.com/matplotlib/matplotlib) | 23.4k | 🟢 Active | Python | The basic Python plotting library. FuncAnimation makes data animations that export to video.<br><sub>Good for: Data videos</sub> |
+| [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer) | 49.5k | ⚪ Dormant | JavaScript | Animates how algorithms run, including sorting, graphs, and dynamic programming.<br><sub>Good for: Explainer videos · Also in: Code & Terminal Demo</sub> |
+| [Manim Community](https://github.com/ManimCommunity/manim) | 42.6k | 🟢 Active | Python | Community-maintained fork of Manim with the most complete docs and tutorials. Used for many math, physics and algorithm explainer videos on Bilibili.<br><sub>Good for: Explainer videos · Also in: Math Explainer, Code & Terminal Demo</sub> |
+| [Matplotlib](https://github.com/matplotlib/matplotlib) | 23.5k | 🟢 Active | Python | The basic Python plotting library. FuncAnimation makes data animations that export to video.<br><sub>Good for: Data videos</sub> |
 | [Plotly](https://github.com/plotly/plotly.py) | 18.9k | 🟢 Active | Python | Interactive charting library for Python, with frame-by-frame animated charts.<br><sub>Good for: Data animation</sub> |
-| [deck.gl](https://github.com/visgl/deck.gl) | 14.7k | 🟢 Active | TypeScript | Large-scale geospatial data visualization: animated trajectories, 3D column maps, and more.<br><sub>Good for: Map animation · Also in: 3D, Map & Route</sub> |
+| [deck.gl](https://github.com/visgl/deck.gl) | 14.8k | 🟢 Active | TypeScript | Large-scale geospatial data visualization: animated trajectories, 3D column maps, and more.<br><sub>Good for: Map animation · Also in: 3D, Map & Route</sub> |
 | [Gource](https://github.com/acaudwell/Gource) | 13.2k | 🟡 Slowing | C++ (CLI) | Renders Git commit history as a video of code "growing". A classic piece of footage for programmers.<br><sub>Good for: Developer videos · Also in: Code & Terminal Demo</sub> |
 | [AntV G2](https://github.com/antvis/G2) | 12.7k | 🟢 Active | TypeScript | Visualization grammar library from Ant Group's AntV. Charts come with built-in enter and update animations.<br><sub>Good for: Data animation</sub> |
 | [chart.xkcd](https://github.com/timqian/chart.xkcd) | 7.9k | 🟢 Active | JavaScript | Hand-drawn chart library in the xkcd comic style, with wobbly lines and a comic font.<br><sub>Good for: Hand-drawn charts · Also in: Hand-drawn & Whiteboard</sub> |
@@ -999,15 +1089,17 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [AntV L7](https://github.com/antvis/L7) | 4.1k | 🟢 Active | TypeScript | Large-scale geospatial visualization engine from Ant Group's AntV. Map animations such as flying lines, trajectories, and heatmaps.<br><sub>Good for: Map animation · Also in: Map & Route</sub> |
 | [thi.ng/umbrella](https://github.com/thi-ng/umbrella) | 3.8k | 🟢 Active | TypeScript | Toolkit of over a hundred TypeScript packages for generative art and visualization, long maintained by its author.<br><sub>Good for: Generative art · Also in: Generative Art</sub> |
 | [ManimML](https://github.com/helblazer811/ManimML) | 3.5k | ⚪ Dormant | Python | Machine learning concept animations built on Manim: explainer animations of neural networks, convolutions, and similar structures.<br><sub>Good for: Explainer videos · Also in: Math Explainer</sub> |
-| [anything2explainer](https://github.com/Vincentwei1021/anything2explainer) | 3.2k | 🟢 Active | React / TS | Give it a topic and it makes a black-background motion graphics explainer video, with voiceover and captions. Every frame is rendered in code.<br><sub>Good for: Explainer videos · Also in: Motion Graphics</sub> |
+| [anything2explainer](https://github.com/Vincentwei1021/anything2explainer) | 3.3k | 🟢 Active | React / TS | Give it a topic and it makes a black-background motion graphics explainer video, with voiceover and captions. Every frame is rendered in code.<br><sub>Good for: Explainer videos · Also in: Motion Graphics</sub> |
 | [Vizzu](https://github.com/vizzuhq/vizzu-lib) | 2k | 🟡 Slowing | JavaScript | Chart library built for data animation. Charts morph smoothly into one another, good for data storytelling.<br><sub>Good for: Data story animation</sub> |
 | [gganimate](https://github.com/thomasp85/gganimate) | 2k | 🟡 Slowing | R | Animation extension for R's ggplot2. Turns static charts into animations.<br><sub>Good for: Data videos</sub> |
 | [Logstalgia](https://github.com/acaudwell/Logstalgia) | 1.8k | 🟡 Slowing | C++ (CLI) | Turns website access logs into a Pong-style animation.<br><sub>Good for: Playful visualization</sub> |
+| [AI Animation Skills](https://github.com/Unclecheng-li/AI_Animation) | 1.8k | 🟢 Active | HTML / skill | 17 skills that have an AI coding agent write single-file HTML animations: PPT-style explainers, flowcharts, network protocols, animated architecture diagrams, storyboards and more.<br><sub>Good for: Explainer decks · Concept animations · Also in: Motion Graphics</sub> |
 | [bar_chart_race](https://github.com/dexplo/bar_chart_race) | 1.5k | ⚪ Dormant | Python | Generate bar chart race animation videos in a few lines of Python.<br><sub>Good for: Data videos</sub> |
-| [audioMotion](https://github.com/hvianna/audioMotion-analyzer) | 971 | 🟢 Active | JavaScript | High-resolution real-time spectrum analyzer with adjustable bar, radial, and other styles.<br><sub>Good for: Music visualizer · Also in: Music Visualization</sub><br><sub>⚠️ AGPL-3.0: if used in a network service offered to others, you must publish your modified source.</sub> |
-| [party-mode](https://github.com/preziotte/party-mode) | 807 | 🟢 Active | JavaScript | Experimental D3-based music visualizer with several rhythmic geometric patterns.<br><sub>Good for: Music visualizer · Also in: Music Visualization</sub> |
-| [drawsvg](https://github.com/cduck/drawsvg) | 696 | 🟢 Active | Python | Generate SVG graphics and animations from Python, with interactive preview in Jupyter.<br><sub>Good for: SVG animation · Also in: Motion Graphics</sub> |
-| [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 180 | 🟢 Active | HTML | 74 animated HTML explainer boards (charts, diagrams, flows) for YouTube explainer videos.<br><sub>Good for: Explainer video assets · Also in: Motion Graphics</sub> |
+| [audioMotion](https://github.com/hvianna/audioMotion-analyzer) | 975 | 🟢 Active | JavaScript | High-resolution real-time spectrum analyzer with adjustable bar, radial, and other styles.<br><sub>Good for: Music visualizer · Also in: Music Visualization</sub><br><sub>⚠️ AGPL-3.0: if used in a network service offered to others, you must publish your modified source.</sub> |
+| [party-mode](https://github.com/preziotte/party-mode) | 808 | 🟢 Active | JavaScript | Experimental D3-based music visualizer with several rhythmic geometric patterns.<br><sub>Good for: Music visualizer · Also in: Music Visualization</sub> |
+| [drawsvg](https://github.com/cduck/drawsvg) | 697 | 🟢 Active | Python | Generate SVG graphics and animations from Python, with interactive preview in Jupyter.<br><sub>Good for: SVG animation · Also in: Motion Graphics</sub> |
+| [manim-web](https://github.com/maloyan/manim-web) | 515 | 🟢 Active | TypeScript | A TypeScript port of 3Blue1Brown's Manim that renders in a browser canvas, plus molecular, chemistry, biology and map modules.<br><sub>Good for: Math animation · Web · Also in: Math Explainer</sub> |
+| [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 207 | 🟢 Active | HTML | 74 animated HTML explainer boards (charts, diagrams, flows) for YouTube explainer videos.<br><sub>Good for: Explainer video assets · Also in: Motion Graphics</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1015,7 +1107,7 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 ## Niche styles
 
-Fewer people use these, but you'd recognize them anywhere. The bar is lower here, at 20+ stars with a push in the last year. 151 projects in all.
+Fewer people use these, but you'd recognize them anywhere. The bar is lower here, at 20+ stars with a push in the last year. 165 projects in all.
 
 <a name="ink"></a>
 
@@ -1025,20 +1117,22 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Procedural landscape scrolls, ink bleeds, watercolor pigment and empty space
 
+**Picks:** [Shan-Shui-Inf](https://github.com/LingDong-/shan-shui-inf) · [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) · [AquaInkGL](https://github.com/WishMelz/AquaInkGL) · [Watercolor Playground](https://github.com/msurguy/watercolor-playground)
+
 8 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | 6.6k | 🟢 Active | JavaScript | 35 art styles and 9 narration grammars, animating pictures with code. The soundtrack is also synthesized in code.<br><sub>Good for: Art animation · Also in: Hand-drawn & Whiteboard</sub><br><sub>⚠️ When a real person is needed on screen, an image generation model produces the frame; everything else is drawn in code.</sub> |
-| [Shan-Shui-Inf](https://github.com/LingDong-/shan-shui-inf) | 6.4k | ⚪ Dormant | JavaScript | Procedurally generated, endlessly scrolling Chinese landscape painting. Mountains, rocks, trees, and pavilions are all drawn stroke by stroke by algorithms.<br><sub>Good for: Ink wash scrolls · Generative art · Also in: Generative Art</sub><br><sub>⚠️ Not updated since 2018; the work itself is complete and usable.</sub> |
-| [Shuimo UI](https://github.com/shuimo-design/shuimo-ui) | 399 | 🟢 Active | Vue / TypeScript | From a Chinese team: ink wash style UI component library, with buttons and dialogs drawn as ink brush strokes.<br><sub>Good for: Ink wash UI</sub> |
-| [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | 384 | 🟡 Slowing | WebGL | WebGL ink-wash background effect, with ink bleeding and flowing across rice paper.<br><sub>Good for: Ink wash backgrounds · Also in: Shaders & Psychedelic</sub> |
-| [Claude Drawing Skill](https://github.com/cloveric/claude-drawing-skill) | 154 | 🟢 Active | Python | Claude paints stroke by stroke with code, in 77 styles including ink wash, oil painting, clay, cyanotype, stained glass, and Jiangnan gardens, with no image generation model.<br><sub>Good for: Illustration · Ink wash · Also in: Hand-drawn & Whiteboard</sub> |
-| [Watercolor Playground](https://github.com/msurguy/watercolor-playground) | 103 | 🟢 Active | TypeScript | Realistic watercolor simulation: paint bleeds, settles, and dries on paper.<br><sub>Good for: Watercolor painting · Also in: Hand-drawn & Whiteboard</sub> |
-| [code-poem-film](https://github.com/bangbuilds/code-poem-film) | 64 | 🟢 Active | JavaScript | Speak a poem and get an ink-wash hand-drawn 2D animation: frames drawn by code, recitation aligned word by word, soundtrack synthesized with numpy.<br><sub>Good for: Poetry animation</sub> |
-| [Chinese-Style Paper Animation](https://github.com/AllenAI2014/remotion-guofeng-starter) | 34 | 🟢 Active | React / Remotion | Asset library and production skill for Chinese-style paper collage animation. Give an AI a poem or idiom and it renders the video entirely in code.<br><sub>Good for: Poetry animation · Also in: Riso & Paper Collage</sub> |
+| [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | 7k | 🟢 Active | JavaScript | 35 art styles and 9 narration grammars, animating pictures with code. The soundtrack is also synthesized in code.<br><sub>Good for: Art animation · Also in: Hand-drawn & Whiteboard</sub><br><sub>⚠️ When a real person is needed on screen, an image generation model produces the frame; everything else is drawn in code.</sub> |
+| [Shan-Shui-Inf](https://github.com/LingDong-/shan-shui-inf) | 6.5k | ⚪ Dormant | JavaScript | Procedurally generated, endlessly scrolling Chinese landscape painting. Mountains, rocks, trees, and pavilions are all drawn stroke by stroke by algorithms.<br><sub>Good for: Ink wash scrolls · Generative art · Also in: Generative Art</sub><br><sub>⚠️ Not updated since 2018; the work itself is complete and usable.</sub> |
+| [Shuimo UI](https://github.com/shuimo-design/shuimo-ui) | 400 | 🟢 Active | Vue / TypeScript | From a Chinese team: ink wash style UI component library, with buttons and dialogs drawn as ink brush strokes.<br><sub>Good for: Ink wash UI</sub> |
+| [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | 386 | 🟡 Slowing | WebGL | WebGL ink-wash background effect, with ink bleeding and flowing across rice paper.<br><sub>Good for: Ink wash backgrounds · Also in: Shaders & Psychedelic</sub> |
+| [Claude Drawing Skill](https://github.com/cloveric/claude-drawing-skill) | 247 | 🟢 Active | Python | Claude paints stroke by stroke with code, in 77 styles including ink wash, oil painting, clay, cyanotype, stained glass, and Jiangnan gardens, with no image generation model.<br><sub>Good for: Illustration · Ink wash · Also in: Hand-drawn & Whiteboard</sub> |
+| [Watercolor Playground](https://github.com/msurguy/watercolor-playground) | 106 | 🟢 Active | TypeScript | Realistic watercolor simulation: paint bleeds, settles, and dries on paper.<br><sub>Good for: Watercolor painting · Also in: Hand-drawn & Whiteboard</sub> |
+| [code-poem-film](https://github.com/bangbuilds/code-poem-film) | 65 | 🟢 Active | JavaScript | Speak a poem and get an ink-wash hand-drawn 2D animation: frames drawn by code, recitation aligned word by word, soundtrack synthesized with numpy.<br><sub>Good for: Poetry animation</sub> |
+| [Chinese-Style Paper Animation](https://github.com/AllenAI2014/remotion-guofeng-starter) | 36 | 🟢 Active | React / Remotion | Asset library and production skill for Chinese-style paper collage animation. Give an AI a poem or idiom and it renders the video entirely in code.<br><sub>Good for: Poetry animation · Also in: Riso & Paper Collage</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1050,7 +1144,9 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Chinese characters and handwriting written out stroke by stroke
 
-4 projects, sorted by stars.
+**Picks:** [Hanzi Writer](https://github.com/chanind/hanzi-writer) · [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) · [animCJK](https://github.com/parsimonhi/animCJK) · [Tegaki](https://github.com/gkurt/tegaki)
+
+5 projects, sorted by stars.
 
 <br clear="right">
 
@@ -1059,7 +1155,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [Hanzi Writer](https://github.com/chanind/hanzi-writer) | 5.1k | 🟡 Slowing | TypeScript | Chinese character stroke order animation and writing practice library. One line of code animates a character stroke by stroke.<br><sub>Good for: Stroke order animation · Also in: Kinetic Type & Lyrics</sub> |
 | [Tegaki](https://github.com/gkurt/tegaki) | 3.3k | 🟢 Active | TypeScript | Handwriting animation for the web: any font and any text can be turned into a pen-writing effect.<br><sub>Good for: Handwriting animation · Also in: Kinetic Type & Lyrics, Hand-drawn & Whiteboard</sub> |
 | [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) | 2.8k | 🟡 Slowing | Data / JS | Open-source Chinese character stroke and component data. Stroke order animations such as Hanzi Writer use its data.<br><sub>Good for: Stroke data</sub> |
-| [animCJK](https://github.com/parsimonhi/animCJK) | 476 | 🟢 Active | SVG / HTML | SVG animations of Chinese, Japanese and Korean characters written in correct stroke order, including Japanese kana and Korean hanja.<br><sub>Good for: Stroke order animation · Also in: Kinetic Type & Lyrics</sub> |
+| [animCJK](https://github.com/parsimonhi/animCJK) | 479 | 🟢 Active | SVG / HTML | SVG animations of Chinese, Japanese and Korean characters written in correct stroke order, including Japanese kana and Korean hanja.<br><sub>Good for: Stroke order animation · Also in: Kinetic Type & Lyrics</sub> |
+| [Stroke Order Animator](https://github.com/chill-chinese/stroke-order-animator) | 112 | 🟡 Slowing | Dart (Flutter) | Flutter stroke-order animations and writing quizzes for Chinese characters, using stroke data from Make Me a Hanzi.<br><sub>Good for: Stroke order animation</sub><br><sub>⚠️ Stroke data is under the Arphic Public License.</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1071,14 +1168,17 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Glowing vector lines on an oscilloscope, where pictures and sound turn into each other
 
-2 projects, sorted by stars.
+**Picks:** [osci-render](https://github.com/jameshball/osci-render) · [scope-tui](https://github.com/alemidev/scope-tui) · [Oscillody](https://github.com/Akosmo/Oscillody)
+
+3 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [scope-tui](https://github.com/alemidev/scope-tui) | 755 | 🟢 Active | Rust (CLI) | Oscilloscope, vectorscope, and spectroscope in your terminal, drawing waveforms with characters.<br><sub>Good for: Terminal oscilloscope · Also in: ASCII & Terminal, Music Visualization</sub> |
-| [osci-render](https://github.com/jameshball/osci-render) | 741 | 🟢 Active | C++ / Lua | Synthesizer plugin that draws shapes on an oscilloscope: shapes become sound, and the sound turns back into glowing vector lines on the scope.<br><sub>Good for: Oscilloscope music · MV · Also in: Music Visualization</sub> |
+| [scope-tui](https://github.com/alemidev/scope-tui) | 759 | 🟢 Active | Rust (CLI) | Oscilloscope, vectorscope, and spectroscope in your terminal, drawing waveforms with characters.<br><sub>Good for: Terminal oscilloscope · Also in: ASCII & Terminal, Music Visualization</sub> |
+| [osci-render](https://github.com/jameshball/osci-render) | 742 | 🟢 Active | C++ / Lua | Synthesizer plugin that draws shapes on an oscilloscope: shapes become sound, and the sound turns back into glowing vector lines on the scope.<br><sub>Good for: Oscilloscope music · MV · Also in: Music Visualization</sub> |
+| [Oscillody](https://github.com/Akosmo/Oscillody) | 56 | 🟢 Active | GDScript (Godot) | An oscilloscope-style audio visualizer: import up to four stems, draw their waveforms in real time, style them and export a video.<br><sub>Good for: Oscilloscope waveforms · Music visualization · Also in: Music Visualization</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1090,19 +1190,22 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Single lines, hatching and line art drawn by a pen plotter
 
-7 projects, sorted by stars.
+**Picks:** [vpype](https://github.com/abey79/vpype) · [vsketch](https://github.com/abey79/vsketch) · [fishdraw](https://github.com/LingDong-/fishdraw) · [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg)
+
+8 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
 | [fishdraw](https://github.com/LingDong-/fishdraw) | 2.5k | ⚪ Dormant | JavaScript | Procedurally generates line drawings of fish, output as single-line SVG that a pen plotter can draw directly.<br><sub>Good for: Line art · Pen plotters · Also in: Generative Art</sub><br><sub>⚠️ Not updated since 2021.</sub> |
-| [vpype](https://github.com/abey79/vpype) | 983 | 🟢 Active | Python (CLI) | Swiss Army knife for plotter vector graphics: merge, sort, crop, and layer line art before sending it to the plotter.<br><sub>Good for: Plotter line art</sub> |
-| [Pintr](https://github.com/javierbyte/pintr) | 837 | 🟢 Active | TypeScript | Turns photos into single-line illustrations drawn in one continuous stroke.<br><sub>Good for: Single-stroke drawing · Also in: Hand-drawn & Whiteboard</sub> |
-| [vsketch](https://github.com/abey79/vsketch) | 612 | 🟢 Active | Python | Python generative art environment for pen plotters. Tweak parameters with live preview, export single-line SVG.<br><sub>Good for: Generative art · Pen plotters · Also in: Generative Art</sub> |
+| [vpype](https://github.com/abey79/vpype) | 986 | 🟢 Active | Python (CLI) | Swiss Army knife for plotter vector graphics: merge, sort, crop, and layer line art before sending it to the plotter.<br><sub>Good for: Plotter line art</sub> |
+| [Pintr](https://github.com/javierbyte/pintr) | 843 | 🟢 Active | TypeScript | Turns photos into single-line illustrations drawn in one continuous stroke.<br><sub>Good for: Single-stroke drawing · Also in: Hand-drawn & Whiteboard</sub> |
+| [vsketch](https://github.com/abey79/vsketch) | 614 | 🟢 Active | Python | Python generative art environment for pen plotters. Tweak parameters with live preview, export single-line SVG.<br><sub>Good for: Generative art · Pen plotters · Also in: Generative Art</sub> |
 | [Krbn](https://github.com/vpalos/Krbn) | 249 | 🟢 Active | TypeScript | Renders 3D scenes as pencil-sketch SVG: exact outlines, hidden lines, hatched shading.<br><sub>Good for: 3D line art · Also in: 3D</sub> |
-| [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) | 218 | 🟢 Active | JavaScript | Exports p5.js work as line-art SVG suited to pen plotters.<br><sub>Good for: Pen plotters · p5.js</sub> |
-| [Delaunay Stippler](https://github.com/NHasan143/delaunay-stippler) | 70 | 🟢 Active | JavaScript | Web tool that turns images into stipple art, placing dots with a weighted Voronoi algorithm.<br><sub>Good for: Pointillism · Also in: Geometric & Low-poly</sub> |
+| [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) | 219 | 🟢 Active | JavaScript | Exports p5.js work as line-art SVG suited to pen plotters.<br><sub>Good for: Pen plotters · p5.js</sub> |
+| [genart](https://github.com/camilleroux/genart-skill) | 166 | 🟢 Active | JavaScript / skill | A generative art plugin for Claude Code: hash-seeded, deterministic pieces that render the same at any resolution, covering Canvas, p5.js, three.js, SVG and pen-plotter export.<br><sub>Good for: Generative art · On-chain art · Also in: Generative Art</sub> |
+| [Delaunay Stippler](https://github.com/NHasan143/delaunay-stippler) | 68 | 🟢 Active | JavaScript | Web tool that turns images into stipple art, placing dots with a weighted Voronoi algorithm.<br><sub>Good for: Pointillism · Also in: Geometric & Low-poly</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1114,17 +1217,21 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Black-and-white dither dots, with an old Mac and Return of the Obra Dinn feel
 
-5 projects, sorted by stars.
+**Picks:** [Dither3D](https://github.com/runevision/Dither3D) · [Dithering Shader](https://github.com/niccolofanton/dithering-shader) · [hitherdither](https://github.com/hbldh/hitherdither) · [ditherwave](https://github.com/sahilsaini5/ditherwave)
+
+7 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | 🟡 Slowing | Unity Shader | Fractal dithering shader that sticks to object surfaces and doesn't flicker when the camera moves. For 1-bit style 3D visuals.<br><sub>Good for: 1-bit 3D · Also in: Shaders & Psychedelic, 3D</sub><br><sub>⚠️ Unity shader; not updated since early 2025.</sub> |
+| [Diorama](https://github.com/sloemo01/diorama) | 535 | 🟢 Active | JavaScript (three.js) | A playbook for AI coding agents to build three.js dioramas: tiny people with joint animation, a 64-colour ordered-dither pixel look by default, or stroked toon.<br><sub>Good for: Miniature scene clips · Also in: 3D, Pixel & Retro</sub><br><sub>⚠️ By default mixes commercially licensed 3D assets with hand-built geometry; sources are recorded in the repo.</sub> |
 | [Dithering Shader](https://github.com/niccolofanton/dithering-shader) | 294 | 🟢 Active | React / TS | Real-time Bayer dithering post-processing effect for React Three Fiber, turning 3D scenes into a retro dithered look.<br><sub>Good for: 3D post-processing · Also in: 3D, Shaders & Psychedelic</sub> |
 | [hitherdither](https://github.com/hbldh/hitherdither) | 260 | 🟢 Active | Python | Python dithering algorithm library with support for arbitrary palettes. For limited-color pixel looks and retro print textures.<br><sub>Good for: Dithering assets · Also in: Pixel & Retro</sub> |
+| [Dither Guy](https://github.com/manoelpiovesan/dither-guy) | 253 | 🟢 Active | Python | An open-source alternative to Dither Boy: applies Bayer, Floyd-Steinberg and other dithering to images and video for a low-colour retro display look.<br><sub>Good for: Dithering · Retro look · Also in: Pixel & Retro</sub> |
 | [ditherwave](https://github.com/sahilsaini5/ditherwave) | 89 | 🟡 Slowing | React / WebGL2 | WebGL2 dithering component under 8KB: Bayer, halftone, ASCII, and error diffusion.<br><sub>Good for: Web effects · Also in: Shaders & Psychedelic</sub> |
-| [gbro Collage Info Animation](https://github.com/pyang5166/gbro-collage-info) | 55 | 🟢 Active | HTML / CSS / GSAP | Skill for halftone paper-collage infographic animations, generated segment by segment from a talking-head script. No image models.<br><sub>Good for: Infographic animation · Also in: Riso & Paper Collage</sub> |
+| [gbro Collage Info Animation](https://github.com/pyang5166/gbro-collage-info) | 57 | 🟢 Active | HTML / CSS / GSAP | Skill for halftone paper-collage infographic animations, generated segment by segment from a talking-head script. No image models.<br><sub>Good for: Infographic animation · Also in: Riso & Paper Collage</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1136,18 +1243,20 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Misregistered risograph colors, halftone dots and paper collage
 
+**Picks:** [p5.riso](https://github.com/antiboredom/p5.riso) · [Animate](https://github.com/cth9191/animate) · [Papercut Explainer](https://github.com/0xS4N4TG/papercut-explainer) · [Riso Window Seat](https://github.com/sevenevesai/riso-windowseat)
+
 6 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [Animate](https://github.com/cth9191/animate) | 1.7k | 🟢 Active | JavaScript / Canvas | Claude Code skill: draws short animations procedurally on a single canvas, with 7 built-in styles: paper cut-out, hatched ink, Riso print, sketchbook, math, pixel, and isometric.<br><sub>Good for: Explainer videos · Short films · Also in: Hand-drawn & Whiteboard, Pixel & Retro, Math Explainer</sub> |
-| [p5.riso](https://github.com/antiboredom/p5.riso) | 375 | 🟢 Active | JavaScript | Risograph printing library for p5.js: ink color separation, misregistration, and halftone dots for a stencil-print look.<br><sub>Good for: Riso print look · Also in: Generative Art</sub> |
-| [Riso Window Seat](https://github.com/sevenevesai/riso-windowseat) | 311 | 🟢 Active | HTML | Procedurally generated Riso print style short films, each a single HTML file, with Claude prompts included.<br><sub>Good for: Riso short films</sub> |
-| [Papercut Explainer](https://github.com/0xS4N4TG/papercut-explainer) | 171 | 🟢 Active | TypeScript | Vertical cut-paper style explainer shorts: 9 skills plus Remotion templates, with backgrounds and sound effects included in the repo.<br><sub>Good for: Vertical explainers · Also in: Shorts, Captions & Editing</sub> |
-| [gbro Collage Info Animation](https://github.com/pyang5166/gbro-collage-info) | 55 | 🟢 Active | HTML / CSS / GSAP | Skill for halftone paper-collage infographic animations, generated segment by segment from a talking-head script. No image models.<br><sub>Good for: Infographic animation · Also in: Dither & 1-bit</sub> |
-| [Chinese-Style Paper Animation](https://github.com/AllenAI2014/remotion-guofeng-starter) | 34 | 🟢 Active | React / Remotion | Asset library and production skill for Chinese-style paper collage animation. Give an AI a poem or idiom and it renders the video entirely in code.<br><sub>Good for: Poetry animation · Also in: Ink & Watercolor</sub> |
+| [Animate](https://github.com/cth9191/animate) | 2k | 🟢 Active | JavaScript / Canvas | Claude Code skill: draws short animations procedurally on a single canvas, with 7 built-in styles: paper cut-out, hatched ink, Riso print, sketchbook, math, pixel, and isometric.<br><sub>Good for: Explainer videos · Short films · Also in: Hand-drawn & Whiteboard, Pixel & Retro, Math Explainer</sub> |
+| [p5.riso](https://github.com/antiboredom/p5.riso) | 376 | 🟢 Active | JavaScript | Risograph printing library for p5.js: ink color separation, misregistration, and halftone dots for a stencil-print look.<br><sub>Good for: Riso print look · Also in: Generative Art</sub> |
+| [Riso Window Seat](https://github.com/sevenevesai/riso-windowseat) | 320 | 🟢 Active | HTML | Procedurally generated Riso print style short films, each a single HTML file, with Claude prompts included.<br><sub>Good for: Riso short films</sub> |
+| [Papercut Explainer](https://github.com/0xS4N4TG/papercut-explainer) | 225 | 🟢 Active | TypeScript | Vertical cut-paper style explainer shorts: 9 skills plus Remotion templates, with backgrounds and sound effects included in the repo.<br><sub>Good for: Vertical explainers · Also in: Shorts, Captions & Editing</sub> |
+| [gbro Collage Info Animation](https://github.com/pyang5166/gbro-collage-info) | 57 | 🟢 Active | HTML / CSS / GSAP | Skill for halftone paper-collage infographic animations, generated segment by segment from a talking-head script. No image models.<br><sub>Good for: Infographic animation · Also in: Dither & 1-bit</sub> |
+| [Chinese-Style Paper Animation](https://github.com/AllenAI2014/remotion-guofeng-starter) | 36 | 🟢 Active | React / Remotion | Asset library and production skill for Chinese-style paper collage animation. Give an AI a poem or idiom and it renders the video entirely in code.<br><sub>Good for: Poetry animation · Also in: Ink & Watercolor</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1158,6 +1267,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 <img src="assets/styles/alife.png" alt="Artificial Life & Growth sample" width="240" align="right">
 
 > Patterns that emerge and grow from simple rules: cellular automata, particle life, space colonization, L-systems
+
+**Picks:** [ALIEN](https://github.com/chrxh/alien) · [Lenia](https://github.com/Chakazul/Lenia) · [Particle Life](https://github.com/hunar4321/particle-life) · [algovivo](https://github.com/juniorrojas/algovivo)
 
 8 projects, sorted by stars.
 
@@ -1184,7 +1295,9 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Maps, cities and mazes grown from small samples, where the generating itself is the animation
 
-12 projects, sorted by stars.
+**Picks:** [WaveFunctionCollapse](https://github.com/mxgmn/WaveFunctionCollapse) · [MarkovJunior](https://github.com/mxgmn/MarkovJunior) · [Fantasy Map Generator](https://github.com/Azgaar/Fantasy-Map-Generator) · [mapgen4](https://github.com/redblobgames/mapgen4)
+
+13 projects, sorted by stars.
 
 <br clear="right">
 
@@ -1194,14 +1307,15 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [MarkovJunior](https://github.com/mxgmn/MarkovJunior) | 8.5k | 🟡 Slowing | C# | From the same author: a procedural generation language that uses rewrite rules to grow mazes, cities, and voxel buildings step by step. Comes with 153 example animations.<br><sub>Good for: Procedural generation · Also in: Pixel & Retro, Isometric & Voxel</sub> |
 | [Fantasy Map Generator](https://github.com/Azgaar/Fantasy-Map-Generator) | 6.2k | 🟢 Active | JavaScript | Procedurally generates interactive fantasy world maps. Continents, rivers, states and towns are all adjustable.<br><sub>Good for: Fantasy maps · Also in: Map & Route</sub> |
 | [WFC Infinite City](https://github.com/marian42/wavefunctioncollapse) | 4.9k | ⚪ Dormant | C# (Unity) | Uses wave function collapse to generate an endless 3D city in real time that you can keep walking through.<br><sub>Good for: Procedural generation · Also in: 3D</sub><br><sub>⚠️ Not updated since 2021.</sub> |
-| [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) | 3.5k | 🟢 Active | Multiple languages | Cross-language noise function library (C#, C++, GLSL, JS, Rust, and more). Basic material for flow fields, terrain, and textures.<br><sub>Good for: Noise functions · Also in: Generative Art</sub> |
+| [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) | 3.6k | 🟢 Active | Multiple languages | Cross-language noise function library (C#, C++, GLSL, JS, Rust, and more). Basic material for flow fields, terrain, and textures.<br><sub>Good for: Noise functions · Also in: Generative Art</sub> |
 | [webgl-noise](https://github.com/ashima/webgl-noise) | 3k | 🟡 Slowing | GLSL | Classic GLSL procedural noise library. The noise in countless shader works comes from here.<br><sub>Good for: Noise functions · Also in: Shaders & Psychedelic</sub> |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | 🟢 Active | C | Procedurally generated voxel engine. Terrain and buildings are grown from code.<br><sub>Good for: Procedural voxels · Also in: Isometric & Voxel, 3D</sub> |
 | [NoiseShader](https://github.com/keijiro/NoiseShader) | 1.4k | 🟡 Slowing | Unity HLSL | Keijiro's Unity noise shader library, with simplex noise, Perlin noise and more.<br><sub>Good for: Noise functions · Also in: Shaders & Psychedelic</sub> |
 | [TerraForge3D](https://github.com/Jaysmito101/TerraForge3D) | 1.3k | 🟢 Active | C++ | Procedural terrain generation and texturing tool with node-based editing.<br><sub>Good for: Procedural terrain · Also in: 3D</sub><br><sub>⚠️ Mostly a graphical interface.</sub> |
-| [mapgen4](https://github.com/redblobgames/mapgen4) | 951 | 🟡 Slowing | TypeScript | Red Blob Games' procedural wilderness map generator, with hand-drawn style contours and rivers.<br><sub>Good for: Procedural maps · Also in: Map & Route</sub> |
-| [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 919 | 🟢 Active | JavaScript | Procedural terrain generation engine for three.js.<br><sub>Good for: Procedural terrain · Also in: 3D</sub> |
-| [TSL Textures](https://github.com/boytchev/tsl-textures) | 272 | 🟢 Active | three.js / TSL | Procedural textures for three.js's shading language TSL: marble, wood grain, clouds, starfields.<br><sub>Good for: Procedural textures · Also in: Shaders & Psychedelic</sub> |
+| [mapgen4](https://github.com/redblobgames/mapgen4) | 952 | 🟡 Slowing | TypeScript | Red Blob Games' procedural wilderness map generator, with hand-drawn style contours and rivers.<br><sub>Good for: Procedural maps · Also in: Map & Route</sub> |
+| [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 923 | 🟢 Active | JavaScript | Procedural terrain generation engine for three.js.<br><sub>Good for: Procedural terrain · Also in: 3D</sub> |
+| [Procedural Terrains](https://github.com/ZyFou/ProceduralTerrains) | 673 | 🟢 Active | JavaScript (three.js) | A three.js procedural terrain studio: height and biomes are computed on the GPU for tiles, infinite worlds, planets and dioramas, with water and volumetric clouds.<br><sub>Good for: Terrain · Dioramas · Also in: 3D</sub><br><sub>⚠️ Ships optional Unity and Blender export plugins; the rendering itself is three.js.</sub> |
+| [TSL Textures](https://github.com/boytchev/tsl-textures) | 275 | 🟢 Active | three.js / TSL | Procedural textures for three.js's shading language TSL: marble, wood grain, clouds, starfields.<br><sub>Good for: Procedural textures · Also in: Shaders & Psychedelic</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1213,7 +1327,9 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Endless fractal zooms, chaotic strange attractors and mathematical tilings
 
-8 projects, sorted by stars.
+**Picks:** [Mandelbulber](https://github.com/buddhi1980/mandelbulber2) · [XaoS](https://github.com/xaos-project/XaoS) · [pywonderland](https://github.com/neozhaoliang/pywonderland) · [Fractal Sound Explorer](https://github.com/HackerPoet/FractalSoundExplorer)
+
+9 projects, sorted by stars.
 
 <br clear="right">
 
@@ -1223,8 +1339,9 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [Fractal Sound Explorer](https://github.com/HackerPoet/FractalSoundExplorer) | 1.3k | ⚪ Dormant | C++ | Click in a fractal and the path turns into sound; visuals and audio evolve together.<br><sub>Good for: Fractals · Audio-visual · Also in: Music Visualization</sub><br><sub>⚠️ Not updated since 2021.</sub> |
 | [Mandelbulber](https://github.com/buddhi1980/mandelbulber2) | 1.1k | 🟢 Active | C++ | 3D fractal renderer. Fractals like the Mandelbulb can be keyframed for fly-through animations.<br><sub>Good for: 3D fractal animation · Also in: 3D</sub><br><sub>⚠️ Mainly a graphical app; also supports batch rendering from the command line.</sub> |
 | [XaoS](https://github.com/xaos-project/XaoS) | 628 | 🟢 Active | C++ | Real-time interactive fractal zoomer. Can record infinite-zoom fractal animations.<br><sub>Good for: Fractal zoom</sub> |
+| [Fractal Garden](https://github.com/trebeljahr/fractal-garden) | 164 | 🟢 Active | TypeScript | 62 fractals in the browser: zoom into the Mandelbrot set, fly through a Menger sponge or write your own L-systems, each with an explainer.<br><sub>Good for: Fractals · Math art · Also in: Math Explainer</sub> |
 | [Strange Attractor Renderer](https://github.com/Icelk/strange-attractor-renderer) | 89 | 🟡 Slowing | Rust | Multithreaded strange attractor renderer that draws silky chaotic trajectories.<br><sub>Good for: Chaos art</sub> |
-| [Hopalong Attractor](https://github.com/ratwolfzero/hopalong_python) | 40 | 🟢 Active | Python | Density visualization of the Hopalong attractor, drawing nebula-like patterns.<br><sub>Good for: Chaos art</sub> |
+| [Hopalong Attractor](https://github.com/ratwolfzero/hopalong_python) | 41 | 🟢 Active | Python | Density visualization of the Hopalong attractor, drawing nebula-like patterns.<br><sub>Good for: Chaos art</sub> |
 | [proof-engine](https://github.com/Mattbusel/proof-engine) | 32 | 🟢 Active | Rust | Rendering engine where every visual is math: glyphs and particles driven by strange attractors.<br><sub>Good for: Math visuals · Also in: ASCII & Terminal</sub> |
 | [attractors](https://github.com/vdesmond/attractors) | 23 | 🟡 Slowing | Python | Python package for simulating and visualizing strange attractors, with direct animation export.<br><sub>Good for: Chaos animation</sub> |
 
@@ -1238,7 +1355,9 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Isometric blocks, voxel terrain and little figures
 
-9 projects, sorted by stars.
+**Picks:** [Zdog](https://github.com/metafizzy/zdog) · [VoxelSpace](https://github.com/s-macke/VoxelSpace) · [Isomer](https://github.com/jdan/isomer) · [heerich](https://github.com/meodai/heerich)
+
+11 projects, sorted by stars.
 
 <br clear="right">
 
@@ -1247,12 +1366,14 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [Zdog](https://github.com/metafizzy/zdog) | 10.7k | ⚪ Dormant | JavaScript | Pseudo-3D flat engine that draws rounded, cute flat-shaded 3D shapes.<br><sub>Good for: Web animation · Also in: Motion Graphics, 3D</sub><br><sub>⚠️ Not updated in years; simple and stable.</sub> |
 | [MarkovJunior](https://github.com/mxgmn/MarkovJunior) | 8.5k | 🟡 Slowing | C# | From the same author: a procedural generation language that uses rewrite rules to grow mazes, cities, and voxel buildings step by step. Comes with 153 example animations.<br><sub>Good for: Procedural generation · Also in: Procedural Generation, Pixel & Retro</sub> |
 | [VoxelSpace](https://github.com/s-macke/VoxelSpace) | 6.8k | ⚪ Dormant | C / JS | Recreates the 90s game Comanche's voxel terrain flight view in under 20 lines of code, with an explanation of how it works.<br><sub>Good for: Retro voxel terrain · Also in: Pixel & Retro, 3D</sub> |
-| [hairline](https://github.com/lucasmarkes/hairline) | 3.5k | 🟢 Active | TypeScript | Isometric line figures and objects that turn to follow the mouse. Works with React and plain web pages.<br><sub>Good for: Web motion · Also in: Motion Graphics</sub> |
+| [hairline](https://github.com/lucasmarkes/hairline) | 3.9k | 🟢 Active | TypeScript | Isometric line figures and objects that turn to follow the mouse. Works with React and plain web pages.<br><sub>Good for: Web motion · Also in: Motion Graphics</sub> |
 | [Isomer](https://github.com/jdan/isomer) | 2.9k | ⚪ Dormant | JavaScript | Simple isometric graphics library. Draw isometric blocks and buildings in a few lines of code.<br><sub>Good for: Isometric graphics</sub><br><sub>⚠️ Not updated since 2022.</sub> |
 | [obelisk.js](https://github.com/nosir/obelisk.js) | 2.3k | ⚪ Dormant | JavaScript | Builds pixel-style isometric graphics on Canvas, stacking pixel blocks one by one.<br><sub>Good for: Pixel isometric · Also in: Pixel & Retro</sub><br><sub>⚠️ Not updated since 2019.</sub> |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | 🟢 Active | C | Procedurally generated voxel engine. Terrain and buildings are grown from code.<br><sub>Good for: Procedural voxels · Also in: Procedural Generation, 3D</sub> |
-| [SeeCode](https://github.com/Aryanutkarsh/SeeCode) | 910 | 🟢 Active | JavaScript | Generates explorable animated diagrams from a short JSON spec, so coding agents like Claude can explain code structure.<br><sub>Good for: Code explainer visuals · Also in: Code & Terminal Demo</sub> |
-| [heerich](https://github.com/meodai/heerich) | 631 | 🟢 Active | JavaScript | Small engine that renders 3D voxel scenes to SVG. Supports boolean operations and oblique and perspective cameras. No WebGL.<br><sub>Good for: Voxel illustration · Also in: 3D</sub> |
+| [SeeCode](https://github.com/Aryanutkarsh/SeeCode) | 954 | 🟢 Active | JavaScript | Generates explorable animated diagrams from a short JSON spec, so coding agents like Claude can explain code structure.<br><sub>Good for: Code explainer visuals · Also in: Code & Terminal Demo</sub> |
+| [heerich](https://github.com/meodai/heerich) | 635 | 🟢 Active | JavaScript | Small engine that renders 3D voxel scenes to SVG. Supports boolean operations and oblique and perspective cameras. No WebGL.<br><sub>Good for: Voxel illustration · Also in: 3D</sub> |
+| [iso-figure](https://github.com/MrBongoC/ai-iso-skill) | 357 | 🟢 Active | SVG / skill | A Claude skill: name an object and get one HTML file with a hairline isometric drawing whose parts move, count or play notes when pressed.<br><sub>Good for: Isometric figures · Interactive animation · Also in: Motion Graphics</sub> |
+| [isometric](https://github.com/elchininet/isometric) | 245 | 🟢 Active | TypeScript | A lightweight library for isometric projections in SVG: rectangles, circles, paths and text on isometric planes, with SVG animation support.<br><sub>Good for: Isometric art · SVG animation</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1264,6 +1385,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Glowing wireframes, chamfered frames and futuristic interfaces with decoding text
 
+**Picks:** [Arwes](https://github.com/arwes/arwes) · [augmented-ui](https://github.com/propjockey/augmented-ui) · [Cosmic UI](https://github.com/rizznme/cosmic-ui) · [HaloFlux](https://github.com/Ryder191/haloflux)
+
 4 projects, sorted by stars.
 
 <br clear="right">
@@ -1272,8 +1395,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | --- | ---: | :---: | --- | --- |
 | [Arwes](https://github.com/arwes/arwes) | 7.6k | 🟢 Active | TypeScript | Sci-fi web UI framework with futuristic effects: glowing borders, expanding lines, and text decoding.<br><sub>Good for: Sci-fi UI · Also in: Motion Graphics</sub> |
 | [augmented-ui](https://github.com/propjockey/augmented-ui) | 1.4k | ⚪ Dormant | CSS | Cyberpunk-style UI borders with cut corners and notches, in pure CSS.<br><sub>Good for: Cyberpunk UI</sub><br><sub>⚠️ Not updated since 2024.</sub> |
-| [Cosmic UI](https://github.com/rizznme/cosmic-ui) | 763 | 🟢 Active | Astro / CSS | Sci-fi themed component collection for building spaceship-console style interfaces.<br><sub>Good for: Sci-fi UI</sub> |
-| [HaloFlux](https://github.com/Ryder191/haloflux) | 584 | 🟢 Active | Canvas | Sci-fi light-ring visualization that pulses to the beat. Pure Canvas in a single HTML file, no dependencies.<br><sub>Good for: Music visualizer · Also in: Music Visualization</sub><br><sub>⚠️ Noncommercial use only.</sub> |
+| [Cosmic UI](https://github.com/rizznme/cosmic-ui) | 765 | 🟢 Active | Astro / CSS | Sci-fi themed component collection for building spaceship-console style interfaces.<br><sub>Good for: Sci-fi UI</sub> |
+| [HaloFlux](https://github.com/Ryder191/haloflux) | 760 | 🟢 Active | Canvas | Sci-fi light-ring visualization that pulses to the beat. Pure Canvas in a single HTML file, no dependencies.<br><sub>Good for: Music visualizer · Also in: Music Visualization</sub><br><sub>⚠️ Noncommercial use only.</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1285,22 +1408,24 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Flight arcs, traced routes, dives toward the globe and travel paths
 
+**Picks:** [AntV L7](https://github.com/antvis/L7) · [deck.gl](https://github.com/visgl/deck.gl) · [MapSCII](https://github.com/rastapasta/mapscii) · [map-motion](https://github.com/SpaceZephyr/map-motion)
+
 10 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [deck.gl](https://github.com/visgl/deck.gl) | 14.7k | 🟢 Active | TypeScript | Large-scale geospatial data visualization: animated trajectories, 3D column maps, and more.<br><sub>Good for: Map animation · Also in: Data Animation, 3D</sub> |
+| [deck.gl](https://github.com/visgl/deck.gl) | 14.8k | 🟢 Active | TypeScript | Large-scale geospatial data visualization: animated trajectories, 3D column maps, and more.<br><sub>Good for: Map animation · Also in: Data Animation, 3D</sub> |
 | [MapSCII](https://github.com/rastapasta/mapscii) | 9.3k | ⚪ Dormant | JavaScript | Renders a world map in the terminal with Braille dots and characters; you can zoom and drag.<br><sub>Good for: Terminal maps · Also in: ASCII & Terminal</sub><br><sub>⚠️ Not updated since 2024.</sub> |
 | [earth](https://github.com/cambecc/earth) | 6.6k | ⚪ Dormant | JavaScript | Famous global weather animation: wind, ocean currents, and temperature flowing over the globe in real time.<br><sub>Good for: Global wind maps · Also in: Flow & Wind Fields, Data Animation</sub><br><sub>⚠️ Not updated since 2022; the look and the code are still a classic reference.</sub> |
 | [Fantasy Map Generator](https://github.com/Azgaar/Fantasy-Map-Generator) | 6.2k | 🟢 Active | JavaScript | Procedurally generates interactive fantasy world maps. Continents, rivers, states and towns are all adjustable.<br><sub>Good for: Fantasy maps · Also in: Procedural Generation</sub> |
 | [AntV L7](https://github.com/antvis/L7) | 4.1k | 🟢 Active | TypeScript | Large-scale geospatial visualization engine from Ant Group's AntV. Map animations such as flying lines, trajectories, and heatmaps.<br><sub>Good for: Map animation · Also in: Data Animation</sub> |
 | [webgl-wind](https://github.com/mapbox/webgl-wind) | 1.1k | 🟢 Active | JavaScript / WebGL | Mapbox's WebGL wind particle visualization: hundreds of thousands of particles flow with the wind across a map.<br><sub>Good for: Wind field animation · Also in: Flow & Wind Fields</sub> |
-| [mapgen4](https://github.com/redblobgames/mapgen4) | 951 | 🟡 Slowing | TypeScript | Red Blob Games' procedural wilderness map generator, with hand-drawn style contours and rivers.<br><sub>Good for: Procedural maps · Also in: Procedural Generation</sub> |
-| [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) | 534 | 🟢 Active | JavaScript | Six Claude skills for short-video animation: 3D cartoon explainers in three.js, stick figures, map routes, exploded-view diagrams and more.<br><sub>Good for: Vertical shorts · Also in: 3D</sub> |
-| [Trail](https://github.com/amalChandran/trail-android) | 516 | 🟢 Active | Kotlin (Android) | Smooth route line drawing animation on Google Maps for Android.<br><sub>Good for: Route animation</sub> |
-| [map-motion](https://github.com/SpaceZephyr/map-motion) | 115 | 🟢 Active | Python | Map animation videos from real Amap routes and satellite basemaps, such as earth zoom-ins, travel routes, and hiking elevation.<br><sub>Good for: Map motion videos</sub><br><sub>⚠️ The optional cartoon character calls an image generation API; the built-in figure is drawn in code.</sub> |
+| [mapgen4](https://github.com/redblobgames/mapgen4) | 952 | 🟡 Slowing | TypeScript | Red Blob Games' procedural wilderness map generator, with hand-drawn style contours and rivers.<br><sub>Good for: Procedural maps · Also in: Procedural Generation</sub> |
+| [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) | 781 | 🟢 Active | JavaScript | Six Claude skills for short-video animation: 3D cartoon explainers in three.js, stick figures, map routes, exploded-view diagrams and more.<br><sub>Good for: Vertical shorts · Also in: 3D</sub> |
+| [Trail](https://github.com/amalChandran/trail-android) | 517 | 🟢 Active | Kotlin (Android) | Smooth route line drawing animation on Google Maps for Android.<br><sub>Good for: Route animation</sub> |
+| [map-motion](https://github.com/SpaceZephyr/map-motion) | 124 | 🟢 Active | Python | Map animation videos from real Amap routes and satellite basemaps, such as earth zoom-ins, travel routes, and hiking elevation.<br><sub>Good for: Map motion videos</sub><br><sub>⚠️ The optional cartoon character calls an image generation API; the built-in figure is drawn in code.</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1311,6 +1436,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 <img src="assets/styles/demoscene.png" alt="Demoscene sample" width="240" align="right">
 
 > Real-time shorts from a few KB of code, sine scrollers and rainbow bars
+
+**Picks:** [TIC-80](https://github.com/nesbox/TIC-80) · [farbrausch Tools](https://github.com/farbrausch/fr_public) · [Shader Minifier](https://github.com/laurentlb/shader-minifier) · [Teach Yourself Demoscene in 14 Days](https://github.com/psenough/teach_yourself_demoscene_in_14_days)
 
 7 projects, sorted by stars.
 
@@ -1323,8 +1450,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [Teach Yourself Demoscene in 14 Days](https://github.com/psenough/teach_yourself_demoscene_in_14_days) | 2.3k | ⚪ Dormant | Guide | Two-week beginner's guide to the demoscene: what a demo is, how to start writing one, and where to compete.<br><sub>Good for: Tutorials</sub> |
 | [Bonzomatic](https://github.com/Gargaj/Bonzomatic) | 1.5k | 🟡 Slowing | GLSL | Live shader coding tool used in the demoscene Shader Showdown contest. Write code live and see the picture live.<br><sub>Good for: Live performances · Also in: Shaders & Psychedelic, Live Coding & VJ</sub> |
 | [frame.js](https://github.com/mrdoob/frame.js) | 1.2k | 🟡 Slowing | JavaScript | JavaScript timeline editor by the author of three.js, for sequencing shots and effects in web demos.<br><sub>Good for: Web demo choreography · Also in: Motion Graphics</sub> |
-| [Shader Minifier](https://github.com/laurentlb/shader-minifier) | 584 | 🟢 Active | F# | Shrinks GLSL / HLSL code to the minimum. A must for 4KB and 64KB demos.<br><sub>Good for: Demoscene · Also in: Shaders & Psychedelic</sub> |
-| [Open Cubic Player](https://github.com/mywave82/opencubicplayer) | 451 | 🟢 Active | C | Unix version of the classic DOS player. Plays tracker music such as MOD and S3M, with retro visualizations.<br><sub>Good for: Retro music visualizer · Also in: Music Visualization, ASCII & Terminal</sub> |
+| [Shader Minifier](https://github.com/laurentlb/shader-minifier) | 585 | 🟢 Active | F# | Shrinks GLSL / HLSL code to the minimum. A must for 4KB and 64KB demos.<br><sub>Good for: Demoscene · Also in: Shaders & Psychedelic</sub> |
+| [Open Cubic Player](https://github.com/mywave82/opencubicplayer) | 452 | 🟢 Active | C | Unix version of the classic DOS player. Plays tracker music such as MOD and S3M, with retro visualizations.<br><sub>Good for: Retro music visualizer · Also in: Music Visualization, ASCII & Terminal</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1336,6 +1463,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Every pixel is a grain of sand or a drop of water, flowing, burning and growing by rules
 
+**Picks:** [The Powder Toy](https://github.com/The-Powder-Toy/The-Powder-Toy) · [Sandspiel](https://github.com/MaxBittker/sandspiel) · [Sandboxels](https://github.com/R74nCom/sandboxels) · [termsand](https://github.com/cgsdev0/termsand)
+
 8 projects, sorted by stars.
 
 <br clear="right">
@@ -1344,7 +1473,7 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | --- | ---: | :---: | --- | --- |
 | [The Powder Toy](https://github.com/The-Powder-Toy/The-Powder-Toy) | 5.4k | 🟢 Active | C++ | Classic falling-sand physics sandbox: simulates air pressure, temperature, electricity, and reactions among hundreds of elements.<br><sub>Good for: Particle sandbox · Also in: Particles & Physics</sub><br><sub>⚠️ Mainly a game; good for recording physics reactions.</sub> |
 | [Sandspiel](https://github.com/MaxBittker/sandspiel) | 3.2k | 🟢 Active | Rust / WASM | Falling-sand sandbox in the browser: sand, water, fire, and plants interact by cellular automata rules, like flowing pixel art.<br><sub>Good for: Falling sand visuals · Also in: Pixel & Retro</sub> |
-| [Sandboxels](https://github.com/R74nCom/sandboxels) | 478 | 🟢 Active | JavaScript | Browser falling-sand simulation with 500+ elements and thousands of reactions. You can write your own elements as mods.<br><sub>Good for: Falling sand visuals · Also in: Pixel & Retro</sub> |
+| [Sandboxels](https://github.com/R74nCom/sandboxels) | 486 | 🟢 Active | JavaScript | Browser falling-sand simulation with 500+ elements and thousands of reactions. You can write your own elements as mods.<br><sub>Good for: Falling sand visuals · Also in: Pixel & Retro</sub> |
 | [termsand](https://github.com/cgsdev0/termsand) | 318 | 🟢 Active | Shell / tmux | Falling sand simulation that runs in tmux. Click with the mouse and sand falls from the top of the terminal.<br><sub>Good for: Terminal animation · Also in: ASCII & Terminal</sub> |
 | [Sand Slide](https://github.com/kiwijuice56/sand-slide) | 143 | 🟢 Active | Godot / C++ | Fast falling sand game built with Godot and GDExtension, with many element types.<br><sub>Good for: Falling sand visuals · Also in: Pixel & Retro</sub> |
 | [FallingSandEngine](https://github.com/PieKing1215/FallingSandEngine) | 76 | 🟡 Slowing | Rust | Experimental 2D falling sand engine in Rust, where every pixel takes part in physics like in Noita.<br><sub>Good for: Falling sand engines · Also in: Pixel & Retro</sub> |
@@ -1361,6 +1490,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Thousands of particles following a vector field, like silk threads or wind
 
+**Picks:** [earth](https://github.com/cambecc/earth) · [webgl-wind](https://github.com/mapbox/webgl-wind) · [FieldPlay](https://github.com/anvaka/fieldplay) · [flow-fields](https://github.com/romellogoodman/flow-fields)
+
 7 projects, sorted by stars.
 
 <br clear="right">
@@ -1370,8 +1501,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [earth](https://github.com/cambecc/earth) | 6.6k | ⚪ Dormant | JavaScript | Famous global weather animation: wind, ocean currents, and temperature flowing over the globe in real time.<br><sub>Good for: Global wind maps · Also in: Map & Route, Data Animation</sub><br><sub>⚠️ Not updated since 2022; the look and the code are still a classic reference.</sub> |
 | [FieldPlay](https://github.com/anvaka/fieldplay) | 1.3k | 🟢 Active | JavaScript / GLSL | Write a vector field formula and thousands of particles flow along it, like streams of silk.<br><sub>Good for: Vector field animation · Also in: Math Explainer</sub> |
 | [webgl-wind](https://github.com/mapbox/webgl-wind) | 1.1k | 🟢 Active | JavaScript / WebGL | Mapbox's WebGL wind particle visualization: hundreds of thousands of particles flow with the wind across a map.<br><sub>Good for: Wind field animation · Also in: Map & Route</sub> |
-| [flow-fields](https://github.com/romellogoodman/flow-fields) | 311 | 🟢 Active | JavaScript | JavaScript library for creating flow fields: lines that flow along noise.<br><sub>Good for: Flow field art · Also in: Generative Art</sub> |
-| [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 81 | 🟢 Active | three.js | 3D flow-field particle ocean built with three.js, with custom post-processing.<br><sub>Good for: 3D particles · Also in: 3D, Particles & Physics</sub> |
+| [flow-fields](https://github.com/romellogoodman/flow-fields) | 312 | 🟢 Active | JavaScript | JavaScript library for creating flow fields: lines that flow along noise.<br><sub>Good for: Flow field art · Also in: Generative Art</sub> |
+| [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 82 | 🟢 Active | three.js | 3D flow-field particle ocean built with three.js, with custom post-processing.<br><sub>Good for: 3D particles · Also in: 3D, Particles & Physics</sub> |
 | [wet-paint-flow](https://github.com/simonxxooxxoo/wet-paint-flow) | 67 | 🟢 Active | three.js | Real-time three.js flow-field painter that draws Bezier strokes with a wet, thick-paint look.<br><sub>Good for: Flow field drawing · Also in: Hand-drawn & Whiteboard</sub> |
 | [neon](https://github.com/Stanko/neon) | 44 | 🟡 Slowing | JavaScript | Generative art of neon lines made with a 2D vector field.<br><sub>Good for: Generative art · Also in: Generative Art</sub> |
 
@@ -1385,6 +1516,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Tape color bleed, signal jitter, scanlines and old TV texture
 
+**Picks:** [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) · [NTSC-CRT](https://github.com/LMP88959/NTSC-CRT) · [WebGL CRT Shader](https://github.com/gingerbeardman/webgl-crt-shader) · [ShaderGlass](https://github.com/mausimus/ShaderGlass)
+
 13 projects, sorted by stars.
 
 <br clear="right">
@@ -1396,12 +1529,12 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) | 2.7k | 🟢 Active | Rust | Open-source VHS effect: simulates NTSC signal and tape color bleed, jitter, and snow. Works standalone and as an AE, PR, and OFX plugin.<br><sub>Good for: VHS post-processing · Also in: Glitch & Post FX</sub> |
 | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | 🟢 Active | GLSL | RetroArch shader collection: CRT scanlines, pixel upscaling, and other retro display effects.<br><sub>Good for: Retro post-processing · Also in: Pixel & Retro, Shaders & Psychedelic</sub> |
 | [ntscqt](https://github.com/JargeZ/ntscqt) | 1.2k | ⚪ Dormant | Python | GUI for a VHS video simulator, giving video an old videotape look.<br><sub>Good for: VHS post-processing · Also in: Glitch & Post FX</sub><br><sub>⚠️ Not updated since 2024; use ntsc-rs for new projects.</sub> |
-| [GodotRetro](https://github.com/ahopness/GodotRetro) | 806 | 🟢 Active | Godot Shader | Retro post-processing effects pack for Godot: CRT, VHS, dithering, pixelation.<br><sub>Good for: Retro post-processing · Also in: Shaders & Psychedelic, Pixel & Retro</sub> |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | 809 | 🟢 Active | Godot Shader | Retro post-processing effects pack for Godot: CRT, VHS, dithering, pixelation.<br><sub>Good for: Retro post-processing · Also in: Shaders & Psychedelic, Pixel & Retro</sub> |
 | [NTSC-CRT](https://github.com/LMP88959/NTSC-CRT) | 577 | 🟢 Active | C | NTSC encoding/decoding simulation using only integer math, able to recreate how old consoles like the NES looked on a TV.<br><sub>Good for: CRT simulation · Also in: Pixel & Retro</sub> |
-| [Retro Crisis Shaders](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 481 | 🟢 Active | Slang Shader | Collection of CRT shader presets for RetroArch, based on Guest Advanced NTSC. Recreates the look of various old TVs.<br><sub>Good for: CRT post-processing · Also in: Pixel & Retro, Shaders & Psychedelic</sub> |
+| [Retro Crisis Shaders](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 482 | 🟢 Active | Slang Shader | Collection of CRT shader presets for RetroArch, based on Guest Advanced NTSC. Recreates the look of various old TVs.<br><sub>Good for: CRT post-processing · Also in: Pixel & Retro, Shaders & Psychedelic</sub> |
+| [NTSCRT](https://github.com/finnmckenty/NTSCRT) | 466 | 🟢 Active | Swift (macOS) | Retro TV / VHS image tool for macOS: ntsc-rs signal emulation plus RetroArch CRT shaders.<br><sub>Good for: Old TV look</sub> |
 | [WebGL CRT Shader](https://github.com/gingerbeardman/webgl-crt-shader) | 188 | 🟡 Slowing | WebGL | Adjustable CRT shader for web canvas: scanlines, screen curvature, phosphor ghosting.<br><sub>Good for: CRT post-processing · Also in: Shaders & Psychedelic</sub> |
-| [NTSCRT](https://github.com/finnmckenty/NTSCRT) | 187 | 🟢 Active | Swift (macOS) | Retro TV / VHS image tool for macOS: ntsc-rs signal emulation plus RetroArch CRT shaders.<br><sub>Good for: Old TV look</sub> |
-| [NTSCplayer](https://github.com/ferropop/NTSCplayer) | 141 | 🟢 Active | C++ | Media player that adds an NTSC / VHS look to video in real time during playback.<br><sub>Good for: Retro players</sub> |
+| [NTSCplayer](https://github.com/ferropop/NTSCplayer) | 142 | 🟢 Active | C++ | Media player that adds an NTSC / VHS look to video in real time during playback.<br><sub>Good for: Retro players</sub> |
 | [VhsFx](https://github.com/NullTale/VhsFx) | 89 | 🟡 Slowing | Unity | VHS post-processing effect for Unity URP.<br><sub>Good for: VHS post-processing · Also in: Glitch & Post FX</sub> |
 | [VHSEffect](https://github.com/zulubo/VHSEffect) | 33 | 🟡 Slowing | Unity | Realistic VHS post-processing effect for Unity.<br><sub>Good for: VHS post-processing</sub> |
 
@@ -1415,6 +1548,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > A sheet of paper folding along its creases, plus paper models and papercraft-style 3D
 
+**Picks:** [Origami Simulator](https://github.com/amandaghassaei/OrigamiSimulator) · [Rabbit Ear](https://github.com/rabbit-ear/rabbit-ear) · [ORIPA](https://github.com/oripa/oripa) · [Papercraft](https://github.com/rodrigorc/papercraft)
+
 8 projects, sorted by stars.
 
 <br clear="right">
@@ -1423,12 +1558,12 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | --- | ---: | :---: | --- | --- |
 | [Origami Simulator](https://github.com/amandaghassaei/OrigamiSimulator) | 1.4k | 🟢 Active | JavaScript / WebGL | Real-time WebGL origami simulator. Import a crease pattern and watch a sheet of paper fold itself into a crane.<br><sub>Good for: Origami animation · Also in: 3D</sub> |
 | [Rabbit Ear](https://github.com/rabbit-ear/rabbit-ear) | 655 | 🟢 Active | JavaScript | Computational origami library: crease patterns, fold simulation, and origami SVG generation.<br><sub>Good for: Origami geometry</sub> |
-| [ORIPA](https://github.com/oripa/oripa) | 335 | 🟢 Active | Java | Software for designing origami crease patterns, with a preview of the folded result.<br><sub>Good for: Origami design</sub><br><sub>⚠️ Mostly a graphical interface.</sub> |
+| [ORIPA](https://github.com/oripa/oripa) | 334 | 🟢 Active | Java | Software for designing origami crease patterns, with a preview of the folded result.<br><sub>Good for: Origami design</sub><br><sub>⚠️ Mostly a graphical interface.</sub> |
 | [OriSim3D](https://github.com/RemiKoutcherawy/OriSim3D-Android) | 304 | 🟢 Active | Kotlin (Android) | OpenGL origami folding simulation on Android that can demonstrate folds step by step.<br><sub>Good for: Mobile origami animation · Also in: 3D</sub> |
-| [Papercraft](https://github.com/rodrigorc/papercraft) | 289 | 🟢 Active | Rust | Unfolds 3D models into paper models you can print, cut out, and glue together.<br><sub>Good for: Paper model unfolding · Also in: 3D</sub> |
+| [Papercraft](https://github.com/rodrigorc/papercraft) | 290 | 🟢 Active | Rust | Unfolds 3D models into paper models you can print, cut out, and glue together.<br><sub>Good for: Paper model unfolding · Also in: 3D</sub> |
 | [Papercraft World](https://github.com/andrewwoan/aimee-xus-papercraft-world) | 199 | 🟢 Active | three.js | Papercraft-style seasonal 3D portfolio site. Useful as a three.js reference for the papercraft style.<br><sub>Good for: Papercraft 3D web · Also in: 3D</sub> |
-| [Oriedita](https://github.com/oriedita/oriedita) | 135 | 🟢 Active | Java | Origami crease pattern editor and folding simulator (a fork of Orihime).<br><sub>Good for: Origami design</sub><br><sub>⚠️ Mostly GUI-based.</sub> |
-| [kami](https://github.com/maxwase/kami) | 134 | 🟢 Active | Rust | Origami simulator driven by physical hinges.<br><sub>Good for: Origami simulation</sub> |
+| [Oriedita](https://github.com/oriedita/oriedita) | 136 | 🟢 Active | Java | Origami crease pattern editor and folding simulator (a fork of Orihime).<br><sub>Good for: Origami design</sub><br><sub>⚠️ Mostly GUI-based.</sub> |
+| [kami](https://github.com/maxwase/kami) | 135 | 🟢 Active | Rust | Origami simulator driven by physical hinges.<br><sub>Good for: Origami simulation</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1439,6 +1574,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 <img src="assets/styles/geo.png" alt="Geometric & Low-poly sample" width="240" align="right">
 
 > A picture approximated step by step with triangles, circles and dots, low-poly and pointillist
+
+**Picks:** [primitive](https://github.com/fogleman/primitive) · [Triangula](https://github.com/rh12503/triangula) · [Geometrize](https://github.com/Tw1ddle/geometrize) · [Polyvia](https://github.com/Ovilia/Polyvia)
 
 7 projects, sorted by stars.
 
@@ -1452,7 +1589,7 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [Polyvia](https://github.com/Ovilia/Polyvia) | 1.2k | ⚪ Dormant | JavaScript | Low-poly style image and video processing.<br><sub>Good for: Low poly</sub><br><sub>⚠️ Not updated since 2019.</sub> |
 | [triangler](https://github.com/tdh8316/triangler) | 99 | 🟢 Active | Python | Converts images into low-poly art using Delaunay triangulation.<br><sub>Good for: Low poly</sub> |
 | [lowpoly](https://github.com/tasercake/lowpoly) | 87 | 🟡 Slowing | Python | Reliable low-poly image generator.<br><sub>Good for: Low poly</sub> |
-| [Delaunay Stippler](https://github.com/NHasan143/delaunay-stippler) | 70 | 🟢 Active | JavaScript | Web tool that turns images into stipple art, placing dots with a weighted Voronoi algorithm.<br><sub>Good for: Pointillism · Also in: Plotter & Line Art</sub> |
+| [Delaunay Stippler](https://github.com/NHasan143/delaunay-stippler) | 68 | 🟢 Active | JavaScript | Web tool that turns images into stipple art, placing dots with a weighted Voronoi algorithm.<br><sub>Good for: Pointillism · Also in: Plotter & Line Art</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1464,6 +1601,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Physically correct light bounces, with soft shadows, caustics and depth of field
 
+**Picks:** [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) · [Mitsuba 3](https://github.com/mitsuba-renderer/mitsuba3) · [GLSL-PathTracer](https://github.com/knightcrawler25/GLSL-PathTracer) · [ToyPathTracer](https://github.com/aras-p/ToyPathTracer)
+
 7 projects, sorted by stars.
 
 <br clear="right">
@@ -1473,10 +1612,10 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [Mitsuba 3](https://github.com/mitsuba-renderer/mitsuba3) | 3k | 🟢 Active | C++ / Python | Research-grade physically based renderer. Build scenes and render frame-by-frame animation with Python scripts.<br><sub>Good for: Realistic rendering · Also in: 3D</sub> |
 | [Yocto/GL](https://github.com/xelatihy/yocto-gl) | 2.9k | ⚪ Dormant | C++ | Small C++ libraries for data-driven physically based rendering, common in academia.<br><sub>Good for: Realistic rendering · Also in: 3D</sub><br><sub>⚠️ Not updated since 2024.</sub> |
 | [GLSL-PathTracer](https://github.com/knightcrawler25/GLSL-PathTracer) | 2.1k | ⚪ Dormant | C++ / GLSL | Small GPU physically based path tracer, good for learning and for rendering material showcases.<br><sub>Good for: Realistic rendering · Also in: Shaders & Psychedelic</sub><br><sub>⚠️ Not updated since 2024.</sub> |
-| [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) | 2k | 🟢 Active | JavaScript | GPU path tracing renderer for three.js, giving web 3D scenes realistic lighting, reflections, and depth of field.<br><sub>Good for: Realistic rendering · Also in: 3D</sub> |
+| [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) | 2.1k | 🟢 Active | JavaScript | GPU path tracing renderer for three.js, giving web 3D scenes realistic lighting, reflections, and depth of field.<br><sub>Good for: Realistic rendering · Also in: 3D</sub> |
 | [ToyPathTracer](https://github.com/aras-p/ToyPathTracer) | 1.1k | 🟡 Slowing | C++ / C# | Toy path tracer by Aras, a well-known Unity graphics engineer, accompanied by a blog series on optimization.<br><sub>Good for: Tutorials</sub> |
 | [retrace.gl](https://github.com/stasilo/retrace.gl) | 196 | 🟢 Active | JavaScript | Define signed distance field CSG shapes in code, ray trace them, and export the result.<br><sub>Good for: Ray-traced 3D · Also in: Shaders & Psychedelic, 3D</sub> |
-| [mutracer](https://github.com/pissang/mutracer) | 178 | 🟢 Active | TypeScript / WebGPU | WebGPU physically based path tracer, written by one of the ECharts authors.<br><sub>Good for: Realistic rendering · Also in: 3D</sub> |
+| [mutracer](https://github.com/pissang/mutracer) | 187 | 🟢 Active | TypeScript / WebGPU | WebGPU physically based path tracer, written by one of the ECharts authors.<br><sub>Good for: Realistic rendering · Also in: 3D</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1488,19 +1627,22 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > The solar system, starfields, galaxy arms and black holes
 
-8 projects, sorted by stars.
+**Picks:** [Stellarium Web](https://github.com/Stellarium/stellarium-web-engine) · [astroterm](https://github.com/da-luce/astroterm) · [Singularity](https://github.com/MisterPrada/singularity) · [Solar Wanderer](https://github.com/hyqzz/Solar-Wanderer)
+
+9 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
 | [astroterm](https://github.com/da-luce/astroterm) | 2.5k | 🟢 Active | C (CLI) | Planetarium in your terminal. Renders stars, planets, and constellations live as characters.<br><sub>Good for: Terminal starfields · Also in: ASCII & Terminal</sub> |
-| [Solar Wanderer](https://github.com/hyqzz/Solar-Wanderer) | 767 | 🟢 Active | three.js | A 1:1 real-time solar system in the browser using NASA JPL ephemeris data. Fly to any planet.<br><sub>Good for: Solar system animation · Also in: 3D</sub> |
-| [linecast](https://github.com/ashuttl/linecast) | 676 | 🟢 Active | CLI | Weather, tides, sun, moon, and stars in the terminal, in a retro almanac style.<br><sub>Good for: Terminal sky charts · Also in: ASCII & Terminal</sub> |
-| [Stellarium Web](https://github.com/Stellarium/stellarium-web-engine) | 661 | 🟢 Active | JavaScript / C | Web engine of the well-known astronomy software Stellarium, rendering a realistic night sky in real time.<br><sub>Good for: Starfields</sub> |
-| [Singularity](https://github.com/MisterPrada/singularity) | 317 | 🟡 Slowing | three.js / TSL | Black hole written in TSL, the three.js shading language. Runs on WebGPU and WebGL.<br><sub>Good for: Space effects · Also in: Shaders & Psychedelic</sub> |
+| [Solar Wanderer](https://github.com/hyqzz/Solar-Wanderer) | 771 | 🟢 Active | three.js | A 1:1 real-time solar system in the browser using NASA JPL ephemeris data. Fly to any planet.<br><sub>Good for: Solar system animation · Also in: 3D</sub> |
+| [linecast](https://github.com/ashuttl/linecast) | 685 | 🟢 Active | CLI | Weather, tides, sun, moon, and stars in the terminal, in a retro almanac style.<br><sub>Good for: Terminal sky charts · Also in: ASCII & Terminal</sub> |
+| [Stellarium Web](https://github.com/Stellarium/stellarium-web-engine) | 663 | 🟢 Active | JavaScript / C | Web engine of the well-known astronomy software Stellarium, rendering a realistic night sky in real time.<br><sub>Good for: Starfields</sub> |
+| [Singularity](https://github.com/MisterPrada/singularity) | 319 | 🟡 Slowing | three.js / TSL | Black hole written in TSL, the three.js shading language. Runs on WebGPU and WebGL.<br><sub>Good for: Space effects · Also in: Shaders & Psychedelic</sub> |
 | [I, Voyager Planetarium](https://github.com/ivoyager/planetarium) | 162 | 🟢 Active | Godot | Open-source solar system simulation built on Godot.<br><sub>Good for: Solar system · Also in: 3D</sub> |
-| [Black Hole](https://github.com/ibra-kdbra/black-hole) | 112 | 🟢 Active | three.js / GLSL | Black hole and accretion disk made with three.js and GLSL shaders.<br><sub>Good for: Space effects · Also in: Shaders & Psychedelic</sub> |
+| [Galaxy Simulation](https://github.com/N0rvel/galaxy_sim) | 161 | 🟢 Active | JavaScript (three.js) | Simulates gravity between thousands of particles with three.js and shaders: a single galaxy, two colliding galaxies or an expanding universe.<br><sub>Good for: Galaxies · Particles · Also in: Particles & Physics</sub> |
+| [Black Hole](https://github.com/ibra-kdbra/black-hole) | 113 | 🟢 Active | three.js / GLSL | Black hole and accretion disk made with three.js and GLSL shaders.<br><sub>Good for: Space effects · Also in: Shaders & Psychedelic</sub> |
 | [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | 🟡 Slowing | three.js | High-performance three.js galaxy shader with adjustable colors, spiral arms, and black hole effects.<br><sub>Good for: Galaxy effects · Also in: Shaders & Psychedelic, Particles & Physics</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
@@ -1513,24 +1655,30 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 > Refracting, color-splitting glass interfaces and liquid metal, in the style of Apple's Liquid Glass
 
-12 projects, sorted by stars.
+**Picks:** [shuding/liquid-glass](https://github.com/shuding/liquid-glass) · [liquidGL](https://github.com/naughtyduk/liquidGL) · [Liquid Logo](https://github.com/paper-design/liquid-logo) · [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio)
+
+16 projects, sorted by stars.
 
 <br clear="right">
 
 | Project | Stars | Status | Language | Description |
 | --- | ---: | :---: | --- | --- |
-| [AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) | 4.6k | 🟢 Active | Kotlin (Compose) | Liquid glass effect for Compose Multiplatform. Brings Apple-style glass interfaces to Android.<br><sub>Good for: Liquid glass</sub> |
+| [AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) | 4.7k | 🟢 Active | Kotlin (Compose) | Liquid glass effect for Compose Multiplatform. Brings Apple-style glass interfaces to Android.<br><sub>Good for: Liquid glass</sub> |
 | [liquid-dom](https://github.com/AndrewPrifer/liquid-dom) | 2.6k | 🟢 Active | TypeScript | Adds a liquid glass effect to web elements.<br><sub>Good for: Liquid glass</sub> |
 | [Liquid Glass for RN](https://github.com/callstack/liquid-glass) | 1.7k | 🟢 Active | React Native | Liquid glass component for React Native.<br><sub>Good for: Liquid glass</sub> |
-| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.4k | 🟡 Slowing | TypeScript | Small tool from the Paper team: turns a logo into a flowing liquid-metal animation.<br><sub>Good for: Logo motion · Also in: Shaders & Psychedelic, Motion Graphics</sub> |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.5k | 🟡 Slowing | TypeScript | Small tool from the Paper team: turns a logo into a flowing liquid-metal animation.<br><sub>Good for: Logo motion · Also in: Shaders & Psychedelic, Motion Graphics</sub> |
 | [Cloudy](https://github.com/skydoves/Cloudy) | 1.3k | 🟢 Active | Kotlin (Compose) | GPU blur and liquid glass effect library for Compose Multiplatform.<br><sub>Good for: Blur · Glass</sub> |
 | [shuding/liquid-glass](https://github.com/shuding/liquid-glass) | 1.2k | 🟡 Slowing | SVG / JS | Copy-and-paste liquid glass shader, built with SVG filters.<br><sub>Good for: Liquid glass · Also in: Shaders & Psychedelic</sub> |
 | [liquidGL](https://github.com/naughtyduk/liquidGL) | 1.1k | 🟢 Active | WebGL / WebGPU | Liquid glass effect for the web, implemented in WebGL and WebGPU.<br><sub>Good for: Liquid glass · Also in: Shaders & Psychedelic</sub> |
-| [Liquid Glass Widgets](https://github.com/sdegenaar/liquid_glass_widgets) | 828 | 🟢 Active | Flutter | Liquid glass UI component library for Flutter.<br><sub>Good for: Liquid glass</sub> |
-| [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) | 821 | 🟢 Active | WebGL2 / WebGPU | By a Chinese developer: recreates Apple's liquid glass interface on the web, with real-time control of refraction, dispersion, and highlights.<br><sub>Good for: Liquid glass · Also in: Shaders & Psychedelic</sub> |
-| [orb](https://github.com/LerSent001/orb) | 751 | 🟢 Active | WebGPU | From a Chinese developer: real-time WebGPU liquid glass orb editor, exportable to the web or SwiftUI / Metal.<br><sub>Good for: Liquid glass orbs · Also in: Shaders & Psychedelic</sub> |
-| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | 489 | 🟢 Active | Swift / Metal (iOS) | Composable Metal shaders and holographic UI effects for SwiftUI.<br><sub>Good for: App motion · Also in: Shaders & Psychedelic</sub> |
-| [liquid-glass-android](https://github.com/Mortd3kay/liquid-glass-android) | 187 | 🟡 Slowing | Kotlin (Compose) | Glassmorphism library for Jetpack Compose that uses AGSL shaders for blur, dispersion, and refraction.<br><sub>Good for: Glassmorphism</sub> |
+| [Liquid Glass Widgets](https://github.com/sdegenaar/liquid_glass_widgets) | 848 | 🟢 Active | Flutter | Liquid glass UI component library for Flutter.<br><sub>Good for: Liquid glass</sub> |
+| [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) | 827 | 🟢 Active | WebGL2 / WebGPU | By a Chinese developer: recreates Apple's liquid glass interface on the web, with real-time control of refraction, dispersion, and highlights.<br><sub>Good for: Liquid glass · Also in: Shaders & Psychedelic</sub> |
+| [orb](https://github.com/LerSent001/orb) | 756 | 🟢 Active | WebGPU | From a Chinese developer: real-time WebGPU liquid glass orb editor, exportable to the web or SwiftUI / Metal.<br><sub>Good for: Liquid glass orbs · Also in: Shaders & Psychedelic</sub> |
+| [LiquidGlass](https://github.com/ybouane/liquidglass) | 625 | 🟢 Active | TypeScript / WebGL | A liquid glass effect library for the web: WebGL shaders add refraction, blur, chromatic aberration and lighting to any HTML element.<br><sub>Good for: Liquid glass · Also in: Shaders & Psychedelic</sub> |
+| [Glass SDK Liquid Glass](https://github.com/Glass-HQ/liquid-glass) | 531 | 🟢 Active | TypeScript / WebGPU | Liquid glass materials and controls for React, the web and Electron that refract live content with WebGPU, in light and dark appearances.<br><sub>Good for: Liquid glass · Also in: Shaders & Psychedelic</sub><br><sub>⚠️ Requires WebGPU; Safari has known rendering issues.</sub> |
+| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | 490 | 🟢 Active | Swift / Metal (iOS) | Composable Metal shaders and holographic UI effects for SwiftUI.<br><sub>Good for: App motion · Also in: Shaders & Psychedelic</sub> |
+| [liquid_glass_renderer](https://github.com/whynotmake-it/flutter_liquid_glass) | 461 | 🟢 Active | Dart (Flutter) | A Flutter package that renders liquid glass with fragment shaders (refraction, blending and lighting); several Flutter glass widget kits build on it.<br><sub>Good for: Liquid glass · Also in: Shaders & Psychedelic</sub> |
+| [Plasma UI](https://github.com/CruxGarden/plasma-ui) | 333 | 🟢 Active | TypeScript (React / WebGL) | Liquid React panels rendered in WebGL: they fuse like droplets when they touch and refract whatever is behind them.<br><sub>Good for: Liquid glass · Interfaces · Also in: Shaders & Psychedelic</sub><br><sub>⚠️ Pre-1.0 and GPU-heavy; does not run well on mobile.</sub> |
+| [liquid-glass-android](https://github.com/Mortd3kay/liquid-glass-android) | 186 | 🟡 Slowing | Kotlin (Compose) | Glassmorphism library for Jetpack Compose that uses AGSL shaders for blur, dispersion, and refraction.<br><sub>Good for: Glassmorphism</sub> |
 
 <sub>[↑ Back to the style index](#index)</sub>
 
@@ -1542,7 +1690,7 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 <sub>Click the image for the [interactive graph](https://syydaniel.github.io/awesome-code-animation/?lang=en#graph-sec). Arrows point from a source to what grew out of it, and dotted lines mean similar, often paired, or same author. You can drag, zoom, switch to the Family tree card view, and click a project to see its full lineage.</sub>
 
-233 relationships. Looking to switch tools? See Alternative. Want more features? See Plugin / extension and Built on.
+256 relationships. Looking to switch tools? See Alternative. Want more features? See Plugin / extension and Built on.
 
 ### Forked from
 
@@ -1575,6 +1723,12 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | Built on | [p5.js](https://github.com/processing/p5.js) |  |
 | [Poseidon](https://github.com/owenyuwono/poseidon) | Built on | [three.js](https://github.com/mrdoob/three.js) |  |
 | [Singularity](https://github.com/MisterPrada/singularity) | Built on | [three.js](https://github.com/mrdoob/three.js) |  |
+| [HyperFrames Motion Reel](https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill) | Built on | [HyperFrames](https://github.com/heygen-com/hyperframes) | Uses the official HyperFrames skills to write and render compositions |
+| [Glass SDK Liquid Glass](https://github.com/Glass-HQ/liquid-glass) | Built on | [vgpu](https://github.com/vercel-labs/vgpu) | Built with vgpu for WebGPU rendering |
+| [Liquid Glass Widgets](https://github.com/sdegenaar/liquid_glass_widgets) | Built on | [liquid_glass_renderer](https://github.com/whynotmake-it/flutter_liquid_glass) | Its shader pipeline is adapted from liquid_glass_renderer |
+| [Stroke Order Animator](https://github.com/chill-chinese/stroke-order-animator) | Built on | [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) | Stroke data comes from Make Me a Hanzi |
+| [Galaxy Simulation](https://github.com/N0rvel/galaxy_sim) | Built on | [three.js](https://github.com/mrdoob/three.js) | Renders particles with three.js and shaders |
+| [Procedural Terrains](https://github.com/ZyFou/ProceduralTerrains) | Built on | [three.js](https://github.com/mrdoob/three.js) | Both the terrain library and studio are built on three.js |
 
 ### Plugin / extension
 
@@ -1603,6 +1757,8 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | Plugin / extension | [postprocessing](https://github.com/pmndrs/postprocessing) | Used as an effect in postprocessing |
 | [TSL Textures](https://github.com/boytchev/tsl-textures) | Plugin / extension | [three.js](https://github.com/mrdoob/three.js) | Textures for TSL, the three.js shading language |
 | [glsl-blend](https://github.com/jamieowen/glsl-blend) | Plugin / extension | [glslify](https://github.com/glslify/glslify) | Published in the glslify module format |
+| [snapcn](https://github.com/shadcn-labs/snapcn) | Plugin / extension | [Remotion](https://github.com/remotion-dev/remotion) | Remotion components installed with the shadcn CLI |
+| [Remotion Bits](https://github.com/av/remotion-bits) | Plugin / extension | [Remotion](https://github.com/remotion-dev/remotion) | Third-party animation components for Remotion |
 
 ### Official template / skill
 
@@ -1662,6 +1818,12 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [NTSCRT](https://github.com/finnmckenty/NTSCRT) | Renders with | [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) | Uses ntsc-rs for signal simulation |
 | [Chinese-Style Paper Animation](https://github.com/AllenAI2014/remotion-guofeng-starter) | Renders with | [Remotion](https://github.com/remotion-dev/remotion) |  |
 | [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | Renders with | [p5.brush](https://github.com/acamposuribe/p5.brush) | Hand-drawn strokes use p5.brush |
+| [Claude Animated Shorts](https://github.com/mromidev/claude-animated-shorts) | Renders with | [Remotion](https://github.com/remotion-dev/remotion) | Composes and exports with Remotion; the picture is rendered through @remotion/three |
+| [Math-To-Manim](https://github.com/HarleyCoops/Math-To-Manim) | Renders with | [Manim Community](https://github.com/ManimCommunity/manim) | The agents write Manim CE code |
+| [Fabric](https://github.com/Fabric-Project/Fabric) | Renders with | [LYGIA](https://github.com/patriciogonzalezvivo/lygia) | Includes a Metal port of the Lygia shader library |
+| [Patchies](https://github.com/heypoom/patchies) | Renders with | [Hydra](https://github.com/hydra-synth/hydra) | Ships Hydra nodes for video synthesis |
+| [Diorama](https://github.com/sloemo01/diorama) | Renders with | [three.js](https://github.com/mrdoob/three.js) | Scenes are built and rendered with three.js |
+| [genart](https://github.com/camilleroux/genart-skill) | Renders with | [p5.js](https://github.com/processing/p5.js) | Teaches Claude generative art with p5.js, Canvas, three.js and more |
 
 ### Data source
 
@@ -1786,6 +1948,14 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [WebGL CRT Shader](https://github.com/gingerbeardman/webgl-crt-shader) | Alternative | [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) | Both produce a CRT monitor look |
 | [Shader School](https://github.com/stackgl/shader-school) | Alternative | [The Book of Shaders](https://github.com/patriciogonzalezvivo/thebookofshaders) | Both are beginner shader tutorials |
 | [Raymarching Workshop](https://github.com/electricsquare/raymarching-workshop) | Alternative | [Bauble](https://github.com/ianthehenry/bauble) | Both revolve around SDF ray marching |
+| [ManimGX](https://github.com/academa-labs/manimgx) | Alternative | [Manim Community](https://github.com/ManimCommunity/manim) | Keeps the Manim CE API on a Rust and wgpu core |
+| [manim-web](https://github.com/maloyan/manim-web) | Alternative | [Manim (3b1b)](https://github.com/3b1b/manim) | A TypeScript port of Manim that needs no Python |
+| [Awesome Opus 5.5 Videos](https://github.com/yihui-dev/awesome-opus5-5-videos) | Alternative | [Code Animation Style Prompts](https://github.com/XiaoyeCodes/code-animation-prompts) | Also collects prompts for code-rendered videos |
+| [Opus 5.5 Video Prompts](https://github.com/joeseesun/opus-video-prompts) | Alternative | [Awesome Opus 5.5 Videos](https://github.com/yihui-dev/awesome-opus5-5-videos) | A smaller Chinese collection with writing tips |
+| [Infinite](https://github.com/n1m21n/Infinite) | Alternative | [TiXL](https://github.com/tixl3d/tixl) | Another node-based real-time audiovisual tool |
+| [Oscillody](https://github.com/Akosmo/Oscillody) | Alternative | [osci-render](https://github.com/jameshball/osci-render) | Also makes oscilloscope-style audio visuals |
+| [Fractal Garden](https://github.com/trebeljahr/fractal-garden) | Alternative | [XaoS](https://github.com/xaos-project/XaoS) | Also zooms fractals in real time, in the browser |
+| [react-native-effects](https://github.com/blazejkustra/react-native-effects) | Alternative | [React Native Skia](https://github.com/wcandillon/react-native-skia) | Also shader effects in React Native, here with WebGPU |
 
 ### Often paired
 
@@ -1839,67 +2009,70 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [GLSL Sandbox](https://github.com/mrdoob/glsl-sandbox) | Same author | [three.js](https://github.com/mrdoob/three.js) | Shader gallery by mrdoob, the three.js author |
 | [Liquid Logo](https://github.com/paper-design/liquid-logo) | Same author | [Paper Shaders](https://github.com/paper-design/shaders) | Made by the Paper team |
 | [LUMEN](https://github.com/Leonxlnx/lumenshaders) | Same author | [cinetic](https://github.com/Leonxlnx/cinetic) | Same author |
+| [lemo-wake](https://github.com/lemomo-ai/lemo-wake) | Same author | [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | Same author; both have Claude make films in code |
 
 <a name="all"></a>
 
 ## All projects
 
 <details>
-<summary>Show all 443 projects, sorted by stars</summary>
+<summary>Show all 478 projects, sorted by stars</summary>
 
 | Project | Stars | Styles | Status |
 | --- | ---: | --- | :---: |
 | [three.js](https://github.com/mrdoob/three.js) | 118k | [3D](#3d), [Particles & Physics](#particle), [Shaders & Psychedelic](#shader) | 🟢 |
 | [D3](https://github.com/d3/d3) | 114k | [Data Animation](#data) | 🟢 |
-| [Manim (3b1b)](https://github.com/3b1b/manim) | 96.3k | [Math Explainer](#math), [Data Animation](#data) | 🟢 |
-| [HyperFrames](https://github.com/heygen-com/hyperframes) | 81.4k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type), [Shorts, Captions & Editing](#short) | 🟢 |
-| [anime.js](https://github.com/juliangarnier/anime) | 74.5k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type) | 🟢 |
-| [reveal.js](https://github.com/hakimel/reveal.js) | 72.5k | [Code & Terminal Demo](#code), [Motion Graphics](#mg) | 🟢 |
-| [Remotion](https://github.com/remotion-dev/remotion) | 71.9k | [Motion Graphics](#mg), [Shorts, Captions & Editing](#short), [Kinetic Type & Lyrics](#type), [3D](#3d) | 🟢 |
+| [Manim (3b1b)](https://github.com/3b1b/manim) | 96.5k | [Math Explainer](#math), [Data Animation](#data) | 🟢 |
+| [HyperFrames](https://github.com/heygen-com/hyperframes) | 84.6k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type), [Shorts, Captions & Editing](#short) | 🟢 |
+| [anime.js](https://github.com/juliangarnier/anime) | 74.7k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type) | 🟢 |
+| [Remotion](https://github.com/remotion-dev/remotion) | 73.4k | [Motion Graphics](#mg), [Shorts, Captions & Editing](#short), [Kinetic Type & Lyrics](#type), [3D](#3d) | 🟢 |
+| [reveal.js](https://github.com/hakimel/reveal.js) | 72.6k | [Code & Terminal Demo](#code), [Motion Graphics](#mg) | 🟢 |
 | [Apache ECharts](https://github.com/apache/echarts) | 67.7k | [Data Animation](#data) | 🟢 |
-| [FFmpeg](https://github.com/FFmpeg/FFmpeg) | 66.8k | [Shorts, Captions & Editing](#short), [Glitch & Post FX](#glitch) | 🟢 |
-| [React Bits](https://github.com/DavidHDev/react-bits) | 51.6k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type), [Shaders & Psychedelic](#shader) | 🟢 |
-| [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer) | 49.4k | [Code & Terminal Demo](#code), [Data Animation](#data) | ⚪ |
-| [Slidev](https://github.com/slidevjs/slidev) | 49.4k | [Code & Terminal Demo](#code) | 🟢 |
+| [FFmpeg](https://github.com/FFmpeg/FFmpeg) | 67.3k | [Shorts, Captions & Editing](#short), [Glitch & Post FX](#glitch) | 🟢 |
+| [React Bits](https://github.com/DavidHDev/react-bits) | 52k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type), [Shaders & Psychedelic](#shader) | 🟢 |
+| [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer) | 49.5k | [Code & Terminal Demo](#code), [Data Animation](#data) | ⚪ |
+| [Slidev](https://github.com/slidevjs/slidev) | 49.5k | [Code & Terminal Demo](#code) | 🟢 |
 | [PixiJS](https://github.com/pixijs/pixijs) | 48.7k | [Motion Graphics](#mg), [Particles & Physics](#particle), [Generative Art](#gen) | 🟢 |
-| [Manim Community](https://github.com/ManimCommunity/manim) | 42.4k | [Math Explainer](#math), [Data Animation](#data), [Code & Terminal Demo](#code) | 🟢 |
-| [raylib](https://github.com/raysan5/raylib) | 35.6k | [Pixel & Retro](#pixel), [3D](#3d), [Generative Art](#gen) | 🟢 |
-| [Motion](https://github.com/motiondivision/motion) | 35k | [Motion Graphics](#mg) | 🟢 |
-| [React Three Fiber](https://github.com/pmndrs/react-three-fiber) | 33.6k | [3D](#3d) | 🟢 |
-| [Lottie](https://github.com/airbnb/lottie-web) | 32.4k | [Motion Graphics](#mg) | 🟡 |
-| [GSAP](https://github.com/greensock/GSAP) | 30.4k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type) | 🟢 |
+| [Manim Community](https://github.com/ManimCommunity/manim) | 42.6k | [Math Explainer](#math), [Data Animation](#data), [Code & Terminal Demo](#code) | 🟢 |
+| [raylib](https://github.com/raysan5/raylib) | 35.7k | [Pixel & Retro](#pixel), [3D](#3d), [Generative Art](#gen) | 🟢 |
+| [Motion](https://github.com/motiondivision/motion) | 35.2k | [Motion Graphics](#mg) | 🟢 |
+| [React Three Fiber](https://github.com/pmndrs/react-three-fiber) | 33.7k | [3D](#3d) | 🟢 |
+| [Lottie](https://github.com/airbnb/lottie-web) | 32.5k | [Motion Graphics](#mg) | 🟡 |
+| [GSAP](https://github.com/greensock/GSAP) | 30.7k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type) | 🟢 |
 | [particles.js](https://github.com/VincentGarreau/particles.js) | 30.2k | [Particles & Physics](#particle) | ⚪ |
 | [react-spring](https://github.com/pmndrs/react-spring) | 29.3k | [Motion Graphics](#mg) | 🟢 |
 | [Taichi](https://github.com/taichi-dev/taichi) | 28.5k | [Particles & Physics](#particle), [3D](#3d) | 🟢 |
+| [Graphite](https://github.com/GraphiteEditor/Graphite) | 27.9k | [Generative Art](#gen), [Motion Graphics](#mg) | 🟢 |
 | [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) | 26.6k | [ASCII & Terminal](#ascii), [Pixel & Retro](#pixel), [VHS & Analog](#vhs) | 🟢 |
-| [Babylon.js](https://github.com/BabylonJS/Babylon.js) | 26.3k | [3D](#3d) | 🟢 |
+| [Babylon.js](https://github.com/BabylonJS/Babylon.js) | 26.4k | [3D](#3d) | 🟢 |
 | [WaveFunctionCollapse](https://github.com/mxgmn/WaveFunctionCollapse) | 25.5k | [Procedural Generation](#procgen), [Pixel & Retro](#pixel) | 🟢 |
-| [p5.js](https://github.com/processing/p5.js) | 24.3k | [Generative Art](#gen), [Particles & Physics](#particle), [Music Visualization](#audio) | 🟢 |
-| [Matplotlib](https://github.com/matplotlib/matplotlib) | 23.4k | [Data Animation](#data) | 🟢 |
-| [Magic UI](https://github.com/magicuidesign/magicui) | 23.2k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type) | 🟢 |
+| [p5.js](https://github.com/processing/p5.js) | 24.4k | [Generative Art](#gen), [Particles & Physics](#particle), [Music Visualization](#audio) | 🟢 |
+| [Matplotlib](https://github.com/matplotlib/matplotlib) | 23.5k | [Data Animation](#data) | 🟢 |
+| [Magic UI](https://github.com/magicuidesign/magicui) | 23.3k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type) | 🟢 |
+| [brag](https://github.com/latent-spaces/brag) | 21.6k | [Motion Graphics](#mg) | 🟢 |
+| [img2threejs](https://github.com/img2threejs/img2threejs) | 21.4k | [3D](#3d) | 🟢 |
 | [Rough.js](https://github.com/rough-stuff/rough) | 21.4k | [Hand-drawn & Whiteboard](#hand) | ⚪ |
 | [VHS](https://github.com/charmbracelet/vhs) | 21.3k | [Code & Terminal Demo](#code), [ASCII & Terminal](#ascii) | 🟢 |
-| [img2threejs](https://github.com/img2threejs/img2threejs) | 21k | [3D](#3d) | 🟢 |
-| [brag](https://github.com/latent-spaces/brag) | 20.8k | [Motion Graphics](#mg) | 🟢 |
 | [3D Game Shaders for Beginners](https://github.com/lettier/3d-game-shaders-for-beginners) | 20k | [Shaders & Psychedelic](#shader), [3D](#3d) | ⚪ |
-| [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | 19.7k | [Motion Graphics](#mg), [Code & Terminal Demo](#code), [Math Explainer](#math) | 🟢 |
+| [Motion Canvas](https://github.com/motion-canvas/motion-canvas) | 19.9k | [Motion Graphics](#mg), [Code & Terminal Demo](#code), [Math Explainer](#math) | 🟢 |
+| [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | 19.9k | [Motion Graphics](#mg), [Shorts, Captions & Editing](#short) | 🟢 |
 | [mo.js](https://github.com/mojs/mojs) | 18.9k | [Motion Graphics](#mg) | 🟢 |
 | [Plotly](https://github.com/plotly/plotly.py) | 18.9k | [Data Animation](#data) | 🟢 |
 | [Matter.js](https://github.com/liabru/matter-js) | 18.6k | [Particles & Physics](#particle) | 🟢 |
 | [Pyxel](https://github.com/kitao/pyxel) | 18.6k | [Pixel & Retro](#pixel) | 🟢 |
-| [GSAP Skills](https://github.com/greensock/gsap-skills) | 18.1k | [Motion Graphics](#mg) | 🟢 |
-| [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | 18.1k | [Motion Graphics](#mg), [Shorts, Captions & Editing](#short) | 🟢 |
-| [asciinema](https://github.com/asciinema/asciinema) | 17.9k | [Code & Terminal Demo](#code), [ASCII & Terminal](#ascii) | 🟢 |
-| [PlayCanvas](https://github.com/playcanvas/engine) | 17.2k | [3D](#3d) | 🟢 |
-| [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) | 16.8k | [Particles & Physics](#particle), [Shaders & Psychedelic](#shader) | 🟡 |
+| [GSAP Skills](https://github.com/greensock/gsap-skills) | 18.5k | [Motion Graphics](#mg) | 🟢 |
+| [asciinema](https://github.com/asciinema/asciinema) | 18k | [Code & Terminal Demo](#code), [ASCII & Terminal](#ascii) | 🟢 |
+| [PlayCanvas](https://github.com/playcanvas/engine) | 17.3k | [3D](#3d) | 🟢 |
+| [WebGL Fluid](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation) | 16.8k | [Particles & Physics](#particle), [Shaders & Psychedelic](#shader) | ⚪ |
+| [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 16.6k | [Motion Graphics](#mg), [Hand-drawn & Whiteboard](#hand), [Pixel & Retro](#pixel) | 🟢 |
 | [Typed.js](https://github.com/mattboldt/typed.js) | 16.3k | [Kinetic Type & Lyrics](#type) | 🟡 |
 | [Terminalizer](https://github.com/faressoft/terminalizer) | 16.2k | [Code & Terminal Demo](#code), [ASCII & Terminal](#ascii) | ⚪ |
 | [Vivus](https://github.com/maxwellito/vivus) | 15.5k | [Hand-drawn & Whiteboard](#hand) | ⚪ |
+| [Awesome Opus 5.5 Videos](https://github.com/yihui-dev/awesome-opus5-5-videos) | 15.3k | [Motion Graphics](#mg), [3D](#3d), [Generative Art](#gen) | 🟢 |
 | [Paper.js](https://github.com/paperjs/paper.js) | 15.2k | [Generative Art](#gen), [Motion Graphics](#mg) | 🟢 |
-| [MoviePy](https://github.com/Zulko/moviepy) | 15.1k | [Shorts, Captions & Editing](#short) | 🟢 |
-| [Konva](https://github.com/konvajs/konva) | 14.9k | [Motion Graphics](#mg) | 🟢 |
-| [deck.gl](https://github.com/visgl/deck.gl) | 14.7k | [Data Animation](#data), [3D](#3d), [Map & Route](#map) | 🟢 |
-| [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 13.9k | [Motion Graphics](#mg), [Hand-drawn & Whiteboard](#hand), [Pixel & Retro](#pixel) | 🟢 |
+| [MoviePy](https://github.com/Zulko/moviepy) | 15.2k | [Shorts, Captions & Editing](#short) | 🟢 |
+| [Konva](https://github.com/konvajs/konva) | 15k | [Motion Graphics](#mg) | 🟢 |
+| [deck.gl](https://github.com/visgl/deck.gl) | 14.8k | [Data Animation](#data), [3D](#3d), [Map & Route](#map) | 🟢 |
 | [primitive](https://github.com/fogleman/primitive) | 13.6k | [Geometric & Low-poly](#geo), [Generative Art](#gen) | ⚪ |
 | [Gource](https://github.com/acaudwell/Gource) | 13.2k | [Data Animation](#data), [Code & Terminal Demo](#code) | 🟡 |
 | [Theatre.js](https://github.com/theatre-js/theatre) | 13k | [Motion Graphics](#mg), [3D](#3d) | ⚪ |
@@ -1912,43 +2085,44 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [Rough Notation](https://github.com/rough-stuff/rough-notation) | 9.7k | [Hand-drawn & Whiteboard](#hand), [Kinetic Type & Lyrics](#type) | ⚪ |
 | [MapSCII](https://github.com/rastapasta/mapscii) | 9.3k | [Map & Route](#map), [ASCII & Terminal](#ascii) | ⚪ |
 | [tsParticles](https://github.com/tsparticles/tsparticles) | 9.1k | [Particles & Physics](#particle) | 🟢 |
-| [LÖVE](https://github.com/love2d/love) | 8.9k | [Pixel & Retro](#pixel) | 🟢 |
+| [LÖVE](https://github.com/love2d/love) | 9k | [Pixel & Retro](#pixel) | 🟢 |
+| [EffectCraft](https://github.com/storytold/effectcraft) | 8.8k | [Motion Graphics](#mg), [Glitch & Post FX](#glitch) | 🟢 |
 | [React Native Skia](https://github.com/wcandillon/react-native-skia) | 8.8k | [Motion Graphics](#mg), [Shaders & Psychedelic](#shader) | 🟢 |
 | [Two.js](https://github.com/jonobr1/two.js) | 8.7k | [Motion Graphics](#mg), [Generative Art](#gen) | 🟢 |
-| [EffectCraft](https://github.com/storytold/effectcraft) | 8.6k | [Motion Graphics](#mg), [Glitch & Post FX](#glitch) | 🟢 |
 | [MarkovJunior](https://github.com/mxgmn/MarkovJunior) | 8.5k | [Procedural Generation](#procgen), [Pixel & Retro](#pixel), [Isometric & Voxel](#iso) | 🟡 |
 | [chart.xkcd](https://github.com/timqian/chart.xkcd) | 7.9k | [Hand-drawn & Whiteboard](#hand), [Data Animation](#data) | 🟢 |
 | [URP Toon Shader Example](https://github.com/ColinLeung-NiloCat/UnityURPToonLitShaderExample) | 7.9k | [Shaders & Psychedelic](#shader), [Anime, MMD & VRM](#anime) | 🟢 |
 | [Arwes](https://github.com/arwes/arwes) | 7.6k | [Sci-fi HUD](#scifi), [Motion Graphics](#mg) | 🟢 |
+| [pixelfx](https://github.com/patch-gg/pixelfx) | 7.5k | [Pixel & Retro](#pixel) | 🟢 |
 | [Vanta.js](https://github.com/tengbao/vanta) | 7.4k | [3D](#3d), [Generative Art](#gen) | ⚪ |
-| [ThreeUI](https://github.com/MengTo/threeui) | 7.2k | [3D](#3d) | 🟢 |
+| [ThreeUI](https://github.com/MengTo/threeui) | 7.3k | [3D](#3d) | 🟢 |
+| [Remotion Skills](https://github.com/remotion-dev/skills) | 7.2k | [Motion Graphics](#mg) | 🟢 |
 | [roughViz](https://github.com/jwilber/roughViz) | 7.2k | [Hand-drawn & Whiteboard](#hand), [Data Animation](#data) | ⚪ |
 | [The Book of Shaders](https://github.com/patriciogonzalezvivo/thebookofshaders) | 7.1k | [Shaders & Psychedelic](#shader) | 🟡 |
+| [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | 7k | [Hand-drawn & Whiteboard](#hand), [Ink & Watercolor](#ink) | 🟢 |
 | [VoxelSpace](https://github.com/s-macke/VoxelSpace) | 6.8k | [Isometric & Voxel](#iso), [Pixel & Retro](#pixel), [3D](#3d) | ⚪ |
 | [nannou](https://github.com/nannou-org/nannou) | 6.8k | [Generative Art](#gen), [Music Visualization](#audio) | 🟢 |
-| [Remotion Skills](https://github.com/remotion-dev/skills) | 6.7k | [Motion Graphics](#mg) | 🟢 |
 | [earth](https://github.com/cambecc/earth) | 6.6k | [Flow & Wind Fields](#flow), [Map & Route](#map), [Data Animation](#data) | ⚪ |
-| [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | 6.6k | [Hand-drawn & Whiteboard](#hand), [Ink & Watercolor](#ink) | 🟢 |
 | [CAVA](https://github.com/karlstav/cava) | 6.5k | [Music Visualization](#audio), [ASCII & Terminal](#ascii) | 🟢 |
-| [Shan-Shui-Inf](https://github.com/LingDong-/shan-shui-inf) | 6.4k | [Ink & Watercolor](#ink), [Generative Art](#gen) | ⚪ |
-| [pixelfx](https://github.com/patch-gg/pixelfx) | 6.2k | [Pixel & Retro](#pixel) | 🟢 |
+| [Shan-Shui-Inf](https://github.com/LingDong-/shan-shui-inf) | 6.5k | [Ink & Watercolor](#ink), [Generative Art](#gen) | ⚪ |
 | [Fantasy Map Generator](https://github.com/Azgaar/Fantasy-Map-Generator) | 6.2k | [Procedural Generation](#procgen), [Map & Route](#map) | 🟢 |
 | [TIC-80](https://github.com/nesbox/TIC-80) | 6.2k | [Pixel & Retro](#pixel), [Live Coding & VJ](#live), [Demoscene](#demoscene) | 🟢 |
 | [Unity Shader Essentials (book source)](https://github.com/candycat1992/Unity_Shaders_Book) | 6.1k | [Shaders & Psychedelic](#shader), [3D](#3d) | ⚪ |
 | [css-doodle](https://github.com/css-doodle/css-doodle) | 6.1k | [Generative Art](#gen) | 🟢 |
-| [Galacean Engine](https://github.com/galacean/engine) | 5.9k | [3D](#3d), [Particles & Physics](#particle) | 🟢 |
 | [Shaders](https://github.com/shader-effects-inc/shaders) | 5.9k | [Shaders & Psychedelic](#shader) | 🟢 |
+| [Galacean Engine](https://github.com/galacean/engine) | 5.9k | [3D](#3d), [Particles & Physics](#particle) | 🟢 |
+| [ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | 5.8k | [Shorts, Captions & Editing](#short) | 🟢 |
 | [PAG](https://github.com/Tencent/libpag) | 5.8k | [Motion Graphics](#mg) | 🟢 |
+| [Lottie Skill](https://github.com/diffusionstudio/lottie) | 5.8k | [Motion Graphics](#mg) | 🟢 |
 | [Kalidokit](https://github.com/yeemachine/kalidokit) | 5.7k | [Anime, MMD & VRM](#anime) | 🟡 |
-| [Lottie Skill](https://github.com/diffusionstudio/lottie) | 5.7k | [Motion Graphics](#mg) | 🟢 |
 | [Natron](https://github.com/NatronGitHub/Natron) | 5.7k | [Glitch & Post FX](#glitch) | 🟢 |
 | [editly](https://github.com/mifi/editly) | 5.6k | [Shorts, Captions & Editing](#short), [Kinetic Type & Lyrics](#type) | 🟡 |
 | [ALIEN](https://github.com/chrxh/alien) | 5.6k | [Artificial Life & Growth](#alife), [Particles & Physics](#particle) | 🟢 |
-| [Cinder](https://github.com/cinder/Cinder) | 5.5k | [Generative Art](#gen), [3D](#3d) | 🟡 |
-| [The Powder Toy](https://github.com/The-Powder-Toy/The-Powder-Toy) | 5.4k | [Falling Sand](#sand), [Particles & Physics](#particle) | 🟢 |
-| [Code Hike](https://github.com/code-hike/codehike) | 5.4k | [Code & Terminal Demo](#code) | 🟡 |
-| [Chafa](https://github.com/hpjansson/chafa) | 5.4k | [ASCII & Terminal](#ascii) | 🟢 |
+| [Cinder](https://github.com/cinder/Cinder) | 5.6k | [Generative Art](#gen), [3D](#3d) | 🟡 |
 | [Canvas UI](https://github.com/DavidHDev/canvas-ui) | 5.4k | [Shaders & Psychedelic](#shader), [Particles & Physics](#particle) | 🟢 |
+| [The Powder Toy](https://github.com/The-Powder-Toy/The-Powder-Toy) | 5.4k | [Falling Sand](#sand), [Particles & Physics](#particle) | 🟢 |
+| [Chafa](https://github.com/hpjansson/chafa) | 5.4k | [ASCII & Terminal](#ascii) | 🟢 |
+| [Code Hike](https://github.com/code-hike/codehike) | 5.4k | [Code & Terminal Demo](#code) | 🟡 |
 | [Pts](https://github.com/williamngan/pts) | 5.4k | [Generative Art](#gen), [Data Animation](#data) | 🟢 |
 | [glslViewer](https://github.com/patriciogonzalezvivo/glslViewer) | 5.4k | [Shaders & Psychedelic](#shader) | 🟢 |
 | [canvas-sketch](https://github.com/mattdesl/canvas-sketch) | 5.3k | [Generative Art](#gen) | 🟢 |
@@ -1957,336 +2131,368 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [TiXL](https://github.com/tixl3d/tixl) | 5.2k | [Live Coding & VJ](#live), [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
 | [Hanzi Writer](https://github.com/chanind/hanzi-writer) | 5.1k | [Handwriting & Strokes](#hanzi), [Kinetic Type & Lyrics](#type) | 🟡 |
 | [WFC Infinite City](https://github.com/marian42/wavefunctioncollapse) | 4.9k | [Procedural Generation](#procgen), [3D](#3d) | ⚪ |
-| [ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | 4.9k | [Shorts, Captions & Editing](#short) | 🟢 |
 | [html-video](https://github.com/nexu-io/html-video) | 4.8k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type) | 🟢 |
 | [SHADERed](https://github.com/dfranx/SHADERed) | 4.8k | [Shaders & Psychedelic](#shader) | ⚪ |
 | [git-sim](https://github.com/initialcommit-com/git-sim) | 4.7k | [Code & Terminal Demo](#code), [Data Animation](#data) | 🟢 |
 | [Tweakpane](https://github.com/cocopon/tweakpane) | 4.7k | [Generative Art](#gen) | 🟡 |
-| [AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) | 4.6k | [Liquid Glass](#liquid) | 🟢 |
+| [AndroidLiquidGlass](https://github.com/Kyant0/AndroidLiquidGlass) | 4.7k | [Liquid Glass](#liquid) | 🟢 |
 | [projectM](https://github.com/projectM-visualizer/projectm) | 4.6k | [Music Visualization](#audio), [Shaders & Psychedelic](#shader) | 🟢 |
 | [Shader School](https://github.com/stackgl/shader-school) | 4.4k | [Shaders & Psychedelic](#shader) | ⚪ |
 | [ShaderGlass](https://github.com/mausimus/ShaderGlass) | 4.4k | [Pixel & Retro](#pixel), [Glitch & Post FX](#glitch), [VHS & Analog](#vhs) | 🟢 |
 | [asciimatics](https://github.com/peterbrittain/asciimatics) | 4.3k | [ASCII & Terminal](#ascii) | 🟢 |
 | [TerminalTextEffects](https://github.com/ChrisBuilds/terminaltexteffects) | 4.3k | [ASCII & Terminal](#ascii), [Kinetic Type & Lyrics](#type) | 🟢 |
 | [pywonderland](https://github.com/neozhaoliang/pywonderland) | 4.2k | [Fractals & Chaos](#fractal), [Math Explainer](#math) | 🟡 |
-| [Godot Shaders](https://github.com/gdquest-demos/godot-shaders) | 4.2k | [Shaders & Psychedelic](#shader), [3D](#3d), [Pixel & Retro](#pixel) | 🟢 |
 | [Revideo](https://github.com/midrender/revideo) | 4.2k | [Motion Graphics](#mg), [Shorts, Captions & Editing](#short) | 🟢 |
+| [Godot Shaders](https://github.com/gdquest-demos/godot-shaders) | 4.2k | [Shaders & Psychedelic](#shader), [3D](#3d), [Pixel & Retro](#pixel) | 🟢 |
 | [VAP](https://github.com/Tencent/vap) | 4.2k | [Motion Graphics](#mg) | 🟢 |
+| [onetake](https://github.com/feitangyuan/onetake) | 4.1k | [Motion Graphics](#mg) | 🟢 |
 | [UnityChan Toon Shader](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) | 4.1k | [Shaders & Psychedelic](#shader), [Anime, MMD & VRM](#anime) | ⚪ |
 | [AntV L7](https://github.com/antvis/L7) | 4.1k | [Map & Route](#map), [Data Animation](#data) | 🟢 |
-| [onetake](https://github.com/feitangyuan/onetake) | 4k | [Motion Graphics](#mg) | 🟢 |
-| [Paper Shaders](https://github.com/paper-design/shaders) | 3.9k | [Shaders & Psychedelic](#shader) | 🟢 |
+| [Paper Shaders](https://github.com/paper-design/shaders) | 4k | [Shaders & Psychedelic](#shader) | 🟢 |
+| [P(doom) MV (mexicat version)](https://github.com/mexicat/pdoom-video) | 3.9k | [Kinetic Type & Lyrics](#type), [Motion Graphics](#mg) | 🟢 |
+| [hairline](https://github.com/lucasmarkes/hairline) | 3.9k | [Isometric & Voxel](#iso), [Motion Graphics](#mg) | 🟢 |
 | [Lenia](https://github.com/Chakazul/Lenia) | 3.9k | [Artificial Life & Growth](#alife), [Math Explainer](#math) | ⚪ |
 | [Triangula](https://github.com/rh12503/triangula) | 3.9k | [Geometric & Low-poly](#geo) | 🟡 |
-| [P(doom) MV (mexicat version)](https://github.com/mexicat/pdoom-video) | 3.8k | [Kinetic Type & Lyrics](#type), [Motion Graphics](#mg) | 🟢 |
-| [thi.ng/umbrella](https://github.com/thi-ng/umbrella) | 3.8k | [Generative Art](#gen), [Data Animation](#data) | 🟢 |
 | [farbrausch Tools](https://github.com/farbrausch/fr_public) | 3.8k | [Demoscene](#demoscene), [3D](#3d) | ⚪ |
+| [thi.ng/umbrella](https://github.com/thi-ng/umbrella) | 3.8k | [Generative Art](#gen), [Data Animation](#data) | 🟢 |
 | [doitlive](https://github.com/sloria/doitlive) | 3.6k | [Code & Terminal Demo](#code), [ASCII & Terminal](#ascii) | 🟢 |
 | [ascii-image-converter](https://github.com/TheZoraiz/ascii-image-converter) | 3.6k | [ASCII & Terminal](#ascii) | ⚪ |
-| [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) | 3.5k | [Procedural Generation](#procgen), [Generative Art](#gen) | 🟢 |
-| [hairline](https://github.com/lucasmarkes/hairline) | 3.5k | [Isometric & Voxel](#iso), [Motion Graphics](#mg) | 🟢 |
+| [FastNoiseLite](https://github.com/Auburn/FastNoiseLite) | 3.6k | [Procedural Generation](#procgen), [Generative Art](#gen) | 🟢 |
+| [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.5k | [Motion Graphics](#mg), [3D](#3d), [Hand-drawn & Whiteboard](#hand) | 🟢 |
 | [ManimML](https://github.com/helblazer811/ManimML) | 3.5k | [Math Explainer](#math), [Data Animation](#data) | ⚪ |
+| [Claude Animated Shorts](https://github.com/mromidev/claude-animated-shorts) | 3.5k | [3D](#3d), [Shorts, Captions & Editing](#short) | 🟢 |
 | [LYGIA](https://github.com/patriciogonzalezvivo/lygia) | 3.5k | [Shaders & Psychedelic](#shader) | 🟢 |
-| [Mafs](https://github.com/stevenpetryk/mafs) | 3.4k | [Math Explainer](#math) | 🟢 |
+| [Mafs](https://github.com/stevenpetryk/mafs) | 3.5k | [Math Explainer](#math) | 🟢 |
 | [Particle Life](https://github.com/hunar4321/particle-life) | 3.4k | [Artificial Life & Growth](#alife), [Particles & Physics](#particle) | ⚪ |
-| [MG Styles 15](https://github.com/Vincentwei1021/mg-styles-15) | 3.3k | [Motion Graphics](#mg), [3D](#3d), [Hand-drawn & Whiteboard](#hand) | 🟢 |
+| [anything2explainer](https://github.com/Vincentwei1021/anything2explainer) | 3.3k | [Data Animation](#data), [Motion Graphics](#mg) | 🟢 |
 | [TypeGPU](https://github.com/software-mansion/TypeGPU) | 3.3k | [Shaders & Psychedelic](#shader) | 🟢 |
 | [Tegaki](https://github.com/gkurt/tegaki) | 3.3k | [Handwriting & Strokes](#hanzi), [Kinetic Type & Lyrics](#type), [Hand-drawn & Whiteboard](#hand) | 🟢 |
 | [Sandspiel](https://github.com/MaxBittker/sandspiel) | 3.2k | [Falling Sand](#sand), [Pixel & Retro](#pixel) | 🟢 |
+| [ShaderGradient](https://github.com/ruucm/shadergradient) | 3.2k | [Shaders & Psychedelic](#shader) | 🟢 |
 | [FFCreator](https://github.com/tnfe/FFCreator) | 3.2k | [Shorts, Captions & Editing](#short) | 🟡 |
-| [anything2explainer](https://github.com/Vincentwei1021/anything2explainer) | 3.2k | [Data Animation](#data), [Motion Graphics](#mg) | 🟢 |
-| [ShaderGradient](https://github.com/ruucm/shadergradient) | 3.1k | [Shaders & Psychedelic](#shader) | 🟢 |
-| [fframes](https://github.com/dmtrKovalenko/fframes) | 3k | [Motion Graphics](#mg), [Shorts, Captions & Editing](#short) | 🟢 |
-| [gl-react](https://github.com/gre/gl-react) | 3k | [Shaders & Psychedelic](#shader) | 🟢 |
+| [Motion Design Skill](https://github.com/LottieFiles/motion-design-skill) | 3.1k | [Motion Graphics](#mg) | 🟢 |
+| [fframes](https://github.com/dmtrKovalenko/fframes) | 3.1k | [Motion Graphics](#mg), [Shorts, Captions & Editing](#short) | 🟢 |
 | [webgl-noise](https://github.com/ashima/webgl-noise) | 3k | [Shaders & Psychedelic](#shader), [Procedural Generation](#procgen) | 🟡 |
+| [gl-react](https://github.com/gre/gl-react) | 3k | [Shaders & Psychedelic](#shader) | 🟢 |
+| [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 3k | [Hand-drawn & Whiteboard](#hand), [Anime, MMD & VRM](#anime) | 🟢 |
 | [Mitsuba 3](https://github.com/mitsuba-renderer/mitsuba3) | 3k | [Path Tracing](#raytrace), [3D](#3d) | 🟢 |
 | [postprocessing](https://github.com/pmndrs/postprocessing) | 3k | [Glitch & Post FX](#glitch), [3D](#3d) | 🟢 |
 | [Inferno](https://github.com/twostraws/Inferno) | 2.9k | [Shaders & Psychedelic](#shader), [Glitch & Post FX](#glitch) | 🟢 |
+| [P(doom) MV](https://github.com/JohnHeibel/PDoomVideo) | 2.9k | [Kinetic Type & Lyrics](#type), [Motion Graphics](#mg) | 🟢 |
 | [Yocto/GL](https://github.com/xelatihy/yocto-gl) | 2.9k | [Path Tracing](#raytrace), [3D](#3d) | ⚪ |
 | [Isomer](https://github.com/jdan/isomer) | 2.9k | [Isometric & Voxel](#iso) | ⚪ |
-| [Motion Design Skill](https://github.com/LottieFiles/motion-design-skill) | 2.9k | [Motion Graphics](#mg) | 🟢 |
-| [P(doom) MV](https://github.com/JohnHeibel/PDoomVideo) | 2.9k | [Kinetic Type & Lyrics](#type), [Motion Graphics](#mg) | 🟢 |
+| [Math-To-Manim](https://github.com/HarleyCoops/Math-To-Manim) | 2.9k | [Math Explainer](#math), [3D](#3d) | 🟢 |
+| [Herk Edit Kit](https://github.com/nateherkai/herk-edit-kit) | 2.9k | [Shorts, Captions & Editing](#short) | 🟢 |
 | [timg](https://github.com/hzeller/timg) | 2.8k | [ASCII & Terminal](#ascii), [Pixel & Retro](#pixel) | 🟢 |
-| [Claude Animation Base](https://github.com/JohnHeibel/ClaudeAnimationBase) | 2.8k | [Hand-drawn & Whiteboard](#hand), [Anime, MMD & VRM](#anime) | 🟢 |
 | [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) | 2.8k | [Handwriting & Strokes](#hanzi) | 🟡 |
 | [Hydra](https://github.com/hydra-synth/hydra) | 2.8k | [Live Coding & VJ](#live), [Glitch & Post FX](#glitch), [Shaders & Psychedelic](#shader) | 🟡 |
+| [ManimGX](https://github.com/academa-labs/manimgx) | 2.8k | [Math Explainer](#math), [3D](#3d) | 🟢 |
+| [huashu-motion](https://github.com/alchaincyf/huashu-motion) | 2.7k | [Motion Graphics](#mg), [3D](#3d) | 🟢 |
 | [ntsc-rs](https://github.com/ntsc-rs/ntsc-rs) | 2.7k | [VHS & Analog](#vhs), [Glitch & Post FX](#glitch) | 🟢 |
-| [Herk Edit Kit](https://github.com/nateherkai/herk-edit-kit) | 2.7k | [Shorts, Captions & Editing](#short) | 🟢 |
+| [vgpu](https://github.com/vercel-labs/vgpu) | 2.7k | [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
+| [Pixel2Motion](https://github.com/nolangz/pixel2motion) | 2.7k | [Motion Graphics](#mg) | 🟢 |
 | [glslEditor](https://github.com/patriciogonzalezvivo/glslEditor) | 2.6k | [Shaders & Psychedelic](#shader) | ⚪ |
-| [Pixel2Motion](https://github.com/nolangz/pixel2motion) | 2.6k | [Motion Graphics](#mg) | 🟢 |
 | [liquid-dom](https://github.com/AndrewPrifer/liquid-dom) | 2.6k | [Liquid Glass](#liquid) | 🟢 |
-| [huashu-motion](https://github.com/alchaincyf/huashu-motion) | 2.5k | [Motion Graphics](#mg), [3D](#3d) | 🟢 |
 | [astroterm](https://github.com/da-luce/astroterm) | 2.5k | [ASCII & Terminal](#ascii), [Space & Stars](#space) | 🟢 |
 | [fishdraw](https://github.com/LingDong-/fishdraw) | 2.5k | [Plotter & Line Art](#plotter), [Generative Art](#gen) | ⚪ |
 | [Proton](https://github.com/drawcall/Proton) | 2.5k | [Particles & Physics](#particle) | 🟡 |
 | [zero](https://github.com/sinclairzx81/zero) | 2.5k | [ASCII & Terminal](#ascii), [3D](#3d) | 🟢 |
 | [Code2Video](https://github.com/showlab/Code2Video) | 2.4k | [Math Explainer](#math) | 🟢 |
+| [video-talkcraft](https://github.com/Vincentwei1021/video-talkcraft) | 2.3k | [Shorts, Captions & Editing](#short), [Kinetic Type & Lyrics](#type) | 🟢 |
 | [obelisk.js](https://github.com/nosir/obelisk.js) | 2.3k | [Isometric & Voxel](#iso), [Pixel & Retro](#pixel) | ⚪ |
 | [Teach Yourself Demoscene in 14 Days](https://github.com/psenough/teach_yourself_demoscene_in_14_days) | 2.3k | [Demoscene](#demoscene) | ⚪ |
+| [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | [Anime, MMD & VRM](#anime), [3D](#3d) | 🟢 |
 | [glslify](https://github.com/glslify/glslify) | 2.3k | [Shaders & Psychedelic](#shader) | ⚪ |
 | [glslCanvas](https://github.com/patriciogonzalezvivo/glslCanvas) | 2.3k | [Shaders & Psychedelic](#shader) | ⚪ |
-| [three-vrm](https://github.com/pixiv/three-vrm) | 2.3k | [Anime, MMD & VRM](#anime), [3D](#3d) | 🟢 |
-| [GL Transitions](https://github.com/gl-transitions/gl-transitions) | 2.2k | [Shorts, Captions & Editing](#short), [Glitch & Post FX](#glitch) | 🟢 |
-| [video-talkcraft](https://github.com/Vincentwei1021/video-talkcraft) | 2.2k | [Shorts, Captions & Editing](#short), [Kinetic Type & Lyrics](#type) | 🟢 |
+| [GL Transitions](https://github.com/gl-transitions/gl-transitions) | 2.3k | [Shorts, Captions & Editing](#short), [Glitch & Post FX](#glitch) | 🟢 |
+| [Bang Motion](https://github.com/bangtutorial/bang-motion) | 2.2k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type) | 🟢 |
 | [AMLL](https://github.com/amll-dev/applemusic-like-lyrics) | 2.2k | [Kinetic Type & Lyrics](#type), [Music Visualization](#audio) | 🟢 |
 | [Geometrize](https://github.com/Tw1ddle/geometrize) | 2.2k | [Geometric & Low-poly](#geo) | ⚪ |
 | [Excalidraw Animate](https://github.com/dai-shi/excalidraw-animate) | 2.1k | [Hand-drawn & Whiteboard](#hand) | 🟢 |
 | [ossia score](https://github.com/ossia/score) | 2.1k | [Live Coding & VJ](#live) | 🟢 |
 | [GLSL-PathTracer](https://github.com/knightcrawler25/GLSL-PathTracer) | 2.1k | [Path Tracing](#raytrace), [Shaders & Psychedelic](#shader) | ⚪ |
+| [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) | 2.1k | [Path Tracing](#raytrace), [3D](#3d) | 🟢 |
 | [Vizzu](https://github.com/vizzuhq/vizzu-lib) | 2k | [Data Animation](#data) | 🟡 |
-| [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) | 2k | [Path Tracing](#raytrace), [3D](#3d) | 🟢 |
 | [Astrofox](https://github.com/astrofox-io/astrofox) | 2k | [Music Visualization](#audio), [Motion Graphics](#mg) | 🟢 |
 | [Butterchurn](https://github.com/jberg/butterchurn) | 2k | [Music Visualization](#audio), [Shaders & Psychedelic](#shader) | 🟡 |
 | [gganimate](https://github.com/thomasp85/gganimate) | 2k | [Data Animation](#data) | 🟡 |
+| [ReelMimic](https://github.com/edenfunf/reelmimic) | 2k | [Shorts, Captions & Editing](#short) | 🟢 |
+| [Animate](https://github.com/cth9191/animate) | 2k | [Hand-drawn & Whiteboard](#hand), [Pixel & Retro](#pixel), [Math Explainer](#math), [Riso & Paper Collage](#riso) | 🟢 |
 | [The Nature of Code](https://github.com/nature-of-code/noc-book-2) | 2k | [Generative Art](#gen), [Particles & Physics](#particle), [Artificial Life & Growth](#alife) | 🟡 |
-| [ReelMimic](https://github.com/edenfunf/reelmimic) | 1.9k | [Shorts, Captions & Editing](#short) | 🟢 |
-| [Bang Motion](https://github.com/bangtutorial/bang-motion) | 1.9k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type) | 🟢 |
 | [video-to-ascii](https://github.com/joelibaceta/video-to-ascii) | 1.9k | [ASCII & Terminal](#ascii) | 🟡 |
 | [Durdraw](https://github.com/durdraw/durdraw) | 1.9k | [ASCII & Terminal](#ascii) | 🟢 |
 | [Logstalgia](https://github.com/acaudwell/Logstalgia) | 1.8k | [Data Animation](#data) | 🟡 |
 | [glitch-this](https://github.com/TotallyNotChase/glitch-this) | 1.8k | [Glitch & Post FX](#glitch) | ⚪ |
+| [AI Animation Skills](https://github.com/Unclecheng-li/AI_Animation) | 1.8k | [Motion Graphics](#mg), [Data Animation](#data) | 🟢 |
 | [Animotion](https://github.com/animotionjs/animotion) | 1.8k | [Code & Terminal Demo](#code), [Motion Graphics](#mg) | 🟢 |
 | [Splitting](https://github.com/shshaw/Splitting) | 1.8k | [Kinetic Type & Lyrics](#type) | ⚪ |
-| [Liquid Glass for RN](https://github.com/callstack/liquid-glass) | 1.7k | [Liquid Glass](#liquid) | 🟢 |
 | [remocn](https://github.com/Remocn/remocn) | 1.7k | [Motion Graphics](#mg), [Shorts, Captions & Editing](#short) | 🟢 |
-| [Animate](https://github.com/cth9191/animate) | 1.7k | [Hand-drawn & Whiteboard](#hand), [Pixel & Retro](#pixel), [Math Explainer](#math), [Riso & Paper Collage](#riso) | 🟢 |
+| [Liquid Glass for RN](https://github.com/callstack/liquid-glass) | 1.7k | [Liquid Glass](#liquid) | 🟢 |
+| [anidoodle](https://github.com/alexgreensh/anidoodle) | 1.7k | [Hand-drawn & Whiteboard](#hand), [Generative Art](#gen) | 🟢 |
 | [GLSL Sandbox](https://github.com/mrdoob/glsl-sandbox) | 1.7k | [Shaders & Psychedelic](#shader), [Live Coding & VJ](#live) | 🟢 |
 | [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) | 1.7k | [Shaders & Psychedelic](#shader), [Anime, MMD & VRM](#anime) | 🟢 |
 | [Meyda](https://github.com/meyda/meyda) | 1.7k | [Music Visualization](#audio) | ⚪ |
+| [reanimate](https://github.com/NiazMorshed2007/reanimate) | 1.7k | [Motion Graphics](#mg) | 🟢 |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | [Dither & 1-bit](#dither), [Shaders & Psychedelic](#shader), [3D](#3d) | 🟡 |
 | [Unity Toon Shader](https://github.com/Unity-Technologies/com.unity.toonshader) | 1.6k | [Shaders & Psychedelic](#shader), [Anime, MMD & VRM](#anime) | 🟢 |
 | [MilkDrop 3](https://github.com/milkdrop2077/MilkDrop3) | 1.6k | [Music Visualization](#audio), [Shaders & Psychedelic](#shader) | 🟢 |
-| [WASM-4](https://github.com/aduros/wasm4) | 1.5k | [Pixel & Retro](#pixel) | 🟢 |
+| [WASM-4](https://github.com/aduros/wasm4) | 1.6k | [Pixel & Retro](#pixel) | 🟢 |
+| [motion-skills](https://github.com/iart-ai/motion-skills) | 1.5k | [Motion Graphics](#mg) | 🟢 |
 | [pixi-live2d-display](https://github.com/guansss/pixi-live2d-display) | 1.5k | [Anime, MMD & VRM](#anime) | ⚪ |
+| [Musializer](https://github.com/tsoding/musializer) | 1.5k | [Music Visualization](#audio) | 🟢 |
 | [MathBox](https://github.com/unconed/mathbox) | 1.5k | [Math Explainer](#math), [3D](#3d) | ⚪ |
 | [Bonzomatic](https://github.com/Gargaj/Bonzomatic) | 1.5k | [Shaders & Psychedelic](#shader), [Live Coding & VJ](#live), [Demoscene](#demoscene) | 🟡 |
-| [Musializer](https://github.com/tsoding/musializer) | 1.5k | [Music Visualization](#audio) | 🟢 |
 | [ShaderMan](https://github.com/smkplus/ShaderMan) | 1.5k | [Shaders & Psychedelic](#shader) | ⚪ |
-| [anidoodle](https://github.com/alexgreensh/anidoodle) | 1.5k | [Hand-drawn & Whiteboard](#hand), [Generative Art](#gen) | 🟢 |
 | [Bonsai](https://github.com/scallyw4g/bonsai) | 1.5k | [Procedural Generation](#procgen), [Isometric & Voxel](#iso), [3D](#3d) | 🟢 |
-| [reanimate](https://github.com/NiazMorshed2007/reanimate) | 1.5k | [Motion Graphics](#mg) | 🟢 |
+| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.5k | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader), [Motion Graphics](#mg) | 🟡 |
 | [bar_chart_race](https://github.com/dexplo/bar_chart_race) | 1.5k | [Data Animation](#data) | ⚪ |
 | [GLSL Primer Cards](https://github.com/wshxbqq/GLSL-Card) | 1.5k | [Shaders & Psychedelic](#shader) | ⚪ |
-| [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.4k | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader), [Motion Graphics](#mg) | 🟡 |
-| [augmented-ui](https://github.com/propjockey/augmented-ui) | 1.4k | [Sci-fi HUD](#scifi) | ⚪ |
 | [Origami Simulator](https://github.com/amandaghassaei/OrigamiSimulator) | 1.4k | [Origami & Papercraft](#origami), [3D](#3d) | 🟢 |
+| [p5.brush](https://github.com/acamposuribe/p5.brush) | 1.4k | [Hand-drawn & Whiteboard](#hand), [Generative Art](#gen) | 🟢 |
+| [augmented-ui](https://github.com/propjockey/augmented-ui) | 1.4k | [Sci-fi HUD](#scifi) | ⚪ |
+| [Reanimate](https://github.com/reanimate/reanimate) | 1.4k | [Math Explainer](#math), [Motion Graphics](#mg) | 🟡 |
 | [NoiseShader](https://github.com/keijiro/NoiseShader) | 1.4k | [Shaders & Psychedelic](#shader), [Procedural Generation](#procgen) | 🟡 |
 | [CustomShaderMaterial](https://github.com/FarazzShaikh/THREE-CustomShaderMaterial) | 1.4k | [Shaders & Psychedelic](#shader), [3D](#3d) | 🟡 |
 | [URP_Toon](https://github.com/ChiliMilk/URP_Toon) | 1.4k | [Shaders & Psychedelic](#shader), [Anime, MMD & VRM](#anime) | ⚪ |
-| [Reanimate](https://github.com/reanimate/reanimate) | 1.3k | [Math Explainer](#math), [Motion Graphics](#mg) | 🟡 |
 | [FieldPlay](https://github.com/anvaka/fieldplay) | 1.3k | [Flow & Wind Fields](#flow), [Math Explainer](#math) | 🟢 |
-| [p5.brush](https://github.com/acamposuribe/p5.brush) | 1.3k | [Hand-drawn & Whiteboard](#hand), [Generative Art](#gen) | 🟢 |
-| [motion-skills](https://github.com/iart-ai/motion-skills) | 1.3k | [Motion Graphics](#mg) | 🟢 |
+| [Manim Agent Skills](https://github.com/adithya-s-k/manim_skill) | 1.3k | [Math Explainer](#math) | 🟡 |
 | [Cloudy](https://github.com/skydoves/Cloudy) | 1.3k | [Liquid Glass](#liquid) | 🟢 |
 | [spectral.js](https://github.com/rvanwijnen/spectral.js) | 1.3k | [Hand-drawn & Whiteboard](#hand) | 🟡 |
-| [Manim Agent Skills](https://github.com/adithya-s-k/manim_skill) | 1.3k | [Math Explainer](#math) | 🟡 |
 | [libretro GLSL Shaders](https://github.com/libretro/glsl-shaders) | 1.3k | [Pixel & Retro](#pixel), [Shaders & Psychedelic](#shader), [VHS & Analog](#vhs) | 🟢 |
+| [Motion Graphics Skills](https://github.com/Barty-Bart/motion-graphics) | 1.3k | [Motion Graphics](#mg) | 🟢 |
 | [TerraForge3D](https://github.com/Jaysmito101/TerraForge3D) | 1.3k | [Procedural Generation](#procgen), [3D](#3d) | 🟢 |
-| [Diffusion Studio Core](https://github.com/diffusionstudio/core) | 1.3k | [Shorts, Captions & Editing](#short) | 🟡 |
 | [Fractal Sound Explorer](https://github.com/HackerPoet/FractalSoundExplorer) | 1.3k | [Fractals & Chaos](#fractal), [Music Visualization](#audio) | ⚪ |
+| [Diffusion Studio Core](https://github.com/diffusionstudio/core) | 1.3k | [Shorts, Captions & Editing](#short) | 🟡 |
 | [three-nebula](https://github.com/creativelifeform/three-nebula) | 1.2k | [Particles & Physics](#particle), [3D](#3d) | 🟢 |
 | [shuding/liquid-glass](https://github.com/shuding/liquid-glass) | 1.2k | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader) | 🟡 |
+| [cinetic](https://github.com/Leonxlnx/cinetic) | 1.2k | [Motion Graphics](#mg) | 🟢 |
 | [three.quarks](https://github.com/Alchemist0823/three.quarks) | 1.2k | [Particles & Physics](#particle), [3D](#3d) | 🟢 |
-| [frame.js](https://github.com/mrdoob/frame.js) | 1.2k | [Demoscene](#demoscene), [Motion Graphics](#mg) | 🟡 |
 | [VFX-JS](https://github.com/fand/vfx-js) | 1.2k | [Glitch & Post FX](#glitch), [Kinetic Type & Lyrics](#type) | 🟢 |
+| [frame.js](https://github.com/mrdoob/frame.js) | 1.2k | [Demoscene](#demoscene), [Motion Graphics](#mg) | 🟡 |
 | [ntscqt](https://github.com/JargeZ/ntscqt) | 1.2k | [VHS & Analog](#vhs), [Glitch & Post FX](#glitch) | ⚪ |
 | [Polyvia](https://github.com/Ovilia/Polyvia) | 1.2k | [Geometric & Low-poly](#geo) | ⚪ |
 | [Etro](https://github.com/etro-js/etro) | 1.2k | [Shorts, Captions & Editing](#short) | 🟢 |
-| [PixiJS Filters](https://github.com/pixijs/filters) | 1.1k | [Glitch & Post FX](#glitch), [Shaders & Psychedelic](#shader) | 🟡 |
-| [Motion Graphics Skills](https://github.com/Barty-Bart/motion-graphics) | 1.1k | [Motion Graphics](#mg) | 🟢 |
+| [PixiJS Filters](https://github.com/pixijs/filters) | 1.2k | [Glitch & Post FX](#glitch), [Shaders & Psychedelic](#shader) | 🟡 |
 | [glsl-blend](https://github.com/jamieowen/glsl-blend) | 1.1k | [Shaders & Psychedelic](#shader) | ⚪ |
+| [Opus 5.5 Video Prompts](https://github.com/joeseesun/opus-video-prompts) | 1.1k | [Motion Graphics](#mg), [Hand-drawn & Whiteboard](#hand), [Shorts, Captions & Editing](#short) | 🟢 |
 | [ToyPathTracer](https://github.com/aras-p/ToyPathTracer) | 1.1k | [Path Tracing](#raytrace) | 🟡 |
 | [webgl-wind](https://github.com/mapbox/webgl-wind) | 1.1k | [Flow & Wind Fields](#flow), [Map & Route](#map) | 🟢 |
 | [twigl](https://github.com/doxas/twigl) | 1.1k | [Shaders & Psychedelic](#shader), [Live Coding & VJ](#live) | 🟡 |
 | [Shader Editor](https://github.com/markusfisch/ShaderEditor) | 1.1k | [Shaders & Psychedelic](#shader) | 🟢 |
-| [cinetic](https://github.com/Leonxlnx/cinetic) | 1.1k | [Motion Graphics](#mg) | 🟢 |
+| [Code Animation Style Prompts](https://github.com/XiaoyeCodes/code-animation-prompts) | 1.1k | [Motion Graphics](#mg) | 🟢 |
 | [Realtime PyAudio FFT](https://github.com/aiXander/Realtime_PyAudio_FFT) | 1.1k | [Music Visualization](#audio) | 🟢 |
 | [Mandelbulber](https://github.com/buddhi1980/mandelbulber2) | 1.1k | [Fractals & Chaos](#fractal), [3D](#3d) | 🟢 |
-| [video-spec-builder](https://github.com/feicaiclub/video-spec-builder) | 1.1k | [Shorts, Captions & Editing](#short) | 🟢 |
 | [motion-anything](https://github.com/nexu-io/motion-anything) | 1.1k | [Motion Graphics](#mg), [Shaders & Psychedelic](#shader) | 🟢 |
+| [video-spec-builder](https://github.com/feicaiclub/video-spec-builder) | 1.1k | [Shorts, Captions & Editing](#short) | 🟢 |
 | [liquidGL](https://github.com/naughtyduk/liquidGL) | 1.1k | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader) | 🟢 |
-| [Particle Life App](https://github.com/tom-mohr/particle-life-app) | 1k | [Artificial Life & Growth](#alife), [Particles & Physics](#particle) | 🟡 |
 | [Radiant](https://github.com/pbakaus/radiant) | 1k | [Shaders & Psychedelic](#shader), [Generative Art](#gen) | 🟢 |
-| [Generative Design Code Package](https://github.com/generative-design/Code-Package-p5.js) | 1k | [Generative Art](#gen) | 🟢 |
+| [Particle Life App](https://github.com/tom-mohr/particle-life-app) | 1k | [Artificial Life & Growth](#alife), [Particles & Physics](#particle) | 🟡 |
+| [Claude Remotion Skill](https://github.com/haidrrrry/claude-remotion-skill) | 1k | [Motion Graphics](#mg) | 🟢 |
 | [Rive Runtime](https://github.com/rive-app/rive-wasm) | 1k | [Motion Graphics](#mg) | 🟢 |
+| [Generative Design Code Package](https://github.com/generative-design/Code-Package-p5.js) | 1k | [Generative Art](#gen) | 🟢 |
 | [Raymarching Workshop](https://github.com/electricsquare/raymarching-workshop) | 1k | [Shaders & Psychedelic](#shader), [3D](#3d) | ⚪ |
-| [OPENRNDR](https://github.com/openrndr/openrndr) | 986 | [Generative Art](#gen) | 🟢 |
-| [vpype](https://github.com/abey79/vpype) | 983 | [Plotter & Line Art](#plotter) | 🟢 |
-| [Godot Realistic Water](https://github.com/godot-extended-libraries/godot-realistic-water) | 978 | [Shaders & Psychedelic](#shader), [3D](#3d) | 🟡 |
-| [Manim Slides](https://github.com/jeertmans/manim-slides) | 978 | [Math Explainer](#math), [Code & Terminal Demo](#code) | 🟢 |
-| [audioMotion](https://github.com/hvianna/audioMotion-analyzer) | 971 | [Music Visualization](#audio), [Data Animation](#data) | 🟢 |
-| [DOjS](https://github.com/SuperIlu/DOjS) | 964 | [Pixel & Retro](#pixel), [Generative Art](#gen) | 🟡 |
-| [mapgen4](https://github.com/redblobgames/mapgen4) | 951 | [Procedural Generation](#procgen), [Map & Route](#map) | 🟡 |
-| [Fragment](https://github.com/raphaelameaume/fragment) | 949 | [Generative Art](#gen), [Shaders & Psychedelic](#shader) | 🟢 |
-| [Generative Manim](https://github.com/marcelo-earth/generative-manim) | 941 | [Math Explainer](#math) | 🟢 |
-| [dotLottie Web](https://github.com/LottieFiles/dotlottie-web) | 939 | [Motion Graphics](#mg) | 🟢 |
-| [Guizang Product Video](https://github.com/op7418/guizang-product-video-skill) | 920 | [Motion Graphics](#mg) | 🟢 |
-| [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 919 | [Procedural Generation](#procgen), [3D](#3d) | 🟢 |
-| [SeeCode](https://github.com/Aryanutkarsh/SeeCode) | 910 | [Code & Terminal Demo](#code), [Isometric & Voxel](#iso) | 🟢 |
-| [Claude Remotion Skill](https://github.com/haidrrrry/claude-remotion-skill) | 897 | [Motion Graphics](#mg) | 🟢 |
-| [pixelsort](https://github.com/satyarth/pixelsort) | 875 | [Glitch & Post FX](#glitch) | 🟢 |
-| [Code Animation Style Prompts](https://github.com/XiaoyeCodes/code-animation-prompts) | 864 | [Motion Graphics](#mg) | 🟢 |
-| [motion-web](https://github.com/feitangyuan/motion-web) | 854 | [3D](#3d), [Motion Graphics](#mg) | 🟢 |
-| [Pintr](https://github.com/javierbyte/pintr) | 837 | [Plotter & Line Art](#plotter), [Hand-drawn & Whiteboard](#hand) | 🟢 |
-| [Shader Park](https://github.com/shader-park/shader-park-core) | 832 | [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
-| [Liquid Glass Widgets](https://github.com/sdegenaar/liquid_glass_widgets) | 828 | [Liquid Glass](#liquid) | 🟢 |
-| [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) | 821 | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader) | 🟢 |
-| [party-mode](https://github.com/preziotte/party-mode) | 807 | [Music Visualization](#audio), [Data Animation](#data) | 🟢 |
-| [GodotRetro](https://github.com/ahopness/GodotRetro) | 806 | [Shaders & Psychedelic](#shader), [Pixel & Retro](#pixel), [VHS & Analog](#vhs) | 🟢 |
-| [Claude Motion Design](https://github.com/howseen-ai/claude-motion-design) | 798 | [Motion Graphics](#mg) | 🟢 |
-| [adu-motion-video](https://github.com/adunext/adu-motion-video) | 782 | [Shorts, Captions & Editing](#short) | 🟢 |
+| [OPENRNDR](https://github.com/openrndr/openrndr) | 987 | [Generative Art](#gen) | 🟢 |
+| [vpype](https://github.com/abey79/vpype) | 986 | [Plotter & Line Art](#plotter) | 🟢 |
+| [Manim Slides](https://github.com/jeertmans/manim-slides) | 985 | [Math Explainer](#math), [Code & Terminal Demo](#code) | 🟢 |
+| [Godot Realistic Water](https://github.com/godot-extended-libraries/godot-realistic-water) | 982 | [Shaders & Psychedelic](#shader), [3D](#3d) | 🟡 |
+| [audioMotion](https://github.com/hvianna/audioMotion-analyzer) | 975 | [Music Visualization](#audio), [Data Animation](#data) | 🟢 |
+| [DOjS](https://github.com/SuperIlu/DOjS) | 966 | [Pixel & Retro](#pixel), [Generative Art](#gen) | 🟡 |
+| [SeeCode](https://github.com/Aryanutkarsh/SeeCode) | 954 | [Code & Terminal Demo](#code), [Isometric & Voxel](#iso) | 🟢 |
+| [mapgen4](https://github.com/redblobgames/mapgen4) | 952 | [Procedural Generation](#procgen), [Map & Route](#map) | 🟡 |
+| [Fragment](https://github.com/raphaelameaume/fragment) | 951 | [Generative Art](#gen), [Shaders & Psychedelic](#shader) | 🟢 |
+| [dotLottie Web](https://github.com/LottieFiles/dotlottie-web) | 947 | [Motion Graphics](#mg) | 🟢 |
+| [Generative Manim](https://github.com/marcelo-earth/generative-manim) | 943 | [Math Explainer](#math) | 🟢 |
+| [Guizang Product Video](https://github.com/op7418/guizang-product-video-skill) | 943 | [Motion Graphics](#mg) | 🟢 |
+| [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 923 | [Procedural Generation](#procgen), [3D](#3d) | 🟢 |
+| [pixelsort](https://github.com/satyarth/pixelsort) | 876 | [Glitch & Post FX](#glitch) | 🟢 |
+| [motion-web](https://github.com/feitangyuan/motion-web) | 859 | [3D](#3d), [Motion Graphics](#mg) | 🟢 |
+| [adu-motion-video](https://github.com/adunext/adu-motion-video) | 852 | [Shorts, Captions & Editing](#short) | 🟢 |
+| [Liquid Glass Widgets](https://github.com/sdegenaar/liquid_glass_widgets) | 848 | [Liquid Glass](#liquid) | 🟢 |
+| [Pintr](https://github.com/javierbyte/pintr) | 843 | [Plotter & Line Art](#plotter), [Hand-drawn & Whiteboard](#hand) | 🟢 |
+| [Shader Park](https://github.com/shader-park/shader-park-core) | 834 | [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
+| [Rossark Motion](https://github.com/rossark0/rossark-motion-skill) | 832 | [Motion Graphics](#mg) | 🟢 |
+| [Liquid Glass Studio](https://github.com/iyinchao/liquid-glass-studio) | 827 | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader) | 🟢 |
+| [Claude Motion Design](https://github.com/howseen-ai/claude-motion-design) | 826 | [Motion Graphics](#mg) | 🟢 |
+| [GodotRetro](https://github.com/ahopness/GodotRetro) | 809 | [Shaders & Psychedelic](#shader), [Pixel & Retro](#pixel), [VHS & Analog](#vhs) | 🟢 |
+| [party-mode](https://github.com/preziotte/party-mode) | 808 | [Music Visualization](#audio), [Data Animation](#data) | 🟢 |
+| [genjutsu](https://github.com/AThevon/genjutsu) | 805 | [Generative Art](#gen), [Motion Graphics](#mg) | 🟢 |
+| [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) | 781 | [3D](#3d), [Map & Route](#map) | 🟢 |
 | [demoit](https://github.com/dgageot/demoit) | 780 | [Code & Terminal Demo](#code) | 🟢 |
-| [Solar Wanderer](https://github.com/hyqzz/Solar-Wanderer) | 767 | [Space & Stars](#space), [3D](#3d) | 🟢 |
-| [genjutsu](https://github.com/AThevon/genjutsu) | 767 | [Generative Art](#gen), [Motion Graphics](#mg) | 🟢 |
-| [Cosmic UI](https://github.com/rizznme/cosmic-ui) | 763 | [Sci-fi HUD](#scifi) | 🟢 |
-| [Rossark Motion](https://github.com/rossark0/rossark-motion-skill) | 761 | [Motion Graphics](#mg) | 🟢 |
-| [scope-tui](https://github.com/alemidev/scope-tui) | 755 | [Oscilloscope & Vector](#scope), [ASCII & Terminal](#ascii), [Music Visualization](#audio) | 🟢 |
-| [orb](https://github.com/LerSent001/orb) | 751 | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader) | 🟢 |
-| [osci-render](https://github.com/jameshball/osci-render) | 741 | [Oscilloscope & Vector](#scope), [Music Visualization](#audio) | 🟢 |
+| [Solar Wanderer](https://github.com/hyqzz/Solar-Wanderer) | 771 | [Space & Stars](#space), [3D](#3d) | 🟢 |
+| [Cosmic UI](https://github.com/rizznme/cosmic-ui) | 765 | [Sci-fi HUD](#scifi) | 🟢 |
+| [HaloFlux](https://github.com/Ryder191/haloflux) | 760 | [Sci-fi HUD](#scifi), [Music Visualization](#audio) | 🟢 |
+| [scope-tui](https://github.com/alemidev/scope-tui) | 759 | [Oscilloscope & Vector](#scope), [ASCII & Terminal](#ascii), [Music Visualization](#audio) | 🟢 |
+| [orb](https://github.com/LerSent001/orb) | 756 | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader) | 🟢 |
+| [osci-render](https://github.com/jameshball/osci-render) | 742 | [Oscilloscope & Vector](#scope), [Music Visualization](#audio) | 🟢 |
 | [shadplay](https://github.com/alphastrata/shadplay) | 727 | [Shaders & Psychedelic](#shader), [Live Coding & VJ](#live) | 🟢 |
-| [Shader Toy for VS Code](https://github.com/stevensona/shader-toy) | 720 | [Shaders & Psychedelic](#shader) | 🟢 |
-| [Shader Lab](https://github.com/basementstudio/shader-lab) | 719 | [Shaders & Psychedelic](#shader), [Motion Graphics](#mg) | 🟢 |
-| [Waveform for OBS](https://github.com/phandasm/waveform) | 714 | [Music Visualization](#audio) | 🟢 |
-| [drawsvg](https://github.com/cduck/drawsvg) | 696 | [Motion Graphics](#mg), [Data Animation](#data) | 🟢 |
-| [Athenaion](https://github.com/Leonxlnx/athenaion) | 691 | [3D](#3d) | 🟢 |
-| [linecast](https://github.com/ashuttl/linecast) | 676 | [Space & Stars](#space), [ASCII & Terminal](#ascii) | 🟢 |
-| [ranim](https://github.com/AzurIce/ranim) | 663 | [Math Explainer](#math) | 🟢 |
-| [Stellarium Web](https://github.com/Stellarium/stellarium-web-engine) | 661 | [Space & Stars](#space) | 🟢 |
+| [Shader Lab](https://github.com/basementstudio/shader-lab) | 724 | [Shaders & Psychedelic](#shader), [Motion Graphics](#mg) | 🟢 |
+| [Shader Toy for VS Code](https://github.com/stevensona/shader-toy) | 722 | [Shaders & Psychedelic](#shader) | 🟢 |
+| [Waveform for OBS](https://github.com/phandasm/waveform) | 717 | [Music Visualization](#audio) | 🟢 |
+| [Athenaion](https://github.com/Leonxlnx/athenaion) | 708 | [3D](#3d) | 🟢 |
+| [drawsvg](https://github.com/cduck/drawsvg) | 697 | [Motion Graphics](#mg), [Data Animation](#data) | 🟢 |
+| [linecast](https://github.com/ashuttl/linecast) | 685 | [Space & Stars](#space), [ASCII & Terminal](#ascii) | 🟢 |
+| [Launch Motion Skills](https://github.com/charlie947/motion-graphics-skills) | 684 | [Motion Graphics](#mg) | 🟢 |
+| [Machine Skill](https://github.com/AirsupHQ/machine-skill) | 676 | [3D](#3d) | 🟢 |
+| [Procedural Terrains](https://github.com/ZyFou/ProceduralTerrains) | 673 | [Procedural Generation](#procgen), [3D](#3d) | 🟢 |
+| [MotionClone](https://github.com/blixvip/MotionClone) | 672 | [Motion Graphics](#mg) | 🟢 |
+| [ranim](https://github.com/AzurIce/ranim) | 664 | [Math Explainer](#math) | 🟢 |
+| [Stellarium Web](https://github.com/Stellarium/stellarium-web-engine) | 663 | [Space & Stars](#space) | 🟢 |
+| [Aora Bot](https://github.com/sam70361/aora-bot) | 663 | [Motion Graphics](#mg), [Anime, MMD & VRM](#anime) | 🟢 |
 | [Rabbit Ear](https://github.com/rabbit-ear/rabbit-ear) | 655 | [Origami & Papercraft](#origami) | 🟢 |
-| [audioMotion Player](https://github.com/hvianna/audioMotion.js) | 643 | [Music Visualization](#audio) | 🟢 |
-| [Aora Bot](https://github.com/sam70361/aora-bot) | 639 | [Motion Graphics](#mg), [Anime, MMD & VRM](#anime) | 🟢 |
-| [heerich](https://github.com/meodai/heerich) | 631 | [Isometric & Voxel](#iso), [3D](#3d) | 🟢 |
+| [audioMotion Player](https://github.com/hvianna/audioMotion.js) | 645 | [Music Visualization](#audio) | 🟢 |
+| [heerich](https://github.com/meodai/heerich) | 635 | [Isometric & Voxel](#iso), [3D](#3d) | 🟢 |
 | [XaoS](https://github.com/xaos-project/XaoS) | 628 | [Fractals & Chaos](#fractal) | 🟢 |
-| [Machine Skill](https://github.com/AirsupHQ/machine-skill) | 616 | [3D](#3d) | 🟢 |
-| [Launch Motion Skills](https://github.com/charlie947/motion-graphics-skills) | 615 | [Motion Graphics](#mg) | 🟢 |
-| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 612 | [Shaders & Psychedelic](#shader), [3D](#3d), [Particles & Physics](#particle) | 🟡 |
-| [vsketch](https://github.com/abey79/vsketch) | 612 | [Plotter & Line Art](#plotter), [Generative Art](#gen) | 🟢 |
+| [snapcn](https://github.com/shadcn-labs/snapcn) | 628 | [Shorts, Captions & Editing](#short), [Motion Graphics](#mg), [Code & Terminal Demo](#code) | 🟢 |
+| [LiquidGlass](https://github.com/ybouane/liquidglass) | 625 | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader) | 🟢 |
+| [ff-tracking](https://github.com/mrsarac/ff-tracking) | 618 | [Motion Graphics](#mg), [Glitch & Post FX](#glitch) | 🟢 |
+| [vsketch](https://github.com/abey79/vsketch) | 614 | [Plotter & Line Art](#plotter), [Generative Art](#gen) | 🟢 |
+| [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 613 | [Shaders & Psychedelic](#shader), [3D](#3d), [Particles & Physics](#particle) | 🟡 |
 | [LiliumToonGraph](https://github.com/you-ri/LiliumToonGraph) | 609 | [Shaders & Psychedelic](#shader), [Anime, MMD & VRM](#anime) | 🟢 |
+| [Fabric](https://github.com/Fabric-Project/Fabric) | 606 | [Live Coding & VJ](#live), [3D](#3d), [Shaders & Psychedelic](#shader) | 🟢 |
 | [Bauble](https://github.com/ianthehenry/bauble) | 597 | [Shaders & Psychedelic](#shader), [3D](#3d), [Generative Art](#gen) | 🟢 |
-| [ff-tracking](https://github.com/mrsarac/ff-tracking) | 596 | [Motion Graphics](#mg), [Glitch & Post FX](#glitch) | 🟢 |
-| [shader-doodle](https://github.com/mmmerl/shader-doodle) | 589 | [Shaders & Psychedelic](#shader) | 🟢 |
-| [MotionClone](https://github.com/blixvip/MotionClone) | 588 | [Motion Graphics](#mg) | 🟢 |
-| [Shader Minifier](https://github.com/laurentlb/shader-minifier) | 584 | [Demoscene](#demoscene), [Shaders & Psychedelic](#shader) | 🟢 |
-| [HaloFlux](https://github.com/Ryder191/haloflux) | 584 | [Sci-fi HUD](#scifi), [Music Visualization](#audio) | 🟢 |
+| [shader-doodle](https://github.com/mmmerl/shader-doodle) | 591 | [Shaders & Psychedelic](#shader) | 🟢 |
+| [Shader Minifier](https://github.com/laurentlb/shader-minifier) | 585 | [Demoscene](#demoscene), [Shaders & Psychedelic](#shader) | 🟢 |
 | [NTSC-CRT](https://github.com/LMP88959/NTSC-CRT) | 577 | [VHS & Analog](#vhs), [Pixel & Retro](#pixel) | 🟢 |
-| [cables](https://github.com/cables-gl/cables) | 574 | [Live Coding & VJ](#live), [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
-| [LiveCanvas](https://github.com/pengchujin/livecanvas) | 549 | [Shorts, Captions & Editing](#short) | 🟢 |
+| [cables](https://github.com/cables-gl/cables) | 575 | [Live Coding & VJ](#live), [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
+| [LiveCanvas](https://github.com/pengchujin/livecanvas) | 556 | [Shorts, Captions & Editing](#short) | 🟢 |
+| [world.execute(me) Lyric MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 550 | [Kinetic Type & Lyrics](#type), [Anime, MMD & VRM](#anime) | 🟢 |
+| [Whiteboard Teacher Video](https://github.com/liangdabiao/whiteboard-teacher-video) | 550 | [Hand-drawn & Whiteboard](#hand) | 🟢 |
+| [Processing](https://github.com/processing/processing4) | 547 | [Generative Art](#gen) | 🟢 |
 | [play.core](https://github.com/ertdfgcvb/play.core) | 544 | [ASCII & Terminal](#ascii), [Generative Art](#gen) | 🟡 |
-| [Processing](https://github.com/processing/processing4) | 542 | [Generative Art](#gen) | 🟢 |
-| [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) | 534 | [3D](#3d), [Map & Route](#map) | 🟢 |
-| [world.execute(me) Lyric MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 529 | [Kinetic Type & Lyrics](#type), [Anime, MMD & VRM](#anime) | 🟢 |
-| [Beam](https://github.com/doodlewind/beam) | 528 | [Shaders & Psychedelic](#shader) | 🟢 |
-| [Whiteboard Teacher Video](https://github.com/liangdabiao/whiteboard-teacher-video) | 526 | [Hand-drawn & Whiteboard](#hand) | 🟢 |
-| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | 524 | [Shaders & Psychedelic](#shader), [Shorts, Captions & Editing](#short) | 🟡 |
-| [Mosaic](https://github.com/d3cod3/Mosaic) | 518 | [Live Coding & VJ](#live), [Generative Art](#gen) | 🟢 |
-| [Trail](https://github.com/amalChandran/trail-android) | 516 | [Map & Route](#map) | 🟢 |
-| [Learn wgpu (Chinese edition)](https://github.com/jinleili/learn-wgpu-zh) | 512 | [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
-| [ManimCat](https://github.com/Wing900/ManimCat) | 499 | [Math Explainer](#math) | 🟢 |
-| [modV](https://github.com/vcync/modV) | 498 | [Music Visualization](#audio), [Live Coding & VJ](#live) | 🟡 |
-| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | 489 | [Shaders & Psychedelic](#shader), [Liquid Glass](#liquid) | 🟢 |
-| [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 484 | [Shorts, Captions & Editing](#short), [Motion Graphics](#mg) | 🟢 |
-| [HyperFrames Motion Director](https://github.com/geekjourneyx/hyperframes-motion-director) | 482 | [Shorts, Captions & Editing](#short), [Kinetic Type & Lyrics](#type) | 🟢 |
-| [Retro Crisis Shaders](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 481 | [VHS & Analog](#vhs), [Pixel & Retro](#pixel), [Shaders & Psychedelic](#shader) | 🟢 |
-| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | 481 | [Anime, MMD & VRM](#anime), [3D](#3d) | 🟢 |
-| [Sandboxels](https://github.com/R74nCom/sandboxels) | 478 | [Falling Sand](#sand), [Pixel & Retro](#pixel) | 🟢 |
-| [animCJK](https://github.com/parsimonhi/animCJK) | 476 | [Handwriting & Strokes](#hanzi), [Kinetic Type & Lyrics](#type) | 🟢 |
-| [Opus Video Skills](https://github.com/tuzhechen2005/opus-video-skills) | 472 | [Motion Graphics](#mg), [Music Visualization](#audio) | 🟢 |
-| [Svader](https://github.com/sockmaster27/svader) | 464 | [Shaders & Psychedelic](#shader) | 🟢 |
-| [DrawBot](https://github.com/typemytype/drawbot) | 455 | [Kinetic Type & Lyrics](#type), [Generative Art](#gen) | 🟢 |
-| [Agentic Product Demo](https://github.com/Alexwtlf/agentic-product-demo) | 452 | [Shorts, Captions & Editing](#short) | 🟢 |
-| [Open Cubic Player](https://github.com/mywave82/opencubicplayer) | 451 | [Music Visualization](#audio), [Demoscene](#demoscene), [ASCII & Terminal](#ascii) | 🟢 |
-| [Product Launch Motion](https://github.com/AbubakrChan/product-launch-motion) | 438 | [Motion Graphics](#mg) | 🟢 |
-| [Shader Skills](https://github.com/gokayfem/shader-skills) | 427 | [Shaders & Psychedelic](#shader) | 🟢 |
-| [video-director](https://github.com/win4r/video-director) | 415 | [Motion Graphics](#mg) | 🟢 |
+| [Diorama](https://github.com/sloemo01/diorama) | 535 | [3D](#3d), [Pixel & Retro](#pixel), [Dither & 1-bit](#dither) | 🟢 |
+| [Glass SDK Liquid Glass](https://github.com/Glass-HQ/liquid-glass) | 531 | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader) | 🟢 |
+| [Beam](https://github.com/doodlewind/beam) | 529 | [Shaders & Psychedelic](#shader) | 🟢 |
+| [Universal Transition Shader](https://github.com/cashew-olddew/Universal-Transition-Shader) | 527 | [Shaders & Psychedelic](#shader), [Shorts, Captions & Editing](#short) | 🟡 |
+| [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 523 | [Shorts, Captions & Editing](#short), [Motion Graphics](#mg) | 🟢 |
+| [Mosaic](https://github.com/d3cod3/Mosaic) | 519 | [Live Coding & VJ](#live), [Generative Art](#gen) | 🟢 |
+| [Trail](https://github.com/amalChandran/trail-android) | 517 | [Map & Route](#map) | 🟢 |
+| [Remotion Bits](https://github.com/av/remotion-bits) | 517 | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type), [Particles & Physics](#particle) | 🟢 |
+| [manim-web](https://github.com/maloyan/manim-web) | 515 | [Math Explainer](#math), [Data Animation](#data) | 🟢 |
+| [Learn wgpu (Chinese edition)](https://github.com/jinleili/learn-wgpu-zh) | 513 | [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
+| [ManimCat](https://github.com/Wing900/ManimCat) | 502 | [Math Explainer](#math) | 🟢 |
+| [Opus Video Skills](https://github.com/tuzhechen2005/opus-video-skills) | 501 | [Motion Graphics](#mg), [Music Visualization](#audio) | 🟢 |
+| [modV](https://github.com/vcync/modV) | 499 | [Music Visualization](#audio), [Live Coding & VJ](#live) | 🟡 |
+| [ShaderKit](https://github.com/jamesrochabrun/ShaderKit) | 490 | [Shaders & Psychedelic](#shader), [Liquid Glass](#liquid) | 🟢 |
+| [Sandboxels](https://github.com/R74nCom/sandboxels) | 486 | [Falling Sand](#sand), [Pixel & Retro](#pixel) | 🟢 |
+| [HyperFrames Motion Director](https://github.com/geekjourneyx/hyperframes-motion-director) | 483 | [Shorts, Captions & Editing](#short), [Kinetic Type & Lyrics](#type) | 🟢 |
+| [Retro Crisis Shaders](https://github.com/RetroCrisis/Retro-Crisis-GDV-NTSC) | 482 | [VHS & Analog](#vhs), [Pixel & Retro](#pixel), [Shaders & Psychedelic](#shader) | 🟢 |
+| [godot-vrm](https://github.com/V-Sekai/godot-vrm) | 482 | [Anime, MMD & VRM](#anime), [3D](#3d) | 🟢 |
+| [animCJK](https://github.com/parsimonhi/animCJK) | 479 | [Handwriting & Strokes](#hanzi), [Kinetic Type & Lyrics](#type) | 🟢 |
+| [video-director](https://github.com/win4r/video-director) | 476 | [Motion Graphics](#mg) | 🟢 |
+| [NTSCRT](https://github.com/finnmckenty/NTSCRT) | 466 | [VHS & Analog](#vhs) | 🟢 |
+| [Svader](https://github.com/sockmaster27/svader) | 465 | [Shaders & Psychedelic](#shader) | 🟢 |
+| [Product Launch Motion](https://github.com/AbubakrChan/product-launch-motion) | 465 | [Motion Graphics](#mg) | 🟢 |
+| [liquid_glass_renderer](https://github.com/whynotmake-it/flutter_liquid_glass) | 461 | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader) | 🟢 |
+| [DrawBot](https://github.com/typemytype/drawbot) | 456 | [Kinetic Type & Lyrics](#type), [Generative Art](#gen) | 🟢 |
+| [Agentic Product Demo](https://github.com/Alexwtlf/agentic-product-demo) | 455 | [Shorts, Captions & Editing](#short) | 🟢 |
+| [Shader Skills](https://github.com/gokayfem/shader-skills) | 453 | [Shaders & Psychedelic](#shader) | 🟢 |
+| [Open Cubic Player](https://github.com/mywave82/opencubicplayer) | 452 | [Music Visualization](#audio), [Demoscene](#demoscene), [ASCII & Terminal](#ascii) | 🟢 |
+| [Code Video Showcase](https://github.com/Moessif/code-video-showcase) | 446 | [Motion Graphics](#mg), [3D](#3d) | 🟢 |
+| [ASCII Magic](https://github.com/kailashsr38/ascii-magic-art) | 441 | [ASCII & Terminal](#ascii) | 🟢 |
 | [manim-physics](https://github.com/Matheart/manim-physics) | 413 | [Math Explainer](#math), [Particles & Physics](#particle) | 🟢 |
-| [Shuimo UI](https://github.com/shuimo-design/shuimo-ui) | 399 | [Ink & Watercolor](#ink) | 🟢 |
+| [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) | 405 | [Motion Graphics](#mg), [3D](#3d) | 🟢 |
+| [Shuimo UI](https://github.com/shuimo-design/shuimo-ui) | 400 | [Ink & Watercolor](#ink) | 🟢 |
+| [react-native-effects](https://github.com/blazejkustra/react-native-effects) | 391 | [Shaders & Psychedelic](#shader) | 🟢 |
 | [algovivo](https://github.com/juniorrojas/algovivo) | 389 | [Artificial Life & Growth](#alife) | 🟢 |
-| [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) | 386 | [Motion Graphics](#mg), [3D](#3d) | 🟢 |
-| [Code Video Showcase](https://github.com/Moessif/code-video-showcase) | 385 | [Motion Graphics](#mg), [3D](#3d) | 🟢 |
-| [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | 384 | [Ink & Watercolor](#ink), [Shaders & Psychedelic](#shader) | 🟡 |
-| [shipvideo](https://github.com/diggerhq/shipvideo) | 381 | [Motion Graphics](#mg) | 🟢 |
-| [p5.riso](https://github.com/antiboredom/p5.riso) | 375 | [Riso & Paper Collage](#riso), [Generative Art](#gen) | 🟢 |
-| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | 366 | [Shaders & Psychedelic](#shader), [Generative Art](#gen) | 🟢 |
+| [AquaInkGL](https://github.com/WishMelz/AquaInkGL) | 386 | [Ink & Watercolor](#ink), [Shaders & Psychedelic](#shader) | 🟡 |
+| [shipvideo](https://github.com/diggerhq/shipvideo) | 384 | [Motion Graphics](#mg) | 🟢 |
+| [p5.riso](https://github.com/antiboredom/p5.riso) | 376 | [Riso & Paper Collage](#riso), [Generative Art](#gen) | 🟢 |
+| [LUMEN](https://github.com/Leonxlnx/lumenshaders) | 367 | [Shaders & Psychedelic](#shader), [Generative Art](#gen) | 🟢 |
 | [RayTK](https://github.com/t3kt/raytk) | 359 | [Shaders & Psychedelic](#shader), [Live Coding & VJ](#live), [3D](#3d) | 🟡 |
 | [Godot VFX Library](https://github.com/haowg/GODOT-VFX-LIBRARY) | 358 | [Particles & Physics](#particle), [Shaders & Psychedelic](#shader) | 🟡 |
-| [MathLens](https://github.com/shuyicc/MathLens) | 348 | [Math Explainer](#math) | 🟡 |
-| [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) | 348 | [Shaders & Psychedelic](#shader), [Glitch & Post FX](#glitch) | 🟢 |
-| [ShaderMania](https://github.com/markusmoenig/ShaderMania) | 347 | [Shaders & Psychedelic](#shader) | 🟢 |
-| [motion2code](https://github.com/lovisdotio/motion2code) | 344 | [Motion Graphics](#mg) | 🟢 |
-| [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 343 | [Pixel & Retro](#pixel), [3D](#3d), [Shaders & Psychedelic](#shader) | 🟢 |
-| [Coldtype](https://github.com/coldtype/coldtype) | 341 | [Kinetic Type & Lyrics](#type), [Generative Art](#gen) | 🟢 |
-| [ORIPA](https://github.com/oripa/oripa) | 335 | [Origami & Papercraft](#origami) | 🟢 |
+| [iso-figure](https://github.com/MrBongoC/ai-iso-skill) | 357 | [Isometric & Voxel](#iso), [Motion Graphics](#mg) | 🟢 |
+| [motion2code](https://github.com/lovisdotio/motion2code) | 354 | [Motion Graphics](#mg) | 🟢 |
+| [lemo-wake](https://github.com/lemomo-ai/lemo-wake) | 354 | [Motion Graphics](#mg), [Shorts, Captions & Editing](#short) | 🟢 |
+| [What If Animation](https://github.com/kelano86/what-if-animation) | 351 | [Motion Graphics](#mg) | 🟢 |
+| [MathLens](https://github.com/shuyicc/MathLens) | 350 | [Math Explainer](#math) | 🟡 |
+| [SwiftUI Shaders](https://github.com/krispuckett/SwiftUIShaders) | 350 | [Shaders & Psychedelic](#shader), [Glitch & Post FX](#glitch) | 🟢 |
+| [fy-code-animation](https://github.com/Akillll-DuoHe/fy-code-animation) | 350 | [Motion Graphics](#mg) | 🟢 |
+| [ShaderMania](https://github.com/markusmoenig/ShaderMania) | 348 | [Shaders & Psychedelic](#shader) | 🟢 |
+| [Ultimate Retro Shaders](https://github.com/Zorochase/ultimate-retro-shader-collection) | 345 | [Pixel & Retro](#pixel), [3D](#3d), [Shaders & Psychedelic](#shader) | 🟢 |
+| [Coldtype](https://github.com/coldtype/coldtype) | 342 | [Kinetic Type & Lyrics](#type), [Generative Art](#gen) | 🟢 |
+| [ORIPA](https://github.com/oripa/oripa) | 334 | [Origami & Papercraft](#origami) | 🟢 |
+| [Plasma UI](https://github.com/CruxGarden/plasma-ui) | 333 | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader) | 🟢 |
+| [Infinite](https://github.com/n1m21n/Infinite) | 331 | [Live Coding & VJ](#live), [Music Visualization](#audio), [3D](#3d) | 🟢 |
 | [manim-voiceover](https://github.com/ManimCommunity/manim-voiceover) | 327 | [Math Explainer](#math) | 🟢 |
+| [Poseidon](https://github.com/owenyuwono/poseidon) | 323 | [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
+| [Riso Window Seat](https://github.com/sevenevesai/riso-windowseat) | 320 | [Riso & Paper Collage](#riso) | 🟢 |
+| [Singularity](https://github.com/MisterPrada/singularity) | 319 | [Space & Stars](#space), [Shaders & Psychedelic](#shader) | 🟡 |
 | [termsand](https://github.com/cgsdev0/termsand) | 318 | [Falling Sand](#sand), [ASCII & Terminal](#ascii) | 🟢 |
-| [Poseidon](https://github.com/owenyuwono/poseidon) | 318 | [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
-| [Singularity](https://github.com/MisterPrada/singularity) | 317 | [Space & Stars](#space), [Shaders & Psychedelic](#shader) | 🟡 |
-| [ShaderToy Browser Extension](https://github.com/patuwwy/ShaderToy-Chrome-Plugin) | 313 | [Shaders & Psychedelic](#shader) | 🟢 |
-| [flow-fields](https://github.com/romellogoodman/flow-fields) | 311 | [Flow & Wind Fields](#flow), [Generative Art](#gen) | 🟢 |
-| [Riso Window Seat](https://github.com/sevenevesai/riso-windowseat) | 311 | [Riso & Paper Collage](#riso) | 🟢 |
-| [AGSL Shader Playground](https://github.com/mejdi14/Android-AGSL-Shader-Playground) | 308 | [Shaders & Psychedelic](#shader) | 🟢 |
+| [ShaderToy Browser Extension](https://github.com/patuwwy/ShaderToy-Chrome-Plugin) | 314 | [Shaders & Psychedelic](#shader) | 🟢 |
+| [flow-fields](https://github.com/romellogoodman/flow-fields) | 312 | [Flow & Wind Fields](#flow), [Generative Art](#gen) | 🟢 |
+| [AGSL Shader Playground](https://github.com/mejdi14/Android-AGSL-Shader-Playground) | 310 | [Shaders & Psychedelic](#shader) | 🟢 |
+| [Remotion TikTok Template](https://github.com/remotion-dev/template-tiktok) | 308 | [Shorts, Captions & Editing](#short), [Kinetic Type & Lyrics](#type) | 🟢 |
 | [OriSim3D](https://github.com/RemiKoutcherawy/OriSim3D-Android) | 304 | [Origami & Papercraft](#origami), [3D](#3d) | 🟢 |
-| [Remotion TikTok Template](https://github.com/remotion-dev/template-tiktok) | 304 | [Shorts, Captions & Editing](#short), [Kinetic Type & Lyrics](#type) | 🟢 |
-| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 303 | [Shaders & Psychedelic](#shader), [Particles & Physics](#particle), [3D](#3d) | 🟢 |
-| [cbirds](https://github.com/clainstone/cbirds) | 295 | [ASCII & Terminal](#ascii), [Particles & Physics](#particle) | 🟢 |
+| [Natural Disasters](https://github.com/Token-Gremlin/natural-disasters) | 304 | [Shaders & Psychedelic](#shader), [Particles & Physics](#particle), [3D](#3d) | 🟢 |
+| [cbirds](https://github.com/clainstone/cbirds) | 304 | [ASCII & Terminal](#ascii), [Particles & Physics](#particle) | 🟢 |
+| [FredTalk](https://github.com/njrhts2kvv-star/FredTalk) | 298 | [Shorts, Captions & Editing](#short), [Kinetic Type & Lyrics](#type) | 🟢 |
 | [Dithering Shader](https://github.com/niccolofanton/dithering-shader) | 294 | [Dither & 1-bit](#dither), [3D](#3d), [Shaders & Psychedelic](#shader) | 🟢 |
-| [Papercraft](https://github.com/rodrigorc/papercraft) | 289 | [Origami & Papercraft](#origami), [3D](#3d) | 🟢 |
-| [fy-code-animation](https://github.com/Akillll-DuoHe/fy-code-animation) | 288 | [Motion Graphics](#mg) | 🟢 |
-| [What If Animation](https://github.com/kelano86/what-if-animation) | 280 | [Motion Graphics](#mg) | 🟢 |
-| [Remotion Audiogram Template](https://github.com/remotion-dev/template-audiogram) | 277 | [Music Visualization](#audio), [Shorts, Captions & Editing](#short) | 🟢 |
-| [TSL Textures](https://github.com/boytchev/tsl-textures) | 272 | [Shaders & Psychedelic](#shader), [Procedural Generation](#procgen) | 🟢 |
-| [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 262 | [Anime, MMD & VRM](#anime), [3D](#3d) | 🟢 |
+| [Papercraft](https://github.com/rodrigorc/papercraft) | 290 | [Origami & Papercraft](#origami), [3D](#3d) | 🟢 |
+| [svg-text-animate](https://github.com/oubenruing/svg-text-animate) | 280 | [Kinetic Type & Lyrics](#type), [Hand-drawn & Whiteboard](#hand) | 🟢 |
+| [Remotion Audiogram Template](https://github.com/remotion-dev/template-audiogram) | 279 | [Music Visualization](#audio), [Shorts, Captions & Editing](#short) | 🟢 |
+| [TSL Textures](https://github.com/boytchev/tsl-textures) | 275 | [Shaders & Psychedelic](#shader), [Procedural Generation](#procgen) | 🟢 |
+| [html-anime](https://github.com/blixvip/html-anime) | 269 | [Anime, MMD & VRM](#anime), [Motion Graphics](#mg) | 🟢 |
+| [babylon-mmd](https://github.com/noname0310/babylon-mmd) | 265 | [Anime, MMD & VRM](#anime), [3D](#3d) | 🟢 |
 | [hitherdither](https://github.com/hbldh/hitherdither) | 260 | [Dither & 1-bit](#dither), [Pixel & Retro](#pixel) | 🟢 |
-| [FredTalk](https://github.com/njrhts2kvv-star/FredTalk) | 256 | [Shorts, Captions & Editing](#short), [Kinetic Type & Lyrics](#type) | 🟢 |
+| [weilanx Claude Videos](https://github.com/Azure12355/weilanx-claude-videos) | 260 | [Hand-drawn & Whiteboard](#hand), [Pixel & Retro](#pixel) | 🟢 |
+| [Dither Guy](https://github.com/manoelpiovesan/dither-guy) | 253 | [Dither & 1-bit](#dither), [Pixel & Retro](#pixel) | 🟢 |
 | [Radiance](https://github.com/zbanks/radiance) | 249 | [Live Coding & VJ](#live), [Shaders & Psychedelic](#shader), [Music Visualization](#audio) | 🟡 |
 | [Krbn](https://github.com/vpalos/Krbn) | 249 | [Plotter & Line Art](#plotter), [3D](#3d) | 🟢 |
-| [weilanx Claude Videos](https://github.com/Azure12355/weilanx-claude-videos) | 249 | [Hand-drawn & Whiteboard](#hand), [Pixel & Retro](#pixel) | 🟢 |
-| [html-anime](https://github.com/blixvip/html-anime) | 246 | [Anime, MMD & VRM](#anime), [Motion Graphics](#mg) | 🟢 |
-| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | 236 | [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
+| [Claude Drawing Skill](https://github.com/cloveric/claude-drawing-skill) | 247 | [Ink & Watercolor](#ink), [Hand-drawn & Whiteboard](#hand) | 🟢 |
+| [isometric](https://github.com/elchininet/isometric) | 245 | [Isometric & Voxel](#iso) | 🟢 |
+| [three-good-godrays](https://github.com/Ameobea/three-good-godrays) | 238 | [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
+| [Claude MV Skill](https://github.com/Joker-chichi/claude-mv-skill) | 230 | [Hand-drawn & Whiteboard](#hand), [Kinetic Type & Lyrics](#type) | 🟢 |
 | [Space Colonization Experiments](https://github.com/jasonwebb/2d-space-colonization-experiments) | 228 | [Artificial Life & Growth](#alife), [Generative Art](#gen) | 🟡 |
-| [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) | 218 | [Plotter & Line Art](#plotter) | 🟢 |
-| [Claude MV Skill](https://github.com/Joker-chichi/claude-mv-skill) | 203 | [Hand-drawn & Whiteboard](#hand), [Kinetic Type & Lyrics](#type) | 🟢 |
+| [Papercut Explainer](https://github.com/0xS4N4TG/papercut-explainer) | 225 | [Riso & Paper Collage](#riso), [Shorts, Captions & Editing](#short) | 🟢 |
+| [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) | 219 | [Plotter & Line Art](#plotter) | 🟢 |
+| [Patchies](https://github.com/heypoom/patchies) | 214 | [Live Coding & VJ](#live), [Generative Art](#gen) | 🟢 |
+| [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 207 | [Data Animation](#data), [Motion Graphics](#mg) | 🟢 |
+| [manim-skill](https://github.com/Yusuke710/manim-skill) | 204 | [Math Explainer](#math) | 🟢 |
+| [RuiC Motion Reel](https://github.com/HRuiCcc/RuiC-motion-reel) | 200 | [Motion Graphics](#mg) | 🟢 |
 | [Papercraft World](https://github.com/andrewwoan/aimee-xus-papercraft-world) | 199 | [Origami & Papercraft](#origami), [3D](#3d) | 🟢 |
-| [manim-skill](https://github.com/Yusuke710/manim-skill) | 197 | [Math Explainer](#math) | 🟢 |
+| [Dashi Style Explainers](https://github.com/chuspeeism/dashi-animationstyle) | 198 | [Hand-drawn & Whiteboard](#hand) | 🟢 |
 | [retrace.gl](https://github.com/stasilo/retrace.gl) | 196 | [Path Tracing](#raytrace), [Shaders & Psychedelic](#shader), [3D](#3d) | 🟢 |
-| [RuiC Motion Reel](https://github.com/HRuiCcc/RuiC-motion-reel) | 193 | [Motion Graphics](#mg) | 🟢 |
+| [Vibe Knowledge Shorts](https://github.com/xiazhuo123456789/vibe-knowledge-video) | 192 | [Kinetic Type & Lyrics](#type), [Motion Graphics](#mg) | 🟢 |
 | [WebGL CRT Shader](https://github.com/gingerbeardman/webgl-crt-shader) | 188 | [VHS & Analog](#vhs), [Shaders & Psychedelic](#shader) | 🟡 |
-| [NTSCRT](https://github.com/finnmckenty/NTSCRT) | 187 | [VHS & Analog](#vhs) | 🟢 |
-| [liquid-glass-android](https://github.com/Mortd3kay/liquid-glass-android) | 187 | [Liquid Glass](#liquid) | 🟡 |
-| [Dashi Style Explainers](https://github.com/chuspeeism/dashi-animationstyle) | 185 | [Hand-drawn & Whiteboard](#hand) | 🟢 |
-| [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 180 | [Data Animation](#data), [Motion Graphics](#mg) | 🟢 |
-| [Vibe Knowledge Shorts](https://github.com/xiazhuo123456789/vibe-knowledge-video) | 179 | [Kinetic Type & Lyrics](#type), [Motion Graphics](#mg) | 🟢 |
-| [mutracer](https://github.com/pissang/mutracer) | 178 | [Path Tracing](#raytrace), [3D](#3d) | 🟢 |
-| [Papercut Explainer](https://github.com/0xS4N4TG/papercut-explainer) | 171 | [Riso & Paper Collage](#riso), [Shorts, Captions & Editing](#short) | 🟢 |
+| [Codixel](https://github.com/mankidev/codixel) | 188 | [Pixel & Retro](#pixel) | 🟢 |
+| [mutracer](https://github.com/pissang/mutracer) | 187 | [Path Tracing](#raytrace), [3D](#3d) | 🟢 |
+| [liquid-glass-android](https://github.com/Mortd3kay/liquid-glass-android) | 186 | [Liquid Glass](#liquid) | 🟡 |
+| [HyperFrames Motion Reel](https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill) | 186 | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type) | 🟢 |
+| [BB-Video](https://github.com/BubbleBrainBB/BB-Video) | 182 | [Motion Graphics](#mg), [3D](#3d) | 🟢 |
+| [genart](https://github.com/camilleroux/genart-skill) | 166 | [Generative Art](#gen), [Plotter & Line Art](#plotter) | 🟢 |
+| [Fractal Garden](https://github.com/trebeljahr/fractal-garden) | 164 | [Fractals & Chaos](#fractal), [Math Explainer](#math) | 🟢 |
 | [I, Voyager Planetarium](https://github.com/ivoyager/planetarium) | 162 | [Space & Stars](#space), [3D](#3d) | 🟢 |
-| [BB-Video](https://github.com/BubbleBrainBB/BB-Video) | 158 | [Motion Graphics](#mg), [3D](#3d) | 🟢 |
-| [Claude Drawing Skill](https://github.com/cloveric/claude-drawing-skill) | 154 | [Ink & Watercolor](#ink), [Hand-drawn & Whiteboard](#hand) | 🟢 |
+| [Galaxy Simulation](https://github.com/N0rvel/galaxy_sim) | 161 | [Space & Stars](#space), [Particles & Physics](#particle) | 🟢 |
+| [persian-motion-director](https://github.com/atmirrr/persian-motion-director) | 152 | [Kinetic Type & Lyrics](#type), [Motion Graphics](#mg) | 🟢 |
 | [Sand Slide](https://github.com/kiwijuice56/sand-slide) | 143 | [Falling Sand](#sand), [Pixel & Retro](#pixel) | 🟢 |
-| [NTSCplayer](https://github.com/ferropop/NTSCplayer) | 141 | [VHS & Analog](#vhs) | 🟢 |
-| [Oriedita](https://github.com/oriedita/oriedita) | 135 | [Origami & Papercraft](#origami) | 🟢 |
-| [kami](https://github.com/maxwase/kami) | 134 | [Origami & Papercraft](#origami) | 🟢 |
-| [map-motion](https://github.com/SpaceZephyr/map-motion) | 115 | [Map & Route](#map) | 🟢 |
-| [Black Hole](https://github.com/ibra-kdbra/black-hole) | 112 | [Space & Stars](#space), [Shaders & Psychedelic](#shader) | 🟢 |
-| [Watercolor Playground](https://github.com/msurguy/watercolor-playground) | 103 | [Ink & Watercolor](#ink), [Hand-drawn & Whiteboard](#hand) | 🟢 |
+| [NTSCplayer](https://github.com/ferropop/NTSCplayer) | 142 | [VHS & Analog](#vhs) | 🟢 |
+| [Oriedita](https://github.com/oriedita/oriedita) | 136 | [Origami & Papercraft](#origami) | 🟢 |
+| [kami](https://github.com/maxwase/kami) | 135 | [Origami & Papercraft](#origami) | 🟢 |
+| [map-motion](https://github.com/SpaceZephyr/map-motion) | 124 | [Map & Route](#map) | 🟢 |
+| [Black Hole](https://github.com/ibra-kdbra/black-hole) | 113 | [Space & Stars](#space), [Shaders & Psychedelic](#shader) | 🟢 |
+| [Stroke Order Animator](https://github.com/chill-chinese/stroke-order-animator) | 112 | [Handwriting & Strokes](#hanzi) | 🟡 |
+| [Watercolor Playground](https://github.com/msurguy/watercolor-playground) | 106 | [Ink & Watercolor](#ink), [Hand-drawn & Whiteboard](#hand) | 🟢 |
 | [L-System Explorer](https://github.com/anvaka/lsystem) | 100 | [Artificial Life & Growth](#alife), [Generative Art](#gen) | 🟢 |
 | [triangler](https://github.com/tdh8316/triangler) | 99 | [Geometric & Low-poly](#geo) | 🟢 |
 | [VhsFx](https://github.com/NullTale/VhsFx) | 89 | [VHS & Analog](#vhs), [Glitch & Post FX](#glitch) | 🟡 |
 | [ditherwave](https://github.com/sahilsaini5/ditherwave) | 89 | [Dither & 1-bit](#dither), [Shaders & Psychedelic](#shader) | 🟡 |
 | [Strange Attractor Renderer](https://github.com/Icelk/strange-attractor-renderer) | 89 | [Fractals & Chaos](#fractal) | 🟡 |
 | [lowpoly](https://github.com/tasercake/lowpoly) | 87 | [Geometric & Low-poly](#geo) | 🟡 |
-| [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 81 | [Flow & Wind Fields](#flow), [3D](#3d), [Particles & Physics](#particle) | 🟢 |
+| [Cyber Ocean](https://github.com/SahilK-027/Cyber-Ocean) | 82 | [Flow & Wind Fields](#flow), [3D](#3d), [Particles & Physics](#particle) | 🟢 |
+| [DeepSeek Opus Motion](https://github.com/8533502-dev/deepseek-opus-motion-skill) | 81 | [Motion Graphics](#mg) | 🟢 |
+| [sy-style-100](https://github.com/xiaoxiong20xx-code/sy-style-100) | 79 | [Motion Graphics](#mg) | 🟢 |
 | [FallingSandEngine](https://github.com/PieKing1215/FallingSandEngine) | 76 | [Falling Sand](#sand), [Pixel & Retro](#pixel) | 🟡 |
 | [Galaxy Shader](https://github.com/AmitDigga/threejs-galaxy-shader) | 73 | [Space & Stars](#space), [Shaders & Psychedelic](#shader), [Particles & Physics](#particle) | 🟡 |
-| [sy-style-100](https://github.com/xiaoxiong20xx-code/sy-style-100) | 71 | [Motion Graphics](#mg) | 🟢 |
-| [Delaunay Stippler](https://github.com/NHasan143/delaunay-stippler) | 70 | [Geometric & Low-poly](#geo), [Plotter & Line Art](#plotter) | 🟢 |
+| [Delaunay Stippler](https://github.com/NHasan143/delaunay-stippler) | 68 | [Geometric & Low-poly](#geo), [Plotter & Line Art](#plotter) | 🟢 |
 | [wet-paint-flow](https://github.com/simonxxooxxoo/wet-paint-flow) | 67 | [Flow & Wind Fields](#flow), [Hand-drawn & Whiteboard](#hand) | 🟢 |
-| [DeepSeek Opus Motion](https://github.com/8533502-dev/deepseek-opus-motion-skill) | 65 | [Motion Graphics](#mg) | 🟢 |
-| [code-poem-film](https://github.com/bangbuilds/code-poem-film) | 64 | [Ink & Watercolor](#ink) | 🟢 |
-| [Knowledge Explainer](https://github.com/znyupup/knowledge-explainer-skill) | 62 | [Motion Graphics](#mg) | 🟡 |
-| [Creator Style Kit](https://github.com/threeaus/creator-style-kit) | 56 | [Shorts, Captions & Editing](#short) | 🟢 |
-| [gbro Collage Info Animation](https://github.com/pyang5166/gbro-collage-info) | 55 | [Riso & Paper Collage](#riso), [Dither & 1-bit](#dither) | 🟢 |
+| [Knowledge Explainer](https://github.com/znyupup/knowledge-explainer-skill) | 67 | [Motion Graphics](#mg) | 🟡 |
+| [code-poem-film](https://github.com/bangbuilds/code-poem-film) | 65 | [Ink & Watercolor](#ink) | 🟢 |
+| [Creator Style Kit](https://github.com/threeaus/creator-style-kit) | 57 | [Shorts, Captions & Editing](#short) | 🟢 |
+| [gbro Collage Info Animation](https://github.com/pyang5166/gbro-collage-info) | 57 | [Riso & Paper Collage](#riso), [Dither & 1-bit](#dither) | 🟢 |
+| [Oscillody](https://github.com/Akosmo/Oscillody) | 56 | [Oscilloscope & Vector](#scope), [Music Visualization](#audio) | 🟢 |
 | [neon](https://github.com/Stanko/neon) | 44 | [Flow & Wind Fields](#flow), [Generative Art](#gen) | 🟡 |
-| [Hopalong Attractor](https://github.com/ratwolfzero/hopalong_python) | 40 | [Fractals & Chaos](#fractal) | 🟢 |
-| [Chinese-Style Paper Animation](https://github.com/AllenAI2014/remotion-guofeng-starter) | 34 | [Ink & Watercolor](#ink), [Riso & Paper Collage](#riso) | 🟢 |
+| [Hopalong Attractor](https://github.com/ratwolfzero/hopalong_python) | 41 | [Fractals & Chaos](#fractal) | 🟢 |
+| [Chinese-Style Paper Animation](https://github.com/AllenAI2014/remotion-guofeng-starter) | 36 | [Ink & Watercolor](#ink), [Riso & Paper Collage](#riso) | 🟢 |
 | [VHSEffect](https://github.com/zulubo/VHSEffect) | 33 | [VHS & Analog](#vhs) | 🟡 |
 | [proof-engine](https://github.com/Mattbusel/proof-engine) | 32 | [Fractals & Chaos](#fractal), [ASCII & Terminal](#ascii) | 🟢 |
 | [VSand](https://github.com/Ealrann/VSand) | 31 | [Falling Sand](#sand) | 🟢 |

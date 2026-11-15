@@ -36,6 +36,7 @@ picks = load("picks.json")
 meta = load("meta.json")
 rel_data = load("relations.json")
 showcase = load("showcase.json")["items"] if (DATA / "showcase.json").exists() else []
+featured_raw = load("featured.json")["styles"] if (DATA / "featured.json").exists() else {}
 UPDATED = meta["updated"]
 SNAP = datetime.date.fromisoformat(UPDATED)
 SMAP = {s["key"]: s for s in styles}
@@ -58,6 +59,29 @@ for r in rel_data["relations"]:
 if dropped and "--quiet" not in sys.argv:
     for r in dropped:
         print(f"跳过关系 {r['from']} → {r['to']}：项目不在列表里或类型未定义", file=sys.stderr)
+
+
+def resolve_featured():
+    """每种画风的精品：先用 data/featured.json 的名单，不在收录里或没有这个画风标签的跳过；没写或不足 3 个的，用星数最高的活跃项目补齐。"""
+    out, bad = {}, []
+    for st in styles:
+        key = st["key"]
+        picked = []
+        for repo in featured_raw.get(key, []):
+            p = BYREPO.get(repo)
+            if not p or key not in p["tags"]:
+                bad.append(f"{key}: {repo}")
+                continue
+            if repo not in picked:
+                picked.append(repo)
+        if len(picked) < 3:
+            pool = sorted((p for p in projects if key in p["tags"] and not p.get("archived") and p["repo"] not in picked),
+                          key=lambda p: (status(p)[2] != "active", -p["stars"]))
+            picked += [p["repo"] for p in pool[:4 - len(picked)]]
+        out[key] = picked[:5]
+    return out, bad
+
+
 untranslated = [p["repo"] for p in projects if not p.get("desc_en")]
 if untranslated and "--quiet" not in sys.argv:
     print(f"这些项目还没有英文说明（desc_en），英文版先用 GitHub 简介：{'、'.join(untranslated)}", file=sys.stderr)
@@ -80,6 +104,11 @@ def status(p):
     if days <= 730:
         return "🟡", "放缓", "slowing"
     return "⚪", "停更", "dormant"
+
+
+FEATURED, featured_bad = resolve_featured()
+if featured_bad and "--quiet" not in sys.argv:
+    print("data/featured.json 里这些项目没收录或缺少对应画风标签，已跳过：" + "、".join(featured_bad), file=sys.stderr)
 
 
 def cell(text):
@@ -198,11 +227,16 @@ def style_section(s, en=False):
         f"### {style_title(s)}", "",
         f'<img src="assets/styles/{s["key"]}.png" alt="{s["name"]}样图" width="240" align="right">', "",
         f"> {s['look']}", "",
+        f"**精选：**{featured_line(s['key'])}", "",
         f"共 {n} 个项目，按星数排序。", "",
         '<br clear="right">', "",
         style_table(s["key"]), "",
         "<sub>[↑ 回到画风索引](#index)</sub>", "",
     ]
+
+
+def featured_line(key, en=False):
+    return " · ".join(link(BYREPO[r], en) for r in FEATURED[key])
 
 
 def counts():
@@ -296,7 +330,7 @@ def readme():
             badge("活跃项目", active, "1E8A4B"),
             badge("数据更新", UPDATED, "5B6273"),
         ]), "",
-        f"**[🌐 网页版]({page_url()})**<sub>（按画风筛选、搜索、排序，可切换中英文）</sub> · **[🕸️ 关系图谱]({page_url('graph-sec')})**<sub>（可拖动缩放、看演化树）</sub> · **[🎨 画风索引](#index)**", "",
+        f"**[🌌 3D 画风入口]({page_url()})**<sub>（转动画风转盘，点进去看每种画风的精品）</sub> · **[🌐 网页版]({page_url('table-sec')})**<sub>（按画风筛选、搜索、排序）</sub> · **[🕸️ 关系图谱]({page_url('graph-sec')})** · **[🎨 画风索引](#index)**", "",
         " · ".join([
             "[画风索引](#index)", "[小众画风区](#niche)", "[关系图谱](#relations)",
             "[收录标准](#rules)", "[全部项目](#all)",
@@ -404,6 +438,7 @@ def en_style_section(s):
         f"### {s['en']}", "",
         f'<img src="{swatch(s["key"], True)}" alt="{s["en"]} sample" width="240" align="right">', "",
         f"> {s.get('look_en') or s['look']}", "",
+        f"**Picks:** {featured_line(s['key'], True)}", "",
         f"{len(in_style(s['key']))} projects, sorted by stars.", "",
         '<br clear="right">', "",
         en_style_table(s["key"]), "",
@@ -457,7 +492,7 @@ def readme_en():
             badge("active", active, "1E8A4B"),
             badge("updated", UPDATED, "5B6273"),
         ]), "",
-        f"**[🌐 Web version]({page_url(en=True)})**<sub> (filter by style, search, sort, switch languages)</sub> · **[🕸️ Relationship graph]({page_url('graph-sec', True)})**<sub> (drag, zoom, family trees)</sub> · **[🎨 Style index](#index)**", "",
+        f"**[🌌 3D style gateway]({page_url(en=True)})**<sub> (spin the style carousel, open a gallery of picks for each style)</sub> · **[🌐 Web version]({page_url('table-sec', True)})**<sub> (filter by style, search, sort)</sub> · **[🕸️ Relationship graph]({page_url('graph-sec', True)})** · **[🎨 Style index](#index)**", "",
         " · ".join([
             "[Style index](#index)", "[Niche styles](#niche)", "[Relationships](#relations)",
             "[Rules](#rules)", "[All projects](#all)",
@@ -583,8 +618,11 @@ def page(standalone=True):
                .replace("__RELATIONS__", dump(relations))
                .replace("__RELTYPES__", dump(rel_data["types"]))
                .replace("__SHOWCASE__", dump(page_showcase(standalone)))
+               .replace("__FEATURED__", dump(FEATURED))
                .replace("__DATE__", UPDATED)
                .replace("__REPO_URL__", REPO_URL))
+    # 3D 入口的脚本单独放在 site/gateway.js，生成时原样嵌进页面（最后替换，避免它被上面的占位符误伤）
+    body = body.replace("/*__GATEWAY__*/", (ROOT / "site" / "gateway.js").read_text(encoding="utf-8"))
     if not standalone:
         return body
     head, sep, rest = body.partition("<style>")

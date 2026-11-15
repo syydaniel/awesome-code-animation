@@ -66,6 +66,12 @@
 
 看过但决定不收的项目，写进 [`data/excluded.json`](data/excluded.json) 并注明原因，自动发现就不会再推荐它。
 
+## 每种画风的精品
+
+网页版首屏的 3D 画风入口里，每种画风都有一个「展厅」，陈列这种画风的精品项目；README 每个画风开头的「精选」也用同一份名单。名单在 [`data/featured.json`](data/featured.json)：每种画风写 3 到 5 个，第一个放最推荐的。项目必须已经收录，并且带这个画风的标签，否则构建时会跳过并提示。没写的画风会自动挑星数最高的活跃项目补上。
+
+3D 入口的代码在 [`site/gateway.js`](site/gateway.js)，构建时原样嵌进网页。
+
 ## 新增画风
 
 在 `data/styles.json` 里加一条（小众画风加上 `"zone": "niche"`），并在 [`site/template.html`](site/template.html) 的 `SW` 对象里给它写一个小样图的绘制函数（240×96 的画布坐标）。之后运行：

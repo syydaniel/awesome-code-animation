@@ -1669,6 +1669,167 @@
       "to": "ianthehenry/bauble",
       "note": "都围绕 SDF 光线步进",
       "note_en": "Both revolve around SDF ray marching"
+    },
+    {
+      "from": "mromidev/claude-animated-shorts",
+      "type": "uses",
+      "to": "remotion-dev/remotion",
+      "note": "用 Remotion 合成和导出，画面由 @remotion/three 渲染",
+      "note_en": "Composes and exports with Remotion; the picture is rendered through @remotion/three"
+    },
+    {
+      "from": "HarleyCoops/Math-To-Manim",
+      "type": "uses",
+      "to": "ManimCommunity/manim",
+      "note": "智能体写的是 Manim CE 代码",
+      "note_en": "The agents write Manim CE code"
+    },
+    {
+      "from": "academa-labs/manimgx",
+      "type": "alt",
+      "to": "ManimCommunity/manim",
+      "note": "沿用 Manim CE 的 API，底层换成 Rust 和 wgpu",
+      "note_en": "Keeps the Manim CE API on a Rust and wgpu core"
+    },
+    {
+      "from": "maloyan/manim-web",
+      "type": "alt",
+      "to": "3b1b/manim",
+      "note": "Manim 的 TypeScript 移植，不用装 Python",
+      "note_en": "A TypeScript port of Manim that needs no Python"
+    },
+    {
+      "from": "shadcn-labs/snapcn",
+      "type": "plugin",
+      "to": "remotion-dev/remotion",
+      "note": "Remotion 组件，用 shadcn 命令安装",
+      "note_en": "Remotion components installed with the shadcn CLI"
+    },
+    {
+      "from": "av/remotion-bits",
+      "type": "plugin",
+      "to": "remotion-dev/remotion",
+      "note": "第三方 Remotion 动画组件库",
+      "note_en": "Third-party animation components for Remotion"
+    },
+    {
+      "from": "Sunwood-ai-labs/hyperframes-motion-reel-skill",
+      "type": "built_on",
+      "to": "heygen-com/hyperframes",
+      "note": "调用 HyperFrames 官方技能写合成并渲染",
+      "note_en": "Uses the official HyperFrames skills to write and render compositions"
+    },
+    {
+      "from": "Glass-HQ/liquid-glass",
+      "type": "built_on",
+      "to": "vercel-labs/vgpu",
+      "note": "用 vgpu 写 WebGPU 渲染",
+      "note_en": "Built with vgpu for WebGPU rendering"
+    },
+    {
+      "from": "sdegenaar/liquid_glass_widgets",
+      "type": "built_on",
+      "to": "whynotmake-it/flutter_liquid_glass",
+      "note": "着色器管线改编自 liquid_glass_renderer",
+      "note_en": "Its shader pipeline is adapted from liquid_glass_renderer"
+    },
+    {
+      "from": "yihui-dev/awesome-opus5-5-videos",
+      "type": "alt",
+      "to": "XiaoyeCodes/code-animation-prompts",
+      "note": "同样收集代码出片的提示词",
+      "note_en": "Also collects prompts for code-rendered videos"
+    },
+    {
+      "from": "joeseesun/opus-video-prompts",
+      "type": "alt",
+      "to": "yihui-dev/awesome-opus5-5-videos",
+      "note": "中文整理、数量更少，附写法经验",
+      "note_en": "A smaller Chinese collection with writing tips"
+    },
+    {
+      "from": "lemomo-ai/lemo-wake",
+      "type": "author",
+      "to": "lemomo-ai/lemo-opuscar",
+      "note": "同一作者，都是让 Claude 用代码出片",
+      "note_en": "Same author; both have Claude make films in code"
+    },
+    {
+      "from": "chill-chinese/stroke-order-animator",
+      "type": "built_on",
+      "to": "skishore/makemeahanzi",
+      "note": "笔画数据来自 Make Me a Hanzi",
+      "note_en": "Stroke data comes from Make Me a Hanzi"
+    },
+    {
+      "from": "Fabric-Project/Fabric",
+      "type": "uses",
+      "to": "patriciogonzalezvivo/lygia",
+      "note": "内置 Lygia 着色器库的 Metal 移植",
+      "note_en": "Includes a Metal port of the Lygia shader library"
+    },
+    {
+      "from": "heypoom/patchies",
+      "type": "uses",
+      "to": "hydra-synth/hydra",
+      "note": "内置 Hydra 节点做视频合成",
+      "note_en": "Ships Hydra nodes for video synthesis"
+    },
+    {
+      "from": "n1m21n/Infinite",
+      "type": "alt",
+      "to": "tixl3d/tixl",
+      "note": "同样是节点式实时视听创作工具",
+      "note_en": "Another node-based real-time audiovisual tool"
+    },
+    {
+      "from": "Akosmo/Oscillody",
+      "type": "alt",
+      "to": "jameshball/osci-render",
+      "note": "同样做示波器风格的音频画面",
+      "note_en": "Also makes oscilloscope-style audio visuals"
+    },
+    {
+      "from": "trebeljahr/fractal-garden",
+      "type": "alt",
+      "to": "xaos-project/XaoS",
+      "note": "同样能实时缩放分形，跑在浏览器里",
+      "note_en": "Also zooms fractals in real time, in the browser"
+    },
+    {
+      "from": "blazejkustra/react-native-effects",
+      "type": "alt",
+      "to": "wcandillon/react-native-skia",
+      "note": "同样在 React Native 里写着色器特效，这个用 WebGPU",
+      "note_en": "Also shader effects in React Native, here with WebGPU"
+    },
+    {
+      "from": "sloemo01/diorama",
+      "type": "uses",
+      "to": "mrdoob/three.js",
+      "note": "场景用 three.js 搭建和渲染",
+      "note_en": "Scenes are built and rendered with three.js"
+    },
+    {
+      "from": "N0rvel/galaxy_sim",
+      "type": "built_on",
+      "to": "mrdoob/three.js",
+      "note": "用 three.js 和着色器渲染粒子",
+      "note_en": "Renders particles with three.js and shaders"
+    },
+    {
+      "from": "ZyFou/ProceduralTerrains",
+      "type": "built_on",
+      "to": "mrdoob/three.js",
+      "note": "地形库和工作室都基于 three.js",
+      "note_en": "Both the terrain library and studio are built on three.js"
+    },
+    {
+      "from": "camilleroux/genart-skill",
+      "type": "uses",
+      "to": "processing/p5.js",
+      "note": "教 Claude 用 p5.js、Canvas、three.js 等写生成艺术",
+      "note_en": "Teaches Claude generative art with p5.js, Canvas, three.js and more"
     }
   ]
 }

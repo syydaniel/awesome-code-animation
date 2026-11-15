@@ -68,6 +68,7 @@ def render(browser, lang):
         url = page.eval_on_selector(f'canvas[data-swatch="{key}"]', "el => el.toDataURL('image/png')")
         save(url, OUT / "styles" / f"{key}{suffix}.png")
     save(page.evaluate(BANNER_JS), OUT / f"banner{suffix}.png")
+    page.evaluate("window.initGraphNow && initGraphNow()")  # 图谱默认滚到附近才加载，导出时直接启动
     page.wait_for_function("window.__graph !== undefined", timeout=20000)
     page.add_style_tag(content=".graph-zoom,.graph-hint,.graph-tip{display:none!important}")
     page.locator("#graph-stage").screenshot(path=str(OUT / f"graph{suffix}.png"))

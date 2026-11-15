@@ -176,6 +176,190 @@
     {
       "repo": "dillongoostudios/goo-engine",
       "reason": "Blender 定制版"
+    },
+    {
+      "repo": "zhuyansen/awesome-claude-video-skills",
+      "reason": "项目清单，不是工具；收录的仓库不少调用生成模型"
+    },
+    {
+      "repo": "terkelg/awesome-creative-coding",
+      "reason": "资源列表，不是工具"
+    },
+    {
+      "repo": "jasonwebb/morphogenesis-resources",
+      "reason": "资源链接合集，不是工具"
+    },
+    {
+      "repo": "psykon/awesome-demoscene",
+      "reason": "资源列表，不是工具"
+    },
+    {
+      "repo": "yanliudesign/mono-color-skill",
+      "reason": "用图像生成模型出静态海报"
+    },
+    {
+      "repo": "appariciojunior/video-editor-skills",
+      "reason": "在 DaVinci Resolve 里剪辑实拍素材"
+    },
+    {
+      "repo": "iart-ai/motion-design-skills",
+      "reason": "已收录的 iart-ai/motion-skills 的子技能包"
+    },
+    {
+      "repo": "kaomei/kid-papercraft",
+      "reason": "用 Gemini Omni Flash 生成动画"
+    },
+    {
+      "repo": "HappyOnigiri/PixelRefiner",
+      "reason": "整理 AI 生成的像素图，不做动画"
+    },
+    {
+      "repo": "RodZill4/material-maker",
+      "reason": "静态材质贴图编辑器，不做动画"
+    },
+    {
+      "repo": "PixiEditor/PixiEditor",
+      "reason": "手绘编辑器，画面不是代码出的"
+    },
+    {
+      "repo": "kevinraymond/florilegium",
+      "reason": "LaTeX 页边静态插画，不做动画"
+    },
+    {
+      "repo": "GilpinLab/dysts",
+      "reason": "混沌系统时间序列数据集，用于科研"
+    },
+    {
+      "repo": "gopher-atz/64klang",
+      "reason": "64k intro 用的音频合成器，不出画面"
+    },
+    {
+      "repo": "maxencefaldor/cax",
+      "reason": "面向机器学习研究的元胞自动机库"
+    },
+    {
+      "repo": "vkoskiv/c-ray",
+      "reason": "主要当作 Blender 渲染插件使用"
+    },
+    {
+      "repo": "Shpigford/dither",
+      "reason": "静态矢量抖动工具，不做动画"
+    },
+    {
+      "repo": "Meridius-Labs/electron-liquid-glass",
+      "reason": "调用 macOS 原生玻璃视图，只是界面材质"
+    },
+    {
+      "repo": "ryohsuke1231/liquid-glass",
+      "reason": "GNOME 桌面主题扩展，只是界面风格"
+    },
+    {
+      "repo": "ChenYilong/CYLTabBarController",
+      "reason": "iOS 标签栏组件，只是界面用了液态玻璃"
+    },
+    {
+      "repo": "KuekHaoYang/KVideo",
+      "reason": "视频播放应用，只是界面用了液态玻璃风格"
+    },
+    {
+      "repo": "Clash-Projects/LastWave-Native",
+      "reason": "音乐播放应用，只是界面用了液态玻璃风格"
+    },
+    {
+      "repo": "cosmictaserdev-creator/Convx",
+      "reason": "音乐播放应用，只是界面用了液态玻璃风格"
+    },
+    {
+      "repo": "itzzace/ytkace",
+      "reason": "YouTube 增强应用，只是界面用了液态玻璃风格"
+    },
+    {
+      "repo": "skopevoj/spoti.pw",
+      "reason": "Spotify 界面主题，只是界面风格"
+    },
+    {
+      "repo": "jiuyang5354/bilibili-margin",
+      "reason": "B 站页面改版扩展，只是界面用了液态玻璃风格"
+    },
+    {
+      "repo": "lesnolie/Tigris",
+      "reason": "电视桌面启动器，只是界面用了液态玻璃风格"
+    },
+    {
+      "repo": "Nanako0129/syrtis",
+      "reason": "菜单栏监控应用，只是界面用了液态玻璃风格"
+    },
+    {
+      "repo": "Lelonio/Square",
+      "reason": "音乐播放应用，只是界面用了液态玻璃风格"
+    },
+    {
+      "repo": "youshen2/MeloX",
+      "reason": "音乐播放应用，只是界面用了液态玻璃风格"
+    },
+    {
+      "repo": "llamaboi55/DragShift",
+      "reason": "文件转换工具，只是界面用了液态玻璃风格"
+    },
+    {
+      "repo": "OpenMontageInc/OpenMontage",
+      "reason": "流程依赖图像和视频生成模型（原 calesthio/OpenMontage）"
+    },
+    {
+      "repo": "nexu-io/openmotion",
+      "reason": "内置 Nano Banana、Seedance 等生成模型"
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "reason": "通用设计工作台，视频可接 Seedance、Veo 等模型"
+    },
+    {
+      "repo": "browser-use/video-use",
+      "reason": "剪辑实拍素材，画面主要来自原视频"
+    },
+    {
+      "repo": "hassancs91/claude-faceless-shorts-creator",
+      "reason": "三条流程里有两条用 fal 视频模型和 AI 图像"
+    },
+    {
+      "repo": "liyupi/ai-promo-video-maker",
+      "reason": "背景、角色等默认用 AI 生图，代码只做兜底"
+    },
+    {
+      "repo": "trustfuture/simon-skills",
+      "reason": "白板贴纸和封面调用 Codex 生图"
+    },
+    {
+      "repo": "cyberlesterr/paper-collage-video",
+      "reason": "纸片素材可调用外部生成服务"
+    },
+    {
+      "repo": "ersinkoc/AI-Video-Factory",
+      "reason": "图像和视频片段由外部生成服务提供"
+    },
+    {
+      "repo": "Bomx/OpenVideo",
+      "reason": "接入 HeyGen 数字人、Seedance 等生成服务"
+    },
+    {
+      "repo": "HaD0Yun/CozyClay",
+      "reason": "预演后把镜头交给 AI 视频模型出片"
+    },
+    {
+      "repo": "viettranx/3dviz-pro-max",
+      "reason": "推荐配合 Blender 烘焙出画面"
+    },
+    {
+      "repo": "Hainrixz/editor-pro-max",
+      "reason": "以剪辑实拍素材为主"
+    },
+    {
+      "repo": "blixvip/NullMotion",
+      "reason": "主画面是现成成片，代码只画对照草稿"
+    },
+    {
+      "repo": "ileivoivm/inkField",
+      "reason": "渲染引擎尚未开源"
     }
   ]
 }

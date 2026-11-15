@@ -59,33 +59,159 @@ body {
   margin: 0;
   background: var(--bg); color: var(--ink);
   font-family: var(--font-body); font-size: 15px; line-height: 1.6;
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
-  padding-block: 32px 48px;
 }
-.wrap { max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+.wrap {
+  max-width: 1272px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px;
+  padding: 36px max(16px, env(safe-area-inset-right, 0px)) 48px max(16px, env(safe-area-inset-left, 0px));
+}
+.wrap > section { scroll-margin-top: 68px; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 button, input, select { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-.i18n-wait .wrap { visibility: hidden; }
-header { display: flex; flex-direction: column; gap: 14px; }
-.head-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+.i18n-wait .wrap, .i18n-wait .gw-ui, .i18n-wait .topbar { visibility: hidden; }
 .lang-seg { flex: none; }
 .lang-seg a { display: block; padding: 5px 12px; font-size: 13px; color: var(--ink); }
 .lang-seg a + a { border-left: 1px solid var(--line); }
 .lang-seg a:hover { text-decoration: none; background: var(--chip); }
 .lang-seg a[aria-current="true"] { background: var(--accent); color: var(--accent-ink); }
-.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
-h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(34px, 6vw, 56px); line-height: 1.1; margin: 0; text-wrap: balance; letter-spacing: .02em; }
-.lede { margin: 0; max-width: 64ch; color: var(--muted); }
-.stats { display: flex; flex-wrap: wrap; gap: 8px 24px; font-family: var(--font-mono); font-size: 13px; align-items: baseline; }
-.stats b { font-weight: 500; font-size: 20px; color: var(--ink); font-variant-numeric: tabular-nums; margin-right: 6px; }
-.stats span { color: var(--muted); }
-.repo-link { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 8px; padding: 7px 14px; font-weight: 600; font-size: 14px; }
-.repo-link:hover { text-decoration: none; border-color: var(--muted); }
-.repo-link svg { width: 16px; height: 16px; fill: currentColor; }
+
+/* ---------- 3D gateway: a dark stage in both themes ---------- */
+.gw {
+  --gw-ink: #EEF0F5; --gw-soft: #C3C8D4; --gw-muted: #8E95A6; --gw-line: rgba(255,255,255,.13); --gw-glass: rgba(13,15,23,.74); --gw-accent: #A9B6FF;
+  position: relative; height: 100vh; height: 100svh; min-height: 560px; max-height: 1120px; overflow: hidden; isolation: isolate;
+  background: radial-gradient(120% 85% at 50% 66%, #1A2340 0%, #0C0F1B 46%, #05060A 100%);
+  color: var(--gw-ink); color-scheme: dark;
+}
+.gw-stage { position: absolute; inset: 0; }
+.gw-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: pan-y; opacity: 0; transition: opacity .9s ease; cursor: grab; }
+.gw-ready .gw-canvas { opacity: 1; }
+.gw-canvas.is-drag { cursor: grabbing; }
+.gw-canvas.is-point { cursor: pointer; }
+.gw-ui {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none; display: flex; flex-direction: column; justify-content: space-between;
+  padding: max(22px, env(safe-area-inset-top, 0px)) max(22px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(22px, env(safe-area-inset-left, 0px));
+}
+.gw-ui a, .gw-ui button, .gw-hall, .gw-rail { pointer-events: auto; }
+.gw-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; width: 100%; max-width: 1440px; margin: 0 auto; }
+.gw-brand { max-width: 600px; display: flex; flex-direction: column; gap: 12px; text-shadow: 0 2px 22px rgba(0,0,0,.75); transition: opacity .35s; }
+.gw-eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--gw-accent); }
+.gw h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(38px, 6.6vw, 78px); line-height: 1.02; margin: 0; letter-spacing: .02em; text-wrap: balance; }
+.gw-lede { margin: 0; color: var(--gw-soft); max-width: 44ch; font-size: 15px; }
+.stats { display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: var(--font-mono); font-size: 12.5px; align-items: baseline; }
+.stats b { font-weight: 500; font-size: 20px; color: var(--gw-ink); font-variant-numeric: tabular-nums; margin-right: 6px; }
+.stats span { color: var(--gw-muted); }
+.gw-corner { display: flex; gap: 8px; align-items: center; flex: none; }
+.gw .lang-seg { border-color: var(--gw-line); background: rgba(255,255,255,.04); backdrop-filter: blur(6px); }
+.gw .lang-seg a { color: var(--gw-ink); }
+.gw .lang-seg a + a { border-color: var(--gw-line); }
+.gw .lang-seg a:hover { background: rgba(255,255,255,.08); }
+.gw .lang-seg a[aria-current="true"] { background: var(--gw-ink); color: #0B0D12; }
+.gw-gh { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--gw-line); background: rgba(255,255,255,.04); color: var(--gw-ink); border-radius: 8px; padding: 5px 12px; font-size: 13px; backdrop-filter: blur(6px); }
+.gw-gh:hover { text-decoration: none; border-color: rgba(255,255,255,.4); }
+.gw-gh svg { width: 15px; height: 15px; fill: currentColor; }
+.gw-bottom { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; max-width: 1440px; margin: 0 auto; min-width: 0; }
+.gw-hint { margin: 0; font-size: 12px; color: var(--gw-muted); font-family: var(--font-mono); letter-spacing: .04em; }
+.gw-rail {
+  display: flex; gap: 6px; overflow-x: auto; max-width: 100%; padding: 4px 24px 6px; scrollbar-width: none; overscroll-behavior-x: contain;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 28px, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(90deg, transparent, #000 28px, #000 calc(100% - 28px), transparent);
+}
+.gw-rail::-webkit-scrollbar { display: none; }
+.gw-rail-k { flex: none; align-self: center; font-family: var(--font-mono); font-size: 11px; letter-spacing: .1em; color: var(--gw-muted); padding: 0 4px 0 10px; text-transform: uppercase; }
+.gw-rail-k:first-child { padding-left: 0; }
+.gw-chip { flex: none; display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--gw-line); background: rgba(12,14,22,.62); color: var(--gw-ink); border-radius: 999px; padding: 5px 12px; font-size: 13px; cursor: pointer; white-space: nowrap; backdrop-filter: blur(6px); }
+.gw-chip i { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.gw-chip:hover { border-color: rgba(255,255,255,.42); }
+.gw-chip[aria-pressed="true"] { background: var(--gw-ink); color: #0B0D12; border-color: var(--gw-ink); }
+.gw-enter { display: inline-flex; align-items: center; gap: 8px; background: var(--gw-ink); color: #0B0D12; border-radius: 999px; padding: 9px 22px; font-weight: 700; font-size: 14px; box-shadow: 0 8px 30px rgba(0,0,0,.35); }
+.gw-enter:hover { text-decoration: none; background: #fff; }
+.gw :focus-visible { outline-color: var(--gw-accent); }
+.gw-tip { position: absolute; z-index: 3; left: 0; top: 0; pointer-events: none; max-width: 270px; background: rgba(10,12,18,.9); border: 1px solid var(--gw-line); color: var(--gw-ink); border-radius: 9px; padding: 8px 11px; font-size: 12.5px; line-height: 1.5; backdrop-filter: blur(8px); }
+.gw-tip b { display: block; font-size: 14px; }
+.gw-tip span { color: var(--gw-soft); }
+.gw-tip em { display: block; font-style: normal; color: var(--gw-muted); font-family: var(--font-mono); font-size: 11.5px; margin-top: 3px; }
+
+.gw-hall {
+  position: absolute; z-index: 2; top: 50%; right: max(22px, env(safe-area-inset-right, 0px)); transform: translateY(-50%);
+  width: min(390px, 36vw); max-height: calc(100% - 170px); overflow-y: auto; overscroll-behavior: contain;
+  background: var(--gw-glass); border: 1px solid var(--gw-line); border-radius: 16px; padding: 14px 16px 16px;
+  -webkit-backdrop-filter: blur(16px) saturate(1.3); backdrop-filter: blur(16px) saturate(1.3);
+  display: flex; flex-direction: column; gap: 10px; color: var(--gw-ink); box-shadow: 0 24px 60px rgba(0,0,0,.45);
+  animation: gw-in .38s cubic-bezier(.2,.8,.2,1) both;
+}
+@keyframes gw-in { from { opacity: 0; transform: translate(18px, -50%); } }
+.gw-hall-bar { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.gw-k { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .06em; color: var(--gw-muted); margin: 0; }
+.gw-nav { display: flex; gap: 4px; }
+.gw-nav button { width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--gw-line); background: rgba(255,255,255,.05); color: var(--gw-ink); cursor: pointer; font-size: 15px; line-height: 1; padding: 0; }
+.gw-nav button:hover { background: rgba(255,255,255,.12); }
+.gw-hall h2 { font-size: 27px; color: var(--gw-ink); display: flex; align-items: center; gap: 10px; outline: none; line-height: 1.2; }
+.gw-hall h2 i { width: 12px; height: 12px; border-radius: 50%; flex: none; box-shadow: 0 0 14px currentColor; }
+.gw-look { margin: 0; color: var(--gw-soft); font-size: 13.5px; }
+.gw-picks { list-style: none; margin: 0 -6px; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.gw-picks li { padding: 9px 10px; border-radius: 10px; border: 1px solid transparent; transition: background .15s, border-color .15s; }
+.gw-picks li.on { background: rgba(255,255,255,.07); border-color: var(--gw-line); }
+.gw-pick-top { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
+.gw-n { font-family: var(--font-mono); font-size: 11px; color: var(--gw-muted); flex: none; }
+.gw-picks a { color: var(--gw-ink); font-weight: 700; font-size: 15px; overflow-wrap: anywhere; }
+.gw-picks a:hover { color: var(--gw-accent); }
+.gw-star { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: #F2D27A; white-space: nowrap; flex: none; }
+.gw-desc { margin: 3px 0 0; font-size: 13px; color: var(--gw-soft); line-height: 1.5; }
+.gw-meta { margin: 3px 0 0; font-size: 12px; color: var(--gw-muted); }
+.gw-meta .st { display: inline-flex; margin: 0; color: inherit; font-size: inherit; }
+.gw-meta .st.ok i { background: #4CC27E; } .gw-meta .st.slow i { background: #E3AE55; } .gw-meta .st.off i { background: #6B7280; }
+.gw-all { margin-top: 2px; border: 0; background: var(--gw-ink); color: #0B0D12; font-weight: 700; border-radius: 10px; padding: 10px 14px; cursor: pointer; font-size: 14px; text-align: center; }
+.gw-all:hover { background: #fff; }
+.gw-open .gw-hint { visibility: hidden; }
+.gw-lede, .gw .stats { transition: opacity .3s; }
+.gw-open .gw-lede, .gw-open .stats { opacity: 0; visibility: hidden; }
+
+.gw-flat .gw-wall { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; padding: 34vh 22px 150px; align-content: start; overflow: hidden; -webkit-mask-image: linear-gradient(transparent, #000 38%, #000 80%, transparent); mask-image: linear-gradient(transparent, #000 38%, #000 80%, transparent); }
+.gw-wall button { border: 1px solid var(--gw-line); background: #0C0E14; border-radius: 10px; padding: 0; overflow: hidden; cursor: pointer; color: var(--gw-ink); text-align: left; font-size: 12.5px; }
+.gw-wall canvas { display: block; width: 100%; aspect-ratio: 5 / 2; }
+.gw-wall span { display: block; padding: 5px 9px 7px; border-top: 2px solid var(--c); }
+
+@media (max-width: 760px) {
+  .gw { min-height: 600px; }
+  .gw-ui { padding-top: max(16px, env(safe-area-inset-top, 0px)); }
+  .gw-top { flex-direction: column-reverse; gap: 14px; }
+  .gw-corner { align-self: flex-end; }
+  .gw-brand { gap: 8px; }
+  .gw h1 { font-size: clamp(34px, 10vw, 44px); }
+  .gw-lede { font-size: 13.5px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 11.5px; }
+  .stats b { font-size: 16px; }
+  .gw-hint { display: none; }
+  .gw-open .gw-brand { opacity: 0; visibility: hidden; }
+  .gw-hall { top: auto; bottom: max(10px, env(safe-area-inset-bottom, 0px)); left: 10px; right: 10px; width: auto; max-height: 50%; transform: none; animation-name: gw-up; }
+  @keyframes gw-up { from { opacity: 0; transform: translateY(24px); } }
+  .gw-open .gw-bottom, .gw-open .gw-lede, .gw-open .stats { visibility: hidden; }
+}
+
+/* ---------- sticky top bar ---------- */
+.topbar { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 84%, transparent); -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4); border-bottom: 1px solid var(--line); }
+.tb-in { max-width: 1272px; margin: 0 auto; display: flex; align-items: center; gap: 8px 16px; padding: 8px max(16px, env(safe-area-inset-right, 0px)) 8px max(16px, env(safe-area-inset-left, 0px)); }
+.tb-brand { font-family: var(--font-display); font-weight: 900; font-size: 17px; color: var(--ink); white-space: nowrap; letter-spacing: .02em; }
+.tb-brand:hover { text-decoration: none; color: var(--accent); }
+.tb-links { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; flex: 1 1 auto; min-width: 0; }
+.tb-links::-webkit-scrollbar { display: none; }
+.tb-links a { padding: 5px 9px; border-radius: 6px; font-size: 13.5px; color: var(--muted); white-space: nowrap; }
+.tb-links a:hover { background: var(--chip); color: var(--ink); text-decoration: none; }
+.tb-links a.on { color: var(--ink); background: var(--chip); font-weight: 600; }
+.tb-search { flex: 0 1 230px; min-width: 120px; }
+.tb-search input { width: 100%; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); font-size: 13.5px; }
+.rows-more { display: flex; justify-content: center; margin-top: 12px; }
+.rows-more button { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 8px 18px; cursor: pointer; font-size: 14px; }
+.rows-more button:hover { border-color: var(--muted); }
+#rel-sec { content-visibility: auto; contain-intrinsic-size: auto 1600px; }
+@media (max-width: 760px) {
+  .tb-in { flex-wrap: wrap; padding-block: 6px; }
+  .tb-links { order: 3; flex-basis: 100%; margin: 0 -6px; }
+  .topbar .lang-seg { display: none; }
+  .tb-search { flex: 1 1 auto; }
+  .wrap > section { scroll-margin-top: 100px; }
+}
 
 .picks { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
 .pick { background: var(--surface); padding: 12px 16px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
@@ -152,7 +278,6 @@ tbody tr:hover td { background: color-mix(in srgb, var(--chip) 45%, transparent)
 .c-meta { display: none; }
 .empty { padding: 28px; text-align: center; color: var(--muted); }
 
-.nav { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
 .zone-note { margin: -6px 0 16px; color: var(--muted); font-size: 13.5px; max-width: 72ch; }
 .rels { margin: 6px 0 0; font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 10px; }
 .rels .lbl { color: var(--muted); }
@@ -309,7 +434,7 @@ footer { font-size: 13px; color: var(--muted); display: flex; flex-direction: co
 footer p { margin: 0; }
 
 @media (max-width: 760px) {
-  body { padding-block: 22px 36px; }
+  .wrap { padding-block: 26px 36px; }
   .table-wrap { border: 0; background: none; overflow: visible; }
   table { min-width: 0; }
   thead { display: none; }
@@ -337,28 +462,53 @@ footer p { margin: 0; }
   .style .body { padding: 8px 10px 10px; }
   .style .nm { font-size: 14px; }
 }
-@media (prefers-reduced-motion: reduce) { .style { transition: none; } }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+#content { scroll-margin-top: 0; }
+@media (prefers-reduced-motion: reduce) { .style, .gw-canvas, .gw-picks li { transition: none; } .gw-hall { animation: none; } }
 </style>
 
-<div class="wrap">
-  <header>
-    <div class="head-top">
-      <div class="eyebrow" data-en="Animation and music videos made with code">Awesome Code Animation · 用代码做动画和 MV</div>
-      <div class="seg lang-seg" role="group" aria-label="语言" data-en-aria="Language"><a href="?lang=zh" data-lang="zh" data-en="Chinese">中文</a><a href="?lang=en" data-lang="en" lang="en">English</a></div>
+<section class="gw" id="gateway" aria-labelledby="gw-title">
+  <div class="gw-stage" id="gw-stage" aria-hidden="true"></div>
+  <div class="gw-ui">
+    <div class="gw-top">
+      <div class="gw-brand">
+        <div class="gw-eyebrow" data-en="Animation and music videos made with code">Awesome Code Animation · 用代码做动画和 MV</div>
+        <h1 id="gw-title" data-en="Awesome Code Animation">代码画风图鉴</h1>
+        <p class="gw-lede" data-en="Open-source tools for making animation and music videos with code, indexed by visual style. Every frame is drawn or rendered by code. Spin the carousel and open a style to see its best projects.">按画风整理的代码动画、代码做 MV 的开源项目，画面都由代码绘制或渲染。转动画风转盘，点一种画风，进它的展厅看精品项目。</p>
+        <div class="stats" id="stats"></div>
+      </div>
+      <div class="gw-corner">
+        <div class="seg lang-seg" role="group" aria-label="语言" data-en-aria="Language"><a href="?lang=zh" data-lang="zh" data-en="Chinese">中文</a><a href="?lang=en" data-lang="en" lang="en">English</a></div>
+        <a class="gw-gh" href="__REPO_URL__" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span data-en="Suggest a project">推荐项目</span></a>
+      </div>
     </div>
-    <h1 data-en="Awesome Code Animation">代码画风图鉴</h1>
-    <p class="lede" data-en="Open-source tools for making animation and music videos with code, indexed by visual style. Every frame is drawn or rendered by code, so projects that make their pictures with video or image generation models aren't listed. One project can do several styles, so it can show up under several. Click a style card to filter the table.">按画风整理的代码动画、代码做 MV 的开源项目。画面都由代码绘制或渲染，不收用视频、图像生成模型出画面的项目。一个项目常能做几种画风，所以会同时出现在几个画风里；点画风卡片就能筛出对应项目。</p>
-    <div class="stats" id="stats"></div>
-    <nav class="nav" aria-label="页面目录" data-en-aria="Page contents"><a href="#showcase" id="nav-showcase" hidden data-en="Showcase">作品展示</a><a href="#styles-sec" data-en="Style index">画风索引</a><a href="#niche-sec" data-en="Niche styles">小众画风区</a><a href="#graph-sec" data-en="Relationship graph">关系图谱</a><a href="#rel-sec" data-en="Relationship table">项目关系表</a><a href="#table-sec" data-en="All projects">项目总表</a></nav>
-    <a class="repo-link" href="__REPO_URL__" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span data-en="View on GitHub and suggest a project">在 GitHub 上查看和推荐项目</span></a>
-  </header>
+    <div class="gw-tip" id="gw-tip" hidden></div>
+    <aside class="gw-hall" id="gw-hall" hidden aria-label="画风展厅" data-en-aria="Style gallery"></aside>
+    <div class="gw-bottom">
+      <p class="gw-hint" data-en="Drag to spin · Click a style to open its gallery">拖动转盘 · 点一种画风进入展厅</p>
+      <div class="gw-rail" id="gw-rail" role="group" aria-label="选择画风" data-en-aria="Pick a style"></div>
+      <a class="gw-enter" href="#content" data-en="Browse the full list ↓">进入图鉴 ↓</a>
+    </div>
+  </div>
+</section>
+
+<nav class="topbar" id="topbar" aria-label="页面目录" data-en-aria="Page contents">
+  <div class="tb-in">
+    <a class="tb-brand" href="#gateway" data-en="Awesome Code Animation">代码画风图鉴</a>
+    <div class="tb-links"><a href="#showcase" id="nav-showcase" hidden data-en="Showcase">作品展示</a><a href="#picks-sec" data-en="By goal">按目的</a><a href="#styles-sec" data-en="Styles">画风索引</a><a href="#niche-sec" data-en="Niche">小众画风</a><a href="#table-sec" data-en="All projects">项目总表</a><a href="#graph-sec" data-en="Graph">关系图谱</a><a href="#rel-sec" data-en="Relationships">关系表</a></div>
+    <div class="tb-search"><input id="tb-q" type="search" placeholder="搜项目，按 / 聚焦" aria-label="搜索项目" data-en-ph="Search projects ( / )" data-en-aria="Search projects" autocomplete="off"></div>
+    <div class="seg lang-seg" role="group" aria-label="语言" data-en-aria="Language"><a href="?lang=zh" data-lang="zh" data-en="Chinese">中文</a><a href="?lang=en" data-lang="en" lang="en">English</a></div>
+  </div>
+</nav>
+
+<div class="wrap" id="content">
 
   <section aria-labelledby="sc-h" id="showcase" hidden>
     <div class="sec-head"><h2 id="sc-h" data-en="Showcase">作品展示</h2><span class="hint" data-en="Made with the tools in this list">用图鉴里的工具做出来的作品</span></div>
     <div class="sc-list" id="sc-list"></div>
   </section>
 
-  <section aria-labelledby="picks-h">
+  <section aria-labelledby="picks-h" id="picks-sec">
     <div class="sec-head"><h2 id="picks-h" data-en="Start from your goal">按目的先挑</h2><span class="hint" data-en="Click a name to find it in the table">点名字直接在表里定位</span></div>
     <div class="picks" id="picks"></div>
   </section>
@@ -372,6 +522,34 @@ footer p { margin: 0; }
     <div class="sec-head"><h2 id="niche-h" data-en="Niche styles">小众画风区</h2><span class="hint" id="niche-count"></span></div>
     <p class="zone-note" data-en="Fewer people use these, but you'd recognize them anywhere. The bar is lower here, 20+ stars with a push in the last year, so small and interesting projects get seen too.">用的人不多、但辨识度很高的画风。门槛放宽到近一年内有更新、星数 20 以上，有意思的小项目也能被看到。</p>
     <div class="styles" id="niche"></div>
+  </section>
+
+  <section aria-labelledby="table-h" id="table-sec">
+    <div class="sec-head"><h2 id="table-h" data-en="All projects">项目总表</h2></div>
+    <div class="toolbar">
+      <div class="search"><input id="q" type="search" placeholder="搜项目名、语言、用途，例如 Python、MV、字幕" aria-label="搜索项目" data-en-ph="Search name, language or use, e.g. Python, MV, captions" data-en-aria="Search projects"></div>
+      <select id="zone" aria-label="分区" data-en-aria="Zone">
+        <option value="all" data-en="All zones">全部分区</option>
+        <option value="main" data-en="Main styles">主流画风</option>
+        <option value="niche" data-en="Niche styles">小众画风区</option>
+      </select>
+      <select id="sort" aria-label="排序" data-en-aria="Sort">
+        <option value="stars" data-en="By stars">按星数</option>
+        <option value="pushed" data-en="By latest push">按最近提交</option>
+        <option value="name" data-en="By name">按名称</option>
+      </select>
+      <label class="chk"><input id="hide" type="checkbox"> <span data-en="Active only">只看活跃项目</span></label>
+      <button class="active-filter" id="clear" hidden></button>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th data-en="Project">项目</th><th data-en="Styles">画风</th><th data-en="Description">说明</th><th data-en="Language">写法</th><th class="num" data-en="Stars">星数</th><th data-en="Latest push">最近提交</th><th data-en="License">许可证</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <div class="empty" id="empty" hidden data-en="Nothing matches. Try another keyword or clear the style filter.">没有符合条件的项目，换个关键词或取消画风筛选试试。</div>
+    </div>
+    <div class="rows-more" id="rows-more" hidden><button type="button" id="rows-more-btn"></button></div>
   </section>
 
   <section aria-labelledby="graph-h" id="graph-sec">
@@ -399,33 +577,6 @@ footer p { margin: 0; }
     </div>
   </section>
 
-
-  <section aria-labelledby="table-h" id="table-sec">
-    <div class="sec-head"><h2 id="table-h" data-en="All projects">项目总表</h2></div>
-    <div class="toolbar">
-      <div class="search"><input id="q" type="search" placeholder="搜项目名、语言、用途，例如 Python、MV、字幕" aria-label="搜索项目" data-en-ph="Search name, language or use, e.g. Python, MV, captions" data-en-aria="Search projects"></div>
-      <select id="zone" aria-label="分区" data-en-aria="Zone">
-        <option value="all" data-en="All zones">全部分区</option>
-        <option value="main" data-en="Main styles">主流画风</option>
-        <option value="niche" data-en="Niche styles">小众画风区</option>
-      </select>
-      <select id="sort" aria-label="排序" data-en-aria="Sort">
-        <option value="stars" data-en="By stars">按星数</option>
-        <option value="pushed" data-en="By latest push">按最近提交</option>
-        <option value="name" data-en="By name">按名称</option>
-      </select>
-      <label class="chk"><input id="hide" type="checkbox"> <span data-en="Active only">只看活跃项目</span></label>
-      <button class="active-filter" id="clear" hidden></button>
-      <span class="count" id="count"></span>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th data-en="Project">项目</th><th data-en="Styles">画风</th><th data-en="Description">说明</th><th data-en="Language">写法</th><th class="num" data-en="Stars">星数</th><th data-en="Latest push">最近提交</th><th data-en="License">许可证</th></tr></thead>
-        <tbody id="rows"></tbody>
-      </table>
-      <div class="empty" id="empty" hidden data-en="Nothing matches. Try another keyword or clear the style filter.">没有符合条件的项目，换个关键词或取消画风筛选试试。</div>
-    </div>
-  </section>
 
   <section aria-labelledby="rel-h" id="rel-sec">
     <div class="sec-head"><h2 id="rel-h" data-en="Relationship table">项目关系表</h2><span class="hint" data-en="Click a name to find it in the table">点项目名会在总表里定位它</span></div>
@@ -468,7 +619,6 @@ footer p { margin: 0; }
   });
 })();
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script>
 const DATA = __PROJECTS__;
 const STYLES = __STYLES__;
@@ -477,6 +627,7 @@ const RELS = __RELATIONS__;
 const RELTYPES = __RELTYPES__;
 const SNAPSHOT = Date.parse('__DATE__');
 const SHOWCASE = __SHOWCASE__;
+const FEATURED = __FEATURED__;
 const EN = window.LANG === 'en';
 const L = (zh, en) => EN ? en : zh;
 // 英文模式：把数据里的中文字段换成 *_en，后面的渲染代码不用区分语言；原文留在 *_zh 里给搜索用。缺译文时显示原文。
@@ -543,7 +694,7 @@ if (SHOWCASE.length) {
   document.getElementById('nav-showcase').hidden = false;
   document.getElementById('sc-list').innerHTML = SHOWCASE.map(it => {
     const media = it.video
-      ? `<video controls playsinline preload="metadata" ${it.poster ? `poster="${esc(it.poster)}"` : ''} src="${esc(it.video)}"></video>`
+      ? `<video controls playsinline preload="none" ${it.poster ? `poster="${esc(it.poster)}"` : ''} src="${esc(it.video)}"></video>`
       : (it.poster ? `<img src="${esc(it.poster)}" alt="${esc(it.title)}"><a class="sc-play" href="${esc(it.watch)}" target="_blank" rel="noopener">▶ ${L('在网页版观看', 'Watch on the site')}</a>` : '');
     // 写了 breakdown 的作品，工具和画风都在说明表里，不再重复放标签
     const tools = it.breakdown ? '' : (it.tools || []).map(r => BYREPO[r] ? `<button type="button" data-find="${esc(r)}">${esc(BYREPO[r].name)}</button>` : `<button type="button" onclick="window.open('https://github.com/${esc(r)}','_blank')">${esc(r)}</button>`).join('');
@@ -658,11 +809,33 @@ nicheEl.innerHTML = styleCards(NICHE);
 document.getElementById('niche-count').textContent = L(`${NICHE.length} 种画风 · ${DATA.filter(inNiche).length} 个项目`, `${NICHE.length} styles · ${DATA.filter(inNiche).length} projects`);
 
 const rowsEl = document.getElementById('rows');
+const HAY = new Map();
 function matches(p, q) {
   if (!q) return true;
-  // 两种语言都能搜
-  const hay = [p.name, p.name_en, p.name_zh, p.repo, p.lang, p.lang_en, p.lang_zh, p.use, p.use_en, p.use_zh, p.desc, p.desc_en, p.desc_zh, p.note, p.note_en, p.note_zh, lic(p), ...p.tags.map(t => [SMAP[t].name, SMAP[t].name_zh, SMAP[t].en].join(' '))].join(' ').toLowerCase();
+  // 两种语言都能搜；拼好的检索文本缓存起来，打字时不用每次重算
+  let hay = HAY.get(p);
+  if (!hay) {
+    hay = [p.name, p.name_en, p.name_zh, p.repo, p.lang, p.lang_en, p.lang_zh, p.use, p.use_en, p.use_zh, p.desc, p.desc_en, p.desc_zh, p.note, p.note_en, p.note_zh, lic(p), ...p.tags.map(t => [SMAP[t].name, SMAP[t].name_zh, SMAP[t].en].join(' '))].join(' ').toLowerCase();
+    HAY.set(p, hay);
+  }
   return hay.includes(q);
+}
+// 总表分批渲染：先出 ROW_PAGE 行，滚到表尾附近再接着补，避免一次塞进上万个节点
+const ROW_PAGE = 60;
+let rowList = [], rowShown = 0;
+const moreEl = document.getElementById('rows-more');
+const moreBtn = document.getElementById('rows-more-btn');
+function moreRows(all) {
+  const next = all ? rowList.length : Math.min(rowList.length, rowShown + ROW_PAGE);
+  if (next > rowShown) rowsEl.insertAdjacentHTML('beforeend', rowList.slice(rowShown, next).map(rowHtml).join(''));
+  rowShown = next;
+  const left = rowList.length - rowShown;
+  moreEl.hidden = left <= 0;
+  moreBtn.textContent = L(`再显示 ${Math.min(left, ROW_PAGE)} 个（还有 ${left} 个）`, `Show ${Math.min(left, ROW_PAGE)} more (${left} left)`);
+}
+moreBtn.addEventListener('click', () => moreRows(false));
+if ('IntersectionObserver' in window) {
+  new IntersectionObserver(es => { if (es.some(e => e.isIntersecting) && rowShown < rowList.length) moreRows(false); }, { rootMargin: '700px 0px' }).observe(moreEl);
 }
 function render() {
   const q = state.q.trim().toLowerCase();
@@ -677,7 +850,16 @@ function render() {
   else if (state.sort === 'pushed') list.sort((a,b) => b.pushed_at.localeCompare(a.pushed_at));
   else list.sort((a,b) => a.name.localeCompare(b.name, L('zh', 'en')));
 
-  rowsEl.innerHTML = list.map(p => {
+  rowList = list; rowShown = 0; rowsEl.innerHTML = ''; moreRows(false);
+  document.getElementById('empty').hidden = list.length > 0;
+  document.getElementById('count').textContent = `${L('显示', 'Showing')} ${list.length} / ${DATA.length}`;
+  const clear = document.getElementById('clear');
+  clear.hidden = !state.style;
+  if (state.style) clear.textContent = `${L('画风：', 'Style: ')}${SMAP[state.style].name}  ✕`;
+  document.querySelectorAll('.style').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.style === state.style)));
+  renderRels();
+}
+function rowHtml(p) {
     const [cls, label] = status(p);
     const url = 'https://github.com/' + p.repo;
     const tags = p.tags.map(t => `<button class="tag${state.style === t ? ' on' : ''}" data-style="${t}"><span class="dot" style="background:${SMAP[t].color}"></span>${esc(SMAP[t].name)}</button>`).join('');
@@ -693,14 +875,6 @@ function render() {
       <td class="c-lic">${esc(lic(p))}</td>
       <td class="c-meta">${esc(p.lang)} · <span class="st ${cls}" style="display:inline-flex"><i></i>${label}</span> ${p.pushed_at} · ${esc(lic(p))}</td>
     </tr>`;
-  }).join('');
-  document.getElementById('empty').hidden = list.length > 0;
-  document.getElementById('count').textContent = `${L('显示', 'Showing')} ${list.length} / ${DATA.length}`;
-  const clear = document.getElementById('clear');
-  clear.hidden = !state.style;
-  if (state.style) clear.textContent = `${L('画风：', 'Style: ')}${SMAP[state.style].name}  ✕`;
-  document.querySelectorAll('.style').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.style === state.style)));
-  renderRels();
 }
 
 const relTypesEl = document.getElementById('rel-types');
@@ -738,7 +912,7 @@ function setStyle(key, scroll) {
 }
 function findRepo(repo) {
   state.style = null; state.zone = 'all'; document.getElementById('zone').value = 'all';
-  state.q = repo; document.getElementById('q').value = repo; render(); toTable();
+  state.q = repo; document.getElementById('q').value = repo; document.getElementById('tb-q').value = repo; render(); toTable();
 }
 document.addEventListener('click', e => {
   const s = e.target.closest('.style'); if (s) { setStyle(s.dataset.style, true); return; }
@@ -748,7 +922,36 @@ document.addEventListener('click', e => {
   if (z) { e.preventDefault(); state.style = null; state.zone = z.dataset.zoneLink; document.getElementById('zone').value = state.zone; render(); toTable(); }
 });
 document.getElementById('clear').addEventListener('click', () => { state.style = null; render(); });
-document.getElementById('q').addEventListener('input', e => { state.q = e.target.value; state.relAll = false; render(); });
+const qEl = document.getElementById('q'), tbq = document.getElementById('tb-q');
+let qTimer = 0;
+function setQuery(v, from) {
+  state.q = v; state.relAll = false;
+  if (from !== qEl) qEl.value = v;
+  if (from !== tbq) tbq.value = v;
+  clearTimeout(qTimer); qTimer = setTimeout(render, 90);
+}
+qEl.addEventListener('input', () => setQuery(qEl.value, qEl));
+tbq.addEventListener('input', () => {
+  setQuery(tbq.value, tbq);
+  const r = document.getElementById('table-sec').getBoundingClientRect();
+  if (r.top > innerHeight * .6 || r.bottom < 120) toTable();
+});
+tbq.addEventListener('keydown', e => { if (e.key === 'Enter') { clearTimeout(qTimer); render(); toTable(); } });
+document.addEventListener('keydown', e => {
+  if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey || e.target.closest('input, textarea, select, [contenteditable]')) return;
+  e.preventDefault(); tbq.focus();
+});
+// 顶栏目录跟着滚动高亮当前所在的部分
+if ('IntersectionObserver' in window) {
+  const links = [...document.querySelectorAll('.tb-links a')];
+  const seen = new Map();
+  const spy = new IntersectionObserver(es => {
+    es.forEach(e => seen.set(e.target.id, e.isIntersecting));
+    const cur = links.find(a => seen.get(a.hash.slice(1)));
+    links.forEach(a => a.classList.toggle('on', a === cur));
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  links.forEach(a => { const el = document.getElementById(a.hash.slice(1)); if (el) spy.observe(el); });
+}
 document.getElementById('sort').addEventListener('change', e => { state.sort = e.target.value; render(); });
 document.getElementById('zone').addEventListener('change', e => { state.zone = e.target.value; render(); });
 document.getElementById('hide').addEventListener('change', e => { state.active = e.target.checked; render(); });
@@ -1270,18 +1473,58 @@ const SW = {
     glass(36, 64, 50, 24, 12);
   }
 };
-function drawSwatches() {
-  document.querySelectorAll('canvas[data-swatch]').forEach(cv => {
-    const c = cv.getContext('2d'); if (!c) return;
-    c.setTransform(cv.width / W, 0, 0, cv.height / H, 0, 0);
-    try { SW[cv.dataset.swatch](c); } catch (e) { /* a swatch failing must not break the page */ }
-  });
+// 小样图只在快滚进视野时才画；带文字的几张等网页字体加载完再补画一次。drawSwatches() 一次画完全部（导出图片的脚本会用）。
+const TEXT_SWATCHES = new Set(['agent', 'ascii', 'data', 'demoscene', 'glitch', 'liquid', 'scifi', 'type', 'vhs']);
+const drawnSwatches = new Set();
+function paintSwatch(c, key, w, h) {
+  c.setTransform(w / W, 0, 0, h / H, 0, 0);
+  try { SW[key](c); } catch (e) { /* a swatch failing must not break the page */ }
+  c.setTransform(1, 0, 0, 1, 0, 0);
 }
-drawSwatches();
-if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawSwatches).catch(() => {});
+function drawSwatch(cv) {
+  const c = cv.getContext('2d'); if (!c) return;
+  paintSwatch(c, cv.dataset.swatch, cv.width, cv.height);
+  drawnSwatches.add(cv);
+}
+function drawSwatches() { document.querySelectorAll('canvas[data-swatch]').forEach(drawSwatch); }
+// 给 3D 入口用：按需要的分辨率画一张新的小样图
+function swatchCanvas(key, w, h) {
+  const cv = document.createElement('canvas'); cv.width = w; cv.height = h;
+  const c = cv.getContext('2d'); if (c) paintSwatch(c, key, w, h);
+  return cv;
+}
+if ('IntersectionObserver' in window) {
+  const sio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { sio.unobserve(e.target); drawSwatch(e.target); } }), { rootMargin: '500px 0px' });
+  document.querySelectorAll('canvas[data-swatch]').forEach(cv => sio.observe(cv));
+} else drawSwatches();
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => drawnSwatches.forEach(cv => { if (TEXT_SWATCHES.has(cv.dataset.swatch)) drawSwatch(cv); })).catch(() => {});
 
-/* ---------- relationship graph ---------- */
-(function initGraph() {
+// 3D 入口（页面末尾的 module 脚本）从这里拿数据和工具函数
+window.ACA = { DATA, STYLES, MAIN, NICHE, SMAP, BYREPO, FEATURED, EN, L, esc, fmtStars, status, swatchCanvas, TEXT_SWATCHES,
+  showStyle(key) { state.style = key; state.zone = 'all'; document.getElementById('zone').value = 'all'; render(); toTable(); } };
+
+/* ---------- relationship graph ----------
+   D3 只在图谱快滚进视野时才加载，首屏不再等它。initGraphNow() 也可以直接调用（导出图片的脚本会用）。 */
+const D3_URL = 'https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js';
+let graphStarted = null;
+function initGraphNow() {
+  if (graphStarted) return graphStarted;
+  graphStarted = new Promise(done => {
+    if (window.d3) { initGraph(); done(); return; }
+    const sc = document.createElement('script');
+    sc.src = D3_URL; sc.async = true;
+    sc.onload = sc.onerror = () => { initGraph(); done(); };
+    document.head.append(sc);
+  });
+  return graphStarted;
+}
+window.initGraphNow = initGraphNow;
+if ('IntersectionObserver' in window) {
+  const gio = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { gio.disconnect(); initGraphNow(); } }, { rootMargin: '900px 0px' });
+  gio.observe(document.getElementById('graph-sec'));
+} else initGraphNow();
+
+function initGraph() {
   const stage = document.getElementById('graph-stage');
   const panel = document.getElementById('graph-panel');
   if (!window.d3) {
@@ -1617,5 +1860,8 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawSwatch
   settle(false); renderPanel(); paint();
   if ('ResizeObserver' in window) { let w0 = stage.clientWidth; new ResizeObserver(() => { if (Math.abs(stage.clientWidth - w0) > 40) { w0 = stage.clientWidth; fit(false); } }).observe(stage); }
   window.__graph = { select, setLayout };
-})();
+}
+</script>
+<script type="module">
+/*__GATEWAY__*/
 </script>
