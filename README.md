@@ -8,11 +8,13 @@
 
 A curated list of open-source tools for making animations and music videos **with code**, indexed by visual style. [English](README.en.md)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![项目](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE-478-2E49D4) ![画风](https://img.shields.io/badge/%E7%94%BB%E9%A3%8E-17%2B21-9265D9) ![活跃项目](https://img.shields.io/badge/%E6%B4%BB%E8%B7%83%E9%A1%B9%E7%9B%AE-357-1E8A4B) ![数据更新](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--11--15-5B6273)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![GitHub Stars](https://img.shields.io/github/stars/syydaniel/awesome-code-animation?style=social)](https://github.com/syydaniel/awesome-code-animation) ![项目](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE-478-2E49D4) ![画风](https://img.shields.io/badge/%E7%94%BB%E9%A3%8E-17%2B21-9265D9) ![活跃项目](https://img.shields.io/badge/%E6%B4%BB%E8%B7%83%E9%A1%B9%E7%9B%AE-357-1E8A4B) ![数据更新](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--11--15-5B6273)
 
 **[🌌 3D 画风入口](https://syydaniel.github.io/awesome-code-animation/?lang=zh)**<sub>（转动画风转盘，点进去看每种画风的精品）</sub> · **[🌐 网页版](https://syydaniel.github.io/awesome-code-animation/?lang=zh#table-sec)**<sub>（按画风筛选、搜索、排序）</sub> · **[🕸️ 关系图谱](https://syydaniel.github.io/awesome-code-animation/?lang=zh#graph-sec)** · **[🎨 画风索引](#index)**
 
-[画风索引](#index) · [小众画风区](#niche) · [关系图谱](#relations) · [收录标准](#rules) · [全部项目](#all) · [推荐项目](https://github.com/syydaniel/awesome-code-animation/issues/new/choose)
+[最新收录](#latest) · [画风索引](#index) · [小众画风区](#niche) · [关系图谱](#relations) · [收录标准](#rules) · [全部项目](#all) · [推荐项目](https://github.com/syydaniel/awesome-code-animation/issues/new/choose)
+
+⭐ **觉得有用就[点个 Star](https://github.com/syydaniel/awesome-code-animation)**：每周都有新项目，收藏起来方便回来看，也能让更多人找到这份合集。
 
 </div>
 
@@ -75,6 +77,16 @@ A curated list of open-source tools for making animations and music videos **wit
 想用代码做一支 MV、一段讲解动画、一个片头，第一个问题往往是「我想要的那种画风，该用什么工具做」。这里把 GitHub 上用代码做动画、做视频的开源项目按**画风**归类：3B1B 式数学讲解、扁平 MG、着色器迷幻光影、像素复古、ASCII 终端、音乐可视化、二次元 MMD……先挑画风，再挑工具。一个项目常能做好几种画风，所以会同时出现在几个画风里。
 
 除了 17 种主流画风，还有收录小众画风的[小众画风区](#niche)（水墨山水、汉字笔顺、示波器、绘图仪、人工生命……），其中 101 个是让 Claude、Opus 等 AI 编程助手写代码出片的技能和作品，也都按画风归在各自的分类里。[关系图谱](#relations)把有关系的项目连在一起，看得出谁从谁演化而来、谁能替换谁。
+
+<a name="latest"></a>
+
+## 最新收录
+
+**2026-11-15 新收录 35 个：**[Graphite](https://github.com/GraphiteEditor/Graphite) · [Awesome Opus 5.5 Videos](https://github.com/yihui-dev/awesome-opus5-5-videos) · [Claude Animated Shorts](https://github.com/mromidev/claude-animated-shorts) · [Math-To-Manim](https://github.com/HarleyCoops/Math-To-Manim) · [ManimGX](https://github.com/academa-labs/manimgx) · [vgpu](https://github.com/vercel-labs/vgpu) · [AI Animation Skills](https://github.com/Unclecheng-li/AI_Animation) · [Opus 5.5 视频提示词](https://github.com/joeseesun/opus-video-prompts) · [Procedural Terrains](https://github.com/ZyFou/ProceduralTerrains) · [snapcn](https://github.com/shadcn-labs/snapcn) · [LiquidGlass](https://github.com/ybouane/liquidglass) · [Fabric](https://github.com/Fabric-Project/Fabric) · [Diorama](https://github.com/sloemo01/diorama) · [Glass SDK Liquid Glass](https://github.com/Glass-HQ/liquid-glass) · [Remotion Bits](https://github.com/av/remotion-bits) · [manim-web](https://github.com/maloyan/manim-web) · [liquid_glass_renderer](https://github.com/whynotmake-it/flutter_liquid_glass) · [ASCII Magic](https://github.com/kailashsr38/ascii-magic-art) · [react-native-effects](https://github.com/blazejkustra/react-native-effects) · [iso-figure](https://github.com/MrBongoC/ai-iso-skill) · [lemo-wake](https://github.com/lemomo-ai/lemo-wake) · [Plasma UI](https://github.com/CruxGarden/plasma-ui) · [Infinite](https://github.com/n1m21n/Infinite) · [svg-text-animate](https://github.com/oubenruing/svg-text-animate) · [Dither Guy](https://github.com/manoelpiovesan/dither-guy) · [isometric](https://github.com/elchininet/isometric) · [Patchies](https://github.com/heypoom/patchies) · [Codixel](https://github.com/mankidev/codixel) · [HyperFrames Motion Reel](https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill) · [genart](https://github.com/camilleroux/genart-skill) · [Fractal Garden](https://github.com/trebeljahr/fractal-garden) · [Galaxy Simulation](https://github.com/N0rvel/galaxy_sim) · [persian-motion-director](https://github.com/atmirrr/persian-motion-director) · [Stroke Order Animator](https://github.com/chill-chinese/stroke-order-animator) · [Oscillody](https://github.com/Akosmo/Oscillody)
+
+网页版的[「✦ 最新更新」窗口](https://syydaniel.github.io/awesome-code-animation/?lang=zh#latest)里可以一张张翻这些项目，也能看最近有提交的项目。
+
+⭐ 每周都有新项目，[点个 Star](https://github.com/syydaniel/awesome-code-animation) 收藏起来，下次回来看看又多了什么。
 
 <a name="rules"></a>
 

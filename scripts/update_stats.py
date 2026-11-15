@@ -37,6 +37,8 @@ def main():
     today = datetime.date.today()
     problems = []
     for p in projects:
+        # 新加进来、还没写收录日期的项目，记成这次刷新的日期（网页「最新更新」窗口按它排）
+        p.setdefault("added", today.isoformat())
         try:
             info = fetch(p["repo"])
         except urllib.error.HTTPError as e:

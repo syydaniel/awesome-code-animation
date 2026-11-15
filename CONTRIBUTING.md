@@ -41,7 +41,7 @@
    }
    ```
 
-   `tags` 用 [`data/styles.json`](data/styles.json) 里的 `key`，可以写多个，第一个放最主要的画风。带 `"zone": "niche"` 的是小众画风区。`stars`、`pushed_at`、`archived`、`license` 随便填，下一步会自动刷新。
+   `tags` 用 [`data/styles.json`](data/styles.json) 里的 `key`，可以写多个，第一个放最主要的画风。带 `"zone": "niche"` 的是小众画风区。`stars`、`pushed_at`、`archived`、`license` 随便填，下一步会自动刷新。`added` 写收录当天的日期（`YYYY-MM-DD`），网页的「最新更新」窗口和 README 的「最新收录」按它排；不写的话，每周刷新数据时会自动记成刷新那天。
 
    网站和 README 都有中英两版。`name`、`desc`、`use`、`note`、`lang` 都可以加对应的 `*_en` 字段写英文；`relations.json` 的 `note` 同样可以加 `note_en`。不会写英文也没关系，维护者会补上。
 

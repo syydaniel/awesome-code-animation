@@ -6,11 +6,13 @@
 
 **Open-source tools for making animations and music videos with code, indexed by visual style.** [Chinese version](README.md)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![projects](https://img.shields.io/badge/projects-478-2E49D4) ![styles](https://img.shields.io/badge/styles-17%2B21-9265D9) ![active](https://img.shields.io/badge/active-357-1E8A4B) ![updated](https://img.shields.io/badge/updated-2026--11--15-5B6273)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![GitHub Stars](https://img.shields.io/github/stars/syydaniel/awesome-code-animation?style=social)](https://github.com/syydaniel/awesome-code-animation) ![projects](https://img.shields.io/badge/projects-478-2E49D4) ![styles](https://img.shields.io/badge/styles-17%2B21-9265D9) ![active](https://img.shields.io/badge/active-357-1E8A4B) ![updated](https://img.shields.io/badge/updated-2026--11--15-5B6273)
 
 **[🌌 3D style gateway](https://syydaniel.github.io/awesome-code-animation/?lang=en)**<sub> (spin the style carousel, open a gallery of picks for each style)</sub> · **[🌐 Web version](https://syydaniel.github.io/awesome-code-animation/?lang=en#table-sec)**<sub> (filter by style, search, sort)</sub> · **[🕸️ Relationship graph](https://syydaniel.github.io/awesome-code-animation/?lang=en#graph-sec)** · **[🎨 Style index](#index)**
 
-[Style index](#index) · [Niche styles](#niche) · [Relationships](#relations) · [Rules](#rules) · [All projects](#all) · [Suggest a project](https://github.com/syydaniel/awesome-code-animation/issues/new/choose)
+[Latest](#latest) · [Style index](#index) · [Niche styles](#niche) · [Relationships](#relations) · [Rules](#rules) · [All projects](#all) · [Suggest a project](https://github.com/syydaniel/awesome-code-animation/issues/new/choose)
+
+⭐ **Find it useful? [Star the repo](https://github.com/syydaniel/awesome-code-animation)** so you can come back for new additions, and so more people can find it.
 
 </div>
 
@@ -73,6 +75,16 @@ Built with: [Manim Community](https://github.com/ManimCommunity/manim) · [MathB
 When you want to make a music video, an explainer or an intro with code, the first question is usually which tool makes the look you have in mind. This list sorts open-source animation and video projects on GitHub by **visual style**: 3Blue1Brown-style math, flat motion graphics, psychedelic shaders, pixel art, ASCII, music visualizers, anime dance videos and more. Pick a style first, then pick a tool. One project often does several styles, so it can appear under several.
 
 Beyond the 17 main styles, the [niche section](#niche) covers ink-wash landscapes, Chinese stroke-order animation, oscilloscope art, plotters, artificial life and others. 101 entries are skills and films where AI coding agents like Claude or Opus write the code, and they're filed by style like everything else. The [relationship graph](#relations) links related projects, so you can see what grew out of what and what can replace what.
+
+<a name="latest"></a>
+
+## Latest additions
+
+**2026-11-15 · 35 new:** [Graphite](https://github.com/GraphiteEditor/Graphite) · [Awesome Opus 5.5 Videos](https://github.com/yihui-dev/awesome-opus5-5-videos) · [Claude Animated Shorts](https://github.com/mromidev/claude-animated-shorts) · [Math-To-Manim](https://github.com/HarleyCoops/Math-To-Manim) · [ManimGX](https://github.com/academa-labs/manimgx) · [vgpu](https://github.com/vercel-labs/vgpu) · [AI Animation Skills](https://github.com/Unclecheng-li/AI_Animation) · [Opus 5.5 Video Prompts](https://github.com/joeseesun/opus-video-prompts) · [Procedural Terrains](https://github.com/ZyFou/ProceduralTerrains) · [snapcn](https://github.com/shadcn-labs/snapcn) · [LiquidGlass](https://github.com/ybouane/liquidglass) · [Fabric](https://github.com/Fabric-Project/Fabric) · [Diorama](https://github.com/sloemo01/diorama) · [Glass SDK Liquid Glass](https://github.com/Glass-HQ/liquid-glass) · [Remotion Bits](https://github.com/av/remotion-bits) · [manim-web](https://github.com/maloyan/manim-web) · [liquid_glass_renderer](https://github.com/whynotmake-it/flutter_liquid_glass) · [ASCII Magic](https://github.com/kailashsr38/ascii-magic-art) · [react-native-effects](https://github.com/blazejkustra/react-native-effects) · [iso-figure](https://github.com/MrBongoC/ai-iso-skill) · [lemo-wake](https://github.com/lemomo-ai/lemo-wake) · [Plasma UI](https://github.com/CruxGarden/plasma-ui) · [Infinite](https://github.com/n1m21n/Infinite) · [svg-text-animate](https://github.com/oubenruing/svg-text-animate) · [Dither Guy](https://github.com/manoelpiovesan/dither-guy) · [isometric](https://github.com/elchininet/isometric) · [Patchies](https://github.com/heypoom/patchies) · [Codixel](https://github.com/mankidev/codixel) · [HyperFrames Motion Reel](https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill) · [genart](https://github.com/camilleroux/genart-skill) · [Fractal Garden](https://github.com/trebeljahr/fractal-garden) · [Galaxy Simulation](https://github.com/N0rvel/galaxy_sim) · [persian-motion-director](https://github.com/atmirrr/persian-motion-director) · [Stroke Order Animator](https://github.com/chill-chinese/stroke-order-animator) · [Oscillody](https://github.com/Akosmo/Oscillody)
+
+Flip through them as cards in the [✦ Latest window](https://syydaniel.github.io/awesome-code-animation/?lang=en#latest) on the web version, which also lists projects with recent commits.
+
+⭐ New projects land every week. [Star the repo](https://github.com/syydaniel/awesome-code-animation) to come back and see what's new.
 
 <a name="rules"></a>
 

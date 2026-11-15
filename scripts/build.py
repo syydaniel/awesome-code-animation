@@ -106,7 +106,28 @@ def status(p):
     return "⚪", "停更", "dormant"
 
 
+def resolve_latest():
+    """「最新更新」窗口的两份名单。
+    new：按收录日期（projects.json 的 added，没写的当作这次数据更新的日期）从新到旧，同一天收录的一批不拆开，
+         凑够 24 个就停，最多 40 个；第一批（建仓时）的项目不算新收录。
+    recent：最近有提交的活跃项目，按最近一次推送从新到旧，30 个。"""
+    for p in projects:
+        p.setdefault("added", UPDATED)
+    first_day = min(p["added"] for p in projects)
+    pool = sorted((p for p in projects if p["added"] > first_day), key=lambda p: (p["added"], p["stars"]), reverse=True)
+    new, batches = [], []
+    for day in sorted({p["added"] for p in pool}, reverse=True):
+        if len(new) >= 24:
+            break
+        batch = [p for p in pool if p["added"] == day]
+        batches.append({"date": day, "n": len(batch)})
+        new += batch
+    recent = sorted((p for p in projects if not p.get("archived")), key=lambda p: (p["pushed_at"], p["stars"]), reverse=True)[:30]
+    return {"date": UPDATED, "batches": batches, "new": [p["repo"] for p in new[:40]], "recent": [p["repo"] for p in recent]}
+
+
 FEATURED, featured_bad = resolve_featured()
+LATEST = resolve_latest()
 if featured_bad and "--quiet" not in sys.argv:
     print("data/featured.json 里这些项目没收录或缺少对应画风标签，已跳过：" + "、".join(featured_bad), file=sys.stderr)
 
@@ -239,6 +260,26 @@ def featured_line(key, en=False):
     return " · ".join(link(BYREPO[r], en) for r in FEATURED[key])
 
 
+def latest_md(en=False):
+    """README 里的「最新收录」：最近几批新收录的项目，一批一行，按星数排。"""
+    if not LATEST["new"]:
+        return []
+    out = ['<a name="latest"></a>', "", "## Latest additions" if en else "## 最新收录", ""]
+    for b in LATEST["batches"]:
+        ps = [BYREPO[r] for r in LATEST["new"] if BYREPO[r]["added"] == b["date"]]
+        if not ps:
+            continue
+        rest = b["n"] - len(ps)
+        head = f"**{b['date']} · {b['n']} new:** " if en else f"**{b['date']} 新收录 {b['n']} 个：**"
+        tail = (" and more" if en else " 等") if rest else ""
+        out += [head + " · ".join(link(p, en) for p in ps) + tail, ""]
+    out += [f"Flip through them as cards in the [✦ Latest window]({page_url('latest', True)}) on the web version, which also lists projects with recent commits." if en
+            else f"网页版的[「✦ 最新更新」窗口]({page_url('latest')})里可以一张张翻这些项目，也能看最近有提交的项目。", ""]
+    out += [f"⭐ New projects land every week. [Star the repo]({REPO_URL}) to come back and see what's new." if en
+            else f"⭐ 每周都有新项目，[点个 Star]({REPO_URL}) 收藏起来，下次回来看看又多了什么。", ""]
+    return out
+
+
 def counts():
     active = sum(1 for p in projects if status(p)[2] == "active")
     agent = sum(1 for p in projects if p.get("agent"))
@@ -325,6 +366,7 @@ def readme():
         "A curated list of open-source tools for making animations and music videos **with code**, indexed by visual style. [English](README.en.md)", "",
         " ".join([
             "[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
+            f"[![GitHub Stars](https://img.shields.io/github/stars/{REPO}?style=social)]({REPO_URL})",
             badge("项目", len(projects), "2E49D4"),
             badge("画风", f"{len(MAIN)}+{len(NICHE)}", "9265D9"),
             badge("活跃项目", active, "1E8A4B"),
@@ -332,10 +374,11 @@ def readme():
         ]), "",
         f"**[🌌 3D 画风入口]({page_url()})**<sub>（转动画风转盘，点进去看每种画风的精品）</sub> · **[🌐 网页版]({page_url('table-sec')})**<sub>（按画风筛选、搜索、排序）</sub> · **[🕸️ 关系图谱]({page_url('graph-sec')})** · **[🎨 画风索引](#index)**", "",
         " · ".join([
-            "[画风索引](#index)", "[小众画风区](#niche)", "[关系图谱](#relations)",
+            "[最新收录](#latest)", "[画风索引](#index)", "[小众画风区](#niche)", "[关系图谱](#relations)",
             "[收录标准](#rules)", "[全部项目](#all)",
             f"[推荐项目]({REPO_URL}/issues/new/choose)",
         ]), "",
+        f"⭐ **觉得有用就[点个 Star]({REPO_URL})**：每周都有新项目，收藏起来方便回来看，也能让更多人找到这份合集。", "",
         "</div>", "",
         *showcase_md(),
         "## 这是什么", "",
@@ -344,6 +387,7 @@ def readme():
         "先挑画风，再挑工具。一个项目常能做好几种画风，所以会同时出现在几个画风里。", "",
         f"除了 {len(MAIN)} 种主流画风，还有收录小众画风的[小众画风区](#niche)（水墨山水、汉字笔顺、示波器、绘图仪、人工生命……），"
         f"其中 {agent} 个是让 Claude、Opus 等 AI 编程助手写代码出片的技能和作品，也都按画风归在各自的分类里。[关系图谱](#relations)把有关系的项目连在一起，看得出谁从谁演化而来、谁能替换谁。", "",
+        *latest_md(),
         '<a name="rules"></a>', "",
         "## 收录标准", "",
         "- **画面必须由代码绘制或渲染。** 用视频生成、图像生成模型出画面的项目不收，用 Blender 等 3D 软件出画面的也不收。个别项目带有可选的生成功能或 Blender 选项，会在说明里注明。",
@@ -487,6 +531,7 @@ def readme_en():
         "**Open-source tools for making animations and music videos with code, indexed by visual style.** [Chinese version](README.md)", "",
         " ".join([
             "[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
+            f"[![GitHub Stars](https://img.shields.io/github/stars/{REPO}?style=social)]({REPO_URL})",
             badge("projects", len(projects), "2E49D4"),
             badge("styles", f"{len(MAIN)}+{len(NICHE)}", "9265D9"),
             badge("active", active, "1E8A4B"),
@@ -494,10 +539,11 @@ def readme_en():
         ]), "",
         f"**[🌌 3D style gateway]({page_url(en=True)})**<sub> (spin the style carousel, open a gallery of picks for each style)</sub> · **[🌐 Web version]({page_url('table-sec', True)})**<sub> (filter by style, search, sort)</sub> · **[🕸️ Relationship graph]({page_url('graph-sec', True)})** · **[🎨 Style index](#index)**", "",
         " · ".join([
-            "[Style index](#index)", "[Niche styles](#niche)", "[Relationships](#relations)",
+            "[Latest](#latest)", "[Style index](#index)", "[Niche styles](#niche)", "[Relationships](#relations)",
             "[Rules](#rules)", "[All projects](#all)",
             f"[Suggest a project]({REPO_URL}/issues/new/choose)",
         ]), "",
+        f"⭐ **Find it useful? [Star the repo]({REPO_URL})** so you can come back for new additions, and so more people can find it.", "",
         "</div>", "",
         *showcase_md(en=True),
         "## What this is", "",
@@ -507,6 +553,7 @@ def readme_en():
         f"Beyond the {len(MAIN)} main styles, the [niche section](#niche) covers ink-wash landscapes, Chinese stroke-order animation, oscilloscope art, plotters, artificial life and others. "
         f"{agent} entries are skills and films where AI coding agents like Claude or Opus write the code, and they're filed by style like everything else. "
         "The [relationship graph](#relations) links related projects, so you can see what grew out of what and what can replace what.", "",
+        *latest_md(en=True),
         '<a name="rules"></a>', "",
         "## What gets listed", "",
         "- **Frames must be drawn or rendered by code.** Projects that make their pictures with video or image generation models aren't listed, and neither are ones that render through Blender or other 3D apps. A few projects have an optional generation feature or Blender option, which is noted on the entry.",
@@ -619,6 +666,7 @@ def page(standalone=True):
                .replace("__RELTYPES__", dump(rel_data["types"]))
                .replace("__SHOWCASE__", dump(page_showcase(standalone)))
                .replace("__FEATURED__", dump(FEATURED))
+               .replace("__LATEST__", dump(LATEST))
                .replace("__DATE__", UPDATED)
                .replace("__REPO_URL__", REPO_URL))
     # 3D 入口的脚本单独放在 site/gateway.js，生成时原样嵌进页面（最后替换，避免它被上面的占位符误伤）

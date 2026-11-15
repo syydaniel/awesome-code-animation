@@ -16,7 +16,8 @@
     "stars": 118498,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "JavaScript 3D Library."
+    "gh_desc": "JavaScript 3D Library.",
+    "added": "2026-11-03"
   },
   {
     "repo": "d3/d3",
@@ -33,7 +34,8 @@
     "stars": 113928,
     "pushed_at": "2026-11-03",
     "archived": false,
-    "gh_desc": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:"
+    "gh_desc": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:",
+    "added": "2026-11-03"
   },
   {
     "repo": "3b1b/manim",
@@ -53,7 +55,8 @@
     "stars": 96549,
     "pushed_at": "2026-09-09",
     "archived": false,
-    "gh_desc": "Animation engine for explanatory math videos"
+    "gh_desc": "Animation engine for explanatory math videos",
+    "added": "2026-11-03"
   },
   {
     "repo": "heygen-com/hyperframes",
@@ -75,7 +78,8 @@
     "stars": 84576,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Write HTML. Render video. Built for agents."
+    "gh_desc": "Write HTML. Render video. Built for agents.",
+    "added": "2026-11-03"
   },
   {
     "repo": "juliangarnier/anime",
@@ -93,7 +97,8 @@
     "stars": 74735,
     "pushed_at": "2026-11-02",
     "archived": false,
-    "gh_desc": "JavaScript animation engine"
+    "gh_desc": "JavaScript animation engine",
+    "added": "2026-11-03"
   },
   {
     "repo": "remotion-dev/remotion",
@@ -117,7 +122,8 @@
     "stars": 73351,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "🎥      Make videos programmatically with React"
+    "gh_desc": "🎥      Make videos programmatically with React",
+    "added": "2026-11-03"
   },
   {
     "repo": "hakimel/reveal.js",
@@ -135,7 +141,8 @@
     "stars": 72582,
     "pushed_at": "2026-09-30",
     "archived": false,
-    "gh_desc": "The HTML Presentation Framework"
+    "gh_desc": "The HTML Presentation Framework",
+    "added": "2026-11-03"
   },
   {
     "repo": "apache/echarts",
@@ -152,7 +159,8 @@
     "stars": 67729,
     "pushed_at": "2026-10-13",
     "archived": false,
-    "gh_desc": "Apache ECharts is a powerful, interactive charting and data visualization library for browser"
+    "gh_desc": "Apache ECharts is a powerful, interactive charting and data visualization library for browser",
+    "added": "2026-11-03"
   },
   {
     "repo": "FFmpeg/FFmpeg",
@@ -173,7 +181,8 @@
     "stars": 67343,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Mirror of https://git.ffmpeg.org/ffmpeg.git"
+    "gh_desc": "Mirror of https://git.ffmpeg.org/ffmpeg.git",
+    "added": "2026-11-03"
   },
   {
     "repo": "DavidHDev/react-bits",
@@ -192,7 +201,8 @@
     "stars": 52001,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "The largest open-source library of animated, interactive, and customizable React & Next.js components for building standout web products and experiences. Built for humans and AI agents."
+    "gh_desc": "The largest open-source library of animated, interactive, and customizable React & Next.js components for building standout web products and experiences. Built for humans and AI agents.",
+    "added": "2026-11-03"
   },
   {
     "repo": "algorithm-visualizer/algorithm-visualizer",
@@ -210,7 +220,8 @@
     "stars": 49515,
     "pushed_at": "2024-06-09",
     "archived": false,
-    "gh_desc": ":fireworks:Interactive Online Platform that Visualizes Algorithms from Code"
+    "gh_desc": ":fireworks:Interactive Online Platform that Visualizes Algorithms from Code",
+    "added": "2026-11-03"
   },
   {
     "repo": "slidevjs/slidev",
@@ -227,7 +238,8 @@
     "stars": 49470,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "Presentation Slides for Developers"
+    "gh_desc": "Presentation Slides for Developers",
+    "added": "2026-11-03"
   },
   {
     "repo": "pixijs/pixijs",
@@ -246,7 +258,8 @@
     "stars": 48732,
     "pushed_at": "2026-11-11",
     "archived": false,
-    "gh_desc": "The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer."
+    "gh_desc": "The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.",
+    "added": "2026-11-03"
   },
   {
     "repo": "ManimCommunity/manim",
@@ -266,7 +279,8 @@
     "stars": 42562,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "A community-maintained Python framework for creating mathematical animations."
+    "gh_desc": "A community-maintained Python framework for creating mathematical animations.",
+    "added": "2026-11-03"
   },
   {
     "repo": "raysan5/raylib",
@@ -286,7 +300,8 @@
     "stars": 35681,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "A simple and easy-to-use library to enjoy videogames programming"
+    "gh_desc": "A simple and easy-to-use library to enjoy videogames programming",
+    "added": "2026-11-04"
   },
   {
     "repo": "motiondivision/motion",
@@ -303,7 +318,8 @@
     "stars": 35216,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "A modern animation library for React and JavaScript"
+    "gh_desc": "A modern animation library for React and JavaScript",
+    "added": "2026-11-03"
   },
   {
     "repo": "pmndrs/react-three-fiber",
@@ -320,7 +336,8 @@
     "stars": 33740,
     "pushed_at": "2026-10-21",
     "archived": false,
-    "gh_desc": "🇨🇭 A React renderer for Three.js"
+    "gh_desc": "🇨🇭 A React renderer for Three.js",
+    "added": "2026-11-03"
   },
   {
     "repo": "airbnb/lottie-web",
@@ -339,7 +356,8 @@
     "stars": 32461,
     "pushed_at": "2025-09-01",
     "archived": false,
-    "gh_desc": "Render After Effects animations natively on Web, Android and iOS, and React Native. http://airbnb.io/lottie/"
+    "gh_desc": "Render After Effects animations natively on Web, Android and iOS, and React Native. http://airbnb.io/lottie/",
+    "added": "2026-11-03"
   },
   {
     "repo": "greensock/GSAP",
@@ -361,7 +379,8 @@
     "stars": 30692,
     "pushed_at": "2026-11-04",
     "archived": false,
-    "gh_desc": "GSAP (GreenSock Animation Platform), a JavaScript animation library for the modern web"
+    "gh_desc": "GSAP (GreenSock Animation Platform), a JavaScript animation library for the modern web",
+    "added": "2026-11-03"
   },
   {
     "repo": "VincentGarreau/particles.js",
@@ -380,7 +399,8 @@
     "stars": 30184,
     "pushed_at": "2024-03-28",
     "archived": false,
-    "gh_desc": "A lightweight JavaScript library for creating particles"
+    "gh_desc": "A lightweight JavaScript library for creating particles",
+    "added": "2026-11-03"
   },
   {
     "repo": "pmndrs/react-spring",
@@ -397,7 +417,8 @@
     "stars": 29299,
     "pushed_at": "2026-11-01",
     "archived": false,
-    "gh_desc": "✌️ A spring physics based React animation library"
+    "gh_desc": "✌️ A spring physics based React animation library",
+    "added": "2026-11-03"
   },
   {
     "repo": "taichi-dev/taichi",
@@ -415,7 +436,8 @@
     "stars": 28462,
     "pushed_at": "2026-10-05",
     "archived": false,
-    "gh_desc": "Productive, portable, and performant GPU programming in Python."
+    "gh_desc": "Productive, portable, and performant GPU programming in Python.",
+    "added": "2026-11-03"
   },
   {
     "repo": "GraphiteEditor/Graphite",
@@ -436,7 +458,8 @@
     "stars": 27948,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Community-built comprehensive 2D content creation appplication for graphic design, digital art, and interactive real-time motion graphics powered by a node-based procedural graphics engine"
+    "gh_desc": "Community-built comprehensive 2D content creation appplication for graphic design, digital art, and interactive real-time motion graphics powered by a node-based procedural graphics engine",
+    "added": "2026-11-15"
   },
   {
     "repo": "Swordfish90/cool-retro-term",
@@ -456,7 +479,8 @@
     "stars": 26571,
     "pushed_at": "2026-05-31",
     "archived": false,
-    "gh_desc": "A good looking terminal emulator which mimics the old cathode display..."
+    "gh_desc": "A good looking terminal emulator which mimics the old cathode display...",
+    "added": "2026-11-04"
   },
   {
     "repo": "BabylonJS/Babylon.js",
@@ -473,7 +497,8 @@
     "stars": 26372,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework."
+    "gh_desc": "Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework.",
+    "added": "2026-11-03"
   },
   {
     "repo": "mxgmn/WaveFunctionCollapse",
@@ -491,7 +516,8 @@
     "stars": 25527,
     "pushed_at": "2026-10-15",
     "archived": false,
-    "gh_desc": "Bitmap & tilemap generation from a single example with the help of ideas from quantum mechanics"
+    "gh_desc": "Bitmap & tilemap generation from a single example with the help of ideas from quantum mechanics",
+    "added": "2026-11-04"
   },
   {
     "repo": "processing/p5.js",
@@ -512,7 +538,8 @@
     "stars": 24357,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "p5.js is a client-side JS platform that empowers artists, designers, students, and anyone to learn to code and express themselves creatively on the web. It is based on the core principles of Processing. Looking for p5.js 2.0? http://beta.p5js.org"
+    "gh_desc": "p5.js is a client-side JS platform that empowers artists, designers, students, and anyone to learn to code and express themselves creatively on the web. It is based on the core principles of Processing. Looking for p5.js 2.0? http://beta.p5js.org",
+    "added": "2026-11-03"
   },
   {
     "repo": "matplotlib/matplotlib",
@@ -529,7 +556,8 @@
     "stars": 23459,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "matplotlib: plotting with Python"
+    "gh_desc": "matplotlib: plotting with Python",
+    "added": "2026-11-03"
   },
   {
     "repo": "magicuidesign/magicui",
@@ -547,7 +575,8 @@
     "stars": 23292,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "UI Library for Design Engineers. Animated components and effects you can copy and paste into your apps. Free. Open Source."
+    "gh_desc": "UI Library for Design Engineers. Animated components and effects you can copy and paste into your apps. Free. Open Source.",
+    "added": "2026-11-03"
   },
   {
     "repo": "latent-spaces/brag",
@@ -566,7 +595,8 @@
     "stars": 21560,
     "pushed_at": "2026-10-23",
     "archived": false,
-    "gh_desc": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command."
+    "gh_desc": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command.",
+    "added": "2026-11-04"
   },
   {
     "repo": "img2threejs/img2threejs",
@@ -586,7 +616,8 @@
     "stars": 21403,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D."
+    "gh_desc": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
+    "added": "2026-11-03"
   },
   {
     "repo": "rough-stuff/rough",
@@ -603,7 +634,8 @@
     "stars": 21380,
     "pushed_at": "2024-07-28",
     "archived": false,
-    "gh_desc": "Create graphics with a hand-drawn, sketchy, appearance"
+    "gh_desc": "Create graphics with a hand-drawn, sketchy, appearance",
+    "added": "2026-11-03"
   },
   {
     "repo": "charmbracelet/vhs",
@@ -622,7 +654,8 @@
     "stars": 21317,
     "pushed_at": "2026-11-06",
     "archived": false,
-    "gh_desc": "Your CLI home video recorder 📼"
+    "gh_desc": "Your CLI home video recorder 📼",
+    "added": "2026-11-03"
   },
   {
     "repo": "lettier/3d-game-shaders-for-beginners",
@@ -643,7 +676,8 @@
     "stars": 20047,
     "pushed_at": "2023-06-25",
     "archived": false,
-    "gh_desc": "🎮 A step-by-step guide to implementing SSAO, depth of field, lighting, normal mapping, and more for your 3D game."
+    "gh_desc": "🎮 A step-by-step guide to implementing SSAO, depth of field, lighting, normal mapping, and more for your 3D game.",
+    "added": "2026-11-04"
   },
   {
     "repo": "motion-canvas/motion-canvas",
@@ -662,7 +696,8 @@
     "stars": 19933,
     "pushed_at": "2026-07-02",
     "archived": false,
-    "gh_desc": "Visualize Your Ideas With Code"
+    "gh_desc": "Visualize Your Ideas With Code",
+    "added": "2026-11-03"
   },
   {
     "repo": "Vincentwei1021/video-shotcraft",
@@ -681,7 +716,8 @@
     "stars": 19874,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe cards, 150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) export."
+    "gh_desc": "AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe cards, 150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) export.",
+    "added": "2026-11-03"
   },
   {
     "repo": "mojs/mojs",
@@ -698,7 +734,8 @@
     "stars": 18921,
     "pushed_at": "2026-07-30",
     "archived": false,
-    "gh_desc": "The motion graphics toolbelt for the web"
+    "gh_desc": "The motion graphics toolbelt for the web",
+    "added": "2026-11-03"
   },
   {
     "repo": "plotly/plotly.py",
@@ -715,7 +752,8 @@
     "stars": 18903,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "The interactive graphing library for Python :sparkles:"
+    "gh_desc": "The interactive graphing library for Python :sparkles:",
+    "added": "2026-11-03"
   },
   {
     "repo": "liabru/matter-js",
@@ -732,7 +770,8 @@
     "stars": 18638,
     "pushed_at": "2026-09-30",
     "archived": false,
-    "gh_desc": "a 2D rigid body physics engine for the web ▲● ■"
+    "gh_desc": "a 2D rigid body physics engine for the web ▲● ■",
+    "added": "2026-11-03"
   },
   {
     "repo": "kitao/pyxel",
@@ -749,7 +788,8 @@
     "stars": 18628,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "A retro game engine for Python"
+    "gh_desc": "A retro game engine for Python",
+    "added": "2026-11-03"
   },
   {
     "repo": "greensock/gsap-skills",
@@ -768,7 +808,8 @@
     "stars": 18482,
     "pushed_at": "2026-07-29",
     "archived": false,
-    "gh_desc": "Official AI skills for GSAP. These skills teach AI coding agents how to correctly use GSAP (GreenSock Animation Platform), including best practices, common animation patterns, and plugin usage."
+    "gh_desc": "Official AI skills for GSAP. These skills teach AI coding agents how to correctly use GSAP (GreenSock Animation Platform), including best practices, common animation patterns, and plugin usage.",
+    "added": "2026-11-04"
   },
   {
     "repo": "asciinema/asciinema",
@@ -787,7 +828,8 @@
     "stars": 17964,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "Terminal session recorder, streamer and player 📹"
+    "gh_desc": "Terminal session recorder, streamer and player 📹",
+    "added": "2026-11-03"
   },
   {
     "repo": "playcanvas/engine",
@@ -804,7 +846,8 @@
     "stars": 17301,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Powerful web graphics runtime built on WebGL, WebGPU, WebXR and glTF"
+    "gh_desc": "Powerful web graphics runtime built on WebGL, WebGPU, WebXR and glTF",
+    "added": "2026-11-03"
   },
   {
     "repo": "PavelDoGreat/WebGL-Fluid-Simulation",
@@ -822,7 +865,8 @@
     "stars": 16842,
     "pushed_at": "2024-11-12",
     "archived": false,
-    "gh_desc": "Play with fluids in your browser (works even on mobile)"
+    "gh_desc": "Play with fluids in your browser (works even on mobile)",
+    "added": "2026-11-03"
   },
   {
     "repo": "lemomo-ai/lemo-opuscar",
@@ -844,7 +888,8 @@
     "stars": 16565,
     "pushed_at": "2026-11-12",
     "archived": false,
-    "gh_desc": "A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：99 种现成风格，也能做出你自己的"
+    "gh_desc": "A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：99 种现成风格，也能做出你自己的",
+    "added": "2026-11-03"
   },
   {
     "repo": "mattboldt/typed.js",
@@ -861,7 +906,8 @@
     "stars": 16274,
     "pushed_at": "2026-01-25",
     "archived": false,
-    "gh_desc": "A JavaScript Typing Animation Library"
+    "gh_desc": "A JavaScript Typing Animation Library",
+    "added": "2026-11-03"
   },
   {
     "repo": "faressoft/terminalizer",
@@ -880,7 +926,8 @@
     "stars": 16171,
     "pushed_at": "2024-08-29",
     "archived": false,
-    "gh_desc": "🦄 Record your terminal and generate animated gif images or share a web player"
+    "gh_desc": "🦄 Record your terminal and generate animated gif images or share a web player",
+    "added": "2026-11-03"
   },
   {
     "repo": "maxwellito/vivus",
@@ -899,7 +946,8 @@
     "stars": 15480,
     "pushed_at": "2022-07-06",
     "archived": false,
-    "gh_desc": "JavaScript library to make drawing animation on SVG"
+    "gh_desc": "JavaScript library to make drawing animation on SVG",
+    "added": "2026-11-03"
   },
   {
     "repo": "yihui-dev/awesome-opus5-5-videos",
@@ -921,7 +969,8 @@
     "stars": 15292,
     "pushed_at": "2026-10-13",
     "archived": false,
-    "gh_desc": "A growing collection of viral videos made with Claude Opus 5.5 and the prompts behind them. Watch each original next to a live remake on Skillry. Updated regularly."
+    "gh_desc": "A growing collection of viral videos made with Claude Opus 5.5 and the prompts behind them. Watch each original next to a live remake on Skillry. Updated regularly.",
+    "added": "2026-11-15"
   },
   {
     "repo": "paperjs/paper.js",
@@ -939,7 +988,8 @@
     "stars": 15200,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas. Created by @lehni & @puckey"
+    "gh_desc": "The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas. Created by @lehni & @puckey",
+    "added": "2026-11-03"
   },
   {
     "repo": "Zulko/moviepy",
@@ -956,7 +1006,8 @@
     "stars": 15151,
     "pushed_at": "2026-08-26",
     "archived": false,
-    "gh_desc": "Video editing with Python"
+    "gh_desc": "Video editing with Python",
+    "added": "2026-11-03"
   },
   {
     "repo": "konvajs/konva",
@@ -973,7 +1024,8 @@
     "stars": 14978,
     "pushed_at": "2026-11-10",
     "archived": false,
-    "gh_desc": "Konva.js is an HTML5 Canvas JavaScript framework for interactive graphics, design editors, whiteboards, and diagrams. Scene graph with events, drag and drop, transforms, animations, and export."
+    "gh_desc": "Konva.js is an HTML5 Canvas JavaScript framework for interactive graphics, design editors, whiteboards, and diagrams. Scene graph with events, drag and drop, transforms, animations, and export.",
+    "added": "2026-11-04"
   },
   {
     "repo": "visgl/deck.gl",
@@ -992,7 +1044,8 @@
     "stars": 14760,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "WebGL2 powered visualization framework"
+    "gh_desc": "WebGL2 powered visualization framework",
+    "added": "2026-11-03"
   },
   {
     "repo": "fogleman/primitive",
@@ -1012,7 +1065,8 @@
     "stars": 13596,
     "pushed_at": "2024-07-22",
     "archived": false,
-    "gh_desc": "Reproducing images with geometric primitives."
+    "gh_desc": "Reproducing images with geometric primitives.",
+    "added": "2026-11-04"
   },
   {
     "repo": "acaudwell/Gource",
@@ -1031,7 +1085,8 @@
     "stars": 13215,
     "pushed_at": "2026-03-06",
     "archived": false,
-    "gh_desc": "software version control visualization"
+    "gh_desc": "software version control visualization",
+    "added": "2026-11-03"
   },
   {
     "repo": "theatre-js/theatre",
@@ -1049,7 +1104,8 @@
     "stars": 13009,
     "pushed_at": "2024-08-14",
     "archived": false,
-    "gh_desc": "Motion design editor for the web"
+    "gh_desc": "Motion design editor for the web",
+    "added": "2026-11-03"
   },
   {
     "repo": "catdad/canvas-confetti",
@@ -1066,7 +1122,8 @@
     "stars": 12862,
     "pushed_at": "2025-10-25",
     "archived": false,
-    "gh_desc": "🎉 performant confetti animation in the browser"
+    "gh_desc": "🎉 performant confetti animation in the browser",
+    "added": "2026-11-03"
   },
   {
     "repo": "antvis/G2",
@@ -1083,7 +1140,8 @@
     "stars": 12665,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "📊 The concise and progressive visualization grammar."
+    "gh_desc": "📊 The concise and progressive visualization grammar.",
+    "added": "2026-11-04"
   },
   {
     "repo": "svgdotjs/svg.js",
@@ -1100,7 +1158,8 @@
     "stars": 11926,
     "pushed_at": "2026-08-04",
     "archived": false,
-    "gh_desc": "The lightweight library for manipulating and animating SVG"
+    "gh_desc": "The lightweight library for manipulating and animating SVG",
+    "added": "2026-11-03"
   },
   {
     "repo": "metafizzy/zdog",
@@ -1122,7 +1181,8 @@
     "stars": 10702,
     "pushed_at": "2023-07-18",
     "archived": false,
-    "gh_desc": "Flat, round, designer-friendly pseudo-3D engine for canvas & SVG"
+    "gh_desc": "Flat, round, designer-friendly pseudo-3D engine for canvas & SVG",
+    "added": "2026-11-03"
   },
   {
     "repo": "katspaugh/wavesurfer.js",
@@ -1139,7 +1199,8 @@
     "stars": 10473,
     "pushed_at": "2026-11-12",
     "archived": false,
-    "gh_desc": "Audio waveform player"
+    "gh_desc": "Audio waveform player",
+    "added": "2026-11-03"
   },
   {
     "repo": "openframeworks/openFrameworks",
@@ -1159,7 +1220,8 @@
     "stars": 10464,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "openFrameworks is a community-developed cross platform toolkit for creative coding in C++."
+    "gh_desc": "openFrameworks is a community-developed cross platform toolkit for creative coding in C++.",
+    "added": "2026-11-03"
   },
   {
     "repo": "rough-stuff/rough-notation",
@@ -1177,7 +1239,8 @@
     "stars": 9746,
     "pushed_at": "2024-03-18",
     "archived": false,
-    "gh_desc": "Create and animate hand-drawn annotations on a web page"
+    "gh_desc": "Create and animate hand-drawn annotations on a web page",
+    "added": "2026-11-03"
   },
   {
     "repo": "rastapasta/mapscii",
@@ -1197,7 +1260,8 @@
     "stars": 9281,
     "pushed_at": "2024-11-03",
     "archived": false,
-    "gh_desc": "🗺  MapSCII is a Braille & ASCII world map renderer for your console - enter => telnet mapscii.me <= on Mac (brew install telnet) and Linux, connect with PuTTY on Windows"
+    "gh_desc": "🗺  MapSCII is a Braille & ASCII world map renderer for your console - enter => telnet mapscii.me <= on Mac (brew install telnet) and Linux, connect with PuTTY on Windows",
+    "added": "2026-11-04"
   },
   {
     "repo": "tsparticles/tsparticles",
@@ -1214,7 +1278,8 @@
     "stars": 9096,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "tsParticles - Easily create highly customizable JavaScript particles effects, confetti explosions and fireworks animations and use them as animated backgrounds for your website. Ready to use components available for React.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Solid, Riot and Web Components."
+    "gh_desc": "tsParticles - Easily create highly customizable JavaScript particles effects, confetti explosions and fireworks animations and use them as animated backgrounds for your website. Ready to use components available for React.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Solid, Riot and Web Components.",
+    "added": "2026-11-03"
   },
   {
     "repo": "love2d/love",
@@ -1231,7 +1296,8 @@
     "stars": 8964,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "LÖVE is an awesome 2D game framework for Lua."
+    "gh_desc": "LÖVE is an awesome 2D game framework for Lua.",
+    "added": "2026-11-03"
   },
   {
     "repo": "storytold/effectcraft",
@@ -1252,7 +1318,8 @@
     "stars": 8813,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "EffectCraft: An open-source motion graphics and compositing tool written from scratch in pure Rust"
+    "gh_desc": "EffectCraft: An open-source motion graphics and compositing tool written from scratch in pure Rust",
+    "added": "2026-11-03"
   },
   {
     "repo": "wcandillon/react-native-skia",
@@ -1270,7 +1337,8 @@
     "stars": 8781,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "High-performance React Native Graphics using Skia"
+    "gh_desc": "High-performance React Native Graphics using Skia",
+    "added": "2026-11-04"
   },
   {
     "repo": "jonobr1/two.js",
@@ -1288,7 +1356,8 @@
     "stars": 8740,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "A renderer agnostic two-dimensional drawing api for the web"
+    "gh_desc": "A renderer agnostic two-dimensional drawing api for the web",
+    "added": "2026-11-03"
   },
   {
     "repo": "mxgmn/MarkovJunior",
@@ -1307,7 +1376,8 @@
     "stars": 8528,
     "pushed_at": "2026-03-20",
     "archived": false,
-    "gh_desc": "Probabilistic language based on pattern matching and constraint propagation, 153 examples"
+    "gh_desc": "Probabilistic language based on pattern matching and constraint propagation, 153 examples",
+    "added": "2026-11-04"
   },
   {
     "repo": "timqian/chart.xkcd",
@@ -1325,7 +1395,8 @@
     "stars": 7875,
     "pushed_at": "2026-10-21",
     "archived": false,
-    "gh_desc": "xkcd styled chart lib"
+    "gh_desc": "xkcd styled chart lib",
+    "added": "2026-11-04"
   },
   {
     "repo": "ColinLeung-NiloCat/UnityURPToonLitShaderExample",
@@ -1344,7 +1415,8 @@
     "stars": 7863,
     "pushed_at": "2026-07-02",
     "archived": false,
-    "gh_desc": "A very simple toon lit shader example, for you to learn writing custom lit shader in Unity URP"
+    "gh_desc": "A very simple toon lit shader example, for you to learn writing custom lit shader in Unity URP",
+    "added": "2026-11-04"
   },
   {
     "repo": "arwes/arwes",
@@ -1362,7 +1434,8 @@
     "stars": 7574,
     "pushed_at": "2026-07-05",
     "archived": false,
-    "gh_desc": "Futuristic Sci-Fi UI Web Framework."
+    "gh_desc": "Futuristic Sci-Fi UI Web Framework.",
+    "added": "2026-11-04"
   },
   {
     "repo": "patch-gg/pixelfx",
@@ -1380,7 +1453,8 @@
     "stars": 7544,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own."
+    "gh_desc": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+    "added": "2026-11-03"
   },
   {
     "repo": "tengbao/vanta",
@@ -1398,7 +1472,8 @@
     "stars": 7378,
     "pushed_at": "2024-03-03",
     "archived": false,
-    "gh_desc": "Animated 3D backgrounds for your website"
+    "gh_desc": "Animated 3D backgrounds for your website",
+    "added": "2026-11-03"
   },
   {
     "repo": "MengTo/threeui",
@@ -1415,7 +1490,8 @@
     "stars": 7300,
     "pushed_at": "2026-09-03",
     "archived": false,
-    "gh_desc": "Open-source ThreeUI Community catalog with live interactive components and complete Community source."
+    "gh_desc": "Open-source ThreeUI Community catalog with live interactive components and complete Community source.",
+    "added": "2026-11-03"
   },
   {
     "repo": "remotion-dev/skills",
@@ -1434,7 +1510,8 @@
     "stars": 7228,
     "pushed_at": "2026-11-11",
     "archived": false,
-    "gh_desc": "Agent Skills"
+    "gh_desc": "Agent Skills",
+    "added": "2026-11-03"
   },
   {
     "repo": "jwilber/roughViz",
@@ -1454,7 +1531,8 @@
     "stars": 7174,
     "pushed_at": "2024-04-26",
     "archived": false,
-    "gh_desc": "Reusable JavaScript library for creating sketchy/hand-drawn styled charts in the browser."
+    "gh_desc": "Reusable JavaScript library for creating sketchy/hand-drawn styled charts in the browser.",
+    "added": "2026-11-04"
   },
   {
     "repo": "patriciogonzalezvivo/thebookofshaders",
@@ -1471,7 +1549,8 @@
     "stars": 7078,
     "pushed_at": "2026-02-28",
     "archived": false,
-    "gh_desc": "Step-by-step guide through the abstract and complex universe of Fragment Shaders."
+    "gh_desc": "Step-by-step guide through the abstract and complex universe of Fragment Shaders.",
+    "added": "2026-11-03"
   },
   {
     "repo": "alchaincyf/huashu-art-motion",
@@ -1492,7 +1571,8 @@
     "stars": 6954,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。"
+    "gh_desc": "艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。",
+    "added": "2026-11-04"
   },
   {
     "repo": "s-macke/VoxelSpace",
@@ -1511,7 +1591,8 @@
     "stars": 6833,
     "pushed_at": "2024-04-29",
     "archived": false,
-    "gh_desc": "Terrain rendering algorithm in less than 20 lines of code"
+    "gh_desc": "Terrain rendering algorithm in less than 20 lines of code",
+    "added": "2026-11-04"
   },
   {
     "repo": "nannou-org/nannou",
@@ -1530,7 +1611,8 @@
     "stars": 6784,
     "pushed_at": "2026-11-09",
     "archived": false,
-    "gh_desc": "A Creative Coding Framework for Rust."
+    "gh_desc": "A Creative Coding Framework for Rust.",
+    "added": "2026-11-03"
   },
   {
     "repo": "cambecc/earth",
@@ -1551,7 +1633,8 @@
     "stars": 6631,
     "pushed_at": "2022-10-01",
     "archived": false,
-    "gh_desc": "a project to visualize global weather conditions"
+    "gh_desc": "a project to visualize global weather conditions",
+    "added": "2026-11-04"
   },
   {
     "repo": "karlstav/cava",
@@ -1570,7 +1653,8 @@
     "stars": 6529,
     "pushed_at": "2026-11-11",
     "archived": false,
-    "gh_desc": "Cross-platform Audio Visualizer"
+    "gh_desc": "Cross-platform Audio Visualizer",
+    "added": "2026-11-03"
   },
   {
     "repo": "LingDong-/shan-shui-inf",
@@ -1591,7 +1675,8 @@
     "stars": 6452,
     "pushed_at": "2018-12-11",
     "archived": false,
-    "gh_desc": "Procedurally generated Chinese landscape painting."
+    "gh_desc": "Procedurally generated Chinese landscape painting.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Azgaar/Fantasy-Map-Generator",
@@ -1611,7 +1696,8 @@
     "stars": 6216,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Web application generating interactive and highly customizable maps"
+    "gh_desc": "Web application generating interactive and highly customizable maps",
+    "added": "2026-11-04"
   },
   {
     "repo": "nesbox/TIC-80",
@@ -1631,7 +1717,8 @@
     "stars": 6193,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "TIC-80 is a fantasy computer for making, playing and sharing tiny games."
+    "gh_desc": "TIC-80 is a fantasy computer for making, playing and sharing tiny games.",
+    "added": "2026-11-03"
   },
   {
     "repo": "candycat1992/Unity_Shaders_Book",
@@ -1652,7 +1739,8 @@
     "stars": 6129,
     "pushed_at": "2023-02-23",
     "archived": false,
-    "gh_desc": ":book: 书籍《Unity Shader入门精要》源代码"
+    "gh_desc": ":book: 书籍《Unity Shader入门精要》源代码",
+    "added": "2026-11-04"
   },
   {
     "repo": "css-doodle/css-doodle",
@@ -1669,7 +1757,8 @@
     "stars": 6081,
     "pushed_at": "2026-11-07",
     "archived": false,
-    "gh_desc": "A web component for visual art and creative coding"
+    "gh_desc": "A web component for visual art and creative coding",
+    "added": "2026-11-03"
   },
   {
     "repo": "shader-effects-inc/shaders",
@@ -1686,7 +1775,8 @@
     "stars": 5948,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "WebGPU components for React, Vue, Svelte, Solid, JS & Framer"
+    "gh_desc": "WebGPU components for React, Vue, Svelte, Solid, JS & Framer",
+    "added": "2026-11-03"
   },
   {
     "repo": "galacean/engine",
@@ -1704,7 +1794,8 @@
     "stars": 5922,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "A typescript interactive engine, support 2D, 3D, animation, physics, built on WebGL and glTF."
+    "gh_desc": "A typescript interactive engine, support 2D, 3D, animation, physics, built on WebGL and glTF.",
+    "added": "2026-11-03"
   },
   {
     "repo": "kajisho5/ffmpeg-skill",
@@ -1722,7 +1813,8 @@
     "stars": 5841,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys."
+    "gh_desc": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Tencent/libpag",
@@ -1740,7 +1832,8 @@
     "stars": 5822,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "The official rendering library for PAG (Portable Animated Graphics) files that renders After Effects animations natively across multiple platforms."
+    "gh_desc": "The official rendering library for PAG (Portable Animated Graphics) files that renders After Effects animations natively across multiple platforms.",
+    "added": "2026-11-03"
   },
   {
     "repo": "diffusionstudio/lottie",
@@ -1758,7 +1851,8 @@
     "stars": 5759,
     "pushed_at": "2026-07-25",
     "archived": false,
-    "gh_desc": "Generate production-ready Lottie animations with Claude Code or Codex"
+    "gh_desc": "Generate production-ready Lottie animations with Claude Code or Codex",
+    "added": "2026-11-04"
   },
   {
     "repo": "yeemachine/kalidokit",
@@ -1775,7 +1869,8 @@
     "stars": 5730,
     "pushed_at": "2025-08-18",
     "archived": false,
-    "gh_desc": "Blendshape and kinematics calculator for Mediapipe/Tensorflow.js Face, Eyes, Pose, and Finger tracking models."
+    "gh_desc": "Blendshape and kinematics calculator for Mediapipe/Tensorflow.js Face, Eyes, Pose, and Finger tracking models.",
+    "added": "2026-11-03"
   },
   {
     "repo": "NatronGitHub/Natron",
@@ -1792,7 +1887,8 @@
     "stars": 5717,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Open-source video compositing software. Node-graph based. Similar in functionalities to Adobe After Effects and Nuke by The Foundry."
+    "gh_desc": "Open-source video compositing software. Node-graph based. Similar in functionalities to Adobe After Effects and Nuke by The Foundry.",
+    "added": "2026-11-03"
   },
   {
     "repo": "mifi/editly",
@@ -1810,7 +1906,8 @@
     "stars": 5613,
     "pushed_at": "2025-05-12",
     "archived": false,
-    "gh_desc": "Slick, declarative command line video editing & API"
+    "gh_desc": "Slick, declarative command line video editing & API",
+    "added": "2026-11-03"
   },
   {
     "repo": "chrxh/alien",
@@ -1830,7 +1927,8 @@
     "stars": 5593,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "ALIEN is a CUDA-powered artificial life simulation program."
+    "gh_desc": "ALIEN is a CUDA-powered artificial life simulation program.",
+    "added": "2026-11-04"
   },
   {
     "repo": "cinder/Cinder",
@@ -1848,7 +1946,8 @@
     "stars": 5551,
     "pushed_at": "2026-03-20",
     "archived": false,
-    "gh_desc": "Cinder is a community-developed, free and open source library for professional-quality creative coding in C++."
+    "gh_desc": "Cinder is a community-developed, free and open source library for professional-quality creative coding in C++.",
+    "added": "2026-11-03"
   },
   {
     "repo": "DavidHDev/canvas-ui",
@@ -1866,7 +1965,8 @@
     "stars": 5418,
     "pushed_at": "2026-11-08",
     "archived": false,
-    "gh_desc": "A library of creative canvas components. Real HTML with WebGL effects running over it. React, Vue, Svelte, vanilla."
+    "gh_desc": "A library of creative canvas components. Real HTML with WebGL effects running over it. React, Vue, Svelte, vanilla.",
+    "added": "2026-11-03"
   },
   {
     "repo": "The-Powder-Toy/The-Powder-Toy",
@@ -1886,7 +1986,8 @@
     "stars": 5411,
     "pushed_at": "2026-11-10",
     "archived": false,
-    "gh_desc": "Written in C++ and using SDL, The Powder Toy is a desktop version of the classic 'falling sand' physics sandbox, it simulates air pressure and velocity as well as heat."
+    "gh_desc": "Written in C++ and using SDL, The Powder Toy is a desktop version of the classic 'falling sand' physics sandbox, it simulates air pressure and velocity as well as heat.",
+    "added": "2026-11-04"
   },
   {
     "repo": "hpjansson/chafa",
@@ -1904,7 +2005,8 @@
     "stars": 5402,
     "pushed_at": "2026-11-01",
     "archived": false,
-    "gh_desc": "📺🗿 Terminal graphics for the 21st century."
+    "gh_desc": "📺🗿 Terminal graphics for the 21st century.",
+    "added": "2026-11-03"
   },
   {
     "repo": "code-hike/codehike",
@@ -1921,7 +2023,8 @@
     "stars": 5399,
     "pushed_at": "2026-03-17",
     "archived": false,
-    "gh_desc": "Build rich content websites with Markdown and React"
+    "gh_desc": "Build rich content websites with Markdown and React",
+    "added": "2026-11-03"
   },
   {
     "repo": "williamngan/pts",
@@ -1939,7 +2042,8 @@
     "stars": 5370,
     "pushed_at": "2026-10-28",
     "archived": false,
-    "gh_desc": "A library for visualization and creative-coding"
+    "gh_desc": "A library for visualization and creative-coding",
+    "added": "2026-11-03"
   },
   {
     "repo": "patriciogonzalezvivo/glslViewer",
@@ -1956,7 +2060,8 @@
     "stars": 5358,
     "pushed_at": "2026-11-02",
     "archived": false,
-    "gh_desc": "Console-based GLSL Sandbox for 2D/3D shaders"
+    "gh_desc": "Console-based GLSL Sandbox for 2D/3D shaders",
+    "added": "2026-11-03"
   },
   {
     "repo": "mattdesl/canvas-sketch",
@@ -1973,7 +2078,8 @@
     "stars": 5326,
     "pushed_at": "2026-06-02",
     "archived": false,
-    "gh_desc": "[beta] A framework for making generative artwork in JavaScript and the browser."
+    "gh_desc": "[beta] A framework for making generative artwork in JavaScript and the browser.",
+    "added": "2026-11-03"
   },
   {
     "repo": "abishekvashok/cmatrix",
@@ -1991,7 +2097,8 @@
     "stars": 5310,
     "pushed_at": "2024-08-21",
     "archived": false,
-    "gh_desc": "Terminal based \"The Matrix\" like implementation"
+    "gh_desc": "Terminal based \"The Matrix\" like implementation",
+    "added": "2026-11-03"
   },
   {
     "repo": "Orillusion/orillusion",
@@ -2009,7 +2116,8 @@
     "stars": 5231,
     "pushed_at": "2026-11-06",
     "archived": false,
-    "gh_desc": "Orillusion is a pure Web3D rendering engine which is fully developed based on the WebGPU standard."
+    "gh_desc": "Orillusion is a pure Web3D rendering engine which is fully developed based on the WebGPU standard.",
+    "added": "2026-11-04"
   },
   {
     "repo": "tixl3d/tixl",
@@ -2029,7 +2137,8 @@
     "stars": 5187,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "TiXL is an open source software to create realtime motion graphics."
+    "gh_desc": "TiXL is an open source software to create realtime motion graphics.",
+    "added": "2026-11-03"
   },
   {
     "repo": "chanind/hanzi-writer",
@@ -2047,7 +2156,8 @@
     "stars": 5071,
     "pushed_at": "2025-12-31",
     "archived": false,
-    "gh_desc": "Chinese character stroke order animations and practice quizzes"
+    "gh_desc": "Chinese character stroke order animations and practice quizzes",
+    "added": "2026-11-04"
   },
   {
     "repo": "marian42/wavefunctioncollapse",
@@ -2069,7 +2179,8 @@
     "pushed_at": "2021-03-28",
     "archived": false,
     "gh_desc": "Walk through an infinite, procedurally generated city",
-    "lang_en": "C# (Unity)"
+    "lang_en": "C# (Unity)",
+    "added": "2026-11-04"
   },
   {
     "repo": "nexu-io/html-video",
@@ -2088,7 +2199,8 @@
     "stars": 4841,
     "pushed_at": "2026-06-21",
     "archived": false,
-    "gh_desc": "Programmatic video for coding agents — HTML to video on your laptop. Turn HTML, CSS & data into real MP4s with pluggable render engines, 21 templates, AI soundtrack. Apache-2.0, no per-render fees. An official project by the Open Design team."
+    "gh_desc": "Programmatic video for coding agents — HTML to video on your laptop. Turn HTML, CSS & data into real MP4s with pluggable render engines, 21 templates, AI soundtrack. Apache-2.0, no per-render fees. An official project by the Open Design team.",
+    "added": "2026-11-03"
   },
   {
     "repo": "dfranx/SHADERed",
@@ -2107,7 +2219,8 @@
     "stars": 4812,
     "pushed_at": "2023-09-22",
     "archived": false,
-    "gh_desc": "Lightweight, cross-platform & full-featured shader IDE"
+    "gh_desc": "Lightweight, cross-platform & full-featured shader IDE",
+    "added": "2026-11-03"
   },
   {
     "repo": "initialcommit-com/git-sim",
@@ -2125,7 +2238,8 @@
     "stars": 4695,
     "pushed_at": "2026-10-12",
     "archived": false,
-    "gh_desc": "The visual layer for Git in your own repos: simulate, record, replay, audit, and share entire Git workflows, wherever you or your agents run them."
+    "gh_desc": "The visual layer for Git in your own repos: simulate, record, replay, audit, and share entire Git workflows, wherever you or your agents run them.",
+    "added": "2026-11-03"
   },
   {
     "repo": "cocopon/tweakpane",
@@ -2142,7 +2256,8 @@
     "stars": 4693,
     "pushed_at": "2026-03-15",
     "archived": false,
-    "gh_desc": ":control_knobs: Compact GUI for fine-tuning parameters and monitoring value changes"
+    "gh_desc": ":control_knobs: Compact GUI for fine-tuning parameters and monitoring value changes",
+    "added": "2026-11-04"
   },
   {
     "repo": "Kyant0/AndroidLiquidGlass",
@@ -2160,7 +2275,8 @@
     "pushed_at": "2026-11-12",
     "archived": false,
     "gh_desc": "Compose Multiplatform Liquid Glass effect",
-    "lang_en": "Kotlin (Compose)"
+    "lang_en": "Kotlin (Compose)",
+    "added": "2026-11-04"
   },
   {
     "repo": "projectM-visualizer/projectm",
@@ -2178,7 +2294,8 @@
     "stars": 4583,
     "pushed_at": "2026-11-01",
     "archived": false,
-    "gh_desc": "projectM - Cross-platform Music Visualization Library. Open-source and Milkdrop-compatible."
+    "gh_desc": "projectM - Cross-platform Music Visualization Library. Open-source and Milkdrop-compatible.",
+    "added": "2026-11-03"
   },
   {
     "repo": "stackgl/shader-school",
@@ -2197,7 +2314,8 @@
     "stars": 4415,
     "pushed_at": "2021-03-20",
     "archived": false,
-    "gh_desc": ":mortar_board: A workshopper for GLSL shaders and graphics programming"
+    "gh_desc": ":mortar_board: A workshopper for GLSL shaders and graphics programming",
+    "added": "2026-11-04"
   },
   {
     "repo": "mausimus/ShaderGlass",
@@ -2217,7 +2335,8 @@
     "pushed_at": "2026-11-08",
     "archived": false,
     "gh_desc": "Overlay for running GPU shaders on top of Windows desktop and Wine",
-    "lang_en": "C++ (Windows)"
+    "lang_en": "C++ (Windows)",
+    "added": "2026-11-03"
   },
   {
     "repo": "peterbrittain/asciimatics",
@@ -2234,7 +2353,8 @@
     "stars": 4308,
     "pushed_at": "2026-07-04",
     "archived": false,
-    "gh_desc": "A cross platform package to do curses-like operations, plus higher level APIs and widgets to create text UIs and ASCII art animations"
+    "gh_desc": "A cross platform package to do curses-like operations, plus higher level APIs and widgets to create text UIs and ASCII art animations",
+    "added": "2026-11-03"
   },
   {
     "repo": "ChrisBuilds/terminaltexteffects",
@@ -2252,7 +2372,8 @@
     "stars": 4304,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "TerminalTextEffects (TTE) is a terminal visual effects engine, application, and Python library."
+    "gh_desc": "TerminalTextEffects (TTE) is a terminal visual effects engine, application, and Python library.",
+    "added": "2026-11-03"
   },
   {
     "repo": "neozhaoliang/pywonderland",
@@ -2270,7 +2391,8 @@
     "stars": 4238,
     "pushed_at": "2026-02-03",
     "archived": false,
-    "gh_desc": "A tour in the wonderland of math with python."
+    "gh_desc": "A tour in the wonderland of math with python.",
+    "added": "2026-11-04"
   },
   {
     "repo": "midrender/revideo",
@@ -2288,7 +2410,8 @@
     "stars": 4212,
     "pushed_at": "2026-07-15",
     "archived": false,
-    "gh_desc": "Create Videos with Code"
+    "gh_desc": "Create Videos with Code",
+    "added": "2026-11-03"
   },
   {
     "repo": "gdquest-demos/godot-shaders",
@@ -2307,7 +2430,8 @@
     "stars": 4204,
     "pushed_at": "2026-05-16",
     "archived": false,
-    "gh_desc": "A large library of free and open-source shaders for the Godot game engine. Here, you'll get 2D and 3D shaders with playable demos."
+    "gh_desc": "A large library of free and open-source shaders for the Godot game engine. Here, you'll get 2D and 3D shaders with playable demos.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Tencent/vap",
@@ -2325,7 +2449,8 @@
     "stars": 4182,
     "pushed_at": "2026-11-10",
     "archived": false,
-    "gh_desc": "VAP是腾讯云开发，用于播放特效动画的实现方案，已经升级为 VAP Pro SDK。具有高压缩率、硬件解码等优点。同时支持 iOS,Android,Web 平台。"
+    "gh_desc": "VAP是腾讯云开发，用于播放特效动画的实现方案，已经升级为 VAP Pro SDK。具有高压缩率、硬件解码等优点。同时支持 iOS,Android,Web 平台。",
+    "added": "2026-11-03"
   },
   {
     "repo": "feitangyuan/onetake",
@@ -2345,7 +2470,8 @@
     "stars": 4146,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "Motion films that never cut to the next slide: every beat grows out of the one before, one continuous camera, continuity measured by an oracle. Product launch films and feature demos, made with a coding agent."
+    "gh_desc": "Motion films that never cut to the next slide: every beat grows out of the one before, one continuous camera, continuity measured by an oracle. Product launch films and feature demos, made with a coding agent.",
+    "added": "2026-11-03"
   },
   {
     "repo": "unity3d-jp/UnityChanToonShaderVer2_Project",
@@ -2366,7 +2492,8 @@
     "stars": 4106,
     "pushed_at": "2024-10-15",
     "archived": false,
-    "gh_desc": "UnityChanToonShaderVer2 Project / v.2.0.9 Release"
+    "gh_desc": "UnityChanToonShaderVer2 Project / v.2.0.9 Release",
+    "added": "2026-11-04"
   },
   {
     "repo": "antvis/L7",
@@ -2384,7 +2511,8 @@
     "stars": 4080,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "🌎 Large-scale WebGL-powered Geospatial Data Visualization analysis engine."
+    "gh_desc": "🌎 Large-scale WebGL-powered Geospatial Data Visualization analysis engine.",
+    "added": "2026-11-04"
   },
   {
     "repo": "paper-design/shaders",
@@ -2401,7 +2529,8 @@
     "stars": 3976,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "Zero-dependency canvas shaders that can be installed from npm or designed in Paper"
+    "gh_desc": "Zero-dependency canvas shaders that can be installed from npm or designed in Paper",
+    "added": "2026-11-03"
   },
   {
     "repo": "mexicat/pdoom-video",
@@ -2422,7 +2551,8 @@
     "stars": 3910,
     "pushed_at": "2026-10-05",
     "archived": false,
-    "gh_desc": "Code-rendered music video for \"I'm Upping My P(doom)\""
+    "gh_desc": "Code-rendered music video for \"I'm Upping My P(doom)\"",
+    "added": "2026-11-04"
   },
   {
     "repo": "lucasmarkes/hairline",
@@ -2440,7 +2570,8 @@
     "stars": 3906,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "Isometric line figures that answer the pointer. For React and for anything with a DOM."
+    "gh_desc": "Isometric line figures that answer the pointer. For React and for anything with a DOM.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Chakazul/Lenia",
@@ -2460,7 +2591,8 @@
     "stars": 3897,
     "pushed_at": "2024-07-19",
     "archived": false,
-    "gh_desc": "Lenia - Mathematical Life Forms"
+    "gh_desc": "Lenia - Mathematical Life Forms",
+    "added": "2026-11-04"
   },
   {
     "repo": "rh12503/triangula",
@@ -2477,7 +2609,8 @@
     "stars": 3876,
     "pushed_at": "2026-03-21",
     "archived": false,
-    "gh_desc": "Generate high-quality triangulated and polygonal art from images."
+    "gh_desc": "Generate high-quality triangulated and polygonal art from images.",
+    "added": "2026-11-04"
   },
   {
     "repo": "farbrausch/fr_public",
@@ -2498,7 +2631,8 @@
     "stars": 3839,
     "pushed_at": "2019-07-28",
     "archived": false,
-    "gh_desc": "Farbrausch demo tools 2001-2011"
+    "gh_desc": "Farbrausch demo tools 2001-2011",
+    "added": "2026-11-04"
   },
   {
     "repo": "thi-ng/umbrella",
@@ -2516,7 +2650,8 @@
     "stars": 3838,
     "pushed_at": "2026-11-09",
     "archived": false,
-    "gh_desc": "⛱  Broadly scoped ecosystem & mono-repository of 215 TypeScript projects (and ~185 examples) for general purpose, functional, data driven development"
+    "gh_desc": "⛱  Broadly scoped ecosystem & mono-repository of 215 TypeScript projects (and ~185 examples) for general purpose, functional, data driven development",
+    "added": "2026-11-03"
   },
   {
     "repo": "sloria/doitlive",
@@ -2534,7 +2669,8 @@
     "stars": 3580,
     "pushed_at": "2026-11-03",
     "archived": false,
-    "gh_desc": "Because sometimes you need to do it live"
+    "gh_desc": "Because sometimes you need to do it live",
+    "added": "2026-11-04"
   },
   {
     "repo": "TheZoraiz/ascii-image-converter",
@@ -2552,7 +2688,8 @@
     "stars": 3573,
     "pushed_at": "2024-04-14",
     "archived": false,
-    "gh_desc": "A cross-platform command-line tool to convert images into ascii art and print them on the console. Now supports braille art!"
+    "gh_desc": "A cross-platform command-line tool to convert images into ascii art and print them on the console. Now supports braille art!",
+    "added": "2026-11-03"
   },
   {
     "repo": "Auburn/FastNoiseLite",
@@ -2571,7 +2708,8 @@
     "stars": 3558,
     "pushed_at": "2026-10-17",
     "archived": false,
-    "gh_desc": "Fast Portable Noise Library - C# C++ C Java HLSL GLSL JavaScript Rust Go"
+    "gh_desc": "Fast Portable Noise Library - C# C++ C Java HLSL GLSL JavaScript Rust Go",
+    "added": "2026-11-04"
   },
   {
     "repo": "Vincentwei1021/mg-styles-15",
@@ -2593,7 +2731,8 @@
     "stars": 3545,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "15 motion design styles, each made by Claude Opus 5.5 writing code from one prompt: watch the films, copy the prompts, read the full source."
+    "gh_desc": "15 motion design styles, each made by Claude Opus 5.5 writing code from one prompt: watch the films, copy the prompts, read the full source.",
+    "added": "2026-11-04"
   },
   {
     "repo": "helblazer811/ManimML",
@@ -2611,7 +2750,8 @@
     "stars": 3532,
     "pushed_at": "2024-06-22",
     "archived": false,
-    "gh_desc": "ManimML is a project focused on providing animations and visualizations of common machine learning concepts with the Manim Community Library."
+    "gh_desc": "ManimML is a project focused on providing animations and visualizations of common machine learning concepts with the Manim Community Library.",
+    "added": "2026-11-03"
   },
   {
     "repo": "mromidev/claude-animated-shorts",
@@ -2631,7 +2771,8 @@
     "stars": 3495,
     "pushed_at": "2026-11-01",
     "archived": false,
-    "gh_desc": "Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js + Remotion"
+    "gh_desc": "Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js + Remotion",
+    "added": "2026-11-15"
   },
   {
     "repo": "patriciogonzalezvivo/lygia",
@@ -2652,7 +2793,8 @@
     "stars": 3490,
     "pushed_at": "2026-10-24",
     "archived": false,
-    "gh_desc": "LYGIA, it's a granular and multi-language (GLSL, HLSL, Metal,  WGSL,  WEGL and CUDA) shader library designed for performance and flexibility"
+    "gh_desc": "LYGIA, it's a granular and multi-language (GLSL, HLSL, Metal,  WGSL,  WEGL and CUDA) shader library designed for performance and flexibility",
+    "added": "2026-11-03"
   },
   {
     "repo": "stevenpetryk/mafs",
@@ -2669,7 +2811,8 @@
     "stars": 3451,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "React components for interactive math"
+    "gh_desc": "React components for interactive math",
+    "added": "2026-11-04"
   },
   {
     "repo": "hunar4321/particle-life",
@@ -2689,7 +2832,8 @@
     "stars": 3369,
     "pushed_at": "2024-08-29",
     "archived": false,
-    "gh_desc": "A simple program to simulate artificial life using attraction/reuplsion forces between many particles"
+    "gh_desc": "A simple program to simulate artificial life using attraction/reuplsion forces between many particles",
+    "added": "2026-11-04"
   },
   {
     "repo": "Vincentwei1021/anything2explainer",
@@ -2708,7 +2852,8 @@
     "stars": 3331,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion."
+    "gh_desc": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
+    "added": "2026-11-03"
   },
   {
     "repo": "software-mansion/TypeGPU",
@@ -2725,7 +2870,8 @@
     "stars": 3322,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "A modular and open-ended toolkit for WebGPU, with advanced type inference and the ability to write shaders in TypeScript"
+    "gh_desc": "A modular and open-ended toolkit for WebGPU, with advanced type inference and the ability to write shaders in TypeScript",
+    "added": "2026-11-04"
   },
   {
     "repo": "gkurt/tegaki",
@@ -2744,7 +2890,8 @@
     "stars": 3310,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "Handwriting animation for the web. Supports any font or text."
+    "gh_desc": "Handwriting animation for the web. Supports any font or text.",
+    "added": "2026-11-04"
   },
   {
     "repo": "MaxBittker/sandspiel",
@@ -2762,7 +2909,8 @@
     "stars": 3227,
     "pushed_at": "2026-09-10",
     "archived": false,
-    "gh_desc": "Creative cellular automata browser game"
+    "gh_desc": "Creative cellular automata browser game",
+    "added": "2026-11-04"
   },
   {
     "repo": "ruucm/shadergradient",
@@ -2779,7 +2927,8 @@
     "stars": 3173,
     "pushed_at": "2026-09-23",
     "archived": false,
-    "gh_desc": "Create beautiful moving gradients on Framer, Figma and React"
+    "gh_desc": "Create beautiful moving gradients on Framer, Figma and React",
+    "added": "2026-11-03"
   },
   {
     "repo": "tnfe/FFCreator",
@@ -2796,7 +2945,8 @@
     "stars": 3166,
     "pushed_at": "2024-12-19",
     "archived": false,
-    "gh_desc": "A fast video processing library based on node.js (一个基于node.js的高速视频制作库)"
+    "gh_desc": "A fast video processing library based on node.js (一个基于node.js的高速视频制作库)",
+    "added": "2026-11-03"
   },
   {
     "repo": "LottieFiles/motion-design-skill",
@@ -2815,7 +2965,8 @@
     "stars": 3143,
     "pushed_at": "2026-05-18",
     "archived": false,
-    "gh_desc": "Universal motion design principles for AI agents — timing, easing, choreography, and Disney animation principles adapted for UI"
+    "gh_desc": "Universal motion design principles for AI agents — timing, easing, choreography, and Disney animation principles adapted for UI",
+    "added": "2026-11-03"
   },
   {
     "repo": "dmtrKovalenko/fframes",
@@ -2833,7 +2984,8 @@
     "stars": 3112,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "programmatic video rendering framework that is actually fast"
+    "gh_desc": "programmatic video rendering framework that is actually fast",
+    "added": "2026-11-03"
   },
   {
     "repo": "ashima/webgl-noise",
@@ -2851,7 +3003,8 @@
     "stars": 3017,
     "pushed_at": "2024-11-15",
     "archived": false,
-    "gh_desc": "Procedural Noise Shader Routines compatible with WebGL"
+    "gh_desc": "Procedural Noise Shader Routines compatible with WebGL",
+    "added": "2026-11-04"
   },
   {
     "repo": "gre/gl-react",
@@ -2868,7 +3021,8 @@
     "stars": 3015,
     "pushed_at": "2026-11-09",
     "archived": false,
-    "gh_desc": "gl-react – React library to write and compose WebGL shaders"
+    "gh_desc": "gl-react – React library to write and compose WebGL shaders",
+    "added": "2026-11-04"
   },
   {
     "repo": "JohnHeibel/ClaudeAnimationBase",
@@ -2887,7 +3041,8 @@
     "stars": 3002,
     "pushed_at": "2026-09-24",
     "archived": false,
-    "gh_desc": "A starter kit for animating hand-painted cartoons with Claude: p5.js + p5.brush, the Clawd character, 31 acted emotions and a guide for the model"
+    "gh_desc": "A starter kit for animating hand-painted cartoons with Claude: p5.js + p5.brush, the Clawd character, 31 acted emotions and a guide for the model",
+    "added": "2026-11-04"
   },
   {
     "repo": "mitsuba-renderer/mitsuba3",
@@ -2905,7 +3060,8 @@
     "stars": 2984,
     "pushed_at": "2026-10-30",
     "archived": false,
-    "gh_desc": "Mitsuba 3: A Retargetable Forward and Inverse Renderer"
+    "gh_desc": "Mitsuba 3: A Retargetable Forward and Inverse Renderer",
+    "added": "2026-11-04"
   },
   {
     "repo": "pmndrs/postprocessing",
@@ -2923,7 +3079,8 @@
     "stars": 2977,
     "pushed_at": "2026-11-01",
     "archived": false,
-    "gh_desc": "A post processing library for three.js."
+    "gh_desc": "A post processing library for three.js.",
+    "added": "2026-11-03"
   },
   {
     "repo": "twostraws/Inferno",
@@ -2942,7 +3099,8 @@
     "pushed_at": "2026-05-17",
     "archived": false,
     "gh_desc": "Metal shaders for SwiftUI.",
-    "lang_en": "Swift / Metal (iOS)"
+    "lang_en": "Swift / Metal (iOS)",
+    "added": "2026-11-04"
   },
   {
     "repo": "JohnHeibel/PDoomVideo",
@@ -2963,7 +3121,8 @@
     "stars": 2939,
     "pushed_at": "2026-09-25",
     "archived": false,
-    "gh_desc": "Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)"
+    "gh_desc": "Source code for the Claude Opus 5.5 music video for I'm Upping My P(doom)",
+    "added": "2026-11-04"
   },
   {
     "repo": "xelatihy/yocto-gl",
@@ -2983,7 +3142,8 @@
     "stars": 2935,
     "pushed_at": "2024-02-21",
     "archived": false,
-    "gh_desc": "Yocto/GL: Tiny C++ Libraries for Data-Driven Physically-based Graphics"
+    "gh_desc": "Yocto/GL: Tiny C++ Libraries for Data-Driven Physically-based Graphics",
+    "added": "2026-11-04"
   },
   {
     "repo": "jdan/isomer",
@@ -3002,7 +3162,8 @@
     "stars": 2906,
     "pushed_at": "2022-04-20",
     "archived": false,
-    "gh_desc": "Simple isometric graphics library for HTML5 canvas"
+    "gh_desc": "Simple isometric graphics library for HTML5 canvas",
+    "added": "2026-11-04"
   },
   {
     "repo": "HarleyCoops/Math-To-Manim",
@@ -3024,7 +3185,8 @@
     "stars": 2875,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "Create Epic Math and Physics Animations & Study Notes From Text and Images."
+    "gh_desc": "Create Epic Math and Physics Animations & Study Notes From Text and Images.",
+    "added": "2026-11-15"
   },
   {
     "repo": "nateherkai/herk-edit-kit",
@@ -3043,7 +3205,8 @@
     "stars": 2855,
     "pushed_at": "2026-10-14",
     "archived": false,
-    "gh_desc": "Herk Edit Kit by Nate Herk: edit videos, reels, and YouTube Shorts with Codex or Claude Code. 15 skills, transcript-driven cuts, storytelling, 406 motion-graphics cards, and HyperFrames templates."
+    "gh_desc": "Herk Edit Kit by Nate Herk: edit videos, reels, and YouTube Shorts with Codex or Claude Code. 15 skills, transcript-driven cuts, storytelling, 406 motion-graphics cards, and HyperFrames templates.",
+    "added": "2026-11-04"
   },
   {
     "repo": "hzeller/timg",
@@ -3062,7 +3225,8 @@
     "stars": 2797,
     "pushed_at": "2026-08-05",
     "archived": false,
-    "gh_desc": "A terminal image and video viewer."
+    "gh_desc": "A terminal image and video viewer.",
+    "added": "2026-11-04"
   },
   {
     "repo": "skishore/makemeahanzi",
@@ -3082,7 +3246,8 @@
     "stars": 2759,
     "pushed_at": "2026-03-08",
     "archived": false,
-    "gh_desc": "Free, open-source Chinese character data"
+    "gh_desc": "Free, open-source Chinese character data",
+    "added": "2026-11-04"
   },
   {
     "repo": "hydra-synth/hydra",
@@ -3103,7 +3268,8 @@
     "stars": 2753,
     "pushed_at": "2026-04-25",
     "archived": false,
-    "gh_desc": "Livecoding networked visuals in the browser"
+    "gh_desc": "Livecoding networked visuals in the browser",
+    "added": "2026-11-03"
   },
   {
     "repo": "academa-labs/manimgx",
@@ -3122,7 +3288,8 @@
     "stars": 2751,
     "pushed_at": "2026-11-09",
     "archived": false,
-    "gh_desc": "The animation engine for agents: blazingly fast math and 3D videos with Manim's Python API, on a Rust GPU core."
+    "gh_desc": "The animation engine for agents: blazingly fast math and 3D videos with Manim's Python API, on a Rust GPU core.",
+    "added": "2026-11-15"
   },
   {
     "repo": "alchaincyf/huashu-motion",
@@ -3141,7 +3308,8 @@
     "stars": 2726,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it."
+    "gh_desc": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
+    "added": "2026-11-03"
   },
   {
     "repo": "ntsc-rs/ntsc-rs",
@@ -3159,7 +3327,8 @@
     "stars": 2721,
     "pushed_at": "2026-10-15",
     "archived": false,
-    "gh_desc": "Free, open-source VHS effect. Standalone application + plugin (After Effects, Premiere, and OpenFX)."
+    "gh_desc": "Free, open-source VHS effect. Standalone application + plugin (After Effects, Premiere, and OpenFX).",
+    "added": "2026-11-04"
   },
   {
     "repo": "vercel-labs/vgpu",
@@ -3177,7 +3346,8 @@
     "stars": 2664,
     "pushed_at": "2026-10-16",
     "archived": false,
-    "gh_desc": "Modular cross-runtime WebGPU library for shaders, 3D scenes, GPU tensors, neural networks, and math viz"
+    "gh_desc": "Modular cross-runtime WebGPU library for shaders, 3D scenes, GPU tensors, neural networks, and math viz",
+    "added": "2026-11-15"
   },
   {
     "repo": "nolangz/pixel2motion",
@@ -3195,7 +3365,8 @@
     "stars": 2659,
     "pushed_at": "2026-08-21",
     "archived": false,
-    "gh_desc": "AI logo animation skill: turn raster logos into smooth SVG animation, animated HTML demos, GIF/video previews, and motion QA evidence."
+    "gh_desc": "AI logo animation skill: turn raster logos into smooth SVG animation, animated HTML demos, GIF/video previews, and motion QA evidence.",
+    "added": "2026-11-03"
   },
   {
     "repo": "patriciogonzalezvivo/glslEditor",
@@ -3214,7 +3385,8 @@
     "stars": 2630,
     "pushed_at": "2023-01-12",
     "archived": false,
-    "gh_desc": "Simple WebGL Fragment Shader Editor"
+    "gh_desc": "Simple WebGL Fragment Shader Editor",
+    "added": "2026-11-04"
   },
   {
     "repo": "AndrewPrifer/liquid-dom",
@@ -3231,7 +3403,8 @@
     "stars": 2594,
     "pushed_at": "2026-09-06",
     "archived": false,
-    "gh_desc": "Liquid Glass for the Web"
+    "gh_desc": "Liquid Glass for the Web",
+    "added": "2026-11-04"
   },
   {
     "repo": "da-luce/astroterm",
@@ -3250,7 +3423,8 @@
     "stars": 2546,
     "pushed_at": "2026-09-11",
     "archived": false,
-    "gh_desc": "A planetarium for your terminal! Explore stars, planets, constellations, and more, all rendered right in the command line—no telescope required. ✨🪐"
+    "gh_desc": "A planetarium for your terminal! Explore stars, planets, constellations, and more, all rendered right in the command line—no telescope required. ✨🪐",
+    "added": "2026-11-04"
   },
   {
     "repo": "LingDong-/fishdraw",
@@ -3270,7 +3444,8 @@
     "stars": 2543,
     "pushed_at": "2021-09-08",
     "archived": false,
-    "gh_desc": "procedurally generated fish drawings"
+    "gh_desc": "procedurally generated fish drawings",
+    "added": "2026-11-04"
   },
   {
     "repo": "drawcall/Proton",
@@ -3287,7 +3462,8 @@
     "stars": 2513,
     "pushed_at": "2026-03-06",
     "archived": false,
-    "gh_desc": "Javascript particle animation library"
+    "gh_desc": "Javascript particle animation library",
+    "added": "2026-11-04"
   },
   {
     "repo": "sinclairzx81/zero",
@@ -3305,7 +3481,8 @@
     "stars": 2461,
     "pushed_at": "2026-10-01",
     "archived": false,
-    "gh_desc": "A 3D renderer written in JavaScript and rendered to the terminal."
+    "gh_desc": "A 3D renderer written in JavaScript and rendered to the terminal.",
+    "added": "2026-11-03"
   },
   {
     "repo": "showlab/Code2Video",
@@ -3323,7 +3500,8 @@
     "stars": 2398,
     "pushed_at": "2026-08-24",
     "archived": false,
-    "gh_desc": "[ICML 2026] Video generation via code"
+    "gh_desc": "[ICML 2026] Video generation via code",
+    "added": "2026-11-03"
   },
   {
     "repo": "Vincentwei1021/video-talkcraft",
@@ -3342,7 +3520,8 @@
     "stars": 2340,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Agent skill that turns Claude Code / Codex into a motion-design studio for voiceover-driven explainer videos — word-level voiceover sync, 109 motion recipe cards, an anti-slideshow camera system, Remotion rendering."
+    "gh_desc": "Agent skill that turns Claude Code / Codex into a motion-design studio for voiceover-driven explainer videos — word-level voiceover sync, 109 motion recipe cards, an anti-slideshow camera system, Remotion rendering.",
+    "added": "2026-11-03"
   },
   {
     "repo": "nosir/obelisk.js",
@@ -3362,7 +3541,8 @@
     "stars": 2324,
     "pushed_at": "2019-06-29",
     "archived": false,
-    "gh_desc": "Build pixel isometric graphics with HTML5 canvas"
+    "gh_desc": "Build pixel isometric graphics with HTML5 canvas",
+    "added": "2026-11-04"
   },
   {
     "repo": "psenough/teach_yourself_demoscene_in_14_days",
@@ -3381,7 +3561,8 @@
     "stars": 2304,
     "pushed_at": "2024-07-25",
     "archived": false,
-    "gh_desc": "A guide to learn and become active in the demoscene within a couple of weeks"
+    "gh_desc": "A guide to learn and become active in the demoscene within a couple of weeks",
+    "added": "2026-11-04"
   },
   {
     "repo": "pixiv/three-vrm",
@@ -3399,7 +3580,8 @@
     "stars": 2290,
     "pushed_at": "2026-10-22",
     "archived": false,
-    "gh_desc": "Use VRM on Three.js"
+    "gh_desc": "Use VRM on Three.js",
+    "added": "2026-11-03"
   },
   {
     "repo": "glslify/glslify",
@@ -3418,7 +3600,8 @@
     "stars": 2288,
     "pushed_at": "2022-06-29",
     "archived": false,
-    "gh_desc": "A node.js-style module system for GLSL! :sparkles:"
+    "gh_desc": "A node.js-style module system for GLSL! :sparkles:",
+    "added": "2026-11-04"
   },
   {
     "repo": "patriciogonzalezvivo/glslCanvas",
@@ -3437,7 +3620,8 @@
     "stars": 2287,
     "pushed_at": "2023-07-19",
     "archived": false,
-    "gh_desc": "Simple tool to load GLSL shaders on HTML Canvas using WebGL"
+    "gh_desc": "Simple tool to load GLSL shaders on HTML Canvas using WebGL",
+    "added": "2026-11-04"
   },
   {
     "repo": "gl-transitions/gl-transitions",
@@ -3455,7 +3639,8 @@
     "stars": 2252,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "The open collection of GL Transitions"
+    "gh_desc": "The open collection of GL Transitions",
+    "added": "2026-11-03"
   },
   {
     "repo": "bangtutorial/bang-motion",
@@ -3476,7 +3661,8 @@
     "stars": 2215,
     "pushed_at": "2026-09-15",
     "archived": false,
-    "gh_desc": "Agent skill for browser motion graphics — openers, promos, bumpers, kinetic typography, and five explainer styles that move like video, not slides. Single index.html output. Works with Claude Code, Codex, Gemini CLI, Cursor."
+    "gh_desc": "Agent skill for browser motion graphics — openers, promos, bumpers, kinetic typography, and five explainer styles that move like video, not slides. Single index.html output. Works with Claude Code, Codex, Gemini CLI, Cursor.",
+    "added": "2026-11-04"
   },
   {
     "repo": "amll-dev/applemusic-like-lyrics",
@@ -3496,7 +3682,8 @@
     "stars": 2201,
     "pushed_at": "2026-11-11",
     "archived": false,
-    "gh_desc": "An Apple Music style lyric player component, with React & Vue support. 一个类 Apple Music 歌词显示组件，同时提供 React 和 Vue 绑定。"
+    "gh_desc": "An Apple Music style lyric player component, with React & Vue support. 一个类 Apple Music 歌词显示组件，同时提供 React 和 Vue 绑定。",
+    "added": "2026-11-03"
   },
   {
     "repo": "Tw1ddle/geometrize",
@@ -3515,7 +3702,8 @@
     "stars": 2154,
     "pushed_at": "2022-08-18",
     "archived": false,
-    "gh_desc": ":white_square_button: Geometrize is a desktop app that geometrizes images into geometric primitives"
+    "gh_desc": ":white_square_button: Geometrize is a desktop app that geometrizes images into geometric primitives",
+    "added": "2026-11-04"
   },
   {
     "repo": "dai-shi/excalidraw-animate",
@@ -3532,7 +3720,8 @@
     "stars": 2121,
     "pushed_at": "2026-10-22",
     "archived": false,
-    "gh_desc": "A tool to animate Excalidraw drawings"
+    "gh_desc": "A tool to animate Excalidraw drawings",
+    "added": "2026-11-03"
   },
   {
     "repo": "ossia/score",
@@ -3550,7 +3739,8 @@
     "stars": 2098,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "ossia score, an interactive sequencer for the intermedia arts"
+    "gh_desc": "ossia score, an interactive sequencer for the intermedia arts",
+    "added": "2026-11-03"
   },
   {
     "repo": "knightcrawler25/GLSL-PathTracer",
@@ -3570,7 +3760,8 @@
     "stars": 2060,
     "pushed_at": "2024-02-09",
     "archived": false,
-    "gh_desc": "A toy physically based GPU path tracer (C++/OpenGL/GLSL)"
+    "gh_desc": "A toy physically based GPU path tracer (C++/OpenGL/GLSL)",
+    "added": "2026-11-04"
   },
   {
     "repo": "gkjohnson/three-gpu-pathtracer",
@@ -3588,7 +3779,8 @@
     "stars": 2052,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Path tracing renderer and utilities for three.js built on top of three-mesh-bvh."
+    "gh_desc": "Path tracing renderer and utilities for three.js built on top of three-mesh-bvh.",
+    "added": "2026-11-04"
   },
   {
     "repo": "vizzuhq/vizzu-lib",
@@ -3605,7 +3797,8 @@
     "stars": 2050,
     "pushed_at": "2026-04-20",
     "archived": false,
-    "gh_desc": "Library for animated data visualizations and data stories."
+    "gh_desc": "Library for animated data visualizations and data stories.",
+    "added": "2026-11-04"
   },
   {
     "repo": "astrofox-io/astrofox",
@@ -3626,7 +3819,8 @@
     "stars": 2017,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "Astrofox is a motion graphics program that lets you turn audio into stunning visuals."
+    "gh_desc": "Astrofox is a motion graphics program that lets you turn audio into stunning visuals.",
+    "added": "2026-11-03"
   },
   {
     "repo": "jberg/butterchurn",
@@ -3644,7 +3838,8 @@
     "stars": 1994,
     "pushed_at": "2026-04-20",
     "archived": false,
-    "gh_desc": "Butterchurn is a WebGL implementation of the Milkdrop Visualizer"
+    "gh_desc": "Butterchurn is a WebGL implementation of the Milkdrop Visualizer",
+    "added": "2026-11-03"
   },
   {
     "repo": "thomasp85/gganimate",
@@ -3661,7 +3856,8 @@
     "stars": 1985,
     "pushed_at": "2025-09-04",
     "archived": false,
-    "gh_desc": "A Grammar of Animated Graphics"
+    "gh_desc": "A Grammar of Animated Graphics",
+    "added": "2026-11-03"
   },
   {
     "repo": "edenfunf/reelmimic",
@@ -3681,7 +3877,8 @@
     "stars": 1984,
     "pushed_at": "2026-11-11",
     "archived": false,
-    "gh_desc": "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you."
+    "gh_desc": "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.",
+    "added": "2026-11-04"
   },
   {
     "repo": "cth9191/animate",
@@ -3702,7 +3899,8 @@
     "stars": 1975,
     "pushed_at": "2026-10-05",
     "archived": false,
-    "gh_desc": "Procedural animation in any style for Claude Code: short single-file canvas videos with story, look and storyboard check-ins. 7 built-in styles or one matched from your references, your own music (beat-mapped), real product screenshots, every format from one piece."
+    "gh_desc": "Procedural animation in any style for Claude Code: short single-file canvas videos with story, look and storyboard check-ins. 7 built-in styles or one matched from your references, your own music (beat-mapped), real product screenshots, every format from one piece.",
+    "added": "2026-11-03"
   },
   {
     "repo": "nature-of-code/noc-book-2",
@@ -3723,7 +3921,8 @@
     "stars": 1968,
     "pushed_at": "2026-05-06",
     "archived": false,
-    "gh_desc": "The 2024 edition of The Nature of Code with p5.js. Includes Notion workflow and build system."
+    "gh_desc": "The 2024 edition of The Nature of Code with p5.js. Includes Notion workflow and build system.",
+    "added": "2026-11-04"
   },
   {
     "repo": "joelibaceta/video-to-ascii",
@@ -3740,7 +3939,8 @@
     "stars": 1871,
     "pushed_at": "2025-09-27",
     "archived": false,
-    "gh_desc": "It is a simple python package to play videos in the terminal using characters as pixels"
+    "gh_desc": "It is a simple python package to play videos in the terminal using characters as pixels",
+    "added": "2026-11-03"
   },
   {
     "repo": "durdraw/durdraw",
@@ -3758,7 +3958,8 @@
     "stars": 1861,
     "pushed_at": "2026-11-10",
     "archived": false,
-    "gh_desc": "Versatile ASCII and ANSI Art text editor for drawing in the Linux/Unix/macOS terminal, with animation, 256 and 16 colors, Unicode and CP437, and customizable themes"
+    "gh_desc": "Versatile ASCII and ANSI Art text editor for drawing in the Linux/Unix/macOS terminal, with animation, 256 and 16 colors, Unicode and CP437, and customizable themes",
+    "added": "2026-11-04"
   },
   {
     "repo": "acaudwell/Logstalgia",
@@ -3776,7 +3977,8 @@
     "stars": 1805,
     "pushed_at": "2026-03-04",
     "archived": false,
-    "gh_desc": "replay or stream website access logs as a retro arcade game"
+    "gh_desc": "replay or stream website access logs as a retro arcade game",
+    "added": "2026-11-03"
   },
   {
     "repo": "TotallyNotChase/glitch-this",
@@ -3795,7 +3997,8 @@
     "stars": 1797,
     "pushed_at": "2024-06-06",
     "archived": false,
-    "gh_desc": ":camera: Glitchify images and GIF - with highly customizable options!"
+    "gh_desc": ":camera: Glitchify images and GIF - with highly customizable options!",
+    "added": "2026-11-04"
   },
   {
     "repo": "Unclecheng-li/AI_Animation",
@@ -3815,7 +4018,8 @@
     "stars": 1786,
     "pushed_at": "2026-10-26",
     "archived": false,
-    "gh_desc": "本项目整理了用于生成[炫酷 HTML 动画网页]的 AI Prompts，涵盖动画效果、3D 可视化、PPT 风格演示、UI 美化等多个类别。"
+    "gh_desc": "本项目整理了用于生成[炫酷 HTML 动画网页]的 AI Prompts，涵盖动画效果、3D 可视化、PPT 风格演示、UI 美化等多个类别。",
+    "added": "2026-11-15"
   },
   {
     "repo": "animotionjs/animotion",
@@ -3833,7 +4037,8 @@
     "stars": 1759,
     "pushed_at": "2026-07-23",
     "archived": false,
-    "gh_desc": "🪄 Create beautiful presentations with Svelte"
+    "gh_desc": "🪄 Create beautiful presentations with Svelte",
+    "added": "2026-11-04"
   },
   {
     "repo": "shshaw/Splitting",
@@ -3850,7 +4055,8 @@
     "stars": 1757,
     "pushed_at": "2024-06-19",
     "archived": false,
-    "gh_desc": "JavaScript microlibrary to split an element by words, characters, children and more, populated with CSS variables!"
+    "gh_desc": "JavaScript microlibrary to split an element by words, characters, children and more, populated with CSS variables!",
+    "added": "2026-11-03"
   },
   {
     "repo": "Remocn/remocn",
@@ -3870,7 +4076,8 @@
     "stars": 1742,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "Production-ready animations, transitions, backgrounds, and scenes for Remotion"
+    "gh_desc": "Production-ready animations, transitions, backgrounds, and scenes for Remotion",
+    "added": "2026-11-03"
   },
   {
     "repo": "callstack/liquid-glass",
@@ -3887,7 +4094,8 @@
     "stars": 1735,
     "pushed_at": "2026-09-15",
     "archived": false,
-    "gh_desc": "Liquid Glass in React Native"
+    "gh_desc": "Liquid Glass in React Native",
+    "added": "2026-11-04"
   },
   {
     "repo": "alexgreensh/anidoodle",
@@ -3906,7 +4114,8 @@
     "stars": 1703,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render."
+    "gh_desc": "Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render.",
+    "added": "2026-11-03"
   },
   {
     "repo": "mrdoob/glsl-sandbox",
@@ -3924,7 +4133,8 @@
     "stars": 1688,
     "pushed_at": "2026-08-25",
     "archived": false,
-    "gh_desc": "Shader editor and gallery."
+    "gh_desc": "Shader editor and gallery.",
+    "added": "2026-11-04"
   },
   {
     "repo": "poiyomi/PoiyomiToonShader",
@@ -3942,7 +4152,8 @@
     "stars": 1683,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "A feature rich toon shader for unity and VR Chat"
+    "gh_desc": "A feature rich toon shader for unity and VR Chat",
+    "added": "2026-11-04"
   },
   {
     "repo": "meyda/meyda",
@@ -3961,7 +4172,8 @@
     "stars": 1675,
     "pushed_at": "2024-07-15",
     "archived": false,
-    "gh_desc": "Audio feature extraction for JavaScript."
+    "gh_desc": "Audio feature extraction for JavaScript.",
+    "added": "2026-11-04"
   },
   {
     "repo": "NiazMorshed2007/reanimate",
@@ -3979,7 +4191,8 @@
     "stars": 1673,
     "pushed_at": "2026-10-31",
     "archived": false,
-    "gh_desc": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same."
+    "gh_desc": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same.",
+    "added": "2026-11-04"
   },
   {
     "repo": "runevision/Dither3D",
@@ -4000,7 +4213,8 @@
     "stars": 1629,
     "pushed_at": "2025-02-09",
     "archived": false,
-    "gh_desc": "Surface-Stable Fractal Dithering"
+    "gh_desc": "Surface-Stable Fractal Dithering",
+    "added": "2026-11-04"
   },
   {
     "repo": "Unity-Technologies/com.unity.toonshader",
@@ -4018,7 +4232,8 @@
     "stars": 1619,
     "pushed_at": "2026-11-02",
     "archived": false,
-    "gh_desc": "Unity Toon Shader"
+    "gh_desc": "Unity Toon Shader",
+    "added": "2026-11-04"
   },
   {
     "repo": "milkdrop2077/MilkDrop3",
@@ -4037,7 +4252,8 @@
     "pushed_at": "2026-09-27",
     "archived": false,
     "gh_desc": "MilkDrop 3.0, supports any audio source, double-preset (.milk2), loading presets based on beat detection and much more...",
-    "lang_en": "C++ (Windows)"
+    "lang_en": "C++ (Windows)",
+    "added": "2026-11-03"
   },
   {
     "repo": "aduros/wasm4",
@@ -4055,7 +4271,8 @@
     "stars": 1550,
     "pushed_at": "2026-09-11",
     "archived": false,
-    "gh_desc": "Build retro games using WebAssembly for a fantasy console."
+    "gh_desc": "Build retro games using WebAssembly for a fantasy console.",
+    "added": "2026-11-03"
   },
   {
     "repo": "iart-ai/motion-skills",
@@ -4074,7 +4291,8 @@
     "stars": 1541,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "56 open-source skills that teach your AI coding agent to make motion graphics, animation & video — kinetic typography, data-viz, explainers, TikTok/Reels, WebGL, Manim. 19 installable packs. By iart.ai, the AI motion agent."
+    "gh_desc": "56 open-source skills that teach your AI coding agent to make motion graphics, animation & video — kinetic typography, data-viz, explainers, TikTok/Reels, WebGL, Manim. 19 installable packs. By iart.ai, the AI motion agent.",
+    "added": "2026-11-03"
   },
   {
     "repo": "guansss/pixi-live2d-display",
@@ -4091,7 +4309,8 @@
     "stars": 1518,
     "pushed_at": "2024-08-20",
     "archived": false,
-    "gh_desc": "A PixiJS plugin to display Live2D models of any kind."
+    "gh_desc": "A PixiJS plugin to display Live2D models of any kind.",
+    "added": "2026-11-03"
   },
   {
     "repo": "tsoding/musializer",
@@ -4108,7 +4327,8 @@
     "stars": 1510,
     "pushed_at": "2026-06-27",
     "archived": false,
-    "gh_desc": "Music Visualizer"
+    "gh_desc": "Music Visualizer",
+    "added": "2026-11-03"
   },
   {
     "repo": "unconed/mathbox",
@@ -4126,7 +4346,8 @@
     "stars": 1507,
     "pushed_at": "2023-05-05",
     "archived": false,
-    "gh_desc": "Presentation-quality WebGL math graphing"
+    "gh_desc": "Presentation-quality WebGL math graphing",
+    "added": "2026-11-03"
   },
   {
     "repo": "Gargaj/Bonzomatic",
@@ -4145,7 +4366,8 @@
     "stars": 1507,
     "pushed_at": "2025-02-18",
     "archived": false,
-    "gh_desc": "Live shader coding tool and Shader Showdown workhorse"
+    "gh_desc": "Live shader coding tool and Shader Showdown workhorse",
+    "added": "2026-11-03"
   },
   {
     "repo": "smkplus/ShaderMan",
@@ -4165,7 +4387,8 @@
     "pushed_at": "2021-02-07",
     "archived": false,
     "gh_desc": "Convert ShaderToy to Unity  HLSL/CG",
-    "lang_en": "C# (Unity)"
+    "lang_en": "C# (Unity)",
+    "added": "2026-11-04"
   },
   {
     "repo": "scallyw4g/bonsai",
@@ -4184,7 +4407,8 @@
     "stars": 1501,
     "pushed_at": "2026-11-06",
     "archived": false,
-    "gh_desc": "The procedural generation voxel engine"
+    "gh_desc": "The procedural generation voxel engine",
+    "added": "2026-11-04"
   },
   {
     "repo": "paper-design/liquid-logo",
@@ -4203,7 +4427,8 @@
     "stars": 1456,
     "pushed_at": "2026-04-20",
     "archived": false,
-    "gh_desc": "Turn your logo into liquid metal with Paper Shaders"
+    "gh_desc": "Turn your logo into liquid metal with Paper Shaders",
+    "added": "2026-11-04"
   },
   {
     "repo": "dexplo/bar_chart_race",
@@ -4220,7 +4445,8 @@
     "stars": 1453,
     "pushed_at": "2024-06-27",
     "archived": false,
-    "gh_desc": "Create animated bar chart races in Python with matplotlib"
+    "gh_desc": "Create animated bar chart races in Python with matplotlib",
+    "added": "2026-11-03"
   },
   {
     "repo": "wshxbqq/GLSL-Card",
@@ -4240,7 +4466,8 @@
     "stars": 1453,
     "pushed_at": "2019-01-10",
     "archived": false,
-    "gh_desc": "着色器语言 GLSL (opengl-shader-language)入门大全"
+    "gh_desc": "着色器语言 GLSL (opengl-shader-language)入门大全",
+    "added": "2026-11-04"
   },
   {
     "repo": "amandaghassaei/OrigamiSimulator",
@@ -4258,7 +4485,8 @@
     "stars": 1413,
     "pushed_at": "2026-10-13",
     "archived": false,
-    "gh_desc": "Realtime WebGL origami simulator"
+    "gh_desc": "Realtime WebGL origami simulator",
+    "added": "2026-11-04"
   },
   {
     "repo": "acamposuribe/p5.brush",
@@ -4276,7 +4504,8 @@
     "stars": 1412,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "Unlock custom brushes, natural fill effects and intuitive hatching in p5.js"
+    "gh_desc": "Unlock custom brushes, natural fill effects and intuitive hatching in p5.js",
+    "added": "2026-11-03"
   },
   {
     "repo": "propjockey/augmented-ui",
@@ -4295,7 +4524,8 @@
     "stars": 1411,
     "pushed_at": "2024-05-28",
     "archived": false,
-    "gh_desc": "Cyberpunk-inspired web UI made easy. Get augmented."
+    "gh_desc": "Cyberpunk-inspired web UI made easy. Get augmented.",
+    "added": "2026-11-04"
   },
   {
     "repo": "reanimate/reanimate",
@@ -4315,7 +4545,8 @@
     "stars": 1392,
     "pushed_at": "2025-02-06",
     "archived": false,
-    "gh_desc": "Haskell library for building declarative animations based on SVG graphics"
+    "gh_desc": "Haskell library for building declarative animations based on SVG graphics",
+    "added": "2026-11-03"
   },
   {
     "repo": "keijiro/NoiseShader",
@@ -4333,7 +4564,8 @@
     "stars": 1385,
     "pushed_at": "2025-12-04",
     "archived": false,
-    "gh_desc": "Noise shader library for Unity"
+    "gh_desc": "Noise shader library for Unity",
+    "added": "2026-11-04"
   },
   {
     "repo": "FarazzShaikh/THREE-CustomShaderMaterial",
@@ -4351,7 +4583,8 @@
     "stars": 1368,
     "pushed_at": "2025-10-12",
     "archived": false,
-    "gh_desc": "🧩 Extend Three.js standard materials with your own shaders!"
+    "gh_desc": "🧩 Extend Three.js standard materials with your own shaders!",
+    "added": "2026-11-04"
   },
   {
     "repo": "ChiliMilk/URP_Toon",
@@ -4371,7 +4604,8 @@
     "stars": 1357,
     "pushed_at": "2024-02-16",
     "archived": false,
-    "gh_desc": "A Toon Shader in Unity Universal Render Pipeline."
+    "gh_desc": "A Toon Shader in Unity Universal Render Pipeline.",
+    "added": "2026-11-04"
   },
   {
     "repo": "anvaka/fieldplay",
@@ -4389,7 +4623,8 @@
     "stars": 1334,
     "pushed_at": "2026-09-23",
     "archived": false,
-    "gh_desc": "A vector field explorer"
+    "gh_desc": "A vector field explorer",
+    "added": "2026-11-04"
   },
   {
     "repo": "adithya-s-k/manim_skill",
@@ -4408,7 +4643,8 @@
     "stars": 1319,
     "pushed_at": "2026-01-23",
     "archived": false,
-    "gh_desc": "Agent skills for Manim to create 3Blue1Brown style animations."
+    "gh_desc": "Agent skills for Manim to create 3Blue1Brown style animations.",
+    "added": "2026-11-04"
   },
   {
     "repo": "skydoves/Cloudy",
@@ -4426,7 +4662,8 @@
     "pushed_at": "2026-09-13",
     "archived": false,
     "gh_desc": "☁️ Kotlin Multiplatform blur and liquid glass effect library for Compose, with GPU-accelerated rendering and CPU fallback for older devices.",
-    "lang_en": "Kotlin (Compose)"
+    "lang_en": "Kotlin (Compose)",
+    "added": "2026-11-04"
   },
   {
     "repo": "rvanwijnen/spectral.js",
@@ -4443,7 +4680,8 @@
     "stars": 1293,
     "pushed_at": "2026-01-01",
     "archived": false,
-    "gh_desc": "Spectral.js is a paint like color mixing library utilizing the Kubelka-Munk theory."
+    "gh_desc": "Spectral.js is a paint like color mixing library utilizing the Kubelka-Munk theory.",
+    "added": "2026-11-04"
   },
   {
     "repo": "libretro/glsl-shaders",
@@ -4462,7 +4700,8 @@
     "stars": 1278,
     "pushed_at": "2026-11-12",
     "archived": false,
-    "gh_desc": "This repo is for glsl shaders converted by hand from libretro's common-shaders repo, since some don't play nicely with the cg2glsl script."
+    "gh_desc": "This repo is for glsl shaders converted by hand from libretro's common-shaders repo, since some don't play nicely with the cg2glsl script.",
+    "added": "2026-11-03"
   },
   {
     "repo": "Barty-Bart/motion-graphics",
@@ -4481,7 +4720,8 @@
     "stars": 1278,
     "pushed_at": "2026-10-13",
     "archived": false,
-    "gh_desc": "Motion-graphics skills for Claude Code and Codex."
+    "gh_desc": "Motion-graphics skills for Claude Code and Codex.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Jaysmito101/TerraForge3D",
@@ -4501,7 +4741,8 @@
     "stars": 1268,
     "pushed_at": "2026-10-12",
     "archived": false,
-    "gh_desc": "Cross Platform Professional Procedural Terrain Generation & Texturing Tool"
+    "gh_desc": "Cross Platform Professional Procedural Terrain Generation & Texturing Tool",
+    "added": "2026-11-04"
   },
   {
     "repo": "HackerPoet/FractalSoundExplorer",
@@ -4521,7 +4762,8 @@
     "stars": 1252,
     "pushed_at": "2021-12-03",
     "archived": false,
-    "gh_desc": "Explore fractals in an audio-visual sandbox"
+    "gh_desc": "Explore fractals in an audio-visual sandbox",
+    "added": "2026-11-04"
   },
   {
     "repo": "diffusionstudio/core",
@@ -4538,7 +4780,8 @@
     "stars": 1251,
     "pushed_at": "2025-11-18",
     "archived": false,
-    "gh_desc": "A fast, browser based video compositing engine powered by WebCodecs"
+    "gh_desc": "A fast, browser based video compositing engine powered by WebCodecs",
+    "added": "2026-11-03"
   },
   {
     "repo": "creativelifeform/three-nebula",
@@ -4556,7 +4799,8 @@
     "stars": 1250,
     "pushed_at": "2026-10-22",
     "archived": false,
-    "gh_desc": "WebGL based particle system engine for three.js"
+    "gh_desc": "WebGL based particle system engine for three.js",
+    "added": "2026-11-04"
   },
   {
     "repo": "shuding/liquid-glass",
@@ -4574,7 +4818,8 @@
     "stars": 1232,
     "pushed_at": "2026-03-26",
     "archived": false,
-    "gh_desc": "Copy-paste Liquid Glass shader with SVG"
+    "gh_desc": "Copy-paste Liquid Glass shader with SVG",
+    "added": "2026-11-04"
   },
   {
     "repo": "Leonxlnx/cinetic",
@@ -4592,7 +4837,8 @@
     "stars": 1223,
     "pushed_at": "2026-11-09",
     "archived": false,
-    "gh_desc": "Cinematic launch films and motion design from code, directed by your coding agent."
+    "gh_desc": "Cinematic launch films and motion design from code, directed by your coding agent.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Alchemist0823/three.quarks",
@@ -4610,7 +4856,8 @@
     "stars": 1215,
     "pushed_at": "2026-05-21",
     "archived": false,
-    "gh_desc": "Three.quarks is a general purpose particle system /  VFX engine for three.js"
+    "gh_desc": "Three.quarks is a general purpose particle system /  VFX engine for three.js",
+    "added": "2026-11-03"
   },
   {
     "repo": "fand/vfx-js",
@@ -4628,7 +4875,8 @@
     "stars": 1187,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "WebGL effects made easy."
+    "gh_desc": "WebGL effects made easy.",
+    "added": "2026-11-03"
   },
   {
     "repo": "mrdoob/frame.js",
@@ -4646,7 +4894,8 @@
     "stars": 1180,
     "pushed_at": "2025-09-18",
     "archived": false,
-    "gh_desc": "JavaScript Sequence Editor"
+    "gh_desc": "JavaScript Sequence Editor",
+    "added": "2026-11-04"
   },
   {
     "repo": "JargeZ/ntscqt",
@@ -4666,7 +4915,8 @@
     "stars": 1168,
     "pushed_at": "2024-02-01",
     "archived": false,
-    "gh_desc": "AKA Line Maker 10.0 | GUI for VHS video simulator"
+    "gh_desc": "AKA Line Maker 10.0 | GUI for VHS video simulator",
+    "added": "2026-11-04"
   },
   {
     "repo": "Ovilia/Polyvia",
@@ -4685,7 +4935,8 @@
     "stars": 1165,
     "pushed_at": "2019-01-29",
     "archived": false,
-    "gh_desc": "Low-Poly Image and Video Processing"
+    "gh_desc": "Low-Poly Image and Video Processing",
+    "added": "2026-11-04"
   },
   {
     "repo": "etro-js/etro",
@@ -4702,7 +4953,8 @@
     "stars": 1156,
     "pushed_at": "2026-11-04",
     "archived": false,
-    "gh_desc": "Typescript video-editing library for the browser"
+    "gh_desc": "Typescript video-editing library for the browser",
+    "added": "2026-11-03"
   },
   {
     "repo": "pixijs/filters",
@@ -4720,7 +4972,8 @@
     "stars": 1151,
     "pushed_at": "2026-02-13",
     "archived": false,
-    "gh_desc": "Collection of community-authored custom display filters for PixiJS"
+    "gh_desc": "Collection of community-authored custom display filters for PixiJS",
+    "added": "2026-11-04"
   },
   {
     "repo": "jamieowen/glsl-blend",
@@ -4739,7 +4992,8 @@
     "stars": 1119,
     "pushed_at": "2022-06-23",
     "archived": false,
-    "gh_desc": "glsl photoshop blending modes.  glslify formatted."
+    "gh_desc": "glsl photoshop blending modes.  glslify formatted.",
+    "added": "2026-11-04"
   },
   {
     "repo": "joeseesun/opus-video-prompts",
@@ -4763,7 +5017,8 @@
     "stars": 1119,
     "pushed_at": "2026-09-27",
     "archived": false,
-    "gh_desc": "Claude Opus 5.5 用代码生成视频：全网案例与可直接复制的提示词 | Copy-ready prompts & 54 cases of Opus 5.5 code-rendered videos"
+    "gh_desc": "Claude Opus 5.5 用代码生成视频：全网案例与可直接复制的提示词 | Copy-ready prompts & 54 cases of Opus 5.5 code-rendered videos",
+    "added": "2026-11-15"
   },
   {
     "repo": "aras-p/ToyPathTracer",
@@ -4780,7 +5035,8 @@
     "stars": 1118,
     "pushed_at": "2025-04-12",
     "archived": false,
-    "gh_desc": "Toy path tracer for my own learning purposes (CPU/GPU, C++/C#, Win/Mac/Wasm, DX11/Metal, also Unity)"
+    "gh_desc": "Toy path tracer for my own learning purposes (CPU/GPU, C++/C#, Win/Mac/Wasm, DX11/Metal, also Unity)",
+    "added": "2026-11-04"
   },
   {
     "repo": "mapbox/webgl-wind",
@@ -4798,7 +5054,8 @@
     "stars": 1111,
     "pushed_at": "2026-08-06",
     "archived": false,
-    "gh_desc": "Wind power visualization with WebGL particles"
+    "gh_desc": "Wind power visualization with WebGL particles",
+    "added": "2026-11-04"
   },
   {
     "repo": "doxas/twigl",
@@ -4816,7 +5073,8 @@
     "stars": 1111,
     "pushed_at": "2026-03-04",
     "archived": false,
-    "gh_desc": "twigl.app is an online editor for One tweet shader, with gif generator and sound shader, and broadcast live coding."
+    "gh_desc": "twigl.app is an online editor for One tweet shader, with gif generator and sound shader, and broadcast live coding.",
+    "added": "2026-11-03"
   },
   {
     "repo": "markusfisch/ShaderEditor",
@@ -4834,7 +5092,8 @@
     "stars": 1103,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Android app to create GLSL shaders and use them as live wallpaper"
+    "gh_desc": "Android app to create GLSL shaders and use them as live wallpaper",
+    "added": "2026-11-04"
   },
   {
     "repo": "XiaoyeCodes/code-animation-prompts",
@@ -4854,7 +5113,8 @@
     "stars": 1103,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "341 种代码动画风格提示词、196 张参考静帧与离线挑选器，封装为 Claude Code / Codex Skill，支持一键导入与 HTML 视频渲染。"
+    "gh_desc": "341 种代码动画风格提示词、196 张参考静帧与离线挑选器，封装为 Claude Code / Codex Skill，支持一键导入与 HTML 视频渲染。",
+    "added": "2026-11-04"
   },
   {
     "repo": "aiXander/Realtime_PyAudio_FFT",
@@ -4871,7 +5131,8 @@
     "stars": 1095,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "Realtime audio analysis in Python to extract audio features from streaming audio and send them over OSC to any client app."
+    "gh_desc": "Realtime audio analysis in Python to extract audio features from streaming audio and send them over OSC to any client app.",
+    "added": "2026-11-04"
   },
   {
     "repo": "buddhi1980/mandelbulber2",
@@ -4891,7 +5152,8 @@
     "stars": 1088,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Official repository for Mandelbulber v2"
+    "gh_desc": "Official repository for Mandelbulber v2",
+    "added": "2026-11-04"
   },
   {
     "repo": "nexu-io/motion-anything",
@@ -4910,7 +5172,8 @@
     "stars": 1085,
     "pushed_at": "2026-07-07",
     "archived": false,
-    "gh_desc": "✨ The agentic motion layer — an open-source, chat-native motion engine. Describe the feeling; your AI ships the animation."
+    "gh_desc": "✨ The agentic motion layer — an open-source, chat-native motion engine. Describe the feeling; your AI ships the animation.",
+    "added": "2026-11-04"
   },
   {
     "repo": "feicaiclub/video-spec-builder",
@@ -4928,7 +5191,8 @@
     "stars": 1078,
     "pushed_at": "2026-05-18",
     "archived": false,
-    "gh_desc": "video-spec-builder —— 把我想做个视频逼成一份精确到秒的分镜脚本 video-spec.md,交给 HyperFrames 渲染。一条命令装到 Claude Code / Cursor / Codex:npx skills add feicaiclub/video-spec-builder"
+    "gh_desc": "video-spec-builder —— 把我想做个视频逼成一份精确到秒的分镜脚本 video-spec.md,交给 HyperFrames 渲染。一条命令装到 Claude Code / Cursor / Codex:npx skills add feicaiclub/video-spec-builder",
+    "added": "2026-11-04"
   },
   {
     "repo": "naughtyduk/liquidGL",
@@ -4946,7 +5210,8 @@
     "stars": 1071,
     "pushed_at": "2026-10-01",
     "archived": false,
-    "gh_desc": "liquidGL – Liquid Glass For The Web - WebGPU/WebGL"
+    "gh_desc": "liquidGL – Liquid Glass For The Web - WebGPU/WebGL",
+    "added": "2026-11-04"
   },
   {
     "repo": "pbakaus/radiant",
@@ -4964,7 +5229,8 @@
     "stars": 1040,
     "pushed_at": "2026-09-10",
     "archived": false,
-    "gh_desc": "A curated collection of generative shader art"
+    "gh_desc": "A curated collection of generative shader art",
+    "added": "2026-11-04"
   },
   {
     "repo": "tom-mohr/particle-life-app",
@@ -4982,7 +5248,8 @@
     "stars": 1037,
     "pushed_at": "2025-12-13",
     "archived": false,
-    "gh_desc": "🦠 Simulator for a particle system showing life-like behaviour."
+    "gh_desc": "🦠 Simulator for a particle system showing life-like behaviour.",
+    "added": "2026-11-04"
   },
   {
     "repo": "haidrrrry/claude-remotion-skill",
@@ -5000,7 +5267,8 @@
     "stars": 1027,
     "pushed_at": "2026-08-12",
     "archived": false,
-    "gh_desc": "Open-source Claude agent skill that teaches Claude Code, Claude Desktop & Claude AI to create and edit professional motion graphics videos with Remotion. AI video editing, B-roll, captions, sound design — from one prompt."
+    "gh_desc": "Open-source Claude agent skill that teaches Claude Code, Claude Desktop & Claude AI to create and edit professional motion graphics videos with Remotion. AI video editing, B-roll, captions, sound design — from one prompt.",
+    "added": "2026-11-04"
   },
   {
     "repo": "rive-app/rive-wasm",
@@ -5020,7 +5288,8 @@
     "stars": 1024,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Web runtime (JS/WASM) for Rive, the agent-native 2D and 3D engine for games, apps, and interactive UI."
+    "gh_desc": "Web runtime (JS/WASM) for Rive, the agent-native 2D and 3D engine for games, apps, and interactive UI.",
+    "added": "2026-11-04"
   },
   {
     "repo": "generative-design/Code-Package-p5.js",
@@ -5038,7 +5307,8 @@
     "stars": 1023,
     "pushed_at": "2026-11-01",
     "archived": false,
-    "gh_desc": "Code package of the book: Generative Design – Creative Coding for the Web with JavaScript in p5.js"
+    "gh_desc": "Code package of the book: Generative Design – Creative Coding for the Web with JavaScript in p5.js",
+    "added": "2026-11-04"
   },
   {
     "repo": "electricsquare/raymarching-workshop",
@@ -5058,7 +5328,8 @@
     "stars": 1008,
     "pushed_at": "2021-08-20",
     "archived": false,
-    "gh_desc": "An Introduction to Raymarching"
+    "gh_desc": "An Introduction to Raymarching",
+    "added": "2026-11-04"
   },
   {
     "repo": "openrndr/openrndr",
@@ -5075,7 +5346,8 @@
     "stars": 987,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "OPENRNDR. A Kotlin/JVM library for creative coding, real-time and interactive graphics"
+    "gh_desc": "OPENRNDR. A Kotlin/JVM library for creative coding, real-time and interactive graphics",
+    "added": "2026-11-03"
   },
   {
     "repo": "abey79/vpype",
@@ -5093,7 +5365,8 @@
     "stars": 986,
     "pushed_at": "2026-11-01",
     "archived": false,
-    "gh_desc": "The Swiss-Army-knife command-line tool for plotter vector graphics."
+    "gh_desc": "The Swiss-Army-knife command-line tool for plotter vector graphics.",
+    "added": "2026-11-04"
   },
   {
     "repo": "jeertmans/manim-slides",
@@ -5111,7 +5384,8 @@
     "stars": 985,
     "pushed_at": "2026-11-09",
     "archived": false,
-    "gh_desc": "Tool for live presentations using manim"
+    "gh_desc": "Tool for live presentations using manim",
+    "added": "2026-11-03"
   },
   {
     "repo": "godot-extended-libraries/godot-realistic-water",
@@ -5129,7 +5403,8 @@
     "stars": 982,
     "pushed_at": "2026-04-15",
     "archived": false,
-    "gh_desc": "Godot - Realistic Water Shader"
+    "gh_desc": "Godot - Realistic Water Shader",
+    "added": "2026-11-04"
   },
   {
     "repo": "hvianna/audioMotion-analyzer",
@@ -5149,7 +5424,8 @@
     "stars": 975,
     "pushed_at": "2026-07-19",
     "archived": false,
-    "gh_desc": "High-resolution real-time graphic audio spectrum analyzer JavaScript module with no dependencies."
+    "gh_desc": "High-resolution real-time graphic audio spectrum analyzer JavaScript module with no dependencies.",
+    "added": "2026-11-03"
   },
   {
     "repo": "SuperIlu/DOjS",
@@ -5168,7 +5444,8 @@
     "pushed_at": "2025-11-22",
     "archived": false,
     "gh_desc": "A MS-DOS Creative Coding IDE/platform based on JavaScript",
-    "lang_en": "JavaScript (DOS)"
+    "lang_en": "JavaScript (DOS)",
+    "added": "2026-11-04"
   },
   {
     "repo": "Aryanutkarsh/SeeCode",
@@ -5187,7 +5464,8 @@
     "stars": 954,
     "pushed_at": "2026-11-02",
     "archived": false,
-    "gh_desc": "Animated, explorable diagrams for Claude and other coding agents, from a short JSON spec."
+    "gh_desc": "Animated, explorable diagrams for Claude and other coding agents, from a short JSON spec.",
+    "added": "2026-11-04"
   },
   {
     "repo": "redblobgames/mapgen4",
@@ -5205,7 +5483,8 @@
     "stars": 952,
     "pushed_at": "2026-03-29",
     "archived": false,
-    "gh_desc": "Mapgen4 procedural wilderness map generator"
+    "gh_desc": "Mapgen4 procedural wilderness map generator",
+    "added": "2026-11-04"
   },
   {
     "repo": "raphaelameaume/fragment",
@@ -5225,7 +5504,8 @@
     "stars": 951,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "[alpha] A modern toolkit for creative coding"
+    "gh_desc": "[alpha] A modern toolkit for creative coding",
+    "added": "2026-11-04"
   },
   {
     "repo": "LottieFiles/dotlottie-web",
@@ -5242,7 +5522,8 @@
     "stars": 947,
     "pushed_at": "2026-11-12",
     "archived": false,
-    "gh_desc": "High-performance Lottie & dotLottie web player powered by Rust + WASM, with React, Vue, Svelte, Solid & Web Components."
+    "gh_desc": "High-performance Lottie & dotLottie web player powered by Rust + WASM, with React, Vue, Svelte, Solid & Web Components.",
+    "added": "2026-11-03"
   },
   {
     "repo": "marcelo-earth/generative-manim",
@@ -5260,7 +5541,8 @@
     "stars": 943,
     "pushed_at": "2026-09-17",
     "archived": false,
-    "gh_desc": "🎨 GPT for video generation ⚡️"
+    "gh_desc": "🎨 GPT for video generation ⚡️",
+    "added": "2026-11-03"
   },
   {
     "repo": "op7418/guizang-product-video-skill",
@@ -5279,7 +5561,8 @@
     "stars": 943,
     "pushed_at": "2026-10-09",
     "archived": false,
-    "gh_desc": "归藏 product video skill：复用真实产品组件和设计语言，用代码制作软件更新宣传片。包含分镜文案、原创配乐、动作音效与视频渲染，支持 Claude Code 和 Codex。"
+    "gh_desc": "归藏 product video skill：复用真实产品组件和设计语言，用代码制作软件更新宣传片。包含分镜文案、原创配乐、动作音效与视频渲染，支持 Claude Code 和 Codex。",
+    "added": "2026-11-04"
   },
   {
     "repo": "IceCreamYou/THREE.Terrain",
@@ -5297,7 +5580,8 @@
     "stars": 923,
     "pushed_at": "2026-11-12",
     "archived": false,
-    "gh_desc": "A procedural terrain generation engine for use with the Three.js 3D graphics library for the web."
+    "gh_desc": "A procedural terrain generation engine for use with the Three.js 3D graphics library for the web.",
+    "added": "2026-11-04"
   },
   {
     "repo": "satyarth/pixelsort",
@@ -5314,7 +5598,8 @@
     "stars": 876,
     "pushed_at": "2026-09-03",
     "archived": false,
-    "gh_desc": "Pixel sorting images in python."
+    "gh_desc": "Pixel sorting images in python.",
+    "added": "2026-11-03"
   },
   {
     "repo": "feitangyuan/motion-web",
@@ -5333,7 +5618,8 @@
     "stars": 859,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "Build motion-first, high-touch creative websites on vanilla Three.js / Canvas 2D / WebGL / CSS. A Claude Agent Skill with real physics and automated verification."
+    "gh_desc": "Build motion-first, high-touch creative websites on vanilla Three.js / Canvas 2D / WebGL / CSS. A Claude Agent Skill with real physics and automated verification.",
+    "added": "2026-11-04"
   },
   {
     "repo": "adunext/adu-motion-video",
@@ -5351,7 +5637,8 @@
     "stars": 852,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "阿杜的 AI 剪辑 Skill｜全系列模板已升级为 MotionGit .motion 开放格式，下载后直接发给助手即可创作。下载：https://motiongit.com/@adunext ｜精选阿杜与 Opus 5.5 制作的代码级动画模板，适合口播、知识讲解，支持多平台、多助手。"
+    "gh_desc": "阿杜的 AI 剪辑 Skill｜全系列模板已升级为 MotionGit .motion 开放格式，下载后直接发给助手即可创作。下载：https://motiongit.com/@adunext ｜精选阿杜与 Opus 5.5 制作的代码级动画模板，适合口播、知识讲解，支持多平台、多助手。",
+    "added": "2026-11-04"
   },
   {
     "repo": "sdegenaar/liquid_glass_widgets",
@@ -5368,7 +5655,8 @@
     "stars": 848,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Flutter UI kit implementing Apple's iOS 26/27 Liquid Glass design language - a comprehensive glass widget library with real shader-based blur, physics-driven jelly animations, and dynamic lighting. Works on every platform out of the box."
+    "gh_desc": "Flutter UI kit implementing Apple's iOS 26/27 Liquid Glass design language - a comprehensive glass widget library with real shader-based blur, physics-driven jelly animations, and dynamic lighting. Works on every platform out of the box.",
+    "added": "2026-11-04"
   },
   {
     "repo": "javierbyte/pintr",
@@ -5386,7 +5674,8 @@
     "stars": 843,
     "pushed_at": "2026-09-12",
     "archived": false,
-    "gh_desc": "Create single line illustrations from your pictures."
+    "gh_desc": "Create single line illustrations from your pictures.",
+    "added": "2026-11-04"
   },
   {
     "repo": "shader-park/shader-park-core",
@@ -5404,7 +5693,8 @@
     "stars": 834,
     "pushed_at": "2026-10-05",
     "archived": false,
-    "gh_desc": "A JavaScript library for creating real-time 2D and 3D shaders. JS -> Shader. https://shaderpark.com/  https://twitter.com/shaderpark"
+    "gh_desc": "A JavaScript library for creating real-time 2D and 3D shaders. JS -> Shader. https://shaderpark.com/  https://twitter.com/shaderpark",
+    "added": "2026-11-03"
   },
   {
     "repo": "rossark0/rossark-motion-skill",
@@ -5422,7 +5712,8 @@
     "stars": 832,
     "pushed_at": "2026-10-22",
     "archived": false,
-    "gh_desc": "Turn any SVG into a professional 60 fps animation. A Claude Code skill that brings anything drawn to life: live faces, full-body acting and whole scenes, in React Native and SwiftUI."
+    "gh_desc": "Turn any SVG into a professional 60 fps animation. A Claude Code skill that brings anything drawn to life: live faces, full-body acting and whole scenes, in React Native and SwiftUI.",
+    "added": "2026-11-04"
   },
   {
     "repo": "iyinchao/liquid-glass-studio",
@@ -5440,7 +5731,8 @@
     "stars": 827,
     "pushed_at": "2026-09-11",
     "archived": false,
-    "gh_desc": "🔮 The Ultimate Apple Liquid Glass UI — Recreated for the Web, powered by WebGL2 & WebGPU"
+    "gh_desc": "🔮 The Ultimate Apple Liquid Glass UI — Recreated for the Web, powered by WebGL2 & WebGPU",
+    "added": "2026-11-04"
   },
   {
     "repo": "howseen-ai/claude-motion-design",
@@ -5458,7 +5750,8 @@
     "stars": 826,
     "pushed_at": "2026-10-04",
     "archived": false,
-    "gh_desc": "A Claude Code skill to make motion design videos in pure code: HTML + Playwright + ffmpeg. No After Effects, no Remotion license."
+    "gh_desc": "A Claude Code skill to make motion design videos in pure code: HTML + Playwright + ffmpeg. No After Effects, no Remotion license.",
+    "added": "2026-11-04"
   },
   {
     "repo": "ahopness/GodotRetro",
@@ -5477,7 +5770,8 @@
     "stars": 809,
     "pushed_at": "2026-07-07",
     "archived": false,
-    "gh_desc": "A pack of retro compositor effects and shaders for Godot."
+    "gh_desc": "A pack of retro compositor effects and shaders for Godot.",
+    "added": "2026-11-04"
   },
   {
     "repo": "preziotte/party-mode",
@@ -5497,7 +5791,8 @@
     "stars": 808,
     "pushed_at": "2026-08-15",
     "archived": false,
-    "gh_desc": "An experimental d3.js music visualizer from 2014. Continued as vizz.fm"
+    "gh_desc": "An experimental d3.js music visualizer from 2014. Continued as vizz.fm",
+    "added": "2026-11-04"
   },
   {
     "repo": "AThevon/genjutsu",
@@ -5517,7 +5812,8 @@
     "stars": 805,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Creative coding skills for Claude Code, claude.ai and Cowork. Motion, micro-interactions and design systems across Web (GSAP, Motion, Three.js, CSS), Android (Jetpack Compose) and Apple (SwiftUI). Proposes an interaction thesis you approve before it writes any code. Anti-AI-slop."
+    "gh_desc": "Creative coding skills for Claude Code, claude.ai and Cowork. Motion, micro-interactions and design systems across Web (GSAP, Motion, Three.js, CSS), Android (Jetpack Compose) and Apple (SwiftUI). Proposes an interaction thesis you approve before it writes any code. Anti-AI-slop.",
+    "added": "2026-11-04"
   },
   {
     "repo": "artemnovitckii/claude-animation-skills",
@@ -5536,7 +5832,8 @@
     "stars": 781,
     "pushed_at": "2026-11-01",
     "archived": false,
-    "gh_desc": "Six Claude Code skills that make animations for reels, no footage needed: 3D cartoon explainer, stick figure, minimal line art, 3D map route, exploded view, line graph."
+    "gh_desc": "Six Claude Code skills that make animations for reels, no footage needed: 3D cartoon explainer, stick figure, minimal line art, 3D map route, exploded view, line graph.",
+    "added": "2026-11-04"
   },
   {
     "repo": "dgageot/demoit",
@@ -5553,7 +5850,8 @@
     "stars": 780,
     "pushed_at": "2026-10-05",
     "archived": false,
-    "gh_desc": "Live coding demos without Context Switching"
+    "gh_desc": "Live coding demos without Context Switching",
+    "added": "2026-11-04"
   },
   {
     "repo": "hyqzz/Solar-Wanderer",
@@ -5572,7 +5870,8 @@
     "stars": 771,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "Solar Wanderer / 遨游太阳系 - 1:1 Real-Time Solar System Explorer in the Browser. NASA JPL ephemeris, WebGL2, Three.js. From solar surface to 100,000 AU Oort Cloud."
+    "gh_desc": "Solar Wanderer / 遨游太阳系 - 1:1 Real-Time Solar System Explorer in the Browser. NASA JPL ephemeris, WebGL2, Three.js. From solar surface to 100,000 AU Oort Cloud.",
+    "added": "2026-11-04"
   },
   {
     "repo": "rizznme/cosmic-ui",
@@ -5589,7 +5888,8 @@
     "stars": 765,
     "pushed_at": "2026-09-07",
     "archived": false,
-    "gh_desc": "A collection of Sci-Fi themed components and futuristic design elements for modern web applications."
+    "gh_desc": "A collection of Sci-Fi themed components and futuristic design elements for modern web applications.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Ryder191/haloflux",
@@ -5611,7 +5911,8 @@
     "stars": 760,
     "pushed_at": "2026-11-09",
     "archived": false,
-    "gh_desc": "Beat-driven sci-fi light-ring visualization. Pure Canvas, single HTML, zero dependencies. Noncommercial use only. RYDER CODE / Ms MAIKEBAIs CAT ｜ 节拍驱动的科幻光环数据可视化，纯原生 Canvas 单文件 HTML、零依赖，支持 Wallpaper Engine 动态壁纸。仅限非商业使用，严禁商用。"
+    "gh_desc": "Beat-driven sci-fi light-ring visualization. Pure Canvas, single HTML, zero dependencies. Noncommercial use only. RYDER CODE / Ms MAIKEBAIs CAT ｜ 节拍驱动的科幻光环数据可视化，纯原生 Canvas 单文件 HTML、零依赖，支持 Wallpaper Engine 动态壁纸。仅限非商业使用，严禁商用。",
+    "added": "2026-11-04"
   },
   {
     "repo": "alemidev/scope-tui",
@@ -5631,7 +5932,8 @@
     "stars": 759,
     "pushed_at": "2026-10-30",
     "archived": false,
-    "gh_desc": "oscilloscope/vectorscope/spectroscope for your terminal"
+    "gh_desc": "oscilloscope/vectorscope/spectroscope for your terminal",
+    "added": "2026-11-04"
   },
   {
     "repo": "LerSent001/orb",
@@ -5649,7 +5951,8 @@
     "stars": 756,
     "pushed_at": "2026-10-22",
     "archived": false,
-    "gh_desc": "实时 WebGPU 液态玻璃球编辑器，支持 Web 与 SwiftUI/Metal 导出，使用 OpenAI Codex 辅助开发与验证 | Real-time WebGPU liquid-glass orb editor with Web and SwiftUI/Metal export, built and verified with OpenAI Codex."
+    "gh_desc": "实时 WebGPU 液态玻璃球编辑器，支持 Web 与 SwiftUI/Metal 导出，使用 OpenAI Codex 辅助开发与验证 | Real-time WebGPU liquid-glass orb editor with Web and SwiftUI/Metal export, built and verified with OpenAI Codex.",
+    "added": "2026-11-04"
   },
   {
     "repo": "jameshball/osci-render",
@@ -5667,7 +5970,8 @@
     "stars": 742,
     "pushed_at": "2026-10-26",
     "archived": false,
-    "gh_desc": "〰📺🔊 Synthesiser audio plugin for making music by drawing objects on an oscilloscope using audio."
+    "gh_desc": "〰📺🔊 Synthesiser audio plugin for making music by drawing objects on an oscilloscope using audio.",
+    "added": "2026-11-04"
   },
   {
     "repo": "alphastrata/shadplay",
@@ -5685,7 +5989,8 @@
     "stars": 727,
     "pushed_at": "2026-10-10",
     "archived": false,
-    "gh_desc": "Real-time wgsl visualisation tooling for educating oneself in the art of shader programming"
+    "gh_desc": "Real-time wgsl visualisation tooling for educating oneself in the art of shader programming",
+    "added": "2026-11-04"
   },
   {
     "repo": "basementstudio/shader-lab",
@@ -5703,7 +6008,8 @@
     "stars": 724,
     "pushed_at": "2026-11-11",
     "archived": false,
-    "gh_desc": "A powerful toolkit to create, stack, and animate shaders."
+    "gh_desc": "A powerful toolkit to create, stack, and animate shaders.",
+    "added": "2026-11-04"
   },
   {
     "repo": "stevensona/shader-toy",
@@ -5720,7 +6026,8 @@
     "stars": 722,
     "pushed_at": "2026-07-08",
     "archived": false,
-    "gh_desc": "Shadertoy-like live preview for GLSL shaders in Visual Studio Code"
+    "gh_desc": "Shadertoy-like live preview for GLSL shaders in Visual Studio Code",
+    "added": "2026-11-04"
   },
   {
     "repo": "phandasm/waveform",
@@ -5737,7 +6044,8 @@
     "stars": 717,
     "pushed_at": "2026-08-20",
     "archived": false,
-    "gh_desc": "Audio spectral analysis plugin for OBS"
+    "gh_desc": "Audio spectral analysis plugin for OBS",
+    "added": "2026-11-04"
   },
   {
     "repo": "Leonxlnx/athenaion",
@@ -5755,7 +6063,8 @@
     "stars": 708,
     "pushed_at": "2026-10-17",
     "archived": false,
-    "gh_desc": "A massive ancient Greek world built entirely in code with three.js. Zero assets, made with Claude Code (Opus 5.5)"
+    "gh_desc": "A massive ancient Greek world built entirely in code with three.js. Zero assets, made with Claude Code (Opus 5.5)",
+    "added": "2026-11-04"
   },
   {
     "repo": "cduck/drawsvg",
@@ -5773,7 +6082,8 @@
     "stars": 697,
     "pushed_at": "2026-10-29",
     "archived": false,
-    "gh_desc": "Programmatically generate SVG (vector) images, animations, and interactive Jupyter widgets"
+    "gh_desc": "Programmatically generate SVG (vector) images, animations, and interactive Jupyter widgets",
+    "added": "2026-11-04"
   },
   {
     "repo": "ashuttl/linecast",
@@ -5792,7 +6102,8 @@
     "stars": 685,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "Weather, tides, the sun, the moon, maps, and a planetarium, in your terminal. The Old Farmer's Almanac meets Minitel."
+    "gh_desc": "Weather, tides, the sun, the moon, maps, and a planetarium, in your terminal. The Old Farmer's Almanac meets Minitel.",
+    "added": "2026-11-04"
   },
   {
     "repo": "charlie947/motion-graphics-skills",
@@ -5811,7 +6122,8 @@
     "stars": 684,
     "pushed_at": "2026-10-11",
     "archived": false,
-    "gh_desc": "13 Claude Code skills for launch-grade motion graphics. Every frame is code. No After Effects, no video generator."
+    "gh_desc": "13 Claude Code skills for launch-grade motion graphics. Every frame is code. No After Effects, no video generator.",
+    "added": "2026-11-04"
   },
   {
     "repo": "AirsupHQ/machine-skill",
@@ -5829,7 +6141,8 @@
     "stars": 676,
     "pushed_at": "2026-10-13",
     "archived": false,
-    "gh_desc": "Describe any machine in one line. Claude builds a photoreal, physics based, interactive simulation of it in one HTML file, plus the film to post it. An open source Claude Code skill."
+    "gh_desc": "Describe any machine in one line. Claude builds a photoreal, physics based, interactive simulation of it in one HTML file, plus the film to post it. An open source Claude Code skill.",
+    "added": "2026-11-04"
   },
   {
     "repo": "ZyFou/ProceduralTerrains",
@@ -5850,7 +6163,8 @@
     "stars": 673,
     "pushed_at": "2026-11-04",
     "archived": false,
-    "gh_desc": "Three.js procedural terrain generator with tile, infinite world, planet mode, volumetric clouds, realistic water and GLB export."
+    "gh_desc": "Three.js procedural terrain generator with tile, infinite world, planet mode, volumetric clouds, realistic water and GLB export.",
+    "added": "2026-11-15"
   },
   {
     "repo": "blixvip/MotionClone",
@@ -5870,7 +6184,8 @@
     "stars": 672,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Rebuild a reference video as an editable HyperFrames project, compare the match against the original, and export an MP4."
+    "gh_desc": "Rebuild a reference video as an editable HyperFrames project, compare the match against the original, and export an MP4.",
+    "added": "2026-11-04"
   },
   {
     "repo": "AzurIce/ranim",
@@ -5887,7 +6202,8 @@
     "stars": 664,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "An animation engine implemented in rust, inspired by manim and JAnim"
+    "gh_desc": "An animation engine implemented in rust, inspired by manim and JAnim",
+    "added": "2026-11-04"
   },
   {
     "repo": "Stellarium/stellarium-web-engine",
@@ -5904,7 +6220,8 @@
     "stars": 663,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "JavaScript planetarium engine"
+    "gh_desc": "JavaScript planetarium engine",
+    "added": "2026-11-04"
   },
   {
     "repo": "sam70361/aora-bot",
@@ -5922,7 +6239,8 @@
     "stars": 663,
     "pushed_at": "2026-11-08",
     "archived": false,
-    "gh_desc": "Aora Bot：代码绘制的网页角色引擎。71 个角色、16 种脸、44 种动画状态、三种画风，另有 7 个节日主题共 122 个角色。支持 React、Web Component 与头像接口。（原 Emotion Ball 表情馆）"
+    "gh_desc": "Aora Bot：代码绘制的网页角色引擎。71 个角色、16 种脸、44 种动画状态、三种画风，另有 7 个节日主题共 122 个角色。支持 React、Web Component 与头像接口。（原 Emotion Ball 表情馆）",
+    "added": "2026-11-04"
   },
   {
     "repo": "rabbit-ear/rabbit-ear",
@@ -5939,7 +6257,8 @@
     "stars": 655,
     "pushed_at": "2026-10-21",
     "archived": false,
-    "gh_desc": "computational origami library"
+    "gh_desc": "computational origami library",
+    "added": "2026-11-04"
   },
   {
     "repo": "hvianna/audioMotion.js",
@@ -5959,7 +6278,8 @@
     "stars": 645,
     "pushed_at": "2026-09-22",
     "archived": false,
-    "gh_desc": "Media player and real-time audio spectrum analyzer written in JavaScript."
+    "gh_desc": "Media player and real-time audio spectrum analyzer written in JavaScript.",
+    "added": "2026-11-04"
   },
   {
     "repo": "meodai/heerich",
@@ -5977,7 +6297,8 @@
     "stars": 635,
     "pushed_at": "2026-11-07",
     "archived": false,
-    "gh_desc": "Tiny engine for 3D voxel scenes rendered to SVG — boolean ops, oblique/perspective cameras, zero dependencies. Inspired by the geometric cardboard sculptures of Erwin Heerich."
+    "gh_desc": "Tiny engine for 3D voxel scenes rendered to SVG — boolean ops, oblique/perspective cameras, zero dependencies. Inspired by the geometric cardboard sculptures of Erwin Heerich.",
+    "added": "2026-11-04"
   },
   {
     "repo": "xaos-project/XaoS",
@@ -5994,7 +6315,8 @@
     "stars": 628,
     "pushed_at": "2026-09-11",
     "archived": false,
-    "gh_desc": "Real-time interactive fractal zoomer"
+    "gh_desc": "Real-time interactive fractal zoomer",
+    "added": "2026-11-04"
   },
   {
     "repo": "shadcn-labs/snapcn",
@@ -6014,7 +6336,8 @@
     "stars": 628,
     "pushed_at": "2026-11-12",
     "archived": false,
-    "gh_desc": "A shadcn registry of Remotion components for product demo videos. Install a text reveal, device frame, terminal session, logo sting or a whole scene with a command."
+    "gh_desc": "A shadcn registry of Remotion components for product demo videos. Install a text reveal, device frame, terminal session, logo sting or a whole scene with a command.",
+    "added": "2026-11-15"
   },
   {
     "repo": "ybouane/liquidglass",
@@ -6034,7 +6357,8 @@
     "archived": false,
     "gh_desc": "A liquid glass effect library for the web. Apply realistic glass refraction, blur, chromatic aberration, and lighting effects to any HTML element using WebGL shaders.",
     "license_display": "MIT",
-    "license_display_en": "MIT"
+    "license_display_en": "MIT",
+    "added": "2026-11-15"
   },
   {
     "repo": "mrsarac/ff-tracking",
@@ -6053,7 +6377,8 @@
     "stars": 618,
     "pushed_at": "2026-10-22",
     "archived": false,
-    "gh_desc": "A virtual camera films an AI agent's screen while a tracker locks onto every glyph. Two fframes passes, one SkSL shader, all sound synthesized."
+    "gh_desc": "A virtual camera films an AI agent's screen while a tracker locks onto every glyph. Two fframes passes, one SkSL shader, all sound synthesized.",
+    "added": "2026-11-04"
   },
   {
     "repo": "abey79/vsketch",
@@ -6071,7 +6396,8 @@
     "stars": 614,
     "pushed_at": "2026-11-02",
     "archived": false,
-    "gh_desc": "Generative plotter art environment for Python"
+    "gh_desc": "Generative plotter art environment for Python",
+    "added": "2026-11-04"
   },
   {
     "repo": "tessarakkt/godot4-oceanfft",
@@ -6090,7 +6416,8 @@
     "stars": 613,
     "pushed_at": "2025-11-19",
     "archived": false,
-    "gh_desc": "Tessendorf FFT based ocean waves and buoyancy in Godot 4 using compute shaders"
+    "gh_desc": "Tessendorf FFT based ocean waves and buoyancy in Godot 4 using compute shaders",
+    "added": "2026-11-04"
   },
   {
     "repo": "you-ri/LiliumToonGraph",
@@ -6108,7 +6435,8 @@
     "stars": 609,
     "pushed_at": "2026-11-03",
     "archived": false,
-    "gh_desc": "UniversalRP Toon Shader with ShaderGraph"
+    "gh_desc": "UniversalRP Toon Shader with ShaderGraph",
+    "added": "2026-11-04"
   },
   {
     "repo": "Fabric-Project/Fabric",
@@ -6130,7 +6458,8 @@
     "stars": 606,
     "pushed_at": "2026-11-11",
     "archived": false,
-    "gh_desc": "Node Creative Coding / 3D / Image Processing tool inspired by Quartz Composer"
+    "gh_desc": "Node Creative Coding / 3D / Image Processing tool inspired by Quartz Composer",
+    "added": "2026-11-15"
   },
   {
     "repo": "ianthehenry/bauble",
@@ -6150,7 +6479,8 @@
     "pushed_at": "2026-05-25",
     "archived": false,
     "gh_desc": "a playground for making 3D art with lisp and math",
-    "lang_en": "Janet (Lisp)"
+    "lang_en": "Janet (Lisp)",
+    "added": "2026-11-04"
   },
   {
     "repo": "mmmerl/shader-doodle",
@@ -6167,7 +6497,8 @@
     "stars": 591,
     "pushed_at": "2026-09-15",
     "archived": false,
-    "gh_desc": "A friendly web-component for writing and rendering shaders."
+    "gh_desc": "A friendly web-component for writing and rendering shaders.",
+    "added": "2026-11-04"
   },
   {
     "repo": "laurentlb/shader-minifier",
@@ -6185,7 +6516,8 @@
     "stars": 585,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "Minify and obfuscate GLSL or HLSL code"
+    "gh_desc": "Minify and obfuscate GLSL or HLSL code",
+    "added": "2026-11-04"
   },
   {
     "repo": "LMP88959/NTSC-CRT",
@@ -6203,7 +6535,8 @@
     "stars": 577,
     "pushed_at": "2026-07-19",
     "archived": false,
-    "gh_desc": "NTSC encoding/decoding in C89 using only integers and fixed point math. Supports NES decoding. Can be used as an image filter for games or real-time applications."
+    "gh_desc": "NTSC encoding/decoding in C89 using only integers and fixed point math. Supports NES decoding. Can be used as an image filter for games or real-time applications.",
+    "added": "2026-11-04"
   },
   {
     "repo": "cables-gl/cables",
@@ -6223,7 +6556,8 @@
     "stars": 575,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "cables is a tool for creating beautiful interactive content"
+    "gh_desc": "cables is a tool for creating beautiful interactive content",
+    "added": "2026-11-03"
   },
   {
     "repo": "pengchujin/livecanvas",
@@ -6242,7 +6576,8 @@
     "stars": 556,
     "pushed_at": "2026-10-10",
     "archived": false,
-    "gh_desc": "一句话，做成有封面、有动画的 Live 图。Turn a sentence into a Live Photo with a designed cover and animation."
+    "gh_desc": "一句话，做成有封面、有动画的 Live 图。Turn a sentence into a Live Photo with a designed cover and animation.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Nyankomintsu/world-execute-me-lyric-mv",
@@ -6262,7 +6597,8 @@
     "stars": 550,
     "pushed_at": "2026-10-18",
     "archived": false,
-    "gh_desc": "world.execute(me); — an unofficial fan-made lyric MV told as a chat with Claude, rendered frame by frame from code. Prompts included; no music or lyrics. 非官方同人歌詞 MV:以程式碼逐幀渲染,附完整提示詞,不含歌曲與歌詞。"
+    "gh_desc": "world.execute(me); — an unofficial fan-made lyric MV told as a chat with Claude, rendered frame by frame from code. Prompts included; no music or lyrics. 非官方同人歌詞 MV:以程式碼逐幀渲染,附完整提示詞,不含歌曲與歌詞。",
+    "added": "2026-11-04"
   },
   {
     "repo": "liangdabiao/whiteboard-teacher-video",
@@ -6281,7 +6617,8 @@
     "stars": 550,
     "pushed_at": "2026-11-08",
     "archived": false,
-    "gh_desc": "MG动画视频skill, 抖音爆款Vibe知识大赏知识短片 ，  自动配音效，一键出片。图文讲解视频 skill  —— 把讲解稿变成「手绘会动的画面」讲解视频。  图形由代码逐笔绘出、文字逐字写出、讲到哪画到哪。五套风格可选，本地 Chrome 渲染， 零生图 API 成本 ，任何改动秒级重渲。"
+    "gh_desc": "MG动画视频skill, 抖音爆款Vibe知识大赏知识短片 ，  自动配音效，一键出片。图文讲解视频 skill  —— 把讲解稿变成「手绘会动的画面」讲解视频。  图形由代码逐笔绘出、文字逐字写出、讲到哪画到哪。五套风格可选，本地 Chrome 渲染， 零生图 API 成本 ，任何改动秒级重渲。",
+    "added": "2026-11-04"
   },
   {
     "repo": "processing/processing4",
@@ -6298,7 +6635,8 @@
     "stars": 547,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "Source code for Processing, the software sketchbook and Java-based programming language for students, artists, designers, educators, hobbyists, and creative coders. Includes the core library, and editor (PDE)"
+    "gh_desc": "Source code for Processing, the software sketchbook and Java-based programming language for students, artists, designers, educators, hobbyists, and creative coders. Includes the core library, and editor (PDE)",
+    "added": "2026-11-03"
   },
   {
     "repo": "ertdfgcvb/play.core",
@@ -6316,7 +6654,8 @@
     "stars": 544,
     "pushed_at": "2026-04-03",
     "archived": false,
-    "gh_desc": "ASCII Playground"
+    "gh_desc": "ASCII Playground",
+    "added": "2026-11-03"
   },
   {
     "repo": "sloemo01/diorama",
@@ -6339,7 +6678,8 @@
     "stars": 535,
     "pushed_at": "2026-11-07",
     "archived": false,
-    "gh_desc": "Playbook and Three.js code kit for detailed dioramas: classic pixel art, stroked toon or pixel + stroke; two intake gates for look and model sourcing; free orbit, palette snap and ink; animated toy-scale cast; per-entity frame QA."
+    "gh_desc": "Playbook and Three.js code kit for detailed dioramas: classic pixel art, stroked toon or pixel + stroke; two intake gates for look and model sourcing; free orbit, palette snap and ink; animated toy-scale cast; per-entity frame QA.",
+    "added": "2026-11-15"
   },
   {
     "repo": "Glass-HQ/liquid-glass",
@@ -6359,7 +6699,8 @@
     "stars": 531,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "Liquid Glass materials for web and Electron, built with vgpu."
+    "gh_desc": "Liquid Glass materials for web and Electron, built with vgpu.",
+    "added": "2026-11-15"
   },
   {
     "repo": "doodlewind/beam",
@@ -6376,7 +6717,8 @@
     "stars": 529,
     "pushed_at": "2026-09-09",
     "archived": false,
-    "gh_desc": "✨ Expressive WebGPU"
+    "gh_desc": "✨ Expressive WebGPU",
+    "added": "2026-11-04"
   },
   {
     "repo": "cashew-olddew/Universal-Transition-Shader",
@@ -6394,7 +6736,8 @@
     "stars": 527,
     "pushed_at": "2026-03-18",
     "archived": false,
-    "gh_desc": "Most common transitions inside one Godot shader. 🎬"
+    "gh_desc": "Most common transitions inside one Godot shader. 🎬",
+    "added": "2026-11-04"
   },
   {
     "repo": "0xS4N4TG/kinetograph",
@@ -6416,7 +6759,8 @@
     "stars": 523,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "A blazingly fast programmatic video engine, made for agents."
+    "gh_desc": "A blazingly fast programmatic video engine, made for agents.",
+    "added": "2026-11-04"
   },
   {
     "repo": "d3cod3/Mosaic",
@@ -6435,7 +6779,8 @@
     "stars": 519,
     "pushed_at": "2026-10-22",
     "archived": false,
-    "gh_desc": "Mosaic, an openFrameworks/ImGui based Visual Patching Creative-Coding Platform"
+    "gh_desc": "Mosaic, an openFrameworks/ImGui based Visual Patching Creative-Coding Platform",
+    "added": "2026-11-04"
   },
   {
     "repo": "amalChandran/trail-android",
@@ -6453,7 +6798,8 @@
     "stars": 517,
     "pushed_at": "2026-10-08",
     "archived": false,
-    "gh_desc": "🚕 Simple, smooth animation for route / polylines on google maps using projections."
+    "gh_desc": "🚕 Simple, smooth animation for route / polylines on google maps using projections.",
+    "added": "2026-11-04"
   },
   {
     "repo": "av/remotion-bits",
@@ -6477,7 +6823,8 @@
     "archived": false,
     "gh_desc": "Ready-made animated components for Remotion — charts, transitions, text reveals, and more",
     "license_display": "MIT",
-    "license_display_en": "MIT"
+    "license_display_en": "MIT",
+    "added": "2026-11-15"
   },
   {
     "repo": "maloyan/manim-web",
@@ -6495,7 +6842,8 @@
     "stars": 515,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Mathematical animations for the web — Manim in TypeScript"
+    "gh_desc": "Mathematical animations for the web — Manim in TypeScript",
+    "added": "2026-11-15"
   },
   {
     "repo": "jinleili/learn-wgpu-zh",
@@ -6514,7 +6862,8 @@
     "stars": 513,
     "pushed_at": "2026-10-31",
     "archived": false,
-    "gh_desc": "Learn wgpu 中文版"
+    "gh_desc": "Learn wgpu 中文版",
+    "added": "2026-11-04"
   },
   {
     "repo": "Wing900/ManimCat",
@@ -6534,7 +6883,8 @@
     "stars": 502,
     "pushed_at": "2026-11-11",
     "archived": false,
-    "gh_desc": "EN: ManimCat: AI-generated math animations from natural language. High-quality Manim rendering with LaTeX support and auto-code fixing. 中: ManimCat：AI 数学动画生成器。支持描述即视频，内置 LaTeX 与代码纠错，让数学动效触手可及。"
+    "gh_desc": "EN: ManimCat: AI-generated math animations from natural language. High-quality Manim rendering with LaTeX support and auto-code fixing. 中: ManimCat：AI 数学动画生成器。支持描述即视频，内置 LaTeX 与代码纠错，让数学动效触手可及。",
+    "added": "2026-11-04"
   },
   {
     "repo": "tuzhechen2005/opus-video-skills",
@@ -6553,7 +6903,8 @@
     "stars": 501,
     "pushed_at": "2026-09-27",
     "archived": false,
-    "gh_desc": "Video-making skills for Claude Opus 5.5 in Claude Code — every frame and note generated in code, one skill per style: hand-painted animation, kinetic-typography reels | 用 Claude Opus 5.5 以代码制作视频的技能合集"
+    "gh_desc": "Video-making skills for Claude Opus 5.5 in Claude Code — every frame and note generated in code, one skill per style: hand-painted animation, kinetic-typography reels | 用 Claude Opus 5.5 以代码制作视频的技能合集",
+    "added": "2026-11-04"
   },
   {
     "repo": "vcync/modV",
@@ -6571,7 +6922,8 @@
     "stars": 499,
     "pushed_at": "2026-02-17",
     "archived": false,
-    "gh_desc": "modular audio visualisation powered by JavaScript"
+    "gh_desc": "modular audio visualisation powered by JavaScript",
+    "added": "2026-11-04"
   },
   {
     "repo": "jamesrochabrun/ShaderKit",
@@ -6590,7 +6942,8 @@
     "pushed_at": "2026-08-19",
     "archived": false,
     "gh_desc": "A Swift package for composable Metal shaders and holographic UI effects in SwiftUI.",
-    "lang_en": "Swift / Metal (iOS)"
+    "lang_en": "Swift / Metal (iOS)",
+    "added": "2026-11-04"
   },
   {
     "repo": "R74nCom/sandboxels",
@@ -6608,7 +6961,8 @@
     "stars": 486,
     "pushed_at": "2026-06-03",
     "archived": false,
-    "gh_desc": "In-browser falling-sand simulation game with over 500 elements and thousands of reactions."
+    "gh_desc": "In-browser falling-sand simulation game with over 500 elements and thousands of reactions.",
+    "added": "2026-11-04"
   },
   {
     "repo": "geekjourneyx/hyperframes-motion-director",
@@ -6628,7 +6982,8 @@
     "stars": 483,
     "pushed_at": "2026-07-26",
     "archived": false,
-    "gh_desc": "Agent Skill for Chinese-first HyperFrames motion-video production from articles, products, websites, and README files."
+    "gh_desc": "Agent Skill for Chinese-first HyperFrames motion-video production from articles, products, websites, and README files.",
+    "added": "2026-11-04"
   },
   {
     "repo": "RetroCrisis/Retro-Crisis-GDV-NTSC",
@@ -6648,7 +7003,8 @@
     "stars": 482,
     "pushed_at": "2026-09-27",
     "archived": false,
-    "gh_desc": "Retro Crisis libretro CRT shader presets, based on Guest Advanced NTSC shader"
+    "gh_desc": "Retro Crisis libretro CRT shader presets, based on Guest Advanced NTSC shader",
+    "added": "2026-11-04"
   },
   {
     "repo": "V-Sekai/godot-vrm",
@@ -6666,7 +7022,8 @@
     "stars": 482,
     "pushed_at": "2026-07-08",
     "archived": false,
-    "gh_desc": "Importer/Exporter for VRM avatars and MToon shader. Available for Godot 4.1+ and 3.2+ in the Asset Library."
+    "gh_desc": "Importer/Exporter for VRM avatars and MToon shader. Available for Godot 4.1+ and 3.2+ in the Asset Library.",
+    "added": "2026-11-04"
   },
   {
     "repo": "parsimonhi/animCJK",
@@ -6686,7 +7043,8 @@
     "stars": 479,
     "pushed_at": "2026-11-08",
     "archived": false,
-    "gh_desc": "Draw animated Japanese characters (Kanji and Kana), Korean characters (Hanja) and Chinese characters (Hanzi) in correct stroke order using svg, free open-source code."
+    "gh_desc": "Draw animated Japanese characters (Kanji and Kana), Korean characters (Hanja) and Chinese characters (Hanzi) in correct stroke order using svg, free open-source code.",
+    "added": "2026-11-04"
   },
   {
     "repo": "win4r/video-director",
@@ -6704,7 +7062,8 @@
     "stars": 476,
     "pushed_at": "2026-11-07",
     "archived": false,
-    "gh_desc": "A Claude skill for directing, building and verifying code-rendered videos (HTML/Canvas → MP4): principles, gated workflow, QA scripts and evals."
+    "gh_desc": "A Claude skill for directing, building and verifying code-rendered videos (HTML/Canvas → MP4): principles, gated workflow, QA scripts and evals.",
+    "added": "2026-11-04"
   },
   {
     "repo": "finnmckenty/NTSCRT",
@@ -6722,7 +7081,8 @@
     "pushed_at": "2026-11-15",
     "archived": false,
     "gh_desc": "Vintage analog TV/VHS image tool for macOS: ntsc-rs signal emulation + RetroArch CRT shaders (librashader), glued together with SwiftUI/Metal",
-    "lang_en": "Swift (macOS)"
+    "lang_en": "Swift (macOS)",
+    "added": "2026-11-04"
   },
   {
     "repo": "sockmaster27/svader",
@@ -6739,7 +7099,8 @@
     "stars": 465,
     "pushed_at": "2026-11-13",
     "archived": false,
-    "gh_desc": "Create GPU-rendered Svelte components"
+    "gh_desc": "Create GPU-rendered Svelte components",
+    "added": "2026-11-04"
   },
   {
     "repo": "AbubakrChan/product-launch-motion",
@@ -6757,7 +7118,8 @@
     "stars": 465,
     "pushed_at": "2026-10-21",
     "archived": false,
-    "gh_desc": "Claude Code skill for Dribbble-level product launch videos from code. One shape that never cuts, springs, a cursor that drives every change, beat-synced SFX, 60 fps motion blur. v2: use with Claude Opus 5.5."
+    "gh_desc": "Claude Code skill for Dribbble-level product launch videos from code. One shape that never cuts, springs, a cursor that drives every change, beat-synced SFX, 60 fps motion blur. v2: use with Claude Opus 5.5.",
+    "added": "2026-11-04"
   },
   {
     "repo": "whynotmake-it/flutter_liquid_glass",
@@ -6776,7 +7138,8 @@
     "stars": 461,
     "pushed_at": "2026-10-29",
     "archived": false,
-    "gh_desc": "Workspace for liquid glass packages"
+    "gh_desc": "Workspace for liquid glass packages",
+    "added": "2026-11-15"
   },
   {
     "repo": "typemytype/drawbot",
@@ -6796,7 +7159,8 @@
     "stars": 456,
     "pushed_at": "2026-07-24",
     "archived": false,
-    "gh_desc": ""
+    "gh_desc": "",
+    "added": "2026-11-03"
   },
   {
     "repo": "Alexwtlf/agentic-product-demo",
@@ -6814,7 +7178,8 @@
     "stars": 455,
     "pushed_at": "2026-08-27",
     "archived": false,
-    "gh_desc": "Create polished product demo videos with AI coding agents and Remotion. The UI is code, not a screen recording."
+    "gh_desc": "Create polished product demo videos with AI coding agents and Remotion. The UI is code, not a screen recording.",
+    "added": "2026-11-04"
   },
   {
     "repo": "gokayfem/shader-skills",
@@ -6832,7 +7197,8 @@
     "stars": 453,
     "pushed_at": "2026-10-23",
     "archived": false,
-    "gh_desc": "GLSL and Shadertoy shader skills for Claude Code, Codex, Cursor, Copilot and Gemini CLI. 186 functions, SDF raymarching, procedural terrain, water, clouds and generative art, with a bundler, checker and 11 examples."
+    "gh_desc": "GLSL and Shadertoy shader skills for Claude Code, Codex, Cursor, Copilot and Gemini CLI. 186 functions, SDF raymarching, procedural terrain, water, clouds and generative art, with a bundler, checker and 11 examples.",
+    "added": "2026-11-04"
   },
   {
     "repo": "mywave82/opencubicplayer",
@@ -6851,7 +7217,8 @@
     "stars": 452,
     "pushed_at": "2026-08-24",
     "archived": false,
-    "gh_desc": "Open Cubic Player (unix fork). Music visualizer for various tracked music formats (amiga modules, S3M, IT), chiptunes and other formats related to demoscene"
+    "gh_desc": "Open Cubic Player (unix fork). Music visualizer for various tracked music formats (amiga modules, S3M, IT), chiptunes and other formats related to demoscene",
+    "added": "2026-11-04"
   },
   {
     "repo": "Moessif/code-video-showcase",
@@ -6870,7 +7237,8 @@
     "stars": 446,
     "pushed_at": "2026-10-28",
     "archived": false,
-    "gh_desc": "A pure-code beat-synced showcase-video Agent Skill: HTML/Canvas/SVG/Three.js frame-by-frame + Python numpy/scipy score + FFmpeg. No generative models."
+    "gh_desc": "A pure-code beat-synced showcase-video Agent Skill: HTML/Canvas/SVG/Three.js frame-by-frame + Python numpy/scipy score + FFmpeg. No generative models.",
+    "added": "2026-11-04"
   },
   {
     "repo": "kailashsr38/ascii-magic-art",
@@ -6887,7 +7255,8 @@
     "stars": 441,
     "pushed_at": "2026-10-26",
     "archived": false,
-    "gh_desc": "734 animated ASCII art pieces for web pages, READMEs, wallpapers and terminals. Browse them in your terminal with npx ascii-magic-art and add one to your project in one prompt."
+    "gh_desc": "734 animated ASCII art pieces for web pages, READMEs, wallpapers and terminals. Browse them in your terminal with npx ascii-magic-art and add one to your project in one prompt.",
+    "added": "2026-11-15"
   },
   {
     "repo": "Matheart/manim-physics",
@@ -6905,7 +7274,8 @@
     "stars": 413,
     "pushed_at": "2026-10-15",
     "archived": false,
-    "gh_desc": "Physics simulation plugin of Manim that can generate scenes in various branches of Physics."
+    "gh_desc": "Physics simulation plugin of Manim that can generate scenes in various branches of Physics.",
+    "added": "2026-11-03"
   },
   {
     "repo": "Kianzzz/xilo-opus-video",
@@ -6924,7 +7294,8 @@
     "stars": 405,
     "pushed_at": "2026-09-28",
     "archived": false,
-    "gh_desc": "用 Claude Opus 5.5 写代码做视频：先给三个方案和预览，确认后逐帧渲染成片 | Canvas / WebGL / Three.js / Remotion / HyperFrames | Claude Code Skill"
+    "gh_desc": "用 Claude Opus 5.5 写代码做视频：先给三个方案和预览，确认后逐帧渲染成片 | Canvas / WebGL / Three.js / Remotion / HyperFrames | Claude Code Skill",
+    "added": "2026-11-04"
   },
   {
     "repo": "shuimo-design/shuimo-ui",
@@ -6942,7 +7313,8 @@
     "stars": 400,
     "pushed_at": "2026-07-27",
     "archived": false,
-    "gh_desc": "一款水墨风UI"
+    "gh_desc": "一款水墨风UI",
+    "added": "2026-11-04"
   },
   {
     "repo": "blazejkustra/react-native-effects",
@@ -6961,7 +7333,8 @@
     "stars": 391,
     "pushed_at": "2026-10-31",
     "archived": false,
-    "gh_desc": "WebGPU-powered shader effects for React Native. Drop-in components running on a separate thread"
+    "gh_desc": "WebGPU-powered shader effects for React Native. Drop-in components running on a separate thread",
+    "added": "2026-11-15"
   },
   {
     "repo": "juniorrojas/algovivo",
@@ -6978,7 +7351,8 @@
     "stars": 389,
     "pushed_at": "2026-11-09",
     "archived": false,
-    "gh_desc": "An energy-based formulation for soft-bodied virtual creatures"
+    "gh_desc": "An energy-based formulation for soft-bodied virtual creatures",
+    "added": "2026-11-04"
   },
   {
     "repo": "WishMelz/AquaInkGL",
@@ -6996,7 +7370,8 @@
     "stars": 386,
     "pushed_at": "2025-12-29",
     "archived": false,
-    "gh_desc": "WebGL 实现的水墨画背景特效 - 个人主页"
+    "gh_desc": "WebGL 实现的水墨画背景特效 - 个人主页",
+    "added": "2026-11-04"
   },
   {
     "repo": "diggerhq/shipvideo",
@@ -7016,7 +7391,8 @@
     "stars": 384,
     "pushed_at": "2026-10-01",
     "archived": false,
-    "gh_desc": "Paste a URL or a prompt, get a launch video. Opus 5.5 writes HTML, an OpenComputer serverless agent renders it."
+    "gh_desc": "Paste a URL or a prompt, get a launch video. Opus 5.5 writes HTML, an OpenComputer serverless agent renders it.",
+    "added": "2026-11-04"
   },
   {
     "repo": "antiboredom/p5.riso",
@@ -7034,7 +7410,8 @@
     "stars": 376,
     "pushed_at": "2026-11-03",
     "archived": false,
-    "gh_desc": "A p5js library for risograph printing by Sam Lavigne and Tega Brain."
+    "gh_desc": "A p5js library for risograph printing by Sam Lavigne and Tega Brain.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Leonxlnx/lumenshaders",
@@ -7052,7 +7429,8 @@
     "stars": 367,
     "pushed_at": "2026-06-12",
     "archived": false,
-    "gh_desc": "LUMEN, a generative shader studio. 9 WebGL2 art modes plus synth style blending, perfect-loop animation, gradient sets, share codes and PNG/WebM/GIF export. Zero dependencies."
+    "gh_desc": "LUMEN, a generative shader studio. 9 WebGL2 art modes plus synth style blending, perfect-loop animation, gradient sets, share codes and PNG/WebM/GIF export. Zero dependencies.",
+    "added": "2026-11-04"
   },
   {
     "repo": "t3kt/raytk",
@@ -7073,7 +7451,8 @@
     "stars": 359,
     "pushed_at": "2026-02-04",
     "archived": false,
-    "gh_desc": "Raymarching shader toolkit for TouchDesigner"
+    "gh_desc": "Raymarching shader toolkit for TouchDesigner",
+    "added": "2026-11-04"
   },
   {
     "repo": "haowg/GODOT-VFX-LIBRARY",
@@ -7091,7 +7470,8 @@
     "stars": 358,
     "pushed_at": "2026-01-25",
     "archived": false,
-    "gh_desc": "A comprehensive collection of particle effects and shaders for Godot 4, designed specifically for action games"
+    "gh_desc": "A comprehensive collection of particle effects and shaders for Godot 4, designed specifically for action games",
+    "added": "2026-11-04"
   },
   {
     "repo": "MrBongoC/ai-iso-skill",
@@ -7111,7 +7491,8 @@
     "stars": 357,
     "pushed_at": "2026-10-04",
     "archived": false,
-    "gh_desc": "Claude skill that draws interactive isometric figures in a single HTML file"
+    "gh_desc": "Claude skill that draws interactive isometric figures in a single HTML file",
+    "added": "2026-11-15"
   },
   {
     "repo": "lovisdotio/motion2code",
@@ -7131,7 +7512,8 @@
     "stars": 354,
     "pushed_at": "2026-10-20",
     "archived": false,
-    "gh_desc": "Skills for coding agents: rebuild a motion design video as looping SVG + GSAP code, checked frame by frame against the source"
+    "gh_desc": "Skills for coding agents: rebuild a motion design video as looping SVG + GSAP code, checked frame by frame against the source",
+    "added": "2026-11-04"
   },
   {
     "repo": "lemomo-ai/lemo-wake",
@@ -7152,7 +7534,8 @@
     "stars": 354,
     "pushed_at": "2026-10-17",
     "archived": false,
-    "gh_desc": "Claude Code plugin: turn one still image into a ~5 s seamless looping animation (MP4, GIF, WebP, Live Photo). · 把一张图做成约 5 秒的无缝循环动图。"
+    "gh_desc": "Claude Code plugin: turn one still image into a ~5 s seamless looping animation (MP4, GIF, WebP, Live Photo). · 把一张图做成约 5 秒的无缝循环动图。",
+    "added": "2026-11-15"
   },
   {
     "repo": "kelano86/what-if-animation",
@@ -7170,7 +7553,8 @@
     "stars": 351,
     "pushed_at": "2026-10-30",
     "archived": false,
-    "gh_desc": "A free skill for Claude Code and OpenCode (runs on a free model): one topic line in, a finished 15-25 s What If animated episode out. Every frame drawn in code (SVG + Remotion); voice and sound from ElevenLabs."
+    "gh_desc": "A free skill for Claude Code and OpenCode (runs on a free model): one topic line in, a finished 15-25 s What If animated episode out. Every frame drawn in code (SVG + Remotion); voice and sound from ElevenLabs.",
+    "added": "2026-11-04"
   },
   {
     "repo": "shuyicc/MathLens",
@@ -7188,7 +7572,8 @@
     "stars": 350,
     "pushed_at": "2026-03-10",
     "archived": false,
-    "gh_desc": "MathLens 是一个专注于数学题目视频讲解的 Agent Skill。你只需粘贴一道数学题（图片或文字），它就能自动完成从题目分析、可视化讲解、配音脚本到 Manim 动画视频的全流程制作。单条视频1-10 分钟，成本 0.2-1 元以内。"
+    "gh_desc": "MathLens 是一个专注于数学题目视频讲解的 Agent Skill。你只需粘贴一道数学题（图片或文字），它就能自动完成从题目分析、可视化讲解、配音脚本到 Manim 动画视频的全流程制作。单条视频1-10 分钟，成本 0.2-1 元以内。",
+    "added": "2026-11-04"
   },
   {
     "repo": "krispuckett/SwiftUIShaders",
@@ -7207,7 +7592,8 @@
     "pushed_at": "2026-09-30",
     "archived": false,
     "gh_desc": "41 hand-curated drop-in SwiftUI Metal shader effects — holographic foil, kaleidoscope, magnetic fields, glitch, neon edges and more. Typed View modifiers, agent-friendly docs.",
-    "lang_en": "Swift (iOS)"
+    "lang_en": "Swift (iOS)",
+    "added": "2026-11-04"
   },
   {
     "repo": "Akillll-DuoHe/fy-code-animation",
@@ -7225,7 +7611,8 @@
     "stars": 350,
     "pushed_at": "2026-10-30",
     "archived": false,
-    "gh_desc": "把中文文案、画风提示词和声音做成前后连贯的代码动画（Remotion / Canvas / HTML）的 DeepSeek Harness 技能。341 画风库检索、语义分镜、镜头转场、角色表演、四案音乐与音效、检查返修。"
+    "gh_desc": "把中文文案、画风提示词和声音做成前后连贯的代码动画（Remotion / Canvas / HTML）的 DeepSeek Harness 技能。341 画风库检索、语义分镜、镜头转场、角色表演、四案音乐与音效、检查返修。",
+    "added": "2026-11-04"
   },
   {
     "repo": "markusmoenig/ShaderMania",
@@ -7243,7 +7630,8 @@
     "pushed_at": "2026-05-23",
     "archived": false,
     "gh_desc": "A Metal fragment shader editor for macOS and iPadOS",
-    "lang_en": "Swift (macOS / iPad)"
+    "lang_en": "Swift (macOS / iPad)",
+    "added": "2026-11-04"
   },
   {
     "repo": "Zorochase/ultimate-retro-shader-collection",
@@ -7262,7 +7650,8 @@
     "stars": 345,
     "pushed_at": "2026-08-30",
     "archived": false,
-    "gh_desc": "Shaders bringing 5th-gen console aesthetics to Godot 4."
+    "gh_desc": "Shaders bringing 5th-gen console aesthetics to Godot 4.",
+    "added": "2026-11-04"
   },
   {
     "repo": "coldtype/coldtype",
@@ -7280,7 +7669,8 @@
     "stars": 342,
     "pushed_at": "2026-08-10",
     "archived": false,
-    "gh_desc": "cross-platform display typography in python"
+    "gh_desc": "cross-platform display typography in python",
+    "added": "2026-11-03"
   },
   {
     "repo": "oripa/oripa",
@@ -7299,7 +7689,8 @@
     "stars": 334,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "ORIPA is a drawing software dedicated to designing the crease patterns of origami. The unique feature of ORIPA is calculation of the folded shape from the pattern."
+    "gh_desc": "ORIPA is a drawing software dedicated to designing the crease patterns of origami. The unique feature of ORIPA is calculation of the folded shape from the pattern.",
+    "added": "2026-11-04"
   },
   {
     "repo": "CruxGarden/plasma-ui",
@@ -7320,7 +7711,8 @@
     "stars": 333,
     "pushed_at": "2026-11-01",
     "archived": false,
-    "gh_desc": "Liquid glass components for React"
+    "gh_desc": "Liquid glass components for React",
+    "added": "2026-11-15"
   },
   {
     "repo": "n1m21n/Infinite",
@@ -7340,7 +7732,8 @@
     "stars": 331,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Infinite is a free, open-source node-based audiovisual workstation by Naman Soni (n1m21n): real-time GPU compositing, 3D, modular synths, VST3/AU hosting."
+    "gh_desc": "Infinite is a free, open-source node-based audiovisual workstation by Naman Soni (n1m21n): real-time GPU compositing, 3D, modular synths, VST3/AU hosting.",
+    "added": "2026-11-15"
   },
   {
     "repo": "ManimCommunity/manim-voiceover",
@@ -7357,7 +7750,8 @@
     "stars": 327,
     "pushed_at": "2026-06-15",
     "archived": false,
-    "gh_desc": "Manim plugin for all things voiceover"
+    "gh_desc": "Manim plugin for all things voiceover",
+    "added": "2026-11-03"
   },
   {
     "repo": "owenyuwono/poseidon",
@@ -7375,7 +7769,8 @@
     "stars": 323,
     "pushed_at": "2026-08-20",
     "archived": false,
-    "gh_desc": "GPU-driven real-time FFT ocean (Three.js + WebGPU/TSL)"
+    "gh_desc": "GPU-driven real-time FFT ocean (Three.js + WebGPU/TSL)",
+    "added": "2026-11-04"
   },
   {
     "repo": "sevenevesai/riso-windowseat",
@@ -7393,7 +7788,8 @@
     "stars": 320,
     "pushed_at": "2026-10-28",
     "archived": false,
-    "gh_desc": "Procedural risograph films in single HTML files (Window Seat, Roost and more), with the Claude Code skills, docs and tools to make your own."
+    "gh_desc": "Procedural risograph films in single HTML files (Window Seat, Roost and more), with the Claude Code skills, docs and tools to make your own.",
+    "added": "2026-11-04"
   },
   {
     "repo": "MisterPrada/singularity",
@@ -7411,7 +7807,8 @@
     "stars": 319,
     "pushed_at": "2026-02-11",
     "archived": false,
-    "gh_desc": "Black Hole -> Three.js -> TSL -> (WebGPU/WebGL)"
+    "gh_desc": "Black Hole -> Three.js -> TSL -> (WebGPU/WebGL)",
+    "added": "2026-11-04"
   },
   {
     "repo": "cgsdev0/termsand",
@@ -7429,7 +7826,8 @@
     "stars": 318,
     "pushed_at": "2026-11-08",
     "archived": false,
-    "gh_desc": "falling sand sim for tmux 3.4+"
+    "gh_desc": "falling sand sim for tmux 3.4+",
+    "added": "2026-11-04"
   },
   {
     "repo": "patuwwy/ShaderToy-Chrome-Plugin",
@@ -7447,7 +7845,8 @@
     "stars": 314,
     "pushed_at": "2026-11-14",
     "archived": false,
-    "gh_desc": "Web extension for shadertoy.com"
+    "gh_desc": "Web extension for shadertoy.com",
+    "added": "2026-11-04"
   },
   {
     "repo": "romellogoodman/flow-fields",
@@ -7465,7 +7864,8 @@
     "stars": 312,
     "pushed_at": "2026-09-20",
     "archived": false,
-    "gh_desc": "A javascript library for creating flow fields"
+    "gh_desc": "A javascript library for creating flow fields",
+    "added": "2026-11-04"
   },
   {
     "repo": "mejdi14/Android-AGSL-Shader-Playground",
@@ -7483,7 +7883,8 @@
     "stars": 310,
     "pushed_at": "2026-11-03",
     "archived": false,
-    "gh_desc": "Android AGSL Shader effect library"
+    "gh_desc": "Android AGSL Shader effect library",
+    "added": "2026-11-04"
   },
   {
     "repo": "remotion-dev/template-tiktok",
@@ -7506,7 +7907,8 @@
     "stars": 308,
     "pushed_at": "2026-11-09",
     "archived": false,
-    "gh_desc": "Generate TikTok-style captions with Whisper.cpp"
+    "gh_desc": "Generate TikTok-style captions with Whisper.cpp",
+    "added": "2026-11-03"
   },
   {
     "repo": "RemiKoutcherawy/OriSim3D-Android",
@@ -7525,7 +7927,8 @@
     "stars": 304,
     "pushed_at": "2026-09-06",
     "archived": false,
-    "gh_desc": "OriSim3D origami folding simulation on Android with openGL."
+    "gh_desc": "OriSim3D origami folding simulation on Android with openGL.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Token-Gremlin/natural-disasters",
@@ -7544,7 +7947,8 @@
     "stars": 304,
     "pushed_at": "2026-09-01",
     "archived": false,
-    "gh_desc": "Fully procedural cinematic ocean and extreme weather simulation in the browser. Multi-cascade FFT waves, volumetric clouds, hurricanes and tsunamis - every pixel generated on the GPU at runtime, zero external assets. Three.js / WebGL2 / GLSL3."
+    "gh_desc": "Fully procedural cinematic ocean and extreme weather simulation in the browser. Multi-cascade FFT waves, volumetric clouds, hurricanes and tsunamis - every pixel generated on the GPU at runtime, zero external assets. Three.js / WebGL2 / GLSL3.",
+    "added": "2026-11-04"
   },
   {
     "repo": "clainstone/cbirds",
@@ -7563,7 +7967,8 @@
     "stars": 304,
     "pushed_at": "2026-10-17",
     "archived": false,
-    "gh_desc": "A flock of birds in your terminal: Craig Reynolds' boids, in braille in any terminal and as sprites in Kitty and Ghostty. One C99 program, no dependencies. Linux and macOS"
+    "gh_desc": "A flock of birds in your terminal: Craig Reynolds' boids, in braille in any terminal and as sprites in Kitty and Ghostty. One C99 program, no dependencies. Linux and macOS",
+    "added": "2026-11-04"
   },
   {
     "repo": "njrhts2kvv-star/FredTalk",
@@ -7582,7 +7987,8 @@
     "stars": 298,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "FredTalk：口播视频制作 Skill、可检索动效库与 Remotion 审看流程。在线视觉库：https://www.fred-fu.com/visual-library"
+    "gh_desc": "FredTalk：口播视频制作 Skill、可检索动效库与 Remotion 审看流程。在线视觉库：https://www.fred-fu.com/visual-library",
+    "added": "2026-11-04"
   },
   {
     "repo": "niccolofanton/dithering-shader",
@@ -7601,7 +8007,8 @@
     "stars": 294,
     "pushed_at": "2026-09-20",
     "archived": false,
-    "gh_desc": "Real-time ordered (Bayer) dithering post-processing effect for 3D scenes, built with React Three Fiber and Three.js"
+    "gh_desc": "Real-time ordered (Bayer) dithering post-processing effect for 3D scenes, built with React Three Fiber and Three.js",
+    "added": "2026-11-04"
   },
   {
     "repo": "rodrigorc/papercraft",
@@ -7619,7 +8026,8 @@
     "stars": 290,
     "pushed_at": "2026-11-11",
     "archived": false,
-    "gh_desc": "Papercraft is a tool to unwrap 3D models."
+    "gh_desc": "Papercraft is a tool to unwrap 3D models.",
+    "added": "2026-11-04"
   },
   {
     "repo": "oubenruing/svg-text-animate",
@@ -7637,7 +8045,8 @@
     "stars": 280,
     "pushed_at": "2026-10-19",
     "archived": false,
-    "gh_desc": "A Javascript library for convert texts to SVG stroke animations in the browser."
+    "gh_desc": "A Javascript library for convert texts to SVG stroke animations in the browser.",
+    "added": "2026-11-15"
   },
   {
     "repo": "remotion-dev/template-audiogram",
@@ -7660,7 +8069,8 @@
     "stars": 279,
     "pushed_at": "2026-11-02",
     "archived": false,
-    "gh_desc": "A template for making podcast video clips with Remotion."
+    "gh_desc": "A template for making podcast video clips with Remotion.",
+    "added": "2026-11-03"
   },
   {
     "repo": "boytchev/tsl-textures",
@@ -7678,7 +8088,8 @@
     "stars": 275,
     "pushed_at": "2026-09-09",
     "archived": false,
-    "gh_desc": "A collection of Three.js Shading Language (TSL) textures"
+    "gh_desc": "A collection of Three.js Shading Language (TSL) textures",
+    "added": "2026-11-04"
   },
   {
     "repo": "blixvip/html-anime",
@@ -7697,7 +8108,8 @@
     "stars": 269,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "Turn a scene prompt into a shot sheet, then have a coding agent draw the film in HTML. No video model."
+    "gh_desc": "Turn a scene prompt into a shot sheet, then have a coding agent draw the film in HTML. No video model.",
+    "added": "2026-11-04"
   },
   {
     "repo": "noname0310/babylon-mmd",
@@ -7715,7 +8127,8 @@
     "stars": 265,
     "pushed_at": "2026-10-28",
     "archived": false,
-    "gh_desc": "babylon.js mmd loader and runtime"
+    "gh_desc": "babylon.js mmd loader and runtime",
+    "added": "2026-11-03"
   },
   {
     "repo": "hbldh/hitherdither",
@@ -7733,7 +8146,8 @@
     "stars": 260,
     "pushed_at": "2026-10-24",
     "archived": false,
-    "gh_desc": "Dithering algorithms for arbitrary palettes in PIL"
+    "gh_desc": "Dithering algorithms for arbitrary palettes in PIL",
+    "added": "2026-11-04"
   },
   {
     "repo": "Azure12355/weilanx-claude-videos",
@@ -7754,7 +8168,8 @@
     "stars": 260,
     "pushed_at": "2026-11-07",
     "archived": false,
-    "gh_desc": "Hand-drawn and pixel-art explainer videos written entirely in code — Remotion + React + SVG, procedural music & SFX, subtitle-driven timing"
+    "gh_desc": "Hand-drawn and pixel-art explainer videos written entirely in code — Remotion + React + SVG, procedural music & SFX, subtitle-driven timing",
+    "added": "2026-11-04"
   },
   {
     "repo": "manoelpiovesan/dither-guy",
@@ -7772,7 +8187,8 @@
     "stars": 253,
     "pushed_at": "2026-07-30",
     "archived": false,
-    "gh_desc": "Free and open-source alternative for Dither Boy software"
+    "gh_desc": "Free and open-source alternative for Dither Boy software",
+    "added": "2026-11-15"
   },
   {
     "repo": "zbanks/radiance",
@@ -7791,7 +8207,8 @@
     "stars": 249,
     "pushed_at": "2026-04-23",
     "archived": false,
-    "gh_desc": "Radiance is video art software for VJs. It supports beat detection, animated GIFs, YouTube video, OpenGL shader effects. It is designed for live performance and runs on Linux and MacOS."
+    "gh_desc": "Radiance is video art software for VJs. It supports beat detection, animated GIFs, YouTube video, OpenGL shader effects. It is designed for live performance and runs on Linux and MacOS.",
+    "added": "2026-11-04"
   },
   {
     "repo": "vpalos/Krbn",
@@ -7809,7 +8226,8 @@
     "stars": 249,
     "pushed_at": "2026-07-25",
     "archived": false,
-    "gh_desc": "A web engine for pencil-style rendering of 3D scenes to SVG — exact silhouettes, hidden-line ghosting, hatching. Great for abstract and technical scenes."
+    "gh_desc": "A web engine for pencil-style rendering of 3D scenes to SVG — exact silhouettes, hidden-line ghosting, hatching. Great for abstract and technical scenes.",
+    "added": "2026-11-04"
   },
   {
     "repo": "cloveric/claude-drawing-skill",
@@ -7828,7 +8246,8 @@
     "stars": 247,
     "pushed_at": "2026-11-08",
     "archived": false,
-    "gh_desc": "Claude paints with code: a Claude Code skill for procedural illustration in 83 styles, from ink wash (水墨), watercolour and ukiyo-e to stained glass, Roman mosaic, Art Deco, shadow puppets, pastel UI, sketchbook doodles, spot illustrations, grainy picture books, dreamy hills, sunlit greenery. No image model: numpy + Pillow on a CPU, draw-on GIFs."
+    "gh_desc": "Claude paints with code: a Claude Code skill for procedural illustration in 83 styles, from ink wash (水墨), watercolour and ukiyo-e to stained glass, Roman mosaic, Art Deco, shadow puppets, pastel UI, sketchbook doodles, spot illustrations, grainy picture books, dreamy hills, sunlit greenery. No image model: numpy + Pillow on a CPU, draw-on GIFs.",
+    "added": "2026-11-04"
   },
   {
     "repo": "elchininet/isometric",
@@ -7845,7 +8264,8 @@
     "stars": 245,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "A lightweight JavaScript library, written in TypeScript, to create isometric projections using SVGs"
+    "gh_desc": "A lightweight JavaScript library, written in TypeScript, to create isometric projections using SVGs",
+    "added": "2026-11-15"
   },
   {
     "repo": "Ameobea/three-good-godrays",
@@ -7863,7 +8283,8 @@
     "stars": 238,
     "pushed_at": "2026-11-05",
     "archived": false,
-    "gh_desc": "Screen-space raymarched godrays for three.js using the pmndrs postprocessing library"
+    "gh_desc": "Screen-space raymarched godrays for three.js using the pmndrs postprocessing library",
+    "added": "2026-11-04"
   },
   {
     "repo": "Joker-chichi/claude-mv-skill",
@@ -7883,7 +8304,8 @@
     "stars": 230,
     "pushed_at": "2026-10-15",
     "archived": false,
-    "gh_desc": "Claude Code skill for hand-painted animation and lyric music videos"
+    "gh_desc": "Claude Code skill for hand-painted animation and lyric music videos",
+    "added": "2026-11-04"
   },
   {
     "repo": "jasonwebb/2d-space-colonization-experiments",
@@ -7902,7 +8324,8 @@
     "stars": 228,
     "pushed_at": "2025-11-27",
     "archived": false,
-    "gh_desc": "Visual experiments exploring space colonization as a 2D morphogenesis tool."
+    "gh_desc": "Visual experiments exploring space colonization as a 2D morphogenesis tool.",
+    "added": "2026-11-04"
   },
   {
     "repo": "0xS4N4TG/papercut-explainer",
@@ -7921,7 +8344,8 @@
     "stars": 225,
     "pushed_at": "2026-10-17",
     "archived": false,
-    "gh_desc": "Short vertical cut-paper explainer reels, made by your coding agent. Nine Agent Skills plus a Remotion library. Works with Claude Code, OpenCode, Codex, Gemini CLI, Cursor, Copilot and more."
+    "gh_desc": "Short vertical cut-paper explainer reels, made by your coding agent. Nine Agent Skills plus a Remotion library. Works with Claude Code, OpenCode, Codex, Gemini CLI, Cursor, Copilot and more.",
+    "added": "2026-11-04"
   },
   {
     "repo": "golanlevin/p5.plotSvg",
@@ -7938,7 +8362,8 @@
     "stars": 219,
     "pushed_at": "2026-10-09",
     "archived": false,
-    "gh_desc": "A p5.js library for exporting SVG files tailored for pen plotting."
+    "gh_desc": "A p5.js library for exporting SVG files tailored for pen plotting.",
+    "added": "2026-11-04"
   },
   {
     "repo": "heypoom/patchies",
@@ -7959,7 +8384,8 @@
     "stars": 214,
     "pushed_at": "2026-10-19",
     "archived": false,
-    "gh_desc": "Write small programs with tools & libraries you know and patch 'em together. Make interactive widgets, visuals, sounds, and play with computation on the web."
+    "gh_desc": "Write small programs with tools & libraries you know and patch 'em together. Make interactive widgets, visuals, sounds, and play with computation on the web.",
+    "added": "2026-11-15"
   },
   {
     "repo": "sirioberati/YouTube-AI-Motion-Graphics",
@@ -7978,7 +8404,8 @@
     "stars": 207,
     "pushed_at": "2026-10-27",
     "archived": false,
-    "gh_desc": "AI motion graphics for YouTube explainer videos: 74 animated HTML explainer boards (charts, diagrams, Venn, timeline, heatmap) synced to your voice with Whisper, exported frame by frame with Chrome + FFmpeg. Every prompt + Claude skills. By TEIN AI."
+    "gh_desc": "AI motion graphics for YouTube explainer videos: 74 animated HTML explainer boards (charts, diagrams, Venn, timeline, heatmap) synced to your voice with Whisper, exported frame by frame with Chrome + FFmpeg. Every prompt + Claude skills. By TEIN AI.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Yusuke710/manim-skill",
@@ -7997,7 +8424,8 @@
     "stars": 204,
     "pushed_at": "2026-10-07",
     "archived": false,
-    "gh_desc": "SKILL.md for creating animations with Manim."
+    "gh_desc": "SKILL.md for creating animations with Manim.",
+    "added": "2026-11-04"
   },
   {
     "repo": "HRuiCcc/RuiC-motion-reel",
@@ -8015,7 +8443,8 @@
     "stars": 200,
     "pushed_at": "2026-11-01",
     "archived": false,
-    "gh_desc": "一句话 brief 生成动态图形 / 动效宣传片 · Agent Skill。时长按 BPM×小节算（12–60 秒），默认 1920×1080；常规宣传片走 remotion/ 模板，特殊质感走自研引擎：2× 超采样矢量/文字、真 3D 点云、丝网印四色分色、普朗克/薄膜干涉物理配色、代码合成配乐，不用外部美术素材、不用 AE。16 张风格牌为参考库，已做过九种视觉语言（暗色科技 / riso / 纸艺 / 银盐 / 普朗克恒星 / 氰版蓝图 / 紫外光刻 / 品牌暗色 / 品牌亮色），成片见 docs/films/"
+    "gh_desc": "一句话 brief 生成动态图形 / 动效宣传片 · Agent Skill。时长按 BPM×小节算（12–60 秒），默认 1920×1080；常规宣传片走 remotion/ 模板，特殊质感走自研引擎：2× 超采样矢量/文字、真 3D 点云、丝网印四色分色、普朗克/薄膜干涉物理配色、代码合成配乐，不用外部美术素材、不用 AE。16 张风格牌为参考库，已做过九种视觉语言（暗色科技 / riso / 纸艺 / 银盐 / 普朗克恒星 / 氰版蓝图 / 紫外光刻 / 品牌暗色 / 品牌亮色），成片见 docs/films/",
+    "added": "2026-11-04"
   },
   {
     "repo": "andrewwoan/aimee-xus-papercraft-world",
@@ -8033,7 +8462,8 @@
     "stars": 199,
     "pushed_at": "2026-10-11",
     "archived": false,
-    "gh_desc": "A Seasonal Papercraft Portfolio!"
+    "gh_desc": "A Seasonal Papercraft Portfolio!",
+    "added": "2026-11-04"
   },
   {
     "repo": "chuspeeism/dashi-animationstyle",
@@ -8052,7 +8482,8 @@
     "stars": 198,
     "pushed_at": "2026-10-13",
     "archived": false,
-    "gh_desc": "把一段中文知识口播做成 7 种画风的讲解动画（Claude Code skill）：画面由 Claude 写 HTML/Canvas 代码逐帧画出，不用生图模型"
+    "gh_desc": "把一段中文知识口播做成 7 种画风的讲解动画（Claude Code skill）：画面由 Claude 写 HTML/Canvas 代码逐帧画出，不用生图模型",
+    "added": "2026-11-04"
   },
   {
     "repo": "stasilo/retrace.gl",
@@ -8071,7 +8502,8 @@
     "stars": 196,
     "pushed_at": "2026-10-17",
     "archived": false,
-    "gh_desc": "Create, ray trace & export programatically defined Signed Distance Function CSG geometries with an API suited for generative art - in your browser! 🎉"
+    "gh_desc": "Create, ray trace & export programatically defined Signed Distance Function CSG geometries with an API suited for generative art - in your browser! 🎉",
+    "added": "2026-11-04"
   },
   {
     "repo": "xiazhuo123456789/vibe-knowledge-video",
@@ -8091,7 +8523,8 @@
     "stars": 192,
     "pushed_at": "2026-10-31",
     "archived": false,
-    "gh_desc": "Vibe知识大赏风格 AI 知识视频 Skill — 纯代码生成电影感知识短视频（无配音·双语字幕·合成BGM·历史文献再现），风格规范逆向自 8 条抖音爆款原片（1091 帧逐秒分析）"
+    "gh_desc": "Vibe知识大赏风格 AI 知识视频 Skill — 纯代码生成电影感知识短视频（无配音·双语字幕·合成BGM·历史文献再现），风格规范逆向自 8 条抖音爆款原片（1091 帧逐秒分析）",
+    "added": "2026-11-04"
   },
   {
     "repo": "gingerbeardman/webgl-crt-shader",
@@ -8109,7 +8542,8 @@
     "stars": 188,
     "pushed_at": "2026-01-12",
     "archived": false,
-    "gh_desc": "Tweakable CRT shader for web canvas"
+    "gh_desc": "Tweakable CRT shader for web canvas",
+    "added": "2026-11-04"
   },
   {
     "repo": "mankidev/codixel",
@@ -8130,7 +8564,8 @@
     "stars": 188,
     "pushed_at": "2026-11-02",
     "archived": false,
-    "gh_desc": "Pixel art skill for Claude Code: how to make good pixel, animated game sprite out, effects etc."
+    "gh_desc": "Pixel art skill for Claude Code: how to make good pixel, animated game sprite out, effects etc.",
+    "added": "2026-11-15"
   },
   {
     "repo": "pissang/mutracer",
@@ -8148,7 +8583,8 @@
     "stars": 187,
     "pushed_at": "2026-11-15",
     "archived": false,
-    "gh_desc": "WebGPU physically based path tracer"
+    "gh_desc": "WebGPU physically based path tracer",
+    "added": "2026-11-04"
   },
   {
     "repo": "Mortd3kay/liquid-glass-android",
@@ -8166,7 +8602,8 @@
     "pushed_at": "2025-12-08",
     "archived": false,
     "gh_desc": "✨ Glass morphism library for Jetpack Compose with AGSL shaders (Android 13+). Supports blur, distortion, shadows, and more.",
-    "lang_en": "Kotlin (Compose)"
+    "lang_en": "Kotlin (Compose)",
+    "added": "2026-11-04"
   },
   {
     "repo": "Sunwood-ai-labs/hyperframes-motion-reel-skill",
@@ -8185,7 +8622,8 @@
     "stars": 186,
     "pushed_at": "2026-09-29",
     "archived": false,
-    "gh_desc": "🎬 Claude Code skill for showreel-grade, beat-synced motion graphics with HyperFrames (HTML + GSAP + SVG + Canvas, Apache-2.0) — 120 BPM / 60 FPS to MP4"
+    "gh_desc": "🎬 Claude Code skill for showreel-grade, beat-synced motion graphics with HyperFrames (HTML + GSAP + SVG + Canvas, Apache-2.0) — 120 BPM / 60 FPS to MP4",
+    "added": "2026-11-15"
   },
   {
     "repo": "BubbleBrainBB/BB-Video",
@@ -8206,7 +8644,8 @@
     "stars": 182,
     "pushed_at": "2026-11-12",
     "archived": false,
-    "gh_desc": "An agent skill that makes videos in pure code — narrated explainers and product promos in 37 visual styles (whiteboard, ink-wash, shadow puppets, pixel art, isometric worlds, movie trailers, manga, animated maps, Swiss kinetic type, blueprints, paper collage, Bayeux tapestry, pencil tests, rubber-hose cartoons, footage supercuts…), 16:9 and 9:16."
+    "gh_desc": "An agent skill that makes videos in pure code — narrated explainers and product promos in 37 visual styles (whiteboard, ink-wash, shadow puppets, pixel art, isometric worlds, movie trailers, manga, animated maps, Swiss kinetic type, blueprints, paper collage, Bayeux tapestry, pencil tests, rubber-hose cartoons, footage supercuts…), 16:9 and 9:16.",
+    "added": "2026-11-04"
   },
   {
     "repo": "camilleroux/genart-skill",
@@ -8226,7 +8665,8 @@
     "stars": 166,
     "pushed_at": "2026-11-11",
     "archived": false,
-    "gh_desc": "Generative art skill for Claude Code — deterministic, hash-seeded, onchain-ready"
+    "gh_desc": "Generative art skill for Claude Code — deterministic, hash-seeded, onchain-ready",
+    "added": "2026-11-15"
   },
   {
     "repo": "trebeljahr/fractal-garden",
@@ -8244,7 +8684,8 @@
     "stars": 164,
     "pushed_at": "2026-11-11",
     "archived": false,
-    "gh_desc": "Zoom into the Mandelbrot set, fly through a Menger sponge and write your own L-systems, live in your browser."
+    "gh_desc": "Zoom into the Mandelbrot set, fly through a Menger sponge and write your own L-systems, live in your browser.",
+    "added": "2026-11-15"
   },
   {
     "repo": "ivoyager/planetarium",
@@ -8262,7 +8703,8 @@
     "stars": 162,
     "pushed_at": "2026-10-31",
     "archived": false,
-    "gh_desc": "Our Planetarium project!"
+    "gh_desc": "Our Planetarium project!",
+    "added": "2026-11-04"
   },
   {
     "repo": "N0rvel/galaxy_sim",
@@ -8281,7 +8723,8 @@
     "stars": 161,
     "pushed_at": "2026-08-21",
     "archived": false,
-    "gh_desc": "This project is a simulation of thousands of particles that reproduce gravity to simulate galaxies. It uses ThreeJS for 3D rendering and shaders to calculate the movement of particles in real-time."
+    "gh_desc": "This project is a simulation of thousands of particles that reproduce gravity to simulate galaxies. It uses ThreeJS for 3D rendering and shaders to calculate the movement of particles in real-time.",
+    "added": "2026-11-15"
   },
   {
     "repo": "atmirrr/persian-motion-director",
@@ -8303,7 +8746,8 @@
     "stars": 152,
     "pushed_at": "2026-10-06",
     "archived": false,
-    "gh_desc": "A Claude skill for pro motion design with correct Persian (Farsi) typography: no slideshows, no broken letters. 8 techniques, HarfBuzz tooling, Remotion examples."
+    "gh_desc": "A Claude skill for pro motion design with correct Persian (Farsi) typography: no slideshows, no broken letters. 8 techniques, HarfBuzz tooling, Remotion examples.",
+    "added": "2026-11-15"
   },
   {
     "repo": "kiwijuice56/sand-slide",
@@ -8321,7 +8765,8 @@
     "stars": 143,
     "pushed_at": "2026-09-08",
     "archived": false,
-    "gh_desc": "Fast falling sand game made within Godot and utilizing GDExtension features"
+    "gh_desc": "Fast falling sand game made within Godot and utilizing GDExtension features",
+    "added": "2026-11-04"
   },
   {
     "repo": "ferropop/NTSCplayer",
@@ -8338,7 +8783,8 @@
     "stars": 142,
     "pushed_at": "2026-10-22",
     "archived": false,
-    "gh_desc": "NTSC/VHS inspired Media Player"
+    "gh_desc": "NTSC/VHS inspired Media Player",
+    "added": "2026-11-04"
   },
   {
     "repo": "oriedita/oriedita",
@@ -8357,7 +8803,8 @@
     "stars": 136,
     "pushed_at": "2026-11-08",
     "archived": false,
-    "gh_desc": "Oriedita (fork of Orihime) is an origami crease pattern editor and folding simulator."
+    "gh_desc": "Oriedita (fork of Orihime) is an origami crease pattern editor and folding simulator.",
+    "added": "2026-11-04"
   },
   {
     "repo": "maxwase/kami",
@@ -8374,7 +8821,8 @@
     "stars": 135,
     "pushed_at": "2026-11-04",
     "archived": false,
-    "gh_desc": "Origami simulator driven by a physical hinge"
+    "gh_desc": "Origami simulator driven by a physical hinge",
+    "added": "2026-11-04"
   },
   {
     "repo": "SpaceZephyr/map-motion",
@@ -8394,7 +8842,8 @@
     "stars": 124,
     "pushed_at": "2026-10-09",
     "archived": false,
-    "gh_desc": "地图动效视频 Claude Code skill：基于高德地图真实路线/边界/卫星底图，做地球俯冲、vlog 我在这里、徒步海拔、骑行旅程、航线、行政区高亮等地图动画，12 种风格"
+    "gh_desc": "地图动效视频 Claude Code skill：基于高德地图真实路线/边界/卫星底图，做地球俯冲、vlog 我在这里、徒步海拔、骑行旅程、航线、行政区高亮等地图动画，12 种风格",
+    "added": "2026-11-04"
   },
   {
     "repo": "ibra-kdbra/black-hole",
@@ -8412,7 +8861,8 @@
     "stars": 113,
     "pushed_at": "2026-08-24",
     "archived": false,
-    "gh_desc": "Black hole with three.js, glsl shaders"
+    "gh_desc": "Black hole with three.js, glsl shaders",
+    "added": "2026-11-04"
   },
   {
     "repo": "chill-chinese/stroke-order-animator",
@@ -8432,7 +8882,8 @@
     "stars": 112,
     "pushed_at": "2026-05-04",
     "archived": false,
-    "gh_desc": "Stroke order animations and quizzes for Chinese characters in Flutter."
+    "gh_desc": "Stroke order animations and quizzes for Chinese characters in Flutter.",
+    "added": "2026-11-15"
   },
   {
     "repo": "msurguy/watercolor-playground",
@@ -8450,7 +8901,8 @@
     "stars": 106,
     "pushed_at": "2026-10-07",
     "archived": false,
-    "gh_desc": "Realistic watercolor drawings"
+    "gh_desc": "Realistic watercolor drawings",
+    "added": "2026-11-04"
   },
   {
     "repo": "anvaka/lsystem",
@@ -8468,7 +8920,8 @@
     "stars": 100,
     "pushed_at": "2026-08-07",
     "archived": false,
-    "gh_desc": "A simple L-Systems explorer powered by WebGL"
+    "gh_desc": "A simple L-Systems explorer powered by WebGL",
+    "added": "2026-11-04"
   },
   {
     "repo": "tdh8316/triangler",
@@ -8485,7 +8938,8 @@
     "stars": 99,
     "pushed_at": "2026-10-29",
     "archived": false,
-    "gh_desc": ":triangular_ruler: Convert images to Low-Poly art using Delaunay triangulation."
+    "gh_desc": ":triangular_ruler: Convert images to Low-Poly art using Delaunay triangulation.",
+    "added": "2026-11-04"
   },
   {
     "repo": "NullTale/VhsFx",
@@ -8503,7 +8957,8 @@
     "stars": 89,
     "pushed_at": "2026-03-20",
     "archived": false,
-    "gh_desc": "⬜ Vhs post effect for Unity Urp"
+    "gh_desc": "⬜ Vhs post effect for Unity Urp",
+    "added": "2026-11-04"
   },
   {
     "repo": "sahilsaini5/ditherwave",
@@ -8521,7 +8976,8 @@
     "stars": 89,
     "pushed_at": "2026-04-26",
     "archived": false,
-    "gh_desc": "A tiny WebGL2 dithering primitive for React. Bayer, halftone, ASCII, error-diffusion. Under 8kb gz."
+    "gh_desc": "A tiny WebGL2 dithering primitive for React. Bayer, halftone, ASCII, error-diffusion. Under 8kb gz.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Icelk/strange-attractor-renderer",
@@ -8538,7 +8994,8 @@
     "stars": 89,
     "pushed_at": "2026-02-09",
     "archived": false,
-    "gh_desc": "A multithreaded strange attractor renderer"
+    "gh_desc": "A multithreaded strange attractor renderer",
+    "added": "2026-11-04"
   },
   {
     "repo": "tasercake/lowpoly",
@@ -8555,7 +9012,8 @@
     "stars": 87,
     "pushed_at": "2026-04-23",
     "archived": false,
-    "gh_desc": "Robust Low-Poly Image Generator"
+    "gh_desc": "Robust Low-Poly Image Generator",
+    "added": "2026-11-04"
   },
   {
     "repo": "SahilK-027/Cyber-Ocean",
@@ -8574,7 +9032,8 @@
     "stars": 82,
     "pushed_at": "2026-06-24",
     "archived": false,
-    "gh_desc": "Built with Three.js: MeshSurfaceSampler • 3D flow field particles • Custom post-processing effects, including chromatic aberration, glow, and film grain."
+    "gh_desc": "Built with Three.js: MeshSurfaceSampler • 3D flow field particles • Custom post-processing effects, including chromatic aberration, glow, and film grain.",
+    "added": "2026-11-04"
   },
   {
     "repo": "8533502-dev/deepseek-opus-motion-skill",
@@ -8592,7 +9051,8 @@
     "stars": 81,
     "pushed_at": "2026-10-22",
     "archived": false,
-    "gh_desc": "让 DeepSeek 用和 Claude Opus 5.5 同样的提示词做出接近的 Remotion 动效视频 · A skill for Opus-parity motion design"
+    "gh_desc": "让 DeepSeek 用和 Claude Opus 5.5 同样的提示词做出接近的 Remotion 动效视频 · A skill for Opus-parity motion design",
+    "added": "2026-11-04"
   },
   {
     "repo": "xiaoxiong20xx-code/sy-style-100",
@@ -8610,7 +9070,8 @@
     "stars": 79,
     "pushed_at": "2026-11-02",
     "archived": false,
-    "gh_desc": "100 条每一帧都由代码算出来的视频：20 种风格两期 + 60 条行业广告片。纯代码渲染、程序合成配乐，MIT 可商用"
+    "gh_desc": "100 条每一帧都由代码算出来的视频：20 种风格两期 + 60 条行业广告片。纯代码渲染、程序合成配乐，MIT 可商用",
+    "added": "2026-11-04"
   },
   {
     "repo": "PieKing1215/FallingSandEngine",
@@ -8628,7 +9089,8 @@
     "stars": 76,
     "pushed_at": "2026-04-20",
     "archived": false,
-    "gh_desc": "Experimental 2D falling sand engine written in Rust"
+    "gh_desc": "Experimental 2D falling sand engine written in Rust",
+    "added": "2026-11-04"
   },
   {
     "repo": "AmitDigga/threejs-galaxy-shader",
@@ -8647,7 +9109,8 @@
     "stars": 73,
     "pushed_at": "2026-03-27",
     "archived": false,
-    "gh_desc": "A performant Three.js galaxy shader with customizable colors, spiral patterns, and black hole effects"
+    "gh_desc": "A performant Three.js galaxy shader with customizable colors, spiral patterns, and black hole effects",
+    "added": "2026-11-04"
   },
   {
     "repo": "NHasan143/delaunay-stippler",
@@ -8665,7 +9128,8 @@
     "stars": 68,
     "pushed_at": "2026-09-22",
     "archived": false,
-    "gh_desc": "A modern JavaScript image stippling generator that turns uploaded images into stipple art using weighted Lloyd relaxation. Includes Voronoi and Delaunay visualization modes, runs in a Web Worker for speed, and supports PNG export. Built with Vite + d3-delaunay"
+    "gh_desc": "A modern JavaScript image stippling generator that turns uploaded images into stipple art using weighted Lloyd relaxation. Includes Voronoi and Delaunay visualization modes, runs in a Web Worker for speed, and supports PNG export. Built with Vite + d3-delaunay",
+    "added": "2026-11-04"
   },
   {
     "repo": "simonxxooxxoo/wet-paint-flow",
@@ -8683,7 +9147,8 @@
     "stars": 67,
     "pushed_at": "2026-08-20",
     "archived": false,
-    "gh_desc": "Real-time Three.js flow-field painter with persistent Bézier strokes and wet impasto shading."
+    "gh_desc": "Real-time Three.js flow-field painter with persistent Bézier strokes and wet impasto shading.",
+    "added": "2026-11-04"
   },
   {
     "repo": "znyupup/knowledge-explainer-skill",
@@ -8701,7 +9166,8 @@
     "stars": 67,
     "pushed_at": "2026-04-29",
     "archived": false,
-    "gh_desc": "把一份 markdown 文稿，自动生成讲解动画视频 — Powered by Remotion + AI Agent"
+    "gh_desc": "把一份 markdown 文稿，自动生成讲解动画视频 — Powered by Remotion + AI Agent",
+    "added": "2026-11-04"
   },
   {
     "repo": "bangbuilds/code-poem-film",
@@ -8719,7 +9185,8 @@
     "stars": 65,
     "pushed_at": "2026-10-03",
     "archived": false,
-    "gh_desc": "Claude Code skill：说一首诗，做出一条水墨手绘风 2D 动画（代码逐帧绘制 + 朗诵逐字对位 + numpy 配乐）"
+    "gh_desc": "Claude Code skill：说一首诗，做出一条水墨手绘风 2D 动画（代码逐帧绘制 + 朗诵逐字对位 + numpy 配乐）",
+    "added": "2026-11-04"
   },
   {
     "repo": "threeaus/creator-style-kit",
@@ -8737,7 +9204,8 @@
     "stars": 57,
     "pushed_at": "2026-10-20",
     "archived": false,
-    "gh_desc": "18 套 9:16 HyperFrames 视频风格（字体/配色/动效/音效/构图），Claude Code skill"
+    "gh_desc": "18 套 9:16 HyperFrames 视频风格（字体/配色/动效/音效/构图），Claude Code skill",
+    "added": "2026-11-04"
   },
   {
     "repo": "pyang5166/gbro-collage-info",
@@ -8757,7 +9225,8 @@
     "stars": 57,
     "pushed_at": "2026-08-01",
     "archived": false,
-    "gh_desc": "半调纸拼贴风信息动画 Agent Skill · Halftone paper-collage info-graphic animations from voiceover scripts (HyperFrames, no image models)"
+    "gh_desc": "半调纸拼贴风信息动画 Agent Skill · Halftone paper-collage info-graphic animations from voiceover scripts (HyperFrames, no image models)",
+    "added": "2026-11-04"
   },
   {
     "repo": "Akosmo/Oscillody",
@@ -8776,7 +9245,8 @@
     "stars": 56,
     "pushed_at": "2026-11-04",
     "archived": false,
-    "gh_desc": "Oscillody is a free, real-time, oscilloscope-based audio visualizer. You can import up to 4 stems, customize the visualizer, and export the result as a video."
+    "gh_desc": "Oscillody is a free, real-time, oscilloscope-based audio visualizer. You can import up to 4 stems, customize the visualizer, and export the result as a video.",
+    "added": "2026-11-15"
   },
   {
     "repo": "Stanko/neon",
@@ -8794,7 +9264,8 @@
     "stars": 44,
     "pushed_at": "2026-01-06",
     "archived": false,
-    "gh_desc": "Generative art piece made using 2d vector field"
+    "gh_desc": "Generative art piece made using 2d vector field",
+    "added": "2026-11-04"
   },
   {
     "repo": "ratwolfzero/hopalong_python",
@@ -8811,7 +9282,8 @@
     "stars": 41,
     "pushed_at": "2026-10-27",
     "archived": false,
-    "gh_desc": "Generative Density Approximation for Deterministic Chaos The Hopalong Attractor"
+    "gh_desc": "Generative Density Approximation for Deterministic Chaos The Hopalong Attractor",
+    "added": "2026-11-04"
   },
   {
     "repo": "AllenAI2014/remotion-guofeng-starter",
@@ -8831,7 +9303,8 @@
     "stars": 36,
     "pushed_at": "2026-09-02",
     "archived": false,
-    "gh_desc": "国风纸片动画：Remotion 风格资产库 + 制作流程 Skill。给 AI 一首诗/成语，照这套国风纸片拼贴风格从零出片，全程代码渲染不进剪辑。"
+    "gh_desc": "国风纸片动画：Remotion 风格资产库 + 制作流程 Skill。给 AI 一首诗/成语，照这套国风纸片拼贴风格从零出片，全程代码渲染不进剪辑。",
+    "added": "2026-11-04"
   },
   {
     "repo": "zulubo/VHSEffect",
@@ -8848,7 +9321,8 @@
     "stars": 33,
     "pushed_at": "2025-11-18",
     "archived": false,
-    "gh_desc": "A realistic VHS post processing effect for Unity"
+    "gh_desc": "A realistic VHS post processing effect for Unity",
+    "added": "2026-11-04"
   },
   {
     "repo": "Mattbusel/proof-engine",
@@ -8866,7 +9340,8 @@
     "stars": 32,
     "pushed_at": "2026-11-08",
     "archived": false,
-    "gh_desc": "Rust engine that draws math in real time. Runs O'BLOCK."
+    "gh_desc": "Rust engine that draws math in real time. Runs O'BLOCK.",
+    "added": "2026-11-04"
   },
   {
     "repo": "Ealrann/VSand",
@@ -8883,7 +9358,8 @@
     "stars": 31,
     "pushed_at": "2026-07-20",
     "archived": false,
-    "gh_desc": "Rewrite of the \"Falling Sand\" game with Vulkan."
+    "gh_desc": "Rewrite of the \"Falling Sand\" game with Vulkan.",
+    "added": "2026-11-04"
   },
   {
     "repo": "vdesmond/attractors",
@@ -8900,7 +9376,8 @@
     "stars": 23,
     "pushed_at": "2026-02-08",
     "archived": false,
-    "gh_desc": "package for simulation and visualization of strange attractors"
+    "gh_desc": "package for simulation and visualization of strange attractors",
+    "added": "2026-11-04"
   },
   {
     "repo": "BobdaProgrammer/TermiSand",
@@ -8919,6 +9396,7 @@
     "stars": 22,
     "pushed_at": "2026-04-21",
     "archived": false,
-    "gh_desc": "A falling sand simulator in your terminal!"
+    "gh_desc": "A falling sand simulator in your terminal!",
+    "added": "2026-11-04"
   }
 ]

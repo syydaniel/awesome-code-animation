@@ -108,7 +108,7 @@ button, input, select { font: inherit; color: inherit; }
 .gw .lang-seg a + a { border-color: var(--gw-line); }
 .gw .lang-seg a:hover { background: rgba(255,255,255,.08); }
 .gw .lang-seg a[aria-current="true"] { background: var(--gw-ink); color: #0B0D12; }
-.gw-gh { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--gw-line); background: rgba(255,255,255,.04); color: var(--gw-ink); border-radius: 8px; padding: 5px 12px; font-size: 13px; backdrop-filter: blur(6px); }
+.gw-gh { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; border: 1px solid var(--gw-line); background: rgba(255,255,255,.04); color: var(--gw-ink); border-radius: 8px; padding: 5px 12px; font-size: 13px; backdrop-filter: blur(6px); }
 .gw-gh:hover { text-decoration: none; border-color: rgba(255,255,255,.4); }
 .gw-gh svg { width: 15px; height: 15px; fill: currentColor; }
 .gw-bottom { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; max-width: 1440px; margin: 0 auto; min-width: 0; }
@@ -172,11 +172,65 @@ button, input, select { font: inherit; color: inherit; }
 .gw-wall canvas { display: block; width: 100%; aspect-ratio: 5 / 2; }
 .gw-wall span { display: block; padding: 5px 9px 7px; border-top: 2px solid var(--c); }
 
+/* 最新更新：桌面上是右上角的小窗口，点开后右侧展厅变成「新收录 / 最近有提交」两个列表，卡片从窗口方向飞进来；
+   窄屏放不下小窗口，入口是底部按钮条最前面的「最新」 */
+.gw-news {
+  position: absolute; z-index: 2; top: calc(max(22px, env(safe-area-inset-top, 0px)) + 50px); right: max(22px, env(safe-area-inset-right, 0px));
+  width: 290px; padding: 13px 15px 14px; border-radius: 14px; cursor: pointer; pointer-events: auto;
+  background: var(--gw-glass); border: 1px solid var(--gw-line); -webkit-backdrop-filter: blur(14px) saturate(1.3); backdrop-filter: blur(14px) saturate(1.3);
+  box-shadow: 0 18px 50px rgba(0,0,0,.4); display: flex; flex-direction: column; gap: 7px; transition: opacity .3s, border-color .2s, transform .2s;
+  animation: gw-in-r .5s .2s cubic-bezier(.2,.8,.2,1) both;
+}
+@keyframes gw-in-r { from { opacity: 0; transform: translateX(16px); } }
+.gw-news:hover { border-color: rgba(124,240,176,.5); transform: translateY(-1px); }
+.gw-news-h { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: #9FF3C6; }
+.gw-news-h time { margin-left: auto; color: var(--gw-muted); letter-spacing: .02em; text-transform: none; }
+.gw-pulse { width: 8px; height: 8px; border-radius: 50%; background: #7CF0B0; flex: none; animation: gw-pulse 2.4s ease-out infinite; }
+@keyframes gw-pulse { 0% { box-shadow: 0 0 0 0 rgba(124,240,176,.6); } 70%, 100% { box-shadow: 0 0 0 9px rgba(124,240,176,0); } }
+.gw-news-n { margin: 0; display: flex; align-items: baseline; gap: 8px; color: var(--gw-soft); font-size: 13px; }
+.gw-news-n b { font-family: var(--font-display); font-size: 34px; line-height: 1; color: var(--gw-ink); font-weight: 900; }
+.gw-news ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--gw-ink); }
+.gw-news li { display: flex; align-items: center; gap: 7px; min-width: 0; }
+.gw-news li i { width: 7px; height: 7px; border-radius: 50%; flex: none; }
+.gw-news li span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gw-news li em { margin-left: auto; font-style: normal; font-family: var(--font-mono); font-size: 11.5px; color: #F2D27A; flex: none; }
+.gw-news-go { align-self: flex-start; border: 0; background: none; padding: 0; color: #9FF3C6; font-size: 13px; font-weight: 600; cursor: pointer; }
+.gw-news-go:hover { color: #fff; }
+.gw-open .gw-news { opacity: 0; visibility: hidden; }
+@media (max-width: 1000px), (max-height: 620px) { .gw-news { display: none; } }
+.gw-chip-new { border-color: rgba(124,240,176,.5); }
+.gw-chip-new b { font-family: var(--font-mono); font-weight: 500; font-size: 11.5px; color: #9FF3C6; }
+.gw-chip-new[aria-pressed="true"] b { color: inherit; }
+.gw-tabs { display: flex; gap: 6px; }
+.gw-tabs button { flex: 1; border: 1px solid var(--gw-line); background: rgba(255,255,255,.04); color: var(--gw-soft); border-radius: 9px; padding: 7px 10px; font-size: 13px; cursor: pointer; }
+.gw-tabs button:hover { background: rgba(255,255,255,.09); }
+.gw-tabs button[aria-pressed="true"] { background: rgba(124,240,176,.14); border-color: rgba(124,240,176,.55); color: var(--gw-ink); font-weight: 600; }
+.gw-tabs span { font-family: var(--font-mono); font-size: 11.5px; color: var(--gw-muted); margin-left: 5px; font-weight: 400; }
+.gw-latest .gw-desc { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.gw-latest .gw-day { padding: 8px 10px 2px; font-family: var(--font-mono); font-size: 11.5px; color: #9FF3C6; letter-spacing: .04em; }
+.gw-meta .gw-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 4px; vertical-align: 1px; }
+
+/* 提醒点 Star：首屏右上角、顶栏、展厅底部、页面底部 */
+.gw-starbtn { border-color: rgba(242,210,122,.55); color: #F7E3A6; }
+.gw-starbtn b { color: #F2D27A; font-weight: 400; }
+.gw-starbtn:hover { border-color: #F2D27A; background: rgba(242,210,122,.12); }
+.tb-star { flex: none; display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); border-radius: 8px; padding: 5px 10px; font-size: 13px; color: var(--ink); white-space: nowrap; }
+.tb-star b { color: #D9A520; font-weight: 400; }
+.tb-star:hover { text-decoration: none; border-color: #D9A520; }
+.gw-star-cta { display: flex; flex-direction: column; gap: 2px; border: 1px dashed rgba(242,210,122,.45); border-radius: 10px; padding: 9px 12px; color: var(--gw-soft); font-size: 12.5px; line-height: 1.5; }
+.gw-star-cta b { color: #F7E3A6; font-size: 13.5px; }
+.gw-star-cta:hover { text-decoration: none; border-style: solid; background: rgba(242,210,122,.08); }
+.gw-news-f { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-top: 1px solid var(--gw-line); padding-top: 8px; margin-top: 2px; }
+.gw-news-f a { font-size: 12.5px; color: #F7E3A6; white-space: nowrap; }
+.foot-star { font-size: 14px; }
+.foot-star a { font-weight: 600; }
+
 @media (max-width: 760px) {
   .gw { min-height: 600px; }
   .gw-ui { padding-top: max(16px, env(safe-area-inset-top, 0px)); }
   .gw-top { flex-direction: column-reverse; gap: 14px; }
   .gw-corner { align-self: flex-end; }
+  .gw-gh:not(.gw-starbtn) span { display: none; }  /* 手机上「推荐项目」只留 GitHub 图标，给「点个 Star」腾地方 */
   .gw-brand { gap: 8px; }
   .gw h1 { font-size: clamp(34px, 10vw, 44px); }
   .gw-lede { font-size: 13.5px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
@@ -198,6 +252,7 @@ button, input, select { font: inherit; color: inherit; }
 .tb-links::-webkit-scrollbar { display: none; }
 .tb-links a { padding: 5px 9px; border-radius: 6px; font-size: 13.5px; color: var(--muted); white-space: nowrap; }
 .tb-links a:hover { background: var(--chip); color: var(--ink); text-decoration: none; }
+.tb-links a.tb-new { color: var(--accent); font-weight: 600; }
 .tb-links a.on { color: var(--ink); background: var(--chip); font-weight: 600; }
 .tb-search { flex: 0 1 230px; min-width: 120px; }
 .tb-search input { width: 100%; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); font-size: 13.5px; }
@@ -208,7 +263,7 @@ button, input, select { font: inherit; color: inherit; }
 @media (max-width: 760px) {
   .tb-in { flex-wrap: wrap; padding-block: 6px; }
   .tb-links { order: 3; flex-basis: 100%; margin: 0 -6px; }
-  .topbar .lang-seg { display: none; }
+  .topbar .lang-seg, .tb-star { display: none; }
   .tb-search { flex: 1 1 auto; }
   .wrap > section { scroll-margin-top: 100px; }
 }
@@ -257,6 +312,7 @@ th.num, td.c-stars { text-align: right; }
 tbody tr:hover td { background: color-mix(in srgb, var(--chip) 45%, transparent); }
 .c-name { width: 200px; }
 .c-name a { font-weight: 700; font-size: 15px; }
+.new-tag { display: inline-block; margin-left: 6px; padding: 0 6px; border-radius: 5px; background: var(--accent); color: var(--accent-ink); font-size: 11px; font-weight: 700; line-height: 17px; vertical-align: 2px; }
 .repo { display: block; font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); word-break: break-all; margin-top: 2px; }
 .c-tags { width: 176px; }
 .tags { display: flex; flex-wrap: wrap; gap: 5px; }
@@ -464,7 +520,7 @@ footer p { margin: 0; }
 }
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 #content { scroll-margin-top: 0; }
-@media (prefers-reduced-motion: reduce) { .style, .gw-canvas, .gw-picks li { transition: none; } .gw-hall { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .style, .gw-canvas, .gw-picks li, .gw-news { transition: none; } .gw-hall, .gw-news, .gw-pulse { animation: none; } }
 </style>
 
 <section class="gw" id="gateway" aria-labelledby="gw-title">
@@ -479,9 +535,11 @@ footer p { margin: 0; }
       </div>
       <div class="gw-corner">
         <div class="seg lang-seg" role="group" aria-label="语言" data-en-aria="Language"><a href="?lang=zh" data-lang="zh" data-en="Chinese">中文</a><a href="?lang=en" data-lang="en" lang="en">English</a></div>
+        <a class="gw-gh gw-starbtn" href="__REPO_URL__" target="_blank" rel="noopener"><b aria-hidden="true">★</b><span data-en="Star">点个 Star</span></a>
         <a class="gw-gh" href="__REPO_URL__" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span data-en="Suggest a project">推荐项目</span></a>
       </div>
     </div>
+    <aside class="gw-news" id="gw-news" hidden aria-label="最新更新" data-en-aria="Latest updates"></aside>
     <div class="gw-tip" id="gw-tip" hidden></div>
     <aside class="gw-hall" id="gw-hall" hidden aria-label="画风展厅" data-en-aria="Style gallery"></aside>
     <div class="gw-bottom">
@@ -495,9 +553,10 @@ footer p { margin: 0; }
 <nav class="topbar" id="topbar" aria-label="页面目录" data-en-aria="Page contents">
   <div class="tb-in">
     <a class="tb-brand" href="#gateway" data-en="Awesome Code Animation">代码画风图鉴</a>
-    <div class="tb-links"><a href="#showcase" id="nav-showcase" hidden data-en="Showcase">作品展示</a><a href="#picks-sec" data-en="By goal">按目的</a><a href="#styles-sec" data-en="Styles">画风索引</a><a href="#niche-sec" data-en="Niche">小众画风</a><a href="#table-sec" data-en="All projects">项目总表</a><a href="#graph-sec" data-en="Graph">关系图谱</a><a href="#rel-sec" data-en="Relationships">关系表</a></div>
+    <div class="tb-links"><a href="#latest" class="tb-new" data-en="✦ Latest">✦ 最新</a><a href="#showcase" id="nav-showcase" hidden data-en="Showcase">作品展示</a><a href="#picks-sec" data-en="By goal">按目的</a><a href="#styles-sec" data-en="Styles">画风索引</a><a href="#niche-sec" data-en="Niche">小众画风</a><a href="#table-sec" data-en="All projects">项目总表</a><a href="#graph-sec" data-en="Graph">关系图谱</a><a href="#rel-sec" data-en="Relationships">关系表</a></div>
     <div class="tb-search"><input id="tb-q" type="search" placeholder="搜项目，按 / 聚焦" aria-label="搜索项目" data-en-ph="Search projects ( / )" data-en-aria="Search projects" autocomplete="off"></div>
     <div class="seg lang-seg" role="group" aria-label="语言" data-en-aria="Language"><a href="?lang=zh" data-lang="zh" data-en="Chinese">中文</a><a href="?lang=en" data-lang="en" lang="en">English</a></div>
+    <a class="tb-star" href="__REPO_URL__" target="_blank" rel="noopener"><b aria-hidden="true">★</b><span data-en="Star on GitHub">去 GitHub 点 Star</span></a>
   </div>
 </nav>
 
@@ -536,6 +595,7 @@ footer p { margin: 0; }
       <select id="sort" aria-label="排序" data-en-aria="Sort">
         <option value="stars" data-en="By stars">按星数</option>
         <option value="pushed" data-en="By latest push">按最近提交</option>
+        <option value="added" data-en="Newest added">按收录时间</option>
         <option value="name" data-en="By name">按名称</option>
       </select>
       <label class="chk"><input id="hide" type="checkbox"> <span data-en="Active only">只看活跃项目</span></label>
@@ -593,6 +653,7 @@ footer p { margin: 0; }
   </section>
 
   <footer>
+    <p class="foot-star"><a href="__REPO_URL__" target="_blank" rel="noopener">★ <span data-en="Find this list useful? Star it on GitHub so you can find it again and more people can discover it.">觉得这份合集有用，就去 GitHub 点个 Star：收藏起来方便回来看新收录的项目，也能让更多人找到它。</span></a></p>
     <p data-en="What gets listed: frames drawn or rendered by code, without video or image generation models, and not through 3D apps like Blender. Main styles need 1,000+ stars, or 200+ stars with a push in the last year. Niche styles need 20+ stars with a push in the last year. Projects where AI coding agents like Claude or Opus write the code for a video need 50+, and are filed by style like everything else. Archived repositories are not listed.">收录标准：画面由代码绘制或渲染，不用视频或图像生成模型，也不靠 Blender 等 3D 软件出画面。主流画风要求星数 1000 以上，或近一年仍在更新且星数 200 以上；小众画风区放宽到近一年内有更新、星数 20 以上；让 Claude / Opus 等 AI 编程助手写代码出片的项目放宽到 50 以上，照样按画风归类。已归档的仓库不收。</p>
     <p data-en="Stars, latest push and license come from GitHub, last updated __DATE__. Status follows the latest push: within 6 months is Active, within 2 years is Slowing, older is Dormant.">星数、最近提交时间和许可证来自 GitHub，更新于 __DATE__。状态按最近一次推送计算：半年内为「活跃」，两年内为「放缓」，超过两年为「停更」。</p>
     <p data-en="&quot;See repo&quot; means GitHub couldn't detect the license. Check the license text in the repository before commercial use.">许可证写「见仓库」的，是 GitHub 没能自动识别的情况。打算商用前，请到仓库里核对许可证原文。</p>
@@ -628,6 +689,7 @@ const RELTYPES = __RELTYPES__;
 const SNAPSHOT = Date.parse('__DATE__');
 const SHOWCASE = __SHOWCASE__;
 const FEATURED = __FEATURED__;
+const LATEST = __LATEST__;
 const EN = window.LANG === 'en';
 const L = (zh, en) => EN ? en : zh;
 // 英文模式：把数据里的中文字段换成 *_en，后面的渲染代码不用区分语言；原文留在 *_zh 里给搜索用。缺译文时显示原文。
@@ -649,6 +711,7 @@ const MAIN = STYLES.filter(s => s.zone !== 'niche');
 const NICHE = STYLES.filter(s => s.zone === 'niche');
 const NICHE_KEYS = new Set(NICHE.map(s => s.key));
 const BYREPO = Object.fromEntries(DATA.map(p => [p.repo, p]));
+const NEWEST = new Set(LATEST.batches.length ? DATA.filter(p => p.added === LATEST.batches[0].date).map(p => p.repo) : []);
 const RTMAP = Object.fromEntries(RELTYPES.map(t => [t.key, t]));
 const RELS_OF = {};
 RELS.forEach(r => {
@@ -847,7 +910,8 @@ function render() {
     return matches(p, q);
   });
   if (state.sort === 'stars') list.sort((a,b) => b.stars - a.stars);
-  else if (state.sort === 'pushed') list.sort((a,b) => b.pushed_at.localeCompare(a.pushed_at));
+  else if (state.sort === 'pushed') list.sort((a,b) => b.pushed_at.localeCompare(a.pushed_at) || b.stars - a.stars);
+  else if (state.sort === 'added') list.sort((a,b) => (b.added || '').localeCompare(a.added || '') || b.stars - a.stars);
   else list.sort((a,b) => a.name.localeCompare(b.name, L('zh', 'en')));
 
   rowList = list; rowShown = 0; rowsEl.innerHTML = ''; moreRows(false);
@@ -866,7 +930,7 @@ function rowHtml(p) {
     const all = RELS_OF[p.repo] || [];
     const rs = all.slice(0, 5).map(relHtml).join('') + (all.length > 5 ? `<span class="lbl">${L(`等 ${all.length} 条关系`, `${all.length} relationships in all`)}</span>` : '');
     return `<tr id="p-${esc(p.repo.replace('/', '__'))}">
-      <td class="c-name"><a href="${url}" target="_blank" rel="noopener">${esc(p.name)}</a><span class="repo">${esc(p.repo)}</span></td>
+      <td class="c-name"><a href="${url}" target="_blank" rel="noopener">${esc(p.name)}</a>${NEWEST.has(p.repo) ? `<span class="new-tag" title="${esc(L(`${p.added} 新收录`, `Added ${p.added}`))}">${L('新', 'New')}</span>` : ''}<span class="repo">${esc(p.repo)}</span></td>
       <td class="c-tags"><div class="tags">${tags}</div></td>
       <td class="c-desc"><p class="desc">${esc(p.desc)}</p><p class="use">${L('适合：', 'Good for: ')}${esc(p.use)}</p>${p.note ? `<p class="note">${L('注意：', 'Note: ')}${esc(p.note)}</p>` : ''}${rs ? `<p class="rels">${rs}</p>` : ''}</td>
       <td class="c-lang">${esc(p.lang)}</td>
@@ -1500,7 +1564,9 @@ if ('IntersectionObserver' in window) {
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => drawnSwatches.forEach(cv => { if (TEXT_SWATCHES.has(cv.dataset.swatch)) drawSwatch(cv); })).catch(() => {});
 
 // 3D 入口（页面末尾的 module 脚本）从这里拿数据和工具函数
-window.ACA = { DATA, STYLES, MAIN, NICHE, SMAP, BYREPO, FEATURED, EN, L, esc, fmtStars, status, swatchCanvas, TEXT_SWATCHES,
+window.ACA = { REPO_URL: '__REPO_URL__', DATA, STYLES, MAIN, NICHE, SMAP, BYREPO, FEATURED, LATEST, EN, L, esc, fmtStars, status, swatchCanvas, TEXT_SWATCHES,
+  // 「最新更新」窗口里的按钮：总表按收录时间（或最近提交）排，清掉画风筛选
+  showLatest(by) { state.style = null; state.zone = 'all'; state.sort = by; document.getElementById('zone').value = 'all'; document.getElementById('sort').value = by; render(); toTable(); },
   showStyle(key) { state.style = key; state.zone = 'all'; document.getElementById('zone').value = 'all'; render(); toTable(); } };
 
 /* ---------- relationship graph ----------

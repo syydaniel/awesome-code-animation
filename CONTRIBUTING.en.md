@@ -42,7 +42,7 @@ Every Monday an automatic "weekly candidates" issue lists projects that were fou
    }
    ```
 
-   `tags` are the `key` values in [`data/styles.json`](data/styles.json). You can list several, with the main style first. Styles with `"zone": "niche"` are niche styles. `stars`, `pushed_at`, `archived` and `license` can be anything, because the next step refreshes them.
+   `tags` are the `key` values in [`data/styles.json`](data/styles.json). You can list several, with the main style first. Styles with `"zone": "niche"` are niche styles. `stars`, `pushed_at`, `archived` and `license` can be anything, because the next step refreshes them. Set `added` to the day you add the project (`YYYY-MM-DD`); the Latest window on the site and the Latest additions section in the README sort by it. If you leave it out, the weekly refresh fills in the date it runs.
 
    The site and README exist in Chinese and English. `name`, `desc`, `use`, `note` and `lang` each have an optional `*_en` field. `desc` and `use` are required by the build, so if you don't write Chinese, put the English text in both and the maintainer will translate it.
 

@@ -4,6 +4,10 @@
  * 拖动转盘，点一块面板（或底部的画风按钮）进入这种画风的展厅：转盘把它转到正面、镜头推近，
  * data/featured.json 里这种画风的精品项目排成一道卡片廊飞出来，旁边（手机上是底部）列出同样的项目。
  *
+ * 「最新更新」窗口：桌面上在右上角，窄屏上是底部按钮条最前面的「最新」，网址带 #latest 时直接打开。
+ * 打开后展厅换成两个列表：「新收录」（scripts/build.py 按 projects.json 的 added 挑出最近几批）和「最近有提交」，
+ * 卡片廊停在两圈转盘之间，转盘调暗继续慢慢转。新收录可能有几十个，卡片只在翻到附近时才画。
+ *
  * 性能：three.js 只在首屏可见时才按需加载；面板小样图分帧慢慢画；离开首屏或切到别的标签页就停止渲染；
  * 没有动画在跑时也停下来。系统开了「减少动态效果」时转盘不自动转，镜头直接切换。
  * 没有 WebGL 2 或 three.js 加载失败时，退回到平铺的小样图墙，展厅照样能用。
@@ -15,24 +19,36 @@ const root = document.getElementById('gateway');
 if (A && root) gateway();
 
 function gateway() {
-  const { DATA, MAIN, NICHE, SMAP, BYREPO, FEATURED, L, esc, fmtStars, status, swatchCanvas, TEXT_SWATCHES } = A;
+  const { REPO_URL, DATA, MAIN, NICHE, SMAP, BYREPO, FEATURED, LATEST, EN, L, esc, fmtStars, status, swatchCanvas, TEXT_SWATCHES } = A;
   const stage = document.getElementById('gw-stage');
   const hall = document.getElementById('gw-hall');
   const rail = document.getElementById('gw-rail');
   const tip = document.getElementById('gw-tip');
+  const news = document.getElementById('gw-news');
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const THREE_URL = 'https://cdn.jsdelivr.net/npm/three@0.178.0/build/three.module.min.js';
   const ORDER = [...MAIN, ...NICHE];
   const COUNT = {};
   DATA.forEach(p => p.tags.forEach(t => { COUNT[t] = (COUNT[t] || 0) + 1; }));
   const picksOf = key => (FEATURED[key] || []).map(r => BYREPO[r]).filter(Boolean);
+  // 「最新更新」窗口借用展厅的位置，用一个不会和画风撞名的 key
+  const LKEY = '__latest', NEW_C = '#7CF0B0';
+  const latestOf = t => ((LATEST && LATEST[t]) || []).map(r => BYREPO[r]).filter(Boolean);
+  const BATCH0 = LATEST && LATEST.batches[0];
+  let tab = BATCH0 ? 'new' : 'recent';
+  const cardsOf = key => key === LKEY ? latestOf(tab) : picksOf(key);
+  const day = d => {
+    const [, m, dd] = d.split('-').map(Number);
+    return EN ? new Date(Date.UTC(2000, m - 1, dd)).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }) : `${m}月${dd}日`;
+  };
   const SERIF = '"Noto Serif SC", "Songti SC", "STSong", "SimSun", serif';
   const SANS = 'system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif';
   const MONO = '"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace';
   let world = null, current = null;
 
   /* ---------- 底部的画风按钮：键盘和读屏都靠它，3D 没加载出来也能用 ---------- */
-  rail.innerHTML = [[MAIN, L('主流', 'Main')], [NICHE, L('小众', 'Niche')]].map(([group, label]) =>
+  const latestChip = LATEST ? `<button type="button" class="gw-chip gw-chip-new" data-gw="${LKEY}" aria-pressed="false"><i style="background:${NEW_C}"></i>${L('最新', 'Latest')}${BATCH0 ? `<b>+${BATCH0.n}</b>` : ''}</button>` : '';
+  rail.innerHTML = latestChip + [[MAIN, L('主流', 'Main')], [NICHE, L('小众', 'Niche')]].map(([group, label]) =>
     `<span class="gw-rail-k">${label}</span>` + group.map(s =>
       `<button type="button" class="gw-chip" data-gw="${s.key}" aria-pressed="false"><i style="background:${s.color}"></i>${esc(s.name)}</button>`).join('')).join('');
   rail.addEventListener('click', e => { const b = e.target.closest('[data-gw]'); if (b) open(b.dataset.gw); });
@@ -42,8 +58,54 @@ function gateway() {
   rail.addEventListener('focusin', e => { const b = e.target.closest('[data-gw]'); if (b && world) world.peek(b.dataset.gw); });
   rail.addEventListener('focusout', e => { if (world && !rail.contains(e.relatedTarget)) world.peek(null); });
 
+  /* ---------- 右上角的「最新更新」小窗口 ---------- */
+  if (news && LATEST) {
+    const top3 = (BATCH0 ? latestOf('new').filter(p => p.added === BATCH0.date) : latestOf('recent')).slice(0, 3);
+    news.innerHTML = `<div class="gw-news-h"><i class="gw-pulse"></i><span>${L('最新更新', 'Latest')}</span><time datetime="${BATCH0 ? BATCH0.date : LATEST.date}">${day(BATCH0 ? BATCH0.date : LATEST.date)}</time></div>
+      ${BATCH0 ? `<p class="gw-news-n"><b>+${BATCH0.n}</b><span>${L('个新收录的项目', 'new projects added')}</span></p>`
+        : `<p class="gw-news-n"><b>${LATEST.recent.length}</b><span>${L('个项目最近有提交', 'projects with recent commits')}</span></p>`}
+      <ul>${top3.map(p => `<li><i style="background:${SMAP[p.tags[0]].color}"></i><span>${esc(p.name)}</span><em>★ ${fmtStars(p.stars)}</em></li>`).join('')}</ul>
+      <div class="gw-news-f"><button type="button" class="gw-news-go">${L('打开窗口 →', 'Open →')}</button><a href="${REPO_URL}" target="_blank" rel="noopener">${L('★ 点个 Star 收藏', '★ Star to keep it handy')}</a></div>`;
+    news.hidden = false;
+    news.addEventListener('click', e => { if (!e.target.closest('a')) open(LKEY); });
+  }
+
   /* ---------- 展厅（HTML 部分） ---------- */
+  const starCta = () => `<a class="gw-star-cta" href="${REPO_URL}" target="_blank" rel="noopener"><b>${L('★ 觉得有用？去 GitHub 点个 Star', '★ Find this useful? Star it on GitHub')}</b><span>${L('每周一刷新数据、不定期收录新项目。点 Star 收藏起来方便回来看，也能让更多人找到这份合集。', 'Data refreshes every Monday and new projects land regularly. A star keeps the list handy and helps more people find it.')}</span></a>`;
+  function latestHtml() {
+    const list = latestOf(tab), multi = LATEST.batches.length > 1;
+    let lastDay = null;
+    const items = list.map((p, k) => {
+      const d = tab === 'new' ? p.added : p.pushed_at;
+      const b = tab === 'new' && multi && d !== lastDay ? LATEST.batches.find(x => x.date === d) : null;
+      lastDay = d;
+      const head = b ? `<li class="gw-day">${L(`${day(d)} · 新收录 ${b.n} 个`, `${day(d)} · ${b.n} added`)}</li>` : '';
+      const styles = p.tags.map(t => `<span><i class="gw-dot" style="background:${SMAP[t].color}"></i>${esc(SMAP[t].name)}</span>`).join(' · ');
+      const when = tab === 'new' ? L(`${day(d)}收录`, `Added ${day(d)}`) : L(`${day(d)}有提交`, `Pushed ${day(d)}`);
+      return head + `<li data-k="${k}">
+        <div class="gw-pick-top"><span class="gw-n">${String(k + 1).padStart(2, '0')}</span><a href="https://github.com/${esc(p.repo)}" target="_blank" rel="noopener">${esc(p.name)}</a><span class="gw-star">★ ${fmtStars(p.stars)}</span></div>
+        <p class="gw-desc">${esc(p.desc)}</p>
+        <p class="gw-meta">${styles} · ${when}</p>
+      </li>`;
+    }).join('');
+    const intro = tab === 'new'
+      ? L(`${day(BATCH0.date)}新收录 ${BATCH0.n} 个项目${multi ? '，往下是更早的几批' : ''}，同一批按星数排。往下滚、左右拖动卡片，或者按 ← → 键翻看。`,
+          `${BATCH0.n} projects added on ${day(BATCH0.date)}${multi ? ', then earlier batches' : ''}, sorted by stars within each batch. Scroll, drag the cards or press ← → to browse.`)
+      : L(`最近有代码提交的 ${list.length} 个活跃项目，最新的在前。星数和提交时间每周一刷新，这次是 ${day(LATEST.date)}。`,
+          `The ${list.length} active projects with the most recent commits, newest first. Stars and commit dates refresh every Monday; this data is from ${day(LATEST.date)}.`);
+    const tabs = (BATCH0 ? `<button type="button" data-tab="new" aria-pressed="${tab === 'new'}">${L('新收录', 'New')}<span>${LATEST.new.length}</span></button>` : '')
+      + `<button type="button" data-tab="recent" aria-pressed="${tab === 'recent'}">${L('最近有提交', 'Recent commits')}<span>${LATEST.recent.length}</span></button>`;
+    return `<div class="gw-hall-bar"><p class="gw-k">${L('数据更新于', 'Data as of')} ${LATEST.date}</p>
+        <div class="gw-nav"><button type="button" data-close aria-label="${L('关闭窗口', 'Close')}">✕</button></div></div>
+      <h2 tabindex="-1"><i style="background:${NEW_C};color:${NEW_C}"></i>${L('最新更新', 'Latest updates')}</h2>
+      <div class="gw-tabs" role="group" aria-label="${L('列表', 'List')}">${tabs}</div>
+      <p class="gw-look">${intro}</p>
+      <ol class="gw-picks gw-latest">${items}</ol>
+      <button type="button" class="gw-all" data-latest-all>${tab === 'new' ? L('在总表里按收录时间看 →', 'Sort the table by date added →') : L('在总表里按最近提交看 →', 'Sort the table by latest push →')}</button>
+      ${starCta()}`;
+  }
   function hallHtml(key) {
+    if (key === LKEY) return latestHtml();
     const s = SMAP[key], ps = picksOf(key), i = ORDER.indexOf(s), n = COUNT[key] || 0;
     const prev = ORDER[(i - 1 + ORDER.length) % ORDER.length], next = ORDER[(i + 1) % ORDER.length];
     const items = ps.map((p, k) => {
@@ -60,16 +122,30 @@ function gateway() {
       <p class="gw-look">${esc(s.look)}</p>
       <p class="gw-k">${L(`精品 ${ps.length} 个 · 这种画风共收录 ${n} 个`, `${ps.length} picks · ${n} listed in this style`)}</p>
       <ol class="gw-picks">${items}</ol>
-      <button type="button" class="gw-all" data-all="${key}">${L(`在总表里看全部 ${n} 个 →`, `See all ${n} in the table →`)}</button>`;
+      <button type="button" class="gw-all" data-all="${key}">${L(`在总表里看全部 ${n} 个 →`, `See all ${n} in the table →`)}</button>
+      ${starCta()}`;
   }
-  function markPick(k) { hall.querySelectorAll('.gw-picks li').forEach(li => li.classList.toggle('on', +li.dataset.k === k)); }
+  // 标出列表里对应正中那张卡片的一项；翻卡片（拖动、按键、点侧面的卡）时把它滚进视野，鼠标在列表上指着时不滚
+  let pickK = 0;
+  function markPick(k, scroll) {
+    pickK = k;
+    hall.querySelectorAll('.gw-picks li[data-k]').forEach(li => {
+      const on = +li.dataset.k === k;
+      li.classList.toggle('on', on);
+      if (on && scroll) {
+        const hr = hall.getBoundingClientRect(), lr = li.getBoundingClientRect();
+        if (lr.top < hr.top + 10) hall.scrollTop += lr.top - hr.top - 10;
+        else if (lr.bottom > hr.bottom - 10) hall.scrollTop += lr.bottom - hr.bottom + 10;
+      }
+    });
+  }
   function centerChip(key) {
     const chip = rail.querySelector(`[data-gw="${key}"]`); if (!chip) return;
     const rr = rail.getBoundingClientRect(), cr = chip.getBoundingClientRect();
     rail.scrollTo({ left: rail.scrollLeft + (cr.left - rr.left) - (rr.width - cr.width) / 2, behavior: reduce ? 'auto' : 'smooth' });
   }
   function open(key, { focus = true } = {}) {
-    if (!SMAP[key]) return;
+    if (!SMAP[key] && !(key === LKEY && LATEST)) return;
     current = key;
     hall.innerHTML = hallHtml(key);
     hall.hidden = false;
@@ -91,9 +167,22 @@ function gateway() {
     rail.querySelectorAll('[data-gw]').forEach(b => b.setAttribute('aria-pressed', 'false'));
     if (world) world.focus(null);
     if (hadFocus) { const chip = rail.querySelector(`[data-gw="${key}"]`); if (chip) chip.focus({ preventScroll: true }); }
+    if (key === LKEY && location.hash === '#latest') history.replaceState(null, '', location.pathname + location.search);
   }
   hall.addEventListener('click', e => {
     if (e.target.closest('[data-close]')) { close(); return; }
+    const tb = e.target.closest('[data-tab]');
+    if (tb) {
+      if (tb.dataset.tab === tab) return;
+      tab = tb.dataset.tab;
+      hall.innerHTML = latestHtml();
+      hall.scrollTop = 0;
+      markPick(0);
+      if (world) world.focus(LKEY);
+      hall.querySelector(`[data-tab="${tab}"]`).focus({ preventScroll: true });
+      return;
+    }
+    if (e.target.closest('[data-latest-all]')) { const by = tab === 'new' ? 'added' : 'pushed'; close(); A.showLatest(by); return; }
     const go = e.target.closest('[data-go]'); if (go) { open(go.dataset.go, { focus: false }); return; }
     const all = e.target.closest('[data-all]'); if (all) { close(); A.showStyle(all.dataset.all); }
   });
@@ -101,15 +190,39 @@ function gateway() {
   hall.addEventListener('pointerover', pickFromEvent);
   hall.addEventListener('focusin', pickFromEvent);
   document.addEventListener('keydown', e => {
-    if (!current || e.defaultPrevented || e.target.closest('input, textarea, select')) return;
+    if (!current || e.defaultPrevented || (e.target.closest && e.target.closest('input, textarea, select'))) return;
     if (root.getBoundingClientRect().bottom < 120) return;
     if (e.key === 'Escape') { close(); return; }
     if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+      if (current === LKEY) {
+        // 最新更新窗口里左右键翻卡片
+        const k = Math.max(0, Math.min(latestOf(tab).length - 1, pickK + (e.key === 'ArrowRight' ? 1 : -1)));
+        if (world) world.front(k, true); else markPick(k, true);
+        e.preventDefault();
+        return;
+      }
       const i = ORDER.findIndex(s => s.key === current);
       open(ORDER[(i + (e.key === 'ArrowRight' ? 1 : -1) + ORDER.length) % ORDER.length].key, { focus: false });
       e.preventDefault();
     }
   });
+
+  // 网址带 #latest（README 和顶栏的「✦ 最新」链接）：回到首屏，打开最新更新窗口
+  function goLatest(smooth) {
+    if (!LATEST) return;
+    const top = root.getBoundingClientRect().top;
+    if (Math.abs(top) > 2) root.scrollIntoView({ behavior: smooth && !reduce ? 'smooth' : 'auto', block: 'start' });
+    open(LKEY, { focus: false });
+  }
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a[href="#latest"]');
+    if (!a || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault();
+    if (location.hash !== '#latest') history.pushState(null, '', '#latest');
+    goLatest(true);
+  });
+  addEventListener('hashchange', () => { if (location.hash === '#latest') goLatest(true); });
+  if (location.hash === '#latest') goLatest(false);
 
   /* ---------- 悬停提示 ---------- */
   function showTip(s, x, y) {
@@ -236,6 +349,8 @@ function gateway() {
       ring.group.add(new T.Line(new T.BufferGeometry().setFromPoints(pts), new T.LineBasicMaterial({ color: 0x4A5482, transparent: true, opacity: 0.6 })));
     });
     const PANEL = Object.fromEntries(panels.map(pn => [pn.s.key, pn]));
+    const MID_Y = (RINGS[0].y - RINGS[0].h / 2 + RINGS[1].y + RINGS[1].h / 2) / 2;  // 两圈转盘之间的高度，最新更新的卡片廊停在这里
+    const LZ = 2.4;  // 最新更新的卡片比转盘往前多少
 
     // 小样图分帧画：先画正对镜头的，每帧一张，避免一次卡住主线程
     const queue = [...panels];
@@ -306,7 +421,7 @@ function gateway() {
       c.font = `500 18px ${MONO}`;
       const star = `★ ${fmtStars(p.stars)}`, sw = c.measureText(star).width;
       c.fillStyle = '#F2D27A'; c.fillText(star, CW - 28 - sw, 48);
-      c.fillStyle = '#7F879A'; c.fillText(clip(c, `${String(cd.k + 1).padStart(2, '0')} · ${s.name}`, CW - 80 - sw), 28, 48);
+      c.fillStyle = '#7F879A'; c.fillText(clip(c, `${String(cd.k + 1).padStart(2, '0')} · ${cd.label}`, CW - 80 - sw), 28, 48);
       let fs = 40;
       do { c.font = `700 ${fs}px ${SERIF}`; fs -= 1; } while (c.measureText(p.name).width > CW - 56 && fs > 22);
       c.fillStyle = '#F4F5F8'; c.fillText(clip(c, p.name, CW - 56), 28, 101);
@@ -318,45 +433,63 @@ function gateway() {
       c.fillStyle = '#A9B6FF'; c.fillText(gh, CW - 28 - gw, CH - 25);
       c.fillStyle = cls === 'ok' ? '#4CC27E' : cls === 'slow' ? '#E3AE55' : '#6B7280';
       c.beginPath(); c.arc(34, CH - 31, 6, 0, Math.PI * 2); c.fill();
-      c.font = `400 18px ${SANS}`; c.fillStyle = '#9AA1B0'; c.fillText(clip(c, `${lbl} · ${p.lang}`, CW - 100 - gw), 48, CH - 25);
+      c.font = `400 18px ${SANS}`; c.fillStyle = '#9AA1B0'; c.fillText(clip(c, `${cd.foot || lbl} · ${p.lang}`, CW - 100 - gw), 48, CH - 25);
       if (cd.tex) cd.tex.needsUpdate = true;
     }
     function buildCards(key) {
       clearCards();
-      const s = SMAP[key], pn = PANEL[key], ring = pn.ring;
-      const anchor = new T.Vector3(0, ring.y - ring.h / 2 - 0.34 - CARD_H / 2, RAD + 1.0);
-      const src = new T.Vector3(0, ring.y, RAD + 0.4);
+      const latest = key === LKEY;
+      let anchor, src;
+      if (latest) {
+        // 停在两圈转盘之间、往前挪一点；从右上角（小窗口的方向）飞进来
+        anchor = new T.Vector3(0, MID_Y, RAD + LZ);
+        src = new T.Vector3(2.6, RINGS[0].y + 1.7, RAD + LZ - 0.6);
+      } else {
+        const ring = PANEL[key].ring;
+        anchor = new T.Vector3(0, ring.y - ring.h / 2 - 0.34 - CARD_H / 2, RAD + 1.0);
+        src = new T.Vector3(0, ring.y, RAD + 0.4);
+      }
       frontK = 0; frontF = 0;
-      cards = picksOf(key).map((p, k) => {
-        const cd = { p, k, s, cv: mk(CW, CH), age: 0, delay: k * 0.07, hv: 0, anchor, src };
-        paintCard(cd);
-        cd.tex = toTex(cd.cv);
-        cd.mat = new T.MeshBasicMaterial({ map: cd.tex, alphaMap: CARD_MASK, transparent: true, opacity: 0, alphaTest: 0.02 });
+      cards = cardsOf(key).map((p, k) => {
+        const s = latest ? SMAP[p.tags[0]] : SMAP[key];
+        const foot = !latest ? null : tab === 'new' ? L(`${day(p.added)}收录`, `Added ${day(p.added)}`) : L(`${day(p.pushed_at)}有提交`, `Pushed ${day(p.pushed_at)}`);
+        const cd = { p, k, s, label: s.name, foot, cv: null, tex: null, age: 0, delay: Math.min(k, 6) * 0.07, hv: 0, anchor, src };
+        // 贴图等卡片翻到附近再画（ensureCard），几十张新收录也不会一下子占满显存
+        cd.mat = new T.MeshBasicMaterial({ alphaMap: CARD_MASK, transparent: true, opacity: 0, alphaTest: 0.02, color: 0x161a24 });
         cd.mesh = new T.Mesh(cardGeo, cd.mat);
         cd.mesh.position.copy(src);
         cd.mesh.scale.setScalar(0.2);
+        cd.mesh.visible = false;
         cd.mesh.userData.card = cd;
         cardGroup.add(cd.mesh);
         return cd;
       });
     }
+    function ensureCard(cd) {
+      if (cd.tex) return;
+      cd.cv = mk(CW, CH);
+      paintCard(cd);
+      cd.tex = toTex(cd.cv);
+      cd.mat.map = cd.tex; cd.mat.color.set(0xffffff); cd.mat.needsUpdate = true;
+    }
     function clearCards() { cards.forEach(cd => { cd.out = 0; dying.push(cd); }); cards = []; hoverCard = null; }
-    function setFront(k) {
+    function setFront(k, scroll) {
       if (!cards.length) return;
       frontK = Math.max(0, Math.min(cards.length - 1, k));
-      markPick(frontK);
+      markPick(frontK, scroll);
       kick();
     }
 
     // ---- 字体：网页字体到了以后重画面板和卡片上的字
     if (document.fonts && document.fonts.load) {
-      const sample = ORDER.map(s => s.name).join('') + Object.values(FEATURED).flat().map(r => (BYREPO[r] || {}).name || '').join('');
+      const sample = ORDER.map(s => s.name).join('') + Object.values(FEATURED).flat().map(r => (BYREPO[r] || {}).name || '').join('')
+        + [...latestOf('new'), ...latestOf('recent')].map(p => p.name).join('');
       Promise.all([document.fonts.load(`700 32px ${SERIF}`, sample), document.fonts.load(`500 20px ${MONO}`, '0123456789★·k')]).then(() => {
         panels.forEach(pn => {
           if (TEXT_SWATCHES.has(pn.s.key)) swatchCache.delete(pn.s.key);
           paintPanel(pn, pn.painted);
         });
-        cards.forEach(paintCard);
+        cards.forEach(cd => { if (cd.cv) paintCard(cd); });
         kick();
       }).catch(() => {});
     }
@@ -380,7 +513,9 @@ function gateway() {
         if (portrait) y1 = (hr.top - rr.top) / vh - 0.02;
         else { x1 = (hr.left - rr.left) / vw - 0.03; y1 = (bottom.top - rr.top) / vh; }
       } else {
-        y0 = (brand.bottom - rr.top) / vh + 0.01;
+        // 右上角的最新更新小窗口比标题区高时，转盘再往下让一点
+        const nb = news && !news.hidden && news.offsetParent ? rel(news).bottom : 0;
+        y0 = (Math.max(brand.bottom, nb) - rr.top) / vh + 0.01;
         y1 = (bottom.top - rr.top) / vh - 0.01;
       }
       if (y1 - y0 < 0.3) y0 = Math.max(0.04, y1 - 0.3);
@@ -390,7 +525,11 @@ function gateway() {
       const { r, portrait } = region();
       const aspect = camera.aspect;
       let C, wc, hc, elev;
-      if (current) {
+      if (current === LKEY) {
+        const top = MID_Y + CARD_H / 2 + 0.22, bot = MID_Y - CARD_H / 2 - 0.22;
+        C = new T.Vector3(0, (top + bot) / 2, RAD + LZ);
+        wc = CARD_W * (portrait ? 1.15 : 2.1); hc = top - bot; elev = 0.05;
+      } else if (current) {
         const ring = PANEL[current].ring;
         const top = ring.y + ring.h / 2 * 1.08, bot = ring.y - ring.h / 2 - 0.34 - CARD_H;
         C = new T.Vector3(0, (top + bot) / 2, RAD + 0.7);
@@ -418,12 +557,18 @@ function gateway() {
 
     /* ---------- 每帧更新；返回 true 表示还有东西在动 ---------- */
     let hover = null, hoverCard = null, peekKey = null, drag = null, pausedUntil = 0;
-    const spinning = now => !reduce && !current && !drag && !hover && !peekKey && now > pausedUntil;
+    let recede = 0;  // 最新更新窗口开着时，两圈转盘缩小、退到卡片后面去
+    // 最新更新窗口开着时，转盘调暗后照样慢慢转
+    const spinning = now => !reduce && (!current || current === LKEY) && !drag && !hover && !peekKey && now > pausedUntil;
     function pauseSpin(ms) { pausedUntil = performance.now() + ms; setTimeout(kick, ms + 30); }
     function update(dt, now) {
       let busy = false;
       const k = reduce ? 1 : 1 - Math.exp(-dt * 7);
       const spin = spinning(now);
+      const rg = current === LKEY ? 1 : 0;
+      recede = reduce ? rg : recede + (rg - recede) * (1 - Math.exp(-dt * 3.4));
+      if (Math.abs(rg - recede) > 0.002) busy = true; else recede = rg;
+      const rs = 1 - 0.42 * recede;
       RINGS.forEach(ring => {
         if (ring.goal != null) {
           const d = ring.goal - ring.theta;
@@ -435,12 +580,13 @@ function gateway() {
           if (spin) ring.theta += ring.spin * dt;
         }
         ring.group.rotation.y = ring.theta;
+        ring.group.scale.setScalar(rs); ring.group.position.y = ring.y * rs;
       });
       panels.forEach(pn => {
         const facing = Math.cos(wrapAngle(pn.a + pn.ring.theta));
         const vis = smooth(0.05, 0.85, facing);
         const sel = current === pn.s.key, hov = hover === pn || (!current && peekKey === pn.s.key);
-        const tl = sel ? 0.3 : hov ? 0.32 : 0, tg = sel ? 0.95 : hov ? 0.9 : 0.2, td = current && !sel ? 0.1 : 1;
+        const tl = sel ? 0.3 : hov ? 0.32 : 0, tg = sel ? 0.95 : hov ? 0.9 : 0.2, td = current && !sel ? (current === LKEY ? 0.2 : 0.1) : 1;
         pn.lift += (tl - pn.lift) * k; pn.glow += (tg - pn.glow) * k; pn.dim += (td - pn.dim) * k;
         if (Math.abs(tl - pn.lift) + Math.abs(tg - pn.glow) + Math.abs(td - pn.dim) > 0.003) busy = true;
         const s = 1 + pn.lift * 0.14;
@@ -460,6 +606,11 @@ function gateway() {
         if (tt < 1) busy = true;
         const o = cd.k - frontF, ao = Math.abs(o), so = Math.sign(o), m1 = Math.min(ao, 1), m2 = Math.max(ao - 1, 0);
         const tx = so * (m1 * CARD_W * 0.8 + m2 * CARD_W * 0.36), tz = -(m1 * 0.95 + m2 * 0.5), ry = -so * m1 * 0.85;
+        // 离正中太远的卡片淡出、不画；翻到附近才去画它的贴图
+        const fade = 1 - smooth(2.6, 3.6, ao);
+        cd.mesh.visible = fade > 0.01;
+        if (!cd.mesh.visible) return;
+        ensureCard(cd);
         const th = hoverCard === cd ? 1 : 0;
         cd.hv += (th - cd.hv) * k; if (Math.abs(th - cd.hv) > 0.003) busy = true;
         cd.mesh.position.set(
@@ -468,7 +619,7 @@ function gateway() {
           cd.src.z + (cd.anchor.z + tz + cd.hv * 0.18 - cd.src.z) * e);
         cd.mesh.rotation.y = ry * e;
         cd.mesh.scale.setScalar((0.2 + 0.8 * e) * (1 + cd.hv * 0.035));
-        cd.mat.opacity = e * Math.max(0.18, 1 - ao * 0.26);
+        cd.mat.opacity = e * Math.max(0.18, 1 - ao * 0.26) * fade;
         cd.mesh.renderOrder = 20 - Math.round(ao * 3);
       });
       dying = dying.filter(cd => {
@@ -476,7 +627,7 @@ function gateway() {
         cd.mat.opacity = Math.max(0, 1 - cd.out) * 0.9;
         cd.mesh.position.z -= dt * 1.2;
         if (cd.out < 1) { busy = true; return true; }
-        cardGroup.remove(cd.mesh); cd.tex.dispose(); cd.mat.dispose();
+        cardGroup.remove(cd.mesh); if (cd.tex) cd.tex.dispose(); cd.mat.dispose();
         return false;
       });
       // 镜头缓动 + 跟着指针的轻微视差
@@ -602,7 +753,11 @@ function gateway() {
     /* ---------- 给外面用的接口 ---------- */
     function focus(key) {
       peekKey = null;
-      if (key) {
+      if (key === LKEY) {
+        RINGS.forEach(r => { r.vel = 0; r.goal = null; });
+        buildCards(key);
+        markPick(0);
+      } else if (key) {
         const pn = PANEL[key];
         RINGS.forEach(r => { r.vel = 0; if (r !== pn.ring) r.goal = null; });
         pn.ring.goal = nearest(pn.ring.theta, -pn.a);
@@ -617,6 +772,7 @@ function gateway() {
     }
     function peek(key) {
       if (current) return;
+      if (key && !PANEL[key]) key = null;  // 「最新」按钮没有对应的面板
       peekKey = key;
       if (key) { const pn = PANEL[key]; RINGS.forEach(r => { r.goal = null; r.vel = 0; }); pn.ring.goal = nearest(pn.ring.theta, -pn.a); }
       else { RINGS.forEach(r => { r.goal = null; }); pauseSpin(1500); }
