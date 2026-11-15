@@ -8,6 +8,10 @@
  * 打开后展厅换成两个列表：「新收录」（scripts/build.py 按 projects.json 的 added 挑出最近几批）和「最近有提交」，
  * 卡片廊停在两圈转盘之间，转盘调暗继续慢慢转。新收录可能有几十个，卡片只在翻到附近时才画。
  *
+ * 特别通道（data/channels.json，现在是「three.js 出片通道」）：主流转盘里多一扇门，门上有一个实时转动的线框二十面体。
+ * 点门（或底部按钮、网址带 #threejs）进去，转盘缩到后面，一条发光的方框隧道出现，卡片从门里飞出来、沿隧道往深处排，
+ * 翻卡片就是沿着隧道往前走。
+ *
  * 性能：three.js 只在首屏可见时才按需加载；面板小样图分帧慢慢画；离开首屏或切到别的标签页就停止渲染；
  * 没有动画在跑时也停下来。系统开了「减少动态效果」时转盘不自动转，镜头直接切换。
  * 没有 WebGL 2 或 three.js 加载失败时，退回到平铺的小样图墙，展厅照样能用。
@@ -19,7 +23,7 @@ const root = document.getElementById('gateway');
 if (A && root) gateway();
 
 function gateway() {
-  const { REPO_URL, DATA, MAIN, NICHE, SMAP, BYREPO, FEATURED, LATEST, EN, L, esc, fmtStars, status, swatchCanvas, TEXT_SWATCHES } = A;
+  const { REPO_URL, DATA, MAIN, NICHE, SMAP, BYREPO, FEATURED, LATEST, CHANNELS, EN, L, esc, fmtStars, status, swatchCanvas, TEXT_SWATCHES } = A;
   const stage = document.getElementById('gw-stage');
   const hall = document.getElementById('gw-hall');
   const rail = document.getElementById('gw-rail');
@@ -36,7 +40,15 @@ function gateway() {
   const latestOf = t => ((LATEST && LATEST[t]) || []).map(r => BYREPO[r]).filter(Boolean);
   const BATCH0 = LATEST && LATEST.batches[0];
   let tab = BATCH0 ? 'new' : 'recent';
-  const cardsOf = key => key === LKEY ? latestOf(tab) : picksOf(key);
+  // 特别通道：每条通道在主流转盘里有一扇门，key 也用不会和画风撞名的写法
+  const CHS = (CHANNELS || []).map(c => ({
+    ...c, gkey: '__ch_' + c.key, name: L(c.name, c.en), look: L(c.look, c.look_en),
+    items: c.groups.flatMap((g, gi) => g.items.filter(it => BYREPO[it.repo]).map(it => ({ p: BYREPO[it.repo], why: L(it.why, it.why_en), gi, gname: L(g.name, g.en) }))),
+  })).filter(c => c.items.length);
+  const CHMAP = Object.fromEntries(CHS.map(c => [c.gkey, c]));
+  CHS.forEach(c => { COUNT[c.gkey] = c.items.length; });
+  const isList = key => key === LKEY || !!CHMAP[key];  // 列表式的窗口：左右键翻卡片，不切画风
+  const cardsOf = key => key === LKEY ? latestOf(tab) : CHMAP[key] ? CHMAP[key].items.map(it => it.p) : picksOf(key);
   const day = d => {
     const [, m, dd] = d.split('-').map(Number);
     return EN ? new Date(Date.UTC(2000, m - 1, dd)).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }) : `${m}月${dd}日`;
@@ -45,10 +57,16 @@ function gateway() {
   const SANS = 'system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif';
   const MONO = '"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace';
   let world = null, current = null;
+  const HASHES = {};  // 网址锚点 → 窗口
+
+
+  if (LATEST) HASHES.latest = LKEY;
+  CHS.forEach(c => { HASHES[c.key] = c.gkey; });
 
   /* ---------- 底部的画风按钮：键盘和读屏都靠它，3D 没加载出来也能用 ---------- */
   const latestChip = LATEST ? `<button type="button" class="gw-chip gw-chip-new" data-gw="${LKEY}" aria-pressed="false"><i style="background:${NEW_C}"></i>${L('最新', 'Latest')}${BATCH0 ? `<b>+${BATCH0.n}</b>` : ''}</button>` : '';
-  rail.innerHTML = latestChip + [[MAIN, L('主流', 'Main')], [NICHE, L('小众', 'Niche')]].map(([group, label]) =>
+  const chChips = CHS.map(c => `<button type="button" class="gw-chip gw-chip-ch" data-gw="${c.gkey}" aria-pressed="false" style="--cc:${c.color}"><i style="background:${c.color}"></i>◆ ${esc(c.name)}</button>`).join('');
+  rail.innerHTML = latestChip + chChips + [[MAIN, L('主流', 'Main')], [NICHE, L('小众', 'Niche')]].map(([group, label]) =>
     `<span class="gw-rail-k">${label}</span>` + group.map(s =>
       `<button type="button" class="gw-chip" data-gw="${s.key}" aria-pressed="false"><i style="background:${s.color}"></i>${esc(s.name)}</button>`).join('')).join('');
   rail.addEventListener('click', e => { const b = e.target.closest('[data-gw]'); if (b) open(b.dataset.gw); });
@@ -104,8 +122,31 @@ function gateway() {
       <button type="button" class="gw-all" data-latest-all>${tab === 'new' ? L('在总表里按收录时间看 →', 'Sort the table by date added →') : L('在总表里按最近提交看 →', 'Sort the table by latest push →')}</button>
       ${starCta()}`;
   }
+  function channelHtml(c) {
+    let k = 0;
+    const groups = c.groups.map((g, gi) => {
+      const rows = c.items.filter(it => it.gi === gi).map(it => {
+        const p = it.p, styles = p.tags.map(t => `<span><i class="gw-dot" style="background:${SMAP[t].color}"></i>${esc(SMAP[t].name)}</span>`).join(' · ');
+        return `<li data-k="${k}">
+        <div class="gw-pick-top"><span class="gw-n">${String(++k).padStart(2, '0')}</span><a href="https://github.com/${esc(p.repo)}" target="_blank" rel="noopener">${esc(p.name)}</a><span class="gw-star">★ ${fmtStars(p.stars)}</span></div>
+        <p class="gw-desc">${esc(it.why)}</p>
+        <p class="gw-meta">${styles}</p>
+      </li>`;
+      }).join('');
+      return rows ? `<li class="gw-day" style="color:${c.color}">${esc(L(g.name, g.en))} · ${esc(L(g.desc, g.desc_en))}</li>` + rows : '';
+    }).join('');
+    return `<div class="gw-hall-bar"><p class="gw-k">${L('特别通道', 'Special channel')} · ${L(`${c.items.length} 个项目`, `${c.items.length} projects`)}</p>
+        <div class="gw-nav"><button type="button" data-close aria-label="${L('离开通道', 'Leave the channel')}">✕</button></div></div>
+      <h2 tabindex="-1"><i style="background:${c.color};color:${c.color}"></i>${esc(c.name)}</h2>
+      <p class="gw-look">${esc(c.look)}</p>
+      <p class="gw-k">${L('往下滚、拖动卡片，或者按 ← → 键沿着通道往前走。', 'Scroll, drag the cards or press ← → to move along the tunnel.')}</p>
+      <ol class="gw-picks gw-latest">${groups}</ol>
+      ${c.query ? `<button type="button" class="gw-all" data-query="${esc(c.query)}">${L(`在总表里搜「${esc(c.query)}」→`, `Search the table for “${esc(c.query)}” →`)}</button>` : ''}
+      ${starCta()}`;
+  }
   function hallHtml(key) {
     if (key === LKEY) return latestHtml();
+    if (CHMAP[key]) return channelHtml(CHMAP[key]);
     const s = SMAP[key], ps = picksOf(key), i = ORDER.indexOf(s), n = COUNT[key] || 0;
     const prev = ORDER[(i - 1 + ORDER.length) % ORDER.length], next = ORDER[(i + 1) % ORDER.length];
     const items = ps.map((p, k) => {
@@ -145,7 +186,7 @@ function gateway() {
     rail.scrollTo({ left: rail.scrollLeft + (cr.left - rr.left) - (rr.width - cr.width) / 2, behavior: reduce ? 'auto' : 'smooth' });
   }
   function open(key, { focus = true } = {}) {
-    if (!SMAP[key] && !(key === LKEY && LATEST)) return;
+    if (!SMAP[key] && !(key === LKEY && LATEST) && !CHMAP[key]) return;
     current = key;
     hall.innerHTML = hallHtml(key);
     hall.hidden = false;
@@ -167,7 +208,8 @@ function gateway() {
     rail.querySelectorAll('[data-gw]').forEach(b => b.setAttribute('aria-pressed', 'false'));
     if (world) world.focus(null);
     if (hadFocus) { const chip = rail.querySelector(`[data-gw="${key}"]`); if (chip) chip.focus({ preventScroll: true }); }
-    if (key === LKEY && location.hash === '#latest') history.replaceState(null, '', location.pathname + location.search);
+    const hk = Object.keys(HASHES).find(h => HASHES[h] === key);
+    if (hk && location.hash === '#' + hk) history.replaceState(null, '', location.pathname + location.search);
   }
   hall.addEventListener('click', e => {
     if (e.target.closest('[data-close]')) { close(); return; }
@@ -182,6 +224,7 @@ function gateway() {
       hall.querySelector(`[data-tab="${tab}"]`).focus({ preventScroll: true });
       return;
     }
+    const qb = e.target.closest('[data-query]'); if (qb) { close(); A.showQuery(qb.dataset.query); return; }
     if (e.target.closest('[data-latest-all]')) { const by = tab === 'new' ? 'added' : 'pushed'; close(); A.showLatest(by); return; }
     const go = e.target.closest('[data-go]'); if (go) { open(go.dataset.go, { focus: false }); return; }
     const all = e.target.closest('[data-all]'); if (all) { close(); A.showStyle(all.dataset.all); }
@@ -194,9 +237,9 @@ function gateway() {
     if (root.getBoundingClientRect().bottom < 120) return;
     if (e.key === 'Escape') { close(); return; }
     if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
-      if (current === LKEY) {
-        // 最新更新窗口里左右键翻卡片
-        const k = Math.max(0, Math.min(latestOf(tab).length - 1, pickK + (e.key === 'ArrowRight' ? 1 : -1)));
+      if (isList(current)) {
+        // 最新更新和特别通道里，左右键翻卡片
+        const k = Math.max(0, Math.min(cardsOf(current).length - 1, pickK + (e.key === 'ArrowRight' ? 1 : -1)));
         if (world) world.front(k, true); else markPick(k, true);
         e.preventDefault();
         return;
@@ -207,26 +250,27 @@ function gateway() {
     }
   });
 
-  // 网址带 #latest（README 和顶栏的「✦ 最新」链接）：回到首屏，打开最新更新窗口
-  function goLatest(smooth) {
-    if (!LATEST) return;
+  // 网址带 #latest 或某条通道的 #key（README 和顶栏的链接）：回到首屏，打开对应的窗口
+  function goHash(key, smooth) {
     const top = root.getBoundingClientRect().top;
     if (Math.abs(top) > 2) root.scrollIntoView({ behavior: smooth && !reduce ? 'smooth' : 'auto', block: 'start' });
-    open(LKEY, { focus: false });
+    open(key, { focus: false });
   }
+  const keyOfHash = h => HASHES[(h || '').slice(1)] || null;
   document.addEventListener('click', e => {
-    const a = e.target.closest('a[href="#latest"]');
-    if (!a || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    const a = e.target.closest('a[href^="#"]'), key = a && keyOfHash(a.getAttribute('href'));
+    if (!key || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey) return;
     e.preventDefault();
-    if (location.hash !== '#latest') history.pushState(null, '', '#latest');
-    goLatest(true);
+    if (location.hash !== a.getAttribute('href')) history.pushState(null, '', a.getAttribute('href'));
+    goHash(key, true);
   });
-  addEventListener('hashchange', () => { if (location.hash === '#latest') goLatest(true); });
-  if (location.hash === '#latest') goLatest(false);
+  addEventListener('hashchange', () => { const key = keyOfHash(location.hash); if (key) goHash(key, true); });
+  if (keyOfHash(location.hash)) goHash(keyOfHash(location.hash), false);
 
   /* ---------- 悬停提示 ---------- */
   function showTip(s, x, y) {
-    tip.innerHTML = `<b>${esc(s.name)}</b><span>${esc(s.look)}</span><em>${L(`${COUNT[s.key] || 0} 个项目 · 点击进入展厅`, `${COUNT[s.key] || 0} projects · click to open`)}</em>`;
+    const gate = !!CHMAP[s.key], n = COUNT[s.key] || 0;
+    tip.innerHTML = `<b>${gate ? '◆ ' : ''}${esc(s.name)}</b><span>${esc(s.look)}</span><em>${gate ? L(`${n} 个项目 · 点击进入通道`, `${n} projects · click to enter`) : L(`${n} 个项目 · 点击进入展厅`, `${n} projects · click to open`)}</em>`;
     tip.hidden = false;
     const w = tip.offsetWidth, h = tip.offsetHeight, W = root.clientWidth, H = root.clientHeight;
     let left = x + 16, top = y + 18;
@@ -299,7 +343,8 @@ function gateway() {
     function paintPanel(pn, withSwatch) {
       const c = pn.cv.getContext('2d'), s = pn.s;
       c.clearRect(0, 0, PW, PH);
-      if (withSwatch) c.drawImage(swatchOf(s.key), 0, 0);
+      if (s.gate) paintTunnel(c, s.color);
+      else if (withSwatch) c.drawImage(swatchOf(s.key), 0, 0);
       else {
         const g = c.createLinearGradient(0, 0, PW, SH); g.addColorStop(0, s.color); g.addColorStop(1, '#0B0D13');
         c.fillStyle = g; c.globalAlpha = 0.5; c.fillRect(0, 0, PW, SH); c.globalAlpha = 1;
@@ -315,13 +360,29 @@ function gateway() {
       let fs = 32;
       do { c.font = `700 ${fs}px ${SERIF}`; fs -= 1; } while (c.measureText(s.name).width > PW - 110 - cw && fs > 16);
       c.fillStyle = '#F2F3F6'; c.fillText(s.name, 50, SH + 37);
-      pn.painted = withSwatch;
+      pn.painted = withSwatch || !!s.gate;
       if (pn.map) pn.map.needsUpdate = true;
+    }
+
+    // 门上的画面：一条往里收的方框隧道，尽头有光
+    function paintTunnel(c, color) {
+      const g = c.createRadialGradient(PW / 2, SH * 0.48, 4, PW / 2, SH * 0.48, PW * 0.6);
+      g.addColorStop(0, color); g.addColorStop(0.18, 'rgba(20,40,70,.9)'); g.addColorStop(1, '#05070C');
+      c.fillStyle = g; c.fillRect(0, 0, PW, SH);
+      c.strokeStyle = color; c.lineJoin = 'round';
+      for (let i = 0; i < 9; i++) {
+        const t = Math.pow(0.72, i), w = PW * 0.92 * t, h = SH * 0.84 * t;
+        c.globalAlpha = 0.85 * t + 0.08; c.lineWidth = Math.max(1, 3.2 * t);
+        rrect(c, PW / 2 - w / 2, SH * 0.48 - h / 2, w, h, 14 * t); c.stroke();
+      }
+      c.globalAlpha = 0.3; c.lineWidth = 1.5; c.beginPath();
+      [[0.04, 0.06], [0.96, 0.06], [0.04, 0.9], [0.96, 0.9]].forEach(([x, y]) => { c.moveTo(PW * x, SH * y); c.lineTo(PW / 2, SH * 0.48); });
+      c.stroke(); c.globalAlpha = 1;
     }
 
     const RAD = 8.6;
     const RINGS = [
-      { list: MAIN, y: 0.92, w: 2.6, spin: 0.045 },
+      { list: [...CHS.map(c => ({ key: c.gkey, name: c.name, color: c.color, look: c.look, gate: true })), ...MAIN], y: 0.92, w: 2.6, spin: 0.045 },
       { list: NICHE, y: -0.94, w: 2.04, spin: -0.032 },
     ];
     const panels = [], hits = [];
@@ -342,6 +403,11 @@ function gateway() {
         pn.hmat = new T.MeshBasicMaterial({ map: HALO, color: new T.Color(s.color), transparent: true, opacity: 0, blending: T.AdditiveBlending, depthWrite: false });
         pn.halo = new T.Mesh(haloGeo, pn.hmat); pn.halo.position.z = RAD - 0.05; pivot.add(pn.halo);
         pn.mesh.userData.pn = pn;
+        if (s.gate) {
+          // 门前悬着一个实时转动的线框二十面体：这扇门本身就是 three.js 画的
+          pn.wire = new T.LineSegments(new T.EdgesGeometry(new T.IcosahedronGeometry(h * 0.3, 0)), new T.LineBasicMaterial({ color: s.color, transparent: true, opacity: 0.95, depthWrite: false }));
+          pn.wire.position.set(0, h * 0.06, RAD + 0.5); pivot.add(pn.wire);
+        }
         panels.push(pn); hits.push(pn.mesh);
       });
       const pts = [];
@@ -350,7 +416,29 @@ function gateway() {
     });
     const PANEL = Object.fromEntries(panels.map(pn => [pn.s.key, pn]));
     const MID_Y = (RINGS[0].y - RINGS[0].h / 2 + RINGS[1].y + RINGS[1].h / 2) / 2;  // 两圈转盘之间的高度，最新更新的卡片廊停在这里
-    const LZ = 2.4;  // 最新更新的卡片比转盘往前多少
+    const LZ = 2.4;  // 最新更新和通道的卡片比转盘往前多少
+
+    // ---- 特别通道的隧道：一圈圈圆角方框沿着 -z 排开，四条导轨连到尽头的光
+    const TW = 3.7, TH = 2.4, TN = 11, TSP = 1.9, TL = TN * TSP;
+    const TUN = { group: new T.Group(), frames: [], a: 0, drift: 0, color: new T.Color(CHS[0] ? CHS[0].color : '#5EC8FF') };
+    TUN.group.position.set(0, MID_Y, RAD + LZ + 1.2);
+    TUN.group.visible = false;
+    scene.add(TUN.group);
+    {
+      const pts = [], r = 0.28, seg = 6, cx = [TW / 2 - r, -TW / 2 + r, -TW / 2 + r, TW / 2 - r], cy = [TH / 2 - r, TH / 2 - r, -TH / 2 + r, -TH / 2 + r];
+      for (let q = 0; q < 4; q++) for (let k = 0; k <= seg; k++) { const a = (q + k / seg) * Math.PI / 2; pts.push(new T.Vector3(cx[q] + Math.cos(a) * r, cy[q] + Math.sin(a) * r, 0)); }
+      const fgeo = new T.BufferGeometry().setFromPoints(pts);
+      for (let i = 0; i < TN; i++) {
+        const fr = new T.LineLoop(fgeo, new T.LineBasicMaterial({ color: TUN.color, transparent: true, opacity: 0, blending: T.AdditiveBlending, depthWrite: false }));
+        TUN.frames.push(fr); TUN.group.add(fr);
+      }
+      const rails = [];
+      [[1, 1], [-1, 1], [-1, -1], [1, -1]].forEach(([sx, sy]) => rails.push(new T.Vector3(sx * TW / 2, sy * TH / 2, 0), new T.Vector3(sx * TW / 2 * 0.98, sy * TH / 2 * 0.98, -TL)));
+      TUN.rails = new T.LineSegments(new T.BufferGeometry().setFromPoints(rails), new T.LineBasicMaterial({ color: TUN.color, transparent: true, opacity: 0, blending: T.AdditiveBlending, depthWrite: false }));
+      TUN.group.add(TUN.rails);
+      TUN.glow = new T.Mesh(new T.PlaneGeometry(TW * 2.2, TH * 2.2), new T.MeshBasicMaterial({ map: DOT, color: TUN.color, transparent: true, opacity: 0, blending: T.AdditiveBlending, depthWrite: false }));
+      TUN.glow.position.z = -TL; TUN.group.add(TUN.glow);
+    }
 
     // 小样图分帧画：先画正对镜头的，每帧一张，避免一次卡住主线程
     const queue = [...panels];
@@ -427,7 +515,7 @@ function gateway() {
       c.fillStyle = '#F4F5F8'; c.fillText(clip(c, p.name, CW - 56), 28, 101);
       c.font = `400 16px ${MONO}`; c.fillStyle = '#727A8C'; c.fillText(clip(c, p.repo, CW - 56), 28, 131);
       c.font = `400 22px ${SANS}`; c.fillStyle = '#C6CBD7';
-      wrap(c, p.desc, CW - 56, 3).forEach((ln, i) => c.fillText(ln, 28, 176 + i * 33));
+      wrap(c, cd.desc || p.desc, CW - 56, 3).forEach((ln, i) => c.fillText(ln, 28, 176 + i * 33));
       c.font = `600 18px ${SANS}`;
       const gh = 'GitHub ↗', gw = c.measureText(gh).width;
       c.fillStyle = '#A9B6FF'; c.fillText(gh, CW - 28 - gw, CH - 25);
@@ -438,9 +526,12 @@ function gateway() {
     }
     function buildCards(key) {
       clearCards();
-      const latest = key === LKEY;
+      const latest = key === LKEY, ch = CHMAP[key];
       let anchor, src;
-      if (latest) {
+      if (ch) {
+        anchor = new T.Vector3(0, MID_Y, RAD + LZ);
+        src = PANEL[key] ? PANEL[key].mesh.getWorldPosition(new T.Vector3()) : new T.Vector3(0, RINGS[0].y, RAD);
+      } else if (latest) {
         // 停在两圈转盘之间、往前挪一点；从右上角（小窗口的方向）飞进来
         anchor = new T.Vector3(0, MID_Y, RAD + LZ);
         src = new T.Vector3(2.6, RINGS[0].y + 1.7, RAD + LZ - 0.6);
@@ -451,6 +542,15 @@ function gateway() {
       }
       frontK = 0; frontF = 0;
       cards = cardsOf(key).map((p, k) => {
+        if (ch) {
+          const it = ch.items[k];
+          const cd = { p, k, s: { name: it.gname, color: ch.color }, label: it.gname, desc: it.why, tunnel: true, cv: null, tex: null, age: 0, delay: Math.min(k, 6) * 0.08, hv: 0, anchor, src };
+          cd.mat = new T.MeshBasicMaterial({ alphaMap: CARD_MASK, transparent: true, opacity: 0, alphaTest: 0.02, color: 0x161a24 });
+          cd.mesh = new T.Mesh(cardGeo, cd.mat);
+          cd.mesh.position.copy(src); cd.mesh.scale.setScalar(0.2); cd.mesh.visible = false;
+          cd.mesh.userData.card = cd; cardGroup.add(cd.mesh);
+          return cd;
+        }
         const s = latest ? SMAP[p.tags[0]] : SMAP[key];
         const foot = !latest ? null : tab === 'new' ? L(`${day(p.added)}收录`, `Added ${day(p.added)}`) : L(`${day(p.pushed_at)}有提交`, `Pushed ${day(p.pushed_at)}`);
         const cd = { p, k, s, label: s.name, foot, cv: null, tex: null, age: 0, delay: Math.min(k, 6) * 0.07, hv: 0, anchor, src };
@@ -483,7 +583,7 @@ function gateway() {
     // ---- 字体：网页字体到了以后重画面板和卡片上的字
     if (document.fonts && document.fonts.load) {
       const sample = ORDER.map(s => s.name).join('') + Object.values(FEATURED).flat().map(r => (BYREPO[r] || {}).name || '').join('')
-        + [...latestOf('new'), ...latestOf('recent')].map(p => p.name).join('');
+        + [...latestOf('new'), ...latestOf('recent')].map(p => p.name).join('') + CHS.map(c => c.name + c.items.map(it => it.gname + it.p.name).join('')).join('');
       Promise.all([document.fonts.load(`700 32px ${SERIF}`, sample), document.fonts.load(`500 20px ${MONO}`, '0123456789★·k')]).then(() => {
         panels.forEach(pn => {
           if (TEXT_SWATCHES.has(pn.s.key)) swatchCache.delete(pn.s.key);
@@ -525,7 +625,7 @@ function gateway() {
       const { r, portrait } = region();
       const aspect = camera.aspect;
       let C, wc, hc, elev;
-      if (current === LKEY) {
+      if (isList(current)) {
         const top = MID_Y + CARD_H / 2 + 0.22, bot = MID_Y - CARD_H / 2 - 0.22;
         C = new T.Vector3(0, (top + bot) / 2, RAD + LZ);
         wc = CARD_W * (portrait ? 1.15 : 2.1); hc = top - bot; elev = 0.05;
@@ -559,13 +659,14 @@ function gateway() {
     let hover = null, hoverCard = null, peekKey = null, drag = null, pausedUntil = 0;
     let recede = 0;  // 最新更新窗口开着时，两圈转盘缩小、退到卡片后面去
     // 最新更新窗口开着时，转盘调暗后照样慢慢转
-    const spinning = now => !reduce && (!current || current === LKEY) && !drag && !hover && !peekKey && now > pausedUntil;
+    const spinning = now => !reduce && (!current || isList(current)) && !drag && !hover && !peekKey && now > pausedUntil;
     function pauseSpin(ms) { pausedUntil = performance.now() + ms; setTimeout(kick, ms + 30); }
     function update(dt, now) {
       let busy = false;
       const k = reduce ? 1 : 1 - Math.exp(-dt * 7);
       const spin = spinning(now);
-      const rg = current === LKEY ? 1 : 0;
+      const listMode = isList(current), inCh = !!CHMAP[current];
+      const rg = listMode ? 1 : 0;
       recede = reduce ? rg : recede + (rg - recede) * (1 - Math.exp(-dt * 3.4));
       if (Math.abs(rg - recede) > 0.002) busy = true; else recede = rg;
       const rs = 1 - 0.42 * recede;
@@ -585,8 +686,9 @@ function gateway() {
       panels.forEach(pn => {
         const facing = Math.cos(wrapAngle(pn.a + pn.ring.theta));
         const vis = smooth(0.05, 0.85, facing);
-        const sel = current === pn.s.key, hov = hover === pn || (!current && peekKey === pn.s.key);
-        const tl = sel ? 0.3 : hov ? 0.32 : 0, tg = sel ? 0.95 : hov ? 0.9 : 0.2, td = current && !sel ? (current === LKEY ? 0.2 : 0.1) : 1;
+        const sel = !listMode && current === pn.s.key, hov = hover === pn || (!current && peekKey === pn.s.key);
+        const tl = sel ? 0.3 : hov ? 0.32 : 0, tg = sel ? 0.95 : hov ? 0.9 : pn.s.gate ? 0.6 : 0.2;
+        const td = listMode ? (inCh ? 0.07 : 0.2) : current && !sel ? 0.1 : 1;
         pn.lift += (tl - pn.lift) * k; pn.glow += (tg - pn.glow) * k; pn.dim += (td - pn.dim) * k;
         if (Math.abs(tl - pn.lift) + Math.abs(tg - pn.glow) + Math.abs(td - pn.dim) > 0.003) busy = true;
         const s = 1 + pn.lift * 0.14;
@@ -596,7 +698,28 @@ function gateway() {
         pn.mat.color.setRGB(b, b, b);
         pn.hmat.opacity = pn.glow * vis * (sel ? 1 : pn.dim);
         pn.mesh.visible = pn.halo.visible = facing > -0.15;
+        if (pn.wire) {
+          if (!reduce) { pn.wire.rotation.x += dt * 0.45; pn.wire.rotation.y += dt * 0.7; }
+          pn.wire.position.z = RAD + pn.lift + 0.5; pn.wire.scale.setScalar(s);
+          pn.wire.material.opacity = 0.95 * vis * pn.dim; pn.wire.visible = pn.mesh.visible;
+        }
       });
+      // 隧道：通道开着时显现，方框跟着翻卡片往镜头这边移，没操作时也慢慢往前飘
+      const ta = inCh ? 1 : 0;
+      TUN.a = reduce ? ta : TUN.a + (ta - TUN.a) * (1 - Math.exp(-dt * 3));
+      if (Math.abs(ta - TUN.a) > 0.003) busy = true; else TUN.a = ta;
+      TUN.group.visible = TUN.a > 0;
+      if (TUN.group.visible) {
+        if (inCh && !reduce) { TUN.drift += dt * 0.4; busy = true; }
+        const off = frontF * 2.2 + TUN.drift;
+        TUN.frames.forEach((fr, i) => {
+          const u = ((i * TSP - off) % TL + TL) % TL;
+          fr.position.z = -u;
+          fr.material.opacity = TUN.a * 0.8 * smooth(0.3, 2.6, u) * (1 - smooth(TL * 0.5, TL, u));
+        });
+        TUN.rails.material.opacity = TUN.a * 0.22;
+        TUN.glow.material.opacity = TUN.a * 0.5;
+      }
       // 卡片廊：正中一张正对镜头，两侧往里斜、往后退
       frontF += (frontK - frontF) * (reduce ? 1 : 1 - Math.exp(-dt * 8));
       if (Math.abs(frontK - frontF) > 1e-3) busy = true; else frontF = frontK;
@@ -605,9 +728,22 @@ function gateway() {
         const tt = reduce ? 1 : Math.min(1, Math.max(0, (cd.age - cd.delay) / 0.7)), e = ease(tt);
         if (tt < 1) busy = true;
         const o = cd.k - frontF, ao = Math.abs(o), so = Math.sign(o), m1 = Math.min(ao, 1), m2 = Math.max(ao - 1, 0);
-        const tx = so * (m1 * CARD_W * 0.8 + m2 * CARD_W * 0.36), tz = -(m1 * 0.95 + m2 * 0.5), ry = -so * m1 * 0.85;
-        // 离正中太远的卡片淡出、不画；翻到附近才去画它的贴图
-        const fade = 1 - smooth(2.6, 3.6, ao);
+        let tx, ty = 0, tz, ry, fade, depth = 1;
+        if (cd.tunnel) {
+          // 通道：后面的卡片沿着一圈螺旋往隧道深处排，翻过去的卡片朝镜头飞走、淡掉
+          if (o >= 0) {
+            const m = Math.min(o, 1);
+            tx = Math.sin(o * 1.2) * 0.85 * m; ty = -Math.cos(o * 1.2) * 0.5 * m; tz = -o * 2.1; ry = -tx * 0.28;
+            fade = 1 - smooth(3.4, 5.8, o); depth = Math.max(0.4, 1 - o * 0.14);
+          } else {
+            tx = 0; tz = -o * 2.8; ry = 0;
+            fade = 1 - smooth(0, 0.9, -o);
+          }
+        } else {
+          tx = so * (m1 * CARD_W * 0.8 + m2 * CARD_W * 0.36); tz = -(m1 * 0.95 + m2 * 0.5); ry = -so * m1 * 0.85;
+          // 离正中太远的卡片淡出、不画；翻到附近才去画它的贴图
+          fade = 1 - smooth(2.6, 3.6, ao); depth = Math.max(0.18, 1 - ao * 0.26);
+        }
         cd.mesh.visible = fade > 0.01;
         if (!cd.mesh.visible) return;
         ensureCard(cd);
@@ -615,11 +751,11 @@ function gateway() {
         cd.hv += (th - cd.hv) * k; if (Math.abs(th - cd.hv) > 0.003) busy = true;
         cd.mesh.position.set(
           cd.src.x + (cd.anchor.x + tx - cd.src.x) * e,
-          cd.src.y + (cd.anchor.y + cd.hv * 0.07 - cd.src.y) * e,
+          cd.src.y + (cd.anchor.y + ty + cd.hv * 0.07 - cd.src.y) * e,
           cd.src.z + (cd.anchor.z + tz + cd.hv * 0.18 - cd.src.z) * e);
         cd.mesh.rotation.y = ry * e;
         cd.mesh.scale.setScalar((0.2 + 0.8 * e) * (1 + cd.hv * 0.035));
-        cd.mat.opacity = e * Math.max(0.18, 1 - ao * 0.26) * fade;
+        cd.mat.opacity = e * depth * fade;
         cd.mesh.renderOrder = 20 - Math.round(ao * 3);
       });
       dying = dying.filter(cd => {
@@ -753,7 +889,7 @@ function gateway() {
     /* ---------- 给外面用的接口 ---------- */
     function focus(key) {
       peekKey = null;
-      if (key === LKEY) {
+      if (isList(key)) {
         RINGS.forEach(r => { r.vel = 0; r.goal = null; });
         buildCards(key);
         markPick(0);

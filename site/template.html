@@ -199,6 +199,8 @@ button, input, select { font: inherit; color: inherit; }
 .gw-open .gw-news { opacity: 0; visibility: hidden; }
 @media (max-width: 1000px), (max-height: 620px) { .gw-news { display: none; } }
 .gw-chip-new { border-color: rgba(124,240,176,.5); }
+.gw-chip-ch { border-color: color-mix(in srgb, var(--cc) 60%, transparent); }
+.gw-chip-ch:hover { border-color: var(--cc); }
 .gw-chip-new b { font-family: var(--font-mono); font-weight: 500; font-size: 11.5px; color: #9FF3C6; }
 .gw-chip-new[aria-pressed="true"] b { color: inherit; }
 .gw-tabs { display: flex; gap: 6px; }
@@ -690,6 +692,7 @@ const SNAPSHOT = Date.parse('__DATE__');
 const SHOWCASE = __SHOWCASE__;
 const FEATURED = __FEATURED__;
 const LATEST = __LATEST__;
+const CHANNELS = __CHANNELS__;
 const EN = window.LANG === 'en';
 const L = (zh, en) => EN ? en : zh;
 // 英文模式：把数据里的中文字段换成 *_en，后面的渲染代码不用区分语言；原文留在 *_zh 里给搜索用。缺译文时显示原文。
@@ -1564,7 +1567,9 @@ if ('IntersectionObserver' in window) {
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => drawnSwatches.forEach(cv => { if (TEXT_SWATCHES.has(cv.dataset.swatch)) drawSwatch(cv); })).catch(() => {});
 
 // 3D 入口（页面末尾的 module 脚本）从这里拿数据和工具函数
-window.ACA = { REPO_URL: '__REPO_URL__', DATA, STYLES, MAIN, NICHE, SMAP, BYREPO, FEATURED, LATEST, EN, L, esc, fmtStars, status, swatchCanvas, TEXT_SWATCHES,
+window.ACA = { REPO_URL: '__REPO_URL__', DATA, STYLES, MAIN, NICHE, SMAP, BYREPO, FEATURED, LATEST, CHANNELS, EN, L,
+  // 特别通道里的按钮：在总表里搜这个关键词
+  showQuery(q) { state.style = null; state.zone = 'all'; document.getElementById('zone').value = 'all'; state.sort = 'stars'; document.getElementById('sort').value = 'stars'; setQuery(q); render(); toTable(); }, esc, fmtStars, status, swatchCanvas, TEXT_SWATCHES,
   // 「最新更新」窗口里的按钮：总表按收录时间（或最近提交）排，清掉画风筛选
   showLatest(by) { state.style = null; state.zone = 'all'; state.sort = by; document.getElementById('zone').value = 'all'; document.getElementById('sort').value = by; render(); toTable(); },
   showStyle(key) { state.style = key; state.zone = 'all'; document.getElementById('zone').value = 'all'; render(); toTable(); } };

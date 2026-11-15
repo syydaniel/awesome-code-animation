@@ -12,7 +12,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 **[🌌 3D 画风入口](https://syydaniel.github.io/awesome-code-animation/?lang=zh)**<sub>（转动画风转盘，点进去看每种画风的精品）</sub> · **[🌐 网页版](https://syydaniel.github.io/awesome-code-animation/?lang=zh#table-sec)**<sub>（按画风筛选、搜索、排序）</sub> · **[🕸️ 关系图谱](https://syydaniel.github.io/awesome-code-animation/?lang=zh#graph-sec)** · **[🎨 画风索引](#index)**
 
-[最新收录](#latest) · [画风索引](#index) · [小众画风区](#niche) · [关系图谱](#relations) · [收录标准](#rules) · [全部项目](#all) · [推荐项目](https://github.com/syydaniel/awesome-code-animation/issues/new/choose)
+[最新收录](#latest) · [three.js 出片通道](#threejs) · [画风索引](#index) · [小众画风区](#niche) · [关系图谱](#relations) · [收录标准](#rules) · [全部项目](#all) · [推荐项目](https://github.com/syydaniel/awesome-code-animation/issues/new/choose)
 
 ⭐ **觉得有用就[点个 Star](https://github.com/syydaniel/awesome-code-animation)**：每周都有新项目，收藏起来方便回来看，也能让更多人找到这份合集。
 
@@ -87,6 +87,39 @@ A curated list of open-source tools for making animations and music videos **wit
 网页版的[「✦ 最新更新」窗口](https://syydaniel.github.io/awesome-code-animation/?lang=zh#latest)里可以一张张翻这些项目，也能看最近有提交的项目。
 
 ⭐ 每周都有新项目，[点个 Star](https://github.com/syydaniel/awesome-code-animation) 收藏起来，下次回来看看又多了什么。
+
+<a name="threejs"></a>
+
+## ◆ three.js 出片通道
+
+用 three.js 做视频的精选：把场景渲染成 MP4 的管线，让 AI 编程助手写 three.js 出片的技能和作品，还有镜头里常用的特效。网页版的 3D 转盘里有一扇对应的门，[点进去](https://syydaniel.github.io/awesome-code-animation/?lang=zh#threejs)是一条排着 18 张卡片的通道。
+
+**出片管线**：把 three.js 场景变成视频
+
+- [Remotion](https://github.com/remotion-dev/remotion) ★ 73.4k：官方的 @remotion/three 包把 three.js 和 React Three Fiber 场景放进 React 视频，逐帧渲染成 MP4。
+- [React Three Fiber](https://github.com/pmndrs/react-three-fiber) ★ 33.7k：用 React 组件写 three.js 场景，是和 Remotion 搭配做 3D 视频最常见的写法。
+- [Theatre.js](https://github.com/theatre-js/theatre) ★ 13k：可视化时间轴：在界面里给 three.js 的镜头和物体拖关键帧，适合精确运镜。
+- [frame.js](https://github.com/mrdoob/frame.js) ★ 1.2k：three.js 作者写的时间轴编辑器，按时间编排镜头和特效，做成网页 demo 短片。
+- [three.js](https://github.com/mrdoob/three.js) ★ 118k：这一切的底座：场景、材质、灯光、粒子和后期处理都在这里。
+
+**AI 写 three.js 出片**：让 AI 编程助手写 three.js 代码出片的技能和作品
+
+- [Claude Animated Shorts](https://github.com/mromidev/claude-animated-shorts) ★ 3.5k：一分钟的竖屏动画故事：2D 角色走进彩色 3D 小镇，three.js 加 Remotion 渲染。
+- [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) ★ 781：六个做短视频动画的技能，其中有 three.js 3D 卡通讲解和爆炸拆解图。
+- [Diorama](https://github.com/sloemo01/diorama) ★ 535：让 AI 编程助手搭 three.js 微缩场景，小人带关节动画，默认是像素抖动风。
+- [Code Video Showcase](https://github.com/Moessif/code-video-showcase) ★ 446：卡点展示片技能：HTML、Canvas 和 three.js 逐帧渲染成片。
+- [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) ★ 405：先给三个方案和预览再逐帧渲染，three.js 是它常用的 3D 引擎之一。
+- [img2threejs](https://github.com/img2threejs/img2threejs) ★ 21.4k：照着参考图用纯代码重建 three.js 模型，可以给 3D 短片做道具和角色。
+- [Athenaion](https://github.com/Leonxlnx/athenaion) ★ 708：Claude 用 three.js 纯代码搭出的古希腊城邦，零素材，可以当 3D 场景参考。
+
+**镜头里的特效**：three.js 出片时常加的后期、粒子、光照和场景
+
+- [postprocessing](https://github.com/pmndrs/postprocessing) ★ 3k：辉光、色差、景深、故障，three.js 出片最常用的后期库。
+- [three.quarks](https://github.com/Alchemist0823/three.quarks) ★ 1.2k：火焰、爆炸、魔法粒子，给镜头加 VFX。
+- [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) ★ 2.1k：GPU 路径追踪，让画面有真实的光照、反射和景深，适合慢慢渲染成片。
+- [three-vrm](https://github.com/pixiv/three-vrm) ★ 2.3k：在 three.js 里驱动 VRM 虚拟形象，做二次元 MV。
+- [Singularity](https://github.com/MisterPrada/singularity) ★ 319：用 three.js 着色语言 TSL 写的黑洞，WebGPU 和 WebGL 都能跑，适合宇宙镜头。
+- [Poseidon](https://github.com/owenyuwono/poseidon) ★ 323：GPU 实时计算的 FFT 海洋，three.js 加 WebGPU，适合海面镜头。
 
 <a name="rules"></a>
 

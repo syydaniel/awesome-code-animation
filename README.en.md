@@ -10,7 +10,7 @@
 
 **[🌌 3D style gateway](https://syydaniel.github.io/awesome-code-animation/?lang=en)**<sub> (spin the style carousel, open a gallery of picks for each style)</sub> · **[🌐 Web version](https://syydaniel.github.io/awesome-code-animation/?lang=en#table-sec)**<sub> (filter by style, search, sort)</sub> · **[🕸️ Relationship graph](https://syydaniel.github.io/awesome-code-animation/?lang=en#graph-sec)** · **[🎨 Style index](#index)**
 
-[Latest](#latest) · [Style index](#index) · [Niche styles](#niche) · [Relationships](#relations) · [Rules](#rules) · [All projects](#all) · [Suggest a project](https://github.com/syydaniel/awesome-code-animation/issues/new/choose)
+[Latest](#latest) · [three.js films](#threejs) · [Style index](#index) · [Niche styles](#niche) · [Relationships](#relations) · [Rules](#rules) · [All projects](#all) · [Suggest a project](https://github.com/syydaniel/awesome-code-animation/issues/new/choose)
 
 ⭐ **Find it useful? [Star the repo](https://github.com/syydaniel/awesome-code-animation)** so you can come back for new additions, and so more people can find it.
 
@@ -85,6 +85,39 @@ Beyond the 17 main styles, the [niche section](#niche) covers ink-wash landscape
 Flip through them as cards in the [✦ Latest window](https://syydaniel.github.io/awesome-code-animation/?lang=en#latest) on the web version, which also lists projects with recent commits.
 
 ⭐ New projects land every week. [Star the repo](https://github.com/syydaniel/awesome-code-animation) to come back and see what's new.
+
+<a name="threejs"></a>
+
+## ◆ three.js Film Channel
+
+Hand-picked projects for making videos with three.js: pipelines that render scenes to MP4, coding-agent skills and films built on three.js, and the effects you'll reach for in your shots. In the web version this is a gate in the 3D carousel that opens into a tunnel of [18 cards](https://syydaniel.github.io/awesome-code-animation/?lang=en#threejs).
+
+**Pipeline**: Turn three.js scenes into video
+
+- [Remotion](https://github.com/remotion-dev/remotion) ★ 73.4k: Its official @remotion/three package puts three.js and React Three Fiber scenes into React videos and renders them frame by frame to MP4.
+- [React Three Fiber](https://github.com/pmndrs/react-three-fiber) ★ 33.7k: Write three.js scenes as React components; the most common way to make 3D videos together with Remotion.
+- [Theatre.js](https://github.com/theatre-js/theatre) ★ 13k: A visual timeline: keyframe three.js cameras and objects in an editor, good for precise camera moves.
+- [frame.js](https://github.com/mrdoob/frame.js) ★ 1.2k: A timeline editor by the author of three.js for sequencing shots and effects into web demos.
+- [three.js](https://github.com/mrdoob/three.js) ★ 118k: The foundation: scenes, materials, lights, particles and post-processing.
+
+**Coding agents making three.js films**: Skills and films where coding agents write the three.js code
+
+- [Claude Animated Shorts](https://github.com/mromidev/claude-animated-shorts) ★ 3.5k: One-minute vertical story shorts: 2D characters in a colourful 3D town, rendered with three.js inside Remotion.
+- [Claude Animation Skills](https://github.com/artemnovitckii/claude-animation-skills) ★ 781: Six short-video animation skills, including three.js 3D cartoon explainers and exploded views.
+- [Diorama](https://github.com/sloemo01/diorama) ★ 535: Coding agents build three.js dioramas with jointed little characters, in a dithered pixel look by default.
+- [Code Video Showcase](https://github.com/Moessif/code-video-showcase) ★ 446: A beat-synced showcase video skill that renders HTML, Canvas and three.js frame by frame.
+- [xilo-opus-video](https://github.com/Kianzzz/xilo-opus-video) ★ 405: Offers three directions with previews before rendering frame by frame; three.js is one of the 3D engines it uses.
+- [img2threejs](https://github.com/img2threejs/img2threejs) ★ 21.4k: Rebuilds three.js models from a reference image in pure code, handy for props and characters in 3D shorts.
+- [Athenaion](https://github.com/Leonxlnx/athenaion) ★ 708: An ancient Greek city built by Claude entirely in three.js code with no assets; a good reference for 3D scenes.
+
+**Looks for your shots**: Post-processing, particles, lighting and scenes for three.js shots
+
+- [postprocessing](https://github.com/pmndrs/postprocessing) ★ 3k: Bloom, chromatic aberration, depth of field and glitch: the go-to post-processing library for three.js videos.
+- [three.quarks](https://github.com/Alchemist0823/three.quarks) ★ 1.2k: Fire, explosions and magic particles: VFX for your shots.
+- [three-gpu-pathtracer](https://github.com/gkjohnson/three-gpu-pathtracer) ★ 2.1k: GPU path tracing for realistic light, reflections and depth of field, good for offline-quality renders.
+- [three-vrm](https://github.com/pixiv/three-vrm) ★ 2.3k: Drive VRM avatars in three.js for anime-style music videos.
+- [Singularity](https://github.com/MisterPrada/singularity) ★ 319: A black hole written in three.js's TSL shading language that runs on WebGPU or WebGL, made for space shots.
+- [Poseidon](https://github.com/owenyuwono/poseidon) ★ 323: A real-time GPU FFT ocean in three.js with WebGPU, made for sea shots.
 
 <a name="rules"></a>
 

@@ -37,6 +37,7 @@ meta = load("meta.json")
 rel_data = load("relations.json")
 showcase = load("showcase.json")["items"] if (DATA / "showcase.json").exists() else []
 featured_raw = load("featured.json")["styles"] if (DATA / "featured.json").exists() else {}
+channels_raw = load("channels.json")["channels"] if (DATA / "channels.json").exists() else []
 UPDATED = meta["updated"]
 SNAP = datetime.date.fromisoformat(UPDATED)
 SMAP = {s["key"]: s for s in styles}
@@ -126,8 +127,26 @@ def resolve_latest():
     return {"date": UPDATED, "batches": batches, "new": [p["repo"] for p in new[:40]], "recent": [p["repo"] for p in recent]}
 
 
+def resolve_channels():
+    """特别通道（data/channels.json）：去掉没收录的项目，空的分组和通道不显示。"""
+    out, bad = [], []
+    for ch in channels_raw:
+        groups = []
+        for g in ch["groups"]:
+            items = [it for it in g["items"] if it["repo"] in BYREPO]
+            bad += [f"{ch['key']}: {it['repo']}" for it in g["items"] if it["repo"] not in BYREPO]
+            if items:
+                groups.append({**g, "items": items})
+        if groups:
+            out.append({**ch, "groups": groups})
+    return out, bad
+
+
 FEATURED, featured_bad = resolve_featured()
 LATEST = resolve_latest()
+CHANNELS, channels_bad = resolve_channels()
+if channels_bad and "--quiet" not in sys.argv:
+    print("data/channels.json 里这些项目没收录，已跳过：" + "、".join(channels_bad), file=sys.stderr)
 if featured_bad and "--quiet" not in sys.argv:
     print("data/featured.json 里这些项目没收录或缺少对应画风标签，已跳过：" + "、".join(featured_bad), file=sys.stderr)
 
@@ -280,6 +299,21 @@ def latest_md(en=False):
     return out
 
 
+def channels_md(en=False):
+    """README 里每条特别通道一节：按分组列项目和放进通道的理由。"""
+    out = []
+    for ch in CHANNELS:
+        n = sum(len(g["items"]) for g in ch["groups"])
+        out += [f'<a name="{ch["key"]}"></a>', "", f"## ◆ {ch['en'] if en else ch['name']}", "",
+                (ch["look_en"] if en else ch["look"]) + (" " if en else "") + (f"In the web version this is a gate in the 3D carousel that opens into a tunnel of [{n} cards]({page_url(ch['key'], True)})." if en
+                                                             else f"网页版的 3D 转盘里有一扇对应的门，[点进去]({page_url(ch['key'])})是一条排着 {n} 张卡片的通道。"), ""]
+        for g in ch["groups"]:
+            out += [f"**{g['en'] if en else g['name']}**: {g['desc_en']}" if en else f"**{g['name']}**：{g['desc']}", ""]
+            out += [f"- {link(BYREPO[it['repo']], en)} ★ {fmt_stars(BYREPO[it['repo']]['stars'])}{': ' if en else '：'}{it['why_en'] if en else it['why']}" for it in g["items"]]
+            out += [""]
+    return out
+
+
 def counts():
     active = sum(1 for p in projects if status(p)[2] == "active")
     agent = sum(1 for p in projects if p.get("agent"))
@@ -374,7 +408,7 @@ def readme():
         ]), "",
         f"**[🌌 3D 画风入口]({page_url()})**<sub>（转动画风转盘，点进去看每种画风的精品）</sub> · **[🌐 网页版]({page_url('table-sec')})**<sub>（按画风筛选、搜索、排序）</sub> · **[🕸️ 关系图谱]({page_url('graph-sec')})** · **[🎨 画风索引](#index)**", "",
         " · ".join([
-            "[最新收录](#latest)", "[画风索引](#index)", "[小众画风区](#niche)", "[关系图谱](#relations)",
+            "[最新收录](#latest)", "[three.js 出片通道](#threejs)", "[画风索引](#index)", "[小众画风区](#niche)", "[关系图谱](#relations)",
             "[收录标准](#rules)", "[全部项目](#all)",
             f"[推荐项目]({REPO_URL}/issues/new/choose)",
         ]), "",
@@ -388,6 +422,7 @@ def readme():
         f"除了 {len(MAIN)} 种主流画风，还有收录小众画风的[小众画风区](#niche)（水墨山水、汉字笔顺、示波器、绘图仪、人工生命……），"
         f"其中 {agent} 个是让 Claude、Opus 等 AI 编程助手写代码出片的技能和作品，也都按画风归在各自的分类里。[关系图谱](#relations)把有关系的项目连在一起，看得出谁从谁演化而来、谁能替换谁。", "",
         *latest_md(),
+        *channels_md(),
         '<a name="rules"></a>', "",
         "## 收录标准", "",
         "- **画面必须由代码绘制或渲染。** 用视频生成、图像生成模型出画面的项目不收，用 Blender 等 3D 软件出画面的也不收。个别项目带有可选的生成功能或 Blender 选项，会在说明里注明。",
@@ -539,7 +574,7 @@ def readme_en():
         ]), "",
         f"**[🌌 3D style gateway]({page_url(en=True)})**<sub> (spin the style carousel, open a gallery of picks for each style)</sub> · **[🌐 Web version]({page_url('table-sec', True)})**<sub> (filter by style, search, sort)</sub> · **[🕸️ Relationship graph]({page_url('graph-sec', True)})** · **[🎨 Style index](#index)**", "",
         " · ".join([
-            "[Latest](#latest)", "[Style index](#index)", "[Niche styles](#niche)", "[Relationships](#relations)",
+            "[Latest](#latest)", "[three.js films](#threejs)", "[Style index](#index)", "[Niche styles](#niche)", "[Relationships](#relations)",
             "[Rules](#rules)", "[All projects](#all)",
             f"[Suggest a project]({REPO_URL}/issues/new/choose)",
         ]), "",
@@ -554,6 +589,7 @@ def readme_en():
         f"{agent} entries are skills and films where AI coding agents like Claude or Opus write the code, and they're filed by style like everything else. "
         "The [relationship graph](#relations) links related projects, so you can see what grew out of what and what can replace what.", "",
         *latest_md(en=True),
+        *channels_md(en=True),
         '<a name="rules"></a>', "",
         "## What gets listed", "",
         "- **Frames must be drawn or rendered by code.** Projects that make their pictures with video or image generation models aren't listed, and neither are ones that render through Blender or other 3D apps. A few projects have an optional generation feature or Blender option, which is noted on the entry.",
@@ -667,6 +703,7 @@ def page(standalone=True):
                .replace("__SHOWCASE__", dump(page_showcase(standalone)))
                .replace("__FEATURED__", dump(FEATURED))
                .replace("__LATEST__", dump(LATEST))
+               .replace("__CHANNELS__", dump(CHANNELS))
                .replace("__DATE__", UPDATED)
                .replace("__REPO_URL__", REPO_URL))
     # 3D 入口的脚本单独放在 site/gateway.js，生成时原样嵌进页面（最后替换，避免它被上面的占位符误伤）

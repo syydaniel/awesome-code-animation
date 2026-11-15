@@ -54,6 +54,8 @@ Every Monday an automatic "weekly candidates" issue lists projects that were fou
 
    `type` is one of: `fork`, `built_on`, `plugin`, `official`, `uses`, `data`, `alt`, `pair`, `author`.
 
+   If it is a good project for making videos with three.js, you can also add it to the three.js Film Channel in [`data/channels.json`](data/channels.json): add `{"repo": "owner/name", "why": "(Chinese)", "why_en": "Why it belongs in the channel."}` to a fitting group. The project must already be listed in `projects.json`.
+
 3. Refresh the data and rebuild the READMEs and web page:
 
    ```bash

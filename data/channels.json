@@ -1,0 +1,58 @@
+{
+  "_说明": "特别通道：按主题挑出来单独展览的项目。网页 3D 入口的主流转盘里有一扇对应的「门」，点进去是一条通道，卡片沿着通道往里排；README 里也有对应的一节。项目必须已经收录在 projects.json 里。why 写这个项目为什么放进这条通道（比项目说明更具体），why_en 是英文版。",
+  "channels": [
+    {
+      "key": "threejs",
+      "name": "three.js 出片通道",
+      "en": "three.js Film Channel",
+      "color": "#5EC8FF",
+      "look": "用 three.js 做视频的精选：把场景渲染成 MP4 的管线，让 AI 编程助手写 three.js 出片的技能和作品，还有镜头里常用的特效。",
+      "look_en": "Hand-picked projects for making videos with three.js: pipelines that render scenes to MP4, coding-agent skills and films built on three.js, and the effects you'll reach for in your shots.",
+      "query": "three.js",
+      "groups": [
+        {
+          "name": "出片管线",
+          "en": "Pipeline",
+          "desc": "把 three.js 场景变成视频",
+          "desc_en": "Turn three.js scenes into video",
+          "items": [
+            {"repo": "remotion-dev/remotion", "why": "官方的 @remotion/three 包把 three.js 和 React Three Fiber 场景放进 React 视频，逐帧渲染成 MP4。", "why_en": "Its official @remotion/three package puts three.js and React Three Fiber scenes into React videos and renders them frame by frame to MP4."},
+            {"repo": "pmndrs/react-three-fiber", "why": "用 React 组件写 three.js 场景，是和 Remotion 搭配做 3D 视频最常见的写法。", "why_en": "Write three.js scenes as React components; the most common way to make 3D videos together with Remotion."},
+            {"repo": "theatre-js/theatre", "why": "可视化时间轴：在界面里给 three.js 的镜头和物体拖关键帧，适合精确运镜。", "why_en": "A visual timeline: keyframe three.js cameras and objects in an editor, good for precise camera moves."},
+            {"repo": "mrdoob/frame.js", "why": "three.js 作者写的时间轴编辑器，按时间编排镜头和特效，做成网页 demo 短片。", "why_en": "A timeline editor by the author of three.js for sequencing shots and effects into web demos."},
+            {"repo": "mrdoob/three.js", "why": "这一切的底座：场景、材质、灯光、粒子和后期处理都在这里。", "why_en": "The foundation: scenes, materials, lights, particles and post-processing."}
+          ]
+        },
+        {
+          "name": "AI 写 three.js 出片",
+          "en": "Coding agents making three.js films",
+          "desc": "让 AI 编程助手写 three.js 代码出片的技能和作品",
+          "desc_en": "Skills and films where coding agents write the three.js code",
+          "items": [
+            {"repo": "mromidev/claude-animated-shorts", "why": "一分钟的竖屏动画故事：2D 角色走进彩色 3D 小镇，three.js 加 Remotion 渲染。", "why_en": "One-minute vertical story shorts: 2D characters in a colourful 3D town, rendered with three.js inside Remotion."},
+            {"repo": "artemnovitckii/claude-animation-skills", "why": "六个做短视频动画的技能，其中有 three.js 3D 卡通讲解和爆炸拆解图。", "why_en": "Six short-video animation skills, including three.js 3D cartoon explainers and exploded views."},
+            {"repo": "sloemo01/diorama", "why": "让 AI 编程助手搭 three.js 微缩场景，小人带关节动画，默认是像素抖动风。", "why_en": "Coding agents build three.js dioramas with jointed little characters, in a dithered pixel look by default."},
+            {"repo": "Moessif/code-video-showcase", "why": "卡点展示片技能：HTML、Canvas 和 three.js 逐帧渲染成片。", "why_en": "A beat-synced showcase video skill that renders HTML, Canvas and three.js frame by frame."},
+            {"repo": "Kianzzz/xilo-opus-video", "why": "先给三个方案和预览再逐帧渲染，three.js 是它常用的 3D 引擎之一。", "why_en": "Offers three directions with previews before rendering frame by frame; three.js is one of the 3D engines it uses."},
+            {"repo": "img2threejs/img2threejs", "why": "照着参考图用纯代码重建 three.js 模型，可以给 3D 短片做道具和角色。", "why_en": "Rebuilds three.js models from a reference image in pure code, handy for props and characters in 3D shorts."},
+            {"repo": "Leonxlnx/athenaion", "why": "Claude 用 three.js 纯代码搭出的古希腊城邦，零素材，可以当 3D 场景参考。", "why_en": "An ancient Greek city built by Claude entirely in three.js code with no assets; a good reference for 3D scenes."}
+          ]
+        },
+        {
+          "name": "镜头里的特效",
+          "en": "Looks for your shots",
+          "desc": "three.js 出片时常加的后期、粒子、光照和场景",
+          "desc_en": "Post-processing, particles, lighting and scenes for three.js shots",
+          "items": [
+            {"repo": "pmndrs/postprocessing", "why": "辉光、色差、景深、故障，three.js 出片最常用的后期库。", "why_en": "Bloom, chromatic aberration, depth of field and glitch: the go-to post-processing library for three.js videos."},
+            {"repo": "Alchemist0823/three.quarks", "why": "火焰、爆炸、魔法粒子，给镜头加 VFX。", "why_en": "Fire, explosions and magic particles: VFX for your shots."},
+            {"repo": "gkjohnson/three-gpu-pathtracer", "why": "GPU 路径追踪，让画面有真实的光照、反射和景深，适合慢慢渲染成片。", "why_en": "GPU path tracing for realistic light, reflections and depth of field, good for offline-quality renders."},
+            {"repo": "pixiv/three-vrm", "why": "在 three.js 里驱动 VRM 虚拟形象，做二次元 MV。", "why_en": "Drive VRM avatars in three.js for anime-style music videos."},
+            {"repo": "MisterPrada/singularity", "why": "用 three.js 着色语言 TSL 写的黑洞，WebGPU 和 WebGL 都能跑，适合宇宙镜头。", "why_en": "A black hole written in three.js's TSL shading language that runs on WebGPU or WebGL, made for space shots."},
+            {"repo": "owenyuwono/poseidon", "why": "GPU 实时计算的 FFT 海洋，three.js 加 WebGPU，适合海面镜头。", "why_en": "A real-time GPU FFT ocean in three.js with WebGPU, made for sea shots."}
+          ]
+        }
+      ]
+    }
+  ]
+}

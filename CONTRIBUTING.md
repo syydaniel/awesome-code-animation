@@ -53,6 +53,8 @@
 
    `type` 可选：`fork` 分叉自、`built_on` 基于、`plugin` 插件 / 扩展、`official` 官方模板 / 技能、`uses` 用它渲染、`data` 数据来源、`alt` 同类可替换、`pair` 常搭配、`author` 同一作者。
 
+   如果它是用 three.js 做视频的好项目，也可以把它加进 [`data/channels.json`](data/channels.json) 的「three.js 出片通道」：在合适的分组里加一条 `{"repo": "owner/name", "why": "为什么放进这条通道", "why_en": "..."}`。项目必须先收录在 `projects.json` 里。
+
 3. 刷新数据并重新生成 README 和网页版：
 
    ```bash
