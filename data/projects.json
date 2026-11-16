@@ -9398,5 +9398,157 @@
     "archived": false,
     "gh_desc": "A falling sand simulator in your terminal!",
     "added": "2026-11-04"
+  },
+  {
+    "repo": "Tejashmakwana/motionmaxxing",
+    "name": "motionmaxxing",
+    "tags": [
+      "mg",
+      "type"
+    ],
+    "agent": true,
+    "lang": "JavaScript（HyperFrames + GSAP）",
+    "lang_en": "JavaScript (HyperFrames + GSAP)",
+    "use": "发布片 · 产品宣传 · 动态文字",
+    "use_en": "Launch films · Product promos · Kinetic type",
+    "desc": "Agent 技能：做发布片、产品宣传和动态文字短片。先抓品牌、定一个只有这个品牌能用的点子，再按从 53 个专业镜头里逐帧量出来的节奏做动效，渲染后自己看帧、逐项过检查。",
+    "desc_en": "Agent skill for launch films, product promos, brand stings and kinetic type: it captures the brand, picks one idea only that brand could own, animates with timing rules measured frame by frame from 53 professional pieces, then checks its own render.",
+    "license": "Apache-2.0",
+    "stars": 1632,
+    "pushed_at": "2026-10-06",
+    "archived": false,
+    "gh_desc": "Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion designer.",
+    "added": "2026-11-16"
+  },
+  {
+    "repo": "kubai087/kubai-icons",
+    "name": "Kubai Icons",
+    "tags": [
+      "mg"
+    ],
+    "agent": true,
+    "lang": "JavaScript / TypeScript（SVG）",
+    "lang_en": "JavaScript / TypeScript (SVG)",
+    "use": "动画图标",
+    "use_en": "Animated icons",
+    "desc": "Agent 技能：按同一种手法画带动效的 SVG 图标，给它一个产品，它画出这个产品需要的整套图标；附 2,800 多个现成图标，React、Vue 和纯 SVG 都能用。",
+    "desc_en": "Agent skill that draws animated SVG icons in one consistent hand: give it a product and it draws the icon set that product needs. Ships with 2,800+ ready icons for React, Vue and plain SVG.",
+    "note": "图标库是 MIT 许可；技能本身用的是作者自定的 Kubai Icons License（源码可看），使用前先读条款。",
+    "note_en": "The icon library is MIT; the skill itself is under the author's own source-available Kubai Icons License, so read the terms before using it.",
+    "license": null,
+    "stars": 885,
+    "pushed_at": "2026-11-15",
+    "archived": false,
+    "gh_desc": "An agent skill that draws animated icons in one consistent style, for Claude Code, Codex and other coding agents. Comes with 2,600+ open-source icons for React, Vue and SVG, and a website to browse them.",
+    "added": "2026-11-16"
+  },
+  {
+    "repo": "JDhruv14/line-art-animation",
+    "name": "line-art-animation",
+    "tags": [
+      "hand"
+    ],
+    "agent": true,
+    "lang": "TypeScript（SVG）",
+    "lang_en": "TypeScript (SVG)",
+    "use": "线描角色 · 场景动画",
+    "use_en": "Line-art characters · Scene animation",
+    "desc": "Claude 技能加一个小型 TypeScript 库：墨线小人会走路、骑车、对点击做出反应，场景从白天过到夜晚，全部实时画在 SVG 里，附逐帧截图出视频的脚本。",
+    "desc_en": "A Claude skill plus a small TypeScript library for ink-on-paper line-art figures that walk, ride and react to clicks, in scenes that run from day to night. Everything is drawn live in SVG, with scripts for frame-by-frame video capture.",
+    "license": "MIT",
+    "stars": 872,
+    "pushed_at": "2026-11-10",
+    "archived": false,
+    "gh_desc": "A Claude skill and TypeScript library for animated line-art SVG components: ink figures that walk and react, scenes with a day/night cycle.",
+    "added": "2026-11-16"
+  },
+  {
+    "repo": "langchain-ai/design-agent",
+    "name": "Content Studio（design-agent）",
+    "name_en": "Content Studio (design-agent)",
+    "tags": [
+      "mg",
+      "data"
+    ],
+    "agent": true,
+    "lang": "JavaScript / Python（HyperFrames）",
+    "lang_en": "JavaScript / Python (HyperFrames)",
+    "use": "品牌物料 · 发布片",
+    "use_en": "Brand assets · Launch films",
+    "desc": "LangChain 开源的设计 agent：在聊天里提需求，产出符合品牌规范的静图、幻灯片、图表和动效短片；视频用 HyperFrames 搭，由代码渲染、检查和交付。",
+    "desc_en": "LangChain's open-source design agent: ask in a chat thread and get on-brand stills, decks, diagrams, charts and motion graphics back. Video is built in HyperFrames; code renders, checks and delivers.",
+    "note": "基于 Deep Agents，完整部署要接 Slack，本地可以不带 key 试用。图片生成是可选功能，需要自己的 OpenAI 或 Google key。",
+    "note_en": "Built on Deep Agents; full deployment runs in Slack, and it can be tried locally without keys. Image generation is optional and needs your own OpenAI or Google key.",
+    "license": "Apache-2.0",
+    "stars": 623,
+    "pushed_at": "2026-11-15",
+    "archived": false,
+    "gh_desc": "Open-source design agent: on-brand stills, decks, diagrams, charts and motion graphics from a chat thread, built on Deep Agents.",
+    "added": "2026-11-16"
+  },
+  {
+    "repo": "Moh4696/cinematic-skill",
+    "name": "Cinematic Skill",
+    "tags": [
+      "mg"
+    ],
+    "agent": true,
+    "lang": "Python（Skia）",
+    "lang_en": "Python (Skia)",
+    "use": "带旁白的纪录短片 · 讲解片",
+    "use_en": "Narrated documentaries · Explainers",
+    "desc": "Agent 技能：做带旁白的纪录短片。一个连续镜头扫过照片、地图和卡片，印章、划线、数字滚动卡在旁白说到的那个词上，每一帧都由 Skia 代码画出来。",
+    "desc_en": "Agent skill for narrated cinematic films: one continuous camera over photos, maps and cards, with stamps, highlighter swipes and rolling numbers landing on the exact word of the narration. Every frame is drawn by code in Skia.",
+    "note": "画面里的照片是它找来的公版图，不是生成的。",
+    "note_en": "The photos in the film are public-domain images it finds, not generated ones.",
+    "license": "MIT",
+    "stars": 550,
+    "pushed_at": "2026-11-09",
+    "archived": false,
+    "gh_desc": "Agent skill for narrated cinematic films built entirely from code: one continuous camera over photos, maps and cards, timed to the voice. Claude Code, Codex, Cursor, Gemini CLI.",
+    "added": "2026-11-16"
+  },
+  {
+    "repo": "nutllwhy/code-brand-film",
+    "name": "code-brand-film",
+    "tags": [
+      "mg"
+    ],
+    "agent": true,
+    "lang": "Python / JavaScript（HyperFrames + GSAP）",
+    "lang_en": "Python / JavaScript (HyperFrames + GSAP)",
+    "use": "15 秒品牌片",
+    "use_en": "15-second brand films",
+    "desc": "Agent 技能：用代码做 15 秒品牌宣传片。画面是一页 HTML，GSAP 时间轴驱动、HyperFrames 逐帧渲染，配乐用 Python 合成，带三道分别检查代码、摆位和成片画面的质量闸门。",
+    "desc_en": "Agent skill for 15-second brand films made in code: one HTML page driven by a GSAP timeline and rendered frame by frame with HyperFrames, an original score synthesised in Python, and three quality gates for code, layout and rendered frames.",
+    "license": "MIT",
+    "stars": 206,
+    "pushed_at": "2026-10-18",
+    "archived": false,
+    "gh_desc": "用代码生成 15 秒品牌宣传片的 Agent Skill（HyperFrames + GSAP + Python 合成配乐）",
+    "added": "2026-11-16"
+  },
+  {
+    "repo": "leodavincs/kalem",
+    "name": "Kalem",
+    "tags": [
+      "mg",
+      "hand"
+    ],
+    "agent": true,
+    "lang": "Python / JavaScript",
+    "lang_en": "Python / JavaScript",
+    "use": "分场景讲解视频",
+    "use_en": "Scene-by-scene explainers",
+    "desc": "Claude Code 技能：把视频拆成场景，按每个场景的内容挑最合适的引擎来画（Paper.js、PixiJS、HyperFrames、three.js、Manim 等），再用翻页之类的转场接起来，配上对帧的音效。",
+    "desc_en": "Claude Code skill that splits a video into scenes and picks the engine that draws each one best (Paper.js, PixiJS, HyperFrames, three.js, Manim and more), then joins them with transitions such as a page flip and adds frame-locked sound effects.",
+    "note": "说明以土耳其语为主，有英文版。其中「levha」这一路的手稿风格要用 Codex 的图像生成出底图，可以用参数关掉，蓝图风格全靠代码；其余引擎都是代码渲染。",
+    "note_en": "Docs are mainly in Turkish, with an English version. The notebook-engraving look of its plate (levha) engine uses Codex image generation for the base drawing; a flag turns that off, and the blueprint style runs entirely in code. The other engines render from code.",
+    "license": "MIT",
+    "stars": 117,
+    "pushed_at": "2026-11-06",
+    "archived": false,
+    "gh_desc": "Claude Code skill: her sahnenin kendi kalemi var. Videoyu sahnelere böler, her sahneye uygun motoru seçer (Paper.js, PixiJS, HyperFrames, Three.js, Manim).",
+    "added": "2026-11-16"
   }
 ]

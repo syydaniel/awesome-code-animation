@@ -6,7 +6,7 @@
 
 **Open-source tools for making animations and music videos with code, indexed by visual style.** [Chinese version](README.md)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![GitHub Stars](https://img.shields.io/github/stars/syydaniel/awesome-code-animation?style=social)](https://github.com/syydaniel/awesome-code-animation) ![projects](https://img.shields.io/badge/projects-478-2E49D4) ![styles](https://img.shields.io/badge/styles-17%2B21-9265D9) ![active](https://img.shields.io/badge/active-357-1E8A4B) ![updated](https://img.shields.io/badge/updated-2026--11--15-5B6273)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![GitHub Stars](https://img.shields.io/github/stars/syydaniel/awesome-code-animation?style=social)](https://github.com/syydaniel/awesome-code-animation) ![projects](https://img.shields.io/badge/projects-485-2E49D4) ![styles](https://img.shields.io/badge/styles-17%2B21-9265D9) ![active](https://img.shields.io/badge/active-364-1E8A4B) ![updated](https://img.shields.io/badge/updated-2026--11--15-5B6273)
 
 **[🌌 3D style gateway](https://syydaniel.github.io/awesome-code-animation/?lang=en)**<sub> (spin the style carousel, open a gallery of picks for each style)</sub> · **[🌐 Web version](https://syydaniel.github.io/awesome-code-animation/?lang=en#table-sec)**<sub> (filter by style, search, sort)</sub> · **[🕸️ Relationship graph](https://syydaniel.github.io/awesome-code-animation/?lang=en#graph-sec)** · **[🎨 Style index](#index)**
 
@@ -74,13 +74,15 @@ Built with: [Manim Community](https://github.com/ManimCommunity/manim) · [MathB
 
 When you want to make a music video, an explainer or an intro with code, the first question is usually which tool makes the look you have in mind. This list sorts open-source animation and video projects on GitHub by **visual style**: 3Blue1Brown-style math, flat motion graphics, psychedelic shaders, pixel art, ASCII, music visualizers, anime dance videos and more. Pick a style first, then pick a tool. One project often does several styles, so it can appear under several.
 
-Beyond the 17 main styles, the [niche section](#niche) covers ink-wash landscapes, Chinese stroke-order animation, oscilloscope art, plotters, artificial life and others. 101 entries are skills and films where AI coding agents like Claude or Opus write the code, and they're filed by style like everything else. The [relationship graph](#relations) links related projects, so you can see what grew out of what and what can replace what.
+Beyond the 17 main styles, the [niche section](#niche) covers ink-wash landscapes, Chinese stroke-order animation, oscilloscope art, plotters, artificial life and others. 108 entries are skills and films where AI coding agents like Claude or Opus write the code, and they're filed by style like everything else. The [relationship graph](#relations) links related projects, so you can see what grew out of what and what can replace what.
 
 <a name="latest"></a>
 
 ## Latest additions
 
-**2026-11-15 · 35 new:** [Graphite](https://github.com/GraphiteEditor/Graphite) · [Awesome Opus 5.5 Videos](https://github.com/yihui-dev/awesome-opus5-5-videos) · [Claude Animated Shorts](https://github.com/mromidev/claude-animated-shorts) · [Math-To-Manim](https://github.com/HarleyCoops/Math-To-Manim) · [ManimGX](https://github.com/academa-labs/manimgx) · [vgpu](https://github.com/vercel-labs/vgpu) · [AI Animation Skills](https://github.com/Unclecheng-li/AI_Animation) · [Opus 5.5 Video Prompts](https://github.com/joeseesun/opus-video-prompts) · [Procedural Terrains](https://github.com/ZyFou/ProceduralTerrains) · [snapcn](https://github.com/shadcn-labs/snapcn) · [LiquidGlass](https://github.com/ybouane/liquidglass) · [Fabric](https://github.com/Fabric-Project/Fabric) · [Diorama](https://github.com/sloemo01/diorama) · [Glass SDK Liquid Glass](https://github.com/Glass-HQ/liquid-glass) · [Remotion Bits](https://github.com/av/remotion-bits) · [manim-web](https://github.com/maloyan/manim-web) · [liquid_glass_renderer](https://github.com/whynotmake-it/flutter_liquid_glass) · [ASCII Magic](https://github.com/kailashsr38/ascii-magic-art) · [react-native-effects](https://github.com/blazejkustra/react-native-effects) · [iso-figure](https://github.com/MrBongoC/ai-iso-skill) · [lemo-wake](https://github.com/lemomo-ai/lemo-wake) · [Plasma UI](https://github.com/CruxGarden/plasma-ui) · [Infinite](https://github.com/n1m21n/Infinite) · [svg-text-animate](https://github.com/oubenruing/svg-text-animate) · [Dither Guy](https://github.com/manoelpiovesan/dither-guy) · [isometric](https://github.com/elchininet/isometric) · [Patchies](https://github.com/heypoom/patchies) · [Codixel](https://github.com/mankidev/codixel) · [HyperFrames Motion Reel](https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill) · [genart](https://github.com/camilleroux/genart-skill) · [Fractal Garden](https://github.com/trebeljahr/fractal-garden) · [Galaxy Simulation](https://github.com/N0rvel/galaxy_sim) · [persian-motion-director](https://github.com/atmirrr/persian-motion-director) · [Stroke Order Animator](https://github.com/chill-chinese/stroke-order-animator) · [Oscillody](https://github.com/Akosmo/Oscillody)
+**2026-11-16 · 7 new:** [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) · [Kubai Icons](https://github.com/kubai087/kubai-icons) · [line-art-animation](https://github.com/JDhruv14/line-art-animation) · [Content Studio (design-agent)](https://github.com/langchain-ai/design-agent) · [Cinematic Skill](https://github.com/Moh4696/cinematic-skill) · [code-brand-film](https://github.com/nutllwhy/code-brand-film) · [Kalem](https://github.com/leodavincs/kalem)
+
+**2026-11-15 · 35 new:** [Graphite](https://github.com/GraphiteEditor/Graphite) · [Awesome Opus 5.5 Videos](https://github.com/yihui-dev/awesome-opus5-5-videos) · [Claude Animated Shorts](https://github.com/mromidev/claude-animated-shorts) · [Math-To-Manim](https://github.com/HarleyCoops/Math-To-Manim) · [ManimGX](https://github.com/academa-labs/manimgx) · [vgpu](https://github.com/vercel-labs/vgpu) · [AI Animation Skills](https://github.com/Unclecheng-li/AI_Animation) · [Opus 5.5 Video Prompts](https://github.com/joeseesun/opus-video-prompts) · [Procedural Terrains](https://github.com/ZyFou/ProceduralTerrains) · [snapcn](https://github.com/shadcn-labs/snapcn) · [LiquidGlass](https://github.com/ybouane/liquidglass) · [Fabric](https://github.com/Fabric-Project/Fabric) · [Diorama](https://github.com/sloemo01/diorama) · [Glass SDK Liquid Glass](https://github.com/Glass-HQ/liquid-glass) · [Remotion Bits](https://github.com/av/remotion-bits) · [manim-web](https://github.com/maloyan/manim-web) · [liquid_glass_renderer](https://github.com/whynotmake-it/flutter_liquid_glass) · [ASCII Magic](https://github.com/kailashsr38/ascii-magic-art) · [react-native-effects](https://github.com/blazejkustra/react-native-effects) · [iso-figure](https://github.com/MrBongoC/ai-iso-skill) · [lemo-wake](https://github.com/lemomo-ai/lemo-wake) · [Plasma UI](https://github.com/CruxGarden/plasma-ui) · [Infinite](https://github.com/n1m21n/Infinite) · [svg-text-animate](https://github.com/oubenruing/svg-text-animate) · [Dither Guy](https://github.com/manoelpiovesan/dither-guy) · [isometric](https://github.com/elchininet/isometric) · [Patchies](https://github.com/heypoom/patchies) · [Codixel](https://github.com/mankidev/codixel) · [HyperFrames Motion Reel](https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill) · [genart](https://github.com/camilleroux/genart-skill) · [Fractal Garden](https://github.com/trebeljahr/fractal-garden) · [Galaxy Simulation](https://github.com/N0rvel/galaxy_sim) · [persian-motion-director](https://github.com/atmirrr/persian-motion-director) and more
 
 Flip through them as cards in the [✦ Latest window](https://syydaniel.github.io/awesome-code-animation/?lang=en#latest) on the web version, which also lists projects with recent commits.
 
@@ -153,12 +155,12 @@ Hand-picked projects for making videos with three.js: pipelines that render scen
 Click a picture to jump to that style's table. Every thumbnail is drawn with code, and the code is in [`site/template.html`](site/template.html).
 
 <table>
-<tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="Math Explainer" width="260"></a><br><b><a href="#math">Math Explainer</a></b><br><sub>25 projects</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="Motion Graphics" width="260"></a><br><b><a href="#mg">Motion Graphics</a></b><br><sub>97 projects</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="Code & Terminal Demo" width="260"></a><br><b><a href="#code">Code & Terminal Demo</a></b><br><sub>17 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.en.png" alt="Kinetic Type & Lyrics" width="260"></a><br><b><a href="#type">Kinetic Type & Lyrics</a></b><br><sub>33 projects</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="Shorts, Captions & Editing" width="260"></a><br><b><a href="#short">Shorts, Captions & Editing</a></b><br><sub>33 projects</sub></td><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="Hand-drawn & Whiteboard" width="260"></a><br><b><a href="#hand">Hand-drawn & Whiteboard</a></b><br><sub>25 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="Math Explainer" width="260"></a><br><b><a href="#math">Math Explainer</a></b><br><sub>25 projects</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="Motion Graphics" width="260"></a><br><b><a href="#mg">Motion Graphics</a></b><br><sub>103 projects</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="Code & Terminal Demo" width="260"></a><br><b><a href="#code">Code & Terminal Demo</a></b><br><sub>17 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.en.png" alt="Kinetic Type & Lyrics" width="260"></a><br><b><a href="#type">Kinetic Type & Lyrics</a></b><br><sub>34 projects</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="Shorts, Captions & Editing" width="260"></a><br><b><a href="#short">Shorts, Captions & Editing</a></b><br><sub>33 projects</sub></td><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="Hand-drawn & Whiteboard" width="260"></a><br><b><a href="#hand">Hand-drawn & Whiteboard</a></b><br><sub>27 projects</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="Generative Art" width="260"></a><br><b><a href="#gen">Generative Art</a></b><br><sub>44 projects</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="Shaders & Psychedelic" width="260"></a><br><b><a href="#shader">Shaders & Psychedelic</a></b><br><sub>103 projects</sub></td><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding & VJ" width="260"></a><br><b><a href="#live">Live Coding & VJ</a></b><br><sub>16 projects</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="Music Visualization" width="260"></a><br><b><a href="#audio">Music Visualization</a></b><br><sub>28 projects</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D" width="260"></a><br><b><a href="#3d">3D</a></b><br><sub>83 projects</sub></td><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="Anime, MMD & VRM" width="260"></a><br><b><a href="#anime">Anime, MMD & VRM</a></b><br><sub>15 projects</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="Particles & Physics" width="260"></a><br><b><a href="#particle">Particles & Physics</a></b><br><sub>28 projects</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="Glitch & Post FX" width="260"></a><br><b><a href="#glitch">Glitch & Post FX</a></b><br><sub>17 projects</sub></td><td align="center" width="33%"><a href="#pixel"><img src="assets/styles/pixel.png" alt="Pixel & Retro" width="260"></a><br><b><a href="#pixel">Pixel & Retro</a></b><br><sub>31 projects</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#ascii"><img src="assets/styles/ascii.png" alt="ASCII & Terminal" width="260"></a><br><b><a href="#ascii">ASCII & Terminal</a></b><br><sub>26 projects</sub></td><td align="center" width="33%"><a href="#data"><img src="assets/styles/data.png" alt="Data Animation" width="260"></a><br><b><a href="#data">Data Animation</a></b><br><sub>29 projects</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#ascii"><img src="assets/styles/ascii.png" alt="ASCII & Terminal" width="260"></a><br><b><a href="#ascii">ASCII & Terminal</a></b><br><sub>26 projects</sub></td><td align="center" width="33%"><a href="#data"><img src="assets/styles/data.png" alt="Data Animation" width="260"></a><br><b><a href="#data">Data Animation</a></b><br><sub>30 projects</sub></td></tr>
 </table>
 
 ### Niche styles
@@ -229,7 +231,7 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 **Picks:** [GSAP](https://github.com/greensock/GSAP) · [anime.js](https://github.com/juliangarnier/anime) · [Remotion](https://github.com/remotion-dev/remotion) · [HyperFrames](https://github.com/heygen-com/hyperframes) · [mo.js](https://github.com/mojs/mojs)
 
-97 projects, sorted by stars.
+103 projects, sorted by stars.
 
 <br clear="right">
 
@@ -285,6 +287,7 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [Animotion](https://github.com/animotionjs/animotion) | 1.8k | 🟢 Active | Svelte | Write animated presentations in Svelte, with smooth code highlight transitions and element tweens.<br><sub>Good for: Explainer videos · Talks · Also in: Code & Terminal Demo</sub> |
 | [remocn](https://github.com/Remocn/remocn) | 1.7k | 🟢 Active | React / TS | Ready-made animations, transitions, backgrounds, and scene components for Remotion.<br><sub>Good for: MV · Short videos · Also in: Shorts, Captions & Editing</sub><br><sub>⚠️ Requires Remotion; Remotion's own license terms still apply.</sub> |
 | [reanimate](https://github.com/NiazMorshed2007/reanimate) | 1.7k | 🟢 Active | JavaScript | Claude Code skill: breaks any animation down frame by frame, recreates it in code, and checks frame by frame how closely the copy matches.<br><sub>Good for: Animation recreation</sub> |
+| [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | 1.6k | 🟢 Active | JavaScript (HyperFrames + GSAP) | Agent skill for launch films, product promos, brand stings and kinetic type: it captures the brand, picks one idea only that brand could own, animates with timing rules measured frame by frame from 53 professional pieces, then checks its own render.<br><sub>Good for: Launch films · Product promos · Kinetic type · Also in: Kinetic Type & Lyrics</sub> |
 | [motion-skills](https://github.com/iart-ai/motion-skills) | 1.5k | 🟢 Active | Markdown skill | 50 AI coding agent skills: kinetic typography, data visualization, explainer videos, vertical short videos, WebGL, Manim.<br><sub>Good for: Various videos</sub> |
 | [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.5k | 🟡 Slowing | TypeScript | Small tool from the Paper team: turns a logo into a flowing liquid-metal animation.<br><sub>Good for: Logo motion · Also in: Liquid Glass, Shaders & Psychedelic</sub> |
 | [Reanimate](https://github.com/reanimate/reanimate) | 1.4k | 🟡 Slowing | Haskell | SVG animation library written in Haskell, with LaTeX formula support and a look close to 3B1B.<br><sub>Good for: Explainer videos · Also in: Math Explainer</sub><br><sub>⚠️ Niche language, small community.</sub> |
@@ -298,6 +301,7 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [Rive Runtime](https://github.com/rive-app/rive-wasm) | 1k | 🟢 Active | TypeScript | Web runtime for Rive animations: vector interactive animations with state machines, with state changes controlled from code.<br><sub>Good for: Interactive animation</sub><br><sub>⚠️ Animations are usually made in the Rive editor, which is not open source.</sub> |
 | [dotLottie Web](https://github.com/LottieFiles/dotlottie-web) | 947 | 🟢 Active | TypeScript | Official LottieFiles web player for Lottie / dotLottie, built on Rust + WASM for better performance.<br><sub>Good for: Effect assets · Web animation</sub> |
 | [Guizang Product Video](https://github.com/op7418/guizang-product-video-skill) | 943 | 🟢 Active | Python | Guizang's promo video skill: reuses a product's real components and design language to make software update promos in code, with script, music, and voiceover.<br><sub>Good for: Software promo videos</sub> |
+| [Kubai Icons](https://github.com/kubai087/kubai-icons) | 885 | 🟢 Active | JavaScript / TypeScript (SVG) | Agent skill that draws animated SVG icons in one consistent hand: give it a product and it draws the icon set that product needs. Ships with 2,800+ ready icons for React, Vue and plain SVG.<br><sub>Good for: Animated icons</sub><br><sub>⚠️ The icon library is MIT; the skill itself is under the author's own source-available Kubai Icons License, so read the terms before using it.</sub> |
 | [motion-web](https://github.com/feitangyuan/motion-web) | 859 | 🟢 Active | HTML / JS | Another skill set from the onetake author: motion-first creative websites built on vanilla three.js, Canvas, and WebGL.<br><sub>Good for: Motion websites · Also in: 3D</sub> |
 | [Rossark Motion](https://github.com/rossark0/rossark-motion-skill) | 832 | 🟢 Active | Swift / SVG | Claude Code skill: turns any SVG into a professional 60 fps animation.<br><sub>Good for: SVG animation</sub> |
 | [Claude Motion Design](https://github.com/howseen-ai/claude-motion-design) | 826 | 🟢 Active | Python | Skill for pure-code motion videos: HTML + Playwright + ffmpeg, with no AI-generated imagery.<br><sub>Good for: Motion graphics video</sub> |
@@ -308,7 +312,9 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [MotionClone](https://github.com/blixvip/MotionClone) | 672 | 🟢 Active | Python | Rebuilds a reference video as an editable HyperFrames project and compares it with the original frame by frame.<br><sub>Good for: Motion recreation</sub> |
 | [Aora Bot](https://github.com/sam70361/aora-bot) | 663 | 🟢 Active | TypeScript | A web character engine drawn in code, with 46 original characters and 44 animation states.<br><sub>Good for: Character animation · Also in: Anime, MMD & VRM</sub> |
 | [snapcn](https://github.com/shadcn-labs/snapcn) | 628 | 🟢 Active | TypeScript (Remotion) | A Remotion component registry for product demo videos: AI chat streams, terminal sessions, device frames and captions, installed with the shadcn CLI.<br><sub>Good for: Product demo videos · Also in: Shorts, Captions & Editing, Code & Terminal Demo</sub> |
+| [Content Studio (design-agent)](https://github.com/langchain-ai/design-agent) | 623 | 🟢 Active | JavaScript / Python (HyperFrames) | LangChain's open-source design agent: ask in a chat thread and get on-brand stills, decks, diagrams, charts and motion graphics back. Video is built in HyperFrames; code renders, checks and delivers.<br><sub>Good for: Brand assets · Launch films · Also in: Data Animation</sub><br><sub>⚠️ Built on Deep Agents; full deployment runs in Slack, and it can be tried locally without keys. Image generation is optional and needs your own OpenAI or Google key.</sub> |
 | [ff-tracking](https://github.com/mrsarac/ff-tracking) | 618 | 🟢 Active | Rust | Short film where a virtual camera films an AI agent's screen and tracks every glyph. Uses fframes two-pass rendering and SkSL shaders; the sound effects are also synthesized in code.<br><sub>Good for: Motion shorts · Also in: Glitch & Post FX</sub> |
+| [Cinematic Skill](https://github.com/Moh4696/cinematic-skill) | 550 | 🟢 Active | Python (Skia) | Agent skill for narrated cinematic films: one continuous camera over photos, maps and cards, with stamps, highlighter swipes and rolling numbers landing on the exact word of the narration. Every frame is drawn by code in Skia.<br><sub>Good for: Narrated documentaries · Explainers</sub><br><sub>⚠️ The photos in the film are public-domain images it finds, not generated ones.</sub> |
 | [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 523 | 🟢 Active | TypeScript | Fast programmatic video engine made for AI coding agents.<br><sub>Good for: Batch video rendering · Also in: Shorts, Captions & Editing</sub><br><sub>⚠️ PolyForm Small Business license: free for individuals and small companies; larger companies need a commercial license.</sub> |
 | [Remotion Bits](https://github.com/av/remotion-bits) | 517 | 🟢 Active | TypeScript (Remotion) | Ready-made animation components for Remotion: text effects, gradient transitions, particles, 3D scenes, charts and more; pull in only what you need.<br><sub>Good for: MG components · Short videos · Also in: Kinetic Type & Lyrics, Particles & Physics</sub><br><sub>⚠️ Not affiliated with the Remotion team.</sub> |
 | [Opus Video Skills](https://github.com/tuzhechen2005/opus-video-skills) | 501 | 🟢 Active | JavaScript | Video-making skills for Claude Opus, where every frame and every note is generated in code.<br><sub>Good for: Short films · MV · Also in: Music Visualization</sub> |
@@ -324,11 +330,13 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [fy-code-animation](https://github.com/Akillll-DuoHe/fy-code-animation) | 350 | 🟢 Active | TypeScript | Turns Chinese copy, style prompts, and sound into coherent code animation (Remotion / Canvas / HTML).<br><sub>Good for: Explainer animation</sub> |
 | [html-anime](https://github.com/blixvip/html-anime) | 269 | 🟢 Active | JavaScript | Turns a scene description into a storyboard sheet, then has a coding agent draw the whole film in HTML. No video model is called.<br><sub>Good for: Animated shorts · Also in: Anime, MMD & VRM</sub> |
 | [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 207 | 🟢 Active | HTML | 74 animated HTML explainer boards (charts, diagrams, flows) for YouTube explainer videos.<br><sub>Good for: Explainer video assets · Also in: Data Animation</sub> |
+| [code-brand-film](https://github.com/nutllwhy/code-brand-film) | 206 | 🟢 Active | Python / JavaScript (HyperFrames + GSAP) | Agent skill for 15-second brand films made in code: one HTML page driven by a GSAP timeline and rendered frame by frame with HyperFrames, an original score synthesised in Python, and three quality gates for code, layout and rendered frames.<br><sub>Good for: 15-second brand films</sub> |
 | [RuiC Motion Reel](https://github.com/HRuiCcc/RuiC-motion-reel) | 200 | 🟢 Active | Python | One sentence generates a motion promo film, with length computed from BPM and bars; standard promos use a Remotion template.<br><sub>Good for: Promo videos</sub> |
 | [Vibe Knowledge Shorts](https://github.com/xiazhuo123456789/vibe-knowledge-video) | 192 | 🟢 Active | Python | Generates cinematic knowledge short videos in pure code, with bilingual captions, synthesized music, and recreated historical documents.<br><sub>Good for: Knowledge shorts · Also in: Kinetic Type & Lyrics</sub> |
 | [HyperFrames Motion Reel](https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill) | 186 | 🟢 Active | HTML / GSAP | A Claude Code skill that turns a one-line theme into a beat-synced motion-graphics reel with bold type, morphing transitions, particles and camera moves, rendered with HyperFrames.<br><sub>Good for: Showreels · Beat-synced MG · Also in: Kinetic Type & Lyrics</sub> |
 | [BB-Video](https://github.com/BubbleBrainBB/BB-Video) | 182 | 🟢 Active | JavaScript | Skill for making videos in pure code: narrated explainers and product promos in 32 visual styles.<br><sub>Good for: Explainers · Promo videos · Also in: 3D</sub><br><sub>⚠️ 3D mascots can optionally be made in Blender; without Blender it falls back to three.js.</sub> |
 | [persian-motion-director](https://github.com/atmirrr/persian-motion-director) | 152 | 🟢 Active | JavaScript (Remotion) | A Claude skill for Persian kinetic typography and motion films: per-letter and per-dot animation that keeps letters joined, with the music locked first and cuts on the beat.<br><sub>Good for: Persian kinetic type · Also in: Kinetic Type & Lyrics</sub><br><sub>⚠️ Code is MIT; ships the Vazirmatn font (OFL).</sub> |
+| [Kalem](https://github.com/leodavincs/kalem) | 117 | 🟢 Active | Python / JavaScript | Claude Code skill that splits a video into scenes and picks the engine that draws each one best (Paper.js, PixiJS, HyperFrames, three.js, Manim and more), then joins them with transitions such as a page flip and adds frame-locked sound effects.<br><sub>Good for: Scene-by-scene explainers · Also in: Hand-drawn & Whiteboard</sub><br><sub>⚠️ Docs are mainly in Turkish, with an English version. The notebook-engraving look of its plate (levha) engine uses Codex image generation for the base drawing; a flag turns that off, and the blueprint style runs entirely in code. The other engines render from code.</sub> |
 | [DeepSeek Opus Motion](https://github.com/8533502-dev/deepseek-opus-motion-skill) | 81 | 🟢 Active | TypeScript | Gets DeepSeek to make Remotion motion videos close to Claude Opus quality using the same prompts.<br><sub>Good for: Motion videos</sub> |
 | [sy-style-100](https://github.com/xiaoxiong20xx-code/sy-style-100) | 79 | 🟢 Active | HTML | Made by a Chinese developer: 100 videos where every frame is computed by code. 20 styles plus 60 industry ads, usable commercially.<br><sub>Good for: Style sample clips</sub> |
 | [Knowledge Explainer](https://github.com/znyupup/knowledge-explainer-skill) | 67 | 🟡 Slowing | JavaScript | Automatically turns a Markdown script into an explainer animation video, rendered with Remotion.<br><sub>Good for: Explainer animation</sub> |
@@ -381,7 +389,7 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 **Picks:** [Typed.js](https://github.com/mattboldt/typed.js) · [Splitting](https://github.com/shshaw/Splitting) · [Coldtype](https://github.com/coldtype/coldtype) · [P(doom) MV (mexicat version)](https://github.com/mexicat/pdoom-video) · [AMLL](https://github.com/amll-dev/applemusic-like-lyrics)
 
-33 projects, sorted by stars.
+34 projects, sorted by stars.
 
 <br clear="right">
 
@@ -406,6 +414,7 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [Bang Motion](https://github.com/bangtutorial/bang-motion) | 2.2k | 🟢 Active | HTML | Browser motion graphics skill: intros, promos, transitions, and kinetic typography, in five styles.<br><sub>Good for: Intros · Promo videos · Also in: Motion Graphics</sub><br><sub>⚠️ The optional After Effects cartoon explainer goes through a Higgsfield bridge; the default workflow is code animation in the browser.</sub> |
 | [AMLL](https://github.com/amll-dev/applemusic-like-lyrics) | 2.2k | 🟢 Active | React / Vue | Apple Music-style lyrics component built by a Chinese developer: word-by-word highlighting, springy scrolling, fluid background.<br><sub>Good for: Lyric MV · Players · Also in: Music Visualization</sub><br><sub>⚠️ AGPL-3.0: if used in a network service offered to others, you must publish your modified source.</sub> |
 | [Splitting](https://github.com/shshaw/Splitting) | 1.8k | ⚪ Dormant | JavaScript | Splits text into characters or words and adds CSS variables, making per-letter animation easy.<br><sub>Good for: Web motion</sub> |
+| [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | 1.6k | 🟢 Active | JavaScript (HyperFrames + GSAP) | Agent skill for launch films, product promos, brand stings and kinetic type: it captures the brand, picks one idea only that brand could own, animates with timing rules measured frame by frame from 53 professional pieces, then checks its own render.<br><sub>Good for: Launch films · Product promos · Kinetic type · Also in: Motion Graphics</sub> |
 | [VFX-JS](https://github.com/fand/vfx-js) | 1.2k | 🟢 Active | TypeScript | Add WebGL effects to images, video, and text on web pages: glitch, RGB shift, distortion, and more.<br><sub>Good for: Web effects · MV · Also in: Glitch & Post FX</sub> |
 | [world.execute(me) Lyric MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 550 | 🟢 Active | JavaScript | Fan-made lyric MV that plays the lyrics as a chat with Claude, rendered frame by frame from code at 4K60.<br><sub>Good for: Lyric MV · Also in: Anime, MMD & VRM</sub> |
 | [Remotion Bits](https://github.com/av/remotion-bits) | 517 | 🟢 Active | TypeScript (Remotion) | Ready-made animation components for Remotion: text effects, gradient transitions, particles, 3D scenes, charts and more; pull in only what you need.<br><sub>Good for: MG components · Short videos · Also in: Motion Graphics, Particles & Physics</sub><br><sub>⚠️ Not affiliated with the Remotion team.</sub> |
@@ -485,7 +494,7 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 **Picks:** [Rough.js](https://github.com/rough-stuff/rough) · [p5.brush](https://github.com/acamposuribe/p5.brush) · [Vivus](https://github.com/maxwellito/vivus) · [Excalidraw Animate](https://github.com/dai-shi/excalidraw-animate) · [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion)
 
-25 projects, sorted by stars.
+27 projects, sorted by stars.
 
 <br clear="right">
 
@@ -507,6 +516,7 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [p5.brush](https://github.com/acamposuribe/p5.brush) | 1.4k | 🟢 Active | JavaScript | Adds natural brushes, watercolor fills, and hatching to p5.js for hand-drawn and watercolor textures.<br><sub>Good for: Generative art · MV · Also in: Generative Art</sub> |
 | [spectral.js](https://github.com/rvanwijnen/spectral.js) | 1.3k | 🟡 Slowing | JavaScript | Mixes colors the way real paint does (Kubelka-Munk), so blue plus yellow gives green, not gray. For watercolor and oil-paint looks.<br><sub>Good for: Paint mixing</sub> |
 | [Opus 5.5 Video Prompts](https://github.com/joeseesun/opus-video-prompts) | 1.1k | 🟢 Active | Prompts / HTML | A Chinese roundup of Opus 5.5 code-rendered videos: 18 full prompts and 54 public cases, including line-art animation, science explainers, launch films and lyric MVs.<br><sub>Good for: Prompt collection · Explainers · MV · Also in: Motion Graphics, Shorts, Captions & Editing</sub><br><sub>⚠️ A few cases in the overview use Seedance, Runway or Blender, and the table says so; the featured prompts are all code-rendered.</sub> |
+| [line-art-animation](https://github.com/JDhruv14/line-art-animation) | 872 | 🟢 Active | TypeScript (SVG) | A Claude skill plus a small TypeScript library for ink-on-paper line-art figures that walk, ride and react to clicks, in scenes that run from day to night. Everything is drawn live in SVG, with scripts for frame-by-frame video capture.<br><sub>Good for: Line-art characters · Scene animation</sub> |
 | [Pintr](https://github.com/javierbyte/pintr) | 843 | 🟢 Active | TypeScript | Turns photos into single-line illustrations drawn in one continuous stroke.<br><sub>Good for: Single-stroke drawing · Also in: Plotter & Line Art</sub> |
 | [Whiteboard Teacher Video](https://github.com/liangdabiao/whiteboard-teacher-video) | 550 | 🟢 Active | Python | Made by a Chinese developer: turns an explainer script into a hand-drawn whiteboard video. Shapes are drawn stroke by stroke and text is written character by character, with zero image-generation cost.<br><sub>Good for: Knowledge shorts</sub> |
 | [svg-text-animate](https://github.com/oubenruing/svg-text-animate) | 280 | 🟢 Active | JavaScript | Turns text in any font into an SVG stroke animation in the browser, written out stroke by stroke.<br><sub>Good for: Text stroke animation · Also in: Kinetic Type & Lyrics</sub> |
@@ -514,6 +524,7 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [Claude Drawing Skill](https://github.com/cloveric/claude-drawing-skill) | 247 | 🟢 Active | Python | Claude paints stroke by stroke with code, in 77 styles including ink wash, oil painting, clay, cyanotype, stained glass, and Jiangnan gardens, with no image generation model.<br><sub>Good for: Illustration · Ink wash · Also in: Ink & Watercolor</sub> |
 | [Claude MV Skill](https://github.com/Joker-chichi/claude-mv-skill) | 230 | 🟢 Active | Skill | Teaches Claude to make hand-painted animation and lyric MVs: storyboard, animation, review and lyric sync, with all visuals generated procedurally.<br><sub>Good for: Hand-drawn MV · Also in: Kinetic Type & Lyrics</sub> |
 | [Dashi Style Explainers](https://github.com/chuspeeism/dashi-animationstyle) | 198 | 🟢 Active | HTML | By a Chinese developer: turns Chinese talking-head knowledge scripts into explainer animations in 7 styles. Claude writes HTML / Canvas code to draw each frame.<br><sub>Good for: Explainers</sub> |
+| [Kalem](https://github.com/leodavincs/kalem) | 117 | 🟢 Active | Python / JavaScript | Claude Code skill that splits a video into scenes and picks the engine that draws each one best (Paper.js, PixiJS, HyperFrames, three.js, Manim and more), then joins them with transitions such as a page flip and adds frame-locked sound effects.<br><sub>Good for: Scene-by-scene explainers · Also in: Motion Graphics</sub><br><sub>⚠️ Docs are mainly in Turkish, with an English version. The notebook-engraving look of its plate (levha) engine uses Codex image generation for the base drawing; a flag turns that off, and the blueprint style runs entirely in code. The other engines render from code.</sub> |
 | [Watercolor Playground](https://github.com/msurguy/watercolor-playground) | 106 | 🟢 Active | TypeScript | Realistic watercolor simulation: paint bleeds, settles, and dries on paper.<br><sub>Good for: Watercolor painting · Also in: Ink & Watercolor</sub> |
 | [wet-paint-flow](https://github.com/simonxxooxxoo/wet-paint-flow) | 67 | 🟢 Active | three.js | Real-time three.js flow-field painter that draws Bezier strokes with a wet, thick-paint look.<br><sub>Good for: Flow field drawing · Also in: Flow & Wind Fields</sub> |
 
@@ -1110,7 +1121,7 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 
 **Picks:** [D3](https://github.com/d3/d3) · [Apache ECharts](https://github.com/apache/echarts) · [Gource](https://github.com/acaudwell/Gource) · [Vizzu](https://github.com/vizzuhq/vizzu-lib) · [deck.gl](https://github.com/visgl/deck.gl)
 
-29 projects, sorted by stars.
+30 projects, sorted by stars.
 
 <br clear="right">
 
@@ -1143,6 +1154,7 @@ Click a picture to jump to that style's table. Every thumbnail is drawn with cod
 | [audioMotion](https://github.com/hvianna/audioMotion-analyzer) | 975 | 🟢 Active | JavaScript | High-resolution real-time spectrum analyzer with adjustable bar, radial, and other styles.<br><sub>Good for: Music visualizer · Also in: Music Visualization</sub><br><sub>⚠️ AGPL-3.0: if used in a network service offered to others, you must publish your modified source.</sub> |
 | [party-mode](https://github.com/preziotte/party-mode) | 808 | 🟢 Active | JavaScript | Experimental D3-based music visualizer with several rhythmic geometric patterns.<br><sub>Good for: Music visualizer · Also in: Music Visualization</sub> |
 | [drawsvg](https://github.com/cduck/drawsvg) | 697 | 🟢 Active | Python | Generate SVG graphics and animations from Python, with interactive preview in Jupyter.<br><sub>Good for: SVG animation · Also in: Motion Graphics</sub> |
+| [Content Studio (design-agent)](https://github.com/langchain-ai/design-agent) | 623 | 🟢 Active | JavaScript / Python (HyperFrames) | LangChain's open-source design agent: ask in a chat thread and get on-brand stills, decks, diagrams, charts and motion graphics back. Video is built in HyperFrames; code renders, checks and delivers.<br><sub>Good for: Brand assets · Launch films · Also in: Motion Graphics</sub><br><sub>⚠️ Built on Deep Agents; full deployment runs in Slack, and it can be tried locally without keys. Image generation is optional and needs your own OpenAI or Google key.</sub> |
 | [manim-web](https://github.com/maloyan/manim-web) | 515 | 🟢 Active | TypeScript | A TypeScript port of 3Blue1Brown's Manim that renders in a browser canvas, plus molecular, chemistry, biology and map modules.<br><sub>Good for: Math animation · Web · Also in: Math Explainer</sub> |
 | [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 207 | 🟢 Active | HTML | 74 animated HTML explainer boards (charts, diagrams, flows) for YouTube explainer videos.<br><sub>Good for: Explainer video assets · Also in: Motion Graphics</sub> |
 
@@ -1735,7 +1747,7 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 
 <sub>Click the image for the [interactive graph](https://syydaniel.github.io/awesome-code-animation/?lang=en#graph-sec). Arrows point from a source to what grew out of it, and dotted lines mean similar, often paired, or same author. You can drag, zoom, switch to the Family tree card view, and click a project to see its full lineage.</sub>
 
-256 relationships. Looking to switch tools? See Alternative. Want more features? See Plugin / extension and Built on.
+264 relationships. Looking to switch tools? See Alternative. Want more features? See Plugin / extension and Built on.
 
 ### Forked from
 
@@ -1869,6 +1881,14 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [Patchies](https://github.com/heypoom/patchies) | Renders with | [Hydra](https://github.com/hydra-synth/hydra) | Ships Hydra nodes for video synthesis |
 | [Diorama](https://github.com/sloemo01/diorama) | Renders with | [three.js](https://github.com/mrdoob/three.js) | Scenes are built and rendered with three.js |
 | [genart](https://github.com/camilleroux/genart-skill) | Renders with | [p5.js](https://github.com/processing/p5.js) | Teaches Claude generative art with p5.js, Canvas, three.js and more |
+| [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | Renders with | [HyperFrames](https://github.com/heygen-com/hyperframes) | Renders frame by frame with HyperFrames |
+| [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | Renders with | [GSAP](https://github.com/greensock/GSAP) | Motion runs on GSAP timelines |
+| [Content Studio (design-agent)](https://github.com/langchain-ai/design-agent) | Renders with | [HyperFrames](https://github.com/heygen-com/hyperframes) | Builds its video in HyperFrames |
+| [code-brand-film](https://github.com/nutllwhy/code-brand-film) | Renders with | [HyperFrames](https://github.com/heygen-com/hyperframes) | Rendered frame by frame with HyperFrames |
+| [code-brand-film](https://github.com/nutllwhy/code-brand-film) | Renders with | [GSAP](https://github.com/greensock/GSAP) | A paused GSAP timeline drives the picture |
+| [Kalem](https://github.com/leodavincs/kalem) | Renders with | [Paper.js](https://github.com/paperjs/paper.js) | Paper.js draws the self-drawing line and sketch scenes |
+| [Kalem](https://github.com/leodavincs/kalem) | Renders with | [Manim Community](https://github.com/ManimCommunity/manim) | One of the engines it can pick |
+| [Kalem](https://github.com/leodavincs/kalem) | Renders with | [three.js](https://github.com/mrdoob/three.js) | One of the engines it can pick |
 
 ### Data source
 
@@ -2061,7 +2081,7 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 ## All projects
 
 <details>
-<summary>Show all 478 projects, sorted by stars</summary>
+<summary>Show all 485 projects, sorted by stars</summary>
 
 | Project | Stars | Styles | Status |
 | --- | ---: | --- | :---: |
@@ -2278,6 +2298,7 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) | 1.7k | [Shaders & Psychedelic](#shader), [Anime, MMD & VRM](#anime) | 🟢 |
 | [Meyda](https://github.com/meyda/meyda) | 1.7k | [Music Visualization](#audio) | ⚪ |
 | [reanimate](https://github.com/NiazMorshed2007/reanimate) | 1.7k | [Motion Graphics](#mg) | 🟢 |
+| [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | 1.6k | [Motion Graphics](#mg), [Kinetic Type & Lyrics](#type) | 🟢 |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | [Dither & 1-bit](#dither), [Shaders & Psychedelic](#shader), [3D](#3d) | 🟡 |
 | [Unity Toon Shader](https://github.com/Unity-Technologies/com.unity.toonshader) | 1.6k | [Shaders & Psychedelic](#shader), [Anime, MMD & VRM](#anime) | 🟢 |
 | [MilkDrop 3](https://github.com/milkdrop2077/MilkDrop3) | 1.6k | [Music Visualization](#audio), [Shaders & Psychedelic](#shader) | 🟢 |
@@ -2349,7 +2370,9 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [Generative Manim](https://github.com/marcelo-earth/generative-manim) | 943 | [Math Explainer](#math) | 🟢 |
 | [Guizang Product Video](https://github.com/op7418/guizang-product-video-skill) | 943 | [Motion Graphics](#mg) | 🟢 |
 | [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 923 | [Procedural Generation](#procgen), [3D](#3d) | 🟢 |
+| [Kubai Icons](https://github.com/kubai087/kubai-icons) | 885 | [Motion Graphics](#mg) | 🟢 |
 | [pixelsort](https://github.com/satyarth/pixelsort) | 876 | [Glitch & Post FX](#glitch) | 🟢 |
+| [line-art-animation](https://github.com/JDhruv14/line-art-animation) | 872 | [Hand-drawn & Whiteboard](#hand) | 🟢 |
 | [motion-web](https://github.com/feitangyuan/motion-web) | 859 | [3D](#3d), [Motion Graphics](#mg) | 🟢 |
 | [adu-motion-video](https://github.com/adunext/adu-motion-video) | 852 | [Shorts, Captions & Editing](#short) | 🟢 |
 | [Liquid Glass Widgets](https://github.com/sdegenaar/liquid_glass_widgets) | 848 | [Liquid Glass](#liquid) | 🟢 |
@@ -2389,6 +2412,7 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [XaoS](https://github.com/xaos-project/XaoS) | 628 | [Fractals & Chaos](#fractal) | 🟢 |
 | [snapcn](https://github.com/shadcn-labs/snapcn) | 628 | [Shorts, Captions & Editing](#short), [Motion Graphics](#mg), [Code & Terminal Demo](#code) | 🟢 |
 | [LiquidGlass](https://github.com/ybouane/liquidglass) | 625 | [Liquid Glass](#liquid), [Shaders & Psychedelic](#shader) | 🟢 |
+| [Content Studio (design-agent)](https://github.com/langchain-ai/design-agent) | 623 | [Motion Graphics](#mg), [Data Animation](#data) | 🟢 |
 | [ff-tracking](https://github.com/mrsarac/ff-tracking) | 618 | [Motion Graphics](#mg), [Glitch & Post FX](#glitch) | 🟢 |
 | [vsketch](https://github.com/abey79/vsketch) | 614 | [Plotter & Line Art](#plotter), [Generative Art](#gen) | 🟢 |
 | [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 613 | [Shaders & Psychedelic](#shader), [3D](#3d), [Particles & Physics](#particle) | 🟡 |
@@ -2402,6 +2426,7 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [LiveCanvas](https://github.com/pengchujin/livecanvas) | 556 | [Shorts, Captions & Editing](#short) | 🟢 |
 | [world.execute(me) Lyric MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 550 | [Kinetic Type & Lyrics](#type), [Anime, MMD & VRM](#anime) | 🟢 |
 | [Whiteboard Teacher Video](https://github.com/liangdabiao/whiteboard-teacher-video) | 550 | [Hand-drawn & Whiteboard](#hand) | 🟢 |
+| [Cinematic Skill](https://github.com/Moh4696/cinematic-skill) | 550 | [Motion Graphics](#mg) | 🟢 |
 | [Processing](https://github.com/processing/processing4) | 547 | [Generative Art](#gen) | 🟢 |
 | [play.core](https://github.com/ertdfgcvb/play.core) | 544 | [ASCII & Terminal](#ascii), [Generative Art](#gen) | 🟡 |
 | [Diorama](https://github.com/sloemo01/diorama) | 535 | [3D](#3d), [Pixel & Retro](#pixel), [Dither & 1-bit](#dither) | 🟢 |
@@ -2492,6 +2517,7 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) | 219 | [Plotter & Line Art](#plotter) | 🟢 |
 | [Patchies](https://github.com/heypoom/patchies) | 214 | [Live Coding & VJ](#live), [Generative Art](#gen) | 🟢 |
 | [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 207 | [Data Animation](#data), [Motion Graphics](#mg) | 🟢 |
+| [code-brand-film](https://github.com/nutllwhy/code-brand-film) | 206 | [Motion Graphics](#mg) | 🟢 |
 | [manim-skill](https://github.com/Yusuke710/manim-skill) | 204 | [Math Explainer](#math) | 🟢 |
 | [RuiC Motion Reel](https://github.com/HRuiCcc/RuiC-motion-reel) | 200 | [Motion Graphics](#mg) | 🟢 |
 | [Papercraft World](https://github.com/andrewwoan/aimee-xus-papercraft-world) | 199 | [Origami & Papercraft](#origami), [3D](#3d) | 🟢 |
@@ -2514,6 +2540,7 @@ Fewer people use these, but you'd recognize them anywhere. The bar is lower here
 | [Oriedita](https://github.com/oriedita/oriedita) | 136 | [Origami & Papercraft](#origami) | 🟢 |
 | [kami](https://github.com/maxwase/kami) | 135 | [Origami & Papercraft](#origami) | 🟢 |
 | [map-motion](https://github.com/SpaceZephyr/map-motion) | 124 | [Map & Route](#map) | 🟢 |
+| [Kalem](https://github.com/leodavincs/kalem) | 117 | [Motion Graphics](#mg), [Hand-drawn & Whiteboard](#hand) | 🟢 |
 | [Black Hole](https://github.com/ibra-kdbra/black-hole) | 113 | [Space & Stars](#space), [Shaders & Psychedelic](#shader) | 🟢 |
 | [Stroke Order Animator](https://github.com/chill-chinese/stroke-order-animator) | 112 | [Handwriting & Strokes](#hanzi) | 🟡 |
 | [Watercolor Playground](https://github.com/msurguy/watercolor-playground) | 106 | [Ink & Watercolor](#ink), [Hand-drawn & Whiteboard](#hand) | 🟢 |

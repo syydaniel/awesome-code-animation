@@ -1830,6 +1830,62 @@
       "to": "processing/p5.js",
       "note": "教 Claude 用 p5.js、Canvas、three.js 等写生成艺术",
       "note_en": "Teaches Claude generative art with p5.js, Canvas, three.js and more"
+    },
+    {
+      "from": "Tejashmakwana/motionmaxxing",
+      "type": "uses",
+      "to": "heygen-com/hyperframes",
+      "note": "用 HyperFrames 逐帧渲染",
+      "note_en": "Renders frame by frame with HyperFrames"
+    },
+    {
+      "from": "Tejashmakwana/motionmaxxing",
+      "type": "uses",
+      "to": "greensock/GSAP",
+      "note": "动效用 GSAP 时间轴",
+      "note_en": "Motion runs on GSAP timelines"
+    },
+    {
+      "from": "langchain-ai/design-agent",
+      "type": "uses",
+      "to": "heygen-com/hyperframes",
+      "note": "视频部分用 HyperFrames 搭",
+      "note_en": "Builds its video in HyperFrames"
+    },
+    {
+      "from": "nutllwhy/code-brand-film",
+      "type": "uses",
+      "to": "heygen-com/hyperframes",
+      "note": "HyperFrames 逐帧渲染",
+      "note_en": "Rendered frame by frame with HyperFrames"
+    },
+    {
+      "from": "nutllwhy/code-brand-film",
+      "type": "uses",
+      "to": "greensock/GSAP",
+      "note": "暂停状态的 GSAP 时间轴驱动画面",
+      "note_en": "A paused GSAP timeline drives the picture"
+    },
+    {
+      "from": "leodavincs/kalem",
+      "type": "uses",
+      "to": "paperjs/paper.js",
+      "note": "自己画出来的线条和草图场景用 Paper.js",
+      "note_en": "Paper.js draws the self-drawing line and sketch scenes"
+    },
+    {
+      "from": "leodavincs/kalem",
+      "type": "uses",
+      "to": "ManimCommunity/manim",
+      "note": "可选引擎之一",
+      "note_en": "One of the engines it can pick"
+    },
+    {
+      "from": "leodavincs/kalem",
+      "type": "uses",
+      "to": "mrdoob/three.js",
+      "note": "可选引擎之一",
+      "note_en": "One of the engines it can pick"
     }
   ]
 }

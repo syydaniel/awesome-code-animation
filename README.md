@@ -8,7 +8,7 @@
 
 A curated list of open-source tools for making animations and music videos **with code**, indexed by visual style. [English](README.en.md)
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![GitHub Stars](https://img.shields.io/github/stars/syydaniel/awesome-code-animation?style=social)](https://github.com/syydaniel/awesome-code-animation) ![项目](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE-478-2E49D4) ![画风](https://img.shields.io/badge/%E7%94%BB%E9%A3%8E-17%2B21-9265D9) ![活跃项目](https://img.shields.io/badge/%E6%B4%BB%E8%B7%83%E9%A1%B9%E7%9B%AE-357-1E8A4B) ![数据更新](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--11--15-5B6273)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![GitHub Stars](https://img.shields.io/github/stars/syydaniel/awesome-code-animation?style=social)](https://github.com/syydaniel/awesome-code-animation) ![项目](https://img.shields.io/badge/%E9%A1%B9%E7%9B%AE-485-2E49D4) ![画风](https://img.shields.io/badge/%E7%94%BB%E9%A3%8E-17%2B21-9265D9) ![活跃项目](https://img.shields.io/badge/%E6%B4%BB%E8%B7%83%E9%A1%B9%E7%9B%AE-364-1E8A4B) ![数据更新](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0-2026--11--15-5B6273)
 
 **[🌌 3D 画风入口](https://syydaniel.github.io/awesome-code-animation/?lang=zh)**<sub>（转动画风转盘，点进去看每种画风的精品）</sub> · **[🌐 网页版](https://syydaniel.github.io/awesome-code-animation/?lang=zh#table-sec)**<sub>（按画风筛选、搜索、排序）</sub> · **[🕸️ 关系图谱](https://syydaniel.github.io/awesome-code-animation/?lang=zh#graph-sec)** · **[🎨 画风索引](#index)**
 
@@ -76,13 +76,15 @@ A curated list of open-source tools for making animations and music videos **wit
 
 想用代码做一支 MV、一段讲解动画、一个片头，第一个问题往往是「我想要的那种画风，该用什么工具做」。这里把 GitHub 上用代码做动画、做视频的开源项目按**画风**归类：3B1B 式数学讲解、扁平 MG、着色器迷幻光影、像素复古、ASCII 终端、音乐可视化、二次元 MMD……先挑画风，再挑工具。一个项目常能做好几种画风，所以会同时出现在几个画风里。
 
-除了 17 种主流画风，还有收录小众画风的[小众画风区](#niche)（水墨山水、汉字笔顺、示波器、绘图仪、人工生命……），其中 101 个是让 Claude、Opus 等 AI 编程助手写代码出片的技能和作品，也都按画风归在各自的分类里。[关系图谱](#relations)把有关系的项目连在一起，看得出谁从谁演化而来、谁能替换谁。
+除了 17 种主流画风，还有收录小众画风的[小众画风区](#niche)（水墨山水、汉字笔顺、示波器、绘图仪、人工生命……），其中 108 个是让 Claude、Opus 等 AI 编程助手写代码出片的技能和作品，也都按画风归在各自的分类里。[关系图谱](#relations)把有关系的项目连在一起，看得出谁从谁演化而来、谁能替换谁。
 
 <a name="latest"></a>
 
 ## 最新收录
 
-**2026-11-15 新收录 35 个：**[Graphite](https://github.com/GraphiteEditor/Graphite) · [Awesome Opus 5.5 Videos](https://github.com/yihui-dev/awesome-opus5-5-videos) · [Claude Animated Shorts](https://github.com/mromidev/claude-animated-shorts) · [Math-To-Manim](https://github.com/HarleyCoops/Math-To-Manim) · [ManimGX](https://github.com/academa-labs/manimgx) · [vgpu](https://github.com/vercel-labs/vgpu) · [AI Animation Skills](https://github.com/Unclecheng-li/AI_Animation) · [Opus 5.5 视频提示词](https://github.com/joeseesun/opus-video-prompts) · [Procedural Terrains](https://github.com/ZyFou/ProceduralTerrains) · [snapcn](https://github.com/shadcn-labs/snapcn) · [LiquidGlass](https://github.com/ybouane/liquidglass) · [Fabric](https://github.com/Fabric-Project/Fabric) · [Diorama](https://github.com/sloemo01/diorama) · [Glass SDK Liquid Glass](https://github.com/Glass-HQ/liquid-glass) · [Remotion Bits](https://github.com/av/remotion-bits) · [manim-web](https://github.com/maloyan/manim-web) · [liquid_glass_renderer](https://github.com/whynotmake-it/flutter_liquid_glass) · [ASCII Magic](https://github.com/kailashsr38/ascii-magic-art) · [react-native-effects](https://github.com/blazejkustra/react-native-effects) · [iso-figure](https://github.com/MrBongoC/ai-iso-skill) · [lemo-wake](https://github.com/lemomo-ai/lemo-wake) · [Plasma UI](https://github.com/CruxGarden/plasma-ui) · [Infinite](https://github.com/n1m21n/Infinite) · [svg-text-animate](https://github.com/oubenruing/svg-text-animate) · [Dither Guy](https://github.com/manoelpiovesan/dither-guy) · [isometric](https://github.com/elchininet/isometric) · [Patchies](https://github.com/heypoom/patchies) · [Codixel](https://github.com/mankidev/codixel) · [HyperFrames Motion Reel](https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill) · [genart](https://github.com/camilleroux/genart-skill) · [Fractal Garden](https://github.com/trebeljahr/fractal-garden) · [Galaxy Simulation](https://github.com/N0rvel/galaxy_sim) · [persian-motion-director](https://github.com/atmirrr/persian-motion-director) · [Stroke Order Animator](https://github.com/chill-chinese/stroke-order-animator) · [Oscillody](https://github.com/Akosmo/Oscillody)
+**2026-11-16 新收录 7 个：**[motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) · [Kubai Icons](https://github.com/kubai087/kubai-icons) · [line-art-animation](https://github.com/JDhruv14/line-art-animation) · [Content Studio（design-agent）](https://github.com/langchain-ai/design-agent) · [Cinematic Skill](https://github.com/Moh4696/cinematic-skill) · [code-brand-film](https://github.com/nutllwhy/code-brand-film) · [Kalem](https://github.com/leodavincs/kalem)
+
+**2026-11-15 新收录 35 个：**[Graphite](https://github.com/GraphiteEditor/Graphite) · [Awesome Opus 5.5 Videos](https://github.com/yihui-dev/awesome-opus5-5-videos) · [Claude Animated Shorts](https://github.com/mromidev/claude-animated-shorts) · [Math-To-Manim](https://github.com/HarleyCoops/Math-To-Manim) · [ManimGX](https://github.com/academa-labs/manimgx) · [vgpu](https://github.com/vercel-labs/vgpu) · [AI Animation Skills](https://github.com/Unclecheng-li/AI_Animation) · [Opus 5.5 视频提示词](https://github.com/joeseesun/opus-video-prompts) · [Procedural Terrains](https://github.com/ZyFou/ProceduralTerrains) · [snapcn](https://github.com/shadcn-labs/snapcn) · [LiquidGlass](https://github.com/ybouane/liquidglass) · [Fabric](https://github.com/Fabric-Project/Fabric) · [Diorama](https://github.com/sloemo01/diorama) · [Glass SDK Liquid Glass](https://github.com/Glass-HQ/liquid-glass) · [Remotion Bits](https://github.com/av/remotion-bits) · [manim-web](https://github.com/maloyan/manim-web) · [liquid_glass_renderer](https://github.com/whynotmake-it/flutter_liquid_glass) · [ASCII Magic](https://github.com/kailashsr38/ascii-magic-art) · [react-native-effects](https://github.com/blazejkustra/react-native-effects) · [iso-figure](https://github.com/MrBongoC/ai-iso-skill) · [lemo-wake](https://github.com/lemomo-ai/lemo-wake) · [Plasma UI](https://github.com/CruxGarden/plasma-ui) · [Infinite](https://github.com/n1m21n/Infinite) · [svg-text-animate](https://github.com/oubenruing/svg-text-animate) · [Dither Guy](https://github.com/manoelpiovesan/dither-guy) · [isometric](https://github.com/elchininet/isometric) · [Patchies](https://github.com/heypoom/patchies) · [Codixel](https://github.com/mankidev/codixel) · [HyperFrames Motion Reel](https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill) · [genart](https://github.com/camilleroux/genart-skill) · [Fractal Garden](https://github.com/trebeljahr/fractal-garden) · [Galaxy Simulation](https://github.com/N0rvel/galaxy_sim) · [persian-motion-director](https://github.com/atmirrr/persian-motion-director) 等
 
 网页版的[「✦ 最新更新」窗口](https://syydaniel.github.io/awesome-code-animation/?lang=zh#latest)里可以一张张翻这些项目，也能看最近有提交的项目。
 
@@ -155,12 +157,12 @@ A curated list of open-source tools for making animations and music videos **wit
 点图片跳到对应画风的项目表。每张小样图都是用代码画出来的，代码在 [`site/template.html`](site/template.html) 里。
 
 <table>
-<tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="数学讲解风" width="260"></a><br><b><a href="#math">数学讲解风</a></b><br><sub>Math Explainer · 25 个项目</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="扁平 MG 动效" width="260"></a><br><b><a href="#mg">扁平 MG 动效</a></b><br><sub>Motion Graphics · 97 个项目</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="代码演示风" width="260"></a><br><b><a href="#code">代码演示风</a></b><br><sub>Code & Terminal Demo · 17 个项目</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.png" alt="动态文字 · 歌词" width="260"></a><br><b><a href="#type">动态文字 · 歌词</a></b><br><sub>Kinetic Type & Lyrics · 33 个项目</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="短视频 · 字幕 · 快剪" width="260"></a><br><b><a href="#short">短视频 · 字幕 · 快剪</a></b><br><sub>Shorts, Captions & Editing · 33 个项目</sub></td><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="手绘 · 白板 · 水彩" width="260"></a><br><b><a href="#hand">手绘 · 白板 · 水彩</a></b><br><sub>Hand-drawn & Whiteboard · 25 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#math"><img src="assets/styles/math.png" alt="数学讲解风" width="260"></a><br><b><a href="#math">数学讲解风</a></b><br><sub>Math Explainer · 25 个项目</sub></td><td align="center" width="33%"><a href="#mg"><img src="assets/styles/mg.png" alt="扁平 MG 动效" width="260"></a><br><b><a href="#mg">扁平 MG 动效</a></b><br><sub>Motion Graphics · 103 个项目</sub></td><td align="center" width="33%"><a href="#code"><img src="assets/styles/code.png" alt="代码演示风" width="260"></a><br><b><a href="#code">代码演示风</a></b><br><sub>Code & Terminal Demo · 17 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#type"><img src="assets/styles/type.png" alt="动态文字 · 歌词" width="260"></a><br><b><a href="#type">动态文字 · 歌词</a></b><br><sub>Kinetic Type & Lyrics · 34 个项目</sub></td><td align="center" width="33%"><a href="#short"><img src="assets/styles/short.png" alt="短视频 · 字幕 · 快剪" width="260"></a><br><b><a href="#short">短视频 · 字幕 · 快剪</a></b><br><sub>Shorts, Captions & Editing · 33 个项目</sub></td><td align="center" width="33%"><a href="#hand"><img src="assets/styles/hand.png" alt="手绘 · 白板 · 水彩" width="260"></a><br><b><a href="#hand">手绘 · 白板 · 水彩</a></b><br><sub>Hand-drawn & Whiteboard · 27 个项目</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#gen"><img src="assets/styles/gen.png" alt="生成艺术 · 几何" width="260"></a><br><b><a href="#gen">生成艺术 · 几何</a></b><br><sub>Generative Art · 44 个项目</sub></td><td align="center" width="33%"><a href="#shader"><img src="assets/styles/shader.png" alt="着色器 · 迷幻光影" width="260"></a><br><b><a href="#shader">着色器 · 迷幻光影</a></b><br><sub>Shaders & Psychedelic · 103 个项目</sub></td><td align="center" width="33%"><a href="#live"><img src="assets/styles/live.png" alt="Live Coding · VJ" width="260"></a><br><b><a href="#live">Live Coding · VJ</a></b><br><sub>Live Coding & VJ · 16 个项目</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#audio"><img src="assets/styles/audio.png" alt="音乐可视化" width="260"></a><br><b><a href="#audio">音乐可视化</a></b><br><sub>Music Visualization · 28 个项目</sub></td><td align="center" width="33%"><a href="#3d"><img src="assets/styles/3d.png" alt="3D 渲染" width="260"></a><br><b><a href="#3d">3D 渲染</a></b><br><sub>3D · 83 个项目</sub></td><td align="center" width="33%"><a href="#anime"><img src="assets/styles/anime.png" alt="二次元 · MMD · VRM" width="260"></a><br><b><a href="#anime">二次元 · MMD · VRM</a></b><br><sub>Anime, MMD & VRM · 15 个项目</sub></td></tr>
 <tr><td align="center" width="33%"><a href="#particle"><img src="assets/styles/particle.png" alt="粒子 · 流体 · 物理" width="260"></a><br><b><a href="#particle">粒子 · 流体 · 物理</a></b><br><sub>Particles & Physics · 28 个项目</sub></td><td align="center" width="33%"><a href="#glitch"><img src="assets/styles/glitch.png" alt="故障 · 后期特效" width="260"></a><br><b><a href="#glitch">故障 · 后期特效</a></b><br><sub>Glitch & Post FX · 17 个项目</sub></td><td align="center" width="33%"><a href="#pixel"><img src="assets/styles/pixel.png" alt="像素 · 复古" width="260"></a><br><b><a href="#pixel">像素 · 复古</a></b><br><sub>Pixel & Retro · 31 个项目</sub></td></tr>
-<tr><td align="center" width="33%"><a href="#ascii"><img src="assets/styles/ascii.png" alt="ASCII · 终端" width="260"></a><br><b><a href="#ascii">ASCII · 终端</a></b><br><sub>ASCII & Terminal · 26 个项目</sub></td><td align="center" width="33%"><a href="#data"><img src="assets/styles/data.png" alt="数据可视化动画" width="260"></a><br><b><a href="#data">数据可视化动画</a></b><br><sub>Data Animation · 29 个项目</sub></td></tr>
+<tr><td align="center" width="33%"><a href="#ascii"><img src="assets/styles/ascii.png" alt="ASCII · 终端" width="260"></a><br><b><a href="#ascii">ASCII · 终端</a></b><br><sub>ASCII & Terminal · 26 个项目</sub></td><td align="center" width="33%"><a href="#data"><img src="assets/styles/data.png" alt="数据可视化动画" width="260"></a><br><b><a href="#data">数据可视化动画</a></b><br><sub>Data Animation · 30 个项目</sub></td></tr>
 </table>
 
 ### 小众画风区
@@ -231,7 +233,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 **精选：**[GSAP](https://github.com/greensock/GSAP) · [anime.js](https://github.com/juliangarnier/anime) · [Remotion](https://github.com/remotion-dev/remotion) · [HyperFrames](https://github.com/heygen-com/hyperframes) · [mo.js](https://github.com/mojs/mojs)
 
-共 97 个项目，按星数排序。
+共 103 个项目，按星数排序。
 
 <br clear="right">
 
@@ -287,6 +289,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Animotion](https://github.com/animotionjs/animotion) | 1.8k | 🟢 活跃 | Svelte | 用 Svelte 写带动画的演示，代码高亮过渡、元素补间都很顺。<br><sub>适合：讲解视频 · 演讲 · 也在：代码演示风</sub> |
 | [remocn](https://github.com/Remocn/remocn) | 1.7k | 🟢 活跃 | React / TS | 给 Remotion 用的现成动画、转场、背景和场景组件。<br><sub>适合：MV · 短视频 · 也在：短视频 · 字幕 · 快剪</sub><br><sub>⚠️ 需配合 Remotion 使用，Remotion 自身的授权条款仍然适用。</sub> |
 | [reanimate](https://github.com/NiazMorshed2007/reanimate) | 1.7k | 🟢 活跃 | JavaScript | Claude Code 技能：逐帧拆解任何一段动画，再用代码复刻，并逐帧验证复刻得像不像。<br><sub>适合：复刻动画</sub> |
+| [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | 1.6k | 🟢 活跃 | JavaScript（HyperFrames + GSAP） | Agent 技能：做发布片、产品宣传和动态文字短片。先抓品牌、定一个只有这个品牌能用的点子，再按从 53 个专业镜头里逐帧量出来的节奏做动效，渲染后自己看帧、逐项过检查。<br><sub>适合：发布片 · 产品宣传 · 动态文字 · 也在：动态文字 · 歌词</sub> |
 | [motion-skills](https://github.com/iart-ai/motion-skills) | 1.5k | 🟢 活跃 | Markdown 技能 | 50 个 AI 编程助手技能：动态文字、数据可视化、讲解视频、竖屏短视频、WebGL、Manim。<br><sub>适合：各类视频</sub> |
 | [Liquid Logo](https://github.com/paper-design/liquid-logo) | 1.5k | 🟡 放缓 | TypeScript | Paper 团队的小工具：把 Logo 变成流动的液态金属动画。<br><sub>适合：Logo 动效 · 也在：液态玻璃 · 玻璃拟态、着色器 · 迷幻光影</sub> |
 | [Reanimate](https://github.com/reanimate/reanimate) | 1.4k | 🟡 放缓 | Haskell | Haskell 写的 SVG 动画库，支持 LaTeX 公式，画面风格接近 3B1B。<br><sub>适合：讲解视频 · 也在：数学讲解风</sub><br><sub>⚠️ 语言小众，社区较小。</sub> |
@@ -300,6 +303,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Rive 运行时](https://github.com/rive-app/rive-wasm) | 1k | 🟢 活跃 | TypeScript | Rive 动画的网页运行时，带状态机的矢量交互动画，用代码控制状态切换。<br><sub>适合：交互动画</sub><br><sub>⚠️ 动画通常在 Rive 编辑器里做，编辑器本身不开源。</sub> |
 | [dotLottie Web](https://github.com/LottieFiles/dotlottie-web) | 947 | 🟢 活跃 | TypeScript | LottieFiles 官方的 Lottie / dotLottie 网页播放器，基于 Rust + WASM，性能更好。<br><sub>适合：特效素材 · 网页动画</sub> |
 | [归藏产品宣传片](https://github.com/op7418/guizang-product-video-skill) | 943 | 🟢 活跃 | Python | 归藏的宣传片技能：复用产品的真实组件和设计语言，用代码做软件更新宣传片，含文案、配乐和配音。<br><sub>适合：软件宣传片</sub> |
+| [Kubai Icons](https://github.com/kubai087/kubai-icons) | 885 | 🟢 活跃 | JavaScript / TypeScript（SVG） | Agent 技能：按同一种手法画带动效的 SVG 图标，给它一个产品，它画出这个产品需要的整套图标；附 2,800 多个现成图标，React、Vue 和纯 SVG 都能用。<br><sub>适合：动画图标</sub><br><sub>⚠️ 图标库是 MIT 许可；技能本身用的是作者自定的 Kubai Icons License（源码可看），使用前先读条款。</sub> |
 | [motion-web](https://github.com/feitangyuan/motion-web) | 859 | 🟢 活跃 | HTML / JS | onetake 作者的另一套技能：用原生 three.js、Canvas、WebGL 做动效优先的创意网站。<br><sub>适合：动效网站 · 也在：3D 渲染</sub> |
 | [Rossark Motion](https://github.com/rossark0/rossark-motion-skill) | 832 | 🟢 活跃 | Swift / SVG | Claude Code 技能：把任意 SVG 做成 60 帧的专业动画。<br><sub>适合：SVG 动画</sub> |
 | [Claude Motion Design](https://github.com/howseen-ai/claude-motion-design) | 826 | 🟢 活跃 | Python | 纯代码动效视频技能：HTML + Playwright + ffmpeg，全程不用 AI 生成画面。<br><sub>适合：MG 视频</sub> |
@@ -310,7 +314,9 @@ A curated list of open-source tools for making animations and music videos **wit
 | [MotionClone](https://github.com/blixvip/MotionClone) | 672 | 🟢 活跃 | Python | 把参考视频重建成可编辑的 HyperFrames 项目，并和原片逐帧比对。<br><sub>适合：复刻动效</sub> |
 | [Aora Bot](https://github.com/sam70361/aora-bot) | 663 | 🟢 活跃 | TypeScript | 国人作品：代码绘制的网页角色引擎，46 个原创角色、44 种动画状态。<br><sub>适合：角色动画 · 也在：二次元 · MMD · VRM</sub> |
 | [snapcn](https://github.com/shadcn-labs/snapcn) | 628 | 🟢 活跃 | TypeScript（Remotion） | 做产品演示视频的 Remotion 组件库：AI 对话流、终端、设备外框、字幕等镜头，用 shadcn 命令装进项目。<br><sub>适合：产品演示视频 · 也在：短视频 · 字幕 · 快剪、代码演示风</sub> |
+| [Content Studio（design-agent）](https://github.com/langchain-ai/design-agent) | 623 | 🟢 活跃 | JavaScript / Python（HyperFrames） | LangChain 开源的设计 agent：在聊天里提需求，产出符合品牌规范的静图、幻灯片、图表和动效短片；视频用 HyperFrames 搭，由代码渲染、检查和交付。<br><sub>适合：品牌物料 · 发布片 · 也在：数据可视化动画</sub><br><sub>⚠️ 基于 Deep Agents，完整部署要接 Slack，本地可以不带 key 试用。图片生成是可选功能，需要自己的 OpenAI 或 Google key。</sub> |
 | [ff-tracking](https://github.com/mrsarac/ff-tracking) | 618 | 🟢 活跃 | Rust | 虚拟镜头拍摄 AI 助手的屏幕、追踪每个字形的短片，用 fframes 两遍渲染加 SkSL 着色器，音效也是代码合成。<br><sub>适合：动效短片 · 也在：故障 · 后期特效</sub> |
+| [Cinematic Skill](https://github.com/Moh4696/cinematic-skill) | 550 | 🟢 活跃 | Python（Skia） | Agent 技能：做带旁白的纪录短片。一个连续镜头扫过照片、地图和卡片，印章、划线、数字滚动卡在旁白说到的那个词上，每一帧都由 Skia 代码画出来。<br><sub>适合：带旁白的纪录短片 · 讲解片</sub><br><sub>⚠️ 画面里的照片是它找来的公版图，不是生成的。</sub> |
 | [Kinetograph](https://github.com/0xS4N4TG/kinetograph) | 523 | 🟢 活跃 | TypeScript | 给 AI 编程助手用的高速代码视频引擎。<br><sub>适合：批量出片 · 也在：短视频 · 字幕 · 快剪</sub><br><sub>⚠️ PolyForm Small Business 许可：个人和小公司免费，较大公司需要商业授权。</sub> |
 | [Remotion Bits](https://github.com/av/remotion-bits) | 517 | 🟢 活跃 | TypeScript（Remotion） | Remotion 的现成动画组件：文字特效、渐变转场、粒子、3D 场景、图表等，可以按需拷进项目。<br><sub>适合：MG 组件 · 短视频 · 也在：动态文字 · 歌词、粒子 · 流体 · 物理</sub><br><sub>⚠️ 非 Remotion 官方项目。</sub> |
 | [Opus Video Skills](https://github.com/tuzhechen2005/opus-video-skills) | 501 | 🟢 活跃 | JavaScript | 给 Claude Opus 用的做视频技能，每一帧画面和每一个音符都用代码生成。<br><sub>适合：短片 · MV · 也在：音乐可视化</sub> |
@@ -326,11 +332,13 @@ A curated list of open-source tools for making animations and music videos **wit
 | [fy-code-animation](https://github.com/Akillll-DuoHe/fy-code-animation) | 350 | 🟢 活跃 | TypeScript | 国人作品：把中文文案、画风提示词和声音做成连贯的代码动画（Remotion / Canvas / HTML）。<br><sub>适合：讲解动画</sub> |
 | [html-anime](https://github.com/blixvip/html-anime) | 269 | 🟢 活跃 | JavaScript | 把场景描述变成分镜表，再让编程助手用 HTML 把整部片画出来，不调用视频模型。<br><sub>适合：动画短片 · 也在：二次元 · MMD · VRM</sub> |
 | [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 207 | 🟢 活跃 | HTML | 74 块 HTML 动画讲解板：图表、示意图、流程，给 YouTube 讲解视频用。<br><sub>适合：讲解视频素材 · 也在：数据可视化动画</sub> |
+| [code-brand-film](https://github.com/nutllwhy/code-brand-film) | 206 | 🟢 活跃 | Python / JavaScript（HyperFrames + GSAP） | Agent 技能：用代码做 15 秒品牌宣传片。画面是一页 HTML，GSAP 时间轴驱动、HyperFrames 逐帧渲染，配乐用 Python 合成，带三道分别检查代码、摆位和成片画面的质量闸门。<br><sub>适合：15 秒品牌片</sub> |
 | [RuiC Motion Reel](https://github.com/HRuiCcc/RuiC-motion-reel) | 200 | 🟢 活跃 | Python | 国人作品：一句话生成动效宣传片，时长按 BPM 和小节计算，常规宣传片走 Remotion 模板。<br><sub>适合：宣传片</sub> |
 | [Vibe 知识短片](https://github.com/xiazhuo123456789/vibe-knowledge-video) | 192 | 🟢 活跃 | Python | 国人作品：纯代码生成电影感知识短视频，双语字幕、合成配乐、历史文献再现。<br><sub>适合：知识短视频 · 也在：动态文字 · 歌词</sub> |
 | [HyperFrames Motion Reel](https://github.com/Sunwood-ai-labs/hyperframes-motion-reel-skill) | 186 | 🟢 活跃 | HTML / GSAP | Claude Code 技能：一句主题做出卡点的动态图形展示片，大字排版、变形转场和运镜，用 HyperFrames 渲染。<br><sub>适合：展示片 · 卡点 MG · 也在：动态文字 · 歌词</sub> |
 | [BB-Video](https://github.com/BubbleBrainBB/BB-Video) | 182 | 🟢 活跃 | JavaScript | 纯代码做视频的技能：带配音的讲解片和产品宣传片，32 种画风。<br><sub>适合：讲解 · 宣传片 · 也在：3D 渲染</sub><br><sub>⚠️ 3D 吉祥物可选用 Blender 制作，不装 Blender 时用 three.js。</sub> |
 | [persian-motion-director](https://github.com/atmirrr/persian-motion-director) | 152 | 🟢 活跃 | JavaScript（Remotion） | Claude 技能：做波斯语动态排版和动效短片，逐字母、逐点做动画也不会把字拆散，先定音乐再卡点。<br><sub>适合：波斯语字体动效 · 也在：动态文字 · 歌词</sub><br><sub>⚠️ 代码为 MIT 许可，附带 Vazirmatn 字体（OFL）。</sub> |
+| [Kalem](https://github.com/leodavincs/kalem) | 117 | 🟢 活跃 | Python / JavaScript | Claude Code 技能：把视频拆成场景，按每个场景的内容挑最合适的引擎来画（Paper.js、PixiJS、HyperFrames、three.js、Manim 等），再用翻页之类的转场接起来，配上对帧的音效。<br><sub>适合：分场景讲解视频 · 也在：手绘 · 白板 · 水彩</sub><br><sub>⚠️ 说明以土耳其语为主，有英文版。其中「levha」这一路的手稿风格要用 Codex 的图像生成出底图，可以用参数关掉，蓝图风格全靠代码；其余引擎都是代码渲染。</sub> |
 | [DeepSeek Opus Motion](https://github.com/8533502-dev/deepseek-opus-motion-skill) | 81 | 🟢 活跃 | TypeScript | 让 DeepSeek 用和 Claude Opus 同样的提示词做出接近的 Remotion 动效视频。<br><sub>适合：动效视频</sub> |
 | [sy-style-100](https://github.com/xiaoxiong20xx-code/sy-style-100) | 79 | 🟢 活跃 | HTML | 国人作品：100 条每一帧都由代码算出来的视频，20 种画风加 60 条行业广告，可商用。<br><sub>适合：画风样片</sub> |
 | [Knowledge Explainer](https://github.com/znyupup/knowledge-explainer-skill) | 67 | 🟡 放缓 | JavaScript | 把一份 Markdown 文稿自动做成讲解动画视频，用 Remotion 渲染。<br><sub>适合：讲解动画</sub> |
@@ -383,7 +391,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 **精选：**[Typed.js](https://github.com/mattboldt/typed.js) · [Splitting](https://github.com/shshaw/Splitting) · [Coldtype](https://github.com/coldtype/coldtype) · [P(doom) MV（mexicat 版）](https://github.com/mexicat/pdoom-video) · [AMLL](https://github.com/amll-dev/applemusic-like-lyrics)
 
-共 33 个项目，按星数排序。
+共 34 个项目，按星数排序。
 
 <br clear="right">
 
@@ -408,6 +416,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Bang Motion](https://github.com/bangtutorial/bang-motion) | 2.2k | 🟢 活跃 | HTML | 浏览器动效技能：片头、宣传片、转场、动态文字，五种风格。<br><sub>适合：片头 · 宣传片 · 也在：扁平 MG 动效</sub><br><sub>⚠️ 可选的 After Effects 卡通讲解要通过 Higgsfield 桥接；默认流程是浏览器里的代码动画。</sub> |
 | [AMLL](https://github.com/amll-dev/applemusic-like-lyrics) | 2.2k | 🟢 活跃 | React / Vue | 国人开发的类 Apple Music 歌词组件：逐字高亮、弹性滚动、流体背景。<br><sub>适合：歌词 MV · 播放器 · 也在：音乐可视化</sub><br><sub>⚠️ AGPL-3.0：用在对外提供的网络服务里时，需要公开修改后的源码。</sub> |
 | [Splitting](https://github.com/shshaw/Splitting) | 1.8k | ⚪ 停更 | JavaScript | 把文字拆成单个字符或单词并加上 CSS 变量，方便做逐字动画。<br><sub>适合：网页动效</sub> |
+| [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | 1.6k | 🟢 活跃 | JavaScript（HyperFrames + GSAP） | Agent 技能：做发布片、产品宣传和动态文字短片。先抓品牌、定一个只有这个品牌能用的点子，再按从 53 个专业镜头里逐帧量出来的节奏做动效，渲染后自己看帧、逐项过检查。<br><sub>适合：发布片 · 产品宣传 · 动态文字 · 也在：扁平 MG 动效</sub> |
 | [VFX-JS](https://github.com/fand/vfx-js) | 1.2k | 🟢 活跃 | TypeScript | 给网页里的图片、视频、文字加 WebGL 特效：故障、RGB 偏移、扭曲等。<br><sub>适合：网页特效 · MV · 也在：故障 · 后期特效</sub> |
 | [world.execute(me) 歌词 MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 550 | 🟢 活跃 | JavaScript | 粉丝自制的歌词 MV，把歌词演成和 Claude 的聊天，逐帧代码渲染到 4K60。<br><sub>适合：歌词 MV · 也在：二次元 · MMD · VRM</sub> |
 | [Remotion Bits](https://github.com/av/remotion-bits) | 517 | 🟢 活跃 | TypeScript（Remotion） | Remotion 的现成动画组件：文字特效、渐变转场、粒子、3D 场景、图表等，可以按需拷进项目。<br><sub>适合：MG 组件 · 短视频 · 也在：扁平 MG 动效、粒子 · 流体 · 物理</sub><br><sub>⚠️ 非 Remotion 官方项目。</sub> |
@@ -487,7 +496,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 **精选：**[Rough.js](https://github.com/rough-stuff/rough) · [p5.brush](https://github.com/acamposuribe/p5.brush) · [Vivus](https://github.com/maxwellito/vivus) · [Excalidraw Animate](https://github.com/dai-shi/excalidraw-animate) · [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion)
 
-共 25 个项目，按星数排序。
+共 27 个项目，按星数排序。
 
 <br clear="right">
 
@@ -509,6 +518,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [p5.brush](https://github.com/acamposuribe/p5.brush) | 1.4k | 🟢 活跃 | JavaScript | 给 p5.js 加自然笔刷、水彩填充和排线，做出手绘、水彩质感的画面。<br><sub>适合：生成艺术 · MV · 也在：生成艺术 · 几何</sub> |
 | [spectral.js](https://github.com/rvanwijnen/spectral.js) | 1.3k | 🟡 放缓 | JavaScript | 按真实颜料原理（Kubelka-Munk）混色，蓝加黄会变成绿而不是灰，做水彩油画质感用。<br><sub>适合：颜料混色</sub> |
 | [Opus 5.5 视频提示词](https://github.com/joeseesun/opus-video-prompts) | 1.1k | 🟢 活跃 | 提示词 / HTML | 中文整理的 Opus 5.5 代码出片案例：18 份完整提示词和 54 个公开案例，有线稿动画、科普讲解、发布片和歌词 MV。<br><sub>适合：提示词合集 · 讲解 · MV · 也在：扁平 MG 动效、短视频 · 字幕 · 快剪</sub><br><sub>⚠️ 案例总览里有少数作品接了 Seedance、Runway 或 Blender，表格里写明了做法；精选提示词都是代码出画面。</sub> |
+| [line-art-animation](https://github.com/JDhruv14/line-art-animation) | 872 | 🟢 活跃 | TypeScript（SVG） | Claude 技能加一个小型 TypeScript 库：墨线小人会走路、骑车、对点击做出反应，场景从白天过到夜晚，全部实时画在 SVG 里，附逐帧截图出视频的脚本。<br><sub>适合：线描角色 · 场景动画</sub> |
 | [Pintr](https://github.com/javierbyte/pintr) | 843 | 🟢 活跃 | TypeScript | 把照片变成一笔画到底的单线插画。<br><sub>适合：一笔画 · 也在：绘图仪 · 单线画</sub> |
 | [白板老师视频](https://github.com/liangdabiao/whiteboard-teacher-video) | 550 | 🟢 活跃 | Python | 国人作品：把讲解稿变成白板手绘讲解视频，图形逐笔绘出、文字逐字写出，零生图成本。<br><sub>适合：知识短视频</sub> |
 | [svg-text-animate](https://github.com/oubenruing/svg-text-animate) | 280 | 🟢 活跃 | JavaScript | 在浏览器里把任意字体的文字转成 SVG 描边动画，一笔一笔写出来。<br><sub>适合：文字描边动画 · 也在：动态文字 · 歌词</sub> |
@@ -516,6 +526,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Claude Drawing Skill](https://github.com/cloveric/claude-drawing-skill) | 247 | 🟢 活跃 | Python | Claude 用代码一笔一笔作画，77 种画风：水墨、油画、黏土、蓝晒、彩色玻璃、江南园林等，不用生图模型。<br><sub>适合：插画 · 水墨 · 也在：水墨 · 水彩</sub> |
 | [Claude MV Skill](https://github.com/Joker-chichi/claude-mv-skill) | 230 | 🟢 活跃 | 技能 | 教 Claude 做手绘风动画和歌词 MV：分镜、动画、审片、歌词对位，画面全部程序化生成。<br><sub>适合：手绘 MV · 也在：动态文字 · 歌词</sub> |
 | [dashi 画风讲解](https://github.com/chuspeeism/dashi-animationstyle) | 198 | 🟢 活跃 | HTML | 国人作品：把中文知识口播做成 7 种画风的讲解动画，画面由 Claude 写 HTML / Canvas 逐帧画出。<br><sub>适合：知识讲解</sub> |
+| [Kalem](https://github.com/leodavincs/kalem) | 117 | 🟢 活跃 | Python / JavaScript | Claude Code 技能：把视频拆成场景，按每个场景的内容挑最合适的引擎来画（Paper.js、PixiJS、HyperFrames、three.js、Manim 等），再用翻页之类的转场接起来，配上对帧的音效。<br><sub>适合：分场景讲解视频 · 也在：扁平 MG 动效</sub><br><sub>⚠️ 说明以土耳其语为主，有英文版。其中「levha」这一路的手稿风格要用 Codex 的图像生成出底图，可以用参数关掉，蓝图风格全靠代码；其余引擎都是代码渲染。</sub> |
 | [Watercolor Playground](https://github.com/msurguy/watercolor-playground) | 106 | 🟢 活跃 | TypeScript | 写实水彩模拟：颜料在纸上晕染、沉淀、干燥。<br><sub>适合：水彩绘画 · 也在：水墨 · 水彩</sub> |
 | [wet-paint-flow](https://github.com/simonxxooxxoo/wet-paint-flow) | 67 | 🟢 活跃 | three.js | 实时 three.js 流场画笔，画出带湿润厚涂质感的贝塞尔笔触。<br><sub>适合：流场绘画 · 也在：流场 · 风场</sub> |
 
@@ -1112,7 +1123,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 **精选：**[D3](https://github.com/d3/d3) · [Apache ECharts](https://github.com/apache/echarts) · [Gource](https://github.com/acaudwell/Gource) · [Vizzu](https://github.com/vizzuhq/vizzu-lib) · [deck.gl](https://github.com/visgl/deck.gl)
 
-共 29 个项目，按星数排序。
+共 30 个项目，按星数排序。
 
 <br clear="right">
 
@@ -1145,6 +1156,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [audioMotion](https://github.com/hvianna/audioMotion-analyzer) | 975 | 🟢 活跃 | JavaScript | 高分辨率实时频谱分析器，柱状、圆形等频谱样式可调。<br><sub>适合：音乐可视化 · 也在：音乐可视化</sub><br><sub>⚠️ AGPL-3.0：用在对外提供的网络服务里时，需要公开修改后的源码。</sub> |
 | [party-mode](https://github.com/preziotte/party-mode) | 808 | 🟢 活跃 | JavaScript | 基于 D3 的实验性音乐可视化，多种几何律动图案。<br><sub>适合：音乐可视化 · 也在：音乐可视化</sub> |
 | [drawsvg](https://github.com/cduck/drawsvg) | 697 | 🟢 活跃 | Python | 用 Python 生成 SVG 图形和动画，可以在 Jupyter 里交互预览。<br><sub>适合：SVG 动画 · 也在：扁平 MG 动效</sub> |
+| [Content Studio（design-agent）](https://github.com/langchain-ai/design-agent) | 623 | 🟢 活跃 | JavaScript / Python（HyperFrames） | LangChain 开源的设计 agent：在聊天里提需求，产出符合品牌规范的静图、幻灯片、图表和动效短片；视频用 HyperFrames 搭，由代码渲染、检查和交付。<br><sub>适合：品牌物料 · 发布片 · 也在：扁平 MG 动效</sub><br><sub>⚠️ 基于 Deep Agents，完整部署要接 Slack，本地可以不带 key 试用。图片生成是可选功能，需要自己的 OpenAI 或 Google key。</sub> |
 | [manim-web](https://github.com/maloyan/manim-web) | 515 | 🟢 活跃 | TypeScript | 3Blue1Brown Manim 的 TypeScript 移植，在浏览器 canvas 里渲染，另带分子、化学和地图模块。<br><sub>适合：数学动画 · 网页 · 也在：数学讲解风</sub> |
 | [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 207 | 🟢 活跃 | HTML | 74 块 HTML 动画讲解板：图表、示意图、流程，给 YouTube 讲解视频用。<br><sub>适合：讲解视频素材 · 也在：扁平 MG 动效</sub> |
 
@@ -1737,7 +1749,7 @@ A curated list of open-source tools for making animations and music videos **wit
 
 <sub>点图打开[可交互的关系图谱](https://syydaniel.github.io/awesome-code-animation/?lang=zh#graph-sec)：箭头从源头指向从它演化出来的项目，点线是同类、常搭配和同一作者；可以拖动、缩放、切换「演化树」卡片视图，点项目看完整演化链。</sub>
 
-共 256 条关系。想换工具时先看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。
+共 264 条关系。想换工具时先看「同类可替换」，想扩展功能时看「插件 / 扩展」和「基于」。
 
 ### 分叉自
 
@@ -1871,6 +1883,14 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Patchies](https://github.com/heypoom/patchies) | 用它渲染 | [Hydra](https://github.com/hydra-synth/hydra) | 内置 Hydra 节点做视频合成 |
 | [Diorama](https://github.com/sloemo01/diorama) | 用它渲染 | [three.js](https://github.com/mrdoob/three.js) | 场景用 three.js 搭建和渲染 |
 | [genart](https://github.com/camilleroux/genart-skill) | 用它渲染 | [p5.js](https://github.com/processing/p5.js) | 教 Claude 用 p5.js、Canvas、three.js 等写生成艺术 |
+| [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | 用它渲染 | [HyperFrames](https://github.com/heygen-com/hyperframes) | 用 HyperFrames 逐帧渲染 |
+| [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | 用它渲染 | [GSAP](https://github.com/greensock/GSAP) | 动效用 GSAP 时间轴 |
+| [Content Studio（design-agent）](https://github.com/langchain-ai/design-agent) | 用它渲染 | [HyperFrames](https://github.com/heygen-com/hyperframes) | 视频部分用 HyperFrames 搭 |
+| [code-brand-film](https://github.com/nutllwhy/code-brand-film) | 用它渲染 | [HyperFrames](https://github.com/heygen-com/hyperframes) | HyperFrames 逐帧渲染 |
+| [code-brand-film](https://github.com/nutllwhy/code-brand-film) | 用它渲染 | [GSAP](https://github.com/greensock/GSAP) | 暂停状态的 GSAP 时间轴驱动画面 |
+| [Kalem](https://github.com/leodavincs/kalem) | 用它渲染 | [Paper.js](https://github.com/paperjs/paper.js) | 自己画出来的线条和草图场景用 Paper.js |
+| [Kalem](https://github.com/leodavincs/kalem) | 用它渲染 | [Manim 社区版](https://github.com/ManimCommunity/manim) | 可选引擎之一 |
+| [Kalem](https://github.com/leodavincs/kalem) | 用它渲染 | [three.js](https://github.com/mrdoob/three.js) | 可选引擎之一 |
 
 ### 数据来源
 
@@ -2063,7 +2083,7 @@ A curated list of open-source tools for making animations and music videos **wit
 ## 全部项目
 
 <details>
-<summary>展开全部 478 个项目（按星数排序）</summary>
+<summary>展开全部 485 个项目（按星数排序）</summary>
 
 | 项目 | 星数 | 画风 | 状态 |
 | --- | ---: | --- | :---: |
@@ -2280,6 +2300,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) | 1.7k | [着色器 · 迷幻光影](#shader)、[二次元 · MMD · VRM](#anime) | 🟢 |
 | [Meyda](https://github.com/meyda/meyda) | 1.7k | [音乐可视化](#audio) | ⚪ |
 | [reanimate](https://github.com/NiazMorshed2007/reanimate) | 1.7k | [扁平 MG 动效](#mg) | 🟢 |
+| [motionmaxxing](https://github.com/Tejashmakwana/motionmaxxing) | 1.6k | [扁平 MG 动效](#mg)、[动态文字 · 歌词](#type) | 🟢 |
 | [Dither3D](https://github.com/runevision/Dither3D) | 1.6k | [抖动 · 1-bit](#dither)、[着色器 · 迷幻光影](#shader)、[3D 渲染](#3d) | 🟡 |
 | [Unity Toon Shader](https://github.com/Unity-Technologies/com.unity.toonshader) | 1.6k | [着色器 · 迷幻光影](#shader)、[二次元 · MMD · VRM](#anime) | 🟢 |
 | [MilkDrop 3](https://github.com/milkdrop2077/MilkDrop3) | 1.6k | [音乐可视化](#audio)、[着色器 · 迷幻光影](#shader) | 🟢 |
@@ -2351,7 +2372,9 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Generative Manim](https://github.com/marcelo-earth/generative-manim) | 943 | [数学讲解风](#math) | 🟢 |
 | [归藏产品宣传片](https://github.com/op7418/guizang-product-video-skill) | 943 | [扁平 MG 动效](#mg) | 🟢 |
 | [THREE.Terrain](https://github.com/IceCreamYou/THREE.Terrain) | 923 | [程序化生成 · 波函数坍缩](#procgen)、[3D 渲染](#3d) | 🟢 |
+| [Kubai Icons](https://github.com/kubai087/kubai-icons) | 885 | [扁平 MG 动效](#mg) | 🟢 |
 | [pixelsort](https://github.com/satyarth/pixelsort) | 876 | [故障 · 后期特效](#glitch) | 🟢 |
+| [line-art-animation](https://github.com/JDhruv14/line-art-animation) | 872 | [手绘 · 白板 · 水彩](#hand) | 🟢 |
 | [motion-web](https://github.com/feitangyuan/motion-web) | 859 | [3D 渲染](#3d)、[扁平 MG 动效](#mg) | 🟢 |
 | [adu-motion-video](https://github.com/adunext/adu-motion-video) | 852 | [短视频 · 字幕 · 快剪](#short) | 🟢 |
 | [Liquid Glass Widgets](https://github.com/sdegenaar/liquid_glass_widgets) | 848 | [液态玻璃 · 玻璃拟态](#liquid) | 🟢 |
@@ -2391,6 +2414,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [XaoS](https://github.com/xaos-project/XaoS) | 628 | [分形 · 混沌 · 数学艺术](#fractal) | 🟢 |
 | [snapcn](https://github.com/shadcn-labs/snapcn) | 628 | [短视频 · 字幕 · 快剪](#short)、[扁平 MG 动效](#mg)、[代码演示风](#code) | 🟢 |
 | [LiquidGlass](https://github.com/ybouane/liquidglass) | 625 | [液态玻璃 · 玻璃拟态](#liquid)、[着色器 · 迷幻光影](#shader) | 🟢 |
+| [Content Studio（design-agent）](https://github.com/langchain-ai/design-agent) | 623 | [扁平 MG 动效](#mg)、[数据可视化动画](#data) | 🟢 |
 | [ff-tracking](https://github.com/mrsarac/ff-tracking) | 618 | [扁平 MG 动效](#mg)、[故障 · 后期特效](#glitch) | 🟢 |
 | [vsketch](https://github.com/abey79/vsketch) | 614 | [绘图仪 · 单线画](#plotter)、[生成艺术 · 几何](#gen) | 🟢 |
 | [Godot Ocean FFT](https://github.com/tessarakkt/godot4-oceanfft) | 613 | [着色器 · 迷幻光影](#shader)、[3D 渲染](#3d)、[粒子 · 流体 · 物理](#particle) | 🟡 |
@@ -2404,6 +2428,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [LiveCanvas 实况画布](https://github.com/pengchujin/livecanvas) | 556 | [短视频 · 字幕 · 快剪](#short) | 🟢 |
 | [world.execute(me) 歌词 MV](https://github.com/Nyankomintsu/world-execute-me-lyric-mv) | 550 | [动态文字 · 歌词](#type)、[二次元 · MMD · VRM](#anime) | 🟢 |
 | [白板老师视频](https://github.com/liangdabiao/whiteboard-teacher-video) | 550 | [手绘 · 白板 · 水彩](#hand) | 🟢 |
+| [Cinematic Skill](https://github.com/Moh4696/cinematic-skill) | 550 | [扁平 MG 动效](#mg) | 🟢 |
 | [Processing](https://github.com/processing/processing4) | 547 | [生成艺术 · 几何](#gen) | 🟢 |
 | [play.core](https://github.com/ertdfgcvb/play.core) | 544 | [ASCII · 终端](#ascii)、[生成艺术 · 几何](#gen) | 🟡 |
 | [Diorama](https://github.com/sloemo01/diorama) | 535 | [3D 渲染](#3d)、[像素 · 复古](#pixel)、[抖动 · 1-bit](#dither) | 🟢 |
@@ -2494,6 +2519,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) | 219 | [绘图仪 · 单线画](#plotter) | 🟢 |
 | [Patchies](https://github.com/heypoom/patchies) | 214 | [Live Coding · VJ](#live)、[生成艺术 · 几何](#gen) | 🟢 |
 | [YouTube Motion Graphics](https://github.com/sirioberati/YouTube-AI-Motion-Graphics) | 207 | [数据可视化动画](#data)、[扁平 MG 动效](#mg) | 🟢 |
+| [code-brand-film](https://github.com/nutllwhy/code-brand-film) | 206 | [扁平 MG 动效](#mg) | 🟢 |
 | [manim-skill](https://github.com/Yusuke710/manim-skill) | 204 | [数学讲解风](#math) | 🟢 |
 | [RuiC Motion Reel](https://github.com/HRuiCcc/RuiC-motion-reel) | 200 | [扁平 MG 动效](#mg) | 🟢 |
 | [Papercraft World](https://github.com/andrewwoan/aimee-xus-papercraft-world) | 199 | [折纸 · 纸艺](#origami)、[3D 渲染](#3d) | 🟢 |
@@ -2516,6 +2542,7 @@ A curated list of open-source tools for making animations and music videos **wit
 | [Oriedita](https://github.com/oriedita/oriedita) | 136 | [折纸 · 纸艺](#origami) | 🟢 |
 | [kami](https://github.com/maxwase/kami) | 135 | [折纸 · 纸艺](#origami) | 🟢 |
 | [map-motion](https://github.com/SpaceZephyr/map-motion) | 124 | [地图 · 路线动画](#map) | 🟢 |
+| [Kalem](https://github.com/leodavincs/kalem) | 117 | [扁平 MG 动效](#mg)、[手绘 · 白板 · 水彩](#hand) | 🟢 |
 | [Black Hole](https://github.com/ibra-kdbra/black-hole) | 113 | [星空 · 宇宙](#space)、[着色器 · 迷幻光影](#shader) | 🟢 |
 | [Stroke Order Animator](https://github.com/chill-chinese/stroke-order-animator) | 112 | [汉字 · 手写笔画](#hanzi) | 🟡 |
 | [Watercolor Playground](https://github.com/msurguy/watercolor-playground) | 106 | [水墨 · 水彩](#ink)、[手绘 · 白板 · 水彩](#hand) | 🟢 |
